@@ -1,0 +1,703 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:finrisk:model-output:1.0",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/analysis"
+    },
+    {
+      "$ref": "#/$defs/decision"
+    },
+    {
+      "$ref": "#/$defs/final"
+    }
+  ],
+  "$defs": {
+    "tag": {
+      "type": "string",
+      "enum": [
+        "欺骗投保人",
+        "销售误导",
+        "夸大收益",
+        "虚假宣传",
+        "合同外利益",
+        "赠送利益",
+        "回扣返佣",
+        "产品说明会违规",
+        "培训材料违规",
+        "回访违规",
+        "电销违规",
+        "不当比较",
+        "贬低竞品",
+        "绝对化表述",
+        "承诺收益",
+        "保证收益",
+        "弱化风险提示",
+        "隐瞒重要信息",
+        "虚构收益率",
+        "诱导投保",
+        "避债避税",
+        "虚列费用套取资金",
+        "代理人管理不到位",
+        "委托无资质机构销售",
+        "未按规定使用费率条款",
+        "客户信息不真实",
+        "其他"
+      ]
+    },
+    "quoteRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "segment_id",
+        "quote",
+        "occurrence"
+      ],
+      "properties": {
+        "segment_id": {
+          "type": "string",
+          "pattern": "^S[0-9]{4,}$"
+        },
+        "quote": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "occurrence": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "refs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/quoteRef"
+      },
+      "maxItems": 16
+    },
+    "contextRefs": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "$.user_context.declared_scene",
+          "$.user_context.author_role",
+          "$.user_context.audience_role",
+          "$.user_context.purpose_hint",
+          "$.user_context.additional_notes"
+        ]
+      }
+    },
+    "strings": {
+      "type": "array",
+      "maxItems": 16,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 300
+      }
+    },
+    "observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "origin",
+        "input_refs",
+        "context_refs",
+        "unknown_reason"
+      ],
+      "properties": {
+        "value": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 300
+        },
+        "origin": {
+          "enum": [
+            "input",
+            "user_context",
+            "model_inference",
+            "unknown"
+          ]
+        },
+        "input_refs": {
+          "$ref": "#/$defs/refs"
+        },
+        "context_refs": {
+          "$ref": "#/$defs/contextRefs"
+        },
+        "unknown_reason": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 300
+        }
+      }
+    },
+    "segmentAssessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "segment_id",
+        "status",
+        "reason"
+      ],
+      "properties": {
+        "segment_id": {
+          "type": "string",
+          "pattern": "^S[0-9]{4,}$"
+        },
+        "status": {
+          "enum": [
+            "reviewed",
+            "unresolved",
+            "not_reviewed"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        }
+      }
+    },
+    "segmentAssessments": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/segmentAssessment"
+      }
+    },
+    "unprocessed": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^S[0-9]{4,}$"
+      }
+    },
+    "condition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "condition_id",
+        "statement",
+        "critical",
+        "status",
+        "input_refs",
+        "context_refs",
+        "reason"
+      ],
+      "properties": {
+        "condition_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "critical": {
+          "type": "boolean"
+        },
+        "status": {
+          "enum": [
+            "met",
+            "not_met",
+            "unknown"
+          ]
+        },
+        "input_refs": {
+          "$ref": "#/$defs/refs"
+        },
+        "context_refs": {
+          "$ref": "#/$defs/contextRefs"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        }
+      }
+    },
+    "caseStatus": {
+      "enum": [
+        "reliable_match",
+        "partial_match",
+        "no_reliable_match",
+        "not_completed",
+        "not_required"
+      ]
+    },
+    "tagCheck": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "status",
+        "reason",
+        "conditions",
+        "support_input_refs",
+        "contra_input_refs",
+        "case_match_status"
+      ],
+      "properties": {
+        "tag": {
+          "$ref": "#/$defs/tag"
+        },
+        "status": {
+          "enum": [
+            "supported",
+            "not_supported",
+            "unknown"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "conditions": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 12,
+          "items": {
+            "$ref": "#/$defs/condition"
+          }
+        },
+        "support_input_refs": {
+          "$ref": "#/$defs/refs"
+        },
+        "contra_input_refs": {
+          "$ref": "#/$defs/refs"
+        },
+        "case_match_status": {
+          "$ref": "#/$defs/caseStatus"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "supported"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "support_input_refs": {
+                "minItems": 1
+              },
+              "conditions": {
+                "items": {
+                  "if": {
+                    "properties": {
+                      "critical": {
+                        "const": true
+                      }
+                    }
+                  },
+                  "then": {
+                    "properties": {
+                      "status": {
+                        "const": "met"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "caseMatch": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "evidence_ids",
+        "same_points",
+        "differences",
+        "match_status"
+      ],
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unit_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "same_points": {
+          "$ref": "#/$defs/strings"
+        },
+        "differences": {
+          "$ref": "#/$defs/strings"
+        },
+        "match_status": {
+          "enum": [
+            "reliable_match",
+            "partial_match"
+          ]
+        }
+      }
+    },
+    "candidatePoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "point_key",
+        "input_refs",
+        "mechanism",
+        "candidate_tags",
+        "observations",
+        "unknowns"
+      ],
+      "properties": {
+        "point_key": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "input_refs": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/refs"
+            },
+            {
+              "minItems": 1
+            }
+          ]
+        },
+        "mechanism": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "candidate_tags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/tag"
+          }
+        },
+        "observations": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "actor",
+            "audience",
+            "material_function",
+            "conditions"
+          ],
+          "properties": {
+            "actor": {
+              "$ref": "#/$defs/observation"
+            },
+            "audience": {
+              "$ref": "#/$defs/observation"
+            },
+            "material_function": {
+              "$ref": "#/$defs/observation"
+            },
+            "conditions": {
+              "type": "array",
+              "maxItems": 12,
+              "items": {
+                "$ref": "#/$defs/condition"
+              }
+            }
+          }
+        },
+        "unknowns": {
+          "$ref": "#/$defs/strings"
+        }
+      }
+    },
+    "finalPoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "risk_point_id",
+        "input_refs",
+        "mechanism",
+        "judgment",
+        "tag_checks",
+        "case_match_status",
+        "case_matches",
+        "unknowns"
+      ],
+      "properties": {
+        "risk_point_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "input_refs": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/refs"
+            },
+            {
+              "minItems": 1
+            }
+          ]
+        },
+        "mechanism": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "judgment": {
+          "enum": [
+            "suspected",
+            "no_clear_risk",
+            "review_required"
+          ]
+        },
+        "tag_checks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/tagCheck"
+          }
+        },
+        "case_match_status": {
+          "$ref": "#/$defs/caseStatus"
+        },
+        "case_matches": {
+          "type": "array",
+          "maxItems": 10,
+          "items": {
+            "$ref": "#/$defs/caseMatch"
+          }
+        },
+        "unknowns": {
+          "$ref": "#/$defs/strings"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "case_match_status": {
+                "const": "reliable_match"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "case_matches": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "analysis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "document_context",
+        "segment_assessments",
+        "risk_points",
+        "unprocessed_segment_ids"
+      ],
+      "properties": {
+        "kind": {
+          "const": "analysis"
+        },
+        "document_context": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "main_scene",
+            "scene_status",
+            "material_functions"
+          ],
+          "properties": {
+            "main_scene": {
+              "enum": [
+                null,
+                "ST1_poster_sms_social",
+                "ST2_live_short_video",
+                "ST3_product_intro_detail",
+                "ST4_meeting_material",
+                "ST5_training_telemarketing_callback",
+                "ST6_penalty_backend_fact"
+              ]
+            },
+            "scene_status": {
+              "enum": [
+                "provided",
+                "inferred",
+                "unknown"
+              ]
+            },
+            "material_functions": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "direct_promotion",
+                  "employee_instruction",
+                  "prohibition_reminder",
+                  "risk_education",
+                  "fact_description",
+                  "unknown"
+                ]
+              }
+            }
+          }
+        },
+        "segment_assessments": {
+          "$ref": "#/$defs/segmentAssessments"
+        },
+        "risk_points": {
+          "type": "array",
+          "maxItems": 8,
+          "items": {
+            "$ref": "#/$defs/candidatePoint"
+          }
+        },
+        "unprocessed_segment_ids": {
+          "$ref": "#/$defs/unprocessed"
+        }
+      }
+    },
+    "decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "goal",
+        "focus_refs",
+        "gap_updates",
+        "accepted_evidence_ids"
+      ],
+      "properties": {
+        "kind": {
+          "const": "decision"
+        },
+        "goal": {
+          "enum": [
+            "mechanism_search",
+            "condition_check",
+            "counter_context",
+            "source_context",
+            "definition_check",
+            "finalize"
+          ]
+        },
+        "focus_refs": {
+          "$ref": "#/$defs/refs"
+        },
+        "gap_updates": {
+          "type": "array",
+          "maxItems": 12,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "gap_id",
+              "status",
+              "input_refs",
+              "evidence_ids",
+              "reason"
+            ],
+            "properties": {
+              "gap_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "status": {
+                "enum": [
+                  "open",
+                  "resolved",
+                  "unresolvable_from_cases"
+                ]
+              },
+              "input_refs": {
+                "$ref": "#/$defs/refs"
+              },
+              "evidence_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              }
+            }
+          }
+        },
+        "accepted_evidence_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "final": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "segment_assessments",
+        "risk_points",
+        "unprocessed_segment_ids",
+        "summary"
+      ],
+      "properties": {
+        "kind": {
+          "const": "final"
+        },
+        "segment_assessments": {
+          "$ref": "#/$defs/segmentAssessments"
+        },
+        "risk_points": {
+          "type": "array",
+          "maxItems": 8,
+          "items": {
+            "$ref": "#/$defs/finalPoint"
+          }
+        },
+        "unprocessed_segment_ids": {
+          "$ref": "#/$defs/unprocessed"
+        },
+        "summary": {
+          "type": "string",
+          "maxLength": 600
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "enum": ["finrisk-tools/1.0", "finrisk-tools/1.1"]
+    },
+    "status": {
+      "enum": [
+        "ok",
+        "empty",
+        "partial",
+        "error"
+      ]
+    },
+    "data": {},
+    "meta": {
+      "type": "object",
+      "properties": {
+        "snapshot_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "snapshot_id"
+      ],
+      "additionalProperties": true
+    },
+    "error": {
+      "type": [
+        "object",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "status",
+    "data",
+    "meta",
+    "error"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -1,0 +1,172 @@
+{
+  "search_cases": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "queries": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 500
+            },
+            "focus_refs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "segment_id",
+                  "quote",
+                  "occurrence"
+                ],
+                "properties": {
+                  "segment_id": {
+                    "type": "string",
+                    "pattern": "^S[0-9]{4,}$"
+                  },
+                  "quote": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 2000
+                  },
+                  "occurrence": {
+                    "type": "integer",
+                    "minimum": 1
+                  }
+                }
+              },
+              "minItems": 1,
+              "maxItems": 8
+            },
+            "risk_point_ids": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^RP[0-9]{4,}$"
+              },
+              "minItems": 0,
+              "maxItems": 8
+            },
+            "goal": {
+              "enum": [
+                "mechanism_search",
+                "condition_check",
+                "counter_context"
+              ]
+            }
+          },
+          "required": [
+            "text",
+            "focus_refs",
+            "risk_point_ids",
+            "goal"
+          ]
+        },
+        "minItems": 1,
+        "maxItems": 3
+      },
+      "top_k": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 10
+      },
+      "filters": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {},
+        "required": []
+      }
+    },
+    "required": [
+      "queries",
+      "top_k",
+      "filters"
+    ]
+  },
+  "read_source": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "source_id": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 160
+      },
+      "anchor_evidence_id": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 160
+      },
+      "cursor": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "max_chars": {
+        "type": "integer",
+        "minimum": 500,
+        "maximum": 6000
+      }
+    },
+    "required": [
+      "source_id",
+      "max_chars"
+    ],
+    "not": {
+      "required": [
+        "anchor_evidence_id",
+        "cursor"
+      ]
+    }
+  },
+  "get_risk_definition": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "tags": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "enum": [
+            "欺骗投保人",
+            "销售误导",
+            "夸大收益",
+            "虚假宣传",
+            "合同外利益",
+            "赠送利益",
+            "回扣返佣",
+            "产品说明会违规",
+            "培训材料违规",
+            "回访违规",
+            "电销违规",
+            "不当比较",
+            "贬低竞品",
+            "绝对化表述",
+            "承诺收益",
+            "保证收益",
+            "弱化风险提示",
+            "隐瞒重要信息",
+            "虚构收益率",
+            "诱导投保",
+            "避债避税",
+            "虚列费用套取资金",
+            "代理人管理不到位",
+            "委托无资质机构销售",
+            "未按规定使用费率条款",
+            "客户信息不真实",
+            "其他"
+          ]
+        },
+        "minItems": 1,
+        "maxItems": 8
+      }
+    },
+    "required": [
+      "tags"
+    ]
+  }
+}

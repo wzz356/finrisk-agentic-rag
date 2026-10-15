@@ -1,0 +1,7 @@
+# 初代独立入口依赖；既有项目环境只需新增jsonschema。
+fastapi==0.143.0
+pydantic==2.14.1
+httpx==0.28.1
+jsonschema==4.25.1
+uvicorn==0.54.0
+tokenizers==0.23.1

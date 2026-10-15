@@ -1,0 +1,7 @@
+{
+  "schema_version": "finrisk-request-admission-policy/1.0",
+  "policies": {
+    "legacy-v1": {"body_max_bytes": 24000, "max_output_tokens": 4096},
+    "v2-v1": {"body_max_bytes": 131072, "max_output_tokens": 4096}
+  }
+}

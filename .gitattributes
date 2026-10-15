@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.ps1 text eol=crlf
+# Assets and dictionary are byte-bound by SHA256; preserve their exact bytes.
+resources/deepseek-v41/* -text
+contracts/agent_rag/risk_type_dictionary.csv -text

@@ -1,0 +1,6 @@
+{
+  "extends": "mock-baseline.json",
+  "profile_id": "live-deepseek-flash-bm25-v1",
+  "execution_mode": "live",
+  "model_context_window": 1000000
+}

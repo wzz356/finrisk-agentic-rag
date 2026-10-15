@@ -1,0 +1,223 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "task_id",
+    "sequence",
+    "updated_at",
+    "phase",
+    "action",
+    "stage_label",
+    "task_status",
+    "execution_mode",
+    "stop_reason",
+    "message",
+    "counts",
+    "limits",
+    "time"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "finrisk-progress/1.0"
+    },
+    "task_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sequence": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "updated_at": {
+      "type": "string",
+      "minLength": 1
+    },
+    "phase": {
+      "enum": [
+        "analyzing",
+        "reviewing",
+        "finalizing",
+        "completed",
+        "partial",
+        "failed",
+        "interrupted",
+        "rejected"
+      ]
+    },
+    "action": {
+      "enum": [
+        "material_analysis",
+        "search_cases",
+        "read_source",
+        "get_risk_definition",
+        "condition_comparison",
+        "final_generation",
+        "complete",
+        "incomplete"
+      ]
+    },
+    "stage_label": {
+      "type": "string",
+      "maxLength": 80
+    },
+    "task_status": {
+      "enum": [
+        "running",
+        "completed",
+        "partial",
+        "failed",
+        "interrupted",
+        "rejected"
+      ]
+    },
+    "execution_mode": {
+      "enum": [
+        "live",
+        "mock"
+      ]
+    },
+    "stop_reason": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 100
+    },
+    "message": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "segments_total",
+        "segments_analyzed",
+        "segments_finalized",
+        "risk_points",
+        "read_sources",
+        "pending_input_conditions",
+        "pending_case_queries"
+      ],
+      "properties": {
+        "segments_total": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "segments_analyzed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "segments_finalized": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "risk_points": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "read_sources": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "pending_input_conditions": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "pending_case_queries": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "pending_case_points": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "limits": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "model_requests",
+        "tool_actions",
+        "search_calls"
+      ],
+      "properties": {
+        "model_requests": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "used",
+            "limit"
+          ],
+          "properties": {
+            "used": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "limit": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "tool_actions": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "used",
+            "limit"
+          ],
+          "properties": {
+            "used": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "limit": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "search_calls": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "used",
+            "limit"
+          ],
+          "properties": {
+            "used": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "limit": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        }
+      }
+    },
+    "time": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "remaining_seconds",
+        "elapsed_ms"
+      ],
+      "properties": {
+        "remaining_seconds": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "elapsed_ms": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}

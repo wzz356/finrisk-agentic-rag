@@ -1,0 +1,14 @@
+[
+  {
+    "text": "购买这份保险就送购物卡。",
+    "mock_scenario": "gift-example"
+  },
+  {
+    "text": "培训提醒：不得向客户承诺保险收益。",
+    "mock_scenario": "generic"
+  },
+  {
+    "text": "这款产品收益有保障。",
+    "mock_scenario": "generic"
+  }
+]

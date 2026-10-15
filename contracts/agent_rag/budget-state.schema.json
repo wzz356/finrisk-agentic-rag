@@ -1,0 +1,71 @@
+{
+  "type": "object",
+  "properties": {
+    "model_request_units": {
+      "type": "number",
+      "minimum": 0
+    },
+    "physical_provider_requests": {
+      "type": "number",
+      "minimum": 0
+    },
+    "settled_tokens": {
+      "type": "number",
+      "minimum": 0
+    },
+    "reserved_tokens": {
+      "type": "number",
+      "minimum": 0
+    },
+    "unknown_usage_requests": {
+      "type": "number",
+      "minimum": 0
+    },
+    "tool_actions": {
+      "type": "number",
+      "minimum": 0
+    },
+    "rejected_tool_actions": {
+      "type": "number",
+      "minimum": 0
+    },
+    "search_calls": {
+      "type": "number",
+      "minimum": 0
+    },
+    "search_query_attempts": {
+      "type": "number",
+      "minimum": 0
+    },
+    "external_retrieval_requests": {
+      "type": "number",
+      "minimum": 0
+    },
+    "usage_kind": {
+      "enum": [
+        "simulated",
+        "provider_reported"
+      ]
+    },
+    "elapsed_ms": {
+      "type": "number",
+      "minimum": 0
+    }
+  },
+  "required": [
+    "model_request_units",
+    "physical_provider_requests",
+    "settled_tokens",
+    "reserved_tokens",
+    "unknown_usage_requests",
+    "tool_actions",
+    "rejected_tool_actions",
+    "search_calls",
+    "search_query_attempts",
+    "external_retrieval_requests",
+    "usage_kind",
+    "elapsed_ms"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

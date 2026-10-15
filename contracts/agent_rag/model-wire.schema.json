@@ -1,0 +1,495 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:finrisk:model-wire:1.2",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/analysis"
+    },
+    {
+      "$ref": "#/$defs/final"
+    },
+    {
+      "$ref": "#/$defs/finalize"
+    }
+  ],
+  "$defs": {
+    "quoteRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "segment_id",
+        "quote",
+        "occurrence"
+      ],
+      "properties": {
+        "segment_id": {
+          "type": "string",
+          "pattern": "^S[0-9]{4,}$"
+        },
+        "quote": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "occurrence": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "refs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/quoteRef"
+      },
+      "maxItems": 16
+    },
+    "contextRefs": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "$.user_context.declared_scene",
+          "$.user_context.author_role",
+          "$.user_context.audience_role",
+          "$.user_context.purpose_hint",
+          "$.user_context.additional_notes"
+        ]
+      }
+    },
+    "strings": {
+      "type": "array",
+      "maxItems": 16,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 300
+      }
+    },
+    "segmentAssessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "segment_id",
+        "status",
+        "reason"
+      ],
+      "properties": {
+        "segment_id": {
+          "type": "string",
+          "pattern": "^S[0-9]{4,}$"
+        },
+        "status": {
+          "enum": [
+            "reviewed",
+            "unresolved",
+            "not_reviewed"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        }
+      }
+    },
+    "caseMatch": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "evidence_ids",
+        "same_points",
+        "differences",
+        "match_status",
+        "supports_tags"
+      ],
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unit_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "same_points": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 300
+          },
+          "maxItems": 16,
+          "minItems": 1
+        },
+        "differences": {
+          "$ref": "#/$defs/strings"
+        },
+        "match_status": {
+          "enum": [
+            "reliable_match",
+            "partial_match"
+          ]
+        },
+        "supports_tags": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/tag"
+          },
+          "maxItems": 3,
+          "minItems": 1
+        }
+      }
+    },
+    "tag": {
+      "enum": [
+        "欺骗投保人",
+        "销售误导",
+        "夸大收益",
+        "虚假宣传",
+        "合同外利益",
+        "赠送利益",
+        "回扣返佣",
+        "产品说明会违规",
+        "培训材料违规",
+        "回访违规",
+        "电销违规",
+        "不当比较",
+        "贬低竞品",
+        "绝对化表述",
+        "承诺收益",
+        "保证收益",
+        "弱化风险提示",
+        "隐瞒重要信息",
+        "虚构收益率",
+        "诱导投保",
+        "避债避税",
+        "虚列费用套取资金",
+        "代理人管理不到位",
+        "委托无资质机构销售",
+        "未按规定使用费率条款",
+        "客户信息不真实",
+        "其他"
+      ]
+    },
+    "fact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "field",
+        "value",
+        "origin",
+        "input_refs",
+        "context_refs"
+      ],
+      "properties": {
+        "field": {
+          "enum": [
+            "actor",
+            "audience",
+            "material_function",
+            "insurance_product",
+            "contract_outside"
+          ]
+        },
+        "value": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 160
+        },
+        "origin": {
+          "enum": [
+            "input",
+            "user_context",
+            "inferred",
+            "unknown"
+          ]
+        },
+        "input_refs": {
+          "$ref": "#/$defs/refs"
+        },
+        "context_refs": {
+          "$ref": "#/$defs/contextRefs"
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "origin": { "const": "input" } } },
+          "then": { "properties": { "input_refs": { "minItems": 1 } } }
+        },
+        {
+          "if": { "properties": { "origin": { "const": "user_context" } } },
+          "then": { "properties": { "context_refs": { "minItems": 1 } } }
+        },
+        {
+          "if": {
+            "properties": {
+              "field": {
+                "const": "material_function"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "enum": [
+                  "direct_promotion",
+                  "employee_instruction",
+                  "prohibition_reminder",
+                  "risk_education",
+                  "fact_description",
+                  "unknown",
+                  null
+                ]
+              },
+              "origin": {
+                "enum": [
+                  "user_context",
+                  "inferred",
+                  "unknown"
+                ]
+              }
+            },
+            "description": "材料用途是分类判断：文本分类使用origin=inferred；用户明确用途支持时使用user_context，缺背景用unknown。载体场景不自动等于用途。"
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "field": {
+                "enum": [
+                  "insurance_product",
+                  "contract_outside"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "enum": [
+                  "yes",
+                  "no",
+                  null
+                ]
+              }
+            },
+            "description": "insurance_product只判断是否指向保险产品或保险交易，无需知道具体险种；“购买这份保险”可支持yes。contract_outside单独判断合同是否明确排除该利益；合同内容未提供则null，不能借历史处罚补事实。"
+          }
+        }
+      ]
+    },
+    "condition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "criterion_id",
+        "status",
+        "input_refs",
+        "context_refs",
+        "reason"
+      ],
+      "properties": {
+        "criterion_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "status": {
+          "enum": [
+            "met",
+            "not_met",
+            "unknown"
+          ]
+        },
+        "input_refs": {
+          "$ref": "#/$defs/refs"
+        },
+        "context_refs": {
+          "$ref": "#/$defs/contextRefs"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        }
+      }
+    },
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "input_refs",
+        "candidate_tags",
+        "facts"
+      ],
+      "properties": {
+        "input_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/quoteRef"
+          },
+          "maxItems": 8,
+          "minItems": 1
+        },
+        "candidate_tags": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/tag"
+          },
+          "maxItems": 3,
+          "minItems": 1
+        },
+        "facts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/fact"
+          },
+          "maxItems": 5,
+          "minItems": 0
+        }
+      }
+    },
+    "tagCheck": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "conditions"
+      ],
+      "properties": {
+        "tag": {
+          "$ref": "#/$defs/tag"
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/condition"
+          },
+          "maxItems": 8,
+          "minItems": 0
+        }
+      }
+    },
+    "finalPoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "risk_point_id",
+        "tag_checks",
+        "case_matches"
+      ],
+      "properties": {
+        "risk_point_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "input_refs": {
+          "$ref": "#/$defs/refs"
+        },
+        "tag_checks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/tagCheck"
+          },
+          "maxItems": 3,
+          "minItems": 0
+        },
+        "case_matches": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/caseMatch"
+          },
+          "maxItems": 5,
+          "minItems": 0
+        }
+      }
+    },
+    "analysis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "segments",
+        "points"
+      ],
+      "properties": {
+        "kind": {
+          "const": "analysis"
+        },
+        "segments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/segmentAssessment"
+          },
+          "maxItems": 128,
+          "minItems": 1
+        },
+        "points": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/candidate"
+          },
+          "maxItems": 8,
+          "minItems": 0
+        }
+      }
+    },
+    "final": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "segments",
+        "points"
+      ],
+      "properties": {
+        "kind": {
+          "const": "final"
+        },
+        "segments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/segmentAssessment"
+          },
+          "maxItems": 128,
+          "minItems": 1
+        },
+        "points": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/finalPoint"
+          },
+          "maxItems": 8,
+          "minItems": 0
+        }
+      }
+    },
+    "finalize": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind"
+      ],
+      "properties": {
+        "kind": {
+          "const": "finalize"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,508 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "finrisk-report/1.0"
+    },
+    "task_id": {
+      "type": "string"
+    },
+    "execution_mode": {
+      "enum": [
+        "mock",
+        "live"
+      ]
+    },
+    "task_status": {
+      "enum": [
+        "completed",
+        "partial"
+      ]
+    },
+    "overall_judgment": {
+      "enum": [
+        "suspected",
+        "no_clear_risk",
+        "review_required"
+      ]
+    },
+    "needs_manual_review": {
+      "type": "boolean"
+    },
+    "risk_points": {
+      "type": "array",
+      "maxItems": 32,
+      "items": {
+        "type": "object",
+        "properties": {
+          "risk_point_id": {
+            "type": "string"
+          },
+          "context_warnings": {
+            "type": "array",
+            "maxItems": 4,
+            "items": {
+              "type": "string",
+              "maxLength": 200
+            }
+          },
+          "judgment": {
+            "enum": [
+              "suspected",
+              "no_clear_risk",
+              "review_required"
+            ]
+          },
+          "supported_tags": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "欺骗投保人",
+                "销售误导",
+                "夸大收益",
+                "虚假宣传",
+                "合同外利益",
+                "赠送利益",
+                "回扣返佣",
+                "产品说明会违规",
+                "培训材料违规",
+                "回访违规",
+                "电销违规",
+                "不当比较",
+                "贬低竞品",
+                "绝对化表述",
+                "承诺收益",
+                "保证收益",
+                "弱化风险提示",
+                "隐瞒重要信息",
+                "虚构收益率",
+                "诱导投保",
+                "避债避税",
+                "虚列费用套取资金",
+                "代理人管理不到位",
+                "委托无资质机构销售",
+                "未按规定使用费率条款",
+                "客户信息不真实",
+                "其他"
+              ]
+            }
+          },
+          "pending_tags": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "欺骗投保人",
+                "销售误导",
+                "夸大收益",
+                "虚假宣传",
+                "合同外利益",
+                "赠送利益",
+                "回扣返佣",
+                "产品说明会违规",
+                "培训材料违规",
+                "回访违规",
+                "电销违规",
+                "不当比较",
+                "贬低竞品",
+                "绝对化表述",
+                "承诺收益",
+                "保证收益",
+                "弱化风险提示",
+                "隐瞒重要信息",
+                "虚构收益率",
+                "诱导投保",
+                "避债避税",
+                "虚列费用套取资金",
+                "代理人管理不到位",
+                "委托无资质机构销售",
+                "未按规定使用费率条款",
+                "客户信息不真实",
+                "其他"
+              ]
+            }
+          },
+          "input_spans": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "properties": {
+                "source_id": {
+                  "type": "string"
+                },
+                "source_kind": {
+                  "const": "input"
+                },
+                "segment_id": {
+                  "type": "string"
+                },
+                "text_version": {
+                  "type": "string"
+                },
+                "text_sha256": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "end": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "quote": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "source_id",
+                "source_kind",
+                "segment_id",
+                "text_version",
+                "text_sha256",
+                "start",
+                "end",
+                "quote"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "risk_point_id",
+          "judgment",
+          "supported_tags",
+          "pending_tags",
+          "input_spans"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "input_spans": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_id": {
+            "type": "string"
+          },
+          "source_kind": {
+            "const": "input"
+          },
+          "segment_id": {
+            "type": "string"
+          },
+          "text_version": {
+            "type": "string"
+          },
+          "text_sha256": {
+            "type": "string"
+          },
+          "start": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "end": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "quote": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "source_id",
+          "source_kind",
+          "segment_id",
+          "text_version",
+          "text_sha256",
+          "start",
+          "end",
+          "quote"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "properties": {
+        "provided_segment_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "reviewed_segment_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "unresolved_segment_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "not_reviewed_segment_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "all_submitted_segments_reviewed": {
+          "type": "boolean"
+        },
+        "semantic_coverage_verified": {
+          "const": false
+        }
+      },
+      "required": [
+        "provided_segment_ids",
+        "reviewed_segment_ids",
+        "unresolved_segment_ids",
+        "not_reviewed_segment_ids",
+        "all_submitted_segments_reviewed",
+        "semantic_coverage_verified"
+      ],
+      "additionalProperties": false
+    },
+    "summary": {
+      "type": "string"
+    },
+    "versions": {
+      "type": "object",
+      "properties": {
+        "requested_contract": {
+          "type": "string"
+        },
+        "accepted_contract": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "stop": {
+      "type": "object",
+      "properties": {
+        "reason": {
+          "type": "string"
+        },
+        "unresolved": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "reason",
+        "unresolved"
+      ],
+      "additionalProperties": false
+    },
+    "resources": {
+      "type": "object",
+      "properties": {
+        "model_request_units": {
+          "type": "number",
+          "minimum": 0
+        },
+        "physical_provider_requests": {
+          "type": "number",
+          "minimum": 0
+        },
+        "settled_tokens": {
+          "type": "number",
+          "minimum": 0
+        },
+        "reserved_tokens": {
+          "type": "number",
+          "minimum": 0
+        },
+        "unknown_usage_requests": {
+          "type": "number",
+          "minimum": 0
+        },
+        "tool_actions": {
+          "type": "number",
+          "minimum": 0
+        },
+        "rejected_tool_actions": {
+          "type": "number",
+          "minimum": 0
+        },
+        "search_calls": {
+          "type": "number",
+          "minimum": 0
+        },
+        "search_query_attempts": {
+          "type": "number",
+          "minimum": 0
+        },
+        "external_retrieval_requests": {
+          "type": "number",
+          "minimum": 0
+        },
+        "usage_kind": {
+          "enum": [
+            "simulated",
+            "provider_reported"
+          ]
+        },
+        "elapsed_ms": {
+          "type": "number",
+          "minimum": 0
+        },
+        "json_repairs": {
+          "type": "number",
+          "minimum": 0
+        },
+        "tool_format_corrections": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "retrieval_accounting": {
+          "type": "object"
+        },
+        "estimated_cost": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "model_request_units",
+        "physical_provider_requests",
+        "settled_tokens",
+        "reserved_tokens",
+        "unknown_usage_requests",
+        "tool_actions",
+        "rejected_tool_actions",
+        "search_calls",
+        "search_query_attempts",
+        "external_retrieval_requests",
+        "usage_kind",
+        "elapsed_ms",
+        "json_repairs",
+        "estimated_cost"
+      ],
+      "additionalProperties": false
+    },
+    "validation": {
+      "type": "object",
+      "properties": {
+        "schema_valid": {
+          "type": "boolean"
+        },
+        "references_valid": {
+          "type": "boolean"
+        },
+        "semantic_review_status": {
+          "enum": [
+            "model_assessed",
+            "human_reviewed",
+            "not_assessed"
+          ]
+        },
+        "errors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "schema_valid",
+        "references_valid",
+        "semantic_review_status",
+        "errors"
+      ],
+      "additionalProperties": false
+    },
+    "model_generated": {
+      "type": "boolean"
+    },
+    "simulated": {
+      "type": "boolean"
+    },
+    "retrieved_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "task_id",
+    "execution_mode",
+    "task_status",
+    "overall_judgment",
+    "needs_manual_review",
+    "risk_points",
+    "input_spans",
+    "coverage",
+    "summary",
+    "versions",
+    "stop",
+    "resources",
+    "validation",
+    "model_generated",
+    "simulated",
+    "retrieved_evidence"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "execution_mode": {
+            "const": "mock"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "model_generated": {
+            "const": false
+          },
+          "simulated": {
+            "const": true
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "overall_judgment": {
+            "const": "no_clear_risk"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "task_status": {
+            "const": "completed"
+          },
+          "coverage": {
+            "properties": {
+              "all_submitted_segments_reviewed": {
+                "const": true
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

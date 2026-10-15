@@ -1,0 +1,14 @@
+{
+  "extends": "mock-baseline.json",
+  "profile_id": "mock-v2-flash-replay-v1",
+  "execution_mode": "mock",
+  "retrieval_profile": "v2-hybrid-flash-v1",
+  "rerank_mode": "replay",
+  "max_search_calls": 2,
+  "max_search_query_attempts": 2,
+  "max_queries_per_search": 1,
+  "max_external_retrieval_requests": 0,
+  "task_deadline_seconds": 270,
+  "search_return_max_chars": 12000,
+  "tool_request_timeout_seconds": 180
+}
