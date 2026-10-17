@@ -1,14 +1,19 @@
 {
-  "checkpoint": "baseline-20261017",
-  "source_checkpoint": "805a471",
-  "source_runtime_fix": "2dd6340",
-  "format_recovery_fix": "63d1d62",
-  "evaluation_protocol": "finrisk-evaluation/2.3",
+  "checkpoint": "baseline-20261017-r2",
+  "source_checkpoint": "4eca52e940b71b2c07c3576b3746fb55448c101b",
+  "source_runtime_fix": "3f1e64e0848ca8b453f83622253eca5f91582af7",
+  "evaluation_protocol": "finrisk-evaluation/2.4",
   "rerank_protocol": "span-ref-v2",
-  "status": "experimental_baseline_with_known_schema_failure",
+  "status": "experimental_baseline_pilot_stopped_not_quality_validated",
   "public_adaptations": [
     "explicit_key_configuration_only",
     "synthetic_source_quality_marker"
   ],
-  "private_runtime_assets_included": false
+  "private_runtime_assets_included": false,
+  "known_issues": [
+    "input_gap_condition_inconsistency",
+    "rerank_explanation_length",
+    "fresh_official_crawl_not_verified",
+    "development30_not_run"
+  ]
 }

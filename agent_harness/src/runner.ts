@@ -349,7 +349,7 @@ export async function runTask(task: TaskInput, bridge: ToolBridge, script?: Scri
       if (evaluationFormatRepairable(error) && state.repairs < formatRepairLimit && state.repairs + state.toolFormatCorrections < config.max_json_repairs_per_task && Number(budget.summary().model_request_units) < config.max_model_requests - 1 && budget.remainingMs() > 0) {
         state.repairs++;
         pendingEvaluationRepair = { errorIndex, message, diagnostic, attempt: state.repairs };
-        repairInstruction = `上一回复格式校验失败：${diagnostic.code}；位置=${diagnostic.position ?? "未定位"}。重新提交同一evaluation_first Schema的完整JSON；保留当前输入与已核读证据，不调用工具，不新增事实。continuation与points同级。所有条件与缺口仍须通过校验。`;
+        repairInstruction = `上一回复格式校验失败：${diagnostic.code}；位置=${diagnostic.position ?? "未定位"}；Schema问题（仅校验器路径/关键字/字段）=${JSON.stringify(diagnostic.schema_issues ?? [])}。重新提交同一evaluation_first Schema的完整JSON；保留当前输入与已核读证据，不调用工具，不新增事实。continuation与points同级。所有条件与缺口仍须通过校验。`;
         trace.event("output.format_repair", { attempt: state.repairs, ...diagnostic, additional_retrieval: false });
         return { action: "continue" as const };
       }
@@ -388,7 +388,12 @@ export async function runTask(task: TaskInput, bridge: ToolBridge, script?: Scri
       if (retrievalCircuitOpen) throw new Error("RETRIEVAL_CIRCUIT_OPEN");
       state.runtimeBudget = modelBudget(budget);
       // This is a shared experimental prompt value; Budget still enforces actual elapsed time.
-      if (evaluationFirstPending) state.runtimeBudget.seconds_remaining = config.task_deadline_seconds;
+      if (evaluationFirstPending) {
+        state.runtimeBudget.seconds_remaining = config.task_deadline_seconds;
+        // Equal first-turn display for a cold/cache prefetch; never raise the
+        // actual remaining allowance or change Budget accounting/admission.
+        state.runtimeBudget.query_remaining = Math.min(budget.remainingQueries(), Math.max(0, config.max_search_query_attempts - (firstQuery?.queries.length ?? 0)));
+      }
       state.repairing = Boolean(repairInstruction);
       const assembleStage = async () => {
         if (evaluationFirstPending) {

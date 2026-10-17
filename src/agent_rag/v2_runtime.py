@@ -5,7 +5,7 @@ import os
 from pathlib import Path
 from typing import Any
 
-from agent_rag.dense_backend import ResidentDenseIndex
+from agent_rag.dense_backend import ResidentDenseIndex, validate_startup_timeout_seconds
 from agent_rag.input_registry import text_hash
 from agent_rag.rerank_backend import DeepSeekReranker, validate_completion
 from agent_rag.v2_backend import HybridV2Backend
@@ -77,7 +77,10 @@ class FrozenFlashReranker:
         }
 
 
-def load_v2_snapshot(root: Path) -> V2KnowledgeSnapshot:
+def load_v2_snapshot(
+    root: Path, *, startup_timeout_seconds: float | None = None
+) -> V2KnowledgeSnapshot:
+    validate_startup_timeout_seconds(startup_timeout_seconds)
     snapshot = V2KnowledgeSnapshot(root)
     backend = snapshot.manifest.get("backend")
     if not backend or backend.get("mode") not in {"live", "replay"}:
@@ -99,7 +102,9 @@ def load_v2_snapshot(root: Path) -> V2KnowledgeSnapshot:
         scorer = DeepSeekReranker(rules, key_file=Path(key_file) if key_file else None, protocol=protocol)
     else:
         scorer = FrozenFlashReranker(paths["score_inputs"], paths["scores"], paths["candidate_map"])
-    dense = ResidentDenseIndex(paths["dense_config"])
+    dense_kwargs = ({} if startup_timeout_seconds is None
+        else {"startup_timeout_seconds": startup_timeout_seconds})
+    dense = ResidentDenseIndex(paths["dense_config"], **dense_kwargs)
     try:
         snapshot.backend = HybridV2Backend(
             snapshot, dense, scorer, audit_root=root / "retrieval-audits"

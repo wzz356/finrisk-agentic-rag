@@ -112,7 +112,7 @@ test("final context hides original anchor IDs but expands visible read IDs and r
 
 test("compact schemas/instructions/prompt hash agree and default final contract remains unchanged", async () => {
   const { state, task: t } = preparedState(); const describe: any = await evaluationCli(["--describe"]);
-  assert.equal(describe.schema_version,"finrisk-evaluation/2.3");
+  assert.equal(describe.schema_version,"finrisk-evaluation/2.4");
   assert.equal(describe.system_prompt_sha256,hash(readFileSync(root + "/configs/agent_rag/evaluation-system-prompt.txt","utf8")));
   assert.ok(!Object.hasOwn(describe.envelope_schema.$defs.caseMatch.properties,"source_id"));
   assert.ok(Object.hasOwn(describe.envelope_schema.$defs.caseMatch.properties,"case_ref"));
@@ -312,4 +312,15 @@ test("same identity search revisits preserve read state and default behavior sta
       assert.equal(state.evidence.get(old.evidence_id)!.source_id,"LEGACY");
     }
   }
+});
+
+
+test("explicit A format recovery cannot retry a fabricated case reference", async () => {
+  const t = task("A"); t.config = { ...t.config, evaluation_format_repair_limit: 1 };
+  const value = envelope(); value.points[0].case_matches = [select("C" + "f".repeat(20))];
+  const result = await runTask(t, bridge(), [value, envelope()]);
+  assert.equal(result.report.stop.reason, "invalid_output");
+  assert.equal(result.report.resources.model_request_units, 1);
+  assert.equal(result.report.resources.json_repairs, 0);
+  assert.ok(result.report.validation.errors.includes("CITATION_REFERENCE_NOT_VISIBLE"));
 });

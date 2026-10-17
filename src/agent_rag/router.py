@@ -12,6 +12,7 @@ from fastapi.responses import FileResponse, JSONResponse
 from pydantic import BaseModel, ConfigDict, Field
 
 from agent_rag.contracts import PROJECT_ROOT
+from agent_rag.knowledge_registry import current_snapshot
 from agent_rag.knowledge_snapshot import KnowledgeSnapshot
 from agent_rag.service_initialization import ServiceInitialization
 from agent_rag.task_service import TaskService
@@ -61,6 +62,9 @@ def load_v2_snapshot(path: Path) -> Any:
 
 
 def _snapshot_path() -> Path:
+    registry = os.environ.get("FINRISK_AGENT_KB_REGISTRY")
+    if registry:
+        return current_snapshot(Path(registry))
     return Path(os.environ.get(
         "FINRISK_AGENT_SNAPSHOT", PROJECT_ROOT / "runtime/agent_rag/snapshot-v1"))
 
@@ -71,7 +75,214 @@ def _close_snapshot(snapshot: Any) -> None:
         dense.close()
 
 
-def _build_service(stage: Any) -> TaskService:
+class _RegistryTaskService:
+    """Keep task ownership stable while preparing a replacement snapshot in the background."""
+
+    def __init__(self, registry: Path, service: TaskService) -> None:
+        self.registry = registry.resolve()
+        self._current = service
+        self._services = [service]
+        self._owners: dict[str, TaskService] = {}
+        self._lock = threading.RLock()
+        self._refresh_thread: threading.Thread | None = None
+        self._candidate: Any = None
+        self._candidate_path: Path | None = None
+        self._loading_path: Path | None = None
+        self._failed_path: Path | None = None
+        self._error: str | None = None
+        self._closed = False
+
+    @property
+    def snapshot(self) -> Any:
+        with self._lock:
+            return self._current.snapshot
+
+    @property
+    def config(self) -> dict[str, Any]:
+        with self._lock:
+            return self._current.config
+
+    def registry_status(self) -> dict[str, Any]:
+        with self._lock:
+            return {
+                "registry_snapshot_id": self._current.snapshot.manifest["snapshot_id"],
+                "registry_refresh_state": (
+                    "loading" if self._loading_path else
+                    "waiting_for_idle" if self._candidate is not None else
+                    "failed" if self._error else "idle"),
+                "registry_refresh_error": self._error,
+            }
+
+    def _install_candidate_locked(self) -> None:
+        if self._candidate is None or self._current.active_task_id is not None:
+            return
+        candidate, path = self._candidate, self._candidate_path
+        self._candidate, self._candidate_path = None, None
+        try:
+            if current_snapshot(self.registry) != path:
+                _close_snapshot(candidate)
+                return
+            # Construct only at an idle boundary: its restart scan must not interrupt a job.
+            replacement = TaskService(self._current.root, candidate)
+        except Exception:
+            self._error, self._failed_path = "REGISTRY_REFRESH_FAILED", path
+            _close_snapshot(candidate)
+            return
+        previous = self._current
+        for task_id in previous.tools:
+            self._owners.setdefault(task_id, previous)
+            previous.tools[task_id].search_disabled = True
+        self._current = replacement
+        self._services.append(replacement)
+        self._error, self._failed_path = None, None
+        # Historical sources and reports need no dense worker. No running task uses it.
+        _close_snapshot(previous.snapshot)
+
+    def request_refresh(self) -> None:
+        with self._lock:
+            if self._closed:
+                return
+            self._install_candidate_locked()
+            if (self._current.active_task_id is not None or self._loading_path is not None
+                    or self._candidate is not None):
+                return
+            try:
+                path = current_snapshot(self.registry)
+            except (OSError, ValueError, KeyError):
+                self._error = "REGISTRY_REFRESH_FAILED"
+                return
+            if path == self._current.snapshot.root or path == self._failed_path:
+                return
+            self._loading_path = path
+            self._error = None
+            self._refresh_thread = threading.Thread(
+                target=self._load_candidate, args=(path,), daemon=True,
+                name="agent-registry-refresh")
+            self._refresh_thread.start()
+
+    def _load_candidate(self, path: Path) -> None:
+        try:
+            candidate = load_v2_snapshot(path)
+        except Exception:
+            with self._lock:
+                self._loading_path = None
+                self._failed_path, self._error = path, "REGISTRY_REFRESH_FAILED"
+            return
+        with self._lock:
+            self._loading_path = None
+            if self._closed:
+                _close_snapshot(candidate)
+                return
+            self._candidate, self._candidate_path = candidate, path
+            self._install_candidate_locked()
+
+    def admit(self, request: dict[str, Any], key: str | None) -> tuple[dict[str, Any], bool]:
+        with self._lock:
+            if self._closed:
+                raise ValueError("PROFILE_NOT_READY")
+            self._install_candidate_locked()
+            record, reused = self._current.admit(request, key)
+            self._owners[record["task_id"]] = self._current
+            return record, reused
+
+    def _owner(self, task_id: str) -> TaskService:
+        with self._lock:
+            if task_id in self._owners:
+                return self._owners[task_id]
+            if task_id not in self._current.records:
+                raise KeyError("TASK_NOT_FOUND")
+            manifest = json.loads(
+                (self._current.root / task_id / "manifest.json").read_text(encoding="utf-8"))
+            snapshot_id = manifest["snapshot_id"]
+            for service in self._services:
+                if service.snapshot.manifest["snapshot_id"] == snapshot_id:
+                    self._owners[task_id] = service
+                    return service
+            # After restart, restore historical source reads without spawning GPU/API work.
+            from copy import copy
+
+            from agent_rag.v2_snapshot import V2KnowledgeSnapshot
+
+            versions = self.registry / "versions"
+            for directory in sorted(versions.iterdir()):
+                if not directory.is_dir():
+                    continue
+                path = (directory / "snapshot").resolve()
+                if not path.is_relative_to(versions.resolve()):
+                    continue
+                try:
+                    saved = json.loads((path / "manifest.json").read_text(encoding="utf-8"))
+                except (OSError, ValueError):
+                    continue
+                if saved.get("snapshot_id") != snapshot_id:
+                    continue
+                snapshot = V2KnowledgeSnapshot(path)
+                frozen = manifest.get("snapshot", {})
+                if snapshot.assets != frozen.get("assets"):
+                    raise ValueError("SOURCE_SNAPSHOT_MISMATCH")
+                snapshot.manifest.update(
+                    rerank_mode=frozen.get("rerank_mode"),
+                    rerank_protocol=frozen.get("rerank_protocol"))
+                historical = copy(self._current)
+                historical.snapshot = snapshot
+                historical.snapshot_manifest = snapshot.manifest
+                historical.profile = manifest["retrieval_profile"]
+                historical.rerank_mode = manifest["rerank_mode"]
+                historical.config = manifest["config"]
+                historical.lock = threading.Lock()
+                historical.records = {
+                    key: value for key, value in self._current.records.items()
+                    if json.loads((self._current.root / key / "manifest.json").read_text(
+                        encoding="utf-8"))["snapshot_id"] == snapshot_id}
+                historical.tools, historical.controls = {}, {}
+                historical.jobs, historical.active_task_id = set(), None
+                self._services.append(historical)
+                self._owners[task_id] = historical
+                return historical
+            raise ValueError("SOURCE_SNAPSHOT_MISMATCH")
+
+    def get(self, task_id: str) -> dict[str, Any]:
+        return self._owner(task_id).get(task_id)
+
+    def bundle(self, task_id: str) -> dict[str, Any]:
+        return self._owner(task_id).bundle(task_id)
+
+    def tool(self, task_id: str) -> Any:
+        return self._owner(task_id).tool(task_id)
+
+    def verify(self, task_id: str, evidence_ids: list[str]) -> dict[str, Any]:
+        return self._owner(task_id).verify(task_id, evidence_ids)
+
+    def cancel_retrieval(self, task_id: str) -> dict[str, Any]:
+        return self._owner(task_id).cancel_retrieval(task_id)
+
+    def launch(self, task_id: str, node_url: str, token: str) -> None:
+        self._owner(task_id).launch(task_id, node_url, token)
+
+    def close(self) -> None:
+        with self._lock:
+            if self._closed:
+                return
+            self._closed = True
+            snapshots = [service.snapshot for service in self._services]
+            if self._candidate is not None:
+                snapshots.append(self._candidate)
+                self._candidate = None
+        seen = set()
+        for snapshot in snapshots:
+            if id(snapshot) not in seen:
+                _close_snapshot(snapshot)
+                seen.add(id(snapshot))
+
+
+def _close_service(service: Any) -> None:
+    if isinstance(service, _RegistryTaskService):
+        service.close()
+    else:
+        _close_snapshot(service.snapshot)
+
+
+def _build_service(stage: Any) -> TaskService | _RegistryTaskService:
     stage("asset_validation")
     snapshot_path = _snapshot_path()
     if not (snapshot_path / "manifest.json").exists():
@@ -85,14 +296,16 @@ def _build_service(stage: Any) -> TaskService:
         stage("service_build")
         task_root = Path(os.environ.get(
             "FINRISK_AGENT_TASK_ROOT", PROJECT_ROOT / "runtime/agent_rag/tasks"))
-        return TaskService(task_root, snapshot)
+        service = TaskService(task_root, snapshot)
+        registry = os.environ.get("FINRISK_AGENT_KB_REGISTRY")
+        return _RegistryTaskService(Path(registry), service) if registry else service
     except BaseException:
         _close_snapshot(snapshot)
         raise
 
 
 _initialization = ServiceInitialization(
-    _build_service, closer=lambda service: _close_snapshot(service.snapshot))
+    _build_service, closer=_close_service)
 
 
 def _requires_warmup() -> bool:
@@ -109,7 +322,10 @@ def get_service() -> TaskService:
     if not _requires_warmup():
         _initialization.request_warmup()
         return _initialization.wait_ready()
-    return _initialization.get_ready()
+    service = _initialization.get_ready()
+    if isinstance(service, _RegistryTaskService):
+        service.request_refresh()
+    return service
 
 
 Service = Annotated[TaskService, Depends(get_service)]
@@ -123,6 +339,7 @@ def agent_status() -> dict[str, Any]:
     manifest = getattr(snapshot, "manifest", {})
     return {
         **_initialization.status(),
+        **(service.registry_status() if isinstance(service, _RegistryTaskService) else {}),
         "default_execution_mode": config.get("execution_mode", "mock"),
         "live_enabled": os.environ.get("FINRISK_AGENT_ALLOW_LIVE") == "1",
         "retrieval_live_enabled": os.environ.get("FINRISK_AGENT_ALLOW_RETRIEVAL_LIVE") == "1",

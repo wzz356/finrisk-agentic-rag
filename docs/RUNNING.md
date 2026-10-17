@@ -44,7 +44,7 @@ V2代码完整保留，但**公共包不自带完整知识库和GPU资产**。�
 
 - 规范化`documents.jsonl`：`source_id/official_file_id/full_text/text_sha256/text_version`等字段。
 - 结构化单元`structured.jsonl`：`unit_id/file_id/text`、行为/主体/条件定位及关联信息。
-- 与这些单元完全对应的冻结BGE文档向量、元数据和模型指纹；本版本适配原实验65475个单元。
+- 与这些单元完全对应的冻结BGE文档向量、元数据和模型指纹；旧配置适配原实验65475个单元；增量版本必须显式声明incremental-v1及完整document_count，不能只改数量绕过资产校验。
 - 本地GPU Python环境、BGE指定模型revision、原Torch/Transformers版本及CUDA半精度配置。
 - 回放模式另需冻结查询向量、真实评分缓存和候选映射；只支持已有缓存对应的查询。
 
@@ -74,3 +74,7 @@ Python对外演示API和Node内部服务仅绑定`127.0.0.1`，启动脚本为�
 状态接口不加载重资产；V2需要warmup，readiness未就绪返回503。启动脚本跟踪本轮进程树，结束时关闭自己的进程；不会按端口杀别的窗口。Windows需允许本机进程查询。
 
 其他系统可按同一环境变量手动启动Python与Node；本次只验收Windows启动流程。
+
+## 增量知识更新与实验
+
+[知识更新说明](KNOWLEDGE_UPDATES.md)介绍候选隔离、不可变版本、current切换及回滚；[实验说明](EXPERIMENTS.md)介绍三组比较与首轮证据、耗时和费用的记录边界。两者都需另外提供兼容资产，不随默认合成演示自动运行。

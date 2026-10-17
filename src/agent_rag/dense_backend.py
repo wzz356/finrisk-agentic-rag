@@ -3,12 +3,14 @@
 from __future__ import annotations
 
 import argparse
+import ast
 import hashlib
 import json
 import math
 import os
 import queue
 import re
+import struct
 import subprocess
 import sys
 import threading
@@ -24,7 +26,8 @@ DOCUMENT_COUNT = 65475
 PROTOCOL_VERSION = 1
 _MAX_RESPONSE_BYTES = 1024 * 1024
 _MAX_DIAGNOSTIC_BYTES = 64 * 1024
-_DIAGNOSTIC_PHASES = {"worker_start", "runtime_import", "asset_validation", "index_load",
+_DIAGNOSTIC_PHASES = {"worker_start", "runtime_import_start", "runtime_import",
+                      "asset_validation", "index_load",
                       "model_load", "first_encoding", "worker_stop"}
 _DIAGNOSTIC_ERRORS = {"DENSE_STARTUP_FAILED", "DENSE_WORKER_ERROR", "DENSE_RESPONSE_TIMEOUT",
                       "DENSE_PROTOCOL_ERROR", "DENSE_RUNTIME_BINDING_MISMATCH",
@@ -67,6 +70,12 @@ def _is_sha(value: Any) -> bool:
     return isinstance(value, str) and _SHA.fullmatch(value) is not None
 
 
+def validate_startup_timeout_seconds(value: Any) -> None:
+    if value is not None and (type(value) not in (int, float)
+            or not math.isfinite(value) or not 0 < value <= 600):
+        raise ValueError("INVALID_DENSE_STARTUP_TIMEOUT")
+
+
 def _read_config(path: Path) -> dict:
     config = json.loads(Path(path).read_text(encoding="utf-8-sig"))
     if not isinstance(config, dict):
@@ -84,6 +93,11 @@ def _read_config(path: Path) -> dict:
             or not all(_is_sha(config.get(key)) for key in (
                 "index_sha256", "vector_meta_sha256"))):
         raise ValueError("INVALID_DENSE_CONFIG")
+    if "corpus_mode" in config or "document_count" in config:
+        if (config.get("corpus_mode") != "incremental-v1"
+                or type(config.get("document_count")) is not int
+                or config["document_count"] <= 0):
+            raise ValueError("INVALID_DENSE_CONFIG")
     config.setdefault("device", "cuda")
     config.setdefault("precision", "float16")
     for key, default in (("startup_timeout_seconds", 120), ("request_timeout_seconds", 20)):
@@ -204,6 +218,58 @@ def _read_jsonl(path: Path) -> list[dict]:
     return rows
 
 
+def _validate_index_rows(rows: list[dict], config: dict) -> None:
+    expected = (config["document_count"] if config.get("corpus_mode") == "incremental-v1"
+                else DOCUMENT_COUNT)
+    if (len(rows) != expected
+            or any(not isinstance(row.get("unit_id"), str) or not row["unit_id"]
+                   or not isinstance(row.get("text"), str) or not row["text"]
+                   or not isinstance(row.get("file_id"), str) for row in rows)
+            or len({row["unit_id"] for row in rows}) != len(rows)):
+        raise ValueError("INVALID_DENSE_INDEX")
+
+
+def _validate_vector_file(path: Path, meta: dict) -> int:
+    """Validate little-endian float32 NPY without a numerical runtime; return data offset."""
+    if _sha_file(path) != meta["npy_sha256"]:
+        raise ValueError("DENSE_VECTOR_SHA_MISMATCH")
+    with path.open("rb") as stream:
+        try:
+            magic = stream.read(8)
+            if magic[:6] != b"\x93NUMPY" or magic[6:] not in (b"\x01\x00", b"\x02\x00", b"\x03\x00"):
+                raise ValueError
+            length_size = 2 if magic[6] == 1 else 4
+            raw_length = stream.read(length_size)
+            if len(raw_length) != length_size:
+                raise ValueError
+            length = int.from_bytes(raw_length, "little")
+            if not 0 < length <= 65536:
+                raise ValueError
+            raw_header = stream.read(length)
+            if len(raw_header) != length or not raw_header.endswith(b"\n"):
+                raise ValueError
+            header = ast.literal_eval(raw_header.decode("utf-8" if magic[6] == 3 else "latin1"))
+            shape = header.get("shape") if isinstance(header, dict) else None
+            if (not isinstance(header, dict) or set(header) != {"descr", "fortran_order", "shape"}
+                    or header.get("descr") != "<f4" or header.get("fortran_order") is not False
+                    or not isinstance(shape, tuple) or len(shape) != 2
+                    or any(type(value) is not int or value <= 0 for value in shape)
+                    or list(shape) != meta["shape"] or shape[1] != 512):
+                raise ValueError
+            offset = stream.tell()
+            if path.stat().st_size != offset + shape[0] * shape[1] * 4:
+                raise ValueError
+        except (ValueError, TypeError, SyntaxError, UnicodeError, OverflowError):
+            raise ValueError("INVALID_DENSE_VECTOR_SHAPE") from None
+        unpack = struct.Struct("<512f")
+        for _ in range(shape[0]):
+            values = unpack.unpack(stream.read(unpack.size))
+            if (not all(math.isfinite(value) for value in values)
+                    or abs(math.sqrt(math.fsum(value * value for value in values)) - 1) > 2e-4):
+                raise ValueError("INVALID_DENSE_VECTOR_NORMALIZATION")
+    return offset
+
+
 def _validate_frozen_queries(path: Path, meta: dict) -> dict[str, dict]:
     queries = _read_jsonl(path)
     if len(queries) != 20:
@@ -232,7 +298,8 @@ def _validate_input(text: str, top_k: int) -> None:
 class ResidentDenseIndex:
     """Serialize JSONL requests to a single self-owned, hidden local worker."""
 
-    def __init__(self, config_path: Path) -> None:
+    def __init__(self, config_path: Path, *, startup_timeout_seconds: float | None = None) -> None:
+        validate_startup_timeout_seconds(startup_timeout_seconds)
         self.config_path = Path(config_path).resolve()
         self.config = _read_config(self.config_path)
         self._lock = threading.Lock()
@@ -262,7 +329,8 @@ class ResidentDenseIndex:
             self._stderr_reader = threading.Thread(target=self._read_stderr,
                 args=(self._process.stderr,), daemon=True, name="bge-worker-diagnostics")
             self._stderr_reader.start()
-            ready = self._receive(self.config["startup_timeout_seconds"])
+            ready = self._receive(self.config["startup_timeout_seconds"]
+                if startup_timeout_seconds is None else startup_timeout_seconds)
             if (not isinstance(ready, dict) or ready.get("event") != "ready"
                     or type(ready.get("protocol")) is not int
                     or ready["protocol"] != PROTOCOL_VERSION
@@ -270,9 +338,9 @@ class ResidentDenseIndex:
                 raise DenseBackendError("DENSE_STARTUP_FAILED")
             self._available = True
             _diagnostic("worker_start", (time.monotonic() - self._started) * 1000)
-        except Exception as error:
+        except BaseException as error:
             self._close_owned_process()
-            if isinstance(error, DenseBackendError):
+            if not isinstance(error, Exception) or isinstance(error, DenseBackendError):
                 raise
             raise DenseBackendError("DENSE_STARTUP_FAILED") from None
 
@@ -436,6 +504,7 @@ class _DenseWorker:
         os.environ["HF_HUB_OFFLINE"] = "1"
         os.environ["TRANSFORMERS_OFFLINE"] = "1"
         os.environ["HF_HUB_DISABLE_TELEMETRY"] = "1"
+        _diagnostic("runtime_import_start", (time.monotonic() - started) * 1000)
         import numpy as np
         import torch
         import transformers
@@ -452,12 +521,8 @@ class _DenseWorker:
         if _sha_file(index) != config["index_sha256"]:
             raise ValueError("DENSE_INDEX_SHA_MISMATCH")
         rows = _read_jsonl(index)
-        if (len(rows) != DOCUMENT_COUNT
-                or any(not isinstance(row.get("unit_id"), str) or not row["unit_id"]
-                       or not isinstance(row.get("text"), str) or not row["text"]
-                       or not isinstance(row.get("file_id"), str) for row in rows)
-                or len({row["unit_id"] for row in rows}) != len(rows)):
-            raise ValueError("INVALID_DENSE_INDEX")
+        _validate_index_rows(rows, config)
+        self.index_units = len(rows)
         meta = _checked_json(Path(config["vector_meta_path"]), config["vector_meta_sha256"])
         _validate_cache_metadata(meta, rows, "document")
         _validate_model_fingerprint(Path(config["model_path"]), meta["binding"]["model"])
@@ -545,7 +610,7 @@ class _DenseWorker:
                 "query_tokens": count, "truncated": False, "max_length": MAX_LENGTH,
                 "query_instruction": QUERY_INSTRUCTION, "pooling": "CLS", "normalization": "L2",
                 "device": self.config["device"], "precision": self.config["precision"],
-                "index_units": DOCUMENT_COUNT, "searched_units": len(self.unit_ids),
+                "index_units": self.index_units, "searched_units": len(self.unit_ids),
                 "external_retrieval_requests": 0}
         if frozen is not None:
             meta["query_id"] = frozen["query_id"]

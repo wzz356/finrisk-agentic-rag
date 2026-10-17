@@ -1,7 +1,8 @@
-﻿param(
+param(
     [string]$PythonPath = (Join-Path $PSScriptRoot '.agent-venv\Scripts\python.exe'),
     [string]$NodePath = 'node',
     [string]$SnapshotPath = (Join-Path $PSScriptRoot 'runtime\agent_rag\snapshot-v1'),
+    [string]$KnowledgeRegistry = '',
     [string]$TaskRoot = (Join-Path $PSScriptRoot 'runtime\agent_rag\tasks'),
     [string]$ServiceLogPath = (Join-Path $PSScriptRoot 'runtime\agent_rag\service-logs'),
     [int]$PythonPort = 8765,
@@ -140,6 +141,15 @@ function Wait-AgentRagReadiness {
 }
 
 if (-not (Test-Path -LiteralPath $PythonPath)) { throw '独立Python环境不存在，请先执行运行说明中的安装步骤。' }
+if ($KnowledgeRegistry) {
+    $registryPath = (Resolve-Path -LiteralPath $KnowledgeRegistry).Path
+    $SnapshotPath = & $PythonPath -c 'import sys; from pathlib import Path; sys.path.insert(0,sys.argv[1]); from agent_rag.knowledge_registry import current_snapshot; print(current_snapshot(Path(sys.argv[2])))' (Join-Path $PSScriptRoot 'src') $registryPath
+    if ($LASTEXITCODE -ne 0) { throw '知识库版本指针无效，请先完成发布或回滚。' }
+    $env:FINRISK_AGENT_KB_REGISTRY = $registryPath
+    $WarmupV2 = $true
+} else {
+    Remove-Item Env:FINRISK_AGENT_KB_REGISTRY -ErrorAction SilentlyContinue
+}
 if (-not (Test-Path -LiteralPath (Join-Path $SnapshotPath 'manifest.json'))) { throw '来源快照不存在，请先执行运行说明中的构建步骤。' }
 if (-not (Test-Path -LiteralPath (Join-Path $PSScriptRoot 'agent_harness\node_modules\@earendil-works\pi-agent-core'))) { throw 'Pi依赖未安装，请先执行npm ci。' }
 if (-not (Test-Path -LiteralPath (Join-Path $PSScriptRoot 'agent_harness\dist\src\server.js'))) { throw '运行层未编译，请先执行npm run build。' }
