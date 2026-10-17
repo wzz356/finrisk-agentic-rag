@@ -5,7 +5,7 @@ import json
 import math
 import time
 import uuid
-from collections import OrderedDict
+from collections import Counter, OrderedDict
 from pathlib import Path
 from typing import Any
 
@@ -80,6 +80,9 @@ class HybridV2Backend:
                     "top_k": top_k,
                     "snapshot": self.snapshot.manifest["snapshot_id"],
                     "profile": PROFILE,
+                    "rerank_protocol": getattr(self.reranker, "protocol", "quote-copy-v1"),
+                    "rules_sha256": getattr(self.reranker, "rules_sha256", None),
+                    "protocol_fingerprint": getattr(self.reranker, "protocol_fingerprint", None),
                 }
             )
         )
@@ -136,7 +139,13 @@ class HybridV2Backend:
             raise ValueError("DENSE_UNIT_MISMATCH")
         fused = rrf([sparse, dense])
         packets = [self.units[row["unit_id"]] for row in fused]
-        result = self.reranker.score_query(text, packets, control)
+        binding = {"snapshot_id": self.snapshot.manifest["snapshot_id"],
+                   "index_sha256": self.snapshot.manifest["index_sha256"],
+                   "retrieval_profile": PROFILE}
+        if getattr(self.reranker, "supports_query_binding", False):
+            result = self.reranker.score_query(text, packets, control, query_binding=binding)
+        else:
+            result = self.reranker.score_query(text, packets, control)
         scores = result["scores"]
         expected = {unit["unit_id"] for unit in packets}
         scored = {row["unit_id"] for row in scores}
@@ -152,6 +161,36 @@ class HybridV2Backend:
             or (result["complete"] and scored != expected)
         ):
             raise ValueError("RERANK_BINDING_MISMATCH")
+        missing = expected - scored
+        error_rows = result.get("errors", [])
+        if (not isinstance(error_rows, list)
+                or any(not isinstance(e, dict) or e.get("unit_id") not in missing for e in error_rows)
+                or len({e["unit_id"] for e in error_rows}) != len(error_rows)):
+            raise ValueError("RERANK_BINDING_MISMATCH")
+        error_by_unit = {e["unit_id"]: e for e in error_rows}
+        failure_counts = Counter()
+        for uid in missing:
+            code = error_by_unit.get(uid, {}).get("code", "UNCLASSIFIED_RERANK_FAILURE")
+            if not isinstance(code, str) or not code or len(code) > 64 or any(c not in "ABCDEFGHIJKLMNOPQRSTUVWXYZ_0123456789" for c in code):
+                raise ValueError("RERANK_BINDING_MISMATCH")
+            failure_counts[code] += 1
+        coverage = {
+            "schema_version": "finrisk-ranking-coverage/1.0",
+            "expected_units": len(expected), "scored_units": len(scored), "failed_units": len(missing),
+            "ranking_complete": bool(result["complete"]),
+            "topk_scope": "full_pool" if result["complete"] else "scored_subset",
+            "attempts_exhausted": bool(missing) and all(
+                error_by_unit.get(uid, {}).get("terminal") is True
+                and type(error_by_unit[uid].get("remaining_attempts")) is int
+                and error_by_unit[uid]["remaining_attempts"] == 0 for uid in missing
+            ),
+            "failure_counts": dict(sorted(failure_counts.items())),
+            "failed_unit_ids": sorted(missing)[:3],
+            "expected_set_sha256": text_hash(canonical_json(sorted(expected))),
+            "scored_set_sha256": text_hash(canonical_json(sorted(scored))),
+            "failed_set_sha256": text_hash(canonical_json(sorted(missing))),
+            "rerank_protocol": getattr(self.reranker, "protocol", "quote-copy-v1"),
+        }
         ranked = [
             {**row, "rank": rank}
             for rank, row in enumerate(
@@ -186,6 +225,10 @@ class HybridV2Backend:
             },
             "top20": files[:20],
             "complete": result["complete"],
+            "expected_unit_ids": sorted(expected),
+            "scored_unit_ids": sorted(scored),
+            "failed_unit_ids": sorted(missing),
+            "ranking_coverage": coverage,
         }
         meta = {
             **result.get("meta", {}),
@@ -215,6 +258,7 @@ class HybridV2Backend:
             "meta": meta,
             "audit": audit,
             "errors": result.get("errors", []),
+            "ranking_coverage": coverage,
         }
         if result["complete"]:
             self.cache[key] = copy.deepcopy(value)

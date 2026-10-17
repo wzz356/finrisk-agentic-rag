@@ -1,4 +1,4 @@
-import { readFileSync } from "node:fs";
+import { readFileSync, rmSync } from "node:fs";
 import { Agent, type AgentTool } from "@earendil-works/pi-agent-core";
 import { getCurrentTools, getToolStateChanges, toToolDeclaration } from "@earendil-works/pi-ai";
 import { Type, type TSchema } from "typebox";
@@ -20,9 +20,25 @@ import { checkCriteriaBinding, criteriaByteHash } from "./criteria.js";
 import { mechanismQueries, sourceReadPlan } from "./retrieval_plan.js";
 import { modelBudget, progressSnapshot } from "./progress.js";
 import { classifyReviewReply } from "./review_reply.js";
+import { acceptEvaluation, evaluationInputAlias, evaluationProtocol, evaluationProtocolHash, evaluationQuery, evaluationRoute, evaluationSystemPrompt } from "./evaluation.js";
+import { parseModelJson, outputDiagnostic, evaluationFormatRepairable } from "./model_json.js";
+import { onlyPartialRerankGaps, retrievalAssessment } from "./retrieval_quality.js";
 
 export async function runTask(task: TaskInput, bridge: ToolBridge, script?: ScriptStep[]): Promise<{ report: JsonObject; events: JsonObject[] }> {
   const config = { ...defaults, ...task.config };
+  const evaluationEnabled = Boolean(config.eval_mode || config.evaluation_arm);
+  const evaluationCitations = evaluationEnabled && config.retrieval_profile === "v2-hybrid-flash-v1";
+  if (config.retrieval_reliability !== undefined && typeof config.retrieval_reliability !== "boolean") throw new Error("INVALID_RETRIEVAL_RELIABILITY_CONFIG");
+  if (config.retrieval_reliability && config.retrieval_profile !== "v2-hybrid-flash-v1") throw new Error("RETRIEVAL_RELIABILITY_REQUIRES_V2");
+  const formatRepairLimit = config.evaluation_format_repair_limit === undefined ? 0 : config.evaluation_format_repair_limit;
+  if (formatRepairLimit !== 0 && formatRepairLimit !== 1) throw new Error("INVALID_EVALUATION_FORMAT_REPAIR_LIMIT");
+  if (formatRepairLimit && (config.eval_mode === "one_shot_rag" || config.evaluation_arm === "R1")) throw new Error("ONE_SHOT_FORMAT_REPAIR_FORBIDDEN");
+  if (formatRepairLimit && config.eval_mode !== "adaptive_rag") throw new Error("EVALUATION_FORMAT_REPAIR_REQUIRES_ADAPTIVE");
+  if (config.evaluation_arm && !["R1", "R2", "A"].includes(config.evaluation_arm)) throw new Error("INVALID_EVALUATION_ARM");
+  if (config.eval_mode && !["one_shot_rag", "adaptive_rag"].includes(config.eval_mode)) throw new Error("INVALID_EVALUATION_MODE");
+  if (evaluationEnabled && process.env.FINRISK_AGENT_ALLOW_EVALUATION !== "1") throw new Error("EVALUATION_NOT_ADMITTED");
+  if (config.eval_mode && config.engine !== "controlled_agent") throw new Error("INVALID_EVALUATION_ENGINE");
+  const firstQuery = config.eval_mode ? evaluationQuery(task) : undefined;
   if (config.execution_mode !== "mock" && process.env.FINRISK_AGENT_ALLOW_LIVE !== "1") throw new Error("LIVE_PROFILE_NOT_ADMITTED:需要显式开启真实调用");
   if (config.execution_mode === "live" && !["live-deepseek-flash-bm25-v1", "live-deepseek-flash-v2-v1"].includes(config.profile_id)) throw new Error("LIVE_PROFILE_NOT_ADMITTED:模型profile不匹配");
   if (config.profile_id === 'live-deepseek-flash-v2-v1' && !process.env.FINRISK_AGENT_TRIAL_LEDGER) throw new Error('MODEL_TRIAL_LEDGER_REQUIRED');
@@ -34,8 +50,9 @@ export async function runTask(task: TaskInput, bridge: ToolBridge, script?: Scri
   if (config.max_queries_per_search > toolSchemas.search_cases.properties.queries.maxItems) throw new Error('TOOL_CONTRACT_CONFIG_MISMATCH');
   toolSchemas.search_cases.properties.queries.maxItems = config.max_queries_per_search;
   const validateArgs = (name: string, args: unknown) => validateToolArguments(name, args, toolSchemas);
-  const systemPrompt = readFileSync(`${root}/configs/agent_rag/system-prompt.txt`, "utf8");
+  const systemPrompt = evaluationCitations ? evaluationSystemPrompt : readFileSync(`${root}/configs/agent_rag/system-prompt.txt`, "utf8");
   const expected = task.execution_contract;
+  if (evaluationEnabled && (expected?.evaluation_protocol_sha256 && expected.evaluation_protocol_sha256 !== evaluationProtocolHash || config.execution_mode === "live" && !expected?.evaluation_protocol_sha256)) throw new Error("EXECUTION_CONTRACT_MISMATCH:evaluation_protocol");
   if (config.execution_mode === "live" && !expected) throw new Error("EXECUTION_CONTRACT_BINDING_REQUIRED");
   if (expected && (expected.model_wire_sha256 !== wireSchemaHash || expected.criteria_sha256 !== criteriaByteHash || expected.prompt_sha256 !== hash(systemPrompt))) throw new Error("EXECUTION_CONTRACT_MISMATCH");
   if ((expected?.tool_contract_sha256 && expected.tool_contract_sha256 !== hash(canonical(toolSchemas)))
@@ -50,8 +67,26 @@ export async function runTask(task: TaskInput, bridge: ToolBridge, script?: Scri
     offset = segment.end;
   }
   if (offset !== chars.length) throw new Error("INPUT_SEGMENT_COVERAGE_MISMATCH");
+  if (evaluationCitations && (typeof task.snapshot.snapshot_id !== "string" || !task.snapshot.snapshot_id.trim())) throw new Error("CITATION_SNAPSHOT_REQUIRED");
+  if (evaluationCitations && config.execution_mode === "live") {
+    const trial = activeTrialBudget(config.request_admission_policy);
+    if (!trial) throw new Error("MODEL_TRIAL_LEDGER_REQUIRED");
+    if (config.retrieval_reliability !== true) throw new Error("RETRIEVAL_RELIABILITY_BINDING_REQUIRED");
+    trial.initializeEmpty();
+  }
   const budget = new Budget(config);
   const state = new TaskState(task.input, config.no_progress_limit);
+  state.evaluationCitations = evaluationCitations;
+  state.retrievalReliability = config.retrieval_reliability === true;
+  if (state.retrievalReliability) {
+    const protocol = task.snapshot.rerank_protocol ?? task.snapshot.backend?.rerank_protocol ?? (config.execution_mode === "live" ? "quote-copy-v1" : undefined);
+    if (protocol !== undefined && !["quote-copy-v1", "span-ref-v2"].includes(protocol)) throw new Error("RERANK_PROTOCOL_NOT_READY");
+    state.expectedRerankProtocol = protocol;
+  }
+  if (evaluationCitations) state.citationSnapshotId = task.snapshot.snapshot_id;
+  let evaluationFirstPending = Boolean(config.eval_mode);
+  let evaluationReport: JsonObject | undefined;
+  if (evaluationFirstPending) state.protocolVersion = "finrisk-model-wire/1.2";
   const trace = new Trace(task.task_dir);
   let currentAction = "material_analysis";
   const emitProgress = (action = currentAction, report?: JsonObject) => {
@@ -67,6 +102,7 @@ export async function runTask(task: TaskInput, bridge: ToolBridge, script?: Scri
   trace.event("task.started", { task_id: task.input.task_id, snapshot: task.snapshot, config });
   emitProgress();
   let repairInstruction = "";
+  let pendingEvaluationRepair: { errorIndex: number; message: string; diagnostic: JsonObject; attempt: number } | undefined;
   let toolFormatInstruction = "";
   let forceFinal = false;
   let admissionStopped = false;
@@ -129,19 +165,33 @@ export async function runTask(task: TaskInput, bridge: ToolBridge, script?: Scri
     finally { clearTimeout(timer); }
   };
   let retrievalAccounting: JsonObject | undefined;
+  let retrievalCircuitOpen = false;
+  const observeRetrievalHealth = (meta: JsonObject) => {
+    if (!evaluationEnabled || meta.transport_circuit_open !== true) return;
+    const newlyOpen = !retrievalCircuitOpen;
+    retrievalCircuitOpen = true; state.stopReason = "tool_failure";
+    retrievalAccounting = { ...retrievalAccounting, transport_circuit_open: true, transport_failure_streak: meta.transport_failure_streak, transport_diagnostic: meta.transport_diagnostic ?? null };
+    if (newlyOpen) trace.event("retrieval.circuit_open", retrievalAccounting);
+  };
   const cancelBackend = async () => {
     if (config.retrieval_profile !== 'v2-hybrid-flash-v1' || !bridge.cancelRetrieval) return;
     try {
-      retrievalAccounting = await bridge.cancelRetrieval();
+      retrievalAccounting = { ...retrievalAccounting, ...await bridge.cancelRetrieval() };
+      observeRetrievalHealth(retrievalAccounting);
+      if (retrievalCircuitOpen) retrievalAccounting.transport_circuit_open = true;
       const count = retrievalAccounting.external_retrieval_requests;
       if (Number.isSafeInteger(count) && count >= budget.externalRequests) budget.recordQueries(0, count - budget.externalRequests);
       trace.event('retrieval.cancelled', retrievalAccounting);
     } catch (error) {
-      retrievalAccounting = { usage_known: false, cancellation_confirmed: false };
+      retrievalAccounting = { ...retrievalAccounting, usage_known: false, cancellation_confirmed: false };
       trace.event('retrieval.cancel_failed', { reason: String((error as Error).message).split(':', 1)[0] });
     }
   };
   const execute = async (name: string, id: string, params: JsonObject) => {
+    if (evaluationEnabled) {
+      const origin = id.startsWith("evaluation:") ? "shared_first_prefetch" : id.startsWith("final:") ? "final_read_guard" : id.startsWith("fixed:") ? "fixed_pipeline" : "model_native_call";
+      trace.event(origin === "model_native_call" ? "evaluation.model_tool" : "evaluation.program_tool", { name, id, params, origin });
+    }
     emitProgress(name);
     let attempts = 0;
     const timeout = () => Math.min(budget.remainingMs(), config.tool_request_timeout_seconds * 1000);
@@ -150,25 +200,30 @@ export async function runTask(task: TaskInput, bridge: ToolBridge, script?: Scri
     const closedRows = closedQueries.map((q, index) => {
       const prior = [...state.searches].reverse().find(previous => state.queryKey(previous) === state.queryKey(q));
       const done = Boolean(prior?.complete && ["ok", "empty"].includes(prior.status));
-      return { ...q, query_id: `BLOCKED${index + 1}`, status: done ? prior!.status : "error", complete: done, candidates: [], no_progress_blocked: true, prior_completed_query: done, error: done ? null : { code: "GROUP_NO_PROGRESS" } };
+      return { ...(done ? prior : {}), ...q, query_id: `BLOCKED${index + 1}`, status: done ? prior!.status : "error", complete: done, candidates: [], no_progress_blocked: true, prior_completed_query: done, error: done ? null : { code: "GROUP_NO_PROGRESS" } };
     });
     while (true) {
       const limit = budget.remainingQueries();
       let accountedQueries = false;
       try {
         const response = name === "search_cases" && !activeParams.queries.length ? { schema_version: "finrisk-tools/1.0", status: "empty", data: { queries: [] }, meta: { snapshot_id: task.snapshot.snapshot_id, backend_query_attempts: 0, cache_hits: 0, external_retrieval_requests: 0 }, error: null } as any : await bounded(bridge.call(name, activeParams, limit, timeout()), timeout());
-        validateProgram(response, "tool-envelope");
-        if (!["finrisk-tools/1.0", "finrisk-tools/1.1"].includes(response.schema_version) || response.meta.snapshot_id !== task.snapshot.snapshot_id) throw new Error("TOOL_SNAPSHOT_OR_SCHEMA_MISMATCH");
+        try {
+          validateProgram(response, "tool-envelope");
+          if (!["finrisk-tools/1.0", "finrisk-tools/1.1"].includes(response.schema_version) || response.meta.snapshot_id !== task.snapshot.snapshot_id) throw new Error("TOOL_SNAPSHOT_OR_SCHEMA_MISMATCH");
+          if (name === "search_cases" && !Array.isArray(response.data?.queries) && response.status !== "error") throw new Error("TOOL_SEARCH_RESULT_MISSING");
+        } catch (error) { state.protocolInvalid = true; state.validationErrors.push(String((error as Error).message)); throw error; }
         accountedQueries = true;
         budget.recordQueries(response.meta.backend_query_attempts, response.meta.external_retrieval_requests);
+        if (name === "search_cases") observeRetrievalHealth(response.meta);
         if (name === "search_cases" && closedRows.length) {
           response.data ??= { queries: [] }; response.data.queries ??= [];
           response.data.queries = [...closedRows, ...response.data.queries];
           response.meta.no_progress_blocked_queries = closedRows.length;
           if (closedRows.some(row => !row.complete)) response.status = "partial";
         }
-        if (name === "search_cases" && !response.data?.queries) response.data = { queries: activeParams.queries.map((q: JsonObject) => ({ ...q, status: "error", complete: false, candidates: [] })) };
-        state.acceptTool(name, params, response, id);
+        if (name === "search_cases" && !response.data?.queries) response.data = { queries: activeParams.queries.map((q: JsonObject, index: number) => ({ ...q, query_id: `LOCAL:${id}:${index + 1}`, status: "error", complete: false, candidates: [], error: { code: response.error?.code ?? "TOOL_SEARCH_FAILED" } })) };
+        try { state.acceptTool(name, params, response, id); }
+        catch (error) { state.protocolInvalid = true; state.validationErrors.push(String((error as Error).message)); throw error; }
         if (name === "read_source" && readPreviews.has(canonical(params))) {
           const preview = readPreviews.get(canonical(params))!; readPreviews.delete(canonical(params));
           const sameWindow = canonical(response.data) === canonical(preview.data);
@@ -181,7 +236,7 @@ export async function runTask(task: TaskInput, bridge: ToolBridge, script?: Scri
         }
         trace.event("tool.result", { id, name, params, response });
         emitProgress("condition_comparison");
-        return { content: [{ type: "text" as const, text: JSON.stringify(response) }], details: response, isError: response.status === "error", terminate: budget.remainingMs() <= 0 };
+        return { content: [{ type: "text" as const, text: JSON.stringify(response) }], details: response, isError: response.status === "error", terminate: retrievalCircuitOpen || budget.remainingMs() <= 0 };
       } catch (error) {
         const reason = String((error as Error).message);
         if (name === 'search_cases') await cancelBackend();
@@ -189,12 +244,12 @@ export async function runTask(task: TaskInput, bridge: ToolBridge, script?: Scri
         if (name === "search_cases" && !accountedQueries) budget.recordQueries(Math.min(activeParams.queries.length, limit));
         trace.event("tool.failure", { id, name, reason, query_usage_unknown: name === "search_cases" });
         const retryable = /TOOL_TRANSPORT_HTTP_50[234]|fetch failed|TOOL_TIMEOUT|TimeoutError/.test(reason);
-        if (retryable && attempts < config.max_tool_transport_retries && budget.remainingMs() > 100 && (name !== "search_cases" || budget.remainingQueries() >= activeParams.queries.length)) {
+        if (!retrievalCircuitOpen && retryable && attempts < config.max_tool_transport_retries && budget.remainingMs() > 100 && (name !== "search_cases" || budget.remainingQueries() >= activeParams.queries.length)) {
           try { budget.chargeTool(`${id}:retry:${attempts + 1}`, name); attempts++; continue; }
           catch { state.stopReason = "budget_exhausted"; forceFinal = true; }
         }
         const response = { schema_version: "finrisk-tools/1.0", status: "error", data: null, meta: { snapshot_id: task.snapshot.snapshot_id }, error: { code: reason, retryable: false } };
-        if (name === "search_cases") state.acceptTool(name, params, { ...response, data: { queries: [...closedRows, ...activeParams.queries.map((q: JsonObject) => ({ ...q, status: "error", complete: false, candidates: [], error: { code: reason } }))] } } as any);
+        if (name === "search_cases") state.acceptTool(name, params, { ...response, data: { queries: [...closedRows, ...activeParams.queries.map((q: JsonObject, index: number) => ({ ...q, query_id: `LOCAL:${id}:${index + 1}`, status: "error", complete: false, candidates: [], error: { code: reason } }))] } } as any);
         state.stopReason = budget.remainingMs() <= 0 ? "deadline_exceeded" : state.stopReason === "budget_exhausted" ? "budget_exhausted" : "tool_failure";
         forceFinal = true;
         emitProgress("condition_comparison");
@@ -203,6 +258,30 @@ export async function runTask(task: TaskInput, bridge: ToolBridge, script?: Scri
     }
   };
   const tools: AgentTool[] = Object.keys(toolSchemas).map(name => ({ name, label: name, description: ({ search_cases: "查询冻结处罚原文，返回真实来源、排名和引文，不输出违规判断。", read_source: "读取本任务输入或注册处罚来源的限定上下文。", get_risk_definition: "读取官方风险名称与定义；不接受自创同义词。" } as Record<string, string>)[name]!, parameters: Type.Unsafe(toolSchemas[name] as TSchema), executionMode: "sequential" as const, replay: "safe" as const, execute: (id: string, params: unknown) => execute(name, actionKeys.get(id) ?? id, params as JsonObject) }));
+  const sourceReadSchedule = (queries: JsonObject[], phase: string) => {
+    const dynamic = queries.some(q => (q.candidates ?? []).some((c: JsonObject) => c.required_evidence_ids !== undefined));
+    // V1 保留一次性多样性排序；V2 每次按真实窗口覆盖重算下一个锚点。
+    const planned = sourceReadPlan(queries, dynamic ? 1 : 3, e => candidateRead(e, state));
+    const attempted = new Set<string>(); const skipped = new Set<string>();
+    const key = (e: JsonObject) => canonical([e.source_id, e.evidence_id]);
+    let logicalReads = 0;
+    return {
+      planned,
+      next: (index: number) => dynamic ? sourceReadPlan(queries, 1, e => {
+        const covered = candidateRead(e, state);
+        if (covered && !skipped.has(key(e))) {
+          skipped.add(key(e));
+          trace.event("retrieval.read_skipped", { phase, source_id: e.source_id, anchor_evidence_id: e.evidence_id, reason: "already_covered" });
+        }
+        return covered || attempted.has(key(e));
+      })[0] : planned[index],
+      attempt: (candidate: JsonObject) => {
+        attempted.add(key(candidate.evidence[0])); logicalReads++;
+        trace.event("retrieval.read_selected", { phase, source_id: candidate.source_id, anchor_evidence_id: candidate.evidence[0].evidence_id, logical_read: logicalReads, max_logical_reads: 3 });
+      },
+      end: (reason: string) => trace.event("retrieval.read_phase_ended", { phase, logical_reads: logicalReads, reason }),
+    };
+  };
   const fixedRetrieval = async () => {
     if (state.protocolVersion === "finrisk-model-wire/1.2" && !state.points.length) return;
     const points = state.points.length ? state.points : task.input.segments.filter(s => s.text.trim()).map(s => ({ input_refs: [{ segment_id: s.segment_id, quote: Array.from(s.text).slice(0, 500).join(""), occurrence: 1 }], mechanism: Array.from(s.text).slice(0, 250).join(""), risk_point_id: undefined }));
@@ -213,43 +292,69 @@ export async function runTask(task: TaskInput, bridge: ToolBridge, script?: Scri
       try { budget.chargeTool(`fixed:search:${offset}`, "search_cases"); }
       catch { state.stopReason = "budget_exhausted"; break; }
       await execute("search_cases", `fixed:search:${offset}`, { queries: batch, top_k: 5, filters: {} });
+      if (retrievalCircuitOpen) return;
     }
-    const planned = sourceReadPlan(state.searches, 3, e => candidateRead(e, state));
-    trace.event("retrieval.read_plan", { sources: planned.map(c => c.source_id), selection: "point_coverage_then_exact_fact_text_diversity", event_deduplication_verified: false });
-    for (const [index, candidate] of planned.entries()) {
-      if (candidate.required_evidence_ids && candidateRead(candidate.evidence[0], state)) continue;
-      if (budget.remainingMs() <= 0) break;
-      const anchor = candidate.evidence[0];
-      const params = { source_id: candidate.source_id, anchor_evidence_id: anchor.evidence_id, max_chars: 1000 };
-      if (!await finalReadFits(params)) { trace.event("retrieval.read_omitted", { source_id: candidate.source_id, reason: "reserved_final_context", remaining_candidates_not_assessed: true }); break; }
-      try { budget.chargeTool(`fixed:read:${index}`, "read_source"); }
-      catch { state.stopReason = "budget_exhausted"; break; }
-      const read = await execute("read_source", `fixed:read:${index}`, params);
-      const fetched = (read.details as JsonObject).data?.evidence;
-      if (fetched && state.evidence.has(fetched.evidence_id)) state.evidence.get(fetched.evidence_id)!.presented_in_fixed_context = true;
-    }
+    const schedule = sourceReadSchedule(state.searches, "fixed");
+    trace.event("retrieval.read_plan", { sources: schedule.planned.map(c => c.source_id), selection: "point_coverage_then_exact_fact_text_diversity", event_deduplication_verified: false });
+    let endReason = "read_limit";
+    try {
+      for (let index = 0; index < 3; index++) {
+        if (budget.remainingMs() <= 0) { state.stopReason = "deadline_exceeded"; endReason = "deadline_exceeded"; break; }
+        const candidate = schedule.next(index);
+        if (!candidate) { endReason = "no_unattempted_anchors"; break; }
+        const anchor = candidate.evidence[0];
+        const params = { source_id: candidate.source_id, anchor_evidence_id: anchor.evidence_id, max_chars: 1000 };
+        if (!await finalReadFits(params)) { endReason = "reserved_final_context"; trace.event("retrieval.read_omitted", { source_id: candidate.source_id, reason: endReason, remaining_candidates_not_assessed: true }); break; }
+        try { budget.chargeTool(`fixed:read:${index}`, "read_source"); }
+        catch { state.stopReason = "budget_exhausted"; endReason = "tool_budget"; break; }
+        schedule.attempt(candidate);
+        const read = await execute("read_source", `fixed:read:${index}`, params);
+        const fetched = (read.details as JsonObject).data?.evidence;
+        if (fetched && state.evidence.has(fetched.evidence_id)) state.evidence.get(fetched.evidence_id)!.presented_in_fixed_context = true;
+        if (read.terminate) { endReason = retrievalCircuitOpen ? "retrieval_circuit_open" : "deadline_exceeded"; break; }
+      }
+    } finally { schedule.end(endReason); }
   };
   const ensureFinalReads = async () => {
     if (finalReadsChecked || config.engine !== "controlled_agent" || state.protocolVersion !== "finrisk-model-wire/1.2") return;
     finalReadsChecked = true;
     const unread = state.searches.filter(q => q.candidates?.length && q.candidates.every((c: JsonObject) => !candidateBundleRead(c, state)));
-    for (const [index, candidate] of sourceReadPlan(unread, 3, e => candidateRead(e, state)).entries()) {
-      if (candidate.required_evidence_ids && candidateRead(candidate.evidence[0], state)) continue;
-      if (budget.remainingMs() <= 0) { state.stopReason = "deadline_exceeded"; break; }
-      const params = { source_id: candidate.source_id, anchor_evidence_id: candidate.evidence[0].evidence_id, max_chars: 1000 };
-      if (!await finalReadFits(params)) { state.stopReason = "context_capacity_reached"; trace.event("retrieval.read_omitted", { source_id: candidate.source_id, reason: "reserved_final_context", remaining_candidates_not_assessed: true }); break; }
-      const id = `final:read:${index}`;
-      try { budget.chargeTool(id, "read_source"); }
-      catch { state.stopReason = "budget_exhausted"; trace.event("retrieval.read_omitted", { source_id: candidate.source_id, reason: "tool_budget", remaining_candidates_not_assessed: true }); break; }
-      trace.event("retrieval.final_read_guard", { source_id: candidate.source_id, anchor_evidence_id: params.anchor_evidence_id });
-      const read = await execute("read_source", id, params);
-      if (read.isError && !["budget_exhausted", "deadline_exceeded", "context_capacity_reached"].includes(state.stopReason)) state.stopReason = "tool_failure";
-    }
+    const schedule = sourceReadSchedule(unread, "final");
+    let endReason = "read_limit";
+    try {
+      for (let index = 0; index < 3; index++) {
+        if (budget.remainingMs() <= 0) { state.stopReason = "deadline_exceeded"; endReason = "deadline_exceeded"; break; }
+        const candidate = schedule.next(index);
+        if (!candidate) { endReason = "no_unattempted_anchors"; break; }
+        const params = { source_id: candidate.source_id, anchor_evidence_id: candidate.evidence[0].evidence_id, max_chars: 1000 };
+        if (!await finalReadFits(params)) { state.stopReason = "context_capacity_reached"; endReason = "reserved_final_context"; trace.event("retrieval.read_omitted", { source_id: candidate.source_id, reason: endReason, remaining_candidates_not_assessed: true }); break; }
+        const id = `final:read:${index}`;
+        try { budget.chargeTool(id, "read_source"); }
+        catch { state.stopReason = "budget_exhausted"; endReason = "tool_budget"; trace.event("retrieval.read_omitted", { source_id: candidate.source_id, reason: endReason, remaining_candidates_not_assessed: true }); break; }
+        schedule.attempt(candidate);
+        trace.event("retrieval.final_read_guard", { source_id: candidate.source_id, anchor_evidence_id: params.anchor_evidence_id });
+        const read = await execute("read_source", id, params);
+        if (read.isError && !["budget_exhausted", "deadline_exceeded", "context_capacity_reached"].includes(state.stopReason)) state.stopReason = "tool_failure";
+        if (read.terminate) { endReason = retrievalCircuitOpen ? "retrieval_circuit_open" : "deadline_exceeded"; break; }
+      }
+    } finally { schedule.end(endReason); }
     if (state.stopReason === "evidence_sufficient" && unread.some(q => q.candidates.every((c: JsonObject) => !candidateBundleRead(c, state)))) state.stopReason = "case_read_incomplete";
   };
-  const invalid = (error: unknown) => {
-    const message = String((error as Error).message); state.validationErrors.push(message);
-    trace.event("output.rejected", { phase: state.phase, error: message });
+  const invalid = (error: unknown, text = "") => {
+    const message = String((error as Error).message);
+    const errorIndex = state.validationErrors.push(message) - 1;
+    const diagnostic = outputDiagnostic(error, text);
+    trace.event("output.rejected", { phase: state.phase, error: message, ...diagnostic });
+    if (evaluationFirstPending) {
+      if (evaluationFormatRepairable(error) && state.repairs < formatRepairLimit && state.repairs + state.toolFormatCorrections < config.max_json_repairs_per_task && Number(budget.summary().model_request_units) < config.max_model_requests - 1 && budget.remainingMs() > 0) {
+        state.repairs++;
+        pendingEvaluationRepair = { errorIndex, message, diagnostic, attempt: state.repairs };
+        repairInstruction = `上一回复格式校验失败：${diagnostic.code}；位置=${diagnostic.position ?? "未定位"}。重新提交同一evaluation_first Schema的完整JSON；保留当前输入与已核读证据，不调用工具，不新增事实。continuation与points同级。所有条件与缺口仍须通过校验。`;
+        trace.event("output.format_repair", { attempt: state.repairs, ...diagnostic, additional_retrieval: false });
+        return { action: "continue" as const };
+      }
+      state.protocolInvalid = true; state.stopReason = "invalid_output"; return { action: "end" as const };
+    }
     if (state.repairs + state.toolFormatCorrections < config.max_json_repairs_per_task && Number(budget.summary().model_request_units) < config.max_model_requests && budget.remainingMs() > 0) {
       state.repairs++; if (state.phase !== "analyzing") state.phase = "finalizing";
       repairInstruction = `上一输出不符合协议：${message}。请只修复本阶段JSON，保留已知事实，不调用新工具。`;
@@ -280,9 +385,16 @@ export async function runTask(task: TaskInput, bridge: ToolBridge, script?: Scri
     initialState: { model: gateway.model, systemPrompt, tools: [], thinkingLevel: "off" },
     streamFn: gateway.streamFn, toolExecution: "sequential",
     prepareRequest: async ({ context }) => {
+      if (retrievalCircuitOpen) throw new Error("RETRIEVAL_CIRCUIT_OPEN");
       state.runtimeBudget = modelBudget(budget);
+      // This is a shared experimental prompt value; Budget still enforces actual elapsed time.
+      if (evaluationFirstPending) state.runtimeBudget.seconds_remaining = config.task_deadline_seconds;
       state.repairing = Boolean(repairInstruction);
       const assembleStage = async () => {
+        if (evaluationFirstPending) {
+          const stage = { role: "system", content: `<runtime_stage>${repairInstruction ? `${repairInstruction}\n` : ""}${evaluationProtocol(task)}</runtime_stage>`, timestamp: Date.now() };
+          return { ...await projectContext(context.messages, state, [stage]), available: [] as AgentTool[] };
+        }
         const base = buildContext(context.messages, state, config, [], { pruneByCharacters: !usePayloadCount });
         const available = state.phase === "reviewing" && !repairInstruction && config.engine === "controlled_agent" ? tools : [];
         const changes = getToolStateChanges(getCurrentTools(base), available.map(toToolDeclaration));
@@ -317,6 +429,7 @@ export async function runTask(task: TaskInput, bridge: ToolBridge, script?: Scri
     },
     beforeToolCall: async ({ toolCall, args }) => {
       const params = args as JsonObject;
+      if (config.eval_mode && toolCall.name === "read_source" && params.source_id === evaluationInputAlias) params.source_id = task.input.source_id;
       if (invalidArgumentErrors.has(toolCall.id)) return { block: true, reason: invalidArgumentErrors.get(toolCall.id)! };
       const actionKey = actionKeys.get(toolCall.id);
       if (!actionKey || invalidNativeIds.has(toolCall.id) || blocked.has(actionKey) || !budget.toolAdmitted(actionKey) || state.phase !== "reviewing" || repairInstruction || budget.remainingMs() <= 0) return { block: true, reason: "工具已被阶段、重复ID或全局预算阻止；应提交终稿。", terminate: budget.remainingMs() <= 0 };
@@ -350,11 +463,45 @@ export async function runTask(task: TaskInput, bridge: ToolBridge, script?: Scri
           const reply = classifyReviewReply(text, false);
           if (reply.type === "tool_intent") return correctToolFormat(reply.name);
         }
-        const raw = JSON.parse(text);
+        const raw = parseModelJson(text);
+        if (evaluationFirstPending) {
+          const continuation = acceptEvaluation(raw, state, task);
+          if (pendingEvaluationRepair) {
+            const pending = pendingEvaluationRepair;
+            if (state.validationErrors[pending.errorIndex] !== pending.message) throw new Error("FORMAT_RECOVERY_ERROR_IDENTITY_MISMATCH");
+            trace.event("output.format_recovered", { attempt: pending.attempt, code: pending.diagnostic.code,
+              category: pending.diagnostic.category, rejected_reply_sha256: pending.diagnostic.reply_sha256,
+              accepted_reply_sha256: hash(text), scope: "evaluation_first_format", semantic_sufficiency_verified: false });
+            // Keep the rejected reply and its audit; retire only this recovered blocker.
+            state.validationErrors.splice(pending.errorIndex, 1);
+            pendingEvaluationRepair = undefined;
+          }
+          repairInstruction = ""; state.repairing = false;
+          const report = await assembleReport(task, state, budget, bridge);
+          const route = evaluationRoute(continuation, state, report);
+          const continuing = config.eval_mode === "adaptive_rag" && route === "continue" && !forceFinal && budget.remainingMs() > 0;
+          trace.event("evaluation.first_decision", { route, continuing, semantic_sufficiency_verified: false, protocol_sha256: evaluationProtocolHash });
+          evaluationFirstPending = false;
+          if (continuing) {
+            for (const gap of continuation.gaps) {
+              const id = `G${String(state.gaps.size + 1).padStart(4, "0")}`;
+              state.gaps.set(id, { gap_id: id, risk_point_id: gap.risk_point_id, type: "case_evidence", statement: gap.reason, status: "unresolved", origin: "evaluation_first" });
+            }
+            state.phase = "reviewing"; state.final = undefined; saveState(); return { action: "continue" };
+          }
+          if (route === "input_facts_missing") state.stopReason = "input_facts_missing";
+          else if (route === "limited_assessment") state.stopReason = "retrieval_partial_exhausted";
+          else if (route === "retrieval_failed") state.stopReason = "tool_failure";
+          else if (route === "incomplete" && (state.stopReason === "evidence_sufficient" || state.protocolInvalid && state.stopReason === "tool_failure")) { state.protocolInvalid = true; state.stopReason = "invalid_output"; }
+          // assembleReport must see any final routing flags before saving its result.
+          evaluationReport = route === "incomplete" ? undefined : report;
+          if (evaluationReport) evaluationReport.stop.reason = state.stopReason;
+          return { action: "end" };
+        }
         if (state.phase === "analyzing") {
           const value = normalizeModelOutput(raw, "analysis", state, task); state.acceptAnalysis(value); repairInstruction = "";
           emitProgress("condition_comparison");
-          if (config.engine === "fixed_rag") { await fixedRetrieval(); forceFinal = true; }
+          if (config.engine === "fixed_rag") { await fixedRetrieval(); if (retrievalCircuitOpen) return { action: "end" }; forceFinal = true; }
           else if (state.protocolVersion === "finrisk-model-wire/1.2" && !state.points.length) forceFinal = true;
           saveState(); return { action: "continue" };
         }
@@ -366,7 +513,7 @@ export async function runTask(task: TaskInput, bridge: ToolBridge, script?: Scri
         const value = normalizeModelOutput(raw, "final", state, task); state.validateRefs(value); state.final = value; repairInstruction = "";
         if (state.stopReason === "evidence_sufficient" && value.risk_points.some((p: JsonObject) => p.unknowns.length)) state.stopReason = "input_facts_missing";
         return { action: "end" };
-      } catch (error) { return invalid(error); }
+      } catch (error) { return invalid(error, text); }
     },
   });
   agent.subscribe(event => {
@@ -401,14 +548,81 @@ export async function runTask(task: TaskInput, bridge: ToolBridge, script?: Scri
     if (event.type !== "message_update") trace.event(`pi.${event.type}`, event);
   });
   const deadline = setTimeout(() => { state.stopReason = "deadline_exceeded"; agent.abort(); }, config.task_deadline_seconds * 1000);
-  try { await agent.prompt(JSON.stringify({ input: { source_id: task.input.source_id, user_context: task.input.user_context, segments: task.input.segments.map(s => ({ segment_id: s.segment_id, text: s.text })) }, instruction: "先理解所有输入段落，提交精简analysis JSON；不得因结构示例points为空而跳过真实风险。" })); await agent.waitForIdle(); }
-  catch (error) { if (!admissionStopped) { state.validationErrors.push(String(error)); state.stopReason = "model_failure"; } }
+  try {
+    if (firstQuery) {
+      const programTool = async (name: string, id: string, params: JsonObject, onAdmitted?: () => void) => {
+        validateArgs(name, params); budget.chargeTool(id, name); onAdmitted?.();
+        const result = await execute(name, id, params);
+        if (retrievalCircuitOpen) throw new Error("RETRIEVAL_CIRCUIT_OPEN");
+        return result;
+      };
+      await programTool("search_cases", "evaluation:search", firstQuery);
+      const schedule = sourceReadSchedule(state.searches.map(q => ({ ...q, candidates: (q.candidates ?? []).slice(0, 3) })), "evaluation");
+      trace.event("evaluation.prefetch_plan", { sources: schedule.planned.map(c => c.source_id), selection: "top3_candidates_required_anchor_order_max3_windows", query: firstQuery.queries[0].text });
+      let endReason = "read_limit";
+      try {
+        for (let index = 0; index < 3; index++) {
+          if (budget.remainingMs() <= 0) throw new Error("deadline_exceeded");
+          const candidate = schedule.next(index);
+          if (!candidate) { endReason = "no_unattempted_anchors"; break; }
+          const anchor = candidate.evidence?.[0];
+          if (!anchor) { state.protocolInvalid = true; endReason = "invalid_anchor"; break; }
+          const read = await programTool("read_source", `evaluation:read:${index}`, { source_id: candidate.source_id, anchor_evidence_id: anchor.evidence_id, max_chars: 1000 }, () => schedule.attempt(candidate));
+          if (read.terminate) throw new Error(retrievalCircuitOpen ? "RETRIEVAL_CIRCUIT_OPEN" : "deadline_exceeded");
+        }
+      } catch (error) {
+        const reason = String((error as Error).message);
+        endReason = reason === "budget_exhausted" ? "tool_budget" : reason === "RETRIEVAL_CIRCUIT_OPEN" ? "retrieval_circuit_open" : reason;
+        throw error;
+      } finally { schedule.end(endReason); }
+    }
+    await agent.prompt(JSON.stringify({ input: { source_id: firstQuery ? evaluationInputAlias : task.input.source_id, user_context: task.input.user_context, segments: task.input.segments.map(s => ({ segment_id: s.segment_id, text: s.text })) }, instruction: firstQuery ? "一次提交evaluation_first JSON，覆盖全部输入及候选点并给出终判。" : "先理解所有输入段落，提交精简analysis JSON；不得因结构示例points为空而跳过真实风险。" })); await agent.waitForIdle();
+  }
+  catch (error) {
+    if (!admissionStopped) {
+      state.validationErrors.push(String(error));
+      const reason = String((error as Error).message);
+      if (evaluationEnabled && ["deadline_exceeded", "budget_exhausted"].includes(reason)) state.stopReason = reason;
+      else if (!evaluationEnabled || !["deadline_exceeded", "budget_exhausted", "tool_failure"].includes(state.stopReason)) state.stopReason = "model_failure";
+    }
+  }
   finally { clearTimeout(deadline); await cancelBackend(); }
-  const report = await assembleReport(task, state, budget, bridge);
+  const report = evaluationReport ?? await assembleReport(task, state, budget, bridge);
+  if (evaluationReport) Object.assign(report.resources, budget.summary());
+  if (evaluationEnabled) {
+    if (evaluationCitations) report.versions.prompt_sha256 = hash(systemPrompt);
+    report.versions.evaluation_protocol_sha256 = evaluationProtocolHash;
+    report.versions.evaluation_mode = config.eval_mode ?? "fixed_rag";
+    report.versions.evaluation_arm = config.evaluation_arm ?? (config.eval_mode === "one_shot_rag" ? "R1" : "A");
+  }
   if (retrievalAccounting) report.resources.retrieval_accounting = retrievalAccounting;
+  if (onlyPartialRerankGaps(state, report) && state.stopReason === "evidence_sufficient") {
+    state.stopReason = "retrieval_partial_exhausted"; report.stop.reason = state.stopReason;
+  }
   validateProgram(report, "final-report");
-  emitProgress(report.task_status === "completed" ? "complete" : "incomplete", report);
   trace.save("validation.json", report.validation); trace.save("report.json", report); saveState();
+  if (state.retrievalReliability) {
+    try {
+      const digest = task.task_dir ? hash(readFileSync(`${task.task_dir}/report.json`, "utf8")) : null;
+      const assessment = retrievalAssessment(state, report, digest);
+      trace.save("retrieval-assessment.json", assessment); trace.event("retrieval.assessment", assessment);
+    } catch (error) {
+      if (task.task_dir) rmSync(`${task.task_dir}/retrieval-assessment.json`, { force: true });
+      report.task_status = "partial"; report.needs_manual_review = true; state.phase = "partial";
+      state.stopReason = "diagnostic_write_failed"; report.stop.reason = state.stopReason;
+      report.summary = "审查诊断未能完整保存，本轮结果需复核；原有执行与费用记录保留。";
+      report.validation.errors.push("RETRIEVAL_DIAGNOSTIC_WRITE_FAILED");
+      validateProgram(report, "final-report");
+      trace.save("validation.json", report.validation); trace.save("report.json", report); saveState();
+      try {
+        const digest = task.task_dir ? hash(readFileSync(`${task.task_dir}/report.json`, "utf8")) : null;
+        trace.save("retrieval-assessment.json", retrievalAssessment(state, report, digest));
+      } catch { if (task.task_dir) rmSync(`${task.task_dir}/retrieval-assessment.json`, { force: true }); }
+      const message = String((error as Error).message);
+      trace.event("retrieval.assessment_failed", { code: "RETRIEVAL_DIAGNOSTIC_WRITE_FAILED", diagnostic: message.startsWith("INVALID_PROGRAM_CONTRACT:") ? message.slice(0, 1000) : "DIAGNOSTIC_GENERATION_OR_STORAGE_FAILED" });
+    }
+  }
+  emitProgress(report.task_status === "completed" ? "complete" : "incomplete", report);
   trace.event("task.finished", { status: report.task_status, stop: report.stop, resources: report.resources });
   return { report, events: trace.events };
 }

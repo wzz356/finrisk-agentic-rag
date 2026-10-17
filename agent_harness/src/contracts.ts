@@ -75,6 +75,10 @@ export function canonical(value: unknown): string {
   return JSON.stringify(value);
 }
 export interface Config {
+  eval_mode?: "one_shot_rag" | "adaptive_rag";
+  evaluation_arm?: "R1" | "R2" | "A";
+  evaluation_format_repair_limit?: 0 | 1;
+  retrieval_reliability?: boolean;
   profile_id: string; execution_mode: "mock" | "live"; retrieval_profile: string;
   engine: "controlled_agent" | "fixed_rag"; max_model_requests: number; max_tool_actions: number;
   max_search_calls: number; max_search_query_attempts: number; max_queries_per_search: number;
@@ -101,5 +105,5 @@ export type Phase = "analyzing" | "reviewing" | "finalizing" | "completed" | "pa
 export interface TaskInput {
   input: InputRecord; snapshot: JsonObject; definitions: JsonObject[]; config?: Partial<Config>;
   task_dir?: string; mock_scenario?: "generic" | "gift-example";
-  execution_contract?: { model_wire_sha256: string; criteria_sha256: string; prompt_sha256: string; tool_contract_sha256?: string; request_admission_policy_sha256?: string };
+  execution_contract?: { model_wire_sha256: string; criteria_sha256: string; prompt_sha256: string; tool_contract_sha256?: string; request_admission_policy_sha256?: string; evaluation_protocol_sha256?: string };
 }

@@ -91,6 +91,16 @@ export class TrialBudget {
       legacy_reservation_count: this.ledger.request_reservations.length, settled_cost_micro_cny: 0,
       settled_cost_cny: 0, budget_blocked_due_to_usage_overflow: false };
   }
+  initializeEmpty(): void {
+    if (existsSync(this.path)) {
+      // Revalidate and reuse persisted reservations without rewriting migrations.
+      this.ledger = new TrialBudget(this.path, this.capCny, this.policyId).ledger;
+      return;
+    }
+    if (this.ledger.request_reservations.length || this.ledger.reserved_cost_micro_cny || this.ledger.settled_cost_micro_cny)
+      throw new Error("TRIAL_LEDGER_INITIALIZATION_REQUIRES_EMPTY");
+    this.persist(structuredClone(this.ledger));
+  }
   preview(body: string): Admission {
     const assessment = assessRequest(body, this.policyId);
     if (!assessment.fits) return assessment;

@@ -82,6 +82,9 @@ def load_v2_snapshot(root: Path) -> V2KnowledgeSnapshot:
     backend = snapshot.manifest.get("backend")
     if not backend or backend.get("mode") not in {"live", "replay"}:
         raise ValueError("INVALID_V2_BACKEND_CONFIG")
+    protocol = backend.get("rerank_protocol", "quote-copy-v1")
+    if protocol not in {"quote-copy-v1", "span-ref-v2"} or backend["mode"] == "replay" and protocol != "quote-copy-v1":
+        raise ValueError("RERANK_PROTOCOL_NOT_READY")
     paths = {}
     for name, asset in backend["assets"].items():
         path = Path(asset["path"])
@@ -93,7 +96,7 @@ def load_v2_snapshot(root: Path) -> V2KnowledgeSnapshot:
         if os.environ.get("FINRISK_AGENT_ALLOW_RETRIEVAL_LIVE") != "1":
             raise ValueError("LIVE_RERANK_NOT_ENABLED")
         key_file = os.environ.get("FINRISK_AGENT_DEEPSEEK_KEY_FILE")
-        scorer = DeepSeekReranker(rules, key_file=Path(key_file) if key_file else None)
+        scorer = DeepSeekReranker(rules, key_file=Path(key_file) if key_file else None, protocol=protocol)
     else:
         scorer = FrozenFlashReranker(paths["score_inputs"], paths["scores"], paths["candidate_map"])
     dense = ResidentDenseIndex(paths["dense_config"])
@@ -105,4 +108,5 @@ def load_v2_snapshot(root: Path) -> V2KnowledgeSnapshot:
         dense.close()
         raise
     snapshot.manifest["rerank_mode"] = backend["mode"]
+    snapshot.manifest["rerank_protocol"] = protocol
     return snapshot

@@ -4,6 +4,7 @@ import type { TaskState } from "./state.js";
 import type { Budget } from "./budget.js";
 import type { ToolBridge } from "./tool_bridge.js";
 import { criteria, criteriaByteHash } from "./criteria.js";
+import { isPartialRerank, partialRankingSummary } from "./retrieval_quality.js";
 
 const promptHash = hash(readFileSync(`${root}/configs/agent_rag/system-prompt.txt`, "utf8"));
 function contextWarnings(state: TaskState, id: string): JsonObject {
@@ -114,12 +115,14 @@ export async function assembleReport(task: TaskInput, state: TaskState, budget: 
   const partial = !final || !coverage.all_submitted_segments_reviewed || caseIncomplete || unfinishedQueries.length > 0 || !referencesValid || state.protocolInvalid || semanticConflict;
   const overall = points.some(p => p.supported_tags.length) ? "suspected" : partial || unresolvedInputGaps.length || points.some(p => p.judgment === "review_required") ? "review_required" : "no_clear_risk";
   const status = partial ? "partial" : "completed";
+  const limitedRanking = state.retrievalReliability && unfinishedQueries.length > 0 && unfinishedQueries.every(isPartialRerank)
+    && referencesValid && !semanticConflict && !state.protocolInvalid;
   state.phase = status;
   return {
     schema_version: "finrisk-report/1.0", task_id: task.input.task_id, execution_mode: budget.config.execution_mode,
     task_status: status, overall_judgment: overall, needs_manual_review: partial || Boolean(unresolvedInputGaps.length) || points.some(p => p.pending_tags.length || p.unknowns.length || p.judgment === "review_required") || budget.config.execution_mode === "mock",
     risk_points: points, input_spans: [...allSpans.values()], coverage,
-    summary: !final ? "执行未形成有效终稿，当前待复核是执行兜底，不能作为完整业务风险判断；原文及执行记录已保留。" : partial ? (overall === "suspected" ? "已有输入依据提示部分疑似风险；仍有未完成或矛盾事项需要复核。" : "本轮仅完成部分审查，尚不能判断整篇材料是否合规。") : final.summary,
+    summary: !final ? "执行未形成有效终稿，当前待复核是执行兜底，不能作为完整业务风险判断；原文及执行记录已保留。" : limitedRanking ? partialRankingSummary(state) : partial ? (overall === "suspected" ? "已有输入依据提示部分疑似风险；仍有未完成或矛盾事项需要复核。" : "本轮仅完成部分审查，尚不能判断整篇材料是否合规。") : final.summary,
     versions: { snapshot_id: task.snapshot.snapshot_id, dictionary_sha256: task.snapshot.dictionary_sha256, input_sha256: task.input.input_sha256, text_sha256: task.input.text_sha256, contract: state.protocolVersion, requested_contract: state.requestedProtocolVersion, accepted_contract: state.analysis || state.final ? state.protocolVersion : null, prompt: "finrisk-agent/1.5", prompt_sha256: promptHash, criteria: criteria.schema_version, criteria_sha256: criteriaByteHash, criteria_review_status: criteria.review_status, config_sha256: hash(canonical(budget.config)), retrieval_profile: budget.config.retrieval_profile, pi_agent_core: "1.2.0" },
     stop: { reason: state.stopReason, unresolved: points.filter(p => p.status === "review_required").map(p => p.risk_point_id) },
     resources: { ...budget.summary(), json_repairs: state.repairs, tool_format_corrections: state.toolFormatCorrections, estimated_cost: null },

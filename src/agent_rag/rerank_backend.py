@@ -21,6 +21,14 @@ from decimal import ROUND_FLOOR, Decimal
 from pathlib import Path
 from typing import Any
 
+from agent_rag.rerank_checkpoint import (
+    PairCheckpoint, RerankCheckpointError, RerankCheckpointStopped,
+)
+from agent_rag.transport_diagnostics import (default_health, valid_health,
+    valid_diagnostic, transport_diagnostic, update_health)
+from agent_rag.rerank_spans import SPAN_VERSION, build_span_packet, resolve_span, span_wire
+from agent_rag.rerank_response_audit import record_response
+
 ENDPOINT = "https://api.deepseek.com/chat/completions"
 MODEL = "deepseek-flash"
 PRICE_SOURCE = "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/"
@@ -39,7 +47,7 @@ _LEDGER_LOCKS_GUARD = threading.Lock()
 _ATTEMPT_ERROR_CODES = {
     "HTTP_429", "HTTP_5XX", "HTTP_4XX", "HTTP_ERROR", "TRANSPORT_TIMEOUT",
     "TRANSPORT_ERROR", "INVALID_JSON", "INVALID_COMPLETION", "QUOTE_MISMATCH",
-    "CANCELLED", "TASK_TIMEOUT", "STOPPED", "AUDIT_WRITE_FAILED",
+    "CANCELLED", "TASK_TIMEOUT", "STOPPED", "AUDIT_WRITE_FAILED", "SPAN_REFERENCE_MISMATCH",
 }
 _ATTEMPT_TERMINAL_STATES = {"settled", "finished_usage_unknown", "aborted_unsent"}
 _PROMPT_SUFFIX = (
@@ -139,6 +147,60 @@ def validate_completion(packet: dict, response: dict) -> dict:
     return result
 
 
+def span_payload(packet: dict, rules: str, feedback: str | None = None) -> dict:
+    result = payload(packet, rules, feedback)
+    contract = json.dumps(
+        {"enum": list(RANGES), "score_ranges": RANGES},
+        ensure_ascii=False, separators=(",", ":"),
+    )
+    result["messages"][0]["content"] = (
+        rules + "\nlevel_contract=" + contract
+        + "\nlevel只能取enum中的一个独立字符串，score须落入该项score_ranges闭区间；"
+        "不得合并枚举值。只评本对，返回JSON对象；选择本次片段编号，不输出source_quote。"
+    )
+    result["messages"][1]["content"] = json.dumps(
+        span_wire(build_span_packet(packet["pair_id"], packet["query_text"], packet["unit_text"])),
+        ensure_ascii=False,
+    )
+    return result
+
+
+def validate_span_completion(packet: dict, response: dict) -> dict:
+    if not isinstance(response, dict):
+        raise ValueError("INVALID_SPAN_COMPLETION")
+    choices = response.get("choices")
+    if (not isinstance(choices, list) or len(choices) != 1 or not isinstance(choices[0], dict)
+            or choices[0].get("finish_reason") != "stop" or not isinstance(choices[0].get("message"), dict)
+            or not isinstance(choices[0]["message"].get("content"), str)):
+        raise ValueError("INVALID_SPAN_COMPLETION")
+    opinion = json.loads(choices[0]["message"]["content"])
+    if (not isinstance(opinion, dict) or set(opinion) != {
+        "pair_id", "score", "level", "support_span", "reason", "limitation", "human_approved",
+    } or type(opinion.get("score")) is not int):
+        raise ValueError("INVALID_SPAN_COMPLETION")
+    if opinion["pair_id"] != packet["pair_id"]:
+        raise ValueError("SPAN_PAIR_ID_MISMATCH")
+    level = opinion["level"]
+    if not isinstance(level, str) or level not in RANGES:
+        raise ValueError("RERANK_LEVEL_INVALID")
+    if not RANGES[level][0] <= opinion["score"] <= RANGES[level][1]:
+        raise ValueError("RERANK_SCORE_LEVEL_MISMATCH")
+    bound = build_span_packet(packet["pair_id"], packet["query_text"], packet["unit_text"])
+    selected = resolve_span(bound, opinion["support_span"])
+    if opinion["score"] >= 60 and not selected["source_quote"]:
+        raise ValueError("SPAN_REFERENCE_REQUIRED")
+    if any(not isinstance(opinion[k], str) or len(opinion[k]) > 50 for k in ("reason", "limitation")):
+        raise ValueError("INVALID_SPAN_COMPLETION")
+    original = {key: value for key, value in opinion.items() if key != "support_span"}
+    original["source_quote"] = selected["source_quote"]
+    adapted = copy.deepcopy(response)
+    adapted["choices"][0]["message"]["content"] = json.dumps(original, ensure_ascii=False)
+    score = validate_completion(packet, adapted)
+    return {**score, "model_support_span": opinion["support_span"],
+            "support_span_start": selected["start"], "support_span_end": selected["end"],
+            "unit_text_sha256": selected["unit_text_sha256"], "span_version": SPAN_VERSION}
+
+
 def _nonnegative_integer(value: Any) -> bool:
     return type(value) is int and value >= 0
 
@@ -190,10 +252,11 @@ class RerankAuditError(RuntimeError):
 
 
 class RerankTransportError(RuntimeError):
-    def __init__(self, message: str, http_status: int | None, error_code: str) -> None:
+    def __init__(self, message: str, http_status: int | None, error_code: str, diagnostic: dict | None = None) -> None:
         super().__init__(message)
         self.http_status = http_status
         self.error_code = error_code
+        self.diagnostic = diagnostic
 
 
 class _TransportResult:
@@ -222,6 +285,8 @@ def _attempt_error(error: Exception, *, validating: bool = False) -> tuple[int |
     if isinstance(error, json.JSONDecodeError):
         return None, "INVALID_JSON"
     if validating:
+        if isinstance(error, ValueError) and str(error).startswith(("SPAN_", "INVALID_SPAN_REFERENCE")):
+            return None, "SPAN_REFERENCE_MISMATCH"
         return None, (
             "QUOTE_MISMATCH"
             if isinstance(error, ValueError) and str(error) == "引文未严格绑定原始单元文本"
@@ -302,7 +367,12 @@ class RerankTaskControl:
                     "settled_cost_micro_cny": 0,
                     "stop_reason": None,
                 }
-                self._persist(ledger)
+                try:
+                    self._create_initial_ledger(ledger)
+                except FileExistsError:
+                    # Another process won initial creation after our exists
+                    # check. Reuse its limits/deadline and never replace it.
+                    ledger = self._read()
             # Monotonic time prevents wall-clock changes extending this run.
             self._deadline = time.monotonic() + max(
                 0.0, ledger["deadline_epoch_seconds"] - time.time()
@@ -336,6 +406,8 @@ class RerankTaskControl:
                 "budget_exhausted",
                 "request_limit",
                 "usage_exceeded_reservation",
+                "transport_unavailable",
+                "provider_rejected",
             )
             or not isinstance(ledger.get("request_reservations"), list)
         ):
@@ -421,6 +493,15 @@ class RerankTaskControl:
         except (OSError, TypeError, KeyError, json.JSONDecodeError) as error:
             raise ValueError("INVALID_EXISTING_RERANK_LEDGER") from error
 
+    def _create_initial_ledger(self, ledger: dict) -> None:
+        """Claim a new ledger without overwriting another service's history."""
+        self._validate(ledger)
+        self.ledger_path.parent.mkdir(parents=True, exist_ok=True)
+        with self.ledger_path.open("x", encoding="utf-8") as stream:
+            json.dump(ledger, stream, ensure_ascii=False, allow_nan=False, indent=2)
+            stream.flush()
+            os.fsync(stream.fileno())
+
     def _persist(self, ledger: dict) -> None:
         self._validate(ledger)
         self.ledger_path.parent.mkdir(parents=True, exist_ok=True)
@@ -479,7 +560,11 @@ class RerankTaskControl:
                     ))
                 ):
                     raise ValueError("INVALID_EXISTING_RERANK_ATTEMPT_AUDIT")
+                if "diagnostic" in row and not valid_diagnostic(row["diagnostic"]):
+                    raise ValueError("INVALID_EXISTING_RERANK_ATTEMPT_AUDIT")
                 ordinals.add(row["ordinal"])
+            if "transport_health" in audit and not valid_health(audit["transport_health"]):
+                raise ValueError("INVALID_EXISTING_RERANK_ATTEMPT_AUDIT")
             return audit
         except (OSError, TypeError, KeyError, json.JSONDecodeError) as error:
             raise ValueError("INVALID_EXISTING_RERANK_ATTEMPT_AUDIT") from error
@@ -502,7 +587,7 @@ class RerankTaskControl:
 
     def _audit_attempt(
         self, ledger: dict, ordinal: int, state: str, *, http_status: int | None = None,
-        error_code: str | None = None, completed_at: str | None = None, will_retry: bool = False,
+        error_code: str | None = None, completed_at: str | None = None, will_retry: bool = False, diagnostic: dict | None = None,
     ) -> None:
         """Write only diagnostic fields; budget rows retain their existing meaning."""
         try:
@@ -524,6 +609,17 @@ class RerankTaskControl:
                 "aborted_unsent": "not_sent", "transport_started": "unknown",
             }[state],
         }
+        if state in _ATTEMPT_TERMINAL_STATES and row["transport_started_at"] is not None:
+            if diagnostic is None:
+                diagnostic = transport_diagnostic(
+                    TimeoutError() if error_code == "TRANSPORT_TIMEOUT" else RuntimeError() if error_code == "TRANSPORT_ERROR" else None,
+                    http_status, validating=error_code in {"INVALID_JSON", "INVALID_COMPLETION", "QUOTE_MISMATCH", "SPAN_REFERENCE_MISMATCH"})
+            if not valid_diagnostic(diagnostic):
+                raise RerankAuditError("INVALID_TRANSPORT_DIAGNOSTIC")
+            row["diagnostic"] = diagnostic
+            health = update_health(audit.get("transport_health", default_health()), diagnostic, error_code)
+            audit["transport_health"] = health
+            row["will_retry"] = will_retry and not health["open"]
         if previous is not None:
             audit["attempts"].remove(previous)
         audit["attempts"].append(row)
@@ -535,7 +631,7 @@ class RerankTaskControl:
 
     def _finish_attempt(
         self, ordinal: int, *, http_status: int | None, error_code: str | None,
-        completed_at: str, will_retry: bool,
+        completed_at: str, will_retry: bool, diagnostic: dict | None = None,
     ) -> None:
         with self._lock:
             try:
@@ -546,7 +642,7 @@ class RerankTaskControl:
                 )
                 self._audit_attempt(
                     ledger, ordinal, state, http_status=http_status, error_code=error_code,
-                    completed_at=completed_at, will_retry=will_retry,
+                    completed_at=completed_at, will_retry=will_retry, diagnostic=diagnostic,
                 )
             except (OSError, ValueError, KeyError, IndexError, TypeError) as error:
                 # A local diagnostic failure cannot authorize another paid score.
@@ -566,6 +662,9 @@ class RerankTaskControl:
             return "timeout"
         if ledger["stop_reason"] is not None:
             return ledger["stop_reason"]
+        health = self._read_attempts().get("transport_health", default_health())
+        if health["open"]:
+            return health["reason"]
         if include_limits:
             if self._admission_count(ledger) >= self.max_requests:
                 return "request_limit"
@@ -592,9 +691,15 @@ class RerankTaskControl:
         with self._lock:
             ledger = self._read()
             count = sum("transport_started_at" in row for row in ledger["request_reservations"])
-            attempts = self._read_attempts()["attempts"]
+            audit = self._read_attempts()
+            attempts = audit["attempts"]
+            health = audit.get("transport_health", default_health())
             audited = {row["ordinal"] for row in attempts}
             return {
+                "transport_circuit_open": health["open"],
+                "transport_failure_streak": health["failure_streak"],
+                "transport_failure_limit": health["failure_limit"],
+                "transport_diagnostic": copy.deepcopy(health["last_diagnostic"]),
                 "external_retrieval_requests": count,
                 "total_external_retrieval_requests": count,
                 "total_dispatch_admissions": sum(
@@ -720,7 +825,9 @@ class RerankTaskControl:
             row["dispatch_committed_at"] = _utc_now()
             self._persist(ledger)
 
-    def _start_transport(self, ordinal: int) -> float:
+    def _start_transport(
+        self, ordinal: int, *, admission_guard: Callable[[], Any] | None = None,
+    ) -> float:
         """Begin an admitted transport invocation, checking stop once more.
 
         After this boundary the attempt is in flight and may finish/settle
@@ -736,6 +843,10 @@ class RerankTaskControl:
             if reason:
                 self._abort_unstarted(ledger, ordinal, reason)
                 raise RerankStopped(reason)
+            # Pair checkpoint poison uses this same ledger RLock. Its final
+            # admission check and transport start therefore share one ordering.
+            if admission_guard is not None:
+                admission_guard()
             row["dispatch_state"] = "transport_started"
             row["transport_started_at"] = _utc_now()
             self._persist(ledger)
@@ -789,6 +900,8 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
 
 
 class DeepSeekReranker:
+    supports_query_binding = True
+
     def __init__(
         self,
         rules: str,
@@ -797,7 +910,10 @@ class DeepSeekReranker:
         *,
         key_loader: Callable[[], str] | None = None,
         key_file: Path | None = None,
+        protocol: str = "quote-copy-v1",
     ) -> None:
+        if protocol not in {"quote-copy-v1", "span-ref-v2"}:
+            raise ValueError("RERANK_PROTOCOL_NOT_READY")
         if (
             not isinstance(rules, str)
             or not rules.strip()
@@ -810,12 +926,23 @@ class DeepSeekReranker:
         self.rules = rules
         self.rules_sha256 = hashlib.sha256(rules.encode("utf-8")).hexdigest()
         self.model = MODEL
+        self.protocol = protocol
+        self.protocol_fingerprint = {
+            "protocol": protocol, "span_version": SPAN_VERSION if protocol == "span-ref-v2" else None,
+            "payload": self._payload({"pair_id": "P:protocol", "query_text": "", "unit_text": " "}),
+        }
         self._transport = transport
         self._key_loader = key_loader
         self._key_file = Path(key_file) if key_file is not None else None
         self._cache_size = cache_size
         self._cache: OrderedDict[str, dict] = OrderedDict()
         self._cache_lock = threading.Lock()
+
+    def _payload(self, packet: dict, feedback: str | None = None) -> dict:
+        return (span_payload if self.protocol == "span-ref-v2" else payload)(packet, self.rules, feedback)
+
+    def _record_response(self, control: RerankTaskControl, packet: dict, response: dict) -> None:
+        record_response(control, packet, response, self.protocol)
 
     def _load_key(self) -> str:
         if self._key_loader is not None:
@@ -857,32 +984,85 @@ class DeepSeekReranker:
             except Exception:
                 detail = "无法读取服务错误摘要"
             raise RerankTransportError(
-                f"HTTP {error.code}: {detail}", error.code, _http_error_code(error.code)
+                f"HTTP {error.code}", error.code, _http_error_code(error.code), transport_diagnostic(error)
             ) from None
         except (urllib.error.URLError, TimeoutError, ValueError) as error:
-            _, error_code = _attempt_error(error)
+            validating = http_status is not None and http_status < 400 and isinstance(error, ValueError)
+            _, error_code = _attempt_error(error, validating=validating)
             raise RerankTransportError(
-                _redact(type(error).__name__ + ": " + str(error), key), http_status, error_code
+                error_code, http_status, error_code, transport_diagnostic(error, http_status, validating=validating)
             ) from None
 
-    def _cache_key(self, query_text: str, unit: dict) -> str:
+    def _cache_key(self, query_text: str, unit: dict, query_binding: dict | None = None) -> str:
         bound = {
             "query_text": query_text,
             "unit_id": unit["unit_id"],
+            "file_id": unit["file_id"],
             "unit_text": unit["text"],
             "rules_sha256": self.rules_sha256,
-            "protocol": payload({"pair_id": "", "query_text": "", "unit_text": ""}, self.rules),
+            "protocol": self.protocol_fingerprint,
+            "query_binding": {
+                key: value for key, value in (query_binding or {}).items()
+                if key in {"snapshot_id", "index_sha256", "retrieval_profile"}
+            },
         }
         return hashlib.sha256(
-            json.dumps(bound, ensure_ascii=False, allow_nan=False).encode("utf-8")
+            json.dumps(bound, ensure_ascii=False, allow_nan=False, sort_keys=True).encode("utf-8")
         ).hexdigest()
 
-    def _score_pair(self, query_text: str, unit: dict, control: RerankTaskControl) -> dict:
-        cache_key = self._cache_key(query_text, unit)
+    @staticmethod
+    def _pair_failure(unit: dict, code: str, pair: dict, requests: int = 0,
+                      prevented: int = 0) -> dict:
+        return {
+            "error": {
+                "unit_id": unit["unit_id"], "file_id": unit["file_id"],
+                "reason": {"CANCELLED": "cancelled", "TASK_TIMEOUT": "timeout"}.get(code, code),
+                "code": code,
+                "attempts_used": pair["attempts_used"],
+                "remaining_attempts": pair["remaining_attempts"],
+                "terminal": pair["terminal"], "audit_ordinals": pair["audit_ordinals"],
+            },
+            "requests": requests, "cache_hits": 0, "prevented": prevented,
+        }
+
+    def _score_pair(self, query_text: str, unit: dict, control: RerankTaskControl,
+                    query_binding: dict | None = None) -> dict:
+        cache_key = self._cache_key(query_text, unit, query_binding)
+        checkpoint = PairCheckpoint(control)
+        pair = {"attempts_used": None, "remaining_attempts": None, "terminal": True,
+                "audit_ordinals": None}
+        try:
+            with checkpoint.ownership(cache_key):
+                pair = checkpoint.get(cache_key)
+                if pair["score"] is not None:
+                    return {
+                        "score": {**pair["score"], "unit_id": unit["unit_id"],
+                                  "file_id": unit["file_id"]},
+                        "requests": 0, "cache_hits": 1, "prevented": 1,
+                    }
+                if pair["terminal"]:
+                    return self._pair_failure(
+                        unit, pair["last_code"] or "ATTEMPTS_EXHAUSTED", pair, prevented=1,
+                    )
+                return self._score_owned_pair(query_text, unit, control, cache_key, checkpoint, pair)
+        except RerankCheckpointStopped as error:
+            try:
+                pair = checkpoint.get(cache_key)
+            except RerankCheckpointError:
+                pass
+            pair["terminal"] = True
+            return self._pair_failure(unit, str(error), pair)
+        except RerankCheckpointError:
+            pair["terminal"] = True
+            return self._pair_failure(unit, checkpoint.failure_code, pair, prevented=1)
+
+    def _score_owned_pair(self, query_text: str, unit: dict, control: RerankTaskControl,
+                          cache_key: str, checkpoint: PairCheckpoint, pair: dict) -> dict:
         with self._cache_lock:
             cached = self._cache.get(cache_key)
             if cached is not None:
                 self._cache.move_to_end(cache_key)
+                checkpoint.finish(cache_key, "SUCCESS", terminal=True, score=cached)
                 return {
                     "score": {
                         **copy.deepcopy(cached),
@@ -891,22 +1071,30 @@ class DeepSeekReranker:
                     },
                     "requests": 0,
                     "cache_hits": 1,
+                    "prevented": 1,
                 }
         packet = {
             "pair_id": "P" + cache_key[:24],
             "query_text": query_text,
             "unit_text": unit["text"],
         }
-        feedback = None
+        feedback = ("上一输出未通过格式校验，请依据原输入和规则重新输出合法JSON。"
+                    if pair["last_code"] in {"INVALID_JSON", "INVALID_COMPLETION", "QUOTE_MISMATCH"}
+                    else None)
         requests = 0
-        error_message = "unknown_error"
-        for attempt in range(2):
+        error_code = pair["last_code"] or "STOPPED"
+        for attempt in range(pair["attempts_used"], 2):
             acquired = False
             ordinal = None
             started = False
             validating = False
             http_status = None
             completed_at = None
+            diagnostic = None
+            score = None
+            will_retry = False
+            claimed = False
+            stage = "admission"
             try:
                 while not acquired:
                     if not control.check():
@@ -915,12 +1103,25 @@ class DeepSeekReranker:
                 if not control.check():
                     raise RerankStopped(control.meta()["stop_reason"] or "stopped")
                 key = None if self._transport is not None else self._load_key()
-                request_payload = payload(packet, self.rules, feedback)
+                request_payload = self._payload(packet, feedback)
+                stage = "claim"
+                checkpoint.claim(cache_key)
+                claimed = True
+                # Keep acknowledged facts before any subsequent sidecar read
+                # can fail; a poisoned checkpoint cannot erase this claim.
+                pair.update(attempts_used=attempt + 1, remaining_attempts=1 - attempt)
+                stage = "admission"
+                pair = checkpoint.get(cache_key)
                 ordinal, _ = control._reserve(request_payload, packet["pair_id"], attempt)
+                pair["audit_ordinals"].append(ordinal)
+                checkpoint.bind_ordinal(cache_key, ordinal)
                 control._commit_dispatch(ordinal)
-                timeout = control._start_transport(ordinal)
+                timeout = control._start_transport(
+                    ordinal, admission_guard=lambda: checkpoint.get(cache_key),
+                )
                 started = True
                 requests += 1
+                stage = "transport"
                 response = (
                     self._transport(request_payload, timeout)
                     if self._transport is not None
@@ -929,56 +1130,51 @@ class DeepSeekReranker:
                 completed_at = _utc_now()
                 if isinstance(response, _TransportResult):
                     http_status, response = response.http_status, response.value
+                stage = "settle"
                 control._settle(
                     ordinal, response.get("usage") if isinstance(response, dict) else None
                 )
+                if self.protocol == "span-ref-v2":
+                    stage = "response_audit"
+                    self._record_response(control, packet, response)
                 validating = True
-                score = validate_completion(packet, response)
-                control._finish_attempt(
-                    ordinal, http_status=http_status, error_code=None,
-                    completed_at=completed_at, will_retry=False,
-                )
-                with self._cache_lock:
-                    if self._cache_size:
-                        self._cache[cache_key] = copy.deepcopy(score)
-                        self._cache.move_to_end(cache_key)
-                        while len(self._cache) > self._cache_size:
-                            self._cache.popitem(last=False)
-                return {
-                    "score": {**score, "unit_id": unit["unit_id"], "file_id": unit["file_id"]},
-                    "requests": requests,
-                    "cache_hits": 0,
-                }
-            except RerankAuditError as error:
-                error_message = str(error)
-                if started:
+                stage = "validate"
+                score = (validate_span_completion if self.protocol == "span-ref-v2" else validate_completion)(packet, response)
+                error_code = "SUCCESS"
+            except RerankCheckpointError:
+                # Claim/ordinal writes cannot authorize any transport retry.
+                if stage == "claim" and not claimed:
+                    # A failed durable write may have reached disk. Neither
+                    # zero nor an additional confirmed claim is established.
+                    pair.update(attempts_used=None, remaining_attempts=None)
+                if ordinal is not None and not started:
                     try:
-                        control._finish_attempt(
-                            ordinal, http_status=http_status, error_code="AUDIT_WRITE_FAILED",
-                            completed_at=completed_at or _utc_now(), will_retry=False,
-                        )
-                    except RerankAuditError:
-                        pass  # A diagnostic write failure must never cause another paid attempt.
-                break
+                        with control._lock:
+                            ledger = control._read()
+                            control._abort_unstarted(ledger, ordinal, "audit_write_failed", stop_task=False)
+                    except (RerankAuditError, OSError, ValueError):
+                        pass
+                pair.update(terminal=True)
+                return self._pair_failure(unit, checkpoint.failure_code, pair, requests)
+            except RerankAuditError:
+                error_code = "AUDIT_WRITE_FAILED"
+                checkpoint.poison()
             except RerankStopped as error:
-                error_message = str(error)
-                if started:
-                    control._finish_attempt(
-                        ordinal, http_status=http_status,
-                        error_code={"cancelled": "CANCELLED", "timeout": "TASK_TIMEOUT"}.get(
-                            error_message, "STOPPED"
-                        ), completed_at=completed_at or _utc_now(), will_retry=False,
-                    )
-                break
+                error_code = {"cancelled": "CANCELLED", "timeout": "TASK_TIMEOUT"}.get(
+                    str(error), "STOPPED"
+                )
             except Exception as error:
-                error_message = _redact(type(error).__name__ + ": " + str(error))
                 error_status, error_code = _attempt_error(error, validating=validating)
                 if error_status is not None:
                     http_status = error_status
-                if isinstance(error, ValueError) and ordinal is not None:
+                diagnostic = transport_diagnostic(error, http_status, validating=validating)
+                if stage in {"admission", "settle", "response_audit"}:
+                    error_code = "KEY_UNAVAILABLE" if not claimed else "AUDIT_WRITE_FAILED"
+                    if error_code == "AUDIT_WRITE_FAILED":
+                        checkpoint.poison()
+                if validating:
                     feedback = (
-                        "上一输出未通过格式校验："
-                        + error_message
+                        "上一输出未通过格式校验：" + error_code
                         + (
                             "。请只依据原输入和规则重新给出一个合法JSON。score必须为整数；"
                             "specific_direct=80—100，concise_direct=60—79，partial=20—59，"
@@ -987,39 +1183,84 @@ class DeepSeekReranker:
                             "不得改变事实、补默认评分或给参考答案。"
                         )
                     )
+                    if self.protocol == "span-ref-v2":
+                        detail = str(error) if str(error) in {
+                            "RERANK_LEVEL_INVALID", "RERANK_SCORE_LEVEL_MISMATCH",
+                        } else error_code
+                        feedback = (
+                            "上一输出未通过校验：" + detail
+                            + "。level只能取level_contract.enum中的一个独立字符串，"
+                            "score须在该项score_ranges闭区间。只按原规则返回JSON；"
+                            "support_span选择本次已有起止编号的连续范围，禁止输出source_quote；"
+                            "不补事实或默认分。"
+                        )
                 will_retry = (
-                    attempt == 0 and ordinal is not None
-                    and http_status not in (400, 401, 402, 403)
-                    and not any(code in error_message for code in (
-                        "HTTP 400", "HTTP 401", "HTTP 402", "HTTP 403"
-                    ))
+                    attempt == 0 and started and stage in {"transport", "validate"}
+                    and not (http_status is not None and 400 <= http_status <= 499
+                             and http_status != 429)
                     and control.check()
                 )
-                if started:
-                    control._finish_attempt(
-                        ordinal, http_status=http_status, error_code=error_code,
-                        completed_at=completed_at or _utc_now(), will_retry=will_retry,
-                    )
-                if not will_retry:
-                    break
             finally:
                 if acquired:
                     _HTTP_SLOTS.release()
-        return {
-            "error": {
-                "unit_id": unit["unit_id"],
-                "file_id": unit["file_id"],
-                "reason": error_message,
-            },
-            "requests": requests,
-            "cache_hits": 0,
-        }
 
-    def score_query(self, query_text: str, units: list[dict], control: RerankTaskControl) -> dict:
+            # Terminal audit and checkpoint failures never flow back through
+            # the transport retry handler. Fee settlement retains its meaning.
+            try:
+                if started:
+                    control._finish_attempt(
+                        ordinal, http_status=http_status,
+                        error_code=None if score is not None else error_code,
+                        completed_at=completed_at or _utc_now(), will_retry=will_retry, diagnostic=diagnostic,
+                    )
+            except RerankAuditError:
+                score, error_code, will_retry = None, "AUDIT_WRITE_FAILED", False
+                checkpoint.poison()
+                try:
+                    control._finish_attempt(
+                        ordinal, http_status=http_status, error_code=error_code,
+                        completed_at=completed_at or _utc_now(), will_retry=False,
+                    )
+                except RerankAuditError:
+                    pass
+            try:
+                if claimed and ordinal is None:
+                    # _reserve may abort after writing an unsent audit record.
+                    with control._lock:
+                        rows = control._read()["request_reservations"]
+                        found = [row["ordinal"] for row in rows
+                                 if row["pair_id"] == packet["pair_id"]
+                                 and row["ordinal"] not in pair["audit_ordinals"]]
+                    if found:
+                        ordinal = found[-1]
+                        pair["audit_ordinals"].append(ordinal)
+                        checkpoint.bind_ordinal(cache_key, ordinal)
+                pair = checkpoint.finish(cache_key, error_code, terminal=not will_retry, score=score)
+            except RerankCheckpointError:
+                pair["terminal"] = True
+                return self._pair_failure(unit, checkpoint.failure_code, pair, requests)
+            if score is not None:
+                with self._cache_lock:
+                    if self._cache_size:
+                        self._cache[cache_key] = copy.deepcopy(score)
+                        self._cache.move_to_end(cache_key)
+                        while len(self._cache) > self._cache_size:
+                            self._cache.popitem(last=False)
+                return {
+                    "score": {**score, "unit_id": unit["unit_id"], "file_id": unit["file_id"]},
+                    "requests": requests, "cache_hits": 0, "prevented": 0,
+                }
+            if not will_retry or not control.check():
+                break
+        return self._pair_failure(unit, error_code, pair, requests)
+
+    def score_query(self, query_text: str, units: list[dict], control: RerankTaskControl,
+                    *, query_binding: dict | None = None) -> dict:
         if (
             not isinstance(query_text, str)
             or not isinstance(units, list)
             or not isinstance(control, RerankTaskControl)
+            or (query_binding is not None and not isinstance(query_binding, dict))
         ):
             raise ValueError("INVALID_RERANK_INPUT")
         seen = set()
@@ -1036,7 +1277,7 @@ class DeepSeekReranker:
             seen.add(unit["unit_id"])
         with ThreadPoolExecutor(max_workers=8) as pool:
             results = list(
-                pool.map(lambda unit: self._score_pair(query_text, unit, control), units)
+                pool.map(lambda unit: self._score_pair(query_text, unit, control, query_binding), units)
             )
         scores = [row["score"] for row in results if "score" in row]
         errors = [row["error"] for row in results if "error" in row]
@@ -1044,9 +1285,11 @@ class DeepSeekReranker:
         meta.update(
             external_retrieval_requests=sum(row["requests"] for row in results),
             cache_hits=sum(row["cache_hits"] for row in results),
+            duplicate_paid_dispatches_prevented=sum(row["prevented"] for row in results),
             rerank_mode="live",
             model=MODEL,
             rules_sha256=self.rules_sha256,
+            rerank_protocol=self.protocol,
             units_requested=len(units),
             units_scored=len(scores),
         )

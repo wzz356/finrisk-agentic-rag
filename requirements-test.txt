@@ -1,0 +1,2 @@
+-r requirements-agent-rag.txt
+pytest==8.4.2

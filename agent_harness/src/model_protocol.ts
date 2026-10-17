@@ -3,23 +3,38 @@ import Ajv2020 from "ajv/dist/2020.js";
 import { root, hash, validateOutput, type JsonObject, type TaskInput } from "./contracts.js";
 import type { TaskState } from "./state.js";
 import { checkCriteriaBinding, criteriaFor, criteriaProjection } from "./criteria.js";
+import { buildCitationOptions, expandCaseSelections } from "./citation_bundles.js";
 
 const wireBytes = readFileSync(`${root}/contracts/agent_rag/model-wire.schema.json`, "utf8");
 export const wireSchemaHash = hash(wireBytes);
 export const wireSchema = JSON.parse(wireBytes);
 const ajv = new Ajv2020.default({ strict: false, allErrors: true });
 const validators = new Map<string, ReturnType<typeof ajv.compile>>();
-export function wireContract(kind: string): JsonObject {
+export function wireContract(kind: string, compactCitations = false): JsonObject {
   const definitions: JsonObject = {};
   const add = (name: string): void => { if (definitions[name]) return; definitions[name] = wireSchema.$defs[name]; visit(definitions[name]); };
   const visit = (v: any): void => { if (Array.isArray(v)) v.forEach(visit); else if (v && typeof v === "object") { if (v.$ref?.startsWith("#/$defs/")) add(v.$ref.slice(8)); Object.values(v).forEach(visit); } };
   if (!["analysis", "final", "finalize"].includes(kind)) throw new Error("INVALID_OUTPUT_KIND");
-  add(kind); return { $schema: wireSchema.$schema, $ref: `#/$defs/${kind}`, $defs: definitions };
+  add(kind);
+  if (compactCitations && definitions.finalPoint) {
+    const point = structuredClone(definitions.finalPoint);
+    point.properties.tag_checks.minItems = 1;
+    definitions.finalPoint = point;
+  }
+  if (compactCitations && definitions.caseMatch) {
+    const match = structuredClone(definitions.caseMatch);
+    for (const field of ["source_id", "unit_id", "evidence_ids"]) delete match.properties[field];
+    match.properties.case_ref = { type: "string", pattern: "^C[0-9a-f]{20}$" };
+    match.required = ["case_ref", "same_points", "differences", "match_status", "supports_tags"];
+    definitions.caseMatch = match;
+  }
+  return { $schema: wireSchema.$schema, $ref: `#/$defs/${kind}`, $defs: definitions };
 }
-function validateWire(value: JsonObject, kind: string): void {
+function validateWire(value: JsonObject, kind: string, compactCitations = false): void {
   if (value.kind !== kind) throw new Error(`INVALID_OUTPUT_KIND:${kind}`);
-  if (!validators.has(kind)) validators.set(kind, ajv.compile(wireContract(kind)));
-  const validator = validators.get(kind)!;
+  const key = `${kind}:${compactCitations}`;
+  if (!validators.has(key)) validators.set(key, ajv.compile(wireContract(kind, compactCitations)));
+  const validator = validators.get(key)!;
   if (!validator(value)) throw new Error(`INVALID_WIRE:${(validator.errors ?? []).slice(0, 6).map(e => {
     const location = e.instancePath.match(/^\/points\/(\d+)\/facts\/(\d+)(?:\/|$)/);
     const fact = location ? value.points?.[Number(location[1])]?.facts?.[Number(location[2])] : undefined;
@@ -61,6 +76,10 @@ export function candidateRead(evidence: JsonObject, state: TaskState): boolean {
 }
 export function validateFinalize(value: JsonObject): void { validateWire(value, "finalize"); }
 export function candidateBundleRead(candidate: JsonObject, state: TaskState, presented = false): boolean {
+  if (state.evaluationCitations && candidate.required_evidence_ids !== undefined) {
+    const visible = [...state.evidence.values()].filter(e => !presented || state.contextEvidenceIds.has(e.evidence_id));
+    return buildCitationOptions(state.citationSnapshotId ?? "", [candidate], visible).length === 1;
+  }
   const evidence: JsonObject[] = candidate.evidence ?? [];
   const usable = (e: JsonObject) => candidateRead(e, state) && (!presented || candidatePresented(e, state));
   if (candidate.required_evidence_ids === undefined) return evidence.some(usable);
@@ -90,8 +109,21 @@ function validateUnitCitations(match: JsonObject, candidate: JsonObject, state: 
 export function normalizeModelOutput(value: JsonObject, kind: string, state: TaskState, task: TaskInput): JsonObject {
   // 旧fixture/历史协议仍可离线验收，真实运行只接受精简协议。
   if (!Array.isArray(value.segments)) {
-    if (task.config?.execution_mode === "live") throw new Error("MODEL_WIRE_REQUIRED:使用segments与points精简结构");
+    if (state.evaluationCitations || task.config?.execution_mode === "live") throw new Error("MODEL_WIRE_REQUIRED:使用segments与points精简结构");
     validateOutput(value, kind); return value;
+  }
+  if (state.evaluationCitations && kind === "final") {
+    if (!state.citationSnapshotId) throw new Error("CITATION_SNAPSHOT_REQUIRED");
+    validateWire(value, kind, true);
+    for (const point of value.points) {
+      const initial = state.points.find(row => row.risk_point_id === point.risk_point_id);
+      const tags = new Set<string>([...(initial?.candidate_tags ?? []), ...point.tag_checks.map((check: JsonObject) => check.tag)]);
+      for (const tag of tags) {
+        const check = point.tag_checks.find((row: JsonObject) => row.tag === tag);
+        if (!check || criteriaFor(tag).some(c => !check.conditions.some((condition: JsonObject) => condition.criterion_id === c.id))) throw new Error("EVALUATION_CRITERIA_INCOMPLETE");
+      }
+    }
+    value = { ...value, points: value.points.map((point: JsonObject) => ({ ...point, case_matches: expandCaseSelections(point.case_matches, state.citationOptions) })) };
   }
   validateWire(value, kind); state.validateRefs(value);
   checkCriteriaBinding(task.definitions, task.snapshot.dictionary_sha256);
@@ -179,15 +211,17 @@ export function normalizeModelOutput(value: JsonObject, kind: string, state: Tas
   return normalized;
 }
 
-export function wireExample(kind: string): JsonObject {
+export function wireExample(kind: string, compactCitations = false): JsonObject {
   const segments = [{ segment_id: "S0001", status: "reviewed", reason: "说明当前段落用途、否定与判断依据。" }];
   const refs = [{ segment_id: "S0001", quote: "示例片段原话", occurrence: 1 }];
   const points = kind === "analysis" ? [{ input_refs: refs, candidate_tags: ["合同外利益"], facts: [{ field: "insurance_product", value: null, origin: "unknown", input_refs: [], context_refs: [] }] }] : [{ risk_point_id: "RP0001", tag_checks: [{ tag: "合同外利益", conditions: criteriaFor("合同外利益").map(c => ({ criterion_id: c.id, status: "unknown", input_refs: [], context_refs: [], reason: "示例：未提供充分事实。" })) }], case_matches: [] }];
+  if (compactCitations && kind === "final") (points[0]! as JsonObject).case_matches = [{ case_ref: "C00000000000000000000", same_points: ["逐项填写本案相同机制。"], differences: ["逐项说明差异及未知条件。"], match_status: "partial_match", supports_tags: ["合同外利益"] }] as any;
   return { kind, segments, points };
 }
 
 export function stageProtocol(task: TaskInput, state: TaskState, kind?: string): string {
   let dictionary = state.phase === "analyzing" ? `\n官方字典=${JSON.stringify(task.definitions.map(d => ({ tag: d.risk_tag, definition: d.description })))}` : `\n逐标签条件（内部字典解释，不是新增法规）=${JSON.stringify(criteriaProjection(state.points.flatMap(p => p.candidate_tags)))}`;
-  if (task.config?.retrieval_profile === 'v2-hybrid-flash-v1') dictionary += '\nV2案例参照须填写实际命中unit_id，核读该单元required_evidence_ids对应的行为、主体及条件；evidence_ids须引用本轮已核读且可见的原话，覆盖全部必要锚点，可用覆盖它们的回源窗口；同一文书的其它行为不能补当前参照。读全仅证明证据可查看，不自动证明语义适用。';
-  return dictionary + (kind ? `\n当前输出JSON Schema=${JSON.stringify(wireContract(kind))}\n结构示例（仅演示结构，必须审阅实际材料）=${JSON.stringify(wireExample(kind))}${kind === "analysis" ? "\nfacts记录actor/audience/material_function/insurance_product/contract_outside；后两者value必须为yes/no/null。insurance_product只指保险业务指向，不要求具体险种；原文明确购买保险可支持yes。material_function必须用枚举；从文字推断用途用inferred，背景明确用途才用user_context。origin=input必须有input_refs；仅有背景证据时用user_context并提供context_refs，未知value=null。" : ""}` : `\n本阶段仅使用已声明的原生工具调用选择必要工具，不在正文JSON中写工具名或参数，不必附加decision JSON。准备结束时只输出${JSON.stringify({ kind: "finalize" })}；不得提交final或重复analysis，正式终稿由下一阶段的完整Schema约束。搜索候选不等于已核对案例，必要时用read_source覆盖命中锚点。结束信号Schema=${JSON.stringify(wireContract("finalize"))}`);
+  if (state.evaluationCitations) dictionary += '\n案例参照只从task_state.citation_options选择case_ref；case_matches只含case_ref、same_points、differences、match_status、supports_tags，禁止填写source_id/unit_id/evidence_ids。程序仅对本轮可见且已核读完整原话展开引用；未读候选仍可用read_source核读。读全不自动证明语义适用；必要事实未知继续unknown。';
+  else if (task.config?.retrieval_profile === 'v2-hybrid-flash-v1') dictionary += '\nV2案例参照须填写实际命中unit_id，核读该单元required_evidence_ids对应的行为、主体及条件；evidence_ids须引用本轮已核读且可见的原话，覆盖全部必要锚点，可用覆盖它们的回源窗口；同一文书的其它行为不能补当前参照。读全仅证明证据可查看，不自动证明语义适用。';
+  return dictionary + (kind ? `\n当前输出JSON Schema=${JSON.stringify(wireContract(kind, state.evaluationCitations))}\n结构示例（仅演示结构，必须审阅实际材料）=${JSON.stringify(wireExample(kind, state.evaluationCitations))}${kind === "analysis" ? "\nfacts记录actor/audience/material_function/insurance_product/contract_outside；后两者value必须为yes/no/null。insurance_product只指保险业务指向，不要求具体险种；原文明确购买保险可支持yes。material_function必须用枚举；从文字推断用途用inferred，背景明确用途才用user_context。origin=input必须有input_refs；仅有背景证据时用user_context并提供context_refs，未知value=null。" : ""}` : `\n本阶段仅使用已声明的原生工具调用选择必要工具，不在正文JSON中写工具名或参数，不必附加decision JSON。准备结束时只输出${JSON.stringify({ kind: "finalize" })}；不得提交final或重复analysis，正式终稿由下一阶段的完整Schema约束。搜索候选不等于已核对案例，必要时用read_source覆盖命中锚点。结束信号Schema=${JSON.stringify(wireContract("finalize"))}`);
 }

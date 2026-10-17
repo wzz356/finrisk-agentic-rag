@@ -9,6 +9,7 @@ __pycache__/
 runtime/
 outputs/
 work/
+.test-temp-*/
 data/
 models/
 vector_cache/

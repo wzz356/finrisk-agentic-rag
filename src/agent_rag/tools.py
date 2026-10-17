@@ -188,17 +188,28 @@ class KnowledgeTools:
                 complete=result["complete"],
                 stage_status=result["meta"].get("stage_status", {}),
             )
+            if "ranking_coverage" in result:
+                row["ranking_coverage"] = result["ranking_coverage"]
             row["status"] = (
                 ("ok" if row["candidates"] else "empty") if row["complete"] else "partial"
             )
+            if (not row["complete"] and "ranking_coverage" not in row
+                    and result["meta"].get("stop_reason")
+                    and all(row["stage_status"].get(stage) == "not_started"
+                            for stage in ("bm25", "bge", "rrf", "rerank"))):
+                row.update(status="error", error={"code": "STOPPED"})
             meta.update(result["meta"])
             if self.audit_dir is not None:
-                self.audit_dir.mkdir(parents=True, exist_ok=True)
-                with (self.audit_dir / f"{row['query_id']}.json").open(
-                    "x", encoding="utf-8"
-                ) as handle:
-                    json.dump(result.get("audit", {}), handle, ensure_ascii=False, allow_nan=False)
+                try:
+                    self.audit_dir.mkdir(parents=True, exist_ok=True)
+                    with (self.audit_dir / f"{row['query_id']}.json").open(
+                        "x", encoding="utf-8"
+                    ) as handle:
+                        json.dump(result.get("audit", {}), handle, ensure_ascii=False, allow_nan=False)
+                except (ValueError, OSError, TypeError) as error:
+                    raise RuntimeError("RETRIEVAL_AUDIT_WRITE_FAILED") from error
         except (ValueError, OSError, RuntimeError) as error:
+            row.update(complete=False, status="error")
             row["error"] = {"code": str(error).split(":", 1)[0][:100]}
         response = envelope(
             "partial" if not row["complete"] else row["status"], {"queries": [row]}, meta

@@ -1,3 +1,5 @@
+import type { CitationOption } from "./citation_bundles.js";
+import { validateRankingCoverage } from "./retrieval_quality.js";
 import { hash, canonical, MODEL_WIRE_VERSION, type InputRecord, type JsonObject, type Phase, type ToolEnvelope } from "./contracts.js";
 export class TaskState {
   phase: Phase = "analyzing";
@@ -13,6 +15,11 @@ export class TaskState {
   requestedProtocolVersion = MODEL_WIRE_VERSION;
   runtimeBudget?: JsonObject;
   contextEvidenceIds = new Set<string>();
+  evaluationCitations = false;
+  retrievalReliability = false;
+  expectedRerankProtocol?: string;
+  citationSnapshotId?: string;
+  citationOptions = new Map<string, CitationOption>();
   caseTagBindings = new Map<string, JsonObject[]>();
   points: JsonObject[] = [];
   evidence = new Map<string, JsonObject>();
@@ -67,8 +74,32 @@ export class TaskState {
   acceptTool(name: string, params: JsonObject, value: ToolEnvelope, actionId?: string): void {
     if (name === 'search_cases' && actionId) {
       if (this.appliedSearchActions.has(actionId)) return;
-      this.appliedSearchActions.add(actionId);
     }
+    if (name === "search_cases") {
+      for (const query of value.data?.queries ?? []) {
+        validateRankingCoverage(query, this.retrievalReliability);
+        if (this.retrievalReliability && query.ranking_coverage && this.expectedRerankProtocol
+          && query.ranking_coverage.rerank_protocol !== this.expectedRerankProtocol) throw new Error("RERANK_PROTOCOL_BINDING_MISMATCH");
+      }
+    }
+    if (this.evaluationCitations) {
+      const identity = (row: JsonObject) => canonical(Object.fromEntries(["source_id", "source_kind", "text_version", "text_sha256", "start", "end", "quote", "source_verified"].map(key => [key, row[key]])));
+      const registered = new Map([...this.evidence].map(([id, row]) => [id, identity(row)]));
+      const preflight = (data: unknown): void => {
+        if (Array.isArray(data)) { data.forEach(preflight); return; }
+        if (!data || typeof data !== "object") return;
+        const row = data as JsonObject;
+        if (typeof row.evidence_id === "string" && typeof row.quote === "string") {
+          const binding = identity(row);
+          if (registered.has(row.evidence_id) && registered.get(row.evidence_id) !== binding) throw new Error("EVIDENCE_IDENTITY_CONFLICT");
+          registered.set(row.evidence_id, binding);
+        }
+        Object.values(row).forEach(preflight);
+      };
+      // 先验证整个结果，冲突不得留下已读继承、半更新证据或搜索幂等标记。
+      preflight(value.data);
+    }
+    if (name === 'search_cases' && actionId) this.appliedSearchActions.add(actionId);
     const visit = (data: unknown): void => {
       if (Array.isArray(data)) { data.forEach(visit); return; }
       if (!data || typeof data !== "object") return;

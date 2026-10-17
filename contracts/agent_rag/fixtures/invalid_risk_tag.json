@@ -1,0 +1,83 @@
+{
+  "kind": "final",
+  "segment_assessments": [
+    {
+      "segment_id": "S0001",
+      "status": "reviewed",
+      "reason": "已区分赠礼表述与缺失的合同信息。"
+    }
+  ],
+  "risk_points": [
+    {
+      "risk_point_id": null,
+      "input_refs": [
+        {
+          "segment_id": "S0001",
+          "quote": "购买这份保险就送购物卡。",
+          "occurrence": 1
+        }
+      ],
+      "mechanism": "以购买保险为条件提供赠礼。",
+      "judgment": "suspected",
+      "tag_checks": [
+        {
+          "tag": "自创风险标签",
+          "status": "supported",
+          "reason": "本例将购买保险与购物卡赠礼直接关联；按字典核对诱导机制。",
+          "conditions": [
+            {
+              "condition_id": "C01",
+              "statement": "购买与赠礼有直接关联。",
+              "critical": true,
+              "status": "met",
+              "input_refs": [
+                {
+                  "segment_id": "S0001",
+                  "quote": "购买这份保险就送购物卡。",
+                  "occurrence": 1
+                }
+              ],
+              "context_refs": [],
+              "reason": "材料直接描述该关联。"
+            }
+          ],
+          "support_input_refs": [
+            {
+              "segment_id": "S0001",
+              "quote": "购买这份保险就送购物卡。",
+              "occurrence": 1
+            }
+          ],
+          "contra_input_refs": [],
+          "case_match_status": "no_reliable_match"
+        },
+        {
+          "tag": "合同外利益",
+          "status": "unknown",
+          "reason": "输入没有提供合同是否约定赠礼的信息。",
+          "conditions": [
+            {
+              "condition_id": "C02",
+              "statement": "该利益超出当前保险合同约定。",
+              "critical": true,
+              "status": "unknown",
+              "input_refs": [],
+              "context_refs": [],
+              "reason": "当前合同事实未提供。"
+            }
+          ],
+          "support_input_refs": [],
+          "contra_input_refs": [],
+          "case_match_status": "no_reliable_match"
+        }
+      ],
+      "case_match_status": "no_reliable_match",
+      "case_matches": [],
+      "unknowns": [
+        "当前合同是否约定购物卡利益。"
+      ]
+    }
+  ],
+  "unprocessed_segment_ids": [],
+  "summary": "本例提示赠礼相关疑似风险，合同外条件待复核；假设本轮未找到可靠处罚参照。"
+}

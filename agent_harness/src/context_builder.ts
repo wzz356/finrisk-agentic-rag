@@ -2,6 +2,8 @@ import type { AgentMessage } from "@earendil-works/pi-agent-core";
 import type { TaskState } from "./state.js";
 import { canonical, type Config, type JsonObject } from "./contracts.js";
 import { candidateRead } from "./model_protocol.js";
+import { buildCitationOptions } from "./citation_bundles.js";
+import { projectRankingCoverage } from "./retrieval_quality.js";
 
 export function estimateTokens(value: unknown): number {
   if (Array.isArray(value) && value.every(item => item && typeof item.role === "string")) {
@@ -183,7 +185,15 @@ function buildWireContext(messages: AgentMessage[], state: TaskState, config: Co
     if (v.segment_id && v.quote) { const span = state.resolve(v); return { segment_id: span.segment_id, start: span.start, end: span.end }; }
     return Object.fromEntries(Object.entries(v).map(([key, value]) => [key, inputLocations(value)]));
   };
+  const refreshCitationOptions = () => {
+    const candidates = state.searches.flatMap(q => q.candidates ?? []).filter(c => !omittedCandidateKeys.has(candidateKey(c)));
+    const options = buildCitationOptions(state.citationSnapshotId ?? "", candidates, usableEvidence);
+    state.citationOptions = new Map(options.map(option => [option.case_ref, option]));
+    // 模型只选择原子参照；被隐藏的检索锚点ID不作为可引用的输出。
+    return options.map(({ required_evidence_ids, ...option }) => option);
+  };
   const ledgerContent = () => "<task_state>" + JSON.stringify({
+    ...(state.evaluationCitations ? { citation_options: refreshCitationOptions() } : {}),
     phase: state.phase,
     budget: state.runtimeBudget,
     scope: state.analysis ? { document_context: state.analysis.document_context, segment_assessments: state.analysis.segment_assessments, unprocessed_segment_ids: state.analysis.unprocessed_segment_ids } : null,
@@ -192,7 +202,9 @@ function buildWireContext(messages: AgentMessage[], state: TaskState, config: Co
     gaps: [...state.gaps.values()],
     evidence: usableEvidence.map(e => ({ evidence_id: e.evidence_id, source_id: e.source_id, quote: e.quote, context_has_more: e.context_has_more, anchor_not_fully_covered: e.anchor_not_fully_covered ?? false, was_read: Boolean(e.was_read), semantic_acceptance: e.accepted_as_relevant ? "model_assessed" : "not_accepted" })),
     unread_candidates_omitted: [...state.evidence.keys()].filter(id => !usableEvidence.some(e => e.evidence_id === id)),
-    searches: state.searches.map(q => ({ focus_refs: inputLocations(q.focus_refs), risk_point_ids: q.risk_point_ids, goal: q.goal, status: q.status, complete: q.complete, candidates: (q.candidates ?? []).filter(visibleCandidate).map(candidateProjection) })),
+    searches: state.searches.map(q => ({ focus_refs: inputLocations(q.focus_refs), risk_point_ids: q.risk_point_ids, goal: q.goal, status: q.status, complete: q.complete,
+      ...(state.retrievalReliability && q.ranking_coverage ? { ranking_coverage: projectRankingCoverage(q) } : {}),
+      candidates: (q.candidates ?? []).filter(visibleCandidate).map(candidateProjection) })),
   }) + "</task_state>";
   const ledger: AgentMessage = { role: "system", content: ledgerContent(), timestamp: Date.now() };
   const recent: AgentMessage[] = [];
@@ -223,7 +235,14 @@ function buildWireContext(messages: AgentMessage[], state: TaskState, config: Co
               if (Array.isArray(v.candidates) && projected.candidates.length < v.candidates.length) projected.returned_candidates_truncated = true;
               return projected;
             };
-            return { ...m, content: [{ type: "text" as const, text: JSON.stringify(strip(response)) }] };
+            const projected = strip(response);
+            if (state.retrievalReliability) {
+              projected.meta = { snapshot_id: response.meta?.snapshot_id };
+              for (const q of projected.data?.queries ?? []) {
+                if (q.ranking_coverage) q.ranking_coverage = projectRankingCoverage(q);
+              }
+            }
+            return { ...m, content: [{ type: "text" as const, text: JSON.stringify(projected) }] };
           } catch { return m; }
   });
   const assemble = () => [...system, ...(user ? [user] : []), ledger, ...projectRecent(), ...trailing];

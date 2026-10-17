@@ -1,0 +1,19 @@
+{
+  "kind": "analysis",
+  "document_context": {
+    "main_scene": null,
+    "scene_status": "unknown",
+    "material_functions": [
+      "unknown"
+    ]
+  },
+  "segment_assessments": [
+    {
+      "segment_id": "S0001",
+      "status": "reviewed",
+      "reason": "结构fixture。"
+    }
+  ],
+  "risk_points": [],
+  "unprocessed_segment_ids": []
+}

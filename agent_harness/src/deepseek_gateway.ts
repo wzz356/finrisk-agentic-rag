@@ -9,6 +9,8 @@ import { countPayload, deepseekModel, finalizePayload, buildProviderPayload, sam
 import { canonical, type JsonObject } from "./contracts.js";
 import { activeTrialBudget, type TrialBudget } from "./trial_budget.js";
 import { assessRequest } from './request_admission.js';
+import { transportDiagnostic, type TransportDiagnostic, type TransportStage } from './transport_diagnostics.js';
+import { ResponseObserver } from "./response_observer.js";
 
 export function loadDeepSeekKey(): string {
   const readKeyFile = (path: string) => readFileSync(path, "utf8").replace(/^\uFEFF/, "").trim();
@@ -28,12 +30,31 @@ export function deepseekGateway(budget: Budget, state: TaskState, trace: Trace, 
     let finished = false; let started = false; let rawUsage: JsonObject | undefined; let status: number | undefined; let physical = 0; let transportAttempts = 0; let egressFailure: string | undefined;
     let trialGuard: TrialBudget | undefined; let trialReservation: number | undefined;
     let admittedBody: string | undefined;
+    const responseObserver = new ResponseObserver();
+    let responseRecorded = false;
+    const recordResponse = (message?: AssistantMessage): JsonObject => {
+      const assembled = message?.content.filter(c => c.type === "text").map(c => c.type === "text" ? c.text : "").join("") ?? "";
+      const record: JsonObject = { ...responseObserver.complete(assembled), request_id: requestId ?? null };
+      if (!message) { record.text_matches = null; record.assembled_text_sha256 = null; }
+      const { fragments, ...summary } = record;
+      if (responseRecorded) return summary;
+      responseRecorded = true;
+      try { trace.save(`model-response-${requestId ?? "unadmitted"}.json`, record); }
+      catch { summary.recording_failed = true; }
+      try { trace.event("model.response_observed", summary); }
+      catch { summary.recording_failed = true; }
+      return summary;
+    };
+    let transportStage: TransportStage = "fetch"; let diagnostic: TransportDiagnostic | undefined;
     const finishError = (reason: string) => {
       if (finished) return; finished = true; clearTimeout(timer); options?.signal?.removeEventListener("abort", abort);
       controller.abort(); if (requestId) budget.settle(requestId, physical ? undefined : 0);
+      if (physical && status !== undefined && status < 300 && !responseRecorded) recordResponse();
+      const category = ["deadline_exceeded", "model_request_timeout"].includes(reason) ? "timeout" : reason === "cancelled" ? "abort" : "unknown";
+      const failureDiagnostic = physical && reason !== "MODEL_CONTENT_FILTER" ? diagnostic ?? transportDiagnostic(transportStage, undefined, status, category) : null;
       const message = makeError(reason); if (!started) output.push({ type: "start", partial: message });
       output.push({ type: "error", reason: "error", error: message });
-      trace.event("model.failure", { request_id: requestId ?? null, reason, physical_requests: physical, usage_unknown: physical > 0 });
+      trace.event("model.failure", { request_id: requestId ?? null, reason, physical_requests: physical, usage_unknown: physical > 0, diagnostic: failureDiagnostic });
     };
     const abort = () => finishError(budget.remainingMs() <= 0 ? "deadline_exceeded" : "cancelled");
     const timer = setTimeout(() => finishError(budget.remainingMs() <= 0 ? "deadline_exceeded" : "model_request_timeout"), timeoutMs);
@@ -52,7 +73,18 @@ export function deepseekGateway(budget: Budget, state: TaskState, trace: Trace, 
       budget.recordPhysicalRequest();
       physical++;
       trace.event("model.request", { request_id: requestId, model: "deepseek-flash", execution_mode: "live", endpoint: "https://api.deepseek.com/chat/completions", physical_request: true, provider_auto_retries: 0, thinking: "disabled" });
-      return fetcher(input, { ...init, body: admittedBody, redirect: "error" });
+      try {
+        const response = await fetcher(input, { ...init, body: admittedBody, redirect: "error" });
+        // Capture non-2xx status at the fetch boundary: provider onResponse is
+        // not guaranteed to run when the SDK rejects an HTTP response.
+        status = response.status;
+        transportStage = response.ok ? "stream" : "response";
+        if (!response.ok) diagnostic = transportDiagnostic("response", undefined, status);
+        return response.ok ? responseObserver.observeResponse(response) : response;
+      } catch (error) {
+        diagnostic = transportDiagnostic("fetch", error);
+        throw error;
+      }
     };
     const source = providerStream(deepseekModel, context, {
       apiKey: key, fetch: safeFetch, signal: controller.signal, maxRetries: 0, timeoutMs,
@@ -74,7 +106,7 @@ export function deepseekGateway(budget: Budget, state: TaskState, trace: Trace, 
           return prepared;
         } catch (error) { egressFailure = String((error as Error).message); throw error; }
       },
-      onResponse: response => { status = response.status; },
+      onResponse: response => { status = response.status; transportStage = response.status >= 200 && response.status < 300 ? "stream" : "response"; },
       onProviderStreamEvent: event => { if ((event as JsonObject)?.usage) rawUsage = (event as JsonObject).usage; },
     });
     void (async () => {
@@ -82,7 +114,13 @@ export function deepseekGateway(budget: Budget, state: TaskState, trace: Trace, 
         for await (const event of source) {
           if (finished) { trace.event("model.late_result", { request_id: requestId, ignored: true }); continue; }
           if (event.type === "start") started = true;
-          if (event.type === "error") { finishError(egressFailure ?? (status ? `PROVIDER_HTTP_${status}` : "MODEL_TRANSPORT_FAILURE")); break; }
+          if (event.type === "error") {
+            if (physical && status !== undefined && status < 300) recordResponse(event.error);
+            // pi-ai 1.2.0 preserves rawStopReason and this exact fixed message
+            // for content_filter. A later stream exception changes the message.
+            const contentFiltered = status !== undefined && status >= 200 && status < 300 && event.error.rawStopReason === "content_filter" && event.error.errorMessage === "Provider finish_reason: content_filter";
+            finishError(egressFailure ?? (contentFiltered ? "MODEL_CONTENT_FILTER" : status && status >= 300 ? `PROVIDER_HTTP_${status}` : "MODEL_TRANSPORT_FAILURE")); break;
+          }
           if (event.type === "done") {
             const reported = rawUsage && [rawUsage.prompt_tokens, rawUsage.completion_tokens, rawUsage.total_tokens].every(n => Number.isInteger(n) && n >= 0)
               && rawUsage.total_tokens === rawUsage.prompt_tokens + rawUsage.completion_tokens
@@ -91,6 +129,13 @@ export function deepseekGateway(budget: Budget, state: TaskState, trace: Trace, 
             const costSettled = trialReservation === undefined ? false : trialGuard!.settle(trialReservation, reported ? rawUsage : undefined);
             finished = true; clearTimeout(timer); options?.signal?.removeEventListener("abort", abort);
             trace.event("model.settled", { request_id: requestId, raw_usage: rawUsage ?? null, normalized_usage: event.message.usage, usage_known: Boolean(reported), trial_reservation_id: trialReservation ?? null, cost_settled: costSettled, context_estimated_tokens: contextCount!.prompt_tokens, context_counter_kind: contextCount!.counter_kind, provider_prompt_tokens: reported ? rawUsage!.prompt_tokens : null, duration_ms: event.message.durationMs ?? null });
+            const observation = recordResponse(event.message);
+            if (observation.recording_failed || observation.text_matches === false) {
+              const message = makeError(observation.recording_failed ? "MODEL_RESPONSE_AUDIT_FAILED" : "MODEL_STREAM_ASSEMBLY_MISMATCH");
+              output.push({ type: "error", reason: "error", error: message });
+              trace.event("model.output_failure", { request_id: requestId, reason: message.errorMessage, usage_known: Boolean(reported) });
+              break;
+            }
           }
           output.push(event);
         }
