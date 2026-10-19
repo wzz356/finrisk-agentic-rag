@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "sources": 9640,
+  "units": 65478,
+  "normalized_counts": {
+    "documents": 9640,
+    "cases": 15621,
+    "behaviors": 25187,
+    "evidence": 114968,
+    "annotations": 182364,
+    "materials": 12081
+  },
+  "all_runtime_source_spans": "passed",
+  "all_normalized_evidence_spans": "passed",
+  "core_ids_and_checked_relations": "passed",
+  "dense_order_token_audit_model_fingerprint_vector_hash": "passed",
+  "archives": [
+    {
+      "file": "finrisk-v2-normalized-20261019.zip",
+      "members": 21,
+      "crc_and_sha256": "passed"
+    },
+    {
+      "file": "finrisk-v2-runtime-20261019.zip",
+      "members": 9,
+      "crc_and_sha256": "passed"
+    }
+  ],
+  "model_requests_sent": 0,
+  "semantic_or_human_approval_claimed": false
+}

@@ -40,7 +40,7 @@ Invoke-RestMethod ("http://127.0.0.1:8765" + $task.poll_url)
 
 ## 可选：V2混合检索
 
-V2代码完整保留，但**公共包不自带完整知识库和GPU资产**。需要原实验兼容的：
+完整知识库和文档向量已作为同仓库Release附件交付，优先按[完整知识库安装说明](FULL_KNOWLEDGE_BASE.md)操作。模型权重与GPU环境另行准备。以下为旧实验兼容准备器的说明，需要原实验兼容的：
 
 - 规范化`documents.jsonl`：`source_id/official_file_id/full_text/text_sha256/text_version`等字段。
 - 结构化单元`structured.jsonl`：`unit_id/file_id/text`、行为/主体/条件定位及关联信息。
