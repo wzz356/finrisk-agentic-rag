@@ -3,18 +3,25 @@
 import asyncio
 import hashlib
 import json
-import math
 import os
 import re
 import threading
 import time
 import uuid
+from decimal import Decimal, DecimalException
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlparse
 
 import httpx
 
+from agent_rag.budget_profiles import (
+    LEGACY_V2_PROFILE,
+    MAX_SAFE_INTEGER,
+    budget_profile_sha256,
+    load_budget_profile,
+    validate_budget_config,
+)
 from agent_rag.contracts import (
     PROJECT_ROOT,
     canonical_json,
@@ -24,6 +31,7 @@ from agent_rag.contracts import (
 )
 from agent_rag.input_registry import InputRegistry, text_hash
 from agent_rag.knowledge_snapshot import KnowledgeSnapshot
+from agent_rag.planned_execution_contract import PLANNED_PROFILE, planned_execution_contract
 from agent_rag.rerank_backend import RerankTaskControl
 from agent_rag.tools import KnowledgeTools
 from agent_rag.v2_snapshot import PROFILE as V2_PROFILE
@@ -95,6 +103,17 @@ class TaskService:
         )
         overrides.pop("extends", None)
         config = {**self.baseline_config, **overrides}
+        budget_id = config.get("budget_profile_id")
+        if budget_id != entry.get("budget_profile_id"):
+            raise ValueError("INVALID_BUDGET_CONFIG: unregistered budget profile binding")
+        if budget_id is not None:
+            budget = load_budget_profile(budget_id)
+            config.update({key: value for key, value in budget.items() if key != "profile_id"})
+            config.update(
+                budget_profile_sha256=budget_profile_sha256(budget),
+                max_external_retrieval_requests=budget["rerank_max_requests"],
+            )
+        validate_budget_config(config)
         schemas = tool_schemas_for_profile(self.profile)
         if (
             config["max_queries_per_search"]
@@ -104,21 +123,27 @@ class TaskService:
         return config
 
     @staticmethod
-    def _rerank_limits() -> tuple[float, int]:
+    def _rerank_limits(budget_profile_id: str = LEGACY_V2_PROFILE) -> tuple[float, int]:
+        budget = load_budget_profile(budget_profile_id)
         cap = os.environ.get("FINRISK_AGENT_RERANK_CAP_CNY")
         requests = os.environ.get("FINRISK_AGENT_RERANK_MAX_REQUESTS")
         if cap is None or requests is None:
             raise ValueError("RERANK_LIMITS_REQUIRED")
         try:
-            cap_cny = float(cap)
-            if not re.fullmatch(r"[1-9][0-9]*", requests.strip()):
+            micro_cny = Decimal(cap) * 1_000_000
+            if (
+                not micro_cny.is_finite()
+                or micro_cny != micro_cny.to_integral_value()
+                or not 1 <= micro_cny <= budget["rerank_cap_micro_cny"]
+                or not re.fullmatch(r"[1-9][0-9]*", requests.strip())
+            ):
                 raise ValueError("INVALID_RERANK_LIMITS")
             max_requests = int(requests)
-            if not math.isfinite(cap_cny) or cap_cny < 0.000001 or max_requests > 240:
+            if max_requests > min(budget["rerank_max_requests"], MAX_SAFE_INTEGER):
                 raise ValueError("INVALID_RERANK_LIMITS")
-        except (ValueError, OverflowError) as error:
+        except (DecimalException, ValueError, OverflowError) as error:
             raise ValueError("INVALID_RERANK_LIMITS") from error
-        return cap_cny, max_requests
+        return int(micro_cny) / 1_000_000, max_requests
 
     def admit(
         self, request: dict[str, Any], idempotency_key: str | None
@@ -130,12 +155,21 @@ class TaskService:
         if self.profile == V2_PROFILE and task_config["rerank_mode"] == "live":
             if os.environ.get("FINRISK_AGENT_ALLOW_RETRIEVAL_LIVE") != "1":
                 raise ValueError("RETRIEVAL_LIVE_MODE_NOT_ENABLED")
-            rerank_limits = self._rerank_limits()
+            rerank_limits = self._rerank_limits(
+                task_config.get("budget_profile_id", LEGACY_V2_PROFILE)
+            )
             task_config.update(
                 rerank_cap_cny=rerank_limits[0],
                 rerank_max_requests=rerank_limits[1],
                 max_external_retrieval_requests=rerank_limits[1],
             )
+            if task_config.get("budget_profile_id"):
+                task_config["rerank_cap_micro_cny"] = int(
+                    Decimal(str(rerank_limits[0])) * 1_000_000
+                )
+                task_config["task_total_cost_cap_micro_cny"] = (
+                    task_config["rerank_cap_micro_cny"] + task_config["model_trial_cap_micro_cny"]
+                )
         if task_config["execution_mode"] == "live":
             if os.environ.get("FINRISK_AGENT_ALLOW_LIVE") != "1":
                 raise ValueError("LIVE_MODE_NOT_ENABLED")
@@ -145,6 +179,11 @@ class TaskService:
                 task_config.update(
                     model_trial_cap_cny=1, task_total_cost_cap_cny=task_config["rerank_cap_cny"] + 1
                 )
+        if task_config.get("budget_profile_id"):
+            task_config.update(
+                model_trial_cap_cny=task_config["model_trial_cap_micro_cny"] / 1_000_000,
+                task_total_cost_cap_cny=task_config["task_total_cost_cap_micro_cny"] / 1_000_000,
+            )
         if request.get("engine", "controlled_agent") not in {"controlled_agent", "fixed_rag"}:
             raise ValueError("INVALID_ENGINE")
         scenario = request.get("mock_scenario", "generic")
@@ -161,6 +200,10 @@ class TaskService:
         task_id = uuid.uuid4().hex
         registry = InputRegistry(request["text"], request.get("user_context"), task_id)
         task_config["engine"] = request.get("engine", "controlled_agent")
+        if task_config.get("budget_profile_id"):
+            if task_config["engine"] == "fixed_rag":
+                task_config["orchestration_mode"] = "planned_fixed"
+            validate_budget_config(task_config)
         binding = text_hash(
             canonical_json(
                 {
@@ -242,6 +285,10 @@ class TaskService:
                     (PROJECT_ROOT / "contracts/agent_rag/risk-criteria.json").read_bytes()
                 ).hexdigest(),
             }
+            if task_config.get("budget_profile_sha256"):
+                manifest["budget_profile_sha256"] = task_config["budget_profile_sha256"]
+            if profile_id == PLANNED_PROFILE:
+                manifest.update(planned_execution_contract(task_config, manifest))
             atomic_json(directory / "input.json", registry.export())
             atomic_json(directory / "segments.json", registry.segments)
             atomic_json(directory / "manifest.json", manifest)
@@ -254,7 +301,9 @@ class TaskService:
                 if remaining <= 0:
                     raise ValueError("TASK_DEADLINE_EXCEEDED")
                 control = RerankTaskControl(
-                    directory / "rerank-ledger.json", *rerank_limits, timeout_seconds=remaining
+                    directory / "rerank-ledger.json", *rerank_limits, timeout_seconds=remaining,
+                    expected_budget_profile_id=task_config.get("budget_profile_id"),
+                    expected_budget_profile_sha256=task_config.get("budget_profile_sha256"),
                 )
                 self.controls[task_id] = control
             self.records[task_id] = record
@@ -364,6 +413,10 @@ class TaskService:
                         "prompt_sha256",
                         "tool_contract_sha256",
                         "request_admission_policy_sha256",
+                        "budget_profile_sha256",
+                        "agent_loop_schema_sha256",
+                        "agent_loop_protocol_sha256",
+                        "profile_sha256",
                     )
                     if key in manifest
                 }

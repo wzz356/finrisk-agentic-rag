@@ -6,6 +6,7 @@
     "live-deepseek-flash-bm25-v1": {"config": "live-deepseek-flash.json", "retrieval_profile": "bm25-source-v1", "execution_mode": "live", "rerank_mode": "not_enabled"},
     "mock-v2-flash-replay-v1": {"config": "mock-v2-flash-replay.json", "retrieval_profile": "v2-hybrid-flash-v1", "execution_mode": "mock", "rerank_mode": "replay"},
     "mock-v2-flash-live-v1": {"config": "mock-v2-flash-live.json", "retrieval_profile": "v2-hybrid-flash-v1", "execution_mode": "mock", "rerank_mode": "live"},
-    "live-deepseek-flash-v2-v1": {"config": "live-deepseek-flash-v2.json", "retrieval_profile": "v2-hybrid-flash-v1", "execution_mode": "live", "rerank_mode": "live"}
+    "live-deepseek-flash-v2-v1": {"config": "live-deepseek-flash-v2.json", "retrieval_profile": "v2-hybrid-flash-v1", "execution_mode": "live", "rerank_mode": "live"},
+    "live-deepseek-flash-planned-v1": {"config": "live-deepseek-flash-planned.json", "retrieval_profile": "v2-hybrid-flash-v1", "execution_mode": "live", "rerank_mode": "live", "budget_profile_id": "planned-evidence-loop-v1"}
   }
 }

@@ -407,10 +407,7 @@ def test_normalization_failure_is_isolated_and_audited(
         return {"documents": docs, "index": units, "units": len(accepted)}
 
     def vectors(old, index, out):
-        out.mkdir(parents=True)
-        p = out / "dense-config.json"
-        p.write_text("{}")
-        return p
+        pytest.fail("未获正式审批的候选不得构建正式向量")
 
     monkeypatch.setattr(m, "compile_delta", compile_fake)
     config = {
@@ -435,7 +432,9 @@ def test_normalization_failure_is_isolated_and_audited(
             vector_builder=vectors,
         )
         assert result["held_documents"] == 3
-    assert result["status"] == "built" and result["accepted_documents"] == 1
+    assert result["status"] == "candidate_pending_review" and result["accepted_documents"] == 1
+    assert result["selectable"] is False and result["formal_build_allowed"] is False
+    assert not (tmp_path / "registry/versions").exists()
     if bad_count == 1:
         assert result["review_queue"][0]["code"] == "V2_NORMALIZATION_FAILED"
     assert not (tmp_path / "registry/current.json").exists()

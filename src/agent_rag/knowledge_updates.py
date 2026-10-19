@@ -84,7 +84,7 @@ def append_jsonl(base: Path, delta: Path, destination: Path) -> None:
             shutil.copyfileobj(src, out)
 
 
-def pending_documents(crawl: Path, known: set[str]) -> list[dict]:
+def pending_documents(crawl: Path, known: set[str], *, include_bank_insurance=False) -> list[dict]:
     crawl = crawl.resolve()
     result, seen = [], set(known)
     for row in rows(crawl / "index.jsonl") if (crawl / "index.jsonl").is_file() else []:
@@ -104,7 +104,8 @@ def pending_documents(crawl: Path, known: set[str]) -> list[dict]:
         raw = path.read_bytes()
         text = raw.decode("utf-8-sig")
         digest = hashlib.sha256(text.encode("utf-8")).hexdigest()
-        if digest in seen or "保险" not in text or BANK_PARTY_RE.search(text):
+        if (digest in seen or "保险" not in text
+                or (BANK_PARTY_RE.search(text) and not include_bank_insurance)):
             continue
         seen.add(digest)
         result.append(
@@ -493,29 +494,33 @@ def run_update(
     model_factory=None,
     include_review=False,
 ) -> dict:
+    # This extraction workflow creates candidates only. Formal construction and
+    # publication are owned by KnowledgePublisher after independent approval.
+    if publish:
+        raise ValueError("MAINTENANCE_APPROVAL_REQUIRED")
     from agent_rag.knowledge_registry import (
         current_snapshot,
-        publish_snapshot,
-        register_base_snapshot,
     )
     from agent_rag.update_model import UpdateModelClient
-    from agent_rag.update_vectors import build_dense_extension
 
     registry, crawl = Path(config["registry"]).resolve(), Path(config["crawl_dir"]).resolve()
     if not 1 <= max_documents <= 100 or not 1 <= max_requests <= 200 or not 0 < cap_cny <= 100:
         raise ValueError("INVALID_UPDATE_LIMITS")
-    if publish and not generate:
-        raise ValueError("PUBLISH_REQUIRES_EXPLICIT_GENERATION")
     with update_lock(registry):
         base_path = (
-            current_snapshot(registry)
+            Path(config["build_base_snapshot"])
+            if config.get("build_base_snapshot")
+            else current_snapshot(registry)
             if (registry / "current.json").exists()
             else Path(config["base_snapshot"])
         )
         base = V2KnowledgeSnapshot(base_path)
         held = {p.parent.name for p in (registry / "candidates").glob("*/disposition.json")}
         known = {s["text_sha256"] for s in base.sources.values()}
-        pending = pending_documents(crawl, known | (set() if include_review else held))
+        pending = pending_documents(
+            crawl, known | (set() if include_review else held),
+            include_bank_insurance=config.get("include_bank_insurance") is True,
+        )
         result = {
             "pending_documents": len(pending),
             "selected": min(len(pending), max_documents),
@@ -598,72 +603,7 @@ def run_update(
             result["status"] = "review_required"
             write_json(run / "result.json", result)
             return result
-        delta = compile_delta(config, accepted, run / "normalized")
-        # 以最终路径构建；完成标记/验证前不会有current指针引用此目录。
-        version = registry / "versions" / stamp
-        version.mkdir(parents=True)
-        try:
-            sources, index = version / "documents.jsonl", version / "structured.jsonl"
-            append_jsonl(Path(base.assets["sources"]["path"]), delta["documents"], sources)
-            append_jsonl(Path(base.assets["index"]["path"]), delta["index"], index)
-            dictionary = version / "risk_type_dictionary.csv"
-            shutil.copyfile(base.assets["dictionary"]["path"], dictionary)
-            old_dense = Path(base.manifest["backend"]["assets"]["dense_config"]["path"])
-            dense = (vector_builder or build_dense_extension)(old_dense, index, version / "dense")
-            rule = version / "rerank-rules.md"
-            shutil.copyfile(base.manifest["backend"]["assets"]["rules"]["path"], rule)
-            snapshot = V2KnowledgeSnapshot.create(sources, index, dictionary, version / "snapshot")
-            snapshot.manifest.update(
-                knowledge_version="finrisk-v2-web-update-v1",
-                corpus_scope="incremental-v1",
-                parent_snapshot_id=base.manifest["snapshot_id"],
-                generation_run=str(run),
-                human_approved=False,
-                semantic_coverage_verified=False,
-                rerank_mode="live",
-                backend={
-                    "mode": "live",
-                    "rerank_protocol": "span-ref-v2",
-                    "assets": {
-                        "dense_config": {"path": str(dense.resolve()), "sha256": file_hash(dense)},
-                        "rules": {"path": str(rule.resolve()), "sha256": file_hash(rule)},
-                    },
-                },
-            )
-            snapshot.manifest["snapshot_id"] = (
-                "v2-"
-                + hashlib.sha256(
-                    canonical_json(
-                        {
-                            "core": snapshot.manifest["snapshot_id"],
-                            "dense": file_hash(dense),
-                            "rules": file_hash(rule),
-                            "protocol": "span-ref-v2",
-                        }
-                    ).encode()
-                ).hexdigest()[:24]
-            )
-            write_json(version / "snapshot/manifest.json", snapshot.manifest)
-            for unit in snapshot.units:
-                snapshot.candidate(unit, 1, 0.0)
-            result.update(
-                status="built",
-                version=stamp,
-                snapshot_path=str(version / "snapshot"),
-                snapshot_id=snapshot.manifest["snapshot_id"],
-                new_units=delta["units"],
-                source_count=len(snapshot.sources),
-                chunk_count=len(snapshot.units),
-            )
-            write_json(version / "update-complete.json", result)
-            if publish:
-                bootstrap = register_base_snapshot(registry, Path(config["base_snapshot"]))
-                if not (registry / "current.json").exists():
-                    publish_snapshot(registry, bootstrap)
-                result["publication"] = publish_snapshot(registry, version / "snapshot")
-                result.update(status="published", published=True)
-        except BaseException:
-            write_json(version / "update-failed.json", {"status": "failed_not_published"})
-            raise
+        result.update(status="candidate_pending_review", publication_allowed=False,
+                      selectable=False, formal_build_allowed=False)
         write_json(run / "result.json", result)
         return result

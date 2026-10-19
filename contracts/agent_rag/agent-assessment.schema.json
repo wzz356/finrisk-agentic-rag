@@ -1,0 +1,628 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:finrisk:agent-assessment:1.0",
+  "$comment": "Private planned-loop registry projection; public report remains finrisk-report/1.0.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "protocol_version",
+    "orchestration_mode",
+    "identity",
+    "plan_revision",
+    "points",
+    "attempt_diagnostics",
+    "active_blockers",
+    "actions",
+    "local_ranking_limited",
+    "semantic_review_required"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "finrisk-agent-assessment/1.0"
+    },
+    "protocol_version": {
+      "const": "finrisk-agent-loop/1.0"
+    },
+    "orchestration_mode": {
+      "enum": [
+        "staged_one_shot",
+        "planned_fixed",
+        "planned_adaptive"
+      ]
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "task_id",
+        "profile_id",
+        "input_sha256",
+        "snapshot_sha256",
+        "report_sha256",
+        "loop_schema_sha256",
+        "criteria_sha256",
+        "budget_profile_sha256"
+      ],
+      "properties": {
+        "task_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "profile_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "input_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "snapshot_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "report_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "loop_schema_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "criteria_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "budget_profile_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "profile_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "plan_revision": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "points": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/point"
+      },
+      "minItems": 0,
+      "maxItems": 4
+    },
+    "attempt_diagnostics": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/diagnostic"
+      },
+      "minItems": 0
+    },
+    "active_blockers": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/diagnostic"
+      },
+      "minItems": 0
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/action"
+      },
+      "minItems": 0
+    },
+    "local_ranking_limited": {
+      "type": "boolean"
+    },
+    "semantic_review_required": {
+      "type": "boolean"
+    },
+    "blocker_retirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "diagnostic_id",
+          "reason",
+          "replacement_plan_revision"
+        ],
+        "properties": {
+          "diagnostic_id": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "reason": {
+            "enum": [
+              "typed_recovered",
+              "native_recovered",
+              "branch_superseded"
+            ]
+          },
+          "replacement_plan_revision": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "tag": {
+      "$ref": "urn:finrisk:model-wire:1.2#/$defs/tag"
+    },
+    "inputRefs": {
+      "$ref": "urn:finrisk:model-wire:1.2#/$defs/candidate/properties/input_refs"
+    },
+    "facts": {
+      "$ref": "urn:finrisk:model-wire:1.2#/$defs/candidate/properties/facts"
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "branch",
+        "risk_point_id",
+        "assessment_id",
+        "state_revision",
+        "plan_revision"
+      ],
+      "properties": {
+        "branch": {
+          "enum": [
+            "plan",
+            "initial_search",
+            "assess",
+            "act",
+            "one_shot",
+            "report",
+            "required_anchor_read",
+            "final_read_guard"
+          ]
+        },
+        "risk_point_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^RP[0-9]+$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "assessment_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^AS[0-9]+$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "state_revision": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "plan_revision": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "diagnostic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scope",
+        "code",
+        "category"
+      ],
+      "properties": {
+        "scope": {
+          "$ref": "#/$defs/scope"
+        },
+        "code": {
+          "type": "string",
+          "pattern": "^[A-Z][A-Z0-9_]{0,79}$"
+        },
+        "category": {
+          "enum": [
+            "syntax",
+            "schema",
+            "semantic",
+            "tool_format",
+            "reference",
+            "program"
+          ]
+        },
+        "blocker_class": {
+          "enum": [
+            "typed_output",
+            "branch_output",
+            "identity",
+            "permission",
+            "budget",
+            "transport",
+            "program"
+          ]
+        }
+      }
+    },
+    "point": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "risk_point_id",
+        "plan_revision",
+        "state_revision",
+        "input_refs",
+        "facts",
+        "candidate_tags",
+        "input_state",
+        "risk_judgment",
+        "case_state",
+        "retrieval_state",
+        "processing_state",
+        "initial_query_covered",
+        "last_assessed_revision",
+        "pending_case_goals",
+        "read_anchor_ids",
+        "stop_reason"
+      ],
+      "properties": {
+        "risk_point_id": {
+          "type": "string",
+          "pattern": "^RP[0-9]+$"
+        },
+        "plan_revision": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "state_revision": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "input_refs": {
+          "$ref": "#/$defs/inputRefs"
+        },
+        "facts": {
+          "$ref": "#/$defs/facts"
+        },
+        "candidate_tags": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/tag"
+          },
+          "minItems": 1,
+          "maxItems": 3,
+          "uniqueItems": true
+        },
+        "input_state": {
+          "enum": [
+            "complete",
+            "needs_input"
+          ]
+        },
+        "risk_judgment": {
+          "enum": [
+            "suspected",
+            "no_clear_risk",
+            "review_required"
+          ]
+        },
+        "case_state": {
+          "enum": [
+            "not_assessed",
+            "matched",
+            "partial_match",
+            "insufficient"
+          ]
+        },
+        "retrieval_state": {
+          "enum": [
+            "not_run",
+            "completed",
+            "local_partial",
+            "failed"
+          ]
+        },
+        "processing_state": {
+          "enum": [
+            "dirty",
+            "assessed",
+            "deferred",
+            "blocked"
+          ]
+        },
+        "initial_query_covered": {
+          "type": "boolean"
+        },
+        "last_assessed_revision": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "pending_case_goals": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "mechanism_search",
+              "condition_check",
+              "counter_context",
+              "source_context",
+              "definition_check"
+            ]
+          },
+          "minItems": 0,
+          "maxItems": 5,
+          "uniqueItems": true
+        },
+        "read_anchor_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "minItems": 0,
+          "maxItems": 32,
+          "uniqueItems": true
+        },
+        "stop_reason": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 300
+        },
+        "candidate_version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "assessment_revision": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "accepted_assessment_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^AS[0-9]+$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "draft_assessment_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^AS[0-9]+$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "additional_mechanisms_uncovered": {
+          "type": "boolean"
+        },
+        "tag_assessments": {
+          "type": "array",
+          "minItems": 0,
+          "maxItems": 3,
+          "items": {
+            "$ref": "#/$defs/tagAssessment"
+          }
+        }
+      }
+    },
+    "action": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "action_id",
+        "origin",
+        "action_type",
+        "scope",
+        "status",
+        "local_ranking_limited"
+      ],
+      "properties": {
+        "action_id": {
+          "type": "string",
+          "pattern": "^A[0-9]+$"
+        },
+        "origin": {
+          "enum": [
+            "initial_plan",
+            "adaptive_model",
+            "required_anchor_read",
+            "final_read_guard"
+          ]
+        },
+        "action_type": {
+          "enum": [
+            "search_cases",
+            "read_source",
+            "get_risk_definition",
+            "finalize"
+          ]
+        },
+        "scope": {
+          "$ref": "#/$defs/scope"
+        },
+        "status": {
+          "enum": [
+            "completed",
+            "partial",
+            "empty",
+            "error",
+            "blocked"
+          ]
+        },
+        "query_text": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "local_ranking_limited": {
+          "type": "boolean"
+        },
+        "mode": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "classification": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "event_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "proposed_event_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "preceding_observation_event_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "point_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "target_gap_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "old_query_hashes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "query_hash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      }
+    },
+    "tagAssessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "conditions",
+        "case_assessments"
+      ],
+      "properties": {
+        "tag": {
+          "$ref": "#/$defs/tag"
+        },
+        "conditions": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 16,
+          "items": {
+            "$ref": "urn:finrisk:model-wire:1.2#/$defs/condition"
+          }
+        },
+        "case_assessments": {
+          "type": "array",
+          "minItems": 0,
+          "maxItems": 2,
+          "items": {
+            "$ref": "#/$defs/caseAssessment"
+          }
+        }
+      }
+    },
+    "caseAssessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "case_ref",
+        "source_id",
+        "unit_id",
+        "evidence_ids",
+        "same_points",
+        "differences",
+        "match_status"
+      ],
+      "properties": {
+        "case_ref": {
+          "type": "string",
+          "pattern": "^C[0-9a-f]{20}$"
+        },
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unit_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "same_points": {
+          "$ref": "urn:finrisk:model-wire:1.2#/$defs/caseMatch/properties/same_points"
+        },
+        "differences": {
+          "$ref": "urn:finrisk:model-wire:1.2#/$defs/strings"
+        },
+        "match_status": {
+          "enum": [
+            "reliable_match",
+            "partial_match"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -8,9 +8,9 @@ export function atomicJson(path: string, value: unknown): void {
 export class Trace {
   events: JsonObject[] = [];
   onEvent?: (event: JsonObject) => void;
-  constructor(public directory?: string) { if (directory) mkdirSync(directory, { recursive: true }); }
+  constructor(public directory?: string, private eventTaskId?: string) { if (directory) mkdirSync(directory, { recursive: true }); }
   event(type: string, data: unknown): void {
-    const row = { sequence: this.events.length + 1, type, at: new Date().toISOString(), data };
+    const row = { sequence: this.events.length + 1, type, at: new Date().toISOString(), data, ...(this.eventTaskId ? { event_id: this.eventTaskId + ":" + (this.events.length + 1) } : {}) };
     this.events.push(row);
     if (this.directory) appendFileSync(join(this.directory, "events.jsonl"), `${JSON.stringify(row)}\n`, "utf8");
     if (this.directory && type === "progress.snapshot") appendFileSync(join(this.directory, "progress_events.jsonl"), `${JSON.stringify(row)}\n`, "utf8");

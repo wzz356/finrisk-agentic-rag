@@ -7,6 +7,7 @@ import type { TaskState } from "./state.js";
 import type { Trace } from "./trace.js";
 import { countPayload, deepseekModel, finalizePayload, buildProviderPayload, samePrompt, type PromptCount, type PromptCounter } from "./prompt_counter.js";
 import { canonical, type JsonObject } from "./contracts.js";
+import { validateBudgetConfig } from "./budget_profile.js";
 import { activeTrialBudget, type TrialBudget } from "./trial_budget.js";
 import { assessRequest } from './request_admission.js';
 import { transportDiagnostic, type TransportDiagnostic, type TransportStage } from './transport_diagnostics.js';
@@ -20,12 +21,25 @@ export function loadDeepSeekKey(): string {
   return key;
 }
 export { deepseekModel } from "./prompt_counter.js";
-export function deepseekGateway(budget: Budget, state: TaskState, trace: Trace, key: string, fetcher: typeof fetch = fetch, counter?: PromptCounter) {
+export function deepseekGateway(budget: Budget, state: TaskState, trace: Trace, key: string, fetcher: typeof fetch = fetch, counter?: PromptCounter, assertRequest?: (context: TranscriptContext) => void, availableTimeMs?: () => number, providedTrial?: TrialBudget) {
+  let boundTrial = providedTrial, trialInitializationError: unknown;
+  if (budget.config.budget_profile_id && !boundTrial) {
+    try { boundTrial = activeTrialBudget(budget.config.request_admission_policy, {
+      budget_profile_id: budget.config.budget_profile_id, budget_profile_sha256: budget.config.budget_profile_sha256!, model_trial_cap_micro_cny: budget.config.model_trial_cap_micro_cny,
+    }); } catch (error) { trialInitializationError = error; }
+  }
+  const trial = () => {
+    const profile = validateBudgetConfig(budget.config);
+    if (!profile) return activeTrialBudget(budget.config.request_admission_policy);
+    if (trialInitializationError) throw trialInitializationError;
+    if (!boundTrial) throw new Error("MODEL_TRIAL_LEDGER_REQUIRED");
+    return boundTrial;
+  };
   const streamFn = (_model: unknown, context: TranscriptContext, options?: SimpleStreamOptions) => {
     const output = createAssistantMessageEventStream();
     const makeError = (reason: string): AssistantMessage => ({ role: "assistant", api: "openai-completions", provider: "deepseek", model: "deepseek-flash", content: [], stopReason: "error", errorMessage: reason, timestamp: Date.now(), usage: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0, totalTokens: 0, cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0, total: 0 } } });
     let requestId: string | undefined; let contextCount: PromptCount | undefined;
-    const timeoutMs = Math.max(1, Math.floor(Math.min(budget.remainingMs(), budget.config.model_request_timeout_seconds * 1000)));
+    const timeoutMs = Math.max(1, Math.floor(Math.min(budget.remainingMs(), budget.config.model_request_timeout_seconds * 1000, availableTimeMs?.() ?? Infinity)));
     const controller = new AbortController();
     let finished = false; let started = false; let rawUsage: JsonObject | undefined; let status: number | undefined; let physical = 0; let transportAttempts = 0; let egressFailure: string | undefined;
     let trialGuard: TrialBudget | undefined; let trialReservation: number | undefined;
@@ -65,9 +79,11 @@ export function deepseekGateway(budget: Budget, state: TaskState, trace: Trace, 
       const url = new URL(input instanceof Request ? input.url : String(input));
       if (url.origin !== "https://api.deepseek.com" || url.pathname !== "/chat/completions") throw new Error("UNAPPROVED_PROVIDER_ENDPOINT");
       if (!admittedBody || typeof init?.body !== 'string' || canonical(JSON.parse(init.body)) !== canonical(JSON.parse(admittedBody))) throw new Error('PAYLOAD_PROJECTION_MISMATCH');
-      const trial = activeTrialBudget(budget.config.request_admission_policy);
-      if (trial) {
-        try { trialReservation = trial.reserve(admittedBody); trialGuard = trial; }
+      assertRequest?.(context);
+      if ((availableTimeMs?.() ?? budget.remainingMs()) <= 0) throw new Error("LOOP_REASSESSMENT_TIME_RESERVED");
+      const trialGuardForFetch = trial();
+      if (trialGuardForFetch) {
+        try { trialReservation = trialGuardForFetch.reserve(admittedBody); trialGuard = trialGuardForFetch; }
         catch (error) { egressFailure = String((error as Error).message); trace.event("model.egress_blocked", { request_id: requestId, reason: egressFailure }); throw error; }
       }
       budget.recordPhysicalRequest();
@@ -91,17 +107,21 @@ export function deepseekGateway(budget: Budget, state: TaskState, trace: Trace, 
       maxTokens: budget.config.max_output_tokens_per_request,
       onPayload: async payload => {
         try {
+          assertRequest?.(context);
+          if ((availableTimeMs?.() ?? budget.remainingMs()) <= 0) throw new Error("LOOP_REASSESSMENT_TIME_RESERVED");
           const actual = finalizePayload(payload as JsonObject, state.phase, state.repairing);
           const prepared = buildProviderPayload(context, state.phase, state.repairing, budget.config.max_output_tokens_per_request);
           if (!samePrompt(actual, prepared) || actual.max_tokens !== prepared.max_tokens || actual.stream !== prepared.stream) throw new Error("PAYLOAD_PROJECTION_MISMATCH");
           admittedBody = JSON.stringify(prepared);
           contextCount = await countPayload(actual, counter, Math.min(timeoutMs, budget.remainingMs()));
+          assertRequest?.(context);
           trace.event("context.counted", { phase: state.phase, ...contextCount, before_egress: true });
           if (finished) throw new Error("cancelled");
           if (contextCount.prompt_tokens + budget.config.context_safety_margin_tokens > budget.config.service_max_input_tokens) throw new Error("context_window_exceeded");
-          const admission = activeTrialBudget(budget.config.request_admission_policy)?.preview(admittedBody) ?? (budget.config.request_admission_policy ? assessRequest(admittedBody, budget.config.request_admission_policy) : { fits: true, reason: null });
+          const admission = trial()?.preview(admittedBody) ?? (budget.config.request_admission_policy ? assessRequest(admittedBody, budget.config.request_admission_policy) : { fits: true, reason: null });
           trace.event('context.admission', { ...admission, before_egress: true });
           if (!admission.fits) throw new Error(admission.reason!);
+          if ((availableTimeMs?.() ?? budget.remainingMs()) <= 0) throw new Error("LOOP_REASSESSMENT_TIME_RESERVED");
           requestId = budget.reserveModel(contextCount.prompt_tokens, state.phase === "finalizing");
           return prepared;
         } catch (error) { egressFailure = String((error as Error).message); throw error; }

@@ -11,14 +11,17 @@ from fastapi import APIRouter, Depends, Header, HTTPException, Request
 from fastapi.responses import FileResponse, JSONResponse
 from pydantic import BaseModel, ConfigDict, Field
 
+from agent_rag.collection_router import collection_root
+from agent_rag.collection_router import router as collection_router
 from agent_rag.contracts import PROJECT_ROOT
-from agent_rag.knowledge_registry import current_snapshot
+from agent_rag.knowledge_registry import retrieval_snapshot
 from agent_rag.knowledge_snapshot import KnowledgeSnapshot
 from agent_rag.service_initialization import ServiceInitialization
 from agent_rag.task_service import TaskService
 from agent_rag.token_count import official_counter
 
 router = APIRouter()
+router.include_router(collection_router)
 
 
 class TaskRequest(BaseModel):
@@ -61,10 +64,20 @@ def load_v2_snapshot(path: Path) -> Any:
     return load(path)
 
 
-def _snapshot_path() -> Path:
+def _registry_path() -> Path | None:
     registry = os.environ.get("FINRISK_AGENT_KB_REGISTRY")
     if registry:
-        return current_snapshot(Path(registry))
+        return Path(registry)
+    if os.environ.get("FINRISK_AGENT_SNAPSHOT"):
+        return None
+    managed = collection_root() / "registry"
+    return managed if (managed / "usage.json").exists() else None
+
+
+def _snapshot_path() -> Path:
+    registry = _registry_path()
+    if registry:
+        return retrieval_snapshot(registry)
     return Path(os.environ.get(
         "FINRISK_AGENT_SNAPSHOT", PROJECT_ROOT / "runtime/agent_rag/snapshot-v1"))
 
@@ -119,7 +132,7 @@ class _RegistryTaskService:
         candidate, path = self._candidate, self._candidate_path
         self._candidate, self._candidate_path = None, None
         try:
-            if current_snapshot(self.registry) != path:
+            if retrieval_snapshot(self.registry) != path:
                 _close_snapshot(candidate)
                 return
             # Construct only at an idle boundary: its restart scan must not interrupt a job.
@@ -147,7 +160,7 @@ class _RegistryTaskService:
                     or self._candidate is not None):
                 return
             try:
-                path = current_snapshot(self.registry)
+                path = retrieval_snapshot(self.registry)
             except (OSError, ValueError, KeyError):
                 self._error = "REGISTRY_REFRESH_FAILED"
                 return
@@ -297,8 +310,8 @@ def _build_service(stage: Any) -> TaskService | _RegistryTaskService:
         task_root = Path(os.environ.get(
             "FINRISK_AGENT_TASK_ROOT", PROJECT_ROOT / "runtime/agent_rag/tasks"))
         service = TaskService(task_root, snapshot)
-        registry = os.environ.get("FINRISK_AGENT_KB_REGISTRY")
-        return _RegistryTaskService(Path(registry), service) if registry else service
+        registry = _registry_path()
+        return _RegistryTaskService(registry, service) if registry else service
     except BaseException:
         _close_snapshot(snapshot)
         raise

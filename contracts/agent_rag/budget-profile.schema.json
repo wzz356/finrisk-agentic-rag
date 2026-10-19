@@ -1,0 +1,215 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FinRisk cross-language budget profile",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "profile_id",
+    "max_model_requests",
+    "max_search_calls",
+    "max_search_query_attempts",
+    "max_queries_per_search",
+    "max_tool_actions",
+    "task_deadline_seconds",
+    "model_request_timeout_seconds",
+    "tool_request_timeout_seconds",
+    "max_model_transport_retries",
+    "provider_auto_retries",
+    "max_json_repairs_per_task",
+    "max_output_tokens_per_request",
+    "service_max_input_tokens",
+    "task_token_budget",
+    "max_candidate_risk_points",
+    "rerank_max_requests",
+    "rerank_cap_micro_cny",
+    "model_trial_cap_micro_cny",
+    "task_total_cost_cap_micro_cny",
+    "rerank_candidates_per_query",
+    "rerank_attempts_per_candidate"
+  ],
+  "properties": {
+    "profile_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "max_model_requests": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9007199254740991
+    },
+    "max_search_calls": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9007199254740991
+    },
+    "max_search_query_attempts": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9007199254740991
+    },
+    "max_queries_per_search": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9007199254740991
+    },
+    "max_tool_actions": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9007199254740991
+    },
+    "task_deadline_seconds": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9007199254740991
+    },
+    "model_request_timeout_seconds": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9007199254740991
+    },
+    "tool_request_timeout_seconds": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9007199254740991
+    },
+    "max_model_transport_retries": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "provider_auto_retries": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "max_json_repairs_per_task": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "max_output_tokens_per_request": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9007199254740991
+    },
+    "service_max_input_tokens": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9007199254740991
+    },
+    "task_token_budget": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9007199254740991
+    },
+    "max_candidate_risk_points": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9007199254740991
+    },
+    "rerank_max_requests": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9007199254740991
+    },
+    "rerank_cap_micro_cny": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9007199254740991
+    },
+    "model_trial_cap_micro_cny": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9007199254740991
+    },
+    "task_total_cost_cap_micro_cny": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9007199254740991
+    },
+    "rerank_candidates_per_query": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9007199254740991
+    },
+    "rerank_attempts_per_candidate": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9007199254740991
+    },
+    "initial_query_limit": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "feedback_query_reserve": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "max_feedback_rounds": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "max_read_source_actions": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "max_definition_actions": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "max_initial_tags_per_point": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9007199254740991
+    }
+  },
+  "dependentRequired": {
+    "feedback_query_reserve": [
+      "max_initial_tags_per_point",
+      "max_feedback_rounds",
+      "max_read_source_actions",
+      "max_definition_actions",
+      "initial_query_limit"
+    ],
+    "initial_query_limit": [
+      "max_initial_tags_per_point",
+      "feedback_query_reserve",
+      "max_feedback_rounds",
+      "max_read_source_actions",
+      "max_definition_actions"
+    ],
+    "max_definition_actions": [
+      "max_initial_tags_per_point",
+      "feedback_query_reserve",
+      "max_feedback_rounds",
+      "max_read_source_actions",
+      "initial_query_limit"
+    ],
+    "max_feedback_rounds": [
+      "max_initial_tags_per_point",
+      "feedback_query_reserve",
+      "max_read_source_actions",
+      "max_definition_actions",
+      "initial_query_limit"
+    ],
+    "max_initial_tags_per_point": [
+      "feedback_query_reserve",
+      "max_feedback_rounds",
+      "max_read_source_actions",
+      "max_definition_actions",
+      "initial_query_limit"
+    ],
+    "max_read_source_actions": [
+      "max_initial_tags_per_point",
+      "feedback_query_reserve",
+      "max_feedback_rounds",
+      "max_definition_actions",
+      "initial_query_limit"
+    ]
+  }
+}

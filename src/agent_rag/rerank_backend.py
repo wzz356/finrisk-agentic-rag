@@ -309,7 +309,21 @@ class RerankTaskControl:
         max_requests: int,
         timeout_seconds: float = 180,
         cancel_event: threading.Event | None = None,
+        *,
+        expected_budget_profile_id: str | None = None,
+        expected_budget_profile_sha256: str | None = None,
     ) -> None:
+        if (expected_budget_profile_id is None) != (expected_budget_profile_sha256 is None):
+            raise ValueError("INVALID_RERANK_BUDGET_BINDING")
+        if expected_budget_profile_id is not None and (
+            not isinstance(expected_budget_profile_id, str)
+            or not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", expected_budget_profile_id)
+            or not isinstance(expected_budget_profile_sha256, str)
+            or not re.fullmatch(r"[a-f0-9]{64}", expected_budget_profile_sha256)
+        ):
+            raise ValueError("INVALID_RERANK_BUDGET_BINDING")
+        self.expected_budget_profile_id = expected_budget_profile_id
+        self.expected_budget_profile_sha256 = expected_budget_profile_sha256
         if (
             isinstance(cap_cny, bool)
             or not isinstance(cap_cny, (int, float))
@@ -367,6 +381,9 @@ class RerankTaskControl:
                     "settled_cost_micro_cny": 0,
                     "stop_reason": None,
                 }
+                if self.expected_budget_profile_id is not None:
+                    ledger["budget_profile_id"] = self.expected_budget_profile_id
+                    ledger["budget_profile_sha256"] = self.expected_budget_profile_sha256
                 try:
                     self._create_initial_ledger(ledger)
                 except FileExistsError:
@@ -386,6 +403,8 @@ class RerankTaskControl:
             not isinstance(ledger, dict)
             or ledger.get("schema_version") != "finrisk-rerank-budget/1.1"
             or ledger.get("model") != MODEL
+            or ledger.get("budget_profile_id") != self.expected_budget_profile_id
+            or ledger.get("budget_profile_sha256") != self.expected_budget_profile_sha256
             or ledger.get("cap_micro_cny") != self.cap_micro_cny
             or type(ledger.get("cap_micro_cny")) is not int
             or type(ledger.get("max_requests")) is not int

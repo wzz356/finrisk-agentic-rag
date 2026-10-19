@@ -1,19 +1,35 @@
 {
-  "checkpoint": "baseline-20261017-r2",
-  "source_checkpoint": "4eca52e940b71b2c07c3576b3746fb55448c101b",
-  "source_runtime_fix": "3f1e64e0848ca8b453f83622253eca5f91582af7",
-  "evaluation_protocol": "finrisk-evaluation/2.4",
-  "rerank_protocol": "span-ref-v2",
-  "status": "experimental_baseline_pilot_stopped_not_quality_validated",
+  "checkpoint": "baseline-20261019",
+  "source_checkpoint": "d537c30ff1b8e4406fdb0205be37677d8c85e0ea",
+  "status": "experimental_planned_loop_and_fixture_maintenance_not_quality_validated",
+  "private_runtime_assets_included": false,
   "public_adaptations": [
     "explicit_key_configuration_only",
-    "synthetic_source_quality_marker"
+    "synthetic_source_quality_marker",
+    "synthetic_page_notice",
+    "development_context_marked_in_docs",
+    "byte_bound_contract_attributes"
   ],
-  "private_runtime_assets_included": false,
+  "defaults": {
+    "paid_calls_enabled": false,
+    "collection_enabled": false,
+    "extension_usage_enabled": false,
+    "maintenance_live_ready": false,
+    "planned_fast_path_enabled": false
+  },
   "known_issues": [
-    "input_gap_condition_inconsistency",
-    "rerank_explanation_length",
+    "planned_agent_development_quality_gate_not_passed",
     "fresh_official_crawl_not_verified",
-    "development30_not_run"
-  ]
+    "live_maintenance_adapters_not_configured",
+    "complete_production_knowledge_builder_not_configured"
+  ],
+  "verification": {
+    "public_node_passed": 575,
+    "public_python_focused_passed": 66,
+    "public_python_focused_skipped": 1,
+    "public_ui_passed": 26,
+    "synthetic_e2e_passed": 3,
+    "public_full_python_status": "interrupted_at_33_percent_exit_unknown_not_counted",
+    "real_provider_requests": 0
+  }
 }

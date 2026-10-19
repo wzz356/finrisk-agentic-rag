@@ -512,7 +512,7 @@ def local_tool_app(service):
         '/internal/agent-rag/risk-definitions','/internal/agent-rag/verify',
         '/internal/agent-rag/retrieval/cancel'}
     internal=APIRouter()
-    internal.routes.extend(route for route in router.router.routes if route.path in allowed_paths)
+    internal.routes.extend(route for route in router.router.routes if getattr(route, 'path', None) in allowed_paths)
     # include_router重建路由，保证依赖覆盖绑定本轮service。
     app.include_router(internal)
     app.dependency_overrides[router.get_service] = lambda: service

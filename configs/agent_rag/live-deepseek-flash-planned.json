@@ -1,0 +1,13 @@
+{
+  "extends": "mock-baseline.json",
+  "profile_id": "live-deepseek-flash-planned-v1",
+  "execution_mode": "live",
+  "retrieval_profile": "v2-hybrid-flash-v1",
+  "rerank_mode": "live",
+  "request_admission_policy": "v2-v1",
+  "search_return_max_chars": 12000,
+  "model_context_window": 1000000,
+  "budget_profile_id": "planned-evidence-loop-v1",
+  "orchestration_mode": "planned_adaptive",
+  "fast_path_enabled": false
+}

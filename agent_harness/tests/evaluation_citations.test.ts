@@ -23,15 +23,15 @@ function task(arm: "R1" | "R2" | "A" = "R1"): TaskInput {
     snapshot: { snapshot_id: "SNAPSHOT", dictionary_sha256: definitions[0].dictionary_sha256 }, definitions,
     config: evaluationConfig(arm, { retrieval_profile: "v2-hybrid-flash-v1", max_queries_per_search: 1 }) };
 }
-function data() {
-  const span = (id: string, start: number, end: number, extra = {}) => ({ evidence_id: id, source_id: "SRC", source_kind: "penalty", text_version: "1", text_sha256: hash(source), quote: Array.from(source).slice(start, end).join(""), start, end, source_verified: true, context_has_more: false, ...extra });
-  const anchors = [[0,3],[3,8],[8,12],[12,20],[20,Array.from(source).length]].map(([a,b], i) => span("E" + i, a!, b!));
+function data(sourceText = source) {
+  const span = (id: string, start: number, end: number, extra = {}) => ({ evidence_id: id, source_id: "SRC", source_kind: "penalty", text_version: "1", text_sha256: hash(sourceText), quote: Array.from(sourceText).slice(start, end).join(""), start, end, source_verified: true, context_has_more: false, ...extra });
+  const anchors = [[0,3],[3,8],[8,12],[12,20],[20,Array.from(sourceText).length]].map(([a,b], i) => span("E" + i, a!, b!));
   const candidate = { source_id: "SRC", file_id: "FILE", unit_id: "UNIT", rank: 1, required_evidence_ids: anchors.map(e => e.evidence_id), evidence: anchors };
-  const windows = [span("W1",0,20,{ was_read: true }), span("W2",20,Array.from(source).length,{ was_read: true })];
+  const windows = [span("W1",0,20,{ was_read: true }), span("W2",20,Array.from(sourceText).length,{ was_read: true })];
   return { candidate, windows };
 }
-function bridge(): any {
-  const { candidate, windows } = data(); const calls: JsonObject[] = [];
+function bridge(sourceText = source): any {
+  const { candidate, windows } = data(sourceText); const calls: JsonObject[] = [];
   return { calls, countTokens: local.count,
     async previewRead(args: JsonObject) { return { schema_version: "finrisk-tools/1.0", status: "ok", data: { evidence: windows[args.anchor_evidence_id === "E4" ? 1 : 0] }, meta: { snapshot_id: "SNAPSHOT", backend_query_attempts: 0, cache_hits: 0, external_retrieval_requests: 0 }, error: null }; },
     async call(name: string, args: JsonObject) {
@@ -150,7 +150,7 @@ test("A continuation final still accepts the old visible case_ref after another 
 });
 
 test("fabricated references and source/unit/citation overrides cannot qualify as completed", async () => {
-  for (const override of [{ case_ref: "C" + "f".repeat(20) }, { source_id: "OTHER" }, { unit_id: "OTHER" }, { evidence_ids: ["E0"] }, { unknown: true }]) {
+  for (const override of [{ case_ref: "C" + "f".repeat(20) }, { source_id: "OTHER" }, { unit_id: "OTHER" }, { evidence_ids: ["E0"] }, { quote: "伪造处罚原文" }, { unknown: true }]) {
     const result = await runTask(task(),bridge(),[context => {
       const v = envelope(); const o = ledger(context.messages).citation_options[0]; v.points[0].case_matches = [{ ...select(o.case_ref), ...override }]; return v;
     }]);
@@ -323,4 +323,35 @@ test("explicit A format recovery cannot retry a fabricated case reference", asyn
   assert.equal(result.report.resources.model_request_units, 1);
   assert.equal(result.report.resources.json_repairs, 0);
   assert.ok(result.report.validation.errors.includes("CITATION_REFERENCE_NOT_VISIBLE"));
+});
+
+test("complete report preserves literal line breaks CRLF and supplementary characters in penalty quotes", async () => {
+  const raw = "处罚原文𠮷：违反第八\n条的规定。\r\n机构购买保险赠送购物卡🎁，并以赠礼诱导投保。";
+  const expected = data(raw).windows;
+  const result = await runTask(task(), bridge(raw), [context => {
+    const current = ledger(context.messages);
+    assert.equal(current.citation_options.length, 1);
+    const value = envelope(); value.points[0].case_matches = [select(current.citation_options[0].case_ref)];
+    return value;
+  }]);
+  assert.equal(result.report.task_status, "completed", JSON.stringify(result.report.validation));
+  assert.equal(result.report.validation.references_valid, true);
+  const match = result.report.risk_points[0].case_matches[0];
+  assert.equal(match.source_id, "SRC"); assert.equal(match.unit_id, "UNIT");
+  assert.deepEqual(match.evidence_ids, ["W1", "W2"]);
+  assert.equal(match.evidence.map((e: JsonObject) => e.quote).join(""), raw);
+  assert.ok(match.evidence[0].quote.includes("第八\n条"));
+  assert.ok(match.evidence.map((e: JsonObject) => e.quote).join("").includes("\r\n"));
+  assert.notEqual(raw.length, Array.from(raw).length);
+  for (let i = 0; i < expected.length; i++) {
+    const actual = match.evidence[i], original: JsonObject = expected[i]!;
+    for (const field of ["evidence_id", "source_id", "source_kind", "text_version", "text_sha256", "start", "end", "quote", "source_verified"]) {
+      assert.equal(actual[field], original[field], field + " must be backfilled from the read window");
+    }
+    assert.equal(actual.quote, Array.from(raw).slice(actual.start, actual.end).join(""));
+    assert.equal(Array.from(actual.quote).length, actual.end - actual.start);
+  }
+  assert.equal(match.evidence.at(-1).end, Array.from(raw).length);
+  assert.equal(result.report.resources.model_request_units, 1);
+  assert.equal(result.report.resources.json_repairs, 0);
 });

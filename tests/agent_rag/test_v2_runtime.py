@@ -105,3 +105,64 @@ def test_snapshot_runtime_rejects_invalid_wait_before_snapshot_or_key_access(
     monkeypatch.setattr(m, 'V2KnowledgeSnapshot', lambda *a: pytest.fail('snapshot accessed'))
     with pytest.raises(ValueError, match='INVALID_DENSE_STARTUP_TIMEOUT'):
         m.load_v2_snapshot(tmp_path, startup_timeout_seconds=value)
+
+
+
+@pytest.fixture
+def cache_loader(tmp_path, monkeypatch):
+    from types import SimpleNamespace
+
+    runtime = module()
+    rules = tmp_path / "rules"
+    rules.write_text("rules", encoding="utf-8")
+    assets = {name: {"path": str(rules), "sha256": runtime.file_hash(rules)}
+              for name in ["rules", "dense_config"]}
+    snapshot = SimpleNamespace(
+        manifest={"backend": {"mode": "live", "assets": assets}}, units=[]
+    )
+    calls = {}
+
+    def capture(name, constructor):
+        def construct(*args, **kwargs):
+            calls[name] = kwargs
+            return constructor(*args, **kwargs)
+        return construct
+
+    monkeypatch.setenv("FINRISK_AGENT_ALLOW_RETRIEVAL_LIVE", "1")
+    monkeypatch.delenv("FINRISK_AGENT_DEEPSEEK_KEY_FILE", raising=False)
+    monkeypatch.setattr(runtime, "V2KnowledgeSnapshot", lambda root: snapshot)
+    monkeypatch.setattr(
+        runtime, "ResidentDenseIndex", lambda *a, **kw: SimpleNamespace(close=lambda: None)
+    )
+    monkeypatch.setattr(runtime, "DeepSeekReranker", capture("rerank", runtime.DeepSeekReranker))
+    monkeypatch.setattr(runtime, "HybridV2Backend", capture("result", runtime.HybridV2Backend))
+    return runtime, calls
+
+
+@pytest.mark.parametrize("overrides", [
+    {}, {"result_cache_size": 128, "rerank_cache_size": 4096},
+    {"result_cache_size": 0, "rerank_cache_size": 0},
+])
+def test_cache_loader_keeps_default_calls_and_explicit_zero(tmp_path, cache_loader, overrides):
+    runtime, calls = cache_loader
+    snapshot = runtime.load_v2_snapshot(tmp_path, **overrides)
+    if overrides.get("result_cache_size") == 0:
+        assert calls["result"]["cache_size"] == calls["rerank"]["cache_size"] == 0
+        assert snapshot.backend.cache_size == snapshot.backend.reranker._cache_size == 0
+    else:
+        assert "cache_size" not in calls["result"]
+        assert "cache_size" not in calls["rerank"]
+        assert snapshot.backend.cache_size == 128
+        assert snapshot.backend.reranker._cache_size == 4096
+
+
+@pytest.mark.parametrize(("overrides", "message"), [
+    ({"result_cache_size": 128.0}, "INVALID_BACKEND_CACHE_SIZE"),
+    ({"result_cache_size": True}, "INVALID_BACKEND_CACHE_SIZE"),
+    ({"rerank_cache_size": 4096.0}, "INVALID_RERANK_CONFIGURATION"),
+    ({"rerank_cache_size": True}, "INVALID_RERANK_CONFIGURATION"),
+])
+def test_cache_loader_preserves_cache_type_validation(tmp_path, cache_loader, overrides, message):
+    runtime, _ = cache_loader
+    with pytest.raises(ValueError, match=message):
+        runtime.load_v2_snapshot(tmp_path, **overrides)

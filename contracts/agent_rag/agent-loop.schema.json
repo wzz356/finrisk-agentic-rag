@@ -1,0 +1,246 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:finrisk:agent-loop:1.0",
+  "$comment": "Structure only. Program context validates assessment identity, complete criteria and currently visible case options; existing normalization verifies input references.",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/plan"
+    },
+    {
+      "$ref": "#/$defs/assess"
+    },
+    {
+      "$ref": "#/$defs/one_shot"
+    }
+  ],
+  "$defs": {
+    "tag": {
+      "$ref": "urn:finrisk:model-wire:1.2#/$defs/tag"
+    },
+    "inputRefs": {
+      "$ref": "urn:finrisk:model-wire:1.2#/$defs/candidate/properties/input_refs"
+    },
+    "facts": {
+      "$ref": "urn:finrisk:model-wire:1.2#/$defs/candidate/properties/facts"
+    },
+    "condition": {
+      "$ref": "urn:finrisk:model-wire:1.2#/$defs/condition"
+    },
+    "segmentAssessment": {
+      "$ref": "urn:finrisk:model-wire:1.2#/$defs/segmentAssessment"
+    },
+    "segments": {
+      "$ref": "urn:finrisk:model-wire:1.2#/$defs/analysis/properties/segments"
+    },
+    "candidateTags": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/tag"
+      },
+      "minItems": 1,
+      "maxItems": 3,
+      "uniqueItems": true
+    },
+    "caseAssessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "case_ref",
+        "same_points",
+        "differences",
+        "match_status"
+      ],
+      "properties": {
+        "case_ref": {
+          "type": "string",
+          "pattern": "^C[0-9a-f]{20}$"
+        },
+        "same_points": {
+          "$ref": "urn:finrisk:model-wire:1.2#/$defs/caseMatch/properties/same_points"
+        },
+        "differences": {
+          "$ref": "urn:finrisk:model-wire:1.2#/$defs/strings"
+        },
+        "match_status": {
+          "enum": [
+            "reliable_match",
+            "partial_match"
+          ]
+        }
+      }
+    },
+    "tagCheck": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tag",
+        "conditions",
+        "case_assessments"
+      ],
+      "properties": {
+        "tag": {
+          "$ref": "#/$defs/tag"
+        },
+        "conditions": {
+          "$ref": "urn:finrisk:model-wire:1.2#/$defs/tagCheck/properties/conditions"
+        },
+        "case_assessments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/caseAssessment"
+          },
+          "minItems": 0,
+          "maxItems": 2
+        }
+      }
+    },
+    "planPoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "input_refs",
+        "facts",
+        "candidate_tags",
+        "search_intent",
+        "query_text"
+      ],
+      "properties": {
+        "input_refs": {
+          "$ref": "#/$defs/inputRefs"
+        },
+        "facts": {
+          "$ref": "#/$defs/facts"
+        },
+        "candidate_tags": {
+          "$ref": "#/$defs/candidateTags"
+        },
+        "search_intent": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "query_text": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "alternative_query": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        }
+      }
+    },
+    "oneShotPoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "input_refs",
+        "facts",
+        "tag_checks"
+      ],
+      "properties": {
+        "input_refs": {
+          "$ref": "#/$defs/inputRefs"
+        },
+        "facts": {
+          "$ref": "#/$defs/facts"
+        },
+        "tag_checks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/tagCheck"
+          },
+          "minItems": 1,
+          "maxItems": 3
+        }
+      }
+    },
+    "plan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "segments",
+        "points"
+      ],
+      "properties": {
+        "kind": {
+          "const": "plan"
+        },
+        "segments": {
+          "$ref": "#/$defs/segments"
+        },
+        "points": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/planPoint"
+          },
+          "minItems": 0,
+          "maxItems": 4
+        }
+      }
+    },
+    "assess": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "assessment_id",
+        "state_revision",
+        "risk_point_id",
+        "tag_checks"
+      ],
+      "properties": {
+        "kind": {
+          "const": "assess"
+        },
+        "assessment_id": {
+          "type": "string",
+          "pattern": "^AS[0-9]+$"
+        },
+        "state_revision": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "risk_point_id": {
+          "type": "string",
+          "pattern": "^RP[0-9]+$"
+        },
+        "tag_checks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/tagCheck"
+          },
+          "minItems": 0,
+          "maxItems": 3
+        }
+      }
+    },
+    "one_shot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "segments",
+        "points"
+      ],
+      "properties": {
+        "kind": {
+          "const": "one_shot"
+        },
+        "segments": {
+          "$ref": "#/$defs/segments"
+        },
+        "points": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/oneShotPoint"
+          },
+          "minItems": 0,
+          "maxItems": 4
+        }
+      }
+    }
+  }
+}

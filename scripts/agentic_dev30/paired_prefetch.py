@@ -3,8 +3,10 @@
 from __future__ import annotations
 
 import copy
+import hashlib
 import threading
 import time
+from collections import Counter
 from pathlib import Path
 
 try:
@@ -28,7 +30,9 @@ BOUND_LIMITS = {
     "round_prefetch_reserve_cny": 0.5,
 }
 CACHE_POLICY = (
-    "paired-prefetch/1.1: track actual backend.search activity until the whole call returns; "
+    "paired-prefetch/1.2: freeze complete OR validated locally exhausted partial first rankings, "
+    "preserving all coverage/failures and no retry; track actual backend.search activity "
+    "until the whole call returns; "
     "under the same admission mutex every ensure fails closed while any search is active; "
     "before each new material clear whole-query and successful "
     "rerank-pair caches under reranker cache lock at a quiescent task boundary; "
@@ -204,6 +208,55 @@ def _costs(control):
         return 0, PREFETCH_RESERVE_MICRO
 
 
+def _bounded_partial(result, protocol, query_text, snapshot_id):
+    """Only freeze an auditable scored subset; never promote it to complete."""
+    try:
+        try:
+            from scripts.agentic_dev30.retrieval_reliability import LOCAL_RERANK_FAILURES, _coverage
+        except ModuleNotFoundError as error:
+            if error.name not in {"scripts", "scripts.agentic_dev30"}:
+                raise
+            from retrieval_reliability import LOCAL_RERANK_FAILURES, _coverage
+        c = _coverage({
+            "complete": result.get("complete"), "status": "partial", "error_code": None,
+            "ranking_coverage": result.get("ranking_coverage")}, protocol)
+        meta = result.get("meta", {})
+        audit = result.get("audit", {})
+        errors = result.get("errors", [])
+        ranked = audit.get("stages", {}).get("ND", [])
+        expected = audit.get("expected_unit_ids", [])
+        scored = audit.get("scored_unit_ids", [])
+        failed = audit.get("failed_unit_ids", [])
+        if (not c or c["ranking_complete"] or not c["attempts_exhausted"]
+            or not c["scored_units"] or not c["failed_units"]
+            or not set(c["failure_counts"]) <= LOCAL_RERANK_FAILURES
+            or meta.get("transport_circuit_open") or meta.get("stop_reason")
+            or meta.get("stage_status") != {
+                "bm25": "completed", "bge": "completed", "rrf": "completed", "rerank": "partial"}
+            or not result.get("candidates") or result.get("error")
+            or len(ranked) != c["scored_units"] or len(errors) != c["failed_units"]
+            or any(not e.get("terminal") or e.get("remaining_attempts") != 0 for e in errors)
+            or Counter(e.get("code") for e in errors) != Counter(c["failure_counts"])
+            or {e.get("unit_id") for e in errors} != set(failed)
+            or c["failed_unit_ids"] != sorted(failed)[:3]
+            or audit.get("complete") is not False or audit.get("ranking_coverage") != c
+            or audit.get("query_text") != query_text
+            or audit.get("query_text_sha256") != hashlib.sha256(query_text.encode()).hexdigest()
+            or audit.get("snapshot_id") != snapshot_id
+            or len(set(expected)) != len(expected) or len(expected) != c["expected_units"]
+            or len(set(scored)) != len(scored) or len(scored) != c["scored_units"]
+            or len(set(failed)) != len(failed) or len(failed) != c["failed_units"]
+            or set(scored) & set(failed) or set(expected) != set(scored) | set(failed)
+            or {r.get("unit_id") for r in ranked} != set(scored)
+            or not {r.get("unit_id") for r in result["candidates"]} <= set(scored)
+            or any(obj_sha(sorted(ids)) != c[key+"_set_sha256"]
+                   for key,ids in (("expected",expected),("scored",scored),("failed",failed)))):
+            return False
+        return True
+    except (ValueError, KeyError, TypeError, AttributeError):
+        return False
+
+
 class SharedPrefetch:
     def __init__(self, snapshot, output, budget, plan_sha256):
         self.snapshot, self.output, self.budget = snapshot, Path(output), budget
@@ -260,7 +313,7 @@ class SharedPrefetch:
                 raise ValueError("PAIRED_PREFETCH_BACKEND_SEARCH_ACTIVE")
             if sample in self.records:
                 row = self.records[sample]
-                if row["input_sha256"] != identity or row["status"] != "complete":
+                if row["input_sha256"] != identity or row["status"] not in {"complete", "partial"}:
                     raise ValueError("PAIRED_PREFETCH_FAILED_OR_INPUT_MISMATCH")
                 return copy.deepcopy(row)
             # A real search cannot start between the idle check and this clear.
@@ -305,17 +358,28 @@ class SharedPrefetch:
                 errors=result.get("errors", []),
             )
             save(audit_ref, result.get("audit", {}))
-            if (
-                result.get("complete") is not True
-                or coverage.get("ranking_complete") is not True
-                or coverage.get("failed_units") != 0
-                or not coverage.get("expected_units")
-                or coverage.get("scored_units") != coverage["expected_units"]
-                or len(ranked) != coverage["expected_units"]
-                or not backend.is_cached(text, 3)
-            ):
+            full = (
+                result.get("complete") is True
+                and coverage.get("ranking_complete") is True
+                and coverage.get("failed_units") == 0
+                and bool(coverage.get("expected_units"))
+                and coverage.get("scored_units") == coverage["expected_units"]
+                and len(ranked) == coverage["expected_units"]
+                and backend.is_cached(text, 3)
+            )
+            partial = not full and _bounded_partial(
+                result, getattr(backend.reranker, "protocol", "quote-copy-v1"),
+                text, self.snapshot.manifest["snapshot_id"])
+            if not full and not partial:
                 raise ValueError("PAIRED_PREFETCH_INCOMPLETE")
-            row["status"] = "complete"
+            if partial:
+                # Experiment-only immutable first-query cache. Ordinary backend searches
+                # still do not cache incomplete rankings; a new material clears this.
+                with self._search_lock:
+                    if self._active_searches or self._boundary_failed:
+                        raise ValueError("PAIRED_PREFETCH_BACKEND_SEARCH_ACTIVE")
+                    backend.cache[backend.cache_key(text, 3)] = copy.deepcopy(result)
+            row["status"] = "complete" if full else "partial"
         except BaseException as error:
             failure = error
             row.update(status="failed", error=type(error).__name__ + ":" + str(error)[:200])

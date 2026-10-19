@@ -11,6 +11,7 @@ from typing import Any
 
 from agent_rag.contracts import canonical_json
 from agent_rag.input_registry import text_hash
+from agent_rag.v2_context import ParentContextExpander, validate_context_expansion
 from agent_rag.v2_snapshot import PROFILE
 from retrieval.sparse import RetrievalDocument, SparseRetrievalIndex
 
@@ -48,9 +49,19 @@ def aggregate_files(ranked: list[dict[str, Any]], units: dict[str, Any]) -> list
 
 class HybridV2Backend:
     def __init__(
-        self, snapshot: Any, dense_index: Any, reranker: Any, *, audit_root: Path | None = None
+        self, snapshot: Any, dense_index: Any, reranker: Any, *,
+        audit_root: Path | None = None, context_expansion: dict[str, Any] | None = None,
+        cache_size: int = 128
     ) -> None:
+        if type(cache_size) is not int or cache_size < 0:
+            raise ValueError("INVALID_BACKEND_CACHE_SIZE")
+        self.cache_size = cache_size
         self.snapshot, self.dense, self.reranker = snapshot, dense_index, reranker
+        self.context_expansion = validate_context_expansion(context_expansion)
+        self.context_expander = (
+            ParentContextExpander(snapshot, self.context_expansion)
+            if self.context_expansion is not None else None
+        )
         self.units = {unit["unit_id"]: unit for unit in snapshot.units}
         self.sparse = SparseRetrievalIndex(
             (
@@ -73,19 +84,18 @@ class HybridV2Backend:
             audit_root.mkdir(parents=True, exist_ok=True)
 
     def cache_key(self, text: str, top_k: int) -> str:
-        return text_hash(
-            canonical_json(
-                {
-                    "text": text,
-                    "top_k": top_k,
-                    "snapshot": self.snapshot.manifest["snapshot_id"],
-                    "profile": PROFILE,
-                    "rerank_protocol": getattr(self.reranker, "protocol", "quote-copy-v1"),
-                    "rules_sha256": getattr(self.reranker, "rules_sha256", None),
-                    "protocol_fingerprint": getattr(self.reranker, "protocol_fingerprint", None),
-                }
-            )
-        )
+        binding = {
+            "text": text,
+            "top_k": top_k,
+            "snapshot": self.snapshot.manifest["snapshot_id"],
+            "profile": PROFILE,
+            "rerank_protocol": getattr(self.reranker, "protocol", "quote-copy-v1"),
+            "rules_sha256": getattr(self.reranker, "rules_sha256", None),
+            "protocol_fingerprint": getattr(self.reranker, "protocol_fingerprint", None),
+        }
+        if self.context_expander is not None:
+            binding["context_expansion_sha256"] = self.context_expander.policy_sha256
+        return text_hash(canonical_json(binding))
 
     def is_cached(self, text: str, top_k: int) -> bool:
         return self.cache_key(text, top_k) in self.cache
@@ -203,6 +213,8 @@ class HybridV2Backend:
             candidate = self.snapshot.candidate(
                 self.units[row["unit_id"]], row["rank"], row["score"]
             )
+            if self.context_expander is not None:
+                candidate = self.context_expander.expand(self.units[row["unit_id"]], candidate)
             candidate["rerank_assessment"] = {
                 key: row.get(key) for key in ["level", "reason", "limitation"]
             }
@@ -247,6 +259,20 @@ class HybridV2Backend:
             },
             "retrieval_elapsed_ms": round((time.monotonic() - started) * 1000, 2),
         }
+        if self.context_expander is not None:
+            diagnoses = [candidate["context_expansion"] for candidate in candidates]
+            stats = {
+                **self.context_expansion,
+                "policy_sha256": self.context_expander.policy_sha256,
+                "expanded_candidates": sum(item["status"] == "expanded" for item in diagnoses),
+                "skipped_candidates": sum(item["status"] == "skipped" for item in diagnoses),
+                "added_chars": sum(item["added_chars"] for item in diagnoses),
+                "skip_reasons": dict(sorted(Counter(
+                    item["reason"] for item in diagnoses if item["status"] == "skipped"
+                ).items())),
+            }
+            audit["context_expansion"] = copy.deepcopy(stats)
+            meta["context_expansion"] = stats
         if self.audit_root is not None:
             audit_id = uuid.uuid4().hex
             with (self.audit_root / f"{audit_id}.json").open("x", encoding="utf-8") as handle:
@@ -260,8 +286,8 @@ class HybridV2Backend:
             "errors": result.get("errors", []),
             "ranking_coverage": coverage,
         }
-        if result["complete"]:
+        if result["complete"] and self.cache_size:
             self.cache[key] = copy.deepcopy(value)
-            if len(self.cache) > 128:
+            if len(self.cache) > self.cache_size:
                 self.cache.popitem(last=False)
         return value

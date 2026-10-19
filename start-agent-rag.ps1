@@ -143,7 +143,7 @@ function Wait-AgentRagReadiness {
 if (-not (Test-Path -LiteralPath $PythonPath)) { throw '独立Python环境不存在，请先执行运行说明中的安装步骤。' }
 if ($KnowledgeRegistry) {
     $registryPath = (Resolve-Path -LiteralPath $KnowledgeRegistry).Path
-    $SnapshotPath = & $PythonPath -c 'import sys; from pathlib import Path; sys.path.insert(0,sys.argv[1]); from agent_rag.knowledge_registry import current_snapshot; print(current_snapshot(Path(sys.argv[2])))' (Join-Path $PSScriptRoot 'src') $registryPath
+    $SnapshotPath = & $PythonPath -c 'import sys; from pathlib import Path; sys.path.insert(0,sys.argv[1]); from agent_rag.knowledge_registry import retrieval_snapshot; print(retrieval_snapshot(Path(sys.argv[2])))' (Join-Path $PSScriptRoot 'src') $registryPath
     if ($LASTEXITCODE -ne 0) { throw '知识库版本指针无效，请先完成发布或回滚。' }
     $env:FINRISK_AGENT_KB_REGISTRY = $registryPath
     $WarmupV2 = $true

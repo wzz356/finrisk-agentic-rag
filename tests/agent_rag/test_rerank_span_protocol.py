@@ -4,7 +4,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 import pytest
 
-from rerank_helpers import backend, control, unit
+from test_rerank_backend import backend, control, unit
 
 
 def reply(request, **changes):

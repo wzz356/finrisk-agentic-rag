@@ -78,14 +78,23 @@ export function acceptEvaluation(value: JsonObject, state: TaskState, task: Task
   }
   const analysis = { kind: "analysis", segments: value.segments, points: value.points.map((point: JsonObject) => ({ input_refs: point.input_refs, facts: point.facts, candidate_tags: point.tag_checks.map((tag: JsonObject) => tag.tag) })) };
   const finalWire = { kind: "final", segments: value.segments, points: value.points.map((point: JsonObject, index: number) => ({ risk_point_id: `RP${String(index + 1).padStart(4, "0")}`, tag_checks: point.tag_checks, case_matches: point.case_matches })) };
-  state.acceptAnalysis(normalizeModelOutput(analysis, "analysis", state, task));
-  const final = normalizeModelOutput(finalWire, "final", state, task);
+  // Analysis and final normalization both write business state. Stage their
+  // mutable maps so a rejected continuation cannot expose a partially accepted
+  // evaluation; evidence and citation registries remain read-only inputs.
+  const staged: TaskState = Object.assign(Object.create(Object.getPrototypeOf(state)), state, {
+    gaps: new Map(state.gaps),
+    caseTagBindings: new Map(state.caseTagBindings),
+  });
+  staged.acceptAnalysis(normalizeModelOutput(analysis, "analysis", staged, task));
+  const final = normalizeModelOutput(finalWire, "final", staged, task);
   for (const gap of value.continuation.gaps) {
-    if (!state.points.some(point => point.risk_point_id === gap.risk_point_id)) throw new Error("INVALID_EVALUATION_GAP_REFERENCE");
+    if (!staged.points.some(point => point.risk_point_id === gap.risk_point_id)) throw new Error("INVALID_EVALUATION_GAP_REFERENCE");
     const point = final.risk_points.find((row: JsonObject) => row.risk_point_id === gap.risk_point_id)!;
     if (gap.type === "input_fact" && !point.tag_checks.some((tag: JsonObject) => tag.status === "unknown" && tag.conditions.some((condition: JsonObject) => condition.status === "unknown"))) throw new Error("EVALUATION_INPUT_GAP_WITHOUT_UNKNOWN");
   }
-  state.validateRefs(final); state.final = final;
+  staged.validateRefs(final);
+  Object.assign(state, { phase: staged.phase, analysis: staged.analysis, points: staged.points, final,
+    gaps: staged.gaps, caseTagBindings: staged.caseTagBindings, protocolVersion: staged.protocolVersion });
   return value.continuation;
 }
 export function evaluationRoute(continuation: JsonObject, state: TaskState, report: JsonObject): "sufficient" | "input_facts_missing" | "continue" | "limited_assessment" | "retrieval_failed" | "incomplete" {

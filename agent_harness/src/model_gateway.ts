@@ -13,15 +13,19 @@ export const mockModel: Model<"openai-completions"> = { id: "finrisk-mock-v1", n
 function assistant(model: Model<Api>, content: AssistantMessage["content"], stopReason: AssistantMessage["stopReason"]): AssistantMessage {
   return { role: "assistant", content, api: model.api, provider: model.provider, model: model.id, stopReason, timestamp: Date.now(), usage: { input: 16, output: 16, cacheRead: 0, cacheWrite: 0, totalTokens: 32, cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0, total: 0 } } };
 }
-export function mockGateway(budget: Budget, state: TaskState, trace: Trace, steps: ScriptStep[], counter?: PromptCounter): StreamFn {
+export function mockGateway(budget: Budget, state: TaskState, trace: Trace, steps: ScriptStep[], counter?: PromptCounter, assertRequest?: (context: TranscriptContext) => void, availableTimeMs?: () => number): StreamFn {
   let position = 0;
   return (model, context, options) => {
     const stream = createAssistantMessageEventStream();
     void (async () => {
     let requestId: string;
     try {
+      assertRequest?.(context);
+      if ((availableTimeMs?.() ?? budget.remainingMs()) <= 0) throw new Error("LOOP_REASSESSMENT_TIME_RESERVED");
       const input = counter ? (await countPayload(payloadForContext(context, state.phase, state.repairing), counter, budget.remainingMs())).prompt_tokens : estimateTokens(context.messages);
       if (counter && input + budget.config.context_safety_margin_tokens > budget.config.service_max_input_tokens) throw new Error("context_window_exceeded");
+      assertRequest?.(context);
+      if ((availableTimeMs?.() ?? budget.remainingMs()) <= 0) throw new Error("LOOP_REASSESSMENT_TIME_RESERVED");
       requestId = budget.reserveModel(input, state.phase === "finalizing");
       trace.event("model.request", { request_id: requestId, phase: state.phase, execution_mode: "mock", physical_request: false });
     } catch (error) {
@@ -29,7 +33,7 @@ export function mockGateway(budget: Budget, state: TaskState, trace: Trace, step
       stream.push({ type: "start", partial: failed }); stream.push({ type: "error", reason: "error", error: failed });
       return stream;
     }
-    const deadlineMs = Math.min(budget.remainingMs(), budget.config.model_request_timeout_seconds * 1000);
+    const deadlineMs = Math.min(budget.remainingMs(), budget.config.model_request_timeout_seconds * 1000, availableTimeMs?.() ?? Infinity);
     const step = steps[position++];
     let settled = false;
     const timer = setTimeout(() => finishError(budget.remainingMs() <= 0 ? "deadline_exceeded" : "model_request_timeout", true), deadlineMs);

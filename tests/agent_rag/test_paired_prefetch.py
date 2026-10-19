@@ -30,7 +30,7 @@ def tasks_for(*samples):
     ]
 
 
-def backend_fixture(tmp_path, *, complete=True, unknown=0):
+def backend_fixture(tmp_path, *, complete=True, unknown=0, terminal=False):
     from agent_rag.v2_backend import HybridV2Backend
     from retrieval.sparse import RetrievalDocument
 
@@ -83,7 +83,10 @@ def backend_fixture(tmp_path, *, complete=True, unknown=0):
                 for i, u in enumerate(packets if complete else packets[:1])
             ]
             self._cache[text] = "success"
-            return {"scores": scores, "complete": complete, "meta": {}, "errors": []}
+            return {"scores": scores, "complete": complete, "meta": {}, "errors": [
+                {"unit_id": u["unit_id"], "code": "INVALID_COMPLETION", "terminal": True,
+                 "remaining_attempts": 0} for u in packets[1:]
+            ] if terminal and not complete else []}
 
     snap = Snapshot()
     backend = HybridV2Backend(snap, Dense(), Reranker(), audit_root=tmp_path / "backend-audits")
@@ -872,3 +875,64 @@ def test_execute_without_prefetch_configuration_keeps_legacy_behavior(tmp_path, 
     assert len(ledger["tasks"]) == 6
     assert all(not row["task_key"].startswith("PREFETCH:") for row in ledger["tasks"])
     assert "comparable_e2e_seconds" not in e.load(tmp_path / "execution/X_R1.json")
+
+
+def test_exhausted_local_partial_prefetch_is_frozen_equally_without_retry(tmp_path):
+    e, snap, budget, runner = runner_fixture(tmp_path, complete=False, terminal=True)
+    first = runner.ensure(query())
+    assert first['status'] == 'partial'
+    assert first['ranking_coverage']['scored_units'] == 1
+    assert first['ranking_coverage']['failed_units'] == 1
+    from agent_rag.rerank_backend import RerankTaskControl
+    text = e.canonical({'text': query()['text'], 'user_context': {}})
+    for arm in ('R1', 'R2', 'A'):
+        control = RerankTaskControl(tmp_path/(arm+'.json'), 0.5, 240)
+        cached = snap.backend.search(text, 3, control)
+        assert cached['complete'] is False
+        assert cached['ranking_coverage'] == first['ranking_coverage']
+        assert cached['candidates'] == first['candidates']
+        assert cached['meta']['external_retrieval_requests'] == 0
+        assert cached['meta']['cache_hits'] == 1
+        assert control.meta()['external_retrieval_requests'] == 0
+        assert runner.ensure(query()) == first
+    assert len(snap.backend.reranker.calls) == 1
+    assert len(budget.value['tasks']) == 1
+    # Returned views cannot mutate the frozen copy.
+    cached['candidates'].clear()
+    assert snap.backend.search(text, 3)['candidates'] == first['candidates']
+
+
+@pytest.mark.parametrize('damage', ['coverage_count', 'nonterminal', 'transport_open',
+                                  'unsupported_code', 'audit_binding', 'empty_scores',
+                                  'failed_ids', 'audit_complete', 'audit_coverage',
+                                  'query_binding'])
+def test_partial_prefetch_never_admits_unbounded_or_inconsistent_results(tmp_path, damage):
+    _, snap, _, runner = runner_fixture(tmp_path, complete=False, terminal=True)
+    original = snap.backend.search
+    def damaged(*args, **kwargs):
+        result = original(*args, **kwargs)
+        if damage == 'coverage_count':
+            result['ranking_coverage']['scored_units'] = 2
+        elif damage == 'nonterminal':
+            result['ranking_coverage']['attempts_exhausted'] = False
+        elif damage == 'transport_open':
+            result['meta']['transport_circuit_open'] = True
+        elif damage == 'unsupported_code':
+            result['ranking_coverage']['failure_counts'] = {'UNCLASSIFIED_RERANK_FAILURE': 1}
+        elif damage == 'audit_binding':
+            result['audit']['failed_unit_ids'] = []
+        elif damage == 'failed_ids':
+            result['ranking_coverage']['failed_unit_ids'] = ['foreign-unit']
+        elif damage == 'audit_complete':
+            result['audit']['complete'] = True
+        elif damage == 'audit_coverage':
+            result['audit']['ranking_coverage'] = {}
+        elif damage == 'query_binding':
+            result['audit']['query_text_sha256'] = '0'*64
+        else:
+            result['candidates'] = []
+        return result
+    snap.backend.search = damaged
+    with pytest.raises(ValueError, match='PREFETCH_INCOMPLETE'):
+        runner.ensure(query())
+    assert runner.records['X']['status'] == 'failed'

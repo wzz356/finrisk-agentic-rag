@@ -1,4 +1,4 @@
-"""官网→V2候选→增量向量→版本发布。默认只读预检，付费生成必须加--generate。"""
+"""官网文书候选预检/生成；正式构建与发布须使用受控维护审批入口。"""
 
 from __future__ import annotations
 
@@ -56,7 +56,9 @@ def main(argv=None):
     update.add_argument("--delay", type=float, default=1.5)
     update.add_argument("--max-documents", type=int, default=3)
     update.add_argument("--generate", action="store_true", help="向DeepSeek发送原文并实际扣费")
-    update.add_argument("--publish", action="store_true", help="校验新版本后切换current指针")
+    update.add_argument(
+        "--publish", action="store_true", help="旧参数已禁用；正式发布须经过维护审批"
+    )
     update.add_argument(
         "--include-review",
         action="store_true",
@@ -71,6 +73,8 @@ def main(argv=None):
     rollback.add_argument("--config", type=Path, required=True)
     rollback.add_argument("--version", required=True)
     args = parser.parse_args(argv)
+    if args.command == "update" and args.publish:
+        raise ValueError("MAINTENANCE_APPROVAL_REQUIRED")
     if args.command == "init":
         if args.config.exists():
             raise ValueError("CONFIG_ALREADY_EXISTS")

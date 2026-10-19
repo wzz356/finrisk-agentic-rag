@@ -1,16 +1,17 @@
 import { readFileSync } from "node:fs";
 import Ajv2020 from "ajv/dist/2020.js";
-import { root, hash, validateOutput, type JsonObject, type TaskInput } from "./contracts.js";
+import { root, hash, defaults, officialTags, validateOutput, type JsonObject, type TaskInput } from "./contracts.js";
 import type { TaskState } from "./state.js";
 import { checkCriteriaBinding, criteriaFor, criteriaProjection } from "./criteria.js";
 import { buildCitationOptions, expandCaseSelections } from "./citation_bundles.js";
+import { validateBudgetConfig } from "./budget_profile.js";
 
 const wireBytes = readFileSync(`${root}/contracts/agent_rag/model-wire.schema.json`, "utf8");
 export const wireSchemaHash = hash(wireBytes);
 export const wireSchema = JSON.parse(wireBytes);
 const ajv = new Ajv2020.default({ strict: false, allErrors: true });
 const validators = new Map<string, ReturnType<typeof ajv.compile>>();
-export function wireContract(kind: string, compactCitations = false): JsonObject {
+export function wireContract(kind: string, compactCitations = false, loopProjection = false): JsonObject {
   const definitions: JsonObject = {};
   const add = (name: string): void => { if (definitions[name]) return; definitions[name] = wireSchema.$defs[name]; visit(definitions[name]); };
   const visit = (v: any): void => { if (Array.isArray(v)) v.forEach(visit); else if (v && typeof v === "object") { if (v.$ref?.startsWith("#/$defs/")) add(v.$ref.slice(8)); Object.values(v).forEach(visit); } };
@@ -28,12 +29,24 @@ export function wireContract(kind: string, compactCitations = false): JsonObject
     match.required = ["case_ref", "same_points", "differences", "match_status", "supports_tags"];
     definitions.caseMatch = match;
   }
+  if (loopProjection && definitions.finalPoint) {
+    definitions.finalPoint = structuredClone(definitions.finalPoint);
+    definitions.finalPoint.properties.case_matches.maxItems = 6;
+    const match = structuredClone(definitions.caseMatch);
+    const prefixLength = Math.max(...officialTags.map(tag => Array.from(tag).length)) + Array.from("[] ").length;
+    for (const field of ["same_points", "differences"]) {
+      const original = field === "same_points" ? wireSchema.$defs.caseMatch.properties.same_points : wireSchema.$defs.strings;
+      match.properties[field] = { type: "array", minItems: field === "same_points" ? 1 : 0,
+        maxItems: 3 * original.maxItems, items: { type: "string", minLength: 1, maxLength: original.items.maxLength + prefixLength } };
+    }
+    definitions.caseMatch = match;
+  }
   return { $schema: wireSchema.$schema, $ref: `#/$defs/${kind}`, $defs: definitions };
 }
-function validateWire(value: JsonObject, kind: string, compactCitations = false): void {
+function validateWire(value: JsonObject, kind: string, compactCitations = false, loopProjection = false): void {
   if (value.kind !== kind) throw new Error(`INVALID_OUTPUT_KIND:${kind}`);
-  const key = `${kind}:${compactCitations}`;
-  if (!validators.has(key)) validators.set(key, ajv.compile(wireContract(kind, compactCitations)));
+  const key = `${kind}:${compactCitations}:${loopProjection}`;
+  if (!validators.has(key)) validators.set(key, ajv.compile(wireContract(kind, compactCitations, loopProjection)));
   const validator = validators.get(key)!;
   if (!validator(value)) throw new Error(`INVALID_WIRE:${(validator.errors ?? []).slice(0, 6).map(e => {
     const location = e.instancePath.match(/^\/points\/(\d+)\/facts\/(\d+)(?:\/|$)/);
@@ -106,7 +119,9 @@ function validateUnitCitations(match: JsonObject, candidate: JsonObject, state: 
     if (covered < anchor.end) throw new Error('CASE_CITATION_BUNDLE_INCOMPLETE');
   }
 }
-export function normalizeModelOutput(value: JsonObject, kind: string, state: TaskState, task: TaskInput): JsonObject {
+export function normalizeModelOutput(value: JsonObject, kind: string, state: TaskState, task: TaskInput, options: { loopProjection?: boolean } = {}): JsonObject {
+  const loopProjection = options.loopProjection === true;
+  if (loopProjection && !validateBudgetConfig({ ...defaults, ...task.config })) throw new Error("LOOP_PROFILE_REQUIRED");
   // 旧fixture/历史协议仍可离线验收，真实运行只接受精简协议。
   if (!Array.isArray(value.segments)) {
     if (state.evaluationCitations || task.config?.execution_mode === "live") throw new Error("MODEL_WIRE_REQUIRED:使用segments与points精简结构");
@@ -114,7 +129,7 @@ export function normalizeModelOutput(value: JsonObject, kind: string, state: Tas
   }
   if (state.evaluationCitations && kind === "final") {
     if (!state.citationSnapshotId) throw new Error("CITATION_SNAPSHOT_REQUIRED");
-    validateWire(value, kind, true);
+    validateWire(value, kind, true, loopProjection);
     for (const point of value.points) {
       const initial = state.points.find(row => row.risk_point_id === point.risk_point_id);
       const tags = new Set<string>([...(initial?.candidate_tags ?? []), ...point.tag_checks.map((check: JsonObject) => check.tag)]);
@@ -125,7 +140,7 @@ export function normalizeModelOutput(value: JsonObject, kind: string, state: Tas
     }
     value = { ...value, points: value.points.map((point: JsonObject) => ({ ...point, case_matches: expandCaseSelections(point.case_matches, state.citationOptions) })) };
   }
-  validateWire(value, kind); state.validateRefs(value);
+  validateWire(value, kind, false, loopProjection); state.validateRefs(value);
   checkCriteriaBinding(task.definitions, task.snapshot.dictionary_sha256);
   let normalized: JsonObject;
   if (kind === "analysis") {
@@ -207,7 +222,7 @@ export function normalizeModelOutput(value: JsonObject, kind: string, state: Tas
     });
     normalized = { kind, ...segments(value), risk_points: points, summary: points.some((p: JsonObject) => p.judgment === "suspected") ? "按当前材料与官方标签定义提示疑似风险；案例支持程度和未知条件逐项列示。" : points.some((p: JsonObject) => p.judgment === "review_required") ? "材料关键条件不足，按现有文本列出待复核事项。" : "按现有材料未发现明确风险；本结论受材料范围限制。审查说明：" + value.segments.slice(0, 3).map((s: JsonObject) => s.reason).join("；") };
   }
-  validateOutput(normalized, kind); state.protocolVersion = "finrisk-model-wire/1.2";
+  validateOutput(normalized, kind, loopProjection && kind === "final" ? { loopProjection: true, config: task.config } : {}); state.protocolVersion = "finrisk-model-wire/1.2";
   return normalized;
 }
 

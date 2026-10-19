@@ -2,6 +2,7 @@ import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
 import Ajv2020 from "ajv/dist/2020.js";
+import { validateBudgetConfig } from "./budget_profile.js";
 
 export const root = fileURLToPath(new URL("../../..", import.meta.url));
 export const modelSchema = JSON.parse(readFileSync(`${root}/contracts/agent_rag/model-output.schema.json`, "utf8"));
@@ -41,6 +42,17 @@ export function contractForKind(kind: string): JsonObject {
   const schema = { $schema: modelSchema.$schema, $ref: `#/$defs/${kind}`, $defs: definitions };
   phaseSchemas.set(kind, schema); return schema;
 }
+/** Only the final case-comparison fields widen; shared strings and the legacy schema stay unchanged. */
+export function loopNormalizedContract(): JsonObject {
+  const schema = structuredClone(contractForKind("final"));
+  const strings = modelSchema.$defs.strings;
+  const prefixLength = Math.max(...officialTags.map(tag => Array.from(tag).length)) + Array.from("[] ").length;
+  for (const field of ["same_points", "differences"]) schema.$defs.caseMatch.properties[field] = {
+    type: "array", maxItems: 3 * strings.maxItems, items: { type: "string", minLength: 1, maxLength: strings.items.maxLength + prefixLength },
+  };
+  return schema;
+}
+export function loopNormalizedContractHash(): string { return hash(canonical(loopNormalizedContract())); }
 const programValidators = new Map<string, ReturnType<typeof ajv.compile>>();
 export function validateProgram(value: unknown, name: string): void {
   let validator = programValidators.get(name);
@@ -51,10 +63,15 @@ export function validateProgram(value: unknown, name: string): void {
   if (!validator(value)) throw new Error(`INVALID_PROGRAM_CONTRACT:${name}:${ajv.errorsText(validator.errors)}`);
 }
 export type JsonObject = Record<string, any>;
-export function validateOutput(value: unknown, kind?: string): asserts value is JsonObject {
+export function validateOutput(value: unknown, kind?: string, options: { loopProjection?: boolean; config?: Partial<Config> } = {}): asserts value is JsonObject {
   if (kind && (!value || typeof value !== "object" || (value as JsonObject).kind !== kind)) throw new Error(`INVALID_OUTPUT_KIND:${kind}:顶层直接输出kind，不要type或analysis/final外层包装`);
   let validator = validate;
-  if (kind) {
+  if (options.loopProjection) {
+    if (kind !== "final" || !validateBudgetConfig({ ...defaults, ...options.config })) throw new Error("LOOP_PROFILE_REQUIRED");
+    const key = "final:loop";
+    if (!phaseValidators.has(key)) phaseValidators.set(key, ajv.compile(loopNormalizedContract()));
+    validator = phaseValidators.get(key)!;
+  } else if (kind) {
     if (!phaseValidators.has(kind)) phaseValidators.set(kind, ajv.compile(contractForKind(kind)));
     validator = phaseValidators.get(kind)!;
   }
@@ -75,6 +92,14 @@ export function canonical(value: unknown): string {
   return JSON.stringify(value);
 }
 export interface Config {
+  orchestration_mode?: "staged_one_shot" | "planned_fixed" | "planned_adaptive";
+  budget_profile_id?: string;
+  budget_profile_sha256?: string;
+  fast_path_enabled?: boolean;
+  initial_query_limit?: number; feedback_query_reserve?: number; max_feedback_rounds?: number;
+  max_read_source_actions?: number; max_definition_actions?: number; max_initial_tags_per_point?: number;
+  rerank_max_requests?: number; rerank_cap_micro_cny?: number; model_trial_cap_micro_cny?: number;
+  task_total_cost_cap_micro_cny?: number; rerank_candidates_per_query?: number; rerank_attempts_per_candidate?: number;
   eval_mode?: "one_shot_rag" | "adaptive_rag";
   evaluation_arm?: "R1" | "R2" | "A";
   evaluation_format_repair_limit?: 0 | 1;
@@ -105,5 +130,5 @@ export type Phase = "analyzing" | "reviewing" | "finalizing" | "completed" | "pa
 export interface TaskInput {
   input: InputRecord; snapshot: JsonObject; definitions: JsonObject[]; config?: Partial<Config>;
   task_dir?: string; mock_scenario?: "generic" | "gift-example";
-  execution_contract?: { model_wire_sha256: string; criteria_sha256: string; prompt_sha256: string; tool_contract_sha256?: string; request_admission_policy_sha256?: string; evaluation_protocol_sha256?: string };
+  execution_contract?: { model_wire_sha256: string; criteria_sha256: string; prompt_sha256: string; tool_contract_sha256?: string; request_admission_policy_sha256?: string; evaluation_protocol_sha256?: string; budget_profile_sha256?: string; agent_loop_schema_sha256?: string; agent_loop_protocol_sha256?: string; profile_sha256?: string };
 }

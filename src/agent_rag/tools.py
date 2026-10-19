@@ -1,5 +1,6 @@
 """模型可调用的三工具；不接受文件路径，不根据历史案例填当前产品事实。"""
 
+import copy
 import json
 import re
 import time
@@ -9,6 +10,8 @@ from agent_rag.contracts import canonical_json, tool_schema, validate_schema
 from agent_rag.input_registry import InputRegistry, text_hash
 from agent_rag.knowledge_snapshot import KnowledgeSnapshot, make_evidence
 from agent_rag.retrieval import PROFILE
+from agent_rag.v2_context import POLICY as CONTEXT_POLICY
+from agent_rag.v2_context import strip_parent_context
 from agent_rag.v2_snapshot import PROFILE as V2_PROFILE
 
 
@@ -133,7 +136,7 @@ class KnowledgeTools:
             validate_schema(params, tool_schema(name, self.profile))
             if name == "search_cases":
                 result = (
-                    self._search_v2(params, meta, query_limit)
+                    self._search_v2(params, meta, query_limit, started=started)
                     if self.profile == V2_PROFILE
                     else self._search(params, meta, query_limit)
                 )
@@ -152,13 +155,14 @@ class KnowledgeTools:
             result = envelope(
                 "error", None, meta, {"code": code, "message": str(error)[:300], "retryable": False}
             )
-        result["meta"]["duration_ms"] = round((time.monotonic() - started) * 1000, 2)
+        if "duration_ms" not in result["meta"]:
+            result["meta"]["duration_ms"] = round((time.monotonic() - started) * 1000, 2)
         if self.profile == V2_PROFILE:
             result["schema_version"] = "finrisk-tools/1.1"
         return result
 
     def _search_v2(
-        self, params: dict[str, Any], meta: dict[str, Any], query_limit: int
+        self, params: dict[str, Any], meta: dict[str, Any], query_limit: int, *, started: float
     ) -> dict[str, Any]:
         if len(params["queries"]) != 1:
             raise ValueError("V2_MAX_ONE_QUERY_PER_SEARCH")
@@ -177,12 +181,24 @@ class KnowledgeTools:
         if query_limit < 1 and not self.snapshot.backend.is_cached(query["text"], params["top_k"]):
             row["error"] = {"code": "QUERY_BUDGET_EXHAUSTED"}
             return envelope("partial", {"queries": [row]}, meta)
+        result, has_context = None, False
         try:
             result = self.snapshot.search(query["text"], params["top_k"], self.control)
+            has_context = "context_expansion" in result["meta"] or any(
+                "context_expansion" in candidate for candidate in result["candidates"]
+            )
             for candidate in result["candidates"]:
                 self.snapshot.read(candidate["source_id"])
+                diagnosis = candidate.get("context_expansion", {})
+                added_ids = (
+                    set(diagnosis.get("added_evidence_ids", []))
+                    - set(candidate.get("required_evidence_ids", []))
+                    if diagnosis.get("policy") == CONTEXT_POLICY else set()
+                )
                 for evidence in candidate["evidence"]:
-                    self.evidence[evidence["evidence_id"]] = evidence
+                    # 基线锚点仍按旧语义登记；新增父窗口只登记最终返回的部分。
+                    if evidence["evidence_id"] not in added_ids:
+                        self.evidence[evidence["evidence_id"]] = evidence
             row.update(
                 candidates=result["candidates"],
                 complete=result["complete"],
@@ -199,36 +215,79 @@ class KnowledgeTools:
                             for stage in ("bm25", "bge", "rrf", "rerank"))):
                 row.update(status="error", error={"code": "STOPPED"})
             meta.update(result["meta"])
-            if self.audit_dir is not None:
-                try:
-                    self.audit_dir.mkdir(parents=True, exist_ok=True)
-                    with (self.audit_dir / f"{row['query_id']}.json").open(
-                        "x", encoding="utf-8"
-                    ) as handle:
-                        json.dump(result.get("audit", {}), handle, ensure_ascii=False, allow_nan=False)
-                except (ValueError, OSError, TypeError) as error:
-                    raise RuntimeError("RETRIEVAL_AUDIT_WRITE_FAILED") from error
         except (ValueError, OSError, RuntimeError) as error:
             row.update(complete=False, status="error")
             row["error"] = {"code": str(error).split(":", 1)[0][:100]}
         response = envelope(
             "partial" if not row["complete"] else row["status"], {"queries": [row]}, meta
         )
-        while (
-            len(json.dumps(response, ensure_ascii=False, separators=(",", ":"))) > 12000
-            and row["candidates"]
-        ):
-            row["candidates"].pop()
-            row["returned_candidates_truncated"] = True
-        if not row["candidates"] and row["returned_candidates_truncated"]:
-            row.update(
-                status="partial",
-                complete=False,
-                error={"code": "CANDIDATE_EVIDENCE_EXCEEDS_CONTEXT"},
-            )
-            response["status"] = "partial"
-        if len(json.dumps(response, ensure_ascii=False, separators=(",", ":"))) > 12000:
-            raise ValueError("TOOL_PAYLOAD_TOO_LARGE")
+        if has_context:
+            # 新策略把最终包装也计入预算；冻结耗时，避免_call再加字段冲破临界值。
+            meta["duration_ms"] = round((time.monotonic() - started) * 1000, 2)
+            response["schema_version"] = "finrisk-tools/1.1"
+        omitted_ids, omitted_units = set(), set()
+        omitted_diagnostics = 0
+
+        def over_budget():
+            return len(json.dumps(response, ensure_ascii=False, separators=(",", ":"))) > 12000
+
+        def fit_payload():
+            nonlocal omitted_diagnostics
+            if has_context:
+                for index in range(len(row["candidates"]) - 1, -1, -1):
+                    if not over_budget():
+                        break
+                    candidate = row["candidates"][index]
+                    stripped = strip_parent_context(candidate, "tool_payload_budget")
+                    removed = {item["evidence_id"] for item in candidate["evidence"]} - {
+                        item["evidence_id"] for item in stripped["evidence"]
+                    }
+                    if removed:
+                        omitted_ids.update(removed)
+                        omitted_units.add(candidate["unit_id"])
+                    row["candidates"][index] = stripped
+                if over_budget():
+                    # 全部可选字段撤回后必须回到基线大小，不能为诊断淘汰原证据。
+                    for candidate in row["candidates"]:
+                        omitted_diagnostics += int("context_expansion" in candidate)
+                        candidate.pop("context_expansion", None)
+                    meta.pop("context_expansion", None)
+            while over_budget() and row["candidates"]:
+                row["candidates"].pop()
+                row["returned_candidates_truncated"] = True
+            if not row["candidates"] and row["returned_candidates_truncated"]:
+                row.update(
+                    status="partial", complete=False,
+                    error={"code": "CANDIDATE_EVIDENCE_EXCEEDS_CONTEXT"},
+                )
+                response["status"] = "partial"
+            if over_budget():
+                raise ValueError("TOOL_PAYLOAD_TOO_LARGE")
+
+        fit_payload()
+        if result is not None and self.audit_dir is not None:
+            audit = copy.deepcopy(result.get("audit", {}))
+            if has_context:
+                audit.setdefault("context_expansion", {}).update(
+                    budget_omitted_candidates=len(omitted_units),
+                    budget_omitted_evidence_ids=sorted(omitted_ids),
+                    budget_omitted_diagnostics=omitted_diagnostics,
+                    returned_candidates_truncated=row["returned_candidates_truncated"],
+                )
+            try:
+                self.audit_dir.mkdir(parents=True, exist_ok=True)
+                with (self.audit_dir / f"{row['query_id']}.json").open(
+                    "x", encoding="utf-8"
+                ) as handle:
+                    json.dump(audit, handle, ensure_ascii=False, allow_nan=False)
+            except (ValueError, OSError, TypeError):
+                row.update(complete=False, status="error")
+                row["error"] = {"code": "RETRIEVAL_AUDIT_WRITE_FAILED"}
+                response["status"] = "partial"
+                fit_payload()
+        for candidate in row["candidates"]:
+            for evidence in candidate["evidence"]:
+                self.evidence[evidence["evidence_id"]] = evidence
         return response
 
     def _search(

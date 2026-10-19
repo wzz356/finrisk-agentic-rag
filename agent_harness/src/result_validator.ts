@@ -4,7 +4,8 @@ import type { TaskState } from "./state.js";
 import type { Budget } from "./budget.js";
 import type { ToolBridge } from "./tool_bridge.js";
 import { criteria, criteriaByteHash } from "./criteria.js";
-import { isPartialRerank, partialRankingSummary } from "./retrieval_quality.js";
+import { validateBudgetConfig } from "./budget_profile.js";
+import { isPartialRerank, partialRankingSummary, retrievalReliabilityPolicy } from "./retrieval_quality.js";
 
 const promptHash = hash(readFileSync(`${root}/configs/agent_rag/system-prompt.txt`, "utf8"));
 function contextWarnings(state: TaskState, id: string): JsonObject {
@@ -16,12 +17,13 @@ function contextWarnings(state: TaskState, id: string): JsonObject {
   return { context_warnings: warnings };
 }
 
-export async function assembleReport(task: TaskInput, state: TaskState, budget: Budget, bridge: ToolBridge): Promise<JsonObject> {
+export async function assembleReport(task: TaskInput, state: TaskState, budget: Budget, bridge: ToolBridge, options: { loopProjection?: boolean; pointQueries?: (id: string) => JsonObject[] } = {}): Promise<JsonObject> {
+  if (options.loopProjection && !validateBudgetConfig(budget.config)) throw new Error("LOOP_PROFILE_REQUIRED");
   const errors = [...state.validationErrors];
   let final = state.final;
   let schemaValid = Boolean(final);
   if (final) {
-    try { validateOutput(final, "final"); state.validateRefs(final); }
+    try { validateOutput(final, "final", options.loopProjection ? { loopProjection: true, config: budget.config } : {}); state.validateRefs(final); }
     catch (error) { errors.push(String((error as Error).message)); final = undefined; schemaValid = false; }
   }
   const definitionMap = new Map(task.definitions.map(d => [d.risk_tag, d]));
@@ -61,7 +63,7 @@ export async function assembleReport(task: TaskInput, state: TaskState, budget: 
       if (!valid) { referencesValid = false; errors.push("INVALID_CASE_OR_EVIDENCE_REFERENCE"); continue; }
       matches.push({ ...match, evidence: match.evidence_ids.map((eid: string) => state.evidence.get(eid)), semantic_review_status: "model_assessed" });
     }
-    const relatedSearches = state.searches.filter(query => query.focus_refs.some((ref: JsonObject) => {
+    const relatedSearches = options.loopProjection && options.pointQueries ? options.pointQueries(id) : state.searches.filter(query => query.focus_refs.some((ref: JsonObject) => {
       const s = state.resolve(ref); return spans.some(p => s.start < p.end && p.start < s.end);
     }));
     const latestQueries = new Map<string, JsonObject>(); relatedSearches.forEach(q => latestQueries.set(state.queryKey(q), q));
@@ -99,7 +101,7 @@ export async function assembleReport(task: TaskInput, state: TaskState, budget: 
   }
   // analysis提出的点不能被终稿静默删除；未处理点作为程序待复核保留。
   for (const initial of state.points) {
-    if (points.some(p => p.risk_point_id === initial.risk_point_id || (p.mechanism === initial.mechanism && canonical(p.input_refs) === canonical(initial.input_refs)))) continue;
+    if (points.some(p => p.risk_point_id === initial.risk_point_id || (!options.loopProjection && p.mechanism === initial.mechanism && canonical(p.input_refs) === canonical(initial.input_refs)))) continue;
     const spans = initial.input_refs.map((r: JsonObject) => state.resolve(r)); spans.forEach((s: JsonObject) => allSpans.set(canonical(s), s));
     points.push({ ...initial, ...contextWarnings(state, initial.risk_point_id), input_spans: spans, supported_tags: [], pending_tags: initial.candidate_tags, tag_checks: [], judgment: "review_required", status: "review_required", case_match_status: "not_completed", case_matches: [], unknowns: [...initial.unknowns, "终稿未处理该候选风险点。"] });
     caseIncomplete = true;
@@ -112,10 +114,13 @@ export async function assembleReport(task: TaskInput, state: TaskState, budget: 
   const unresolvedInputGaps = [...state.gaps.values()].filter(g => g.type === "input_condition" && g.status !== "resolved" && (state.protocolVersion !== "finrisk-model-wire/1.2" || !points.some(p => p.risk_point_id === g.risk_point_id && p.tag_checks.length && p.tag_checks.every((t: JsonObject) => t.status === "not_supported"))));
   const allQueryStates = new Map<string, JsonObject>(); state.searches.forEach(q => allQueryStates.set(state.queryKey(q), q));
   const unfinishedQueries = [...allQueryStates.values()].filter(q => !q.complete || q.status === "error");
-  const partial = !final || !coverage.all_submitted_segments_reviewed || caseIncomplete || unfinishedQueries.length > 0 || !referencesValid || state.protocolInvalid || semanticConflict;
+  // With retrieval diagnostics enabled, unresolved output/protocol errors must
+  // also prevent completion, matching retrieval_quality's hard-failure boundary.
+  const unresolvedOutputError = state.retrievalReliability && errors.some(error => !retrievalReliabilityPolicy.limited_error_codes.includes(error));
+  const partial = !final || !coverage.all_submitted_segments_reviewed || caseIncomplete || unfinishedQueries.length > 0 || !referencesValid || state.protocolInvalid || semanticConflict || unresolvedOutputError;
   const overall = points.some(p => p.supported_tags.length) ? "suspected" : partial || unresolvedInputGaps.length || points.some(p => p.judgment === "review_required") ? "review_required" : "no_clear_risk";
   const status = partial ? "partial" : "completed";
-  const limitedRanking = state.retrievalReliability && unfinishedQueries.length > 0 && unfinishedQueries.every(isPartialRerank)
+  const limitedRanking = state.retrievalReliability && !unresolvedOutputError && unfinishedQueries.length > 0 && unfinishedQueries.every(isPartialRerank)
     && referencesValid && !semanticConflict && !state.protocolInvalid;
   state.phase = status;
   return {
