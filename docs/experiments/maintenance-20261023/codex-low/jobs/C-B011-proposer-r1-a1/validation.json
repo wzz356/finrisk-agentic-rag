@@ -1,0 +1,7 @@
+{
+  "valid": false,
+  "code": "MODEL_SCHEMA",
+  "field": "/source_coverage/1/field_refs",
+  "message": "MODEL_SCHEMA: /source_coverage/1/field_refs",
+  "production_admission": false
+}

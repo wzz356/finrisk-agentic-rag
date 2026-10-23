@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "action": "add",
+  "reason": "完整原文载明2026年7月8日处罚。旧库主体检索命中两条；已完整读取FRV2-SOURCE-F008349-2187bee0ad2196162e08f9ce，其为2023年10月18日新金监罚决字〔2023〕22号，行为及处罚不同，保留历史记录，本案作为独立事项提出新增。另一条仅见预览，不引用其完整事实；检索不能证明绝无重复。",
+  "production_admission": false,
+  "tool_calls": 3,
+  "output_sha256": "c0bf6b47e79362be7f97b6211aa08fa5c86e633a94625aaaff85528b0563b1bc"
+}

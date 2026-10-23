@@ -1,0 +1,150 @@
+{
+  "claim_checks": [
+    {
+      "citations": [
+        {
+          "segment_id": "B009:L0001:273e209021fbd316:273e209021fbd316",
+          "quote": "当事人: 太平人寿保险有限公司葫芦岛中心支公司"
+        }
+      ],
+      "claim_id": "claim:codex12-B009:case:subject",
+      "comment": "当事人名称与原文一致。",
+      "verdict": "supported"
+    },
+    {
+      "citations": [
+        {
+          "segment_id": "B009:L0003:273e209021fbd316:273e209021fbd316",
+          "quote": "葫金监罚决〔2026〕3号"
+        }
+      ],
+      "claim_id": "claim:codex12-B009:case:document_number",
+      "comment": "完整文号与原文一致。",
+      "verdict": "supported"
+    },
+    {
+      "citations": [
+        {
+          "segment_id": "B009:L0011:273e209021fbd316:273e209021fbd316",
+          "quote": "2026年7月6日"
+        }
+      ],
+      "claim_id": "claim:codex12-B009:case:decision_date",
+      "comment": "决定日期与原文一致。",
+      "verdict": "supported"
+    },
+    {
+      "citations": [
+        {
+          "segment_id": "B009:L0009:273e209021fbd316:273e209021fbd316",
+          "quote": "葫芦岛金融监管分局"
+        }
+      ],
+      "claim_id": "claim:codex12-B009:case:authority",
+      "comment": "处罚机关与原文一致。",
+      "verdict": "supported"
+    },
+    {
+      "citations": [
+        {
+          "segment_id": "B009:L0001:273e209021fbd316:273e209021fbd316",
+          "quote": "当事人: 太平人寿保险有限公司葫芦岛中心支公司"
+        }
+      ],
+      "claim_id": "claim:codex12-B009:case:position",
+      "comment": "完整原文未披露职务，保留null合理。",
+      "verdict": "supported"
+    },
+    {
+      "citations": [
+        {
+          "segment_id": "B009:L0005:273e209021fbd316:273e209021fbd316",
+          "quote": "财务业务数据不真实"
+        }
+      ],
+      "claim_id": "claim:codex12-B009:case:legal_basis",
+      "comment": "完整原文未披露法律依据，保留null合理。",
+      "verdict": "supported"
+    },
+    {
+      "citations": [
+        {
+          "segment_id": "B009:L0007:273e209021fbd316:273e209021fbd316",
+          "quote": "责令改正，处罚款十二万元"
+        }
+      ],
+      "claim_id": "claim:codex12-B009:case:penalties",
+      "comment": "处罚及责令改正均与原文一致。",
+      "verdict": "supported"
+    },
+    {
+      "citations": [
+        {
+          "segment_id": "B009:L0005:273e209021fbd316:273e209021fbd316",
+          "quote": "财务业务数据不真实"
+        }
+      ],
+      "claim_id": "claim:codex12-B009:case:unknowns",
+      "comment": "完整原文未列职务和法律依据，缺失声明准确。",
+      "verdict": "supported"
+    },
+    {
+      "citations": [
+        {
+          "segment_id": "B009:L0001:273e209021fbd316:273e209021fbd316",
+          "quote": "当事人: 太平人寿保险有限公司葫芦岛中心支公司"
+        }
+      ],
+      "claim_id": "claim:codex12-B009:behaviors:0:actor",
+      "comment": "机构当事人与该案违法事实相连，机构主体归属有据。",
+      "verdict": "supported"
+    },
+    {
+      "citations": [
+        {
+          "segment_id": "B009:L0001:273e209021fbd316:273e209021fbd316",
+          "quote": "当事人: 太平人寿保险有限公司葫芦岛中心支公司"
+        }
+      ],
+      "claim_id": "claim:codex12-B009:behaviors:0:role",
+      "comment": "当事人为保险公司中心支公司，机构角色有据。",
+      "verdict": "supported"
+    },
+    {
+      "citations": [
+        {
+          "segment_id": "B009:L0005:273e209021fbd316:273e209021fbd316",
+          "quote": "财务业务数据不真实"
+        }
+      ],
+      "claim_id": "claim:codex12-B009:behaviors:0:action",
+      "comment": "原文仅有这一项案由，行为记录准确。",
+      "verdict": "supported"
+    },
+    {
+      "citations": [
+        {
+          "segment_id": "B009:L0005:273e209021fbd316:273e209021fbd316",
+          "quote": "财务业务数据不真实"
+        }
+      ],
+      "claim_id": "claim:codex12-B009:behaviors:0:risk_tags",
+      "comment": "案由不足以满足具体标签条件，允许零标签，未补造手段或客户信息条件。",
+      "verdict": "supported"
+    },
+    {
+      "citations": [
+        {
+          "segment_id": "B009:L0005:273e209021fbd316:273e209021fbd316",
+          "quote": "财务业务数据不真实"
+        }
+      ],
+      "claim_id": "claim:codex12-B009:behaviors:0:unknowns",
+      "comment": "具体数据和实施方式均未披露，未知项准确。",
+      "verdict": "supported"
+    }
+  ],
+  "omission_check_completed": true,
+  "issues": [],
+  "decision": "approve"
+}

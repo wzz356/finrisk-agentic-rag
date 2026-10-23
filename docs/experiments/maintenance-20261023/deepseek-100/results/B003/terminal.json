@@ -1,0 +1,26 @@
+{
+  "id": "B003",
+  "status": "proposed_hold_unreviewed",
+  "production_admission": false,
+  "receipt": null,
+  "format_repairs": {
+    "proposer": 0,
+    "reviewer": 0
+  },
+  "business_revision_used": false,
+  "revisions": [
+    {
+      "revision": 1,
+      "phase": "proposer",
+      "role_attempt": 1,
+      "action": "hold",
+      "mechanical_valid": true
+    }
+  ],
+  "terminal_error": null,
+  "stop_reason": "completed",
+  "format_repairs_used": {
+    "proposer": 0,
+    "reviewer": 0
+  }
+}

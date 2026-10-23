@@ -1,0 +1,387 @@
+{
+  "action": "add",
+  "reason": "已完整读取原文。完整文号检索零命中，不能据此证明不存在；主体检索并完整读取旧库FRV2-SOURCE-F004441-d7661a26989100c190dd9270，为2025年37-38号，本原文为2026年27号，不能视为同号或自动冲突。提议独立新增，不改动历史记录；三个行为分别保存，实施主体保留未知。",
+  "case": {
+    "position": {
+      "claim_type": "fact",
+      "uncertainty": null,
+      "citations": [
+        {
+          "segment_id": "B059:L0001:90879508325875a7:90879508325875a7",
+          "quote": "当事人: 张娟（时任山东汇盛保险代理有限公司法定代表人）"
+        }
+      ],
+      "value": "时任山东汇盛保险代理有限公司法定代表人"
+    },
+    "subject": {
+      "claim_type": "fact",
+      "uncertainty": null,
+      "citations": [
+        {
+          "segment_id": "B059:L0001:90879508325875a7:90879508325875a7",
+          "quote": "当事人: 张娟（时任山东汇盛保险代理有限公司法定代表人）"
+        }
+      ],
+      "value": "张娟"
+    },
+    "decision_date": {
+      "claim_type": "fact",
+      "uncertainty": null,
+      "citations": [
+        {
+          "segment_id": "B059:L0011:90879508325875a7:90879508325875a7",
+          "quote": "2026年8月11日"
+        }
+      ],
+      "value": "2026年8月11日"
+    },
+    "legal_basis": {
+      "claim_type": "fact",
+      "uncertainty": "原文未列法律依据",
+      "citations": [
+        {
+          "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+          "quote": "未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务"
+        }
+      ],
+      "value": null
+    },
+    "document_number": {
+      "claim_type": "fact",
+      "uncertainty": null,
+      "citations": [
+        {
+          "segment_id": "B059:L0003:90879508325875a7:90879508325875a7",
+          "quote": "淄金罚决字〔2026〕27号"
+        }
+      ],
+      "value": "淄金罚决字〔2026〕27号"
+    },
+    "unknowns": {
+      "claim_type": "derived_summary",
+      "uncertainty": "原文未列法律依据",
+      "citations": [
+        {
+          "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+          "quote": "未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务"
+        }
+      ],
+      "value": [
+        "legal_basis"
+      ]
+    },
+    "authority": {
+      "claim_type": "fact",
+      "uncertainty": null,
+      "citations": [
+        {
+          "segment_id": "B059:L0009:90879508325875a7:90879508325875a7",
+          "quote": "国家金融监督管理总局淄博监管分局"
+        }
+      ],
+      "value": "国家金融监督管理总局淄博监管分局"
+    },
+    "penalties": {
+      "claim_type": "fact",
+      "uncertainty": null,
+      "citations": [
+        {
+          "segment_id": "B059:L0007:90879508325875a7:90879508325875a7",
+          "quote": "警告并罚款6万元"
+        }
+      ],
+      "value": "张娟：警告并罚款6万元"
+    }
+  },
+  "source_coverage": [
+    {
+      "disposition": "mapped",
+      "segment_id": "B059:L0001:90879508325875a7:90879508325875a7",
+      "reason": "原文事实与对应字段绑定",
+      "field_refs": [
+        "case/subject",
+        "case/position"
+      ]
+    },
+    {
+      "disposition": "not_material",
+      "segment_id": "B059:L0002:90879508325875a7:90879508325875a7",
+      "reason": "表格栏目标题，无独立业务事实",
+      "field_refs": []
+    },
+    {
+      "disposition": "mapped",
+      "segment_id": "B059:L0003:90879508325875a7:90879508325875a7",
+      "reason": "原文事实与对应字段绑定",
+      "field_refs": [
+        "case/document_number"
+      ]
+    },
+    {
+      "disposition": "not_material",
+      "segment_id": "B059:L0004:90879508325875a7:90879508325875a7",
+      "reason": "表格栏目标题，无独立业务事实",
+      "field_refs": []
+    },
+    {
+      "disposition": "mapped",
+      "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+      "reason": "原文事实与对应字段绑定",
+      "field_refs": [
+        "case/legal_basis",
+        "case/unknowns",
+        "behaviors/0/action",
+        "behaviors/0/actor",
+        "behaviors/0/role",
+        "behaviors/0/risk_tags",
+        "behaviors/0/unknowns",
+        "behaviors/1/action",
+        "behaviors/1/actor",
+        "behaviors/1/role",
+        "behaviors/1/risk_tags",
+        "behaviors/1/unknowns",
+        "behaviors/2/action",
+        "behaviors/2/actor",
+        "behaviors/2/role",
+        "behaviors/2/risk_tags",
+        "behaviors/2/unknowns"
+      ]
+    },
+    {
+      "disposition": "not_material",
+      "segment_id": "B059:L0006:90879508325875a7:90879508325875a7",
+      "reason": "表格栏目标题，无独立业务事实",
+      "field_refs": []
+    },
+    {
+      "disposition": "mapped",
+      "segment_id": "B059:L0007:90879508325875a7:90879508325875a7",
+      "reason": "原文事实与对应字段绑定",
+      "field_refs": [
+        "case/penalties"
+      ]
+    },
+    {
+      "disposition": "not_material",
+      "segment_id": "B059:L0008:90879508325875a7:90879508325875a7",
+      "reason": "表格栏目标题，无独立业务事实",
+      "field_refs": []
+    },
+    {
+      "disposition": "mapped",
+      "segment_id": "B059:L0009:90879508325875a7:90879508325875a7",
+      "reason": "原文事实与对应字段绑定",
+      "field_refs": [
+        "case/authority"
+      ]
+    },
+    {
+      "disposition": "not_material",
+      "segment_id": "B059:L0010:90879508325875a7:90879508325875a7",
+      "reason": "表格栏目标题，无独立业务事实",
+      "field_refs": []
+    },
+    {
+      "disposition": "mapped",
+      "segment_id": "B059:L0011:90879508325875a7:90879508325875a7",
+      "reason": "原文事实与对应字段绑定",
+      "field_refs": [
+        "case/decision_date"
+      ]
+    },
+    {
+      "disposition": "not_material",
+      "segment_id": "B059:L0012:90879508325875a7:90879508325875a7",
+      "reason": "表格栏目标题，无独立业务事实",
+      "field_refs": []
+    },
+    {
+      "disposition": "mapped",
+      "segment_id": "B059:L0013:90879508325875a7:90879508325875a7",
+      "reason": "原文事实与对应字段绑定",
+      "field_refs": [
+        "case/document_number",
+        "case/authority"
+      ]
+    }
+  ],
+  "behaviors": [
+    {
+      "unknowns": {
+        "claim_type": "derived_summary",
+        "uncertainty": "具体实施主体未明确",
+        "citations": [
+          {
+            "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+            "quote": "未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务"
+          }
+        ],
+        "value": [
+          "actor"
+        ]
+      },
+      "action": {
+        "claim_type": "fact",
+        "uncertainty": null,
+        "citations": [
+          {
+            "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+            "quote": "未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务"
+          }
+        ],
+        "value": "未按规定投保职业责任保险或缴存保证金"
+      },
+      "risk_tags": {
+        "claim_type": "derived_summary",
+        "uncertainty": "未满足特定标签全部条件，保留零标签",
+        "citations": [
+          {
+            "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+            "quote": "未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务"
+          }
+        ],
+        "value": []
+      },
+      "actor": {
+        "claim_type": "fact",
+        "uncertainty": "原文未说明具体实施主体，不能由张娟受罚推定亲自实施",
+        "citations": [
+          {
+            "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+            "quote": "未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务"
+          }
+        ],
+        "value": null
+      },
+      "role": {
+        "claim_type": "fact",
+        "uncertainty": "具体实施主体及角色未明确",
+        "citations": [
+          {
+            "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+            "quote": "未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务"
+          }
+        ],
+        "value": "unspecified"
+      }
+    },
+    {
+      "unknowns": {
+        "claim_type": "derived_summary",
+        "uncertainty": "具体实施主体未明确",
+        "citations": [
+          {
+            "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+            "quote": "未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务"
+          }
+        ],
+        "value": [
+          "actor"
+        ]
+      },
+      "action": {
+        "claim_type": "fact",
+        "uncertainty": null,
+        "citations": [
+          {
+            "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+            "quote": "未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务"
+          }
+        ],
+        "value": "未按规定开立独立的佣金收取账户"
+      },
+      "risk_tags": {
+        "claim_type": "derived_summary",
+        "uncertainty": "未满足特定标签全部条件，保留零标签",
+        "citations": [
+          {
+            "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+            "quote": "未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务"
+          }
+        ],
+        "value": []
+      },
+      "actor": {
+        "claim_type": "fact",
+        "uncertainty": "原文未说明具体实施主体，不能由张娟受罚推定亲自实施",
+        "citations": [
+          {
+            "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+            "quote": "未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务"
+          }
+        ],
+        "value": null
+      },
+      "role": {
+        "claim_type": "fact",
+        "uncertainty": "具体实施主体及角色未明确",
+        "citations": [
+          {
+            "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+            "quote": "未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务"
+          }
+        ],
+        "value": "unspecified"
+      }
+    },
+    {
+      "unknowns": {
+        "claim_type": "derived_summary",
+        "uncertainty": "具体实施主体未明确",
+        "citations": [
+          {
+            "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+            "quote": "未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务"
+          }
+        ],
+        "value": [
+          "actor"
+        ]
+      },
+      "action": {
+        "claim_type": "fact",
+        "uncertainty": null,
+        "citations": [
+          {
+            "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+            "quote": "未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务"
+          }
+        ],
+        "value": "委托未通过本机构进行执业登记的个人从事保险代理业务"
+      },
+      "risk_tags": {
+        "claim_type": "derived_summary",
+        "uncertainty": "未满足特定标签全部条件，保留零标签",
+        "citations": [
+          {
+            "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+            "quote": "未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务"
+          }
+        ],
+        "value": []
+      },
+      "actor": {
+        "claim_type": "fact",
+        "uncertainty": "原文未说明具体实施主体，不能由张娟受罚推定亲自实施",
+        "citations": [
+          {
+            "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+            "quote": "未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务"
+          }
+        ],
+        "value": null
+      },
+      "role": {
+        "claim_type": "fact",
+        "uncertainty": "具体实施主体及角色未明确",
+        "citations": [
+          {
+            "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+            "quote": "未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务"
+          }
+        ],
+        "value": "unspecified"
+      }
+    }
+  ]
+}

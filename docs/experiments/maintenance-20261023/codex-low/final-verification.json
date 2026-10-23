@@ -1,0 +1,25 @@
+{
+  "verified": true,
+  "profile": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "execution": "codex-native",
+    "production_admission": false
+  },
+  "role_outputs": 30,
+  "source_sha_checks": 12,
+  "old_files_unchanged": 1343,
+  "source_readback": 7,
+  "known_duplicate_full_reads": 3,
+  "review_only_protocol_valid": 8,
+  "full_case_count": 12,
+  "case_statuses": {
+    "experiment_protocol_approved_not_applied": 7,
+    "format_repair_exhausted": 1,
+    "proposed_no_change_unreviewed": 4
+  },
+  "deepseek_calls": 0,
+  "production_published": false,
+  "native_task_token_metering_available": false,
+  "note": "subscription shared quota snapshots are observations, not task-level billing"
+}

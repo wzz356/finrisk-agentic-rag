@@ -1,0 +1,6885 @@
+[
+  {
+    "id": "B001",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局行政处罚信息公示列表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268890&itemId=4113&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "恒大人寿保险有限公司",
+          "document_number": null,
+          "decision_date": "2026年8月21日",
+          "authority": "金融监管总局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "吊销业务许可证",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "恒大人寿保险有限公司",
+        "role": "institution",
+        "action": "保险资金运用严重不合规、向关联方输送利益，投后管理不合规",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "恒大人寿保险有限公司",
+        "role": "institution",
+        "action": "报送的报告报表存在虚假记载",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "恒大人寿保险有限公司",
+          "document_number": null,
+          "decision_date": "2026年8月21日",
+          "authority": "金融监管总局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "吊销业务许可证",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "恒大人寿保险有限公司",
+        "role": "institution",
+        "action": "保险资金运用严重不合规、向关联方输送利益，投后管理不合规",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "恒大人寿保险有限公司",
+        "role": "institution",
+        "action": "报送的报告报表存在虚假记载",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B002",
+    "stratum": "individual",
+    "title": "国家金融监督管理总局德阳监管分局行政处罚信息公开表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269113&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "刘义键",
+          "document_number": "德金监罚决字〔2026〕11号",
+          "decision_date": "2026年8月24日",
+          "authority": "国家金融监督管理总局德阳监管分局",
+          "position": "中国太平洋财产保险股份有限公司德阳中心支公司农险部经理",
+          "legal_basis": null,
+          "penalties": "警告并处罚款人民币1.5万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "刘义键",
+        "role": "responsible_person",
+        "action": "编制虚假资料虚列费用",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": []
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "刘义键",
+          "document_number": "德金监罚决字〔2026〕11号",
+          "decision_date": "2026年8月24日",
+          "authority": "国家金融监督管理总局德阳监管分局",
+          "position": "中国太平洋财产保险股份有限公司德阳中心支公司农险部经理",
+          "legal_basis": null,
+          "penalties": "警告并处罚款人民币1.5万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "刘义键",
+        "role": "responsible_person",
+        "action": "编制虚假资料虚列费用",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": []
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B003",
+    "stratum": "multi_subject",
+    "title": "新疆金融监管局行政处罚信息公示列表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263876&itemId=4114&generaltype=9",
+    "status": "proposed_hold_unreviewed",
+    "initial_cards": null,
+    "final_cards": null,
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B004",
+    "stratum": "bank_insurance_boundary",
+    "title": "国家金融监督管理总局行政处罚信息公开表（金罚决字〔2023〕67号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1144099&itemId=4113&generaltype=9",
+    "status": "format_repair_exhausted",
+    "initial_cards": null,
+    "final_cards": null,
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 1,
+      "reviewer": 0
+    },
+    "error": {
+      "code": "COVERAGE_CITATION",
+      "field": "case/penalties",
+      "message": "COVERAGE_CITATION: case/penalties"
+    }
+  },
+  {
+    "id": "B005",
+    "stratum": "stage_or_missing",
+    "title": "国家金融监督管理总局安徽监管局关于安徽中安财产保险股份有限公司和长安责任保险股份有限公司保险业务转让的批复",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269941&itemId=4114&generaltype=9",
+    "status": "proposed_no_change_unreviewed",
+    "initial_cards": null,
+    "final_cards": null,
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B006",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局凉山监管分局行政处罚信息公开表(凉金监罚决字〔2026〕5号)",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263071&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "车车保险销售服务有限公司四川省凉山营业部",
+          "document_number": "凉金监罚决字〔2026〕5号",
+          "decision_date": "2026年7月2日",
+          "authority": "国家金融监督管理总局凉山监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "警告并罚款人民币2.5万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "车车保险销售服务有限公司四川省凉山营业部",
+        "role": "institution",
+        "action": "业务档案不规范不完整",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体档案缺失范围与涉及保单数量未载明"
+        ]
+      },
+      {
+        "actor": "车车保险销售服务有限公司四川省凉山营业部",
+        "role": "institution",
+        "action": "未按规定履行客户告知书制作和出示义务",
+        "risk_tags": [
+          "隐瞒重要信息"
+        ],
+        "unknowns": [
+          "涉及客户数量及告知书具体缺失内容未载明"
+        ]
+      },
+      {
+        "actor": "车车保险销售服务有限公司四川省凉山营业部",
+        "role": "institution",
+        "action": "委托未通过本机构执业登记的人员从事保险代理业务",
+        "risk_tags": [
+          "委托无资质机构销售",
+          "代理人管理不到位"
+        ],
+        "unknowns": [
+          "涉及人员数量、姓名及代理业务规模未载明"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "车车保险销售服务有限公司四川省凉山营业部",
+          "document_number": "凉金监罚决字〔2026〕5号",
+          "decision_date": "2026年7月2日",
+          "authority": "国家金融监督管理总局凉山监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "警告并罚款人民币2.5万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "车车保险销售服务有限公司四川省凉山营业部",
+        "role": "institution",
+        "action": "业务档案不规范不完整",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体档案缺失范围与涉及保单数量未载明"
+        ]
+      },
+      {
+        "actor": "车车保险销售服务有限公司四川省凉山营业部",
+        "role": "institution",
+        "action": "未按规定履行客户告知书制作和出示义务",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "涉及客户数量及告知书具体缺失内容未载明"
+        ]
+      },
+      {
+        "actor": "车车保险销售服务有限公司四川省凉山营业部",
+        "role": "institution",
+        "action": "委托未通过本机构执业登记的人员从事保险代理业务",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "涉及人员数量、姓名及代理业务规模未载明"
+        ]
+      }
+    ],
+    "business_revision": true,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B007",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局运城监管分局行政处罚信息公开表（运金管罚决字〔2026〕10、11号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264681&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "安盛天平财产保险有限公司运城中心支公司",
+          "document_number": "运金管罚决字〔2026〕10号",
+          "decision_date": "2026年7月7日",
+          "authority": "国家金融监督管理总局运城监管分局",
+          "position": null,
+          "legal_basis": "《中华人民共和国保险法》第八十六条、第一百七十条",
+          "penalties": "责令改正，罚款21万元",
+          "unknowns": [
+            "position"
+          ]
+        }
+      },
+      {
+        "actor": "安盛天平财产保险有限公司运城中心支公司",
+        "role": "institution",
+        "action": "编制虚假资料套取费用",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": []
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "安盛天平财产保险有限公司运城中心支公司",
+          "document_number": "运金管罚决字〔2026〕10号",
+          "decision_date": "2026年7月7日",
+          "authority": "国家金融监督管理总局运城监管分局",
+          "position": null,
+          "legal_basis": "《中华人民共和国保险法》第八十六条、第一百七十条",
+          "penalties": "责令改正，罚款21万元",
+          "unknowns": [
+            "position"
+          ]
+        }
+      },
+      {
+        "actor": "安盛天平财产保险有限公司运城中心支公司",
+        "role": "institution",
+        "action": "编制虚假资料套取费用",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": []
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B008",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局黑龙江监管局行政处罚信息公开表（黑金监罚决字〔2026〕76、77号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269246&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "瑞众人寿保险有限责任公司黑龙江分公司",
+          "document_number": "黑金监罚决字〔2026〕76号",
+          "decision_date": "2026年8月25日",
+          "authority": "黑龙江金融监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款13万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "瑞众人寿保险有限责任公司黑龙江分公司",
+        "role": "institution",
+        "action": "给予投保人合同约定外其他利益",
+        "risk_tags": [
+          "合同外利益"
+        ],
+        "unknowns": []
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "瑞众人寿保险有限责任公司黑龙江分公司",
+          "document_number": "黑金监罚决字〔2026〕76号",
+          "decision_date": "2026年8月25日",
+          "authority": "黑龙江金融监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款13万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "瑞众人寿保险有限责任公司黑龙江分公司",
+        "role": "institution",
+        "action": "给予投保人合同约定外其他利益",
+        "risk_tags": [
+          "合同外利益"
+        ],
+        "unknowns": []
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B009",
+    "stratum": "ordinary_institution",
+    "title": "葫芦岛金融监管分局行政处罚信息公示列表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263582&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "太平人寿保险有限公司葫芦岛中心支公司",
+          "document_number": "葫金监罚决〔2026〕3号",
+          "decision_date": "2026年7月6日",
+          "authority": "葫芦岛金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "责令改正，处罚款十二万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "太平人寿保险有限公司葫芦岛中心支公司",
+        "role": "institution",
+        "action": "财务业务数据不真实",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体不真实数据项及行为方式"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "太平人寿保险有限公司葫芦岛中心支公司",
+          "document_number": "葫金监罚决〔2026〕3号",
+          "decision_date": "2026年7月6日",
+          "authority": "葫芦岛金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "责令改正，处罚款十二万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "太平人寿保险有限公司葫芦岛中心支公司",
+        "role": "institution",
+        "action": "财务业务数据不真实",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体不真实数据项及行为方式"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B010",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局锡林郭勒监管分局行政处罚信息公开表（锡金罚决字〔2026〕3号-5号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268245&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "富德生命人寿保险股份有限公司内蒙古分公司锡林郭勒盟中心支公司",
+          "document_number": "锡金罚决字〔2026〕3号",
+          "decision_date": "2026年8月3日",
+          "authority": "锡林郭勒金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款18万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "富德生命人寿保险股份有限公司内蒙古分公司锡林郭勒盟中心支公司",
+        "role": "institution",
+        "action": "虚列费用套取资金",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "富德生命人寿保险股份有限公司内蒙古分公司锡林郭勒盟中心支公司",
+        "role": "institution",
+        "action": "佣金科目数据不真实",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "富德生命人寿保险股份有限公司内蒙古分公司锡林郭勒盟中心支公司",
+          "document_number": "锡金罚决字〔2026〕3号",
+          "decision_date": "2026年8月3日",
+          "authority": "锡林郭勒金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款18万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "富德生命人寿保险股份有限公司内蒙古分公司锡林郭勒盟中心支公司",
+        "role": "institution",
+        "action": "虚列费用套取资金",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "富德生命人寿保险股份有限公司内蒙古分公司锡林郭勒盟中心支公司",
+        "role": "institution",
+        "action": "佣金科目数据不真实",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B011",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局潍坊监管分局行政处罚信息公开表（潍金罚决字〔2026〕15号-16号 ）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269212&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "山东汇联保险经纪有限公司",
+          "document_number": "潍金罚决字〔2026〕15号",
+          "decision_date": "2026年8月21日",
+          "authority": "国家金融监督管理总局潍坊监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "通报批评，警告，罚款3.5万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "山东汇联保险经纪有限公司",
+        "role": "institution",
+        "action": "与非法从事保险中介业务的机构发生保险经纪业务往来",
+        "risk_tags": [
+          "委托无资质机构销售"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "山东汇联保险经纪有限公司",
+        "role": "institution",
+        "action": "未按规定建立业务档案",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "山东汇联保险经纪有限公司",
+        "role": "institution",
+        "action": "未按规定进行公示、公告",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "山东汇联保险经纪有限公司",
+          "document_number": "潍金罚决字〔2026〕15号",
+          "decision_date": "2026年8月21日",
+          "authority": "国家金融监督管理总局潍坊监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "通报批评，警告，罚款3.5万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "山东汇联保险经纪有限公司",
+        "role": "institution",
+        "action": "与非法从事保险中介业务的机构发生保险经纪业务往来",
+        "risk_tags": [
+          "委托无资质机构销售"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "山东汇联保险经纪有限公司",
+        "role": "institution",
+        "action": "未按规定建立业务档案",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "山东汇联保险经纪有限公司",
+        "role": "institution",
+        "action": "未按规定进行公示、公告",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B012",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局运城监管分局行政处罚信息公开表（运金管罚决字〔2026〕12、13号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264683&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "诚泰财产保险股份有限公司运城中心支公司",
+          "document_number": "运金管罚决字〔2026〕12号",
+          "decision_date": "2026年7月7日",
+          "authority": "国家金融监督管理总局运城监管分局",
+          "position": null,
+          "legal_basis": "《中华人民共和国保险法》第八十六条、第一百七十条",
+          "penalties": "责令改正，罚款17万元",
+          "unknowns": [
+            "position"
+          ]
+        }
+      },
+      {
+        "actor": "诚泰财产保险股份有限公司运城中心支公司",
+        "role": "institution",
+        "action": "编制虚假资料套取费用",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": []
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "诚泰财产保险股份有限公司运城中心支公司",
+          "document_number": "运金管罚决字〔2026〕12号",
+          "decision_date": "2026年7月7日",
+          "authority": "国家金融监督管理总局运城监管分局",
+          "position": null,
+          "legal_basis": "《中华人民共和国保险法》第八十六条、第一百七十条",
+          "penalties": "责令改正，罚款17万元",
+          "unknowns": [
+            "position"
+          ]
+        }
+      },
+      {
+        "actor": "诚泰财产保险股份有限公司运城中心支公司",
+        "role": "institution",
+        "action": "编制虚假资料套取费用",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": []
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B013",
+    "stratum": "ordinary_institution",
+    "title": "丹东金融监管分局行政处罚信息公示列表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268572&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "中华联合财产保险股份有限公司丹东中心支公司",
+          "document_number": "丹金罚决字〔2026〕8号",
+          "decision_date": "2026年8月19日",
+          "authority": "丹东金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款8万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中华联合财产保险股份有限公司丹东中心支公司",
+        "role": "institution",
+        "action": "利用保险代理人从事以虚构保险中介业务的方式套取费用",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": []
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "中华联合财产保险股份有限公司丹东中心支公司",
+          "document_number": "丹金罚决字〔2026〕8号",
+          "decision_date": "2026年8月19日",
+          "authority": "丹东金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款8万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中华联合财产保险股份有限公司丹东中心支公司",
+        "role": "institution",
+        "action": "利用保险代理人从事以虚构保险中介业务的方式套取费用",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": []
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B014",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局天津监管局行政处罚信息公开表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267328&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "中国人民健康保险股份有限公司天津分公司",
+          "document_number": null,
+          "decision_date": "2026年8月7日",
+          "authority": "国家金融监督管理总局天津监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对中国人民健康保险股份有限公司天津分公司罚款28万元；对闻伟禁止终身进入保险业",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国人民健康保险股份有限公司天津分公司",
+        "role": "institution",
+        "action": "欺骗投保人",
+        "risk_tags": [
+          "欺骗投保人"
+        ],
+        "unknowns": [
+          "具体欺骗方式、对象、渠道等事实细节"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "中国人民健康保险股份有限公司天津分公司",
+          "document_number": null,
+          "decision_date": "2026年8月7日",
+          "authority": "国家金融监督管理总局天津监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对中国人民健康保险股份有限公司天津分公司罚款28万元；对闻伟禁止终身进入保险业",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国人民健康保险股份有限公司天津分公司",
+        "role": "institution",
+        "action": "欺骗投保人",
+        "risk_tags": [
+          "欺骗投保人"
+        ],
+        "unknowns": [
+          "具体欺骗方式、对象、渠道等事实细节"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B015",
+    "stratum": "ordinary_institution",
+    "title": "盐城金融监管分局行政处罚信息公开表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264948&itemId=4115&generaltype=9",
+    "status": "format_repair_exhausted",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "中国太平洋人寿保险股份有限公司盐城中心支公司相关责任人",
+          "document_number": null,
+          "decision_date": "2026年7月17日",
+          "authority": "盐城金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对刘晓妍警告并罚款5万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国太平洋人寿保险股份有限公司盐城中心支公司相关责任人",
+        "role": "unspecified",
+        "action": "虚列费用",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": [
+          "具体实施人员",
+          "虚列费用金额及方式"
+        ]
+      },
+      {
+        "actor": "中国太平洋人寿保险股份有限公司盐城中心支公司相关责任人",
+        "role": "unspecified",
+        "action": "销售误导",
+        "risk_tags": [
+          "销售误导"
+        ],
+        "unknowns": [
+          "具体误导对象",
+          "误导方式及产品"
+        ]
+      },
+      {
+        "actor": "中国太平洋人寿保险股份有限公司盐城中心支公司相关责任人",
+        "role": "unspecified",
+        "action": "给予投保人合同约定以外的利益",
+        "risk_tags": [
+          "合同外利益"
+        ],
+        "unknowns": [
+          "具体利益形式及金额",
+          "涉及投保人"
+        ]
+      }
+    ],
+    "final_cards": null,
+    "business_revision": true,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 1
+    },
+    "error": {
+      "code": "REVIEW_DECISION_CONSISTENCY",
+      "field": "",
+      "message": "REVIEW_DECISION_CONSISTENCY"
+    }
+  },
+  {
+    "id": "B016",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局滨州监管分局行政处罚信息公开表（滨金罚决字〔2026〕 33号-34号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264666&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "都邦财产保险股份有限公司滨州中心支公司",
+          "document_number": "滨金罚决字〔2026〕33号",
+          "decision_date": "2026年7月15日",
+          "authority": "国家金融监督管理总局滨州监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款9万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "都邦财产保险股份有限公司滨州中心支公司",
+        "role": "institution",
+        "action": "给予投保人保险合同约定以外利益",
+        "risk_tags": [
+          "合同外利益"
+        ],
+        "unknowns": []
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "都邦财产保险股份有限公司滨州中心支公司",
+          "document_number": "滨金罚决字〔2026〕33号",
+          "decision_date": "2026年7月15日",
+          "authority": "国家金融监督管理总局滨州监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款9万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "都邦财产保险股份有限公司滨州中心支公司",
+        "role": "institution",
+        "action": "给予投保人保险合同约定以外利益",
+        "risk_tags": [
+          "合同外利益"
+        ],
+        "unknowns": []
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B017",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局菏泽监管分局行政处罚信息公开表（菏金罚决字〔2026〕18-21号、25-27号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267663&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "中国太平洋人寿保险股份有限公司菏泽中心支公司",
+          "document_number": "菏金罚决字〔2026〕25号",
+          "decision_date": "2026年8月6日",
+          "authority": "国家金融监督管理总局菏泽监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "警告并罚款8万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国太平洋人寿保险股份有限公司菏泽中心支公司",
+        "role": "institution",
+        "action": "未按规定对代理人进行管理和执业登记",
+        "risk_tags": [
+          "代理人管理不到位"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "中国太平洋人寿保险股份有限公司菏泽中心支公司",
+        "role": "institution",
+        "action": "欺骗投保人",
+        "risk_tags": [
+          "欺骗投保人"
+        ],
+        "unknowns": []
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "中国太平洋人寿保险股份有限公司菏泽中心支公司",
+          "document_number": "菏金罚决字〔2026〕25号",
+          "decision_date": "2026年8月6日",
+          "authority": "国家金融监督管理总局菏泽监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "警告并罚款8万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国太平洋人寿保险股份有限公司菏泽中心支公司",
+        "role": "institution",
+        "action": "未按规定对代理人进行管理和执业登记",
+        "risk_tags": [
+          "代理人管理不到位"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "中国太平洋人寿保险股份有限公司菏泽中心支公司",
+        "role": "institution",
+        "action": "欺骗投保人",
+        "risk_tags": [
+          "欺骗投保人"
+        ],
+        "unknowns": []
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B018",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局滨州监管分局行政处罚信息公开表（滨金罚决字〔2026〕 35号-36号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265008&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "车车保险销售服务有限公司滨州营业部",
+          "document_number": "滨金罚决字〔2026〕35号",
+          "decision_date": "2026年7月17日",
+          "authority": "国家金融监督管理总局滨州监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "警告并处罚款1万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "车车保险销售服务有限公司滨州营业部",
+        "role": "institution",
+        "action": "委托未进行执业登记人员从事保险销售",
+        "risk_tags": [
+          "委托无资质机构销售"
+        ],
+        "unknowns": [
+          "具体被委托人员身份及执业登记状态细节",
+          "委托行为发生时间与涉及保单范围"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "车车保险销售服务有限公司滨州营业部",
+          "document_number": "滨金罚决字〔2026〕35号",
+          "decision_date": "2026年7月17日",
+          "authority": "国家金融监督管理总局滨州监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "警告并处罚款1万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "车车保险销售服务有限公司滨州营业部",
+        "role": "institution",
+        "action": "委托未进行执业登记人员从事保险销售",
+        "risk_tags": [],
+        "unknowns": [
+          "具体被委托人员身份及执业登记状态细节",
+          "委托行为发生时间与涉及保单范围"
+        ]
+      }
+    ],
+    "business_revision": true,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B019",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局天津监管局行政处罚信息公开表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264928&itemId=4114&generaltype=9",
+    "status": "format_repair_exhausted",
+    "initial_cards": null,
+    "final_cards": null,
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 1,
+      "reviewer": 0
+    },
+    "error": {
+      "code": "ACTOR_UNKNOWN",
+      "field": "",
+      "message": "ACTOR_UNKNOWN"
+    }
+  },
+  {
+    "id": "B020",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局天津监管局行政处罚信息公开表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1262968&itemId=4114&generaltype=9",
+    "status": "held",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "阳光人寿保险股份有限公司天津分公司",
+          "document_number": null,
+          "decision_date": "2026年7月1日",
+          "authority": "国家金融监督管理总局天津监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对阳光人寿保险股份有限公司天津分公司罚款40万元；对叶小义警告并处罚款7万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "阳光人寿保险股份有限公司天津分公司",
+        "role": "institution",
+        "action": "编制或者提供虚假的报告、报表、文件、资料",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体虚假资料内容及涉及期间未载明"
+        ]
+      }
+    ],
+    "final_cards": null,
+    "business_revision": true,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": {
+      "code": "HOST_ERROR",
+      "field": null,
+      "message": "Error: SUBMISSION_INCOMPLETE_model_failure"
+    }
+  },
+  {
+    "id": "B021",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局甘孜监管分局行政处罚信息公开表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265212&itemId=4115&generaltype=9",
+    "status": "held",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "中华财险色达支公司",
+          "document_number": "甘金监罚决字〔2026〕1号",
+          "decision_date": "2026年7月21日",
+          "authority": "甘孜金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款21万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中华财险色达支公司",
+        "role": "institution",
+        "action": "虚假理赔",
+        "risk_tags": [],
+        "unknowns": [
+          "虚假理赔的具体行为方式、涉及保单及金额未载明"
+        ]
+      }
+    ],
+    "final_cards": null,
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": {
+      "code": "HOST_ERROR",
+      "field": null,
+      "message": "Error: SUBMISSION_INCOMPLETE_model_failure"
+    }
+  },
+  {
+    "id": "B022",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局安顺监管分局行政处罚信息公开表（安金罚决字〔2026〕9-10号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268380&itemId=4115&generaltype=9",
+    "status": "held",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "中国大地财产保险股份有限公司安顺中心支公司",
+          "document_number": "安金罚决字〔2026〕9号",
+          "decision_date": "2026年8月18日",
+          "authority": "安顺金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款22万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国大地财产保险股份有限公司安顺中心支公司",
+        "role": "institution",
+        "action": "财务业务数据不真实",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体不真实的数据类型与金额"
+        ]
+      },
+      {
+        "actor": "中国大地财产保险股份有限公司安顺中心支公司",
+        "role": "institution",
+        "action": "给予或承诺给予合同约定以外其他利益",
+        "risk_tags": [
+          "合同外利益"
+        ],
+        "unknowns": [
+          "利益对象",
+          "利益形式与金额"
+        ]
+      }
+    ],
+    "final_cards": null,
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": {
+      "code": "HOST_ERROR",
+      "field": null,
+      "message": "Error: SUBMISSION_INCOMPLETE_model_failure"
+    }
+  },
+  {
+    "id": "B023",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局天津监管局行政处罚信息公开表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267323&itemId=4114&generaltype=9",
+    "status": "held",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "英大泰和财产保险股份有限公司天津分公司",
+          "document_number": null,
+          "decision_date": "2026年8月7日",
+          "authority": "国家金融监督管理总局天津监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对英大泰和财产保险股份有限公司天津分公司警告并处罚款合计66万元；对张静警告并处罚款9万元；对张勇警告并处罚款8万元；对刘少辉警告并处罚款1万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "英大泰和财产保险股份有限公司天津分公司",
+        "role": "institution",
+        "action": "未按照规定使用经批准或备案的保险费率",
+        "risk_tags": [
+          "未按规定使用费率条款"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "英大泰和财产保险股份有限公司天津分公司",
+        "role": "institution",
+        "action": "给予投保人、被保险人保险合同约定以外的利益",
+        "risk_tags": [
+          "合同外利益"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "英大泰和财产保险股份有限公司天津分公司",
+        "role": "institution",
+        "action": "通过保险代理人套取手续费",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "英大泰和财产保险股份有限公司天津分公司",
+        "role": "institution",
+        "action": "跨区域经营保险业务",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      }
+    ],
+    "final_cards": null,
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": {
+      "code": "HOST_ERROR",
+      "field": null,
+      "message": "Error: SUBMISSION_INCOMPLETE_model_failure"
+    }
+  },
+  {
+    "id": "B024",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局亳州监管分局行政处罚信息公开表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265455&itemId=4115&generaltype=9",
+    "status": "held",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "中国人民财产保险股份有限公司亳州分公司",
+          "document_number": null,
+          "decision_date": "2026年7月22日",
+          "authority": "国家金融监督管理总局亳州监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对中国人民财产保险股份有限公司亳州分公司罚款11万元；对蒋艳芳、姚迎春警告并罚款合计4万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国人民财产保险股份有限公司亳州分公司",
+        "role": "institution",
+        "action": "未依法履行保险合同约定的赔偿义务",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体未履行赔偿义务的合同、金额及情节"
+        ]
+      }
+    ],
+    "final_cards": null,
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": {
+      "code": "HOST_ERROR",
+      "field": null,
+      "message": "Error: EXPLORATION_FAILED_model_failure"
+    }
+  },
+  {
+    "id": "B025",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局铜仁监管分局行政处罚信息公开表（铜金罚决字〔2026〕16-17号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266629&itemId=4115&generaltype=9",
+    "status": "held",
+    "initial_cards": null,
+    "final_cards": null,
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": {
+      "code": "HOST_ERROR",
+      "field": null,
+      "message": "Error: SUBMISSION_INCOMPLETE_model_failure"
+    }
+  },
+  {
+    "id": "B026",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局潍坊监管分局行政处罚信息公开表（潍金罚决字〔2026〕13号-14号 ）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269211&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "国泰财产保险有限责任公司潍坊中心支公司",
+          "document_number": "潍金罚决字〔2026〕13号",
+          "decision_date": "2026年8月20日",
+          "authority": "国家金融监督管理总局潍坊监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款18万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "国泰财产保险有限责任公司潍坊中心支公司",
+        "role": "institution",
+        "action": "编制虚假的文件资料",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "虚假文件资料的具体内容、用途及涉及对象"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "国泰财产保险有限责任公司潍坊中心支公司",
+          "document_number": "潍金罚决字〔2026〕13号",
+          "decision_date": "2026年8月20日",
+          "authority": "国家金融监督管理总局潍坊监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款18万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "国泰财产保险有限责任公司潍坊中心支公司",
+        "role": "institution",
+        "action": "编制虚假的文件资料",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "虚假文件资料的具体内容、用途及涉及对象"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B027",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局临夏监管分局行政处罚信息公示表（临金监行处〔2026〕27号、28号、29号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265741&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "中国人民财产保险股份有限公司永靖支公司",
+          "document_number": "临金监行处〔2026〕27号",
+          "decision_date": "2026年7月27日",
+          "authority": "临夏金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "警告并处罚款人民币3万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国人民财产保险股份有限公司永靖支公司",
+        "role": "institution",
+        "action": "内部控制管理不到位，导致发生涉刑案件",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "涉刑案件的具体事实、涉案人员及责任未载明"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "中国人民财产保险股份有限公司永靖支公司",
+          "document_number": "临金监行处〔2026〕27号",
+          "decision_date": "2026年7月27日",
+          "authority": "临夏金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "警告并处罚款人民币3万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国人民财产保险股份有限公司永靖支公司",
+        "role": "institution",
+        "action": "内部控制管理不到位，导致发生涉刑案件",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "涉刑案件的具体事实、涉案人员及责任未载明"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B028",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局张家口监管分局行政处罚信息公开表（张金罚决字〔2026〕1号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265824&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "富德财产保险股份有限公司张家口中心支公司",
+          "document_number": "张金罚决字〔2026〕1号",
+          "decision_date": "2026年7月27日",
+          "authority": "张家口金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对富德财产保险股份有限公司张家口中心支公司罚款25万元；对贺翠霞给予警告并罚款2万元。",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "富德财产保险股份有限公司张家口中心支公司",
+        "role": "institution",
+        "action": "编制虚假报表资料",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体编制行为、涉及报表及责任人分工原文未载明"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "富德财产保险股份有限公司张家口中心支公司",
+          "document_number": "张金罚决字〔2026〕1号",
+          "decision_date": "2026年7月27日",
+          "authority": "张家口金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对富德财产保险股份有限公司张家口中心支公司罚款25万元；对贺翠霞给予警告并罚款2万元。",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "富德财产保险股份有限公司张家口中心支公司",
+        "role": "institution",
+        "action": "编制虚假报表资料",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体编制行为、涉及报表及责任人分工原文未载明"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B029",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局大庆监管分局行政处罚信息公开表（庆金监罚决字〔2026〕16、17号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265412&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "阳光人寿保险股份有限公司大庆中心支公司",
+          "document_number": "庆金监罚决字〔2026〕16号",
+          "decision_date": "2026年7月22日",
+          "authority": "大庆金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "警告并罚款2万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "阳光人寿保险股份有限公司大庆中心支公司",
+        "role": "institution",
+        "action": "对人身保险产品销售行为可回溯管理不到位",
+        "risk_tags": [],
+        "unknowns": [
+          "具体可回溯管理缺失环节、涉及产品及销售渠道未载明"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "阳光人寿保险股份有限公司大庆中心支公司",
+          "document_number": "庆金监罚决字〔2026〕16号",
+          "decision_date": "2026年7月22日",
+          "authority": "大庆金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "警告并罚款2万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "阳光人寿保险股份有限公司大庆中心支公司",
+        "role": "institution",
+        "action": "对人身保险产品销售行为可回溯管理不到位",
+        "risk_tags": [],
+        "unknowns": [
+          "具体可回溯管理缺失环节、涉及产品及销售渠道未载明"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B030",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局天津监管局行政处罚信息公开表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1262505&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "中国太平洋财产保险股份有限公司天津分公司",
+          "document_number": null,
+          "decision_date": "2026年6月29日",
+          "authority": "国家金融监督管理总局天津监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对中国太平洋财产保险股份有限公司天津分公司警告并处罚款30万元；对范洵警告并处罚款9万元；对韩涛警告并处罚款3万元。",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国太平洋财产保险股份有限公司天津分公司",
+        "role": "institution",
+        "action": "给予投保人、被保险人或受益人保险合同约定以外的利益",
+        "risk_tags": [
+          "合同外利益"
+        ],
+        "unknowns": [
+          "具体行为方式、对象、渠道及金额未载明"
+        ]
+      },
+      {
+        "actor": "中国太平洋财产保险股份有限公司天津分公司",
+        "role": "institution",
+        "action": "跨区域经营雇主责任保险业务",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "跨区域经营的具体地域、业务规模及渠道未载明"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "中国太平洋财产保险股份有限公司天津分公司",
+          "document_number": null,
+          "decision_date": "2026年6月29日",
+          "authority": "国家金融监督管理总局天津监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对中国太平洋财产保险股份有限公司天津分公司警告并处罚款30万元；对范洵警告并处罚款9万元；对韩涛警告并处罚款3万元。",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国太平洋财产保险股份有限公司天津分公司",
+        "role": "institution",
+        "action": "给予投保人、被保险人或受益人保险合同约定以外的利益",
+        "risk_tags": [
+          "合同外利益"
+        ],
+        "unknowns": [
+          "具体行为方式、对象、渠道及金额未载明"
+        ]
+      },
+      {
+        "actor": "中国太平洋财产保险股份有限公司天津分公司",
+        "role": "institution",
+        "action": "跨区域经营雇主责任保险业务",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "跨区域经营的具体地域、业务规模及渠道未载明"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B031",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局廊坊监管分局行政处罚信息公开表（廊金罚决字〔2026〕37号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268480&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "美联盛航保险代理有限公司廊坊分公司",
+          "document_number": "廊金罚决字〔2026〕37号",
+          "decision_date": "2026年8月18日",
+          "authority": "廊坊金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对美联盛航保险代理有限公司廊坊分公司给予警告并罚款2.4万元；对刘然给予警告并罚款2万元。",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "美联盛航保险代理有限公司廊坊分公司",
+        "role": "institution",
+        "action": "未建立完整规范的业务档案、执业登记和管理不规范、信息系统记录不准确、未严格落实培训管理要求",
+        "risk_tags": [
+          "培训材料违规",
+          "客户信息不真实"
+        ],
+        "unknowns": [
+          "具体违规行为细节",
+          "涉及客户及培训材料范围"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "美联盛航保险代理有限公司廊坊分公司",
+          "document_number": "廊金罚决字〔2026〕37号",
+          "decision_date": "2026年8月18日",
+          "authority": "廊坊金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对美联盛航保险代理有限公司廊坊分公司给予警告并罚款2.4万元；对刘然给予警告并罚款2万元。",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "美联盛航保险代理有限公司廊坊分公司",
+        "role": "institution",
+        "action": "未建立完整规范的业务档案、执业登记和管理不规范、信息系统记录不准确、未严格落实培训管理要求",
+        "risk_tags": [],
+        "unknowns": [
+          "具体违规行为细节",
+          "涉及客户及培训材料范围"
+        ]
+      }
+    ],
+    "business_revision": true,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B032",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局行政处罚信息公示列表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1224782&itemId=4113&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "交银保险资产管理有限公司",
+          "document_number": null,
+          "decision_date": "2025年9月5日",
+          "authority": "金融监管总局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对交银保险资产管理有限公司共计罚款115万元；对李盛达、田红霞、章丽琴分别给予警告并罚款7万元、2万元、2万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "交银保险资产管理有限公司",
+        "role": "institution",
+        "action": "投资不符合监管要求的信托计划、债权投资计划相关操作不符合监管要求、关联交易管理不合规",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体违规投资标的、关联交易违规细节及个人具体行为"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "交银保险资产管理有限公司",
+          "document_number": null,
+          "decision_date": "2025年9月5日",
+          "authority": "金融监管总局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对交银保险资产管理有限公司共计罚款115万元；对李盛达、田红霞、章丽琴分别给予警告并罚款7万元、2万元、2万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "交银保险资产管理有限公司",
+        "role": "institution",
+        "action": "投资不符合监管要求的信托计划、债权投资计划相关操作不符合监管要求、关联交易管理不合规",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体违规投资标的、关联交易违规细节及个人具体行为"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B033",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局天津监管局行政处罚信息公开表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267331&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "天津英顺思保险代理有限公司",
+          "document_number": null,
+          "decision_date": "2026年7月29日",
+          "authority": "国家金融监督管理总局天津监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对天津英顺思保险代理有限公司警告并处罚款36000元；对高治平警告并处罚款16000元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "天津英顺思保险代理有限公司",
+        "role": "institution",
+        "action": "未按规定制作客户告知书",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体未制作情形及涉及客户范围"
+        ]
+      },
+      {
+        "actor": "天津英顺思保险代理有限公司",
+        "role": "institution",
+        "action": "超出被代理保险公司经营区域开展保险代理业务",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "超区域业务的具体范围与金额"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "天津英顺思保险代理有限公司",
+          "document_number": null,
+          "decision_date": "2026年7月29日",
+          "authority": "国家金融监督管理总局天津监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对天津英顺思保险代理有限公司警告并处罚款36000元；对高治平警告并处罚款16000元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "天津英顺思保险代理有限公司",
+        "role": "institution",
+        "action": "未按规定制作客户告知书",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体未制作情形及涉及客户范围"
+        ]
+      },
+      {
+        "actor": "天津英顺思保险代理有限公司",
+        "role": "institution",
+        "action": "超出被代理保险公司经营区域开展保险代理业务",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "超区域业务的具体范围与金额"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B034",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局黑龙江监管局行政处罚信息公开表（黑金监罚决字〔2026〕74号、75号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269245&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "建信人寿保险股份有限公司黑龙江分公司",
+          "document_number": "黑金监罚决字〔2026〕 74号",
+          "decision_date": "2026年8月25日",
+          "authority": "黑龙江金融监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款5万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "建信人寿保险股份有限公司黑龙江分公司",
+        "role": "institution",
+        "action": "给予投保人保险合同约定以外的其他利益",
+        "risk_tags": [
+          "合同外利益"
+        ],
+        "unknowns": [
+          "具体利益形式",
+          "涉及保单或客户范围",
+          "实施时间"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "建信人寿保险股份有限公司黑龙江分公司",
+          "document_number": "黑金监罚决字〔2026〕 74号",
+          "decision_date": "2026年8月25日",
+          "authority": "黑龙江金融监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款5万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "建信人寿保险股份有限公司黑龙江分公司",
+        "role": "institution",
+        "action": "给予投保人保险合同约定以外的其他利益",
+        "risk_tags": [
+          "合同外利益"
+        ],
+        "unknowns": [
+          "具体利益形式",
+          "涉及保单或客户范围",
+          "实施时间"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B035",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局大连监管局行政处罚信息公开表（大金罚决字〔2026〕27、28、30号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263649&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "华泰财产保险有限公司大连分公司",
+          "document_number": null,
+          "decision_date": "2026年7月7日",
+          "authority": "国家金融监督管理总局大连监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款12万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "华泰财产保险有限公司大连分公司",
+        "role": "institution",
+        "action": "利用开展保险业务为其他机构或者个人牟取不正当利益",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体牟利对象",
+          "具体牟利方式",
+          "涉案业务及金额"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "华泰财产保险有限公司大连分公司",
+          "document_number": null,
+          "decision_date": "2026年7月7日",
+          "authority": "国家金融监督管理总局大连监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款12万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "华泰财产保险有限公司大连分公司",
+        "role": "institution",
+        "action": "利用开展保险业务为其他机构或者个人牟取不正当利益",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体牟利对象",
+          "具体牟利方式",
+          "涉案业务及金额"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B036",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局甘南监管分局行政处罚信息公示表（甘南金监行处〔2026〕7号、8号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264423&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "华安财产保险股份有限公司甘南中心支公司",
+          "document_number": "甘南金监行处〔2026〕7号",
+          "decision_date": "2026年7月14日",
+          "authority": "甘南金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款7万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "华安财产保险股份有限公司甘南中心支公司",
+        "role": "institution",
+        "action": "虚假理赔",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "虚假理赔的具体行为方式、涉及保单及金额未载明"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "华安财产保险股份有限公司甘南中心支公司",
+          "document_number": "甘南金监行处〔2026〕7号",
+          "decision_date": "2026年7月14日",
+          "authority": "甘南金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款7万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "华安财产保险股份有限公司甘南中心支公司",
+        "role": "institution",
+        "action": "虚假理赔",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "虚假理赔的具体行为方式、涉及保单及金额未载明"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B037",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局河南监管局行政处罚信息公示表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269228&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "众诚汽车保险股份有限公司河南分公司",
+          "document_number": "豫金罚决字〔2026〕63号",
+          "decision_date": "2026年8月25日",
+          "authority": "河南金融监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款35万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "众诚汽车保险股份有限公司河南分公司",
+        "role": "institution",
+        "action": "编制或者提供虚假的报告、报表、文件、资料",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体虚假报告、报表、文件、资料的内容与涉及期间",
+          "实施该行为的具体人员"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "众诚汽车保险股份有限公司河南分公司",
+          "document_number": "豫金罚决字〔2026〕63号",
+          "decision_date": "2026年8月25日",
+          "authority": "河南金融监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款35万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "众诚汽车保险股份有限公司河南分公司",
+        "role": "institution",
+        "action": "编制或者提供虚假的报告、报表、文件、资料",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体虚假报告、报表、文件、资料的内容与涉及期间",
+          "实施该行为的具体人员"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B038",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局盐城监管分局行政处罚信息公开表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263327&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "中国太平洋人寿保险股份有限公司盐城中心支公司",
+          "document_number": null,
+          "decision_date": "2026年7月3日",
+          "authority": "盐城金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款28万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国太平洋人寿保险股份有限公司盐城中心支公司",
+        "role": "institution",
+        "action": "虚列费用",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "中国太平洋人寿保险股份有限公司盐城中心支公司",
+        "role": "institution",
+        "action": "销售误导",
+        "risk_tags": [
+          "销售误导"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "中国太平洋人寿保险股份有限公司盐城中心支公司",
+        "role": "institution",
+        "action": "给予投保人合同约定以外的利益",
+        "risk_tags": [
+          "合同外利益"
+        ],
+        "unknowns": []
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "中国太平洋人寿保险股份有限公司盐城中心支公司",
+          "document_number": null,
+          "decision_date": "2026年7月3日",
+          "authority": "盐城金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款28万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国太平洋人寿保险股份有限公司盐城中心支公司",
+        "role": "institution",
+        "action": "虚列费用",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "中国太平洋人寿保险股份有限公司盐城中心支公司",
+        "role": "institution",
+        "action": "销售误导",
+        "risk_tags": [
+          "销售误导"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "中国太平洋人寿保险股份有限公司盐城中心支公司",
+        "role": "institution",
+        "action": "给予投保人合同约定以外的利益",
+        "risk_tags": [
+          "合同外利益"
+        ],
+        "unknowns": []
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B039",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕31号-32号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268386&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "山东远通兴华保险代理有限公司",
+          "document_number": "临金罚决字〔2026〕31号",
+          "decision_date": "2026年8月13日",
+          "authority": "国家金融监督管理总局临沂监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "警告并罚款11万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "山东远通兴华保险代理有限公司",
+        "role": "institution",
+        "action": "给予投保人保险合同约定以外的利益",
+        "risk_tags": [
+          "合同外利益"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "山东远通兴华保险代理有限公司",
+        "role": "institution",
+        "action": "收取保险公司工作人员给予的合同约定外酬金",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "山东远通兴华保险代理有限公司",
+        "role": "institution",
+        "action": "未开立独立的佣金收取账户",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "山东远通兴华保险代理有限公司",
+          "document_number": "临金罚决字〔2026〕31号",
+          "decision_date": "2026年8月13日",
+          "authority": "国家金融监督管理总局临沂监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "警告并罚款11万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "山东远通兴华保险代理有限公司",
+        "role": "institution",
+        "action": "给予投保人保险合同约定以外的利益",
+        "risk_tags": [
+          "合同外利益"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "山东远通兴华保险代理有限公司",
+        "role": "institution",
+        "action": "收取保险公司工作人员给予的合同约定外酬金",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "山东远通兴华保险代理有限公司",
+        "role": "institution",
+        "action": "未开立独立的佣金收取账户",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B040",
+    "stratum": "ordinary_institution",
+    "title": "阜新金融监管分局行政处罚信息公示列表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265684&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "太平财产保险有限公司阜新中心支公司",
+          "document_number": "阜金罚决字〔2026〕3号",
+          "decision_date": "2026年7月24日",
+          "authority": "阜新金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款26万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "太平财产保险有限公司阜新中心支公司",
+        "role": "institution",
+        "action": "虚构中介业务套取手续费",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "太平财产保险有限公司阜新中心支公司",
+        "role": "institution",
+        "action": "财务、业务数据不真实",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "太平财产保险有限公司阜新中心支公司",
+          "document_number": "阜金罚决字〔2026〕3号",
+          "decision_date": "2026年7月24日",
+          "authority": "阜新金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款26万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "太平财产保险有限公司阜新中心支公司",
+        "role": "institution",
+        "action": "虚构中介业务套取手续费",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "太平财产保险有限公司阜新中心支公司",
+        "role": "institution",
+        "action": "财务、业务数据不真实",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B041",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局北京监管局行政处罚信息公开表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264794&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "幸福人寿保险股份有限公司",
+          "document_number": null,
+          "decision_date": "2026年7月17日",
+          "authority": "北京金融监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对幸福人寿责令改正，并处罚款20万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "幸福人寿保险股份有限公司",
+        "role": "institution",
+        "action": "未如实记录保险业务事项",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体未如实记录的业务事项、涉及保单及责任人"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "幸福人寿保险股份有限公司",
+          "document_number": null,
+          "decision_date": "2026年7月17日",
+          "authority": "北京金融监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对幸福人寿责令改正，并处罚款20万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "幸福人寿保险股份有限公司",
+        "role": "institution",
+        "action": "未如实记录保险业务事项",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体未如实记录的业务事项、涉及保单及责任人"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B042",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局贵州监管局行政处罚信息公开表（贵金罚决字〔2026〕32-34号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269354&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "富德生命人寿保险股份有限公司贵州分公司",
+          "document_number": "贵金罚决字〔2026〕34号",
+          "decision_date": "2026年8月26日",
+          "authority": "贵州金融监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款35万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "富德生命人寿保险股份有限公司贵州分公司",
+        "role": "institution",
+        "action": "未按照规定使用经备案的保险费率",
+        "risk_tags": [
+          "未按规定使用费率条款"
+        ],
+        "unknowns": []
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "富德生命人寿保险股份有限公司贵州分公司",
+          "document_number": "贵金罚决字〔2026〕34号",
+          "decision_date": "2026年8月26日",
+          "authority": "贵州金融监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款35万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "富德生命人寿保险股份有限公司贵州分公司",
+        "role": "institution",
+        "action": "未按照规定使用经备案的保险费率",
+        "risk_tags": [
+          "未按规定使用费率条款"
+        ],
+        "unknowns": []
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B043",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局河北监管局行政处罚信息公开表（冀金罚决字〔2026〕32号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264427&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "太平养老保险股份有限公司河北分公司",
+          "document_number": "冀金罚决字〔2026〕32号",
+          "decision_date": "2026年7月14日",
+          "authority": "河北金融监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "警告并罚款1万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "太平养老保险股份有限公司河北分公司",
+        "role": "institution",
+        "action": "承保管控不到位",
+        "risk_tags": [],
+        "unknowns": [
+          "具体承保环节",
+          "涉及对象",
+          "行为方式",
+          "发生时间"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "太平养老保险股份有限公司河北分公司",
+          "document_number": "冀金罚决字〔2026〕32号",
+          "decision_date": "2026年7月14日",
+          "authority": "河北金融监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "警告并罚款1万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "太平养老保险股份有限公司河北分公司",
+        "role": "institution",
+        "action": "承保管控不到位",
+        "risk_tags": [],
+        "unknowns": [
+          "具体承保环节",
+          "涉及对象",
+          "行为方式",
+          "发生时间"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B044",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局山东监管局行政处罚信息公开表（鲁金罚决字〔2026〕66号-73号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267670&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "德华安顾人寿保险有限公司山东省分公司",
+          "document_number": "鲁金罚决字〔2026〕71号",
+          "decision_date": "2026年8月10日",
+          "authority": "国家金融监督管理总局山东监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款40万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "德华安顾人寿保险有限公司山东省分公司",
+        "role": "institution",
+        "action": "编制虚假的财务业务资料",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": [
+          "具体虚假资料类型、涉及金额及是否套取资金未载明"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "德华安顾人寿保险有限公司山东省分公司",
+          "document_number": "鲁金罚决字〔2026〕71号",
+          "decision_date": "2026年8月10日",
+          "authority": "国家金融监督管理总局山东监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款40万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "德华安顾人寿保险有限公司山东省分公司",
+        "role": "institution",
+        "action": "编制虚假的财务业务资料",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体虚假资料类型、涉及金额及是否套取资金未载明"
+        ]
+      }
+    ],
+    "business_revision": true,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B045",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局吉林监管局行政处罚信息公示列表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266238&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "人保寿险吉林省分公司",
+          "document_number": null,
+          "decision_date": "2026年7月30日",
+          "authority": "吉林金融监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "警告并罚款1万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "人保寿险吉林省分公司",
+        "role": "institution",
+        "action": "换领许可证超期",
+        "risk_tags": [],
+        "unknowns": [
+          "具体超期时间及许可证类型原文未载明"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "人保寿险吉林省分公司",
+          "document_number": null,
+          "decision_date": "2026年7月30日",
+          "authority": "吉林金融监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "警告并罚款1万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "人保寿险吉林省分公司",
+        "role": "institution",
+        "action": "换领许可证超期",
+        "risk_tags": [],
+        "unknowns": [
+          "具体超期时间及许可证类型原文未载明"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B046",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局行政处罚信息公示列表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1225641&itemId=4113&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "恒大人寿保险有限公司相关责任人员",
+          "document_number": null,
+          "decision_date": "2025年9月12日",
+          "authority": "金融监管总局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对梁栋、朱加麟、曾松柏、陈堃、刘国辉、汪守想、方元甫、章新蓉、莫勇光、陈里达、罗嵩、彭建军、姜劲峰、胡锋、许晓光、陈敏、赵宏涛、刘曲章、张炎、王煦警告并罚款共计282.5万元；对梁栋禁止终身进入保险业，对陈堃禁止10年进入保险业，对朱加麟、曾松柏、刘国辉禁止5年进入保险业",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "恒大人寿保险有限公司相关责任人员",
+        "role": "responsible_person",
+        "action": "保险资金运用严重不合规、向关联方输送利益，投后管理不合规",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体违规资金运用项目、关联方及投后管理事项未在原文列明"
+        ]
+      },
+      {
+        "actor": "恒大人寿保险有限公司相关责任人员",
+        "role": "responsible_person",
+        "action": "报送的报告报表存在虚假记载",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "虚假记载的具体报告报表名称、期间及内容未在原文列明"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "恒大人寿保险有限公司相关责任人员",
+          "document_number": null,
+          "decision_date": "2025年9月12日",
+          "authority": "金融监管总局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对梁栋、朱加麟、曾松柏、陈堃、刘国辉、汪守想、方元甫、章新蓉、莫勇光、陈里达、罗嵩、彭建军、姜劲峰、胡锋、许晓光、陈敏、赵宏涛、刘曲章、张炎、王煦警告并罚款共计282.5万元；对梁栋禁止终身进入保险业，对陈堃禁止10年进入保险业，对朱加麟、曾松柏、刘国辉禁止5年进入保险业",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "恒大人寿保险有限公司相关责任人员",
+        "role": "responsible_person",
+        "action": "保险资金运用严重不合规、向关联方输送利益，投后管理不合规",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体违规资金运用项目、关联方及投后管理事项未在原文列明"
+        ]
+      },
+      {
+        "actor": "恒大人寿保险有限公司相关责任人员",
+        "role": "responsible_person",
+        "action": "报送的报告报表存在虚假记载",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "虚假记载的具体报告报表名称、期间及内容未在原文列明"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B047",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局天津监管局行政处罚信息公开表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1262966&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "渤海财产保险股份有限公司",
+          "document_number": null,
+          "decision_date": "2026年7月1日",
+          "authority": "国家金融监督管理总局天津监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "警告并处罚款合计3.6万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "渤海财产保险股份有限公司",
+        "role": "institution",
+        "action": "未制定信息科技外包战略；重要信息科技外包活动识别不充分；外包服务水平监控评价机制落实不到位；信息科技外包服务商服务水平监控评价覆盖不全面；信息科技外包风险评估不到位；信息科技外包网络和信息安全管理措施落实不到位",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体违反的信息科技外包监管条款",
+          "各子事实对应的责任人员"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "渤海财产保险股份有限公司",
+          "document_number": null,
+          "decision_date": "2026年7月1日",
+          "authority": "国家金融监督管理总局天津监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "警告并处罚款合计3.6万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "渤海财产保险股份有限公司",
+        "role": "institution",
+        "action": "未制定信息科技外包战略；重要信息科技外包活动识别不充分；外包服务水平监控评价机制落实不到位；信息科技外包服务商服务水平监控评价覆盖不全面；信息科技外包风险评估不到位；信息科技外包网络和信息安全管理措施落实不到位",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体违反的信息科技外包监管条款",
+          "各子事实对应的责任人员"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B048",
+    "stratum": "ordinary_institution",
+    "title": "国家金融监督管理总局庆阳监管分局行政处罚信息公示表（庆金监行处〔2026〕47号、48号、49号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263125&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "中华联合财产保险股份有限公司宁县支公司",
+          "document_number": "庆金监行处〔2026〕47号",
+          "decision_date": "2026年7月3日",
+          "authority": "国家金融监督管理总局庆阳监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款6万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中华联合财产保险股份有限公司宁县支公司",
+        "role": "institution",
+        "action": "虚构中介业务套取费用",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": []
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "中华联合财产保险股份有限公司宁县支公司",
+          "document_number": "庆金监行处〔2026〕47号",
+          "decision_date": "2026年7月3日",
+          "authority": "国家金融监督管理总局庆阳监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款6万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中华联合财产保险股份有限公司宁县支公司",
+        "role": "institution",
+        "action": "虚构中介业务套取费用",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": []
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B049",
+    "stratum": "individual",
+    "title": "国家金融监督管理总局陇南监管分局行政处罚信息公示表（陇金监罚决字〔2026〕9号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265124&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "杨红伟",
+          "document_number": "陇金监罚决字〔2026〕9号",
+          "decision_date": "2026年7月20日",
+          "authority": "陇南金融监管分局",
+          "position": "华安财产保险股份有限公司陇南中心支公司副总经理",
+          "legal_basis": null,
+          "penalties": "警告并处罚款1.5万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "杨红伟",
+        "role": "responsible_person",
+        "action": "虚列劳务费",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": []
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "杨红伟",
+          "document_number": "陇金监罚决字〔2026〕9号",
+          "decision_date": "2026年7月20日",
+          "authority": "陇南金融监管分局",
+          "position": "华安财产保险股份有限公司陇南中心支公司副总经理",
+          "legal_basis": null,
+          "penalties": "警告并处罚款1.5万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "杨红伟",
+        "role": "responsible_person",
+        "action": "虚列劳务费",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": []
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B050",
+    "stratum": "individual",
+    "title": "贵州金融监管局行政处罚信息公开表（贵金罚决字〔2026〕35-41号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269543&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "蔡明游",
+          "document_number": "贵金罚决字〔2026〕39号",
+          "decision_date": "2026年8月28日",
+          "authority": "贵州金融监管局",
+          "position": "平安养老保险股份有限公司贵州分公司产品运营部经理",
+          "legal_basis": null,
+          "penalties": "警告并罚款5万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "蔡明游",
+        "role": "responsible_person",
+        "action": "未如实记录保险重要事项",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "未载明未如实记录的具体事项、时间、对象及实施细节"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "蔡明游",
+          "document_number": "贵金罚决字〔2026〕39号",
+          "decision_date": "2026年8月28日",
+          "authority": "贵州金融监管局",
+          "position": "平安养老保险股份有限公司贵州分公司产品运营部经理",
+          "legal_basis": null,
+          "penalties": "警告并罚款5万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "蔡明游",
+        "role": "responsible_person",
+        "action": "未如实记录保险重要事项",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "未载明未如实记录的具体事项、时间、对象及实施细节"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B051",
+    "stratum": "individual",
+    "title": "国家金融监督管理总局天津监管局行政处罚信息公开表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267324&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "赵晓琳",
+          "document_number": null,
+          "decision_date": "2026年8月7日",
+          "authority": "国家金融监督管理总局天津监管局",
+          "position": "中国平安人寿保险股份有限公司天津市河东支公司个人代理人",
+          "legal_basis": null,
+          "penalties": "禁止终身进入保险业",
+          "unknowns": [
+            "document_number",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "赵晓琳",
+        "role": "responsible_person",
+        "action": "欺骗投保人",
+        "risk_tags": [
+          "欺骗投保人"
+        ],
+        "unknowns": [
+          "具体欺骗方式、对象及涉及产品未载明"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "赵晓琳",
+          "document_number": null,
+          "decision_date": "2026年8月7日",
+          "authority": "国家金融监督管理总局天津监管局",
+          "position": "中国平安人寿保险股份有限公司天津市河东支公司个人代理人",
+          "legal_basis": null,
+          "penalties": "禁止终身进入保险业",
+          "unknowns": [
+            "document_number",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "赵晓琳",
+        "role": "responsible_person",
+        "action": "欺骗投保人",
+        "risk_tags": [
+          "欺骗投保人"
+        ],
+        "unknowns": [
+          "具体欺骗方式、对象及涉及产品未载明"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B052",
+    "stratum": "individual",
+    "title": "国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕28号-30号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268381&itemId=4115&generaltype=9",
+    "status": "held",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "孙中娇",
+          "document_number": "临金罚决字〔2026〕29号",
+          "decision_date": "2026年8月13日",
+          "authority": "国家金融监督管理总局临沂监管分局",
+          "position": "中汇人寿保险股份有限公司临沂中心支公司银代部副经理",
+          "legal_basis": null,
+          "penalties": "警告并罚款1.7万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "孙中娇",
+        "role": "responsible_person",
+        "action": "唆使、诱导保险代理人进行违背诚信义务的活动",
+        "risk_tags": [
+          "诱导投保"
+        ],
+        "unknowns": [
+          "具体唆使诱导的对象、方式与涉及产品未载明"
+        ]
+      },
+      {
+        "actor": "孙中娇",
+        "role": "responsible_person",
+        "action": "编制虚假业务财务资料",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": [
+          "虚假资料的具体种类、金额与用途未载明"
+        ]
+      },
+      {
+        "actor": null,
+        "role": "unspecified",
+        "action": "个人保险代理人给予投保人保险合同约定以外的利益",
+        "risk_tags": [
+          "合同外利益"
+        ],
+        "unknowns": [
+          "actor",
+          "给予利益的具体形式与金额未载明"
+        ]
+      }
+    ],
+    "final_cards": null,
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": {
+      "code": "HOST_ERROR",
+      "field": null,
+      "message": "Error: EXPLORATION_FAILED_model_failure"
+    }
+  },
+  {
+    "id": "B053",
+    "stratum": "individual",
+    "title": "国家金融监督管理总局黑龙江监管局行政处罚信息公开表（黑金监罚决字〔2026〕55号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263022&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "李金健",
+          "document_number": "黑金监罚决字〔2026〕55号",
+          "decision_date": "2026年7月2日",
+          "authority": "黑龙江金融监管局",
+          "position": "中国平安人寿股份有限公司黑龙江分公司二级机构室副经理",
+          "legal_basis": null,
+          "penalties": "禁止进入保险业1年",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "李金健",
+        "role": "responsible_person",
+        "action": "侵犯公民个人信息",
+        "risk_tags": [],
+        "unknowns": [
+          "具体行为方式、对象、渠道等事实细节"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "李金健",
+          "document_number": "黑金监罚决字〔2026〕55号",
+          "decision_date": "2026年7月2日",
+          "authority": "黑龙江金融监管局",
+          "position": "中国平安人寿股份有限公司黑龙江分公司二级机构室副经理",
+          "legal_basis": null,
+          "penalties": "禁止进入保险业1年",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "李金健",
+        "role": "responsible_person",
+        "action": "侵犯公民个人信息",
+        "risk_tags": [],
+        "unknowns": [
+          "具体行为方式、对象、渠道等事实细节"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B054",
+    "stratum": "individual",
+    "title": "国家金融监督管理总局焦作监管分局行政处罚信息公示表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264170&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "张丹锋（民生人寿保险股份有限公司焦作中心支公司原个人代理人）",
+          "document_number": "焦金罚决字〔2026〕19号",
+          "decision_date": "2026年7月10日",
+          "authority": "焦作金融监管分局",
+          "position": "民生人寿保险股份有限公司焦作中心支公司原个人代理人",
+          "legal_basis": null,
+          "penalties": "禁止5年内进入保险业",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "张丹锋",
+        "role": "responsible_person",
+        "action": "对发生涉刑案件的行为负责任",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "涉刑案件的具体事实、行为方式、时间地点及涉案金额均未载明"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "张丹锋（民生人寿保险股份有限公司焦作中心支公司原个人代理人）",
+          "document_number": "焦金罚决字〔2026〕19号",
+          "decision_date": "2026年7月10日",
+          "authority": "焦作金融监管分局",
+          "position": "民生人寿保险股份有限公司焦作中心支公司原个人代理人",
+          "legal_basis": null,
+          "penalties": "禁止5年内进入保险业",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "张丹锋",
+        "role": "responsible_person",
+        "action": "对发生涉刑案件的行为负责任",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "涉刑案件的具体事实、行为方式、时间地点及涉案金额均未载明"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B055",
+    "stratum": "individual",
+    "title": "国家金融监督管理总局北京监管局行政处罚信息公开表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269586&itemId=4114&generaltype=9",
+    "status": "held",
+    "initial_cards": null,
+    "final_cards": null,
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": {
+      "code": "HOST_ERROR",
+      "field": null,
+      "message": "Error: SUBMISSION_INCOMPLETE_model_failure"
+    }
+  },
+  {
+    "id": "B056",
+    "stratum": "individual",
+    "title": "辽阳金融监管分局行政处罚信息公示列表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264157&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "毕野",
+          "document_number": "辽市金监罚决〔2026〕2号",
+          "decision_date": "2026年7月10日",
+          "authority": "辽阳金融监管分局",
+          "position": "中国人寿财产保险股份有限公司辽阳市中心支公司副总经理",
+          "legal_basis": null,
+          "penalties": "警告并处人民币四万五千元罚款",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "毕野",
+        "role": "responsible_person",
+        "action": "给予投保人保险合同约定以外利益",
+        "risk_tags": [
+          "合同外利益"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "毕野",
+        "role": "responsible_person",
+        "action": "虚构中介业务套取手续费",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "毕野",
+        "role": "responsible_person",
+        "action": "跨省承保雇主责任险",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "跨省承保的具体违规依据与情节"
+        ]
+      },
+      {
+        "actor": "毕野",
+        "role": "responsible_person",
+        "action": "代理人管理不规范",
+        "risk_tags": [
+          "代理人管理不到位"
+        ],
+        "unknowns": []
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "毕野",
+          "document_number": "辽市金监罚决〔2026〕2号",
+          "decision_date": "2026年7月10日",
+          "authority": "辽阳金融监管分局",
+          "position": "中国人寿财产保险股份有限公司辽阳市中心支公司副总经理",
+          "legal_basis": null,
+          "penalties": "警告并处人民币四万五千元罚款",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "毕野",
+        "role": "responsible_person",
+        "action": "给予投保人保险合同约定以外利益",
+        "risk_tags": [
+          "合同外利益"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "毕野",
+        "role": "responsible_person",
+        "action": "虚构中介业务套取手续费",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "毕野",
+        "role": "responsible_person",
+        "action": "跨省承保雇主责任险",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "跨省承保的具体违规依据与情节"
+        ]
+      },
+      {
+        "actor": "毕野",
+        "role": "responsible_person",
+        "action": "代理人管理不规范",
+        "risk_tags": [
+          "代理人管理不到位"
+        ],
+        "unknowns": []
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B057",
+    "stratum": "individual",
+    "title": "国家金融监督管理总局上海监管局行政处罚信息公开表（沪金罚决字〔2026〕96-101号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265766&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "陶逸琦",
+          "document_number": "沪金罚决字〔2026〕99号",
+          "decision_date": "2026年7月27日",
+          "authority": "上海金融监管局",
+          "position": "华瑞保险销售有限公司上海分公司产品结算岗",
+          "legal_basis": null,
+          "penalties": "警告并罚款10万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "陶逸琦",
+        "role": "responsible_person",
+        "action": "利用业务便利为其他机构或个人牟取不正当利益",
+        "risk_tags": [],
+        "unknowns": [
+          "具体牟利对象、方式及金额未载明"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "陶逸琦",
+          "document_number": "沪金罚决字〔2026〕99号",
+          "decision_date": "2026年7月27日",
+          "authority": "上海金融监管局",
+          "position": "华瑞保险销售有限公司上海分公司产品结算岗",
+          "legal_basis": null,
+          "penalties": "警告并罚款10万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "陶逸琦",
+        "role": "responsible_person",
+        "action": "利用业务便利为其他机构或个人牟取不正当利益",
+        "risk_tags": [],
+        "unknowns": [
+          "具体牟利对象、方式及金额未载明"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B058",
+    "stratum": "individual",
+    "title": "国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕24号-25号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264672&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "葛磊",
+          "document_number": "临金罚决字〔2026〕25号",
+          "decision_date": "2026年7月16日",
+          "authority": "国家金融监督管理总局临沂监管分局",
+          "position": "临沂交运盛通保险代理有限责任公司总经理",
+          "legal_basis": null,
+          "penalties": "警告并罚款4.5万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "葛磊",
+        "role": "responsible_person",
+        "action": "聘任不具有任职资格的人员",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体被聘任人员身份及任职资格缺失情形未载明"
+        ]
+      },
+      {
+        "actor": "葛磊",
+        "role": "responsible_person",
+        "action": "未开立独立的代收保险费账户",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "代收保费金额及账户使用情况未载明"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "葛磊",
+          "document_number": "临金罚决字〔2026〕25号",
+          "decision_date": "2026年7月16日",
+          "authority": "国家金融监督管理总局临沂监管分局",
+          "position": "临沂交运盛通保险代理有限责任公司总经理",
+          "legal_basis": null,
+          "penalties": "警告并罚款4.5万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "葛磊",
+        "role": "responsible_person",
+        "action": "聘任不具有任职资格的人员",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体被聘任人员身份及任职资格缺失情形未载明"
+        ]
+      },
+      {
+        "actor": "葛磊",
+        "role": "responsible_person",
+        "action": "未开立独立的代收保险费账户",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "代收保费金额及账户使用情况未载明"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B059",
+    "stratum": "individual",
+    "title": "国家金融监督管理总局淄博监管分局行政处罚信息公开表（淄金罚决字〔2026〕27号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268374&itemId=4115&generaltype=9",
+    "status": "reviewer_requested_changes",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "张娟（时任山东汇盛保险代理有限公司法定代表人）",
+          "document_number": "淄金罚决字〔2026〕27号",
+          "decision_date": "2026年8月11日",
+          "authority": "国家金融监督管理总局淄博监管分局",
+          "position": "山东汇盛保险代理有限公司法定代表人",
+          "legal_basis": null,
+          "penalties": "警告并罚款6万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "山东汇盛保险代理有限公司",
+        "role": "institution",
+        "action": "未按规定投保职业责任保险或缴存保证金",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "山东汇盛保险代理有限公司",
+        "role": "institution",
+        "action": "未按规定开立独立的佣金收取账户",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "山东汇盛保险代理有限公司",
+        "role": "institution",
+        "action": "委托未通过本机构进行执业登记的个人从事保险代理业务",
+        "risk_tags": [
+          "委托无资质机构销售"
+        ],
+        "unknowns": []
+      }
+    ],
+    "final_cards": null,
+    "business_revision": true,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B060",
+    "stratum": "individual",
+    "title": "国家金融监督管理总局信阳监管分局行政处罚信息公示表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264167&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "张琼琼（太平财产保险淮滨支公司经理）",
+          "document_number": "信金罚决字〔2026〕18号",
+          "decision_date": "2026年7月10日",
+          "authority": "信阳金融监管分局",
+          "position": "太平财产保险淮滨支公司经理",
+          "legal_basis": null,
+          "penalties": "警告，并处罚款3万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "张琼琼",
+        "role": "responsible_person",
+        "action": "虚构保险中介业务套取费用",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": [
+          "具体实施主体与个人参与程度"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "张琼琼（太平财产保险淮滨支公司经理）",
+          "document_number": "信金罚决字〔2026〕18号",
+          "decision_date": "2026年7月10日",
+          "authority": "信阳金融监管分局",
+          "position": "太平财产保险淮滨支公司经理",
+          "legal_basis": null,
+          "penalties": "警告，并处罚款3万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "张琼琼",
+        "role": "responsible_person",
+        "action": "虚构保险中介业务套取费用",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": [
+          "具体实施主体与个人参与程度"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B061",
+    "stratum": "individual",
+    "title": "阜新金融监管分局行政处罚信息公示列表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265681&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "回国强",
+          "document_number": "阜金罚决字〔2026〕2号",
+          "decision_date": "2026年7月24日",
+          "authority": "阜新金融监管分局",
+          "position": "中国太平洋人寿保险股份有限公司阜新中心支公司总经理",
+          "legal_basis": null,
+          "penalties": "警告并罚款3万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "回国强",
+        "role": "responsible_person",
+        "action": "虚构中介业务套取手续费",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": [
+          "个人具体实施行为与主观状态"
+        ]
+      },
+      {
+        "actor": "回国强",
+        "role": "responsible_person",
+        "action": "财务、业务数据不真实",
+        "risk_tags": [
+          "客户信息不真实"
+        ],
+        "unknowns": [
+          "个人具体实施行为与主观状态"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "回国强",
+          "document_number": "阜金罚决字〔2026〕2号",
+          "decision_date": "2026年7月24日",
+          "authority": "阜新金融监管分局",
+          "position": "中国太平洋人寿保险股份有限公司阜新中心支公司总经理",
+          "legal_basis": null,
+          "penalties": "警告并罚款3万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "回国强",
+        "role": "responsible_person",
+        "action": "虚构中介业务套取手续费",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": [
+          "个人具体实施行为与主观状态"
+        ]
+      },
+      {
+        "actor": "回国强",
+        "role": "responsible_person",
+        "action": "财务、业务数据不真实",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "个人具体实施行为与主观状态",
+          "数据不真实的具体对象"
+        ]
+      }
+    ],
+    "business_revision": true,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B062",
+    "stratum": "individual",
+    "title": "国家金融监督管理总局内蒙古监管局行政处罚信息公开表（内金罚决字〔2026〕26号、27号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268237&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "汤云波",
+          "document_number": "内金罚决字〔2026〕26号",
+          "decision_date": "2026年7月30日",
+          "authority": "内蒙古金融监管局",
+          "position": "平安人寿内蒙古分公司本部业务发展部经理",
+          "legal_basis": null,
+          "penalties": "警告并罚款0.5万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "汤云波",
+        "role": "responsible_person",
+        "action": "唆使、诱导保险代理人进行违背诚信义务的活动",
+        "risk_tags": [
+          "诱导投保"
+        ],
+        "unknowns": [
+          "具体唆使、诱导行为的内容、对象与方式"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "汤云波",
+          "document_number": "内金罚决字〔2026〕26号",
+          "decision_date": "2026年7月30日",
+          "authority": "内蒙古金融监管局",
+          "position": "平安人寿内蒙古分公司本部业务发展部经理",
+          "legal_basis": null,
+          "penalties": "警告并罚款0.5万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "汤云波",
+        "role": "responsible_person",
+        "action": "唆使、诱导保险代理人进行违背诚信义务的活动",
+        "risk_tags": [],
+        "unknowns": [
+          "具体唆使、诱导行为的内容、对象与方式"
+        ]
+      }
+    ],
+    "business_revision": true,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B063",
+    "stratum": "individual",
+    "title": "国家金融监督管理总局许昌监管分局行政处罚信息公示表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264165&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "欧阳钰涵（时任阳光财产保险股份有限公司鄢陵支公司经理）",
+          "document_number": "许金罚决字〔2026〕11号",
+          "decision_date": "2026年7月10日",
+          "authority": "许昌金融监管分局",
+          "position": "阳光财产保险股份有限公司鄢陵支公司经理",
+          "legal_basis": null,
+          "penalties": "警告并罚款人民币1.2万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "欧阳钰涵",
+        "role": "responsible_person",
+        "action": "未经核准变更机构营业场所",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体实施主体与个人参与程度"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "欧阳钰涵（时任阳光财产保险股份有限公司鄢陵支公司经理）",
+          "document_number": "许金罚决字〔2026〕11号",
+          "decision_date": "2026年7月10日",
+          "authority": "许昌金融监管分局",
+          "position": "阳光财产保险股份有限公司鄢陵支公司经理",
+          "legal_basis": null,
+          "penalties": "警告并罚款人民币1.2万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "欧阳钰涵",
+        "role": "responsible_person",
+        "action": "未经核准变更机构营业场所",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体实施主体与个人参与程度"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B064",
+    "stratum": "individual",
+    "title": "国家金融监督管理总局凉山监管分局行政处罚信息公开表(凉金监罚决字〔2026〕4号)",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263066&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "高加明",
+          "document_number": "凉金监罚决字〔2026〕4号",
+          "decision_date": "2026年7月2日",
+          "authority": "国家金融监督管理总局凉山监管分局",
+          "position": "中国人寿财产保险股份有限公司甘洛县支公司经理",
+          "legal_basis": null,
+          "penalties": "警告并罚款人民币1.5万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "高加明",
+        "role": "responsible_person",
+        "action": "对机构赔付金额核算错误、财务数据不真实负相关责任",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体核算错误行为细节",
+          "是否亲自实施"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "高加明",
+          "document_number": "凉金监罚决字〔2026〕4号",
+          "decision_date": "2026年7月2日",
+          "authority": "国家金融监督管理总局凉山监管分局",
+          "position": "中国人寿财产保险股份有限公司甘洛县支公司经理",
+          "legal_basis": null,
+          "penalties": "警告并罚款人民币1.5万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "高加明",
+        "role": "responsible_person",
+        "action": "对机构赔付金额核算错误、财务数据不真实负相关责任",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体核算错误行为细节",
+          "是否亲自实施"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B065",
+    "stratum": "individual",
+    "title": "国家金融监督管理总局泸州监管分局行政处罚信息公开表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265276&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "梁明磊",
+          "document_number": null,
+          "decision_date": "2026年7月16日",
+          "authority": "国家金融监督管理总局泸州监管分局",
+          "position": "中国平安财产保险股份有限公司合江支公司总经理",
+          "legal_basis": null,
+          "penalties": "警告并罚款人民币3万元",
+          "unknowns": [
+            "document_number",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "梁明磊",
+        "role": "responsible_person",
+        "action": "编制、提供虚假报表、资料",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体虚假报表、资料的内容及涉及期间",
+          "梁明磊亲自实施该行为的具体情节"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "梁明磊",
+          "document_number": null,
+          "decision_date": "2026年7月16日",
+          "authority": "国家金融监督管理总局泸州监管分局",
+          "position": "中国平安财产保险股份有限公司合江支公司总经理",
+          "legal_basis": null,
+          "penalties": "警告并罚款人民币3万元",
+          "unknowns": [
+            "document_number",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "梁明磊",
+        "role": "responsible_person",
+        "action": "编制、提供虚假报表、资料",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体虚假报表、资料的内容及涉及期间",
+          "梁明磊亲自实施该行为的具体情节"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B066",
+    "stratum": "individual",
+    "title": "国家金融监督管理总局上海监管局行政处罚信息公开表（沪金罚决字〔2026〕56-60号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264257&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "叶珅",
+          "document_number": "沪金罚决字〔2026〕56号",
+          "decision_date": "2026年7月13日",
+          "authority": "上海金融监管局",
+          "position": "北京恒丰保险经纪有限公司上海分公司业务管理岗",
+          "legal_basis": null,
+          "penalties": "警告并罚款1.5万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "叶珅",
+        "role": "responsible_person",
+        "action": "欺骗投保人",
+        "risk_tags": [
+          "欺骗投保人"
+        ],
+        "unknowns": [
+          "具体欺骗行为方式、对象及渠道未载明"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "叶珅",
+          "document_number": "沪金罚决字〔2026〕56号",
+          "decision_date": "2026年7月13日",
+          "authority": "上海金融监管局",
+          "position": "北京恒丰保险经纪有限公司上海分公司业务管理岗",
+          "legal_basis": null,
+          "penalties": "警告并罚款1.5万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "叶珅",
+        "role": "responsible_person",
+        "action": "欺骗投保人",
+        "risk_tags": [
+          "欺骗投保人"
+        ],
+        "unknowns": [
+          "具体欺骗行为方式、对象及渠道未载明"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B067",
+    "stratum": "individual",
+    "title": "国家金融监督管理总局凉山监管分局行政处罚信息公开表(凉金监罚决字〔2026〕6号)",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269612&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "张运良",
+          "document_number": "凉金监罚决字〔2026〕6号",
+          "decision_date": "2026年8月28日",
+          "authority": "国家金融监督管理总局凉山监管分局",
+          "position": "原中国平安财产保险股份有限公司凉山中心支公司副总经理",
+          "legal_basis": null,
+          "penalties": "警告并罚款人民币2.5万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "张运良",
+        "role": "responsible_person",
+        "action": "对机构财务业务数据不真实、虚构保险中介业务负相关责任",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "个人具体实施行为",
+          "涉及金额",
+          "具体财务业务数据不真实情形",
+          "虚构保险中介业务的具体方式"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "张运良",
+          "document_number": "凉金监罚决字〔2026〕6号",
+          "decision_date": "2026年8月28日",
+          "authority": "国家金融监督管理总局凉山监管分局",
+          "position": "原中国平安财产保险股份有限公司凉山中心支公司副总经理",
+          "legal_basis": null,
+          "penalties": "警告并罚款人民币2.5万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "张运良",
+        "role": "responsible_person",
+        "action": "对机构财务业务数据不真实、虚构保险中介业务负相关责任",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "个人具体实施行为",
+          "涉及金额",
+          "具体财务业务数据不真实情形",
+          "虚构保险中介业务的具体方式"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B068",
+    "stratum": "individual",
+    "title": "鞍山金融监管分局行政处罚信息公示列表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266261&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "李延博",
+          "document_number": "鞍金罚决字〔2026〕7号",
+          "decision_date": "2026年7月30日",
+          "authority": "鞍山金融监管分局",
+          "position": "中国平安人寿保险股份有限公司鞍山中心支公司海城营销服务部原保险代理人",
+          "legal_basis": null,
+          "penalties": "终身禁止进入保险业",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "李延博",
+        "role": "responsible_person",
+        "action": "作为原保险代理人犯诈骗罪",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "诈骗行为的具体时间、对象、金额与手段",
+          "是否涉及欺骗投保人、销售误导等具体销售行为"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "李延博",
+          "document_number": "鞍金罚决字〔2026〕7号",
+          "decision_date": "2026年7月30日",
+          "authority": "鞍山金融监管分局",
+          "position": "中国平安人寿保险股份有限公司鞍山中心支公司海城营销服务部原保险代理人",
+          "legal_basis": null,
+          "penalties": "终身禁止进入保险业",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "李延博",
+        "role": "responsible_person",
+        "action": "作为原保险代理人犯诈骗罪",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "诈骗行为的具体时间、对象、金额与手段",
+          "是否涉及欺骗投保人、销售误导等具体销售行为"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B069",
+    "stratum": "individual",
+    "title": "国家金融监督管理总局定西监管分局行政处罚信息公示表（定金监罚决〔2026〕1号、2号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268319&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "王翔（时任中国人民财产保险股份有限公司通渭支公司经理）",
+          "document_number": "定金监罚决〔2026〕1号",
+          "decision_date": "2026年8月17日",
+          "authority": "定西金融监管分局",
+          "position": "中国人民财产保险股份有限公司通渭支公司经理",
+          "legal_basis": null,
+          "penalties": "警告并处罚款人民币1.5万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "王翔",
+        "role": "responsible_person",
+        "action": "未严格执行备案的条款与费率",
+        "risk_tags": [
+          "未按规定使用费率条款"
+        ],
+        "unknowns": []
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "王翔（时任中国人民财产保险股份有限公司通渭支公司经理）",
+          "document_number": "定金监罚决〔2026〕1号",
+          "decision_date": "2026年8月17日",
+          "authority": "定西金融监管分局",
+          "position": "中国人民财产保险股份有限公司通渭支公司经理",
+          "legal_basis": null,
+          "penalties": "警告并处罚款人民币1.5万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "王翔",
+        "role": "responsible_person",
+        "action": "未严格执行备案的条款与费率",
+        "risk_tags": [
+          "未按规定使用费率条款"
+        ],
+        "unknowns": []
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B070",
+    "stratum": "individual",
+    "title": "国家金融监督管理总局上海监管局行政处罚信息公开表（沪金罚决字〔2026〕113-114号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267306&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "三星财产保险（中国）有限公司",
+          "document_number": "沪金罚决字〔2026〕113号",
+          "decision_date": "2026年8月6日",
+          "authority": "上海金融监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款16万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "三星财产保险（中国）有限公司",
+        "role": "institution",
+        "action": "给予或承诺给予保险合同约定以外的利益",
+        "risk_tags": [
+          "合同外利益"
+        ],
+        "unknowns": []
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "三星财产保险（中国）有限公司",
+          "document_number": "沪金罚决字〔2026〕113号",
+          "decision_date": "2026年8月6日",
+          "authority": "上海金融监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "罚款16万元",
+          "unknowns": [
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "三星财产保险（中国）有限公司",
+        "role": "institution",
+        "action": "给予或承诺给予保险合同约定以外的利益",
+        "risk_tags": [
+          "合同外利益"
+        ],
+        "unknowns": []
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B071",
+    "stratum": "individual",
+    "title": "国家金融监督管理总局上海监管局行政处罚信息公开表（沪金罚决字〔2026〕63-95号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "胡炯",
+          "document_number": "沪金罚决字〔2026〕69号",
+          "decision_date": "2026年7月21日",
+          "authority": "上海金融监管局",
+          "position": "华安财产保险股份有限公司上海分公司总经理助理兼非车险部经理",
+          "legal_basis": null,
+          "penalties": "警告并罚款7.5万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "胡炯",
+        "role": "responsible_person",
+        "action": "未按规定使用经批准或者备案的保险条款和保险费率",
+        "risk_tags": [
+          "未按规定使用费率条款"
+        ],
+        "unknowns": [
+          "具体违规行为细节",
+          "涉及的产品及费率条款"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "胡炯",
+          "document_number": "沪金罚决字〔2026〕69号",
+          "decision_date": "2026年7月21日",
+          "authority": "上海金融监管局",
+          "position": "华安财产保险股份有限公司上海分公司总经理助理兼非车险部经理",
+          "legal_basis": null,
+          "penalties": "警告并罚款7.5万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "胡炯",
+        "role": "responsible_person",
+        "action": "未按规定使用经批准或者备案的保险条款和保险费率",
+        "risk_tags": [
+          "未按规定使用费率条款"
+        ],
+        "unknowns": [
+          "具体违规行为细节",
+          "涉及的产品及费率条款"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B072",
+    "stratum": "individual",
+    "title": "国家金融监督管理总局山西监管局行政处罚信息公开表（晋金管罚决字〔2026〕44、45、46、47号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265804&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "郭万元",
+          "document_number": "晋金管罚决字〔2026〕46号",
+          "decision_date": "2026年7月17日",
+          "authority": "国家金融监督管理总局山西监管局",
+          "position": "光大永明人寿保险有限公司山西分公司银保业务部经理",
+          "legal_basis": "《中华人民共和国保险法》第八十六条、《保险销售行为管理办法》第二十条，《中华人民共和国保险法》第一百七十一条、《保险销售行为管理办法》第四十五条",
+          "penalties": "警告，罚款2万元",
+          "unknowns": []
+        }
+      },
+      {
+        "actor": "郭万元",
+        "role": "responsible_person",
+        "action": "对财务业务数据不真实、保险销售渠道业务管控不合规的行为负有责任",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体实施行为细节"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "郭万元",
+          "document_number": "晋金管罚决字〔2026〕46号",
+          "decision_date": "2026年7月17日",
+          "authority": "国家金融监督管理总局山西监管局",
+          "position": "光大永明人寿保险有限公司山西分公司银保业务部经理",
+          "legal_basis": "《中华人民共和国保险法》第八十六条、《保险销售行为管理办法》第二十条，《中华人民共和国保险法》第一百七十一条、《保险销售行为管理办法》第四十五条",
+          "penalties": "警告，罚款2万元",
+          "unknowns": []
+        }
+      },
+      {
+        "actor": "郭万元",
+        "role": "responsible_person",
+        "action": "对财务业务数据不真实、保险销售渠道业务管控不合规的行为负有责任",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体实施行为细节"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B073",
+    "stratum": "individual",
+    "title": "国家金融监督管理总局内蒙古监管局行政处罚信息公开表（内金罚决字〔2026〕24号、25号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268236&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "简敏",
+          "document_number": "内金罚决字〔2026〕24号",
+          "decision_date": "2026年7月30日",
+          "authority": "内蒙古金融监管局",
+          "position": "渤海财险呼和浩特中心支公司副总经理（主持工作）",
+          "legal_basis": null,
+          "penalties": "警告并罚款2万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "简敏",
+        "role": "responsible_person",
+        "action": "招投标业务虚假记载为个人代理业务",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "该行为的具体实施主体与个人参与程度未在原文展开"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "简敏",
+          "document_number": "内金罚决字〔2026〕24号",
+          "decision_date": "2026年7月30日",
+          "authority": "内蒙古金融监管局",
+          "position": "渤海财险呼和浩特中心支公司副总经理（主持工作）",
+          "legal_basis": null,
+          "penalties": "警告并罚款2万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "简敏",
+        "role": "responsible_person",
+        "action": "招投标业务虚假记载为个人代理业务",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "该行为的具体实施主体与个人参与程度未在原文展开"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B074",
+    "stratum": "individual",
+    "title": "国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕 26号-27号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264673&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "乔静",
+          "document_number": "临金罚决字〔2026〕27号",
+          "decision_date": "2026年7月16日",
+          "authority": "国家金融监督管理总局临沂监管分局",
+          "position": "中国平安人寿保险股份有限公司临沂中心支公司银行保险部经理",
+          "legal_basis": null,
+          "penalties": "警告并罚款1.2万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "乔静",
+        "role": "responsible_person",
+        "action": "编制虚假财务资料",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": [
+          "具体虚假财务资料的内容、金额及是否套取资金未载明"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "乔静",
+          "document_number": "临金罚决字〔2026〕27号",
+          "decision_date": "2026年7月16日",
+          "authority": "国家金融监督管理总局临沂监管分局",
+          "position": "中国平安人寿保险股份有限公司临沂中心支公司银行保险部经理",
+          "legal_basis": null,
+          "penalties": "警告并罚款1.2万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "乔静",
+        "role": "responsible_person",
+        "action": "编制虚假财务资料",
+        "risk_tags": [],
+        "unknowns": [
+          "具体虚假财务资料的内容、金额及是否套取资金未载明"
+        ]
+      }
+    ],
+    "business_revision": true,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B075",
+    "stratum": "individual",
+    "title": "国家金融监督管理总局淄博监管分局行政处罚信息公开表（淄金罚决字〔2026〕23-26号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267673&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "李泽宇",
+          "document_number": "淄金罚决字〔2026〕25号",
+          "decision_date": "2026年8月5日",
+          "authority": "国家金融监督管理总局淄博监管分局",
+          "position": "中路财产保险股份有限公司淄博中心支公司重客部经理",
+          "legal_basis": null,
+          "penalties": "警告并罚款0.5万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "李泽宇",
+        "role": "responsible_person",
+        "action": "跨省承保雇主责任险业务",
+        "risk_tags": [],
+        "unknowns": [
+          "具体行为细节"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "李泽宇",
+          "document_number": "淄金罚决字〔2026〕25号",
+          "decision_date": "2026年8月5日",
+          "authority": "国家金融监督管理总局淄博监管分局",
+          "position": "中路财产保险股份有限公司淄博中心支公司重客部经理",
+          "legal_basis": null,
+          "penalties": "警告并罚款0.5万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "李泽宇",
+        "role": "responsible_person",
+        "action": "跨省承保雇主责任险业务",
+        "risk_tags": [],
+        "unknowns": [
+          "具体行为细节"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B076",
+    "stratum": "individual",
+    "title": "国家金融监督管理总局内蒙古监管局行政处罚信息公开表（内金罚决字〔2026〕23号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268235&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "代兄（太平人寿保险有限公司呼和浩特中心支公司保险代理人）",
+          "document_number": "内金罚决字〔2026〕23号",
+          "decision_date": "2026年7月8日",
+          "authority": "内蒙古金融监管局",
+          "position": "太平人寿保险有限公司呼和浩特中心支公司保险代理人",
+          "legal_basis": null,
+          "penalties": "警告并罚款0.8万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "代兄",
+        "role": "responsible_person",
+        "action": "诱导不实回访",
+        "risk_tags": [
+          "回访违规"
+        ],
+        "unknowns": []
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "代兄（太平人寿保险有限公司呼和浩特中心支公司保险代理人）",
+          "document_number": "内金罚决字〔2026〕23号",
+          "decision_date": "2026年7月8日",
+          "authority": "内蒙古金融监管局",
+          "position": "太平人寿保险有限公司呼和浩特中心支公司保险代理人",
+          "legal_basis": null,
+          "penalties": "警告并罚款0.8万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "代兄",
+        "role": "responsible_person",
+        "action": "诱导不实回访",
+        "risk_tags": [
+          "回访违规"
+        ],
+        "unknowns": []
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B077",
+    "stratum": "individual",
+    "title": "国家金融监督管理总局周口监管分局行政处罚信息公示表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264162&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "刘亚坤",
+          "document_number": "周金罚决字〔2026〕33号",
+          "decision_date": "2026年7月10日",
+          "authority": "周口金融监管分局",
+          "position": "南宏安汽车保险代理有限公司执行董事兼总经理",
+          "legal_basis": null,
+          "penalties": "警告并罚款1万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "刘亚坤",
+        "role": "responsible_person",
+        "action": "隐瞒与保险合同有关的重要情况",
+        "risk_tags": [
+          "隐瞒重要信息"
+        ],
+        "unknowns": []
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "刘亚坤",
+          "document_number": "周金罚决字〔2026〕33号",
+          "decision_date": "2026年7月10日",
+          "authority": "周口金融监管分局",
+          "position": "南宏安汽车保险代理有限公司执行董事兼总经理",
+          "legal_basis": null,
+          "penalties": "警告并罚款1万元",
+          "unknowns": [
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "刘亚坤",
+        "role": "responsible_person",
+        "action": "隐瞒与保险合同有关的重要情况",
+        "risk_tags": [
+          "隐瞒重要信息"
+        ],
+        "unknowns": []
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B078",
+    "stratum": "multi_subject",
+    "title": "国家金融监督管理总局孝感监管分局行政处罚信息公示列表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267330&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "和谐健康保险股份有限公司孝感中心支公司及相关责任人",
+          "document_number": null,
+          "decision_date": "2026年8月7日",
+          "authority": "孝感金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对机构罚款18万元，对李婷警告并罚款2.5万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "和谐健康保险股份有限公司孝感中心支公司",
+        "role": "institution",
+        "action": "编制虚假资料",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "虚假资料的具体内容、涉及渠道及金额未载明"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "和谐健康保险股份有限公司孝感中心支公司及相关责任人",
+          "document_number": null,
+          "decision_date": "2026年8月7日",
+          "authority": "孝感金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对机构罚款18万元，对李婷警告并罚款2.5万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "和谐健康保险股份有限公司孝感中心支公司",
+        "role": "institution",
+        "action": "编制虚假资料",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "虚假资料的具体内容、涉及渠道及金额未载明"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B079",
+    "stratum": "multi_subject",
+    "title": "国家金融监督管理总局重庆监管局行政处罚信息公示列表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264682&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "中国人民财产保险股份有限公司重庆市分公司及相关责任人",
+          "document_number": null,
+          "decision_date": "2026年7月17日",
+          "authority": "重庆金融监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对中国人民财产保险股份有限公司重庆市分公司罚款12万元；对马源禁止进入保险业二年",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国人民财产保险股份有限公司重庆市分公司",
+        "role": "institution",
+        "action": "编造虚假理赔资料骗取保险金",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体实施人员及分工",
+          "涉案金额",
+          "行为发生时间"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "中国人民财产保险股份有限公司重庆市分公司及相关责任人",
+          "document_number": null,
+          "decision_date": "2026年7月17日",
+          "authority": "重庆金融监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对中国人民财产保险股份有限公司重庆市分公司罚款12万元；对马源禁止进入保险业二年",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国人民财产保险股份有限公司重庆市分公司",
+        "role": "institution",
+        "action": "编造虚假理赔资料骗取保险金",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体实施人员及分工",
+          "涉案金额",
+          "行为发生时间"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 1
+    },
+    "error": null
+  },
+  {
+    "id": "B080",
+    "stratum": "multi_subject",
+    "title": "莆田金融监管分局行政处罚信息公示表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266845&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "中国太平洋人寿保险股份有限公司莆田中心支公司",
+          "document_number": null,
+          "decision_date": "2026年8月4日",
+          "authority": "莆田金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对中国太平洋人寿保险股份有限公司莆田中心支公司给予警告并处以34.5万元罚款；对颜景娥给予警告并处以6.4万元罚款；对李晓鹏给予警告并处以2.3万元罚款",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国太平洋人寿保险股份有限公司莆田中心支公司",
+        "role": "institution",
+        "action": "财务数据不真实",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体财务数据不真实的行为方式与金额"
+        ]
+      },
+      {
+        "actor": "中国太平洋人寿保险股份有限公司莆田中心支公司",
+        "role": "institution",
+        "action": "给予投保人保险合同约定以外的利益",
+        "risk_tags": [
+          "合同外利益"
+        ],
+        "unknowns": [
+          "具体利益形式与对象"
+        ]
+      },
+      {
+        "actor": "中国太平洋人寿保险股份有限公司莆田中心支公司",
+        "role": "institution",
+        "action": "委托医护人员销售健康保险",
+        "risk_tags": [
+          "委托无资质机构销售"
+        ],
+        "unknowns": [
+          "医护人员资质情况与销售具体行为"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "中国太平洋人寿保险股份有限公司莆田中心支公司",
+          "document_number": null,
+          "decision_date": "2026年8月4日",
+          "authority": "莆田金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对中国太平洋人寿保险股份有限公司莆田中心支公司给予警告并处以34.5万元罚款；对颜景娥给予警告并处以6.4万元罚款；对李晓鹏给予警告并处以2.3万元罚款",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国太平洋人寿保险股份有限公司莆田中心支公司",
+        "role": "institution",
+        "action": "财务数据不真实",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体财务数据不真实的行为方式与金额"
+        ]
+      },
+      {
+        "actor": "中国太平洋人寿保险股份有限公司莆田中心支公司",
+        "role": "institution",
+        "action": "给予投保人保险合同约定以外的利益",
+        "risk_tags": [
+          "合同外利益"
+        ],
+        "unknowns": [
+          "具体利益形式与对象"
+        ]
+      },
+      {
+        "actor": "中国太平洋人寿保险股份有限公司莆田中心支公司",
+        "role": "institution",
+        "action": "委托医护人员销售健康保险",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "医护人员资质情况与销售具体行为"
+        ]
+      }
+    ],
+    "business_revision": true,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B081",
+    "stratum": "multi_subject",
+    "title": "国家金融监督管理总局安康监管分局行政处罚信息公示表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266804&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "永安财产保险股份有限公司安康中心支公司及相关责任人员",
+          "document_number": null,
+          "decision_date": "2026年8月4日",
+          "authority": "安康金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对永安财产保险股份有限公司安康中心支公司处以46万元罚款；对汪辉给予警告并处以2.5万元罚款、对汪玮给予警告并处以1.3万元罚款、对梁磊给予警告",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "永安财产保险股份有限公司安康中心支公司",
+        "role": "institution",
+        "action": "财务业务数据不真实",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体不真实的数据范围与行为方式"
+        ]
+      },
+      {
+        "actor": "永安财产保险股份有限公司安康中心支公司",
+        "role": "institution",
+        "action": "理赔不及时",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体理赔案件、延迟时长及责任人员"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "永安财产保险股份有限公司安康中心支公司及相关责任人员",
+          "document_number": null,
+          "decision_date": "2026年8月4日",
+          "authority": "安康金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对永安财产保险股份有限公司安康中心支公司处以46万元罚款；对汪辉给予警告并处以2.5万元罚款、对汪玮给予警告并处以1.3万元罚款、对梁磊给予警告",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "永安财产保险股份有限公司安康中心支公司",
+        "role": "institution",
+        "action": "财务业务数据不真实",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体不真实的数据范围与行为方式"
+        ]
+      },
+      {
+        "actor": "永安财产保险股份有限公司安康中心支公司",
+        "role": "institution",
+        "action": "理赔不及时",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体理赔案件、延迟时长及责任人员"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B082",
+    "stratum": "multi_subject",
+    "title": "国家金融监督管理总局行政处罚信息公示列表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1255842&itemId=4113&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "中国太平保险集团有限责任公司",
+          "document_number": null,
+          "decision_date": "2026年4月24日",
+          "authority": "金融监管总局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对中国太平保险集团有限责任公司罚款40万元；对张作学警告并罚款7万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国太平保险集团有限责任公司",
+        "role": "institution",
+        "action": "向监管报送的报告报表数据不准确",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体不准确的数据项、报送时间及涉及报告报表名称"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "中国太平保险集团有限责任公司",
+          "document_number": null,
+          "decision_date": "2026年4月24日",
+          "authority": "金融监管总局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对中国太平保险集团有限责任公司罚款40万元；对张作学警告并罚款7万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国太平保险集团有限责任公司",
+        "role": "institution",
+        "action": "向监管报送的报告报表数据不准确",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体不准确的数据项、报送时间及涉及报告报表名称"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B083",
+    "stratum": "multi_subject",
+    "title": "国家金融监督管理总局湖南监管局行政处罚信息公示列表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268873&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "中国太平洋人寿保险股份有限公司长沙中心支公司及相关责任人",
+          "document_number": null,
+          "decision_date": "2026年7月31日",
+          "authority": "湖南金融监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对中国太平洋人寿保险股份有限公司长沙中心支公司罚款14万元；对责任人栾国平警告并罚款2万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国太平洋人寿保险股份有限公司长沙中心支公司",
+        "role": "institution",
+        "action": "编制虚假报告、报表、文件或者资料",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "虚假报告、报表、文件或者资料的具体内容、涉及期间及编制方式"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "中国太平洋人寿保险股份有限公司长沙中心支公司及相关责任人",
+          "document_number": null,
+          "decision_date": "2026年7月31日",
+          "authority": "湖南金融监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对中国太平洋人寿保险股份有限公司长沙中心支公司罚款14万元；对责任人栾国平警告并罚款2万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国太平洋人寿保险股份有限公司长沙中心支公司",
+        "role": "institution",
+        "action": "编制虚假报告、报表、文件或者资料",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "虚假报告、报表、文件或者资料的具体内容、涉及期间及编制方式"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B084",
+    "stratum": "multi_subject",
+    "title": "国家金融监督管理总局江西监管局行政处罚信息公开表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263069&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "都邦财产保险股份有限公司江西分公司及相关责任人员",
+          "document_number": null,
+          "decision_date": "2026年7月3日",
+          "authority": "国家金融监督管理总局江西监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对都邦财产保险股份有限公司江西分公司给予警告并处3万元罚款；对李吉文给予警告并处15034.89元罚款",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "都邦财产保险股份有限公司江西分公司",
+        "role": "institution",
+        "action": "违规跨区域经营保险业务",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体跨区域经营的时间、地域、业务明细及适用法律条款"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "都邦财产保险股份有限公司江西分公司及相关责任人员",
+          "document_number": null,
+          "decision_date": "2026年7月3日",
+          "authority": "国家金融监督管理总局江西监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对都邦财产保险股份有限公司江西分公司给予警告并处3万元罚款；对李吉文给予警告并处15034.89元罚款",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "都邦财产保险股份有限公司江西分公司",
+        "role": "institution",
+        "action": "违规跨区域经营保险业务",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体跨区域经营的时间、地域、业务明细及适用法律条款"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B085",
+    "stratum": "multi_subject",
+    "title": "大理金融监管分局行政处罚信息公示列表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269239&itemId=4115&generaltype=9",
+    "status": "format_repair_exhausted",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "中国人寿保险股份有限公司大理分公司、中国人寿保险股份有限公司祥云县支公司及相关责任人",
+          "document_number": null,
+          "decision_date": "2026年8月25日",
+          "authority": "大理金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对中国人寿保险股份有限公司大理分公司罚款57万元；对中国人寿保险股份有限公司祥云县支公司罚款12万元；对责任人胡艳东、赵漾锦、杨学诗给予警告并处罚款共计14万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国人寿保险股份有限公司大理分公司及相关分支机构",
+        "role": "institution",
+        "action": "委托未取得合法资格的机构从事保险销售活动",
+        "risk_tags": [
+          "委托无资质机构销售"
+        ],
+        "unknowns": [
+          "具体被委托机构名称、委托时间及涉及产品范围未载明"
+        ]
+      },
+      {
+        "actor": "中国人寿保险股份有限公司大理分公司及相关分支机构",
+        "role": "institution",
+        "action": "未按规定使用经备案的保险条款",
+        "risk_tags": [
+          "未按规定使用费率条款"
+        ],
+        "unknowns": [
+          "涉及的具体条款、产品及时间未载明"
+        ]
+      },
+      {
+        "actor": "中国人寿保险股份有限公司大理分公司及相关分支机构",
+        "role": "institution",
+        "action": "提供有虚假陈述的报告",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "报告名称、提交对象及虚假陈述具体内容未载明"
+        ]
+      }
+    ],
+    "final_cards": null,
+    "business_revision": true,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 1
+    },
+    "error": {
+      "code": "REVIEW_DECISION_CONSISTENCY",
+      "field": "",
+      "message": "REVIEW_DECISION_CONSISTENCY"
+    }
+  },
+  {
+    "id": "B086",
+    "stratum": "multi_subject",
+    "title": "国家金融监督管理总局江西监管局行政处罚信息公开表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269425&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "中英人寿保险股份有限公司江西分公司及相关责任人",
+          "document_number": null,
+          "decision_date": "2026年8月28日",
+          "authority": "国家金融监督管理总局江西监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对中英人寿保险股份有限公司江西分公司罚款7万元；对章煜超给予警告并罚款1万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中英人寿保险股份有限公司江西分公司",
+        "role": "institution",
+        "action": "给予投保人保险合同约定以外的利益",
+        "risk_tags": [
+          "合同外利益"
+        ],
+        "unknowns": [
+          "具体行为方式、对象、渠道及章煜超个人是否亲自实施该行为"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "中英人寿保险股份有限公司江西分公司及相关责任人",
+          "document_number": null,
+          "decision_date": "2026年8月28日",
+          "authority": "国家金融监督管理总局江西监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对中英人寿保险股份有限公司江西分公司罚款7万元；对章煜超给予警告并罚款1万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中英人寿保险股份有限公司江西分公司",
+        "role": "institution",
+        "action": "给予投保人保险合同约定以外的利益",
+        "risk_tags": [
+          "合同外利益"
+        ],
+        "unknowns": [
+          "具体行为方式、对象、渠道及章煜超个人是否亲自实施该行为"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B087",
+    "stratum": "multi_subject",
+    "title": "国家金融监督管理总局邵阳监管分局行政处罚信息公示列表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267142&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "中国平安财产保险股份有限公司邵东支公司及相关责任人",
+          "document_number": null,
+          "decision_date": "2026年8月6日",
+          "authority": "邵阳金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对中国平安财产保险股份有限公司邵东支公司罚款8万元；对赵城、曾咏芳等2名责任人员警告，并分别处罚款1万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国平安财产保险股份有限公司邵东支公司",
+        "role": "institution",
+        "action": "虚构保险中介业务套取费用",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": [
+          "具体套取金额、涉及中介机构及持续时间原文未载明"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "中国平安财产保险股份有限公司邵东支公司及相关责任人",
+          "document_number": null,
+          "decision_date": "2026年8月6日",
+          "authority": "邵阳金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对中国平安财产保险股份有限公司邵东支公司罚款8万元；对赵城、曾咏芳等2名责任人员警告，并分别处罚款1万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国平安财产保险股份有限公司邵东支公司",
+        "role": "institution",
+        "action": "虚构保险中介业务套取费用",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": [
+          "具体套取金额、涉及中介机构及持续时间原文未载明"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B088",
+    "stratum": "multi_subject",
+    "title": "克拉玛依金融监管分局行政处罚信息公示列表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264076&itemId=4115&generaltype=9",
+    "status": "proposed_hold_unreviewed",
+    "initial_cards": null,
+    "final_cards": null,
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B089",
+    "stratum": "multi_subject",
+    "title": "国家金融监督管理总局阳江监管分局行政处罚信息公示列表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264323&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "中国人民人寿保险股份有限公司阳江市分公司及相关责任人员",
+          "document_number": null,
+          "decision_date": "2026年7月13日",
+          "authority": "阳江金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "责令中国人民人寿保险股份有限公司阳江市分公司改正，并处罚款10万元；对冯华富给予警告并处罚款1万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国人民人寿保险股份有限公司阳江市分公司",
+        "role": "institution",
+        "action": "未如实记载保单销售人员信息",
+        "risk_tags": [
+          "客户信息不真实"
+        ],
+        "unknowns": [
+          "具体违规保单数量及涉及人员范围"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "中国人民人寿保险股份有限公司阳江市分公司及相关责任人员",
+          "document_number": null,
+          "decision_date": "2026年7月13日",
+          "authority": "阳江金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "责令中国人民人寿保险股份有限公司阳江市分公司改正，并处罚款10万元；对冯华富给予警告并处罚款1万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国人民人寿保险股份有限公司阳江市分公司",
+        "role": "institution",
+        "action": "未如实记载保单销售人员信息",
+        "risk_tags": [
+          "客户信息不真实"
+        ],
+        "unknowns": [
+          "具体违规保单数量及涉及人员范围"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B090",
+    "stratum": "multi_subject",
+    "title": "国家金融监督管理总局行政处罚信息公开表（金罚决字〔2024〕5号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1162453&itemId=4113&generaltype=9",
+    "status": "budget_stopped",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "中国人民财产保险股份有限公司及其责任人员",
+          "document_number": "金罚决字〔2024〕5号",
+          "decision_date": "2024年5月14日",
+          "authority": "国家金融监督管理总局",
+          "position": null,
+          "legal_basis": "《中华人民共和国保险法》第八十六条、第一百一十六条、第一百三十五条、第一百六十一条、第一百七十条、第一百七十一条等",
+          "penalties": "对中国人民财产保险股份有限公司罚款合计681万元（总公司221万元，分支机构460万元）；对蒋新伟、原宇玲、倪宏、周志文、纪翔、刘团聚、李旭、洪祖强、杨卫、崔晓博、钱磊、姜掌厚、梁晓旭、王彦波、余饶林、程向民、周健各警告并处罚款10万元；对王学刚、蒋士亮、潘振雄、郭钢、武运宝、李彦君、沈宁各警告并处罚款20万元；对何祖望警告并处罚款1万元",
+          "unknowns": [
+            "position"
+          ]
+        }
+      },
+      {
+        "actor": "中国人民财产保险股份有限公司",
+        "role": "institution",
+        "action": "将直接业务虚挂中介业务套取手续费",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "中国人民财产保险股份有限公司",
+        "role": "institution",
+        "action": "少计提资产减值准备",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "中国人民财产保险股份有限公司",
+        "role": "institution",
+        "action": "招投标管理不规范",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "中国人民财产保险股份有限公司",
+        "role": "institution",
+        "action": "支农融资业务捆绑销售保险产品",
+        "risk_tags": [
+          "诱导投保"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "中国人民财产保险股份有限公司",
+        "role": "institution",
+        "action": "相关报告、报表、文件和资料不真实",
+        "risk_tags": [
+          "客户信息不真实"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "中国人民财产保险股份有限公司",
+        "role": "institution",
+        "action": "跨年度列支手续费",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      }
+    ],
+    "final_cards": null,
+    "business_revision": true,
+    "format_repairs": {
+      "proposer": 1,
+      "reviewer": 0
+    },
+    "error": {
+      "code": "PROTECTED_FUTURE_EVENT_BUDGET",
+      "field": null,
+      "message": "Error: SUBMISSION_INCOMPLETE_ledger_denied"
+    }
+  },
+  {
+    "id": "B091",
+    "stratum": "multi_subject",
+    "title": "国家金融监督管理总局湖北监管局行政处罚信息公示列表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267334&itemId=4114&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "中国太平洋财产保险股份有限公司湖北分公司及相关责任人",
+          "document_number": null,
+          "decision_date": "2026年8月7日",
+          "authority": "湖北金融监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对机构罚款35万元，对桂望龙、张璇警告并罚款共计5万元，对付建蓉禁止进入保险业5年",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国太平洋财产保险股份有限公司湖北分公司",
+        "role": "institution",
+        "action": "业务财务数据不真实",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体行为方式",
+          "涉及数据范围"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "中国太平洋财产保险股份有限公司湖北分公司及相关责任人",
+          "document_number": null,
+          "decision_date": "2026年8月7日",
+          "authority": "湖北金融监管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对机构罚款35万元，对桂望龙、张璇警告并罚款共计5万元，对付建蓉禁止进入保险业5年",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国太平洋财产保险股份有限公司湖北分公司",
+        "role": "institution",
+        "action": "业务财务数据不真实",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体行为方式",
+          "涉及数据范围"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B092",
+    "stratum": "multi_subject",
+    "title": "国家金融监督管理总局常州监管分局行政处罚信息公开表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264209&itemId=4115&generaltype=9",
+    "status": "proposed_hold_unreviewed",
+    "initial_cards": null,
+    "final_cards": null,
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B093",
+    "stratum": "multi_subject",
+    "title": "国家金融监督管理总局行政处罚信息公开表（金罚决字〔2023〕55号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1144050&itemId=4113&generaltype=9",
+    "status": "format_repair_exhausted",
+    "initial_cards": null,
+    "final_cards": null,
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 1,
+      "reviewer": 0
+    },
+    "error": {
+      "code": "CASE_UNKNOWN",
+      "field": "",
+      "message": "CASE_UNKNOWN"
+    }
+  },
+  {
+    "id": "B094",
+    "stratum": "multi_subject",
+    "title": "国家金融监督管理总局两江监管分局行政处罚信息公示列表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265228&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "中国人民财产保险股份有限公司重庆市北碚支公司及相关责任人",
+          "document_number": null,
+          "decision_date": "2026年7月21日",
+          "authority": "两江金融监分管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "中国人民财产保险股份有限公司重庆市北碚支公司警告并处1万元罚款；对袁有德禁止从事保险业工作5年",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国人民财产保险股份有限公司重庆市北碚支公司",
+        "role": "institution",
+        "action": "内部管理不到位，理赔人员违反法律规定",
+        "risk_tags": [],
+        "unknowns": [
+          "具体违规行为细节",
+          "涉及的法律规定条款"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "中国人民财产保险股份有限公司重庆市北碚支公司及相关责任人",
+          "document_number": null,
+          "decision_date": "2026年7月21日",
+          "authority": "两江金融监分管局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "中国人民财产保险股份有限公司重庆市北碚支公司警告并处1万元罚款；对袁有德禁止从事保险业工作5年",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国人民财产保险股份有限公司重庆市北碚支公司",
+        "role": "institution",
+        "action": "内部管理不到位，理赔人员违反法律规定",
+        "risk_tags": [],
+        "unknowns": [
+          "具体违规行为细节",
+          "涉及的法律规定条款"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B095",
+    "stratum": "multi_subject",
+    "title": "国家金融监督管理总局行政处罚信息公示列表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1260352&itemId=4113&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "太平财产保险有限公司",
+          "document_number": null,
+          "decision_date": "2026年6月5日",
+          "authority": "金融监管总局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对太平财产保险有限公司警告并罚款373万元；对任杰、许龙、黄永军、陆涛、张玮、陈永兵、赵磊警告并罚款共计62万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "太平财产保险有限公司",
+        "role": "institution",
+        "action": "未按规定提取未决赔款准备金",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体违规金额与期间"
+        ]
+      },
+      {
+        "actor": "太平财产保险有限公司",
+        "role": "institution",
+        "action": "未按照规定使用经批准或备案的保险条款、费率",
+        "risk_tags": [
+          "未按规定使用费率条款"
+        ],
+        "unknowns": [
+          "涉及的具体产品与条款费率"
+        ]
+      },
+      {
+        "actor": "太平财产保险有限公司",
+        "role": "institution",
+        "action": "报送数据不准确",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "不准确数据的具体种类与范围"
+        ]
+      },
+      {
+        "actor": "太平财产保险有限公司",
+        "role": "institution",
+        "action": "跨区域开展业务",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "跨区域业务的具体地区与规模"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "太平财产保险有限公司",
+          "document_number": null,
+          "decision_date": "2026年6月5日",
+          "authority": "金融监管总局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对太平财产保险有限公司警告并罚款373万元；对任杰、许龙、黄永军、陆涛、张玮、陈永兵、赵磊警告并罚款共计62万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "太平财产保险有限公司",
+        "role": "institution",
+        "action": "未按规定提取未决赔款准备金",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体违规金额与期间"
+        ]
+      },
+      {
+        "actor": "太平财产保险有限公司",
+        "role": "institution",
+        "action": "未按照规定使用经批准或备案的保险条款、费率",
+        "risk_tags": [
+          "未按规定使用费率条款"
+        ],
+        "unknowns": [
+          "涉及的具体产品与条款费率"
+        ]
+      },
+      {
+        "actor": "太平财产保险有限公司",
+        "role": "institution",
+        "action": "报送数据不准确",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "不准确数据的具体种类与范围"
+        ]
+      },
+      {
+        "actor": "太平财产保险有限公司",
+        "role": "institution",
+        "action": "跨区域开展业务",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "跨区域业务的具体地区与规模"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B096",
+    "stratum": "multi_subject",
+    "title": "国家金融监督管理总局永州监管分局行政处罚信息公示列表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265951&itemId=4115&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "中国人民人寿保险股份有限公司永州中心支公司及相关责任人",
+          "document_number": null,
+          "decision_date": "2026年7月28日",
+          "authority": "永州金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对人保寿险永州中支罚款16.7万元；对唐玉玲、全艺琼等2名责任人员警告，并分别处罚款1.1万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国人民人寿保险股份有限公司永州中心支公司",
+        "role": "institution",
+        "action": "直销业务虚挂代理人套取资金",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "中国人民人寿保险股份有限公司永州中心支公司",
+        "role": "institution",
+        "action": "编制虚假财务资料",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": []
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "中国人民人寿保险股份有限公司永州中心支公司及相关责任人",
+          "document_number": null,
+          "decision_date": "2026年7月28日",
+          "authority": "永州金融监管分局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对人保寿险永州中支罚款16.7万元；对唐玉玲、全艺琼等2名责任人员警告，并分别处罚款1.1万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "中国人民人寿保险股份有限公司永州中心支公司",
+        "role": "institution",
+        "action": "直销业务虚挂代理人套取资金",
+        "risk_tags": [
+          "虚列费用套取资金"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "中国人民人寿保险股份有限公司永州中心支公司",
+        "role": "institution",
+        "action": "编制虚假财务资料",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      }
+    ],
+    "business_revision": true,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B097",
+    "stratum": "bank_insurance_boundary",
+    "title": "国家金融监督管理总局行政处罚信息公示列表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264901&itemId=4113&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "太平资产管理有限公司及相关责任人",
+          "document_number": null,
+          "decision_date": "2026年7月17日",
+          "authority": "金融监管总局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对太平资产管理有限公司罚款60万元，对郭婧、刘洋警告并罚款合计14万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "太平资产管理有限公司",
+        "role": "institution",
+        "action": "保险资金运用不规范",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体违规行为细节",
+          "涉及资金运用方式"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "太平资产管理有限公司及相关责任人",
+          "document_number": null,
+          "decision_date": "2026年7月17日",
+          "authority": "金融监管总局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对太平资产管理有限公司罚款60万元，对郭婧、刘洋警告并罚款合计14万元",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "太平资产管理有限公司",
+        "role": "institution",
+        "action": "保险资金运用不规范",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体违规行为细节",
+          "涉及资金运用方式"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B098",
+    "stratum": "bank_insurance_boundary",
+    "title": "国家金融监督管理总局行政处罚信息公开表（金罚决字〔2024〕3号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1160136&itemId=4113&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "陆家嘴国际信托有限公司",
+          "document_number": "金罚决字〔2024〕3号",
+          "decision_date": "2024年4月22日",
+          "authority": "国家金融监督管理总局",
+          "position": null,
+          "legal_basis": "《中华人民共和国银行业监督管理法》第二十一条、第四十六条",
+          "penalties": "对陆家嘴信托罚款420万元",
+          "unknowns": [
+            "position"
+          ]
+        }
+      },
+      {
+        "actor": "陆家嘴国际信托有限公司",
+        "role": "institution",
+        "action": "报送监管部门的报告报表不真实",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "陆家嘴国际信托有限公司",
+        "role": "institution",
+        "action": "关联方和关联交易数据不真实",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "陆家嘴国际信托有限公司",
+        "role": "institution",
+        "action": "以投资名义向不满足“四三二”要求的房地产项目融资",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "陆家嘴国际信托有限公司",
+        "role": "institution",
+        "action": "未按约定用途使用信托贷款",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "陆家嘴国际信托有限公司",
+        "role": "institution",
+        "action": "信托资金挪用于缴纳土地出让金",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "陆家嘴国际信托有限公司",
+        "role": "institution",
+        "action": "信托产品信息披露不审慎",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "陆家嘴国际信托有限公司",
+        "role": "institution",
+        "action": "违规接受保险资金投资事务管理类信托计划",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "陆家嘴国际信托有限公司",
+          "document_number": "金罚决字〔2024〕3号",
+          "decision_date": "2024年4月22日",
+          "authority": "国家金融监督管理总局",
+          "position": null,
+          "legal_basis": "《中华人民共和国银行业监督管理法》第二十一条、第四十六条",
+          "penalties": "对陆家嘴信托罚款420万元",
+          "unknowns": [
+            "position"
+          ]
+        }
+      },
+      {
+        "actor": "陆家嘴国际信托有限公司",
+        "role": "institution",
+        "action": "报送监管部门的报告报表不真实",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "陆家嘴国际信托有限公司",
+        "role": "institution",
+        "action": "关联方和关联交易数据不真实",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "陆家嘴国际信托有限公司",
+        "role": "institution",
+        "action": "以投资名义向不满足“四三二”要求的房地产项目融资",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "陆家嘴国际信托有限公司",
+        "role": "institution",
+        "action": "未按约定用途使用信托贷款",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "陆家嘴国际信托有限公司",
+        "role": "institution",
+        "action": "信托资金挪用于缴纳土地出让金",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "陆家嘴国际信托有限公司",
+        "role": "institution",
+        "action": "信托产品信息披露不审慎",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      },
+      {
+        "actor": "陆家嘴国际信托有限公司",
+        "role": "institution",
+        "action": "违规接受保险资金投资事务管理类信托计划",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": []
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B099",
+    "stratum": "bank_insurance_boundary",
+    "title": "国家金融监督管理总局行政处罚信息公示列表",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1238354&itemId=4113&generaltype=9",
+    "status": "experiment_protocol_approved_not_applied",
+    "initial_cards": [
+      {
+        "metadata": {
+          "subject": "华夏久盈资产管理有限责任公司及相关责任人员",
+          "document_number": null,
+          "decision_date": "2025年12月19日",
+          "authority": "金融监管总局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对华夏久盈资产管理有限责任公司罚款70万元；对陈淑翠禁止10年进入保险业",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "华夏久盈资产管理有限责任公司",
+        "role": "institution",
+        "action": "未按照规定运用保险公司资金",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体违规运用资金的方式、对象、金额及发生期间原文未载明"
+        ]
+      }
+    ],
+    "final_cards": [
+      {
+        "metadata": {
+          "subject": "华夏久盈资产管理有限责任公司及相关责任人员",
+          "document_number": null,
+          "decision_date": "2025年12月19日",
+          "authority": "金融监管总局",
+          "position": null,
+          "legal_basis": null,
+          "penalties": "对华夏久盈资产管理有限责任公司罚款70万元；对陈淑翠禁止10年进入保险业",
+          "unknowns": [
+            "document_number",
+            "position",
+            "legal_basis"
+          ]
+        }
+      },
+      {
+        "actor": "华夏久盈资产管理有限责任公司",
+        "role": "institution",
+        "action": "未按照规定运用保险公司资金",
+        "risk_tags": [
+          "其他"
+        ],
+        "unknowns": [
+          "具体违规运用资金的方式、对象、金额及发生期间原文未载明"
+        ]
+      }
+    ],
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 0,
+      "reviewer": 0
+    },
+    "error": null
+  },
+  {
+    "id": "B100",
+    "stratum": "bank_insurance_boundary",
+    "title": "国家金融监督管理总局行政处罚信息公开表（金罚决字〔2023〕66  号）",
+    "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1143257&itemId=4113&generaltype=9",
+    "status": "format_repair_exhausted",
+    "initial_cards": null,
+    "final_cards": null,
+    "business_revision": false,
+    "format_repairs": {
+      "proposer": 1,
+      "reviewer": 0
+    },
+    "error": {
+      "code": "CASE_UNKNOWN",
+      "field": "",
+      "message": "CASE_UNKNOWN"
+    }
+  }
+]

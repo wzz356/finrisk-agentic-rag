@@ -1,0 +1,960 @@
+{
+  "denominator": 100,
+  "status_counts": {
+    "experiment_protocol_approved_not_applied": 80,
+    "proposed_hold_unreviewed": 3,
+    "format_repair_exhausted": 6,
+    "proposed_no_change_unreviewed": 1,
+    "held": 8,
+    "reviewer_requested_changes": 1,
+    "budget_stopped": 1
+  },
+  "usage": {
+    "prompt_tokens": 1570322,
+    "completion_tokens": 443235,
+    "requests": 404,
+    "models": {
+      "deepseek-flash": 404
+    }
+  },
+  "physical_requests_ledger": 412,
+  "ledger_states": {
+    "settled": 404,
+    "unknown": 8
+  },
+  "elapsed_minutes_canary_and_remaining": 14.43275,
+  "conservative_peak_cost_cny": 6.686524,
+  "budget": {
+    "request_count": 412,
+    "spent_micro": 6686524,
+    "reserved_micro": 627872,
+    "sent_micro": 0,
+    "unknown_micro": 627872,
+    "charged_micro": 7314396,
+    "policy_id": "batch100-20261023",
+    "live": true,
+    "cap_micro": 30000000,
+    "max_requests": 1000,
+    "available_micro": 22685604,
+    "circuit_broken": false,
+    "circuit_reason": null,
+    "by_role": {
+      "proposer": {
+        "request_count": 218,
+        "spent_micro": 3917514,
+        "reserved_micro": 216696,
+        "sent_micro": 0,
+        "unknown_micro": 216696,
+        "charged_micro": 4134210
+      },
+      "reviewer": {
+        "request_count": 194,
+        "spent_micro": 2769010,
+        "reserved_micro": 411176,
+        "sent_micro": 0,
+        "unknown_micro": 411176,
+        "charged_micro": 3180186
+      }
+    },
+    "by_stage": {
+      "batch100": {
+        "request_count": 412,
+        "spent_micro": 6686524,
+        "reserved_micro": 627872,
+        "sent_micro": 0,
+        "unknown_micro": 627872,
+        "charged_micro": 7314396
+      }
+    },
+    "by_event": {
+      "batch100-B001": {
+        "request_count": 4,
+        "spent_micro": 59726,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 59726
+      },
+      "batch100-B002": {
+        "request_count": 4,
+        "spent_micro": 51210,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 51210
+      },
+      "batch100-B003": {
+        "request_count": 2,
+        "spent_micro": 20794,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 20794
+      },
+      "batch100-B004": {
+        "request_count": 3,
+        "spent_micro": 141418,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 141418
+      },
+      "batch100-B005": {
+        "request_count": 2,
+        "spent_micro": 18150,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 18150
+      },
+      "batch100-B006": {
+        "request_count": 6,
+        "spent_micro": 147260,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 147260
+      },
+      "batch100-B007": {
+        "request_count": 4,
+        "spent_micro": 55876,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 55876
+      },
+      "batch100-B008": {
+        "request_count": 4,
+        "spent_micro": 53388,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 53388
+      },
+      "batch100-B009": {
+        "request_count": 4,
+        "spent_micro": 53670,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 53670
+      },
+      "batch100-B010": {
+        "request_count": 4,
+        "spent_micro": 67786,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 67786
+      },
+      "batch100-B011": {
+        "request_count": 4,
+        "spent_micro": 66690,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 66690
+      },
+      "batch100-B012": {
+        "request_count": 4,
+        "spent_micro": 55258,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 55258
+      },
+      "batch100-B013": {
+        "request_count": 4,
+        "spent_micro": 53874,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 53874
+      },
+      "batch100-B014": {
+        "request_count": 4,
+        "spent_micro": 49648,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 49648
+      },
+      "batch100-B015": {
+        "request_count": 7,
+        "spent_micro": 171620,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 171620
+      },
+      "batch100-B016": {
+        "request_count": 4,
+        "spent_micro": 53904,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 53904
+      },
+      "batch100-B017": {
+        "request_count": 4,
+        "spent_micro": 61336,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 61336
+      },
+      "batch100-B018": {
+        "request_count": 6,
+        "spent_micro": 109598,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 109598
+      },
+      "batch100-B019": {
+        "request_count": 3,
+        "spent_micro": 69892,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 69892
+      },
+      "batch100-B020": {
+        "request_count": 6,
+        "spent_micro": 86046,
+        "reserved_micro": 87610,
+        "sent_micro": 0,
+        "unknown_micro": 87610,
+        "charged_micro": 173656
+      },
+      "batch100-B021": {
+        "request_count": 4,
+        "spent_micro": 32346,
+        "reserved_micro": 86212,
+        "sent_micro": 0,
+        "unknown_micro": 86212,
+        "charged_micro": 118558
+      },
+      "batch100-B022": {
+        "request_count": 4,
+        "spent_micro": 39380,
+        "reserved_micro": 99036,
+        "sent_micro": 0,
+        "unknown_micro": 99036,
+        "charged_micro": 138416
+      },
+      "batch100-B023": {
+        "request_count": 4,
+        "spent_micro": 39344,
+        "reserved_micro": 101338,
+        "sent_micro": 0,
+        "unknown_micro": 101338,
+        "charged_micro": 140682
+      },
+      "batch100-B024": {
+        "request_count": 3,
+        "spent_micro": 28230,
+        "reserved_micro": 18168,
+        "sent_micro": 0,
+        "unknown_micro": 18168,
+        "charged_micro": 46398
+      },
+      "batch100-B025": {
+        "request_count": 2,
+        "spent_micro": 4226,
+        "reserved_micro": 108688,
+        "sent_micro": 0,
+        "unknown_micro": 108688,
+        "charged_micro": 112914
+      },
+      "batch100-B026": {
+        "request_count": 4,
+        "spent_micro": 61012,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 61012
+      },
+      "batch100-B027": {
+        "request_count": 4,
+        "spent_micro": 56752,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 56752
+      },
+      "batch100-B028": {
+        "request_count": 4,
+        "spent_micro": 57994,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 57994
+      },
+      "batch100-B029": {
+        "request_count": 4,
+        "spent_micro": 52648,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 52648
+      },
+      "batch100-B030": {
+        "request_count": 4,
+        "spent_micro": 57734,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 57734
+      },
+      "batch100-B031": {
+        "request_count": 6,
+        "spent_micro": 105030,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 105030
+      },
+      "batch100-B032": {
+        "request_count": 4,
+        "spent_micro": 58378,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 58378
+      },
+      "batch100-B033": {
+        "request_count": 4,
+        "spent_micro": 60530,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 60530
+      },
+      "batch100-B034": {
+        "request_count": 4,
+        "spent_micro": 55830,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 55830
+      },
+      "batch100-B035": {
+        "request_count": 4,
+        "spent_micro": 54472,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 54472
+      },
+      "batch100-B036": {
+        "request_count": 4,
+        "spent_micro": 52316,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 52316
+      },
+      "batch100-B037": {
+        "request_count": 4,
+        "spent_micro": 53804,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 53804
+      },
+      "batch100-B038": {
+        "request_count": 4,
+        "spent_micro": 66290,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 66290
+      },
+      "batch100-B039": {
+        "request_count": 4,
+        "spent_micro": 70902,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 70902
+      },
+      "batch100-B040": {
+        "request_count": 4,
+        "spent_micro": 61906,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 61906
+      },
+      "batch100-B041": {
+        "request_count": 4,
+        "spent_micro": 50446,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 50446
+      },
+      "batch100-B042": {
+        "request_count": 4,
+        "spent_micro": 54840,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 54840
+      },
+      "batch100-B043": {
+        "request_count": 4,
+        "spent_micro": 53522,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 53522
+      },
+      "batch100-B044": {
+        "request_count": 6,
+        "spent_micro": 110694,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 110694
+      },
+      "batch100-B045": {
+        "request_count": 4,
+        "spent_micro": 48638,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 48638
+      },
+      "batch100-B046": {
+        "request_count": 4,
+        "spent_micro": 65516,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 65516
+      },
+      "batch100-B047": {
+        "request_count": 4,
+        "spent_micro": 54646,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 54646
+      },
+      "batch100-B048": {
+        "request_count": 4,
+        "spent_micro": 54694,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 54694
+      },
+      "batch100-B049": {
+        "request_count": 4,
+        "spent_micro": 53598,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 53598
+      },
+      "batch100-B050": {
+        "request_count": 4,
+        "spent_micro": 56460,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 56460
+      },
+      "batch100-B051": {
+        "request_count": 4,
+        "spent_micro": 51606,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 51606
+      },
+      "batch100-B052": {
+        "request_count": 3,
+        "spent_micro": 36910,
+        "reserved_micro": 18812,
+        "sent_micro": 0,
+        "unknown_micro": 18812,
+        "charged_micro": 55722
+      },
+      "batch100-B053": {
+        "request_count": 4,
+        "spent_micro": 51714,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 51714
+      },
+      "batch100-B054": {
+        "request_count": 4,
+        "spent_micro": 56630,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 56630
+      },
+      "batch100-B055": {
+        "request_count": 2,
+        "spent_micro": 3912,
+        "reserved_micro": 108008,
+        "sent_micro": 0,
+        "unknown_micro": 108008,
+        "charged_micro": 111920
+      },
+      "batch100-B056": {
+        "request_count": 4,
+        "spent_micro": 81368,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 81368
+      },
+      "batch100-B057": {
+        "request_count": 4,
+        "spent_micro": 53286,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 53286
+      },
+      "batch100-B058": {
+        "request_count": 4,
+        "spent_micro": 62204,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 62204
+      },
+      "batch100-B059": {
+        "request_count": 6,
+        "spent_micro": 152278,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 152278
+      },
+      "batch100-B060": {
+        "request_count": 4,
+        "spent_micro": 52374,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 52374
+      },
+      "batch100-B061": {
+        "request_count": 6,
+        "spent_micro": 128466,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 128466
+      },
+      "batch100-B062": {
+        "request_count": 6,
+        "spent_micro": 104234,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 104234
+      },
+      "batch100-B063": {
+        "request_count": 4,
+        "spent_micro": 57374,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 57374
+      },
+      "batch100-B064": {
+        "request_count": 4,
+        "spent_micro": 55306,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 55306
+      },
+      "batch100-B065": {
+        "request_count": 4,
+        "spent_micro": 48894,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 48894
+      },
+      "batch100-B066": {
+        "request_count": 4,
+        "spent_micro": 52336,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 52336
+      },
+      "batch100-B067": {
+        "request_count": 4,
+        "spent_micro": 54860,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 54860
+      },
+      "batch100-B068": {
+        "request_count": 4,
+        "spent_micro": 57426,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 57426
+      },
+      "batch100-B069": {
+        "request_count": 4,
+        "spent_micro": 50270,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 50270
+      },
+      "batch100-B070": {
+        "request_count": 4,
+        "spent_micro": 53594,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 53594
+      },
+      "batch100-B071": {
+        "request_count": 4,
+        "spent_micro": 54044,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 54044
+      },
+      "batch100-B072": {
+        "request_count": 4,
+        "spent_micro": 54476,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 54476
+      },
+      "batch100-B073": {
+        "request_count": 4,
+        "spent_micro": 52202,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 52202
+      },
+      "batch100-B074": {
+        "request_count": 6,
+        "spent_micro": 106586,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 106586
+      },
+      "batch100-B075": {
+        "request_count": 4,
+        "spent_micro": 51704,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 51704
+      },
+      "batch100-B076": {
+        "request_count": 4,
+        "spent_micro": 52144,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 52144
+      },
+      "batch100-B077": {
+        "request_count": 4,
+        "spent_micro": 53348,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 53348
+      },
+      "batch100-B078": {
+        "request_count": 4,
+        "spent_micro": 52652,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 52652
+      },
+      "batch100-B079": {
+        "request_count": 5,
+        "spent_micro": 73684,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 73684
+      },
+      "batch100-B080": {
+        "request_count": 6,
+        "spent_micro": 140122,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 140122
+      },
+      "batch100-B081": {
+        "request_count": 4,
+        "spent_micro": 62492,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 62492
+      },
+      "batch100-B082": {
+        "request_count": 4,
+        "spent_micro": 54642,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 54642
+      },
+      "batch100-B083": {
+        "request_count": 4,
+        "spent_micro": 50618,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 50618
+      },
+      "batch100-B084": {
+        "request_count": 4,
+        "spent_micro": 52186,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 52186
+      },
+      "batch100-B085": {
+        "request_count": 7,
+        "spent_micro": 185032,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 185032
+      },
+      "batch100-B086": {
+        "request_count": 4,
+        "spent_micro": 50976,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 50976
+      },
+      "batch100-B087": {
+        "request_count": 4,
+        "spent_micro": 51134,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 51134
+      },
+      "batch100-B088": {
+        "request_count": 2,
+        "spent_micro": 22222,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 22222
+      },
+      "batch100-B089": {
+        "request_count": 4,
+        "spent_micro": 55676,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 55676
+      },
+      "batch100-B090": {
+        "request_count": 5,
+        "spent_micro": 232964,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 232964
+      },
+      "batch100-B091": {
+        "request_count": 4,
+        "spent_micro": 51512,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 51512
+      },
+      "batch100-B092": {
+        "request_count": 2,
+        "spent_micro": 20842,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 20842
+      },
+      "batch100-B093": {
+        "request_count": 3,
+        "spent_micro": 128334,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 128334
+      },
+      "batch100-B094": {
+        "request_count": 4,
+        "spent_micro": 55408,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 55408
+      },
+      "batch100-B095": {
+        "request_count": 4,
+        "spent_micro": 75526,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 75526
+      },
+      "batch100-B096": {
+        "request_count": 6,
+        "spent_micro": 125594,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 125594
+      },
+      "batch100-B097": {
+        "request_count": 4,
+        "spent_micro": 52396,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 52396
+      },
+      "batch100-B098": {
+        "request_count": 4,
+        "spent_micro": 95832,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 95832
+      },
+      "batch100-B099": {
+        "request_count": 4,
+        "spent_micro": 52862,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 52862
+      },
+      "batch100-B100": {
+        "request_count": 3,
+        "spent_micro": 134950,
+        "reserved_micro": 0,
+        "sent_micro": 0,
+        "unknown_micro": 0,
+        "charged_micro": 134950
+      }
+    },
+    "token_units": 8028387,
+    "future_micro": 0,
+    "future_token_units": 0,
+    "future_requests": 0,
+    "max_token_units": 30000000
+  },
+  "reviewer_decisions": {
+    "approve": 80,
+    "request_changes": 15
+  },
+  "terminal_errors": {
+    "COVERAGE_CITATION": 1,
+    "REVIEW_DECISION_CONSISTENCY": 2,
+    "ACTOR_UNKNOWN": 1,
+    "HOST_ERROR": 8,
+    "PROTECTED_FUTURE_EVENT_BUDGET": 1,
+    "CASE_UNKNOWN": 2
+  },
+  "initial_adds_mechanically_valid": 90,
+  "reviewed_adds": 80,
+  "paired_cards_changed": [
+    "B006",
+    "B018",
+    "B031",
+    "B044",
+    "B061",
+    "B062",
+    "B074",
+    "B080",
+    "B096"
+  ],
+  "shadow_views": {
+    "P": {
+      "schema": "lexical-experiment-shadow/1",
+      "snapshot_id": "P-816d2c0820edffcff6bc9c7e",
+      "source_count": 9730,
+      "assets": {
+        "sources": {
+          "path": "[local path omitted from public export]",
+          "sha256": "816d2c0820edffcff6bc9c7ef4cf0edcfa59e9ff2a45a53347cfa3c08ac6be01"
+        },
+        "dictionary": {
+          "path": "[local path omitted from public export]",
+          "sha256": "0588febf140ada823980fdbe0c5691d77bc02ed439cb8d44e6cfef1cda12d8bb"
+        }
+      },
+      "cards": {
+        "path": "[local path omitted from public export]",
+        "sha256": "1d0a5480df751ee759a5865aeca1aa92570be98719406347ceabbbede6c20ff6"
+      },
+      "base_snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "added_documents": 90,
+      "added_case_cards": 90,
+      "added_behavior_cards": 140,
+      "old_bytes_preserved": true,
+      "production_admission": false,
+      "human_approved": false,
+      "limitations": "Isolated exact lexical source search/read and grounded cards. No new dense/BGE or production Agent registry publication."
+    },
+    "PR": {
+      "schema": "lexical-experiment-shadow/1",
+      "snapshot_id": "PR-9af0cd2a619473f142993225",
+      "source_count": 9720,
+      "assets": {
+        "sources": {
+          "path": "[local path omitted from public export]",
+          "sha256": "9af0cd2a619473f142993225a9c6636ed4b82c53c1da404b8b83b9fa9ac686b4"
+        },
+        "dictionary": {
+          "path": "[local path omitted from public export]",
+          "sha256": "0588febf140ada823980fdbe0c5691d77bc02ed439cb8d44e6cfef1cda12d8bb"
+        }
+      },
+      "cards": {
+        "path": "[local path omitted from public export]",
+        "sha256": "aa1d2b1b6f739d7d396561d4f58ded6efb7f9470872f832c38dc2f6652f75a37"
+      },
+      "base_snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "added_documents": 80,
+      "added_case_cards": 80,
+      "added_behavior_cards": 113,
+      "old_bytes_preserved": true,
+      "production_admission": false,
+      "human_approved": false,
+      "limitations": "Isolated exact lexical source search/read and grounded cards. No new dense/BGE or production Agent registry publication."
+    }
+  },
+  "production_modified": false,
+  "human_approved": false
+}

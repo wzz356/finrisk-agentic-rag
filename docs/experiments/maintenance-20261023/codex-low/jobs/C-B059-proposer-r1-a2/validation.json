@@ -1,0 +1,7 @@
+{
+  "valid": false,
+  "code": "COVERAGE_CITATION",
+  "field": "case/document_number",
+  "message": "COVERAGE_CITATION: case/document_number",
+  "production_admission": false
+}

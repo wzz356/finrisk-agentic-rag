@@ -1,0 +1,383 @@
+{
+  "case": {
+    "legal_basis": {
+      "value": null,
+      "citations": [
+        {
+          "segment_id": "B011:L0005:339151b595131ad2:339151b595131ad2",
+          "quote": "与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告"
+        }
+      ],
+      "claim_type": "fact",
+      "uncertainty": "原文未载法律依据。"
+    },
+    "document_number": {
+      "value": "潍金罚决字〔2026〕15号",
+      "citations": [
+        {
+          "segment_id": "B011:L0003:339151b595131ad2:339151b595131ad2",
+          "quote": "潍金罚决字〔2026〕15号"
+        }
+      ],
+      "claim_type": "fact",
+      "uncertainty": null
+    },
+    "authority": {
+      "value": "国家金融监督管理总局潍坊监管分局",
+      "citations": [
+        {
+          "segment_id": "B011:L0009:339151b595131ad2:339151b595131ad2",
+          "quote": "国家金融监督管理总局潍坊监管分局"
+        }
+      ],
+      "claim_type": "fact",
+      "uncertainty": null
+    },
+    "penalties": {
+      "value": "通报批评，警告，罚款3.5万元",
+      "citations": [
+        {
+          "segment_id": "B011:L0007:339151b595131ad2:339151b595131ad2",
+          "quote": "通报批评，警告，罚款3.5万元"
+        }
+      ],
+      "claim_type": "fact",
+      "uncertainty": null
+    },
+    "unknowns": {
+      "value": [
+        "position",
+        "legal_basis"
+      ],
+      "citations": [
+        {
+          "segment_id": "B011:L0005:339151b595131ad2:339151b595131ad2",
+          "quote": "与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告"
+        }
+      ],
+      "claim_type": "derived_summary",
+      "uncertainty": "原文未载职务及法律依据。"
+    },
+    "decision_date": {
+      "value": "2026年8月21日",
+      "citations": [
+        {
+          "segment_id": "B011:L0011:339151b595131ad2:339151b595131ad2",
+          "quote": "2026年8月21日"
+        }
+      ],
+      "claim_type": "fact",
+      "uncertainty": null
+    },
+    "subject": {
+      "value": "山东汇联保险经纪有限公司",
+      "citations": [
+        {
+          "segment_id": "B011:L0001:339151b595131ad2:339151b595131ad2",
+          "quote": "当事人: 山东汇联保险经纪有限公司"
+        }
+      ],
+      "claim_type": "fact",
+      "uncertainty": null
+    },
+    "position": {
+      "value": null,
+      "citations": [
+        {
+          "segment_id": "B011:L0001:339151b595131ad2:339151b595131ad2",
+          "quote": "当事人: 山东汇联保险经纪有限公司"
+        }
+      ],
+      "claim_type": "fact",
+      "uncertainty": "原文未载职务。"
+    }
+  },
+  "action": "add",
+  "behaviors": [
+    {
+      "role": {
+        "value": "institution",
+        "citations": [
+          {
+            "segment_id": "B011:L0001:339151b595131ad2:339151b595131ad2",
+            "quote": "当事人: 山东汇联保险经纪有限公司"
+          }
+        ],
+        "claim_type": "fact",
+        "uncertainty": null
+      },
+      "unknowns": {
+        "value": [
+          "具体实施细节"
+        ],
+        "citations": [
+          {
+            "segment_id": "B011:L0005:339151b595131ad2:339151b595131ad2",
+            "quote": "与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告"
+          }
+        ],
+        "claim_type": "derived_summary",
+        "uncertainty": "原文仅载概括案由，具体实施细节未载。"
+      },
+      "action": {
+        "value": "与非法从事保险中介业务的机构发生保险经纪业务往来",
+        "citations": [
+          {
+            "segment_id": "B011:L0005:339151b595131ad2:339151b595131ad2",
+            "quote": "与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告"
+          }
+        ],
+        "claim_type": "fact",
+        "uncertainty": null
+      },
+      "risk_tags": {
+        "value": [
+          "其他"
+        ],
+        "citations": [
+          {
+            "segment_id": "B011:L0005:339151b595131ad2:339151b595131ad2",
+            "quote": "与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告"
+          }
+        ],
+        "claim_type": "derived_summary",
+        "uncertainty": "字典无直接对应专类；业务往来不能推定委托无资质机构销售，档案违规不能推定客户信息不真实，公示公告违规不能推定隐瞒合同信息。"
+      },
+      "actor": {
+        "value": "山东汇联保险经纪有限公司",
+        "citations": [
+          {
+            "segment_id": "B011:L0001:339151b595131ad2:339151b595131ad2",
+            "quote": "当事人: 山东汇联保险经纪有限公司"
+          }
+        ],
+        "claim_type": "fact",
+        "uncertainty": null
+      }
+    },
+    {
+      "role": {
+        "value": "institution",
+        "citations": [
+          {
+            "segment_id": "B011:L0001:339151b595131ad2:339151b595131ad2",
+            "quote": "当事人: 山东汇联保险经纪有限公司"
+          }
+        ],
+        "claim_type": "fact",
+        "uncertainty": null
+      },
+      "unknowns": {
+        "value": [
+          "具体实施细节"
+        ],
+        "citations": [
+          {
+            "segment_id": "B011:L0005:339151b595131ad2:339151b595131ad2",
+            "quote": "与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告"
+          }
+        ],
+        "claim_type": "derived_summary",
+        "uncertainty": "原文仅载概括案由，具体实施细节未载。"
+      },
+      "action": {
+        "value": "未按规定建立业务档案",
+        "citations": [
+          {
+            "segment_id": "B011:L0005:339151b595131ad2:339151b595131ad2",
+            "quote": "与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告"
+          }
+        ],
+        "claim_type": "fact",
+        "uncertainty": null
+      },
+      "risk_tags": {
+        "value": [
+          "其他"
+        ],
+        "citations": [
+          {
+            "segment_id": "B011:L0005:339151b595131ad2:339151b595131ad2",
+            "quote": "与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告"
+          }
+        ],
+        "claim_type": "derived_summary",
+        "uncertainty": "字典无直接对应专类；业务往来不能推定委托无资质机构销售，档案违规不能推定客户信息不真实，公示公告违规不能推定隐瞒合同信息。"
+      },
+      "actor": {
+        "value": "山东汇联保险经纪有限公司",
+        "citations": [
+          {
+            "segment_id": "B011:L0001:339151b595131ad2:339151b595131ad2",
+            "quote": "当事人: 山东汇联保险经纪有限公司"
+          }
+        ],
+        "claim_type": "fact",
+        "uncertainty": null
+      }
+    },
+    {
+      "role": {
+        "value": "institution",
+        "citations": [
+          {
+            "segment_id": "B011:L0001:339151b595131ad2:339151b595131ad2",
+            "quote": "当事人: 山东汇联保险经纪有限公司"
+          }
+        ],
+        "claim_type": "fact",
+        "uncertainty": null
+      },
+      "unknowns": {
+        "value": [
+          "具体实施细节"
+        ],
+        "citations": [
+          {
+            "segment_id": "B011:L0005:339151b595131ad2:339151b595131ad2",
+            "quote": "与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告"
+          }
+        ],
+        "claim_type": "derived_summary",
+        "uncertainty": "原文仅载概括案由，具体实施细节未载。"
+      },
+      "action": {
+        "value": "未按规定进行公示、公告",
+        "citations": [
+          {
+            "segment_id": "B011:L0005:339151b595131ad2:339151b595131ad2",
+            "quote": "与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告"
+          }
+        ],
+        "claim_type": "fact",
+        "uncertainty": null
+      },
+      "risk_tags": {
+        "value": [
+          "其他"
+        ],
+        "citations": [
+          {
+            "segment_id": "B011:L0005:339151b595131ad2:339151b595131ad2",
+            "quote": "与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告"
+          }
+        ],
+        "claim_type": "derived_summary",
+        "uncertainty": "字典无直接对应专类；业务往来不能推定委托无资质机构销售，档案违规不能推定客户信息不真实，公示公告违规不能推定隐瞒合同信息。"
+      },
+      "actor": {
+        "value": "山东汇联保险经纪有限公司",
+        "citations": [
+          {
+            "segment_id": "B011:L0001:339151b595131ad2:339151b595131ad2",
+            "quote": "当事人: 山东汇联保险经纪有限公司"
+          }
+        ],
+        "claim_type": "fact",
+        "uncertainty": null
+      }
+    }
+  ],
+  "reason": "完整原文支持独立机构处罚及三项行为；主体和完整文号分别检索冻结旧库均零命中，未发现重复证据，但零命中不证明绝对不存在。仅提出新增影子提案，缺失法律依据和职务保留未知。",
+  "source_coverage": [
+    {
+      "disposition": "mapped",
+      "field_refs": [
+        "case/subject",
+        "case/position",
+        "behaviors/0/actor",
+        "behaviors/0/role",
+        "behaviors/1/actor",
+        "behaviors/1/role",
+        "behaviors/2/actor",
+        "behaviors/2/role"
+      ],
+      "reason": "对应案件事实及字段证据。",
+      "segment_id": "B011:L0001:339151b595131ad2:339151b595131ad2"
+    },
+    {
+      "disposition": "not_material",
+      "field_refs": null,
+      "reason": "栏目标题或来源公示标题，无新增独立案件事实。",
+      "segment_id": "B011:L0002:339151b595131ad2:339151b595131ad2"
+    },
+    {
+      "disposition": "mapped",
+      "field_refs": "case/document_number",
+      "reason": "对应案件事实及字段证据。",
+      "segment_id": "B011:L0003:339151b595131ad2:339151b595131ad2"
+    },
+    {
+      "disposition": "not_material",
+      "field_refs": null,
+      "reason": "栏目标题或来源公示标题，无新增独立案件事实。",
+      "segment_id": "B011:L0004:339151b595131ad2:339151b595131ad2"
+    },
+    {
+      "disposition": "mapped",
+      "field_refs": [
+        "case/legal_basis",
+        "case/unknowns",
+        "behaviors/0/action",
+        "behaviors/0/risk_tags",
+        "behaviors/0/unknowns",
+        "behaviors/1/action",
+        "behaviors/1/risk_tags",
+        "behaviors/1/unknowns",
+        "behaviors/2/action",
+        "behaviors/2/risk_tags",
+        "behaviors/2/unknowns"
+      ],
+      "reason": "对应案件事实及字段证据。",
+      "segment_id": "B011:L0005:339151b595131ad2:339151b595131ad2"
+    },
+    {
+      "disposition": "not_material",
+      "field_refs": null,
+      "reason": "栏目标题或来源公示标题，无新增独立案件事实。",
+      "segment_id": "B011:L0006:339151b595131ad2:339151b595131ad2"
+    },
+    {
+      "disposition": "mapped",
+      "field_refs": "case/penalties",
+      "reason": "对应案件事实及字段证据。",
+      "segment_id": "B011:L0007:339151b595131ad2:339151b595131ad2"
+    },
+    {
+      "disposition": "not_material",
+      "field_refs": null,
+      "reason": "栏目标题或来源公示标题，无新增独立案件事实。",
+      "segment_id": "B011:L0008:339151b595131ad2:339151b595131ad2"
+    },
+    {
+      "disposition": "mapped",
+      "field_refs": "case/authority",
+      "reason": "对应案件事实及字段证据。",
+      "segment_id": "B011:L0009:339151b595131ad2:339151b595131ad2"
+    },
+    {
+      "disposition": "not_material",
+      "field_refs": null,
+      "reason": "栏目标题或来源公示标题，无新增独立案件事实。",
+      "segment_id": "B011:L0010:339151b595131ad2:339151b595131ad2"
+    },
+    {
+      "disposition": "mapped",
+      "field_refs": "case/decision_date",
+      "reason": "对应案件事实及字段证据。",
+      "segment_id": "B011:L0011:339151b595131ad2:339151b595131ad2"
+    },
+    {
+      "disposition": "not_material",
+      "field_refs": null,
+      "reason": "栏目标题或来源公示标题，无新增独立案件事实。",
+      "segment_id": "B011:L0012:339151b595131ad2:339151b595131ad2"
+    },
+    {
+      "disposition": "not_material",
+      "field_refs": null,
+      "reason": "栏目标题或来源公示标题，无新增独立案件事实。",
+      "segment_id": "B011:L0013:339151b595131ad2:339151b595131ad2"
+    }
+  ]
+}

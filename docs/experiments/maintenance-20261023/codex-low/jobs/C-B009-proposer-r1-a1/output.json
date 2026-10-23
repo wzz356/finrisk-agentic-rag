@@ -1,0 +1,258 @@
+{
+  "source_coverage": [
+    {
+      "field_refs": [
+        "case/subject",
+        "case/position",
+        "behaviors/0/actor",
+        "behaviors/0/role"
+      ],
+      "disposition": "mapped",
+      "reason": "原文事实及缺失信息映射",
+      "segment_id": "B009:L0001:273e209021fbd316:273e209021fbd316"
+    },
+    {
+      "field_refs": [],
+      "disposition": "not_material",
+      "reason": "字段标题或来源说明，无独立业务事实",
+      "segment_id": "B009:L0002:273e209021fbd316:273e209021fbd316"
+    },
+    {
+      "field_refs": [
+        "case/document_number"
+      ],
+      "disposition": "mapped",
+      "reason": "原文事实及缺失信息映射",
+      "segment_id": "B009:L0003:273e209021fbd316:273e209021fbd316"
+    },
+    {
+      "field_refs": [],
+      "disposition": "not_material",
+      "reason": "字段标题或来源说明，无独立业务事实",
+      "segment_id": "B009:L0004:273e209021fbd316:273e209021fbd316"
+    },
+    {
+      "field_refs": [
+        "case/legal_basis",
+        "case/unknowns",
+        "behaviors/0/action",
+        "behaviors/0/risk_tags",
+        "behaviors/0/unknowns"
+      ],
+      "disposition": "mapped",
+      "reason": "原文事实及缺失信息映射",
+      "segment_id": "B009:L0005:273e209021fbd316:273e209021fbd316"
+    },
+    {
+      "field_refs": [],
+      "disposition": "not_material",
+      "reason": "字段标题或来源说明，无独立业务事实",
+      "segment_id": "B009:L0006:273e209021fbd316:273e209021fbd316"
+    },
+    {
+      "field_refs": [
+        "case/penalties"
+      ],
+      "disposition": "mapped",
+      "reason": "原文事实及缺失信息映射",
+      "segment_id": "B009:L0007:273e209021fbd316:273e209021fbd316"
+    },
+    {
+      "field_refs": [],
+      "disposition": "not_material",
+      "reason": "字段标题或来源说明，无独立业务事实",
+      "segment_id": "B009:L0008:273e209021fbd316:273e209021fbd316"
+    },
+    {
+      "field_refs": [
+        "case/authority"
+      ],
+      "disposition": "mapped",
+      "reason": "原文事实及缺失信息映射",
+      "segment_id": "B009:L0009:273e209021fbd316:273e209021fbd316"
+    },
+    {
+      "field_refs": [],
+      "disposition": "not_material",
+      "reason": "字段标题或来源说明，无独立业务事实",
+      "segment_id": "B009:L0010:273e209021fbd316:273e209021fbd316"
+    },
+    {
+      "field_refs": [
+        "case/decision_date"
+      ],
+      "disposition": "mapped",
+      "reason": "原文事实及缺失信息映射",
+      "segment_id": "B009:L0011:273e209021fbd316:273e209021fbd316"
+    },
+    {
+      "field_refs": [],
+      "disposition": "not_material",
+      "reason": "字段标题或来源说明，无独立业务事实",
+      "segment_id": "B009:L0012:273e209021fbd316:273e209021fbd316"
+    },
+    {
+      "field_refs": [],
+      "disposition": "not_material",
+      "reason": "字段标题或来源说明，无独立业务事实",
+      "segment_id": "B009:L0013:273e209021fbd316:273e209021fbd316"
+    }
+  ],
+  "reason": "完整原文载明独立机构处罚事实；按完整文号及主体检索均未命中，检索局限不证明旧库绝无此案。提出新增影子提案，保留未披露细节和法律依据，不推定具体违规手段。",
+  "behaviors": [
+    {
+      "unknowns": {
+        "value": [
+          "具体不真实数据",
+          "实施方式"
+        ],
+        "uncertainty": "原文仅载案由，具体事实未披露",
+        "claim_type": "derived_summary",
+        "citations": [
+          {
+            "segment_id": "B009:L0005:273e209021fbd316:273e209021fbd316",
+            "quote": "财务业务数据不真实"
+          }
+        ]
+      },
+      "risk_tags": {
+        "value": [],
+        "uncertainty": "未说明虚列费用套取资金或客户信息虚假等具体条件，不作推定",
+        "claim_type": "derived_summary",
+        "citations": [
+          {
+            "segment_id": "B009:L0005:273e209021fbd316:273e209021fbd316",
+            "quote": "财务业务数据不真实"
+          }
+        ]
+      },
+      "action": {
+        "value": "财务业务数据不真实",
+        "uncertainty": null,
+        "claim_type": "fact",
+        "citations": [
+          {
+            "segment_id": "B009:L0005:273e209021fbd316:273e209021fbd316",
+            "quote": "财务业务数据不真实"
+          }
+        ]
+      },
+      "role": {
+        "value": "institution",
+        "uncertainty": null,
+        "claim_type": "fact",
+        "citations": [
+          {
+            "segment_id": "B009:L0001:273e209021fbd316:273e209021fbd316",
+            "quote": "当事人: 太平人寿保险有限公司葫芦岛中心支公司"
+          }
+        ]
+      },
+      "actor": {
+        "value": "太平人寿保险有限公司葫芦岛中心支公司",
+        "uncertainty": null,
+        "claim_type": "fact",
+        "citations": [
+          {
+            "segment_id": "B009:L0001:273e209021fbd316:273e209021fbd316",
+            "quote": "当事人: 太平人寿保险有限公司葫芦岛中心支公司"
+          }
+        ]
+      }
+    }
+  ],
+  "action": "add",
+  "case": {
+    "document_number": {
+      "value": "葫金监罚决〔2026〕3号",
+      "uncertainty": null,
+      "claim_type": "fact",
+      "citations": [
+        {
+          "segment_id": "B009:L0003:273e209021fbd316:273e209021fbd316",
+          "quote": "葫金监罚决〔2026〕3号"
+        }
+      ]
+    },
+    "position": {
+      "value": null,
+      "uncertainty": "原文未载明任职职务",
+      "claim_type": "fact",
+      "citations": [
+        {
+          "segment_id": "B009:L0001:273e209021fbd316:273e209021fbd316",
+          "quote": "当事人: 太平人寿保险有限公司葫芦岛中心支公司"
+        }
+      ]
+    },
+    "penalties": {
+      "value": "责令改正，处罚款十二万元",
+      "uncertainty": null,
+      "claim_type": "fact",
+      "citations": [
+        {
+          "segment_id": "B009:L0007:273e209021fbd316:273e209021fbd316",
+          "quote": "责令改正，处罚款十二万元"
+        }
+      ]
+    },
+    "authority": {
+      "value": "葫芦岛金融监管分局",
+      "uncertainty": null,
+      "claim_type": "fact",
+      "citations": [
+        {
+          "segment_id": "B009:L0009:273e209021fbd316:273e209021fbd316",
+          "quote": "葫芦岛金融监管分局"
+        }
+      ]
+    },
+    "decision_date": {
+      "value": "2026年7月6日",
+      "uncertainty": null,
+      "claim_type": "fact",
+      "citations": [
+        {
+          "segment_id": "B009:L0011:273e209021fbd316:273e209021fbd316",
+          "quote": "2026年7月6日"
+        }
+      ]
+    },
+    "legal_basis": {
+      "value": null,
+      "uncertainty": "原文未载明法律条款",
+      "claim_type": "fact",
+      "citations": [
+        {
+          "segment_id": "B009:L0005:273e209021fbd316:273e209021fbd316",
+          "quote": "财务业务数据不真实"
+        }
+      ]
+    },
+    "subject": {
+      "value": "太平人寿保险有限公司葫芦岛中心支公司",
+      "uncertainty": null,
+      "claim_type": "fact",
+      "citations": [
+        {
+          "segment_id": "B009:L0001:273e209021fbd316:273e209021fbd316",
+          "quote": "当事人: 太平人寿保险有限公司葫芦岛中心支公司"
+        }
+      ]
+    },
+    "unknowns": {
+      "value": [
+        "position",
+        "legal_basis"
+      ],
+      "uncertainty": "原文缺少职务和法律依据",
+      "claim_type": "derived_summary",
+      "citations": [
+        {
+          "segment_id": "B009:L0005:273e209021fbd316:273e209021fbd316",
+          "quote": "财务业务数据不真实"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,3471 @@
+{
+  "schema": "codex-identity-association-audit/1",
+  "reviewer": "Codex assistant",
+  "is_human_gold": false,
+  "created_at_utc": "2026-10-23T11:31:12.112183+00:00",
+  "scope": [
+    "B004",
+    "B090",
+    "B093",
+    "B098",
+    "B100"
+  ],
+  "method": "Read all exact-substring candidate IDs in immutable SQLite fields, verify count equals FrozenLookup.search, then read each complete body using FrozenLookup.read <=2000 codepoints. NFKC+remove-whitespace only. Full document number prefixes are retained.",
+  "api_calls": 0,
+  "production_modified": false,
+  "model_results_modified": false,
+  "rows": [
+    {
+      "id": "B004",
+      "new_fields": {
+        "document_no": "金罚决字〔2023〕67号",
+        "party": "一、新华资产管理股份有限公司（以下简称新华资管）\r\n二、龙向欣（时任新华资管总裁助理、固定收益投资总监、固定收益部总经理）\r\n三、杨帆（时任新华资管副总裁）\r\n四、孙珊珊（时任新华资管固定收益部副总经理）\r\n五、陆迪（时任新华资管另类投资部总经理）\r\n六、苏力（时任新华资管金融产品投资部总经理）\r\n七、杨柳（时任新华资管固定收益部投资经理）",
+        "finding": "一、投资底层资产为商业住宅且非自主管理的集合资金信托计划\r\n二、投资底层资产为商业住宅的集合资金信托计划\r\n三、投资非受托人自主管理且基础资产不符合条件的集合资金信托计划\r\n四、违规向地方政府提供融资\r\n五、投资信用增级安排不符合规定的集合资金信托计划\r\n六、集合资金信托计划投后管理不到位\r\n七、向不动产项目提供无担保债权融资\r\n八、组合类资管产品未按合同约定开展收益分配\r\n九、集合资金信托计划同业投资接受第三方金融机构担保且非自主管理",
+        "legal_basis": "《中华人民共和国保险法》第一百零六条、第一百六十四条、第一百七十一条及《保险资金运用管理办法》第二十九条等规定",
+        "penalty": "一、对新华资管罚款410万元\r\n二、对龙向欣警告并处罚款10万元\r\n三、对杨帆警告并处罚款7万元\r\n四、对孙珊珊警告并处罚款7万元\r\n五、对陆迪警告并处罚款7万元\r\n六、对苏力警告并处罚款5万元\r\n七、对杨柳警告并处罚款5万元",
+        "regulator": "国家金融监督管理总局",
+        "decision_date": "2023年12月28日"
+      },
+      "new_raw_sha256": "3b01ea79644b73950d1e61bf7b37296ce5d4d08e5a4fe0bd44af42849c430404",
+      "new_full_text": "行政处罚决定书文号\r\n金罚决字〔2023〕67号\r\n被处罚当事人\r\n一、新华资产管理股份有限公司（以下简称新华资管）\r\n二、龙向欣（时任新华资管总裁助理、固定收益投资总监、固定收益部总经理）\r\n三、杨帆（时任新华资管副总裁）\r\n四、孙珊珊（时任新华资管固定收益部副总经理）\r\n五、陆迪（时任新华资管另类投资部总经理）\r\n六、苏力（时任新华资管金融产品投资部总经理）\r\n七、杨柳（时任新华资管固定收益部投资经理）\r\n主要违法违规事实\r\n一、投资底层资产为商业住宅且非自主管理的集合资金信托计划\r\n二、投资底层资产为商业住宅的集合资金信托计划\r\n三、投资非受托人自主管理且基础资产不符合条件的集合资金信托计划\r\n四、违规向地方政府提供融资\r\n五、投资信用增级安排不符合规定的集合资金信托计划\r\n六、集合资金信托计划投后管理不到位\r\n七、向不动产项目提供无担保债权融资\r\n八、组合类资管产品未按合同约定开展收益分配\r\n九、集合资金信托计划同业投资接受第三方金融机构担保且非自主管理\r\n行政处罚依据\r\n《中华人民共和国保险法》第一百零六条、第一百六十四条、第一百七十一条及《保险资金运用管理办法》第二十九条等规定\r\n行政处罚决定\r\n一、对新华资管罚款410万元\r\n二、对龙向欣警告并处罚款10万元\r\n三、对杨帆警告并处罚款7万元\r\n四、对孙珊珊警告并处罚款7万元\r\n五、对陆迪警告并处罚款7万元\r\n六、对苏力警告并处罚款5万元\r\n七、对杨柳警告并处罚款5万元\r\n作出处罚决定的\r\n机关名称\r\n国家金融监督管理总局\r\n作出处罚决定的日期\r\n2023年12月28日",
+      "new_source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1144099&itemId=4113&generaltype=9",
+      "exact_substring_total": 4,
+      "all_candidate_pages_covered": true,
+      "model_snapshot": {
+        "id": "B004",
+        "text": "行政处罚决定书文号\r\n金罚决字〔2023〕67号\r\n被处罚当事人\r\n一、新华资产管理股份有限公司（以下简称新华资管）\r\n二、龙向欣（时任新华资管总裁助理、固定收益投资总监、固定收益部总经理）\r\n三、杨帆（时任新华资管副总裁）\r\n四、孙珊珊（时任新华资管固定收益部副总经理）\r\n五、陆迪（时任新华资管另类投资部总经理）\r\n六、苏力（时任新华资管金融产品投资部总经理）\r\n七、杨柳（时任新华资管固定收益部投资经理）\r\n主要违法违规事实\r\n一、投资底层资产为商业住宅且非自主管理的集合资金信托计划\r\n二、投资底层资产为商业住宅的集合资金信托计划\r\n三、投资非受托人自主管理且基础资产不符合条件的集合资金信托计划\r\n四、违规向地方政府提供融资\r\n五、投资信用增级安排不符合规定的集合资金信托计划\r\n六、集合资金信托计划投后管理不到位\r\n七、向不动产项目提供无担保债权融资\r\n八、组合类资管产品未按合同约定开展收益分配\r\n九、集合资金信托计划同业投资接受第三方金融机构担保且非自主管理\r\n行政处罚依据\r\n《中华人民共和国保险法》第一百零六条、第一百六十四条、第一百七十一条及《保险资金运用管理办法》第二十九条等规定\r\n行政处罚决定\r\n一、对新华资管罚款410万元\r\n二、对龙向欣警告并处罚款10万元\r\n三、对杨帆警告并处罚款7万元\r\n四、对孙珊珊警告并处罚款7万元\r\n五、对陆迪警告并处罚款7万元\r\n六、对苏力警告并处罚款5万元\r\n七、对杨柳警告并处罚款5万元\r\n作出处罚决定的\r\n机关名称\r\n国家金融监督管理总局\r\n作出处罚决定的日期\r\n2023年12月28日",
+        "stratum": "bank_insurance_boundary",
+        "status": "format_repair_exhausted",
+        "error": {
+          "code": "COVERAGE_CITATION",
+          "field": "case/penalties",
+          "message": "COVERAGE_CITATION: case/penalties"
+        },
+        "proposals": [
+          {
+            "attempt": 1,
+            "revision": 1,
+            "output": {
+              "action": "add",
+              "reason": "完整读取处罚决定书后，确认该文书为新华资管因多项保险资金运用违规被国家金融监督管理总局处罚，文号、日期、主体、法律依据和处罚均明确；检索未命中旧库记录，且零命中不证明旧库不存在，但本次证据足以新增。",
+              "case": {
+                "subject": "新华资产管理股份有限公司",
+                "document_number": "金罚决字〔2023〕67号",
+                "decision_date": "2023年12月28日",
+                "authority": "国家金融监督管理总局",
+                "position": null,
+                "legal_basis": "《中华人民共和国保险法》第一百零六条、第一百六十四条、第一百七十一条及《保险资金运用管理办法》第二十九条等规定",
+                "penalties": "对新华资管罚款410万元；对龙向欣警告并处罚款10万元；对杨帆警告并处罚款7万元；对孙珊珊警告并处罚款7万元；对陆迪警告并处罚款7万元；对苏力警告并处罚款5万元；对杨柳警告并处罚款5万元",
+                "unknowns": [
+                  "position"
+                ]
+              },
+              "behaviors": [
+                {
+                  "actor": "新华资产管理股份有限公司",
+                  "role": "institution",
+                  "action": "投资底层资产为商业住宅且非自主管理的集合资金信托计划",
+                  "risk_tags": [
+                    "其他"
+                  ],
+                  "unknowns": []
+                },
+                {
+                  "actor": "新华资产管理股份有限公司",
+                  "role": "institution",
+                  "action": "投资底层资产为商业住宅的集合资金信托计划",
+                  "risk_tags": [
+                    "其他"
+                  ],
+                  "unknowns": []
+                },
+                {
+                  "actor": "新华资产管理股份有限公司",
+                  "role": "institution",
+                  "action": "投资非受托人自主管理且基础资产不符合条件的集合资金信托计划",
+                  "risk_tags": [
+                    "其他"
+                  ],
+                  "unknowns": []
+                },
+                {
+                  "actor": "新华资产管理股份有限公司",
+                  "role": "institution",
+                  "action": "违规向地方政府提供融资",
+                  "risk_tags": [
+                    "其他"
+                  ],
+                  "unknowns": []
+                },
+                {
+                  "actor": "新华资产管理股份有限公司",
+                  "role": "institution",
+                  "action": "投资信用增级安排不符合规定的集合资金信托计划",
+                  "risk_tags": [
+                    "其他"
+                  ],
+                  "unknowns": []
+                },
+                {
+                  "actor": "新华资产管理股份有限公司",
+                  "role": "institution",
+                  "action": "集合资金信托计划投后管理不到位",
+                  "risk_tags": [
+                    "其他"
+                  ],
+                  "unknowns": []
+                },
+                {
+                  "actor": "新华资产管理股份有限公司",
+                  "role": "institution",
+                  "action": "向不动产项目提供无担保债权融资",
+                  "risk_tags": [
+                    "其他"
+                  ],
+                  "unknowns": []
+                },
+                {
+                  "actor": "新华资产管理股份有限公司",
+                  "role": "institution",
+                  "action": "组合类资管产品未按合同约定开展收益分配",
+                  "risk_tags": [
+                    "其他"
+                  ],
+                  "unknowns": []
+                },
+                {
+                  "actor": "新华资产管理股份有限公司",
+                  "role": "institution",
+                  "action": "集合资金信托计划同业投资接受第三方金融机构担保且非自主管理",
+                  "risk_tags": [
+                    "其他"
+                  ],
+                  "unknowns": []
+                }
+              ]
+            }
+          },
+          {
+            "attempt": 2,
+            "revision": 1,
+            "output": {
+              "action": "add",
+              "reason": "完整读取处罚决定书后，确认该文书为新华资管因多项保险资金运用违规被国家金融监督管理总局处罚，文号、日期、主体、法律依据和处罚均明确；检索未命中旧库记录，且零命中不证明旧库不存在，但本次证据足以新增。",
+              "case": {
+                "subject": "新华资产管理股份有限公司",
+                "document_number": "金罚决字〔2023〕67号",
+                "decision_date": "2023年12月28日",
+                "authority": "国家金融监督管理总局",
+                "position": null,
+                "legal_basis": "《中华人民共和国保险法》第一百零六条、第一百六十四条、第一百七十一条及《保险资金运用管理办法》第二十九条等规定",
+                "penalties": "对新华资管罚款410万元；对龙向欣警告并处罚款10万元；对杨帆警告并处罚款7万元；对孙珊珊警告并处罚款7万元；对陆迪警告并处罚款7万元；对苏力警告并处罚款5万元；对杨柳警告并处罚款5万元",
+                "unknowns": [
+                  "position"
+                ]
+              },
+              "behaviors": [
+                {
+                  "actor": "新华资产管理股份有限公司",
+                  "role": "institution",
+                  "action": "投资底层资产为商业住宅且非自主管理的集合资金信托计划",
+                  "risk_tags": [
+                    "其他"
+                  ],
+                  "unknowns": []
+                },
+                {
+                  "actor": "新华资产管理股份有限公司",
+                  "role": "institution",
+                  "action": "投资底层资产为商业住宅的集合资金信托计划",
+                  "risk_tags": [
+                    "其他"
+                  ],
+                  "unknowns": []
+                },
+                {
+                  "actor": "新华资产管理股份有限公司",
+                  "role": "institution",
+                  "action": "投资非受托人自主管理且基础资产不符合条件的集合资金信托计划",
+                  "risk_tags": [
+                    "其他"
+                  ],
+                  "unknowns": []
+                },
+                {
+                  "actor": "新华资产管理股份有限公司",
+                  "role": "institution",
+                  "action": "违规向地方政府提供融资",
+                  "risk_tags": [
+                    "其他"
+                  ],
+                  "unknowns": []
+                },
+                {
+                  "actor": "新华资产管理股份有限公司",
+                  "role": "institution",
+                  "action": "投资信用增级安排不符合规定的集合资金信托计划",
+                  "risk_tags": [
+                    "其他"
+                  ],
+                  "unknowns": []
+                },
+                {
+                  "actor": "新华资产管理股份有限公司",
+                  "role": "institution",
+                  "action": "集合资金信托计划投后管理不到位",
+                  "risk_tags": [
+                    "其他"
+                  ],
+                  "unknowns": []
+                },
+                {
+                  "actor": "新华资产管理股份有限公司",
+                  "role": "institution",
+                  "action": "向不动产项目提供无担保债权融资",
+                  "risk_tags": [
+                    "其他"
+                  ],
+                  "unknowns": []
+                },
+                {
+                  "actor": "新华资产管理股份有限公司",
+                  "role": "institution",
+                  "action": "组合类资管产品未按合同约定开展收益分配",
+                  "risk_tags": [
+                    "其他"
+                  ],
+                  "unknowns": []
+                },
+                {
+                  "actor": "新华资产管理股份有限公司",
+                  "role": "institution",
+                  "action": "集合资金信托计划同业投资接受第三方金融机构担保且非自主管理",
+                  "risk_tags": [
+                    "其他"
+                  ],
+                  "unknowns": []
+                }
+              ]
+            }
+          }
+        ],
+        "reviews": []
+      },
+      "candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F007418-06e6627b2a4be5d096f1ed08",
+          "text_sha256": "690b408f1e12ddb2d9aadd895194b469511ade6ac195963ecda3d20759a68351",
+          "full_text": "国家金融监督管理总局吉林监管局行政处罚信息公开表\n(吉金罚决字〔2023〕67号)\n行政处罚决定书文号\n吉金罚决字〔2023〕67号\n被处罚当事人\n安华农业保险股份有限公司\n吉林省分公司\n主要违法违规事实\n未按照规定使用经备案的保险费率\n行政处罚依据\n《中华人民共和国保险法》第一百三\n十五条、第一百七十条\n行政处罚决定\n罚款35万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局吉林监管局\n作出处罚决定的日期\n2023年12月29日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 229,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "吉金罚决字〔2023〕67号",
+            "subject": "安华农业保险股份有限公司吉林省分公司",
+            "facts": "未按照规定使用经备案的保险费率",
+            "authority": "国家金融监督管理总局吉林监管局",
+            "date": "2023年12月29日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(吉",
+            "书文号吉"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 1,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007494-13066c177eaca0bea7ec6062",
+          "text_sha256": "89a7d60f631973c9224b4b1442e094d8e2d94c86039f90c1ea1bf221f77e3f87",
+          "full_text": "国家金融监督管理总局宁波监管局行政处罚信息公开表(甬金罚决字〔2023〕67号)\n行政处罚决定书文号\n甬金罚决字〔2023〕67号\n被处罚当事人\n竺红海(时任金联安保险经纪(北京)有限\n公司宁波分公司主要负责人、业务人员)\n主要违法违规事实\n对所在机构财务业务数据不真实、未按\n规定使用银行账户、未按规定建立和管\n理业务档案、未按规定制作并保管客户\n告知书、未按规定进行执业登记和管理\n的违法违规行为负有直接管理责任\n行政处罚依据\n《保险经纪人监管规定》第八十八条、\n第九十五条、第一百条、第一百零一条\n行政处罚决定\n警告,并处罚款人民币两万元,撤销任职资\n格\n作出处罚决定的\n机关名称\n国家金融监督管理总局宁波监管局\n作出处罚决定的日期\n2023年12月27日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 342,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "甬金罚决字〔2023〕67号",
+            "subject": "竺红海(时任金联安保险经纪(北京)有限公司宁波分公司主要负责人、业务人员)",
+            "facts": "对所在机构财务业务数据不真实、未按规定使用银行账户、未按规定建立和管理业务档案、未按规定制作并保管客户告知书、未按规定进行执业登记和管理的违法违规行为负有直接管理责任",
+            "authority": "国家金融监督管理总局宁波监管局",
+            "date": "2023年12月27日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(甬",
+            "书文号甬"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 2,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007730-36fce0c11e1546caf9a9a1b5",
+          "text_sha256": "5f8f36b5eb043c77c09d751bba9c73c1f0d1fd7fae7510a018abf850523e7c2d",
+          "full_text": "国家金融监督管理总局上海监管局行政处罚信息公开表\n(沪金罚决字〔2023〕67号)\n行政处罚决定书文号\n沪金罚决字〔2023〕67号\n被处罚当事人\n交银人寿保险有限公司\n主要违法违规事实\n1.未按规定报送报表资料；2.编制提供虚\n假的报表资料；3.未按规定使用经批准或\n备案的保险费率。\n行政处罚依据\n《中华人民共和国保险法》第一百六十九\n条第（一）项、《中华人民共和国保险\n法》第一百七十条第（一）项、第（三）\n项\n行政处罚决定\n罚款合计70万元\n作出处罚决定的机关名称\n国家金融监督管理总局上海监管局\n作出处罚决定的日期\n2023年12月26日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 285,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "沪金罚决字〔2023〕67号",
+            "subject": "交银人寿保险有限公司",
+            "facts": "1.未按规定报送报表资料;2.编制提供虚假的报表资料;3.未按规定使用经批准或备案的保险费率。",
+            "authority": "国家金融监督管理总局上海监管局",
+            "date": "2023年12月26日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(沪",
+            "书文号沪"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 3,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007833-6b0a79e48eba938d19aa6f65",
+          "text_sha256": "ae4be98244634d1a9aa94f86e7b54ff64178c294e24599e46dbf6de0d255b7ba",
+          "full_text": "国家金融监督管理总局陕西监管局行政处罚信息公开表 陕金罚决字〔2023〕67号\n行政处罚决定书文号\n陕金罚决字〔2023〕67号\n被处罚当事人\n一、阳光财产保险股份有限公司咸阳中\n心支公司\n二、董长伟(时任阳光财产保险股份有限\n公司咸阳中心支公司总经理)\n主要违法违规事实\n给予投保人、被保险人、受益人保险合\n同约定以外的保险费回扣或者其他利益\n行政处罚依据\n《中华人民共和国保险法》第一百一十\n六条、第一百六十一条、第一百七十一\n条。\n行政处罚决定\n对阳光财险咸阳中心支公司处以16万元\n罚款;对董长伟给予警告,并处4万元罚\n款。\n作出处罚决定的机关\n名称\n国家金融监督管理总局陕西监管局\n作出处罚决定的日期\n2023年12月25日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 328,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "陕金罚决字〔2023〕67号",
+            "subject": "一、阳光财产保险股份有限公司咸阳中心支公司二、董长伟(时任阳光财产保险股份有限公司咸阳中心支公司总经理)",
+            "facts": "给予投保人、被保险人、受益人保险合同约定以外的保险费回扣或者其他利益",
+            "authority": "国家金融监督管理总局陕西监管局",
+            "date": "2023年12月25日"
+          },
+          "query_occurrence_prefix_context": [
+            "公开表陕",
+            "书文号陕"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 4,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        }
+      ],
+      "same_decision_source_ids": [],
+      "same_decision_count": 0,
+      "false_association_count": 4,
+      "assessment": "no_same_decision_established_within_these_candidates",
+      "correction_or_obsolescence_supported": false,
+      "model_comparison": "B004提议add但因COVERAGE_CITATION被阻断；四个候选均不同地区完整文号，不能以候选计数认定重复。",
+      "reference_treatment": "这组候选不能支持同案或更正，也不能证明全旧库不存在；不得把子串命中变为冲突hold。",
+      "final_outcome_update": {
+        "status": "format_repair_exhausted",
+        "error": {
+          "code": "COVERAGE_CITATION",
+          "field": "case/penalties",
+          "message": "COVERAGE_CITATION: case/penalties"
+        },
+        "proposal_actions": [
+          {
+            "attempt": 1,
+            "revision": 1,
+            "action": "add",
+            "reason": "完整读取处罚决定书后，确认该文书为新华资管因多项保险资金运用违规被国家金融监督管理总局处罚，文号、日期、主体、法律依据和处罚均明确；检索未命中旧库记录，且零命中不证明旧库不存在，但本次证据足以新增。"
+          },
+          {
+            "attempt": 2,
+            "revision": 1,
+            "action": "add",
+            "reason": "完整读取处罚决定书后，确认该文书为新华资管因多项保险资金运用违规被国家金融监督管理总局处罚，文号、日期、主体、法律依据和处罚均明确；检索未命中旧库记录，且零命中不证明旧库不存在，但本次证据足以新增。"
+          }
+        ],
+        "reviewer_decisions": [],
+        "duplicate_add_proposed": false,
+        "reviewer_final_approval": false,
+        "present_as_addition_in_shadow_views": {
+          "P": false,
+          "PR": false
+        },
+        "conclusion": "add未最终批准，候选集无证实同案。"
+      }
+    },
+    {
+      "id": "B090",
+      "new_fields": {
+        "document_no": "金罚决字〔2024〕5号",
+        "party": "中国人民财产保险股份有限公司及其责任人员",
+        "finding": "将直接业务虚挂中介业务套取手续费；少计提资产减值准备；招投标管理不规范；支农融资业务捆绑销售保险产品；相关报告、报表、文件和资料不真实；跨年度列支手续费等。",
+        "legal_basis": "《中华人民共和国保险法》第八十六条、第一百一十六条、第一百三十五条、第一百六十一条、第一百七十条、第一百七十一条等",
+        "penalty": "对中国人民财产保险股份有限公司罚款合计681万元。其中，总公司221万元，分支机构460万元。\r\n对蒋新伟警告并处罚款10万元\r\n对原宇玲警告并处罚款10万元\r\n对王学刚警告并处罚款20万元\r\n对倪宏警告并处罚款10万元\r\n对何祖望警告并处罚款1万元\r\n对周志文警告并处罚款10万元\r\n对纪翔警告并处罚款10万元\r\n对刘团聚警告并处罚款10万元\r\n对蒋士亮警告并处罚款20万元\r\n对李旭警告并处罚款10万元\r\n对潘振雄警告并处罚款20万元\r\n对洪祖强警告并处罚款10万元\r\n对杨卫警告并处罚款10万元\r\n对崔晓博警告并处罚款10万元\r\n对钱磊警告并处罚款10万元\r\n对姜掌厚警告并处罚款10万元\r\n对郭钢警告并处罚款20万元\r\n对梁晓旭警告并处罚款10万元\r\n对王彦波警告并处罚款10万元\r\n对武运宝警告并处罚款20万元\r\n对李彦君警告并处罚款20万元\r\n对沈宁警告并处罚款20万元\r\n对余饶林警告并处罚款10万元\r\n对程向民警告并处罚款10万元\r\n对周健警告并处罚款10万元",
+        "regulator": "国家金融监督管理总局",
+        "decision_date": "2024年5月14日"
+      },
+      "new_raw_sha256": "8fce5a5696d103b41bb07db1c288ce3a28b2739b35c1ae04ddbc24a733f0acbf",
+      "new_full_text": "行政处罚决定书文号\r\n金罚决字〔2024〕5号\r\n被处罚当事人\r\n中国人民财产保险股份有限公司及其责任人员\r\n主要违法违规事实\r\n将直接业务虚挂中介业务套取手续费；少计提资产减值准备；招投标管理不规范；支农融资业务捆绑销售保险产品；相关报告、报表、文件和资料不真实；跨年度列支手续费等。\r\n行政处罚依据\r\n《中华人民共和国保险法》第八十六条、第一百一十六条、第一百三十五条、第一百六十一条、第一百七十条、第一百七十一条等\r\n行政处罚决定\r\n对中国人民财产保险股份有限公司罚款合计681万元。其中，总公司221万元，分支机构460万元。\r\n对蒋新伟警告并处罚款10万元\r\n对原宇玲警告并处罚款10万元\r\n对王学刚警告并处罚款20万元\r\n对倪宏警告并处罚款10万元\r\n对何祖望警告并处罚款1万元\r\n对周志文警告并处罚款10万元\r\n对纪翔警告并处罚款10万元\r\n对刘团聚警告并处罚款10万元\r\n对蒋士亮警告并处罚款20万元\r\n对李旭警告并处罚款10万元\r\n对潘振雄警告并处罚款20万元\r\n对洪祖强警告并处罚款10万元\r\n对杨卫警告并处罚款10万元\r\n对崔晓博警告并处罚款10万元\r\n对钱磊警告并处罚款10万元\r\n对姜掌厚警告并处罚款10万元\r\n对郭钢警告并处罚款20万元\r\n对梁晓旭警告并处罚款10万元\r\n对王彦波警告并处罚款10万元\r\n对武运宝警告并处罚款20万元\r\n对李彦君警告并处罚款20万元\r\n对沈宁警告并处罚款20万元\r\n对余饶林警告并处罚款10万元\r\n对程向民警告并处罚款10万元\r\n对周健警告并处罚款10万元\r\n作出处罚决定的\r\n机关名称\r\n国家金融监督管理总局\r\n作出处罚决定的日期\r\n2024年5月14日",
+      "new_source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1162453&itemId=4113&generaltype=9",
+      "exact_substring_total": 50,
+      "all_candidate_pages_covered": true,
+      "model_snapshot": {
+        "id": "B090",
+        "status": "pending"
+      },
+      "candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F004942-83d89ba07a91f6848953ecf9",
+          "text_sha256": "f5d9823926ed58993c11899ea523f95c5f93315c299a777655d24ec560b50240",
+          "full_text": "国家金融监督管理总局中卫监管分局行政处罚信息公开表 (卫金罚决字〔2024〕5号)\n序\n号\n当事人名\n称\n行政处罚决定\n书文号\n主要违法违规行为\n行政处罚\n内容\n作出决定\n机关\n1\n中国人寿\n财产保险\n股份有限\n公司中宁\n支公司\n卫金罚决字\n〔2024〕5号\n给予被保险人保险\n合同约定以外利益\n罚款3.7万\n元\n国家金融\n监督管理\n总局中卫\n监管分局\n2\n张平(时\n任中国人\n寿财产保\n险股份有\n限公司中\n宁支公司\n经理)\n警告并罚\n款0.7万元\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 235,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "卫金罚决字〔2024〕5号",
+            "subject": "中国人寿财产保险股份有限公司中宁支公司；张平",
+            "facts": null,
+            "authority": "国家金融监督管理总局中卫监管分局",
+            "date": null
+          },
+          "query_occurrence_prefix_context": [
+            "开表(卫",
+            "支公司卫"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 1,
+          "manual_table_read_note": "列式原文完整读取后补录对象与完整文号；决定日期未单列则维持未知，不按抓取日期填补。",
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004943-b3417b69dc17776a3a7406cf",
+          "text_sha256": "05303c472f2dd0b983922920c60051895405bd337baf62d7b8eef29c262b0ba8",
+          "full_text": "国家金融监督管理总局吴忠监管分局行政处罚信息公开表(吴金罚决字〔2024〕5号、6号)\n序\n号\n当事人名称\n行政处罚决定\n书文号\n主要违法违规行为\n行政处罚内\n容\n作出决定机\n关\n1\n中国人民财产\n保险股份有限\n公司利通支公\n司\n吴金罚决字\n〔2024〕5号\n编制虚假资料\n罚款20.09万\n元\n国家金融监\n督管理总局\n吴忠监管分\n局\n2\n叶盛（时任中\n国人民财产保\n险股份有限公\n司利通支公司\n经理）\n警告并罚款4\n万元\n3\n中国人民财产\n保险股份有限\n公司青铜峡支\n公司\n吴金罚决字\n〔2024〕6号\n编制虚假资料\n罚款21.09万\n元\n国家金融监\n督管理总局\n吴忠监管分\n局\n4\n施俊新（时任\n中国人民财产\n保险股份有限\n公司青铜峡支\n公司经理）\n警告并罚款\n4.2万元\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 349,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "吴金罚决字〔2024〕5号、6号",
+            "subject": "中国人民财产保险股份有限公司利通支公司、青铜峡支公司；叶盛、施俊新",
+            "facts": null,
+            "authority": "国家金融监督管理总局吴忠监管分局",
+            "date": null
+          },
+          "query_occurrence_prefix_context": [
+            "开表(吴",
+            "支公司吴"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 2,
+          "manual_table_read_note": "列式原文完整读取后补录对象与完整文号；决定日期未单列则维持未知，不按抓取日期填补。",
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005001-d567742be202de2abb2fab6f",
+          "text_sha256": "293a3df5c49cdd37b906ff1c4acae8c8d877c376c5223834ef74f8dd93496de2",
+          "full_text": "国家金融监督管理总局河源监管分局行政处罚信息公开表(2024年5号)\n序\n号\n当事人名\n称\n行政处罚决定\n书文号\n主要违法违规行为\n行政处罚\n内容\n作出决定\n机关\n1\n中国人民\n财产保险\n股份有限\n公司河源\n市分公司\n河金罚决字\n〔2024〕5号\n给予投保人、被保\n险人保险合同约定\n以外利益,利用保险\n代理人虚构保险中\n介业务套取费用\n罚款46万\n元\n国家金融\n监督管理\n总局河源\n监管分局\n2\n黎明(时\n任中国人\n民财产保\n险股份有\n限公司河\n源市分公\n司副总经\n理)\n警告并处\n罚款15万\n元\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 260,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "河金罚决字〔2024〕5号",
+            "subject": "中国人民财产保险股份有限公司河源市分公司；黎明",
+            "facts": null,
+            "authority": "国家金融监督管理总局河源监管分局",
+            "date": null
+          },
+          "query_occurrence_prefix_context": [
+            "分公司河"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 3,
+          "manual_table_read_note": "列式原文完整读取后补录对象与完整文号；决定日期未单列则维持未知，不按抓取日期填补。",
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005064-802a23a21cf80cf6536a87a9",
+          "text_sha256": "d3c24a009353b8e76d30610bc7ab4a53a7b6341e4b3adfa268d3d7a85d827a11",
+          "full_text": "株洲金融监管分局行政处罚信息公开表(株金罚决字〔2024〕5号)\n行政处罚决定书文号\n株金罚决字〔2024〕5号\n被处罚当事人\n曾邓翔(时任中国太平洋财产保险股份\n有限公司渌口支公司车商客户经理)\n主要违法违规事实\n对中国太平洋财产保险股份有限公司渌\n口支公司“虚构保险中介业务”行为负直\n接责任\n行政处罚依据\n《中华人民共和国保险法》第一百一十\n六条、第一百七十一条\n行政处罚决定\n警告并处罚款1万元\n作出处罚决定的机关名称\n国家金融监督管理总局株洲监管分局\n作出处罚决定的日期\n2024年12月5日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 262,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "株金罚决字〔2024〕5号",
+            "subject": "曾邓翔(时任中国太平洋财产保险股份有限公司渌口支公司车商客户经理)",
+            "facts": "对中国太平洋财产保险股份有限公司渌口支公司“虚构保险中介业务”行为负直接责任",
+            "authority": "国家金融监督管理总局株洲监管分局",
+            "date": "2024年12月5日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(株",
+            "书文号株"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 4,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005168-dd7eb343ea3f98d900072eeb",
+          "text_sha256": "452688eef9d44db49a8958e4c49f16b3cfee43511a5330876aacfc47a4a9ca2a",
+          "full_text": "国家金融监督管理总局潮州监管分局行政处罚信息公开表(2024年5号)\n行政处罚决定书文号\n潮金罚决字〔2024〕5号\n被处罚当事人\n一、富德生命人寿保险股份有限公司\n潮州中心支公司\n二、袁梓炫(时任富德生命人寿保险股\n份有限公司潮州中心支公司总经理室\n总经理助理)\n三、林晓婷(时任富德生命人寿保险股\n份有限公司潮州中心支公司个人代理\n人)\n主要违法违规事实\n业务财务数据不真实\n行政处罚依据\n《中华人民共和国保险法》第八十六\n条、第一百七十条、第一百七十一条\n行政处罚决定\n一、对富德生命人寿保险股份有限公\n司潮州中心支公司罚款22万元\n二、对袁梓炫警告并处罚款4万元\n三、对林晓婷警告并处罚款1万元\n作出处罚决定的机关名称\n国家金融监督管理总局潮州监管分局\n作出处罚决定的日期\n2024年11月12日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 363,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "潮金罚决字〔2024〕5号",
+            "subject": "一、富德生命人寿保险股份有限公司潮州中心支公司二、袁梓炫(时任富德生命人寿保险股份有限公司潮州中心支公司总经理室总经理助理)三、林晓婷(时任富德生命人寿保险股份有限公司潮州中心支公司个人代理人)",
+            "facts": "业务财务数据不真实",
+            "authority": "国家金融监督管理总局潮州监管分局",
+            "date": "2024年11月12日"
+          },
+          "query_occurrence_prefix_context": [
+            "书文号潮"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 5,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005337-366266be834346087ed39b5a",
+          "text_sha256": "dd4bb0be83b6ebd5e90ab33210b18fa5b97d51014e10f7a0fbb0b91f7ccbce4d",
+          "full_text": "国家金融监督管理总局清远监管分局行政处罚信息公开表(2024年5号)\n行政处罚决定书文号\n清金罚决字〔2024〕5号\n被处罚当事人\n一、富德生命人寿保险股份有限公司\n清远中心支公司\n二、李锦荣[时任富德生命人寿保险股\n份有限公司清远中心支公司副总经理\n(主持工作)]\n三、孟庆嘉(时任富德生命人寿保险股\n份有限公司清远中心支公司总经理助\n理)\n四、邱晓岚(时任富德生命人寿保险股\n份有限公司清远中心支公司电话服务\n岗兼保全岗)\n主要违法违规事实\n将保险产品结算利率与银行存款利率\n进行片面比较、虚列个人保险代理人\n佣金、高级管理人员任职资格申请材\n料虚假\n行政处罚依据\n《中华人民共和国保险法》第八十六\n条、第一百七十条、第一百七十一条,\n《保险公司管理规定》第四十八条、\n第六十九条,《保险公司董事、监事和\n高级管理人员任职资格管理规定》第\n二十七条、第五十条\n行政处罚决定\n对富德生命人寿清远中支警告并处罚\n款合计20.5万元\n对李锦荣警告并处罚款0.5万元\n对孟庆嘉警告并处罚款4万元\n对邱晓岚警告并处罚款0.5万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局清远监管分局\n作出处罚决定的日期\n2024年10月24日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 524,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "清金罚决字〔2024〕5号",
+            "subject": "一、富德生命人寿保险股份有限公司清远中心支公司二、李锦荣[时任富德生命人寿保险股份有限公司清远中心支公司副总经理(主持工作)]三、孟庆嘉(时任富德生命人寿保险股份有限公司清远中心支公司总经理助理)四、邱晓岚(时任富德生命人寿保险股份有限公司清远中心支公司电话服务岗兼保全岗)",
+            "facts": "将保险产品结算利率与银行存款利率进行片面比较、虚列个人保险代理人佣金、高级管理人员任职资格申请材料虚假",
+            "authority": "国家金融监督管理总局清远监管分局",
+            "date": "2024年10月24日"
+          },
+          "query_occurrence_prefix_context": [
+            "书文号清"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 6,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005373-9bc5a7627bfc5f82a7fa8106",
+          "text_sha256": "0d126e9aad7e756df4da16a15ea1c90541b90fd1c3cf424e824c4df7e09dc647",
+          "full_text": "国家金融监督管理总局汉中监管分局行政处罚信息公开表\n汉金罚决字〔2024〕5号\n行政处罚决定书文号汉金罚决字〔2024〕5号\n被处罚当事人\n一、中国平安人寿保险股份有限公司汉中中心\n支公司\n二、余斌(时任中国平安人寿保险股份有限公\n司汉中中心支公司银保部副经理)\n三、胡晓坤(时任中国平安人寿保险股份有限\n公司汉中中心支公司保险代理人)\n四、李世梅(时任中国平安人寿保险股份有限\n公司汉中中心支公司保险代理人)\n五、杨惠君(时任中国平安人寿保险股份有限\n公司汉中中心支公司保险代理人)\n六、赵敏(时任中国平安人寿保险股份有限公\n司汉中中心支公司保险代理人)\n主要违法违规事实\n虚列费用;给予投保人保险合同约定以外的利\n益\n行政处罚依据\n《中华人民共和国保险法》第八十六条、第一\n百三十一条、第一百七十条、第一百七十一\n条、第一百七十二条,《保险代理人监管规\n定》第五十三条、第六十八条、第一百一十条\n行政处罚决定\n一、对中国平安人寿保险股份有限公司汉中中\n心支公司给予警告并处罚款13万元\n二、对余斌给予警告并处罚款1万元\n三、对胡晓坤给予警告并处罚款0.3万元\n四、对李世梅给予警告并处罚款0.3万元\n五、对杨惠君给予警告并处罚款0.5万元\n六、赵敏给予警告并处罚款0.3万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局汉中监管分局\n作出处罚决定的日期\n2024年10月12日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 602,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "汉金罚决字〔2024〕5号",
+            "subject": "一、中国平安人寿保险股份有限公司汉中中心支公司二、余斌(时任中国平安人寿保险股份有限公司汉中中心支公司银保部副经理)三、胡晓坤(时任中国平安人寿保险股份有限公司汉中中心支公司保险代理人)四、李世梅(时任中国平安人寿保险股份有限公司汉中中心支公司保险代理人)五、杨惠君(时任中国平安人寿保险股份有限公司汉中中心支公司保险代理人)六、赵敏(时任中国平安人寿保险股份有限公司汉中中心支公司保险代理人)",
+            "facts": "虚列费用;给予投保人保险合同约定以外的利益",
+            "authority": "国家金融监督管理总局汉中监管分局",
+            "date": "2024年10月12日"
+          },
+          "query_occurrence_prefix_context": [
+            "公开表汉",
+            "书文号汉"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 7,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005429-291477c74203c6a104ffabaa",
+          "text_sha256": "63a7de1259236aa2d34496c42e5c76bbd64d568981ee617724ffcf4b9fda2e80",
+          "full_text": "国家金融监督管理总局河北监管局\n行政处罚信息公开表(冀金罚决字〔2024〕5号)\n行政处罚决定书文号\n冀金罚决字〔2024〕5号\n被处罚当事人\n一、中国平安财产保险股份有限公\n司石家庄中心支公司\n二、中国平安财产保险股份有限公\n司元氏支公司\n三、聂光辉(时任中国平安财产保险\n股份有限公司石家庄中心支公司总\n经理)\n四、王兴楼(时任中国平安财产保险\n股份有限公司元氏支公司经理)\n主要违法违规事实\n中国平安财产保险股份有限公司石\n家庄中心支公司存在以下违法违规\n行为:未按照规定使用经批准或者备\n案的保险费率\n中国平安财产保险股份有限公司元\n氏支公司存在以下违法违规行为:未\n按照规定使用经批准或者备案的保\n险费率\n聂光辉对中国平安财产保险股份有\n限公司石家庄中心支公司未按照规\n定使用经批准或者备案的保险费率\n负有责任\n王兴楼对中国平安财产保险股份有\n限公司元氏支公司未按照规定使用\n经批准或者备案的保险费率负有责\n任\n行政处罚依据\n《中华人民共和国保险法》第一百\n七十条第三项和第一百七十一条\n行政处罚决定\n一、对中国平安财产保险股份有限\n公司石家庄中心支公司罚款15万元\n二、对中国平安财产保险股份有限\n公司元氏支公司罚款20万元\n三、对聂光辉警告并罚款2万元\n四、对王兴楼警告并罚款3万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局河北监管局\n作出处罚决定的日期\n2024年9月6日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 608,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "冀金罚决字〔2024〕5号",
+            "subject": "一、中国平安财产保险股份有限公司石家庄中心支公司二、中国平安财产保险股份有限公司元氏支公司三、聂光辉(时任中国平安财产保险股份有限公司石家庄中心支公司总经理)四、王兴楼(时任中国平安财产保险股份有限公司元氏支公司经理)",
+            "facts": "中国平安财产保险股份有限公司石家庄中心支公司存在以下违法违规行为:未按照规定使用经批准或者备案的保险费率中国平安财产保险股份有限公司元氏支公司存在以下违法违规行为:未按照规定使用经批准或者备案的保险费率聂光辉对中国平安财产保险股份有限公司石家庄中心支公司未按照规定使用经批准或者备案的保险费率负有责任王兴楼对中国平安财产保险股份有限公司元氏支公司未按照规定使用经批准或者备案的保险费率负有责任",
+            "authority": "国家金融监督管理总局河北监管局",
+            "date": "2024年9月6日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(冀",
+            "书文号冀"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 8,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005576-e23d3fd22577770f4a6882a1",
+          "text_sha256": "75c8261188e5430688d9db7c227da04e0ce89a42c743e11ba7ca532ddd22e974",
+          "full_text": "国家金融监督管理总局秦皇岛监管分局行政处罚信息公开表(秦金罚决字〔2024〕5号)\n行政处罚决定书文号\n秦金罚决字〔2024〕5号\n被处罚当事人\n王长有(时任中国人寿保险股份有限\n公司秦皇岛分公司个人保险代理人)\n主要违法违规事实\n伪造虚假保险单页骗取钱款\n行政处罚依据\n《中华人民共和国保险法》第一百\n三十一条、第一百七十二条\n行政处罚决定\n对王长有给予警告\n作出处罚决定的\n机关名称\n国家金融监督管理总局秦皇岛监管\n分局\n作出处罚决定的日期\n2024年9月4日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 243,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "秦金罚决字〔2024〕5号",
+            "subject": "王长有(时任中国人寿保险股份有限公司秦皇岛分公司个人保险代理人)",
+            "facts": "伪造虚假保险单页骗取钱款",
+            "authority": "国家金融监督管理总局秦皇岛监管分局",
+            "date": "2024年9月4日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(秦",
+            "书文号秦"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 9,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005706-1216f889a8a8f21ec50720f6",
+          "text_sha256": "b901d050912accba61a4bc149242e1eb8237f259bb298a0f3a28375a9af7e0e3",
+          "full_text": "国家金融监督管理总局保山监管分局行政处罚信息公开表\n(保金罚决字〔2024〕5号)\n行政处罚决定书文号\n保金罚决字〔2024〕5号\n被处罚当事人\n郑军(时任中国大地财产保险股份有限\n公司保山中心支公司总经理)\n主要违法违规事实\n对中国大地财产保险股份有限公司保山\n中心支公司“编制虚假财务资料”“虚挂\n个人代理业务套取手续费”“给予投保人\n保险合同约定以外的利益”事项负有责\n任\n行政处罚依据\n《中华人民共和国保险法》第八十六\n条、第一百一十六条、第一百七十一条\n行政处罚决定\n警告并处罚款9万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局保山监管分局\n作出处罚决定的日期\n2024年8月12日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 310,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "保金罚决字〔2024〕5号",
+            "subject": "郑军(时任中国大地财产保险股份有限公司保山中心支公司总经理)",
+            "facts": "对中国大地财产保险股份有限公司保山中心支公司“编制虚假财务资料”“虚挂个人代理业务套取手续费”“给予投保人保险合同约定以外的利益”事项负有责任",
+            "authority": "国家金融监督管理总局保山监管分局",
+            "date": "2024年8月12日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(保",
+            "书文号保"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 10,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005896-6a4af00e806af0c13910c163",
+          "text_sha256": "3f3227502246761f0f8c8130c14d0f14232e366b49f37b68d1c10382981fa4cc",
+          "full_text": "国家金融监督管理总局聊城监管分局行政处罚信息公开表(聊金罚决字〔2024〕5号)\n行政处罚决定书文号\n聊金罚决字〔2024〕5号\n被处罚当事人\n百年人寿保险股份有限公司聊城\n中心支公司\n主要违法违规事实\n财务信息不真实、欺骗投保人、\n诱导保险代理人违背诚信义务\n行政处罚依据\n《中华人民共和国保险法》第八\n十六条、第一百一十六条、第一\n百六十一条、第一百七十条,《保\n险公司管理规定》第五十三条、\n第六十九条\n行政处罚决定\n警告并处罚款23万元\n作出处罚决定的机关名称\n国家金融监督管理总局\n聊城监管分局\n作出处罚决定的日期\n2024年7月19日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 284,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "聊金罚决字〔2024〕5号",
+            "subject": "百年人寿保险股份有限公司聊城中心支公司",
+            "facts": "财务信息不真实、欺骗投保人、诱导保险代理人违背诚信义务",
+            "authority": "国家金融监督管理总局聊城监管分局",
+            "date": "2024年7月19日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(聊",
+            "书文号聊"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 11,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005916-6781847a95d4df6d0c72f5c5",
+          "text_sha256": "6532a4a5bacaf6145485b16dba315d329dc7fd5f89642f49b09eb15bb7f812cf",
+          "full_text": "国家金融监督管理总局厦门监管局行政处罚信息公开表2024-5\n行政处罚决定书文号\n厦金罚决字〔2024〕5号\n被处罚当事人\n一、富邦财产保险有限公司\n二、刘益成(时任富邦财产保险有限\n公司总经理助理兼行政管理部部门\n主管)\n主要违法违规事实\n聘用不具有任职资格人员担任公司\n高管\n行政处罚依据\n《中华人民共和国保险法》第一百\n六十七条、第一百七十一条\n行政处罚决定\n一、对富邦财产保险有限公司罚款6\n万元\n二、对刘益成警告并处罚款4万元\n作出处罚决定的机关名称\n国家金融监督管理总局厦门监管局\n作出处罚决定的日期\n2024年7月17日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 278,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "厦金罚决字〔2024〕5号",
+            "subject": "一、富邦财产保险有限公司二、刘益成(时任富邦财产保险有限公司总经理助理兼行政管理部部门主管)",
+            "facts": "聘用不具有任职资格人员担任公司高管",
+            "authority": "国家金融监督管理总局厦门监管局",
+            "date": "2024年7月17日"
+          },
+          "query_occurrence_prefix_context": [
+            "书文号厦"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 12,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006111-917c1f32c4b7c3e2f89f1837",
+          "text_sha256": "10c5cb33330f725bf005fb5d2752bd61ad57382dd580927f8f38cc1c3bafaefc",
+          "full_text": "国家金融监督管理总局金华监管分局行政处罚信息公开表\n(金金罚决字〔2024〕5号)\n行政处罚决定书文号\n金金罚决字〔2024〕5号\n被处罚当事人\n一、中国平安人寿保险股份有限公司沈\n阳电话销售中心\n二、卜晓燕(时任中国平安人寿保险股份\n有限公司沈阳电话销售中心副总经理)\n主要违法违规事实\n欺骗投保人;承诺给予投保人保险合同约\n定以外利益\n行政处罚依据\n《中华人民共和国保险法》第一百一十\n六条、第一百六十一条、第一百七十一\n条\n行政处罚决定\n一、对中国平安人寿保险股份有限公司\n沈阳电话销售中心罚款10万元\n二、对卜晓燕警告并处罚款2万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局金华监管分局\n作出处罚决定的日期\n2024年6月18日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 332,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "金金罚决字〔2024〕5号",
+            "subject": "一、中国平安人寿保险股份有限公司沈阳电话销售中心二、卜晓燕(时任中国平安人寿保险股份有限公司沈阳电话销售中心副总经理)",
+            "facts": "欺骗投保人;承诺给予投保人保险合同约定以外利益",
+            "authority": "国家金融监督管理总局金华监管分局",
+            "date": "2024年6月18日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(金",
+            "书文号金"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 13,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006113-5e42be69d6a63195b77d783e",
+          "text_sha256": "981d011b88e5dce9f91235f42b22115d5c62248d7bf179063955d9c8c0032462",
+          "full_text": "国家金融监督管理总局黔西南监管分局行政处罚信息公开表\n行政处罚决定书文号\n黔西南金罚决字〔2024〕5号\n被处罚当事人\n肖振宇(时为中国太平洋财产保险股份有限公\n司黔西南中心支公司员工)\n主要违法违规事实\n对中国太平洋财产保险股份有限公司黔西南\n中心支公司给予投保人、被保险人合同约定\n以外的其他利益事项负有责任\n行政处罚依据\n《中华人民共和国保险法》第一百一十六\n条、第一百七十一条\n行政处罚决定\n警告并处罚款3万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局黔西南监管分局\n作出处罚决定的日期\n2024年6月17日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 272,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "黔西南金罚决字〔2024〕5号",
+            "subject": "肖振宇(时为中国太平洋财产保险股份有限公司黔西南中心支公司员工)",
+            "facts": "对中国太平洋财产保险股份有限公司黔西南中心支公司给予投保人、被保险人合同约定以外的其他利益事项负有责任",
+            "authority": "国家金融监督管理总局黔西南监管分局",
+            "date": "2024年6月17日"
+          },
+          "query_occurrence_prefix_context": [
+            "号黔西南"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 14,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006129-d54343d15abb2baf928275ef",
+          "text_sha256": "8e93a9dd4472a8db8979823adee541e5069b73fc513bb54593e17e0214650fe5",
+          "full_text": "国家金融监督管理总局辽源监管分局行政处罚信息公开表\n(辽金罚决字〔2024〕5号)\n行政处罚决定书文号\n辽金罚决字〔2024〕6号\n被处罚当事人\n一、中国平安人寿保险股份有限公司\n辽源中心支公司\n二、李泽(中国平安人寿保险股份有限\n公司吉林分公司业务督导,时任平安人\n寿辽源中心支公司副总经理(主持工\n作))\n主要违法违规事实\n虚列招待费。使用包含误导内容的宣\n传课件进行培训。\n行政处罚依据\n《中华人民共和国保险法》第八十六\n条、第一百七十条、第一百七十一\n条。《保险公司管理规定》第四十四\n条、第六十九条。\n行政处罚决定\n一、对中国平安人寿保险股份有限公\n司辽源中心支公司警告并罚款18万\n元。\n二、对李泽给予警告并罚款3万元。\n作出处罚决定的机关名称\n国家金融监督管理总局\n辽源监管分局\n作出处罚决定的日期\n2024年6月12日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 378,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "辽金罚决字〔2024〕6号",
+            "subject": "一、中国平安人寿保险股份有限公司辽源中心支公司二、李泽(中国平安人寿保险股份有限公司吉林分公司业务督导,时任平安人寿辽源中心支公司副总经理(主持工作))",
+            "facts": "虚列招待费。使用包含误导内容的宣传课件进行培训。",
+            "authority": "国家金融监督管理总局辽源监管分局",
+            "date": "2024年6月12日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(辽"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 15,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006155-ffddbc3c7c4169b0b7ad0e32",
+          "text_sha256": "ccd1aab762ddbe01c2b92397647a1646ad868faf6a69f2022e46c9a3bfc5f1d3",
+          "full_text": "国家金融监督管理总局常德监管分局行政处罚信息公开表(常金罚决字〔2024〕5号)\n国家金融监督管理总局常德监管分局\n行政处罚信息公开表\n行政处罚决定书文号\n常金罚决字〔2024〕5号\n被处罚当事人\n黄海燕(泰康人寿保险有限责任公司湖南\n常德中心支公司个险代理人)\n主要违法违规事实\n个险代理人在微信朋友圈发布违规内容\n误导消费者\n行政处罚依据\n《中华人民共和国保险法》第一百七十\n二条\n行政处罚决定\n警告,并处罚款1000元\n作出处罚决定的机关名称\n国家金融监督管理总局常德监管分局\n作出处罚决定的日期\n2024年6月11日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 273,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "常金罚决字〔2024〕5号",
+            "subject": "黄海燕(泰康人寿保险有限责任公司湖南常德中心支公司个险代理人)",
+            "facts": "个险代理人在微信朋友圈发布违规内容误导消费者",
+            "authority": "国家金融监督管理总局常德监管分局",
+            "date": "2024年6月11日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(常",
+            "书文号常"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 16,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006216-5161913f13da978f4220f542",
+          "text_sha256": "ab604cef13e80673997dbbc8bd405c216ebfd6c5e4627349783e62fcbd4393aa",
+          "full_text": "国家金融监督管理总局梧州监管分局行政处罚信息公开表\n行政处罚决定书文号\n梧金罚决字〔2024〕5号\n被处罚当事人\n一、中国太平洋财产保险股份有限公\n司梧州中心支公司\n二、曾海华(时任太平洋财产保险股份\n有限公司梧州中心支公司副总经理)\n主要违法违规事实\n虚列业务宣传费和咨询费,财务数据不\n真实;未在规定时间内办理新批设分支\n机构营业执照并开业\n行政处罚依据\n《中华人民共和国保险法》第七十七\n条、第八十六条、第一百七十条、第\n一百七十一条以及《银行保险机构许\n可证管理办法》第十八条规定\n行政处罚决定\n一、对中国太平洋财产保险股份有限\n公司梧州中心支公司罚款21万元\n二、对曾海华警告并处罚款1万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局梧州监管分局\n作出处罚决定的日期\n2024年6月11日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 362,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "梧金罚决字〔2024〕5号",
+            "subject": "一、中国太平洋财产保险股份有限公司梧州中心支公司二、曾海华(时任太平洋财产保险股份有限公司梧州中心支公司副总经理)",
+            "facts": "虚列业务宣传费和咨询费,财务数据不真实;未在规定时间内办理新批设分支机构营业执照并开业",
+            "authority": "国家金融监督管理总局梧州监管分局",
+            "date": "2024年6月11日"
+          },
+          "query_occurrence_prefix_context": [
+            "书文号梧"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 17,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006285-2518c47eb4c9e0d79c31c139",
+          "text_sha256": "3cc74eb6d1f44928834ce06e286ff15f869345fc6f586ced6393cbfd5891d50c",
+          "full_text": "娄底金融监管分局行政处罚信息公开表(娄金罚决字〔2024〕5号)\n国家金融监督管理总局娄底监管分局\n行政处罚信息公开表\n行政处罚决定书文号\n娄金罚决字〔2024〕5号\n被处罚当事人\n胡松(时任中国人民财产保险股份\n有限公司娄底市分公司财务会计\n部副经理)\n主要违法违规事实\n对中国人民财产保险股份有限公\n司冷水江支公司编制或者提供虚\n假的报告、报表、文件、资料行\n为承担管理责任\n行政处罚依据\n《中华人民共和国保险法》第八\n十六条、第一百七十一条\n行政处罚决定\n警告并处罚款人民币4万元\n作出处罚决定的机关名称\n国家金融监督管理总局娄底监管\n分局\n作出处罚决定的日期\n2024年 5月 29日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 307,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "娄金罚决字〔2024〕5号",
+            "subject": "胡松(时任中国人民财产保险股份有限公司娄底市分公司财务会计部副经理)",
+            "facts": "对中国人民财产保险股份有限公司冷水江支公司编制或者提供虚假的报告、报表、文件、资料行为承担管理责任",
+            "authority": "国家金融监督管理总局娄底监管分局",
+            "date": "2024年5月29日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(娄",
+            "书文号娄"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 18,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006329-c1ca89b4a5f756b181d571a9",
+          "text_sha256": "e1f187f5a48caeac7b1b9eed33b26d6c97d29aa34ff6f5fce0821a953e04b2b0",
+          "full_text": "国家金融监督管理总局汕头监管分局行政处罚信息公开表(2024年5号)\n行政处罚决定书文号\n汕金罚决字〔2024〕5号\n被处罚当事人\n一、汕头市均衡保险公估有限公司\n二、辛姿妍(时任汕头市均衡保险公\n估有限公司总经理)\n主要违法违规事实\n未按规定建立职业风险基金或者投保\n职业责任保险;未按规定为保险公估从\n业人员进行执业登记\n行政处罚依据\n《保险公估人监管规定》第二十八条\n第一款、第五十九条、第六十二条第\n二款、第八十七条、第八十八条第一\n项、第一百零一条\n行政处罚决定\n一、对汕头市均衡保险公估有限公司\n警告并处罚款合计1万元\n二、对辛姿妍警告并处罚款合计1万\n元\n作出处罚决定的\n机关名称\n国家金融监督管理总局汕头监管分局\n作出处罚决定的日期\n2024年5月29日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 346,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "汕金罚决字〔2024〕5号",
+            "subject": "一、汕头市均衡保险公估有限公司二、辛姿妍(时任汕头市均衡保险公估有限公司总经理)",
+            "facts": "未按规定建立职业风险基金或者投保职业责任保险;未按规定为保险公估从业人员进行执业登记",
+            "authority": "国家金融监督管理总局汕头监管分局",
+            "date": "2024年5月29日"
+          },
+          "query_occurrence_prefix_context": [
+            "书文号汕"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 19,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006331-82e860cf122e7d8087013fb0",
+          "text_sha256": "49fb494661f1a7fce3a4051fdfc5a89599547fd4a1a8739261fa5b5d09138ac3",
+          "full_text": "国家金融监督管理总局福建监管局行政处罚信息公开表(闽金罚决字〔2024〕5号)\n行政处罚决定书文号\n闽金罚决字〔2024〕5号\n被处罚当事人\n一、中国平安人寿保险股份有限公\n司福州市鼓楼支公司\n二、林烽(时任中国平安人寿保险股\n份有限公司福州市鼓楼支公司经理)\n主要违法违规事实\n财务数据不真实\n行政处罚依据\n《中华人民共和国保险法》第八十\n六条、第一百七十条(一)项、第一百\n七十一条\n行政处罚决定\n一、对中国平安人寿保险股份有限\n公司福州市鼓楼支公司处以13万元罚\n款\n二、对林烽给予警告,并处以2万元罚\n款\n作出处罚决定的\n机关名称\n国家金融监督管理总局福建监管局\n作出处罚决定的日期\n2024年5月30日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 317,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "闽金罚决字〔2024〕5号",
+            "subject": "一、中国平安人寿保险股份有限公司福州市鼓楼支公司二、林烽(时任中国平安人寿保险股份有限公司福州市鼓楼支公司经理)",
+            "facts": "财务数据不真实",
+            "authority": "国家金融监督管理总局福建监管局",
+            "date": "2024年5月30日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(闽",
+            "书文号闽"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 20,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006467-6aa2e46437a4efe3578c3127",
+          "text_sha256": "bce17af2e23b3dc7c022f9b6fb5ee8f481e02680de35b3f7dc6c5c39da5129c0",
+          "full_text": "国家金融监督管理总局岳阳监管分局行政处罚信息公开表(岳金罚决字〔2024〕5号)\n国家金融监督管理总局岳阳监管分局\n行政处罚信息公开表\n行政处罚决定书文号\n岳金罚决字〔2024〕5号\n被处罚当事人\n袁颂阳(时任华夏人寿保险股份有限公司\n岳阳中心支公司副总经理(主持工作))\n主要违法违规事实\n对机构在保险业务活动中虚假宣传和销\n售误导行为负直接责任和直接管理责任\n行政处罚依据\n《中华人民共和国保险法》第一百七十\n一条\n行政处罚决定\n警告并处罚款1万元\n作出处罚决定的机关名称\n国家金融监督管理总局岳阳监管分局\n作出处罚决定的日期\n2024年5月10日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 287,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "岳金罚决字〔2024〕5号",
+            "subject": "袁颂阳(时任华夏人寿保险股份有限公司岳阳中心支公司副总经理(主持工作))",
+            "facts": "对机构在保险业务活动中虚假宣传和销售误导行为负直接责任和直接管理责任",
+            "authority": "国家金融监督管理总局岳阳监管分局",
+            "date": "2024年5月10日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(岳",
+            "书文号岳"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 21,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006485-1f05a8186df09e487a899c36",
+          "text_sha256": "c2395e8339f3599a207292be785a2e7419520e92b0f83702c8b956d1526c7951",
+          "full_text": "国家金融监督管理总局行政处罚信息公开表\n〔2024〕号\n行政处罚决定书文号\n金罚决字〔2024〕5号\n被处罚当事人\n中国人民财产保险股份有限公司及\n其责任人员\n主要违法违规事实\n将直接业务虚挂中介业务套取手续\n费;少计提资产减值准备;招投标管理\n不规范;支农融资业务捆绑销售保险\n产品;相关报告、报表、文件和资料\n不真实;跨年度列支手续费等。\n行政处罚依据\n《中华人民共和国保险法》第八十\n六条、第一百一十六条、第一百三\n十五条、第一百六十一条、第一百\n七十条、第一百七十一条等\n行政处罚决定\n对中国人民财产保险股份有限公司\n罚款合计681万元。其中,总公司221\n万元,分支机构460万元。\n对蒋新伟警告并处罚款10万元\n对原宇玲警告并处罚款10万元\n对王学刚警告并处罚款20万元\n对倪宏警告并处罚款10万元\n对何祖望警告并处罚款1万元\n对周志文警告并处罚款10万元\n对纪翔警告并处罚款10万元\n对刘团聚警告并处罚款10万元\n对蒋士亮警告并处罚款20万元\n对李旭警告并处罚款10万元\n对潘振雄警告并处罚款20万元\n对洪祖强警告并处罚款10万元\n对杨卫警告并处罚款10万元\n对崔晓博警告并处罚款10万元\n对钱磊警告并处罚款10万元\n对姜掌厚警告并处罚款10万元\n对郭钢警告并处罚款20万元\n对梁晓旭警告并处罚款10万元\n对王彦波警告并处罚款10万元\n对武运宝警告并处罚款20万元\n对李彦君警告并处罚款20万元\n对沈宁警告并处罚款20万元\n对余饶林警告并处罚款10万元\n对程向民警告并处罚款10万元\n对周健警告并处罚款10万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局\n作出处罚决定的日期\n2024年5月14日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 718,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "金罚决字〔2024〕5号",
+            "subject": "中国人民财产保险股份有限公司及其责任人员",
+            "facts": "将直接业务虚挂中介业务套取手续费;少计提资产减值准备;招投标管理不规范;支农融资业务捆绑销售保险产品;相关报告、报表、文件和资料不真实;跨年度列支手续费等。",
+            "authority": "国家金融监督管理总局",
+            "date": "2024年5月14日"
+          },
+          "query_occurrence_prefix_context": [
+            "定书文号"
+          ],
+          "full_number_exact_after_heading": true,
+          "relation": "same_decision_reproduction_supported",
+          "lexical_rank_1_based": 22,
+          "identity_comparison": {
+            "document_no": true,
+            "party": true,
+            "finding": true,
+            "regulator": true,
+            "decision_date": true,
+            "penalty": true,
+            "legal_basis": true
+          },
+          "identity_basis": "完整文号、总局机关、全部主体、决定日期、全部违法事项、逐对象处罚及法律依据均在NFKC+去空白后相同；原全文多出标题/手机页脚或换行，非新增事实。",
+          "correction_or_obsolescence_supported": false,
+          "new_substantive_fact_detected": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006522-3493d5cc0aa971afed67f87c",
+          "text_sha256": "78bfe44ff23f1224359530a7902e4fc3f9b4ecbeac1b9a0181074e8c4ef0c8c1",
+          "full_text": "国家金融监督管理总局梅州监管分局行政处罚信息公开表(2024年5号)\n行政处罚决定书文号\n梅金罚决字〔2024〕5号\n被处罚当事人\n一、幸福人寿保险股份有限公司梅\n州中心支公司\n二、杨梅贵(时任幸福人寿保险股份\n有限公司梅州中心支公司个人保险\n代理人)\n主要违法违规事实\n利用职务便利为个人牟取不正当利\n益\n行政处罚依据\n《中华人民共和国保险法》第一百\n三十一条第八项、第一百七十二条,\n《保险公司管理规定》(中国保险监\n督管理委员会令2015年第3号)第五十\n五条、第六十九条,《保险代理人监\n管规定》(中国银行保险监督管理委\n员会令2020年第11号)第六十八条、\n第一百一十条\n行政处罚决定\n一、对幸福人寿保险股份有限公司\n梅州中心支公司警告并处罚款1万元\n二、对杨梅贵警告并处罚款0.8万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局梅州监管分\n局\n作出处罚决定的日期\n2024年5月8日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 411,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "梅金罚决字〔2024〕5号",
+            "subject": "一、幸福人寿保险股份有限公司梅州中心支公司二、杨梅贵(时任幸福人寿保险股份有限公司梅州中心支公司个人保险代理人)",
+            "facts": "利用职务便利为个人牟取不正当利益",
+            "authority": "国家金融监督管理总局梅州监管分局",
+            "date": "2024年5月8日"
+          },
+          "query_occurrence_prefix_context": [
+            "书文号梅"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 23,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006588-b04c73a18972df5220dd6599",
+          "text_sha256": "3e82013d4c65fb401bb83a5150196e6cc8ab8cb8c9ee910e089b7aefde2f710f",
+          "full_text": "国家金融监督管理总局昭通监管分局行政处罚信息公开表\n(昭金罚决字〔2024〕5号)\n行政处罚决定书文号\n昭金罚决字〔2024〕5号\n被处罚当事人\n吕建明(时任泰康人寿保险有限责任公\n司云南昭通中心支公司总经理)\n主要违法违规事实\n对泰康人寿保险有限责任公司云南昭通\n中心支公司编制虚假资料、虚假宣传保\n险产品事项负管理责任\n行政处罚依据\n《中华人民共和国保险法》第八十六\n条、第一百一十六条、第一百七十一条\n行政处罚决定\n警告并处罚款2.5万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局昭通监管分局\n作出处罚决定的日期\n2024年4月25日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 284,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "昭金罚决字〔2024〕5号",
+            "subject": "吕建明(时任泰康人寿保险有限责任公司云南昭通中心支公司总经理)",
+            "facts": "对泰康人寿保险有限责任公司云南昭通中心支公司编制虚假资料、虚假宣传保险产品事项负管理责任",
+            "authority": "国家金融监督管理总局昭通监管分局",
+            "date": "2024年4月25日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(昭",
+            "书文号昭"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 24,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006648-8f50f890b2c45c75b05c5586",
+          "text_sha256": "f448ed2f44cca566e4de2164e9c8679c12c2e525bd9a5da73ea63aeca6308f55",
+          "full_text": "国家金融监督管理总局天津监管局行政处罚信息公开表\n(津金罚决字〔2024〕5号)\n行政处罚决定书文号\n津金罚决字〔2024〕5号\n被处罚当事人\n太平财产保险有限公司天津分公司\n主要违法违规事实\n1.跨区域经营雇主责任险业务; 2.未按\n照规定使用经批准或备案的保险费\n率。\n行政处罚依据\n1.《保险公司管理规定》第四十一条\n和第六十九条;\n2.《中华人民共和国保险法》第一百\n三十五条和第一百七十条。\n行政处罚决定\n警告并处罚款合计53万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局天津监管局\n作出处罚决定的日期\n2024年4月18日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 281,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "津金罚决字〔2024〕5号",
+            "subject": "太平财产保险有限公司天津分公司",
+            "facts": "1.跨区域经营雇主责任险业务;2.未按照规定使用经批准或备案的保险费率。",
+            "authority": "国家金融监督管理总局天津监管局",
+            "date": "2024年4月18日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(津",
+            "书文号津"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 25,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006685-40587091de03dea9875d66c0",
+          "text_sha256": "8960f5d106e2b7561d4fde8cbc24c18c14476db2532f8cd261ce4d140b2683be",
+          "full_text": "国家金融监督管理总局阜阳监管分局行政处罚信息公开表(阜金罚决字〔2024〕5号)\n行政处罚决定书文号\n阜金罚决字〔2024〕5号\n被处罚当事人\n中国平安人寿保险股份有限公司阜阳\n中心支公司袁寨营销服务部\n主要违法违规事实\n给予投保人保险合同约定以外利益\n行政处罚依据\n《中华人民共和国保险法》(2015年修\n正)第一百一十六条第四项、第一百六\n十一条\n行政处罚决定\n罚款5万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局阜阳监管分局\n作出处罚决定的日期\n2024年4月16日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 250,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "阜金罚决字〔2024〕5号",
+            "subject": "中国平安人寿保险股份有限公司阜阳中心支公司袁寨营销服务部",
+            "facts": "给予投保人保险合同约定以外利益",
+            "authority": "国家金融监督管理总局阜阳监管分局",
+            "date": "2024年4月16日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(阜",
+            "书文号阜"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 26,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006725-1be58579e2cc134058778c81",
+          "text_sha256": "fa611234dede616fb0d17b8ff7ad1ecb657be1cf755fa87bf4c8dc3c1085437d",
+          "full_text": "国家金融监督管理总局商丘监管分局\n行政处罚信息公开表\n(商金罚决字〔2024〕5号)\n行政处罚决定书文号\n商金罚决字〔2024〕5号\n被处罚当事人\n李帅(时任国元农业保险股份有限公司\n永城支公司财产保险部经理)\n主要违法违规事实\n对国元农业保险股份有限公司商丘中心\n支公司未经批准擅自变更营业场所的违\n法违规行为负有责任\n行政处罚依据\n《中华人民共和国保险法》第八十四\n条、第一百七十一条\n行政处罚决定\n警告并处罚款4万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局商丘监管分局\n作出处罚决定的日期\n2024年4月12日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 273,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "商金罚决字〔2024〕5号",
+            "subject": "李帅(时任国元农业保险股份有限公司永城支公司财产保险部经理)",
+            "facts": "对国元农业保险股份有限公司商丘中心支公司未经批准擅自变更营业场所的违法违规行为负有责任",
+            "authority": "国家金融监督管理总局商丘监管分局",
+            "date": "2024年4月12日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(商",
+            "书文号商"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 27,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006832-760417817a6a0355b3ae159a",
+          "text_sha256": "0c9dd49f5198da3a5a5ed0832389514ec6fe18ede18e58b651a467fc7a1aef88",
+          "full_text": "国家金融监督管理总局淮南监管分局\n行政处罚信息公开表\n(淮南金罚决字〔2024〕5号)\n行政处罚决定书文号\n淮南金罚决字〔2024〕5号\n被处罚当事人\n泰康人寿保险有限责任公司安徽淮南\n中心支公司\n主要违法违规事实\n欺骗投保人;唆使、诱导个人保险代理\n人进行违背诚信义务的活动\n行政处罚依据\n《中华人民共和国保险法》第一百一\n十六条、第一百六十一条;《保险公司\n管理规定》第五十三条、第六十九条\n行政处罚决定\n警告,并处罚款12万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局淮南监管分局\n作出处罚决定的日期\n2024年4月8日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 277,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "淮南金罚决字〔2024〕5号",
+            "subject": "泰康人寿保险有限责任公司安徽淮南中心支公司",
+            "facts": "欺骗投保人;唆使、诱导个人保险代理人进行违背诚信义务的活动",
+            "authority": "国家金融监督管理总局淮南监管分局",
+            "date": "2024年4月8日"
+          },
+          "query_occurrence_prefix_context": [
+            "表(淮南",
+            "文号淮南"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 28,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006843-3b7c71b3a9a292d7396b955d",
+          "text_sha256": "b29684298e274ee2b6196fe400e008d182784f66907cfbd85896f023a6565808",
+          "full_text": "国家金融监督管理总局安阳监管分局\n行政处罚信息公开表\n(安金罚决字〔2024〕5号)\n行政处罚决定书文号\n安金罚决字〔2024〕5号\n被处罚当事人\n刘俊锋(时任都邦财产保险股份有限公\n司安阳中心支公司林州营销服务部负责\n人)\n主要违法违规事实\n对都邦财产保险股份有限公司安阳中心\n支公司违规跨区域经营车险业务的违法\n违规行为负有责任\n行政处罚依据\n《保险公司管理规定》第四十一条、第\n六十九条\n行政处罚决定\n警告并处罚款1万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局安阳监管分局\n作出处罚决定的日期\n2024年4月1日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 274,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "安金罚决字〔2024〕5号",
+            "subject": "刘俊锋(时任都邦财产保险股份有限公司安阳中心支公司林州营销服务部负责人)",
+            "facts": "对都邦财产保险股份有限公司安阳中心支公司违规跨区域经营车险业务的违法违规行为负有责任",
+            "authority": "国家金融监督管理总局安阳监管分局",
+            "date": "2024年4月1日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(安",
+            "书文号安"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 29,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006868-0ac1f141c6a0f166b9a02407",
+          "text_sha256": "1b0ea01ea0cc69f0854ed21901cb6c9f62ce06a47ead0bd1a4dea96f927f3215",
+          "full_text": "国家金融监督管理总局三门峡监管分局\n行政处罚信息公开表\n(三金罚决字〔2024〕5号)\n行政处罚决定书文号\n三金罚决字〔2024〕5号\n被处罚当事人\n一、新华人寿保险股份有限公司三门峡\n中心支公司\n二、杨鸿宇(时任新华人寿保险股份有\n限公司三门峡中心支公司收展部经理)\n三、陈晶(新华人寿保险股份有限公司\n三门峡中心支公司代理人)\n主要违法违规事实\n代理人在销售保险产品过程中隐瞒与保\n险合同有关重要情况\n行政处罚依据\n《中华人民共和国保险法》第一百三十\n一条、第一百七十二条,《保险代理人监\n管规定》第六十八条、第八十三条、第\n一百一十条\n行政处罚决定\n一、对新华人寿保险股份有限公司三门\n峡中心支公司警告并处罚款1万元\n二、对杨鸿宇警告并处罚款0.5万元\n三、对陈晶警告\n作出处罚决定的\n机关名称\n国家金融监督管理总局三门峡监管分局\n作出处罚决定的日期\n2024年3月29日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 400,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "三金罚决字〔2024〕5号",
+            "subject": "一、新华人寿保险股份有限公司三门峡中心支公司二、杨鸿宇(时任新华人寿保险股份有限公司三门峡中心支公司收展部经理)三、陈晶(新华人寿保险股份有限公司三门峡中心支公司代理人)",
+            "facts": "代理人在销售保险产品过程中隐瞒与保险合同有关重要情况",
+            "authority": "国家金融监督管理总局三门峡监管分局",
+            "date": "2024年3月29日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(三",
+            "书文号三"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 30,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006928-b92466b85b8c31a2c4abf123",
+          "text_sha256": "cc43b5e36248a1e21fcbf3ccff18627d43cce27c22d559334baf623395ff95b5",
+          "full_text": "国家金融监督管理总局邵阳监管分局行政处罚信息公开表(邵金罚决字〔2024〕5号)\n国家金融监督管理总局邵阳监管分局\n行政处罚信息公开表\n行政处罚决定书文号\n邵金罚决字〔2024〕5号\n被处罚当事人\n何斌(时任人保财险邵阳市分公司理赔中\n心车险分部定损员)\n主要违法违规事实\n对故意编造未曾发生的保险事故、虚构\n保险合同或者故意夸大已经发生的保险\n事故的损失程度进行虚假理赔,骗取保险\n金或者牟取其他不正当利益的违法违规\n行为负有直接责任\n行政处罚依据\n《中华人民共和国保险法》(2015年修订)\n第一百七十七条\n行政处罚决定\n禁止5年进入保险业\n作出处罚决定的机关名称\n国家金融监督管理总局邵阳监管分局\n作出处罚决定的日期\n2024年3月19日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 333,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "邵金罚决字〔2024〕5号",
+            "subject": "何斌(时任人保财险邵阳市分公司理赔中心车险分部定损员)",
+            "facts": "对故意编造未曾发生的保险事故、虚构保险合同或者故意夸大已经发生的保险事故的损失程度进行虚假理赔,骗取保险金或者牟取其他不正当利益的违法违规行为负有直接责任",
+            "authority": "国家金融监督管理总局邵阳监管分局",
+            "date": "2024年3月19日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(邵",
+            "书文号邵"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 31,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006932-1f9c1887a1bfab4bfb227955",
+          "text_sha256": "e6be889fe8648929299474379028ad9e74eda8c51f07f49d56afc8df709ccad1",
+          "full_text": "国家金融监督管理总局迪庆监管分局行政处罚信息公开表(迪金罚决字〔2024〕5号)\n行政处罚决定书文号\n迪金罚决字〔2024〕5号\n被处罚当事人\n印建辉(时任永安财产保险股份有限公\n司迪庆中心支公司副总经理(主持工\n作))\n主要违法违规事实\n对永安财产保险股份有限公司迪庆中\n心支公司“编制虚假的报表、资料,通过\n虚列代办年检费套取费用”事项负有责\n任\n行政处罚依据\n《中华人民共和国保险法》第八十六\n条、第一百七十一条\n行政处罚决定\n警告并处罚款1万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局迪庆监管分局\n作出处罚决定的日期\n2024年3月20日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 288,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "迪金罚决字〔2024〕5号",
+            "subject": "印建辉(时任永安财产保险股份有限公司迪庆中心支公司副总经理(主持工作))",
+            "facts": "对永安财产保险股份有限公司迪庆中心支公司“编制虚假的报表、资料,通过虚列代办年检费套取费用”事项负有责任",
+            "authority": "国家金融监督管理总局迪庆监管分局",
+            "date": "2024年3月20日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(迪",
+            "书文号迪"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 32,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006938-f5184c525b240492da56553a",
+          "text_sha256": "a87a6eada696f76648b64f7bd1e064cc55b4dc6da8a90732cd7061da0f5199bf",
+          "full_text": "国家金融监督管理总局衡阳监管分局行政处罚信息公开表(衡金罚决字〔2024〕5号)\n国家金融监督管理总局衡阳监管分局\n行政处罚信息公开表\n行政处罚决定书文号\n衡金罚决字〔2024〕5号\n被处罚当事人\n唐植云\n主要违法违规事实\n担任国泰诚信衡阳分公司负责人期间,\n对非法从事保险中介业务的机构发生\n保险代理业务往来的违法违规行为负\n有直接责任和管理责任。\n行政处罚依据\n《保险代理人监管规定》第九十九条\n行政处罚决定\n警告,并处罚款5000元\n作出处罚决定的机关名称\n国家金融监督管理总局衡阳监管分局\n作出处罚决定的日期\n2024年3月19日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 280,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "衡金罚决字〔2024〕5号",
+            "subject": "唐植云",
+            "facts": "担任国泰诚信衡阳分公司负责人期间,对非法从事保险中介业务的机构发生保险代理业务往来的违法违规行为负有直接责任和管理责任。",
+            "authority": "国家金融监督管理总局衡阳监管分局",
+            "date": "2024年3月19日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(衡",
+            "书文号衡"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 33,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006969-13c958ff2e40e152f8a52b36",
+          "text_sha256": "817e7310d58c4c1fad078466c36c3f77c254799e43a26556c6c14678b2717815",
+          "full_text": "国家金融监督管理总局常州监管分局\n行政处罚信息公开表\n行政处罚决定书文号\n常金罚决字〔2024〕5号\n被处罚当事人\n和谐健康保险股份有限公司常州中心\n支公司\n主要违法违规事实\n编制虚假财务资料;给予投保人保险合\n同约定以外利益\n行政处罚依据\n《中华人民共和国保险法》第八十六\n条、第一百一十六条、第一百六十一\n条、第一百七十条\n行政处罚决定\n罚款18万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局常州监管分局\n作出处罚决定的日期\n2024年3月1日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 238,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "常金罚决字〔2024〕5号",
+            "subject": "和谐健康保险股份有限公司常州中心支公司",
+            "facts": "编制虚假财务资料;给予投保人保险合同约定以外利益",
+            "authority": "国家金融监督管理总局常州监管分局",
+            "date": "2024年3月1日"
+          },
+          "query_occurrence_prefix_context": [
+            "书文号常"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 34,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006983-4c64d6abe144156403867195",
+          "text_sha256": "dd0ba24c0ec69ae4b969bfca72f1f516ce79a384f04c549aed5649803c597f70",
+          "full_text": "国家金融监督管理总局威海监管分局行政处罚信息公开表(威金罚决字〔2024〕5号)\n行政处罚决定书文号\n威金罚决字〔2024〕5号\n被处罚当事人\n天安财产保险股份有限公司\n威海中心支公司\n主要违法违规事实\n虚列经营费用、临时负责人任职\n超期\n行政处罚依据\n《中华人民共和国保险法》第八\n十六条、第一百七十条,《保险公\n司董事、监事和高级管理人员任\n职资格管理规定》第三十七条、\n第五十条\n行政处罚决定\n警告并处罚款36.5万元\n作出处罚决定的机关名称\n国家金融监督管理总局\n威海监管分局\n作出处罚决定的日期\n2024年3月5日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 273,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "威金罚决字〔2024〕5号",
+            "subject": "天安财产保险股份有限公司威海中心支公司",
+            "facts": "虚列经营费用、临时负责人任职超期",
+            "authority": "国家金融监督管理总局威海监管分局",
+            "date": "2024年3月5日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(威",
+            "书文号威"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 35,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007036-93c2750398670a3083cd7837",
+          "text_sha256": "7dc4dad61aef65aed3eb3146199a526a7a5a83e4d1940dca7db90a4c005cbb44",
+          "full_text": "国家金融监督管理总局延边监管分局行政处罚信息公开表\n(延金罚决字〔2024〕5号)\n行政处罚决定书文号\n延金罚决字〔2024〕5号\n被处罚当事人\n刘琳(时任中国平安人寿保险股份有\n限公司延边中心支公司总经理)\n主要违法违规事实\n对中国平安人寿保险股份有限公司延\n边中心支公司财务数据不真实的行为\n负有责任\n行政处罚依据\n《中华人民共和国保险法》第八十六\n条、第一百七十一条\n行政处罚决定\n给予警告,并处1万元罚款\n作出处罚决定的机关名称\n国家金融监督管理总局延边监管分局\n作出处罚决定的日期\n2024年2月18日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 267,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "延金罚决字〔2024〕5号",
+            "subject": "刘琳(时任中国平安人寿保险股份有限公司延边中心支公司总经理)",
+            "facts": "对中国平安人寿保险股份有限公司延边中心支公司财务数据不真实的行为负有责任",
+            "authority": "国家金融监督管理总局延边监管分局",
+            "date": "2024年2月18日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(延",
+            "书文号延"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 36,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007084-9ed63c91c07cd40514b1fa34",
+          "text_sha256": "9d62ad573468074e448374885c71a95e4cce68ba70fca2d0d8946cb14d0fc1d6",
+          "full_text": "国家金融监督管理总局浙江监管局行政处罚信息公开表\n(浙金罚决字〔2024〕5号)\n行政处罚决定书文号\n浙金罚决字〔2024〕5号\n被处罚当事人\n一、东方懿安保险销售有限公司浙江\n分公司\n二、罗冰辉(时任东方懿安保险销售有\n限公司浙江分公司实际管理人)\n主要违法违规事实\n编制或者提供虚假的报告、报表、文\n件、资料(业务数据不真实)\n行政处罚依据\n《中华人民共和国保险法》第八十六\n条、第一百三十二条、第一百七十\n条、第一百七十一条\n行政处罚决定\n一、对东方懿安保险销售有限公司浙\n江分公司罚款40万元\n二、对罗冰辉警告并处罚款8万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局浙江监管局\n作出处罚决定的日期\n2024年2月6日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 326,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "浙金罚决字〔2024〕5号",
+            "subject": "一、东方懿安保险销售有限公司浙江分公司二、罗冰辉(时任东方懿安保险销售有限公司浙江分公司实际管理人)",
+            "facts": "编制或者提供虚假的报告、报表、文件、资料(业务数据不真实)",
+            "authority": "国家金融监督管理总局浙江监管局",
+            "date": "2024年2月6日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(浙",
+            "书文号浙"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 37,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007086-6cccf4ab2a48ccba96c6466b",
+          "text_sha256": "cfc40d11fb0d8874b190f64b159c2c248b59c85009463a73926fbe335e94218e",
+          "full_text": "国家金融监督管理总局贵州监管局行政处罚信息公开表\n行政处罚决定书文号\n贵金罚决字〔2024〕5号\n被处罚当事人\n中国太平洋人寿保险股份有限公司贵州分公司\n主要违法违规事实\n个险渠道经营不审慎、内部管控薄弱;产品宣传\n销售存在误导行为\n行政处罚依据\n《中华人民共和国保险法》第一百一十六条、\n《中华人民共和国保险法》第一百六十一条,\n《保险公司内部控制基本准则》第十二条\n行政处罚决定\n罚款41万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局贵州监管局\n作出处罚决定的日期\n2024年2月4日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 258,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "贵金罚决字〔2024〕5号",
+            "subject": "中国太平洋人寿保险股份有限公司贵州分公司",
+            "facts": "个险渠道经营不审慎、内部管控薄弱;产品宣传销售存在误导行为",
+            "authority": "国家金融监督管理总局贵州监管局",
+            "date": "2024年2月4日"
+          },
+          "query_occurrence_prefix_context": [
+            "书文号贵"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 38,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007089-fb26bae70d3c5e2d8061da5d",
+          "text_sha256": "32b0c71b12dae40de2d2c4d8eb4af8d72d338215388aa864042dcd31f12055e6",
+          "full_text": "国家金融监督管理总局泰安监管分局行政处罚信息公开表(泰金罚决字〔2024〕5号)\n行政处罚决定书文号\n泰金罚决字〔2024〕5号\n被处罚当事人\n天安财产保险股份有限公司\n泰安中心支公司\n主要违法违规事实\n编制虚假财务材料\n行政处罚依据\n《中华人民共和国保险法》第八十\n六条、第一百七十条\n行政处罚决定\n罚款11万元\n作出处罚决定的机关名称\n国家金融监督管理总局\n泰安监管分局\n作出处罚决定的日期\n2024年2月7日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 218,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "泰金罚决字〔2024〕5号",
+            "subject": "天安财产保险股份有限公司泰安中心支公司",
+            "facts": "编制虚假财务材料",
+            "authority": "国家金融监督管理总局泰安监管分局",
+            "date": "2024年2月7日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(泰",
+            "书文号泰"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 39,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007123-c440b4406b90370f43809a8c",
+          "text_sha256": "67f3efa97e31468de55af513750f7247d8e85da198849768c3c8674c48b936df",
+          "full_text": "国家金融监督管理总局白山监管分局行政处罚信息公开表\n(白山金罚决字〔2024〕5号)\n行政处罚决定书文号\n白山金罚决字〔2024〕5号\n被处罚当事人\n中华联合财产保险股份有限公司\n白山中心支公司\n主要违法违规事实\n虚列业务宣传费\n行政处罚依据\n《中华人民共和国保险法》第八\n十六条、第一百七十条。\n行政处罚决定\n罚款11万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局\n白山监管分局\n作出处罚决定的日期\n2024年2月2日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 224,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "白山金罚决字〔2024〕5号",
+            "subject": "中华联合财产保险股份有限公司白山中心支公司",
+            "facts": "虚列业务宣传费",
+            "authority": "国家金融监督管理总局白山监管分局",
+            "date": "2024年2月2日"
+          },
+          "query_occurrence_prefix_context": [
+            "表(白山",
+            "文号白山"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 40,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007156-bc6319277d382fd54d2ab445",
+          "text_sha256": "34b0009c99cd74564bf15cd50ffddcf255d48b51020a0efcc19366222645b073",
+          "full_text": "国家金融监督管理总局云南监管局行政处罚信息公开表(云金罚决字〔2024〕5号)\n行政处罚决定书文号\n云金罚决字〔2024〕5号\n被处罚当事人\n太平养老保险股份有限公司云南分公\n司\n主要违法违规事实\n未按照规定使用经备案的保险条款\n行政处罚依据\n《中华人民共和国保险法》第一百三\n十五条、第一百七十条\n行政处罚决定\n罚款10万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局云南监管局\n作出处罚决定的日期\n2024年1月30日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 224,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "云金罚决字〔2024〕5号",
+            "subject": "太平养老保险股份有限公司云南分公司",
+            "facts": "未按照规定使用经备案的保险条款",
+            "authority": "国家金融监督管理总局云南监管局",
+            "date": "2024年1月30日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(云",
+            "书文号云"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 41,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007160-afa4dc744941e8de974e5520",
+          "text_sha256": "d6d19a0503f0c837271a3f527e63537f66986f6d3cab60c23f35d8315bdbdb06",
+          "full_text": "国家金融监督管理总局黔南分局行政处罚信息公开表\n行政处罚决定书文号\n黔南金罚决字〔2024〕5号\n被处罚当事人\n龙木俊(时任中国太平洋财产保险股份有限公司\n独山支公司经理)\n主要违法违规事实\n对中国太平洋财产保险股份有限公司独山支公\n司利用保险代理人从事虚构保险中介业务套取\n手续费,给予投保人保险合同约定以外的利益事\n项负有责任\n行政处罚依据\n《中华人民共和国保险法》第一百一十六条、\n第一百七十一条\n行政处罚决定\n警告并处罚款6万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局黔南监管分局\n作出处罚决定的日期\n2024年1月25日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 280,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "黔南金罚决字〔2024〕5号",
+            "subject": "龙木俊(时任中国太平洋财产保险股份有限公司独山支公司经理)",
+            "facts": "对中国太平洋财产保险股份有限公司独山支公司利用保险代理人从事虚构保险中介业务套取手续费,给予投保人保险合同约定以外的利益事项负有责任",
+            "authority": "国家金融监督管理总局黔南监管分局",
+            "date": "2024年1月25日"
+          },
+          "query_occurrence_prefix_context": [
+            "文号黔南"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 42,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007185-3af338767416cb29dd113f43",
+          "text_sha256": "ce91f0918edeb735ed97c2acded3000d42d80d6cc5b1f0459cb13516fba1830b",
+          "full_text": "国家金融监督管理总局大连监管局行政处罚信息公开表(大金罚决字〔2024〕5号)\n行政处罚决定书文号\n大金罚决字〔2024〕5号\n被处罚当事人\n董彤(时任富邦财产保险有限公司大连分公司总经理)\n主要违法违规事实\n对虚列业务费用承担直接管理责任。\n行政处罚依据\n《中华人民共和国保险法》第八十六条、第一百七十一条\n行政处罚决定\n责令改正,给予警告,并处二万元罚款\n作出处罚决定的机关名称\n国家金融监督管理总局大连监管局\n作出处罚决定的日期\n2024年1月25日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 239,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "大金罚决字〔2024〕5号",
+            "subject": "董彤(时任富邦财产保险有限公司大连分公司总经理)",
+            "facts": "对虚列业务费用承担直接管理责任。",
+            "authority": "国家金融监督管理总局大连监管局",
+            "date": "2024年1月25日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(大",
+            "书文号大"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 43,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007209-4273124708ab10194eeb1066",
+          "text_sha256": "c1fca4e3fe44dc18e22a2ac02566db7f5b67bb759931f382beeb9bc58a347594",
+          "full_text": "国家金融监督管理总局江苏监管局\n行政处罚信息公开表\n行政处罚决定书文号\n苏金罚决字〔2024〕5号\n被处罚当事人\n方远近(泰康在线财产保险股份有限公\n司副总经理兼互联网事业部总经理)\n主要违法违规事实\n对泰康在线财产保险股份有限公司未\n按规定使用经备案的保险条款负有责\n任\n行政处罚依据\n《中华人民共和国保险法》第一百三\n十五条、第一百七十一条,《财产保险\n公司保险条款和保险费率管理办法》\n(2010年)第二十七条\n行政处罚决定\n警告并处罚款1万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局江苏监管局\n作出处罚决定的日期\n2024年1月19日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 286,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "苏金罚决字〔2024〕5号",
+            "subject": "方远近(泰康在线财产保险股份有限公司副总经理兼互联网事业部总经理)",
+            "facts": "对泰康在线财产保险股份有限公司未按规定使用经备案的保险条款负有责任",
+            "authority": "国家金融监督管理总局江苏监管局",
+            "date": "2024年1月19日"
+          },
+          "query_occurrence_prefix_context": [
+            "书文号苏"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 44,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007219-52d0a5fc66fe6ec805865a28",
+          "text_sha256": "0222238399d08c7a3c5eca88a8c9abf6b2a53b3055ccc3232bdd9d586c3d44c4",
+          "full_text": "国家金融监督管理总局临沂监管分局行政处罚信息公开表(临金罚决字〔2024〕5号)\n行政处罚决定书文号\n临金罚决字〔2024〕5号\n被处罚当事人\n段季雪(时任利宝保险有限公司\n临沂中心支公司副总经理)\n主要违法违规事实\n对利宝保险有限公司临沂中心支\n公司编制虚假财务资料负有责任\n行政处罚依据\n《中华人民共和国保险法》第八\n十六条、第一百七十一条\n行政处罚决定\n警告并罚款5万元\n作出处罚决定的机关名称\n国家金融监督管理总局\n临沂监管分局\n作出处罚决定的日期\n2024年1月26日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 250,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "临金罚决字〔2024〕5号",
+            "subject": "段季雪(时任利宝保险有限公司临沂中心支公司副总经理)",
+            "facts": "对利宝保险有限公司临沂中心支公司编制虚假财务资料负有责任",
+            "authority": "国家金融监督管理总局临沂监管分局",
+            "date": "2024年1月26日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(临",
+            "书文号临"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 45,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007239-a0186067beacd11e284c3a46",
+          "text_sha256": "bdc7a0e3048dbb36d948c82cc73fe5e2d171a4d150def80367978ad4e1556078",
+          "full_text": "国家金融监督管理总局淄博监管分局行政处罚信息公开表(淄金罚决字〔2024〕5号)\n行政处罚决定书文号\n淄金罚决字〔2024〕5号\n被处罚当事人\n冯炎(时任中国平安财产保险股\n份有限公司淄川支公司经理)\n主要违法违规事实\n对中国平安财产保险股份有限公\n司淄博中心支公司报销事项与实\n际经济事项不符负有责任\n行政处罚依据\n《中华人民共和国保险法》第八\n十六条、第一百七十一条\n行政处罚决定\n警告并处罚款1万元\n作出处罚决定的机关名称\n国家金融监督管理总局\n淄博监管分局\n作出处罚决定的日期\n2024年1月23日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 264,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "淄金罚决字〔2024〕5号",
+            "subject": "冯炎(时任中国平安财产保险股份有限公司淄川支公司经理)",
+            "facts": "对中国平安财产保险股份有限公司淄博中心支公司报销事项与实际经济事项不符负有责任",
+            "authority": "国家金融监督管理总局淄博监管分局",
+            "date": "2024年1月23日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(淄",
+            "书文号淄"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 46,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007308-483c9a7ab59e97c87a3396a5",
+          "text_sha256": "09f6d08492c576cd7f13a8ae2e71728e882e50b1c178faff1d661ef6a96cde60",
+          "full_text": "国家金融监督管理总局青岛监管局行政处罚信息公开表(青国金罚决字〔2024〕5号)\n行政处罚决定书文号\n青国金罚决字〔2024〕5号\n被处罚当事人\n渤海财产保险股份有限公司青岛分公司\n主要违法违规事实\n直销业务虚挂中介套取费用、虚列业务\n及管理费\n行政处罚依据\n《中华人民共和国保险法》第一百六十\n一条、第一百七十条\n行政处罚决定\n罚款人民币42万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局青岛监管局\n作出处罚决定的日期\n2024年1月15日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 235,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "青国金罚决字〔2024〕5号",
+            "subject": "渤海财产保险股份有限公司青岛分公司",
+            "facts": "直销业务虚挂中介套取费用、虚列业务及管理费",
+            "authority": "国家金融监督管理总局青岛监管局",
+            "date": "2024年1月15日"
+          },
+          "query_occurrence_prefix_context": [
+            "表(青国",
+            "文号青国"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 47,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007320-de481dec323640ff05c56d4e",
+          "text_sha256": "d8299fec7ee1dd997412cf077a26935d4cb308fb5e292fed45e00aadc0c04b0d",
+          "full_text": "国家金融监督管理总局德州监管分局行政处罚信息公开表(德金罚决字〔2024〕5号)\n行政处罚决定书文号\n德金罚决字〔2024〕5号\n被处罚当事人\n程淑兰(时任利安人寿保险股份有\n限公司德州中心支公司银保部经\n理)\n主要违法违规事实\n对利安人寿保险股份有限公司德\n州中心支公司承诺给予投保人保\n险合同约定以外的其他利益负有\n责任\n行政处罚依据\n《中华人民共和国保险法》第一\n百一十六条、第一百七十一条\n行政处罚决定\n警告并处罚款1万元\n作出处罚决定的机关名称\n国家金融监督管理总局\n德州监管分局\n作出处罚决定的日期\n2024年1月18日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 277,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "德金罚决字〔2024〕5号",
+            "subject": "程淑兰(时任利安人寿保险股份有限公司德州中心支公司银保部经理)",
+            "facts": "对利安人寿保险股份有限公司德州中心支公司承诺给予投保人保险合同约定以外的其他利益负有责任",
+            "authority": "国家金融监督管理总局德州监管分局",
+            "date": "2024年1月18日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(德",
+            "书文号德"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 48,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007339-4449909cc62b7758aee9871d",
+          "text_sha256": "e702f34622be6c1af2b414643495b7587d9d552b0b738a05aeb5608dadd26b03",
+          "full_text": "国家金融监督管理总局广东监管局行政处罚信息公开表(2024年5号)\n行政处罚决定书文号\n粤金罚决字〔2024〕5号\n被处罚当事人\n一、中国人民人寿保险股份有限公\n司广东省分公司\n二、赵波(时任中国人民人寿保险股\n份有限公司广东省分公司市场营销\n部总经理)\n三、韦祖周(时任中国人民人寿保险\n股份有限公司广东省分公司培训部\n总经理)\n主要违法违规事实\n利用产品说明会对保险产品情况进\n行虚假宣传;使用含误导性表述的产\n品宣传资料对代理人进行培训\n行政处罚依据\n《中华人民共和国保险法》第一百\n一十二条、第一百一十六条第一\n项、第一百六十一条、第一百七十\n一条,《保险公司管理规定》第四十\n四条、第五十三条、第六十九条\n行政处罚决定\n一、对中国人民人寿保险股份有限\n公司广东省分公司警告并处罚款25\n万元\n二、对赵波警告并处罚款7万元\n三、对韦祖周警告并处罚款0.5万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局广东监管局\n作出处罚决定的日期\n2024年1月18日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 444,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "粤金罚决字〔2024〕5号",
+            "subject": "一、中国人民人寿保险股份有限公司广东省分公司二、赵波(时任中国人民人寿保险股份有限公司广东省分公司市场营销部总经理)三、韦祖周(时任中国人民人寿保险股份有限公司广东省分公司培训部总经理)",
+            "facts": "利用产品说明会对保险产品情况进行虚假宣传;使用含误导性表述的产品宣传资料对代理人进行培训",
+            "authority": "国家金融监督管理总局广东监管局",
+            "date": "2024年1月18日"
+          },
+          "query_occurrence_prefix_context": [
+            "书文号粤"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 49,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007394-86c94d834a77399e66622695",
+          "text_sha256": "c83067b5e93105dd0a6cbf7f5860ca0814ad3e07eb8f06c4f89590ec1f716336",
+          "full_text": "国家金融监督管理总局宁波监管局行政处罚信息公开表(甬金罚决字〔2024〕5号)\n行政处罚决定书文号\n甬金罚决字〔2024〕5号\n被处罚当事人\n周建国(时任永安财产保险股份有限公\n司宁波分公司总经理)\n主要违法违规事实\n对永安财产保险股份有限公司宁波分公\n司编制或者提供虚假的报告、报表、文\n件、资料,虚构保险中介业务和个人保险\n代理人学历证书不真实问题负有直接管\n理责任\n行政处罚依据\n《中华人民共和国保险法》第一百七十\n一条,《保险代理人监管规定》第一百一\n十条\n行政处罚决定\n警告,并处罚款合计10.5万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局宁波监管局\n作出处罚决定的日期\n2024年1月5日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 315,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "甬金罚决字〔2024〕5号",
+            "subject": "周建国(时任永安财产保险股份有限公司宁波分公司总经理)",
+            "facts": "对永安财产保险股份有限公司宁波分公司编制或者提供虚假的报告、报表、文件、资料,虚构保险中介业务和个人保险代理人学历证书不真实问题负有直接管理责任",
+            "authority": "国家金融监督管理总局宁波监管局",
+            "date": "2024年1月5日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(甬",
+            "书文号甬"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 50,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        }
+      ],
+      "same_decision_source_ids": [
+        "FRV2-SOURCE-F006485-1f05a8186df09e487a899c36"
+      ],
+      "same_decision_count": 1,
+      "false_association_count": 49,
+      "assessment": "same_decision_already_in_frozen_sources",
+      "correction_or_obsolescence_supported": false,
+      "model_comparison": "本次快照未有terminal，仅做身份参照；pending不计模型通过，不等待或干预运行。",
+      "reference_treatment": "存在同案同事实重现，应先进行重复核对，不应仅因原文格式/哈希变化当新增或更正。旧知识卡是否误抽取需另审，此处不推断。",
+      "final_outcome_update": {
+        "status": "budget_stopped",
+        "error": {
+          "code": "PROTECTED_FUTURE_EVENT_BUDGET",
+          "field": null,
+          "message": "Error: SUBMISSION_INCOMPLETE_ledger_denied"
+        },
+        "proposal_actions": [
+          {
+            "attempt": 1,
+            "revision": 1,
+            "action": "add",
+            "reason": "原文为金罚决字〔2024〕5号行政处罚决定书，主体、文号、日期、机关、依据、处罚均有明确引文；检索命中的其他“〔2024〕5号”为不同机关不同文号，不构成同一文书冲突。按原文逐项记录机构及责任人员处罚，并对未载明具体个人职务、个人对应具体行为等作未知处理。"
+          },
+          {
+            "attempt": 2,
+            "revision": 2,
+            "action": "add",
+            "reason": "原文为金罚决字〔2024〕5号行政处罚决定书，主体、文号、日期、机关、依据、处罚均有明确引文；检索命中的其他“〔2024〕5号”为不同机关不同文号，不构成同一文书冲突。按原文逐项记录机构及责任人员处罚，并对未载明具体个人职务、个人对应具体行为等作未知处理。已按复核意见删除“诱导投保”“客户信息不真实”两个要件不足的标签，相关行为改标“其他”。"
+          },
+          {
+            "attempt": 3,
+            "revision": 2,
+            "action": null,
+            "reason": null
+          }
+        ],
+        "reviewer_decisions": [
+          "request_changes"
+        ],
+        "duplicate_add_proposed": true,
+        "reviewer_final_approval": false,
+        "present_as_addition_in_shadow_views": {
+          "P": true,
+          "PR": false
+        },
+        "conclusion": "已提出同案重复新增，但最终未批准；P诊断对照中有该来源，PR批准视图无。"
+      }
+    },
+    {
+      "id": "B093",
+      "new_fields": {
+        "document_no": "金罚决字〔2023〕55号",
+        "party": "一、中国人民人寿保险股份有限公司\r\n二、人保寿险柳州市分公司\r\n三、于喆（时任人保寿险财务管理部副总经理）\r\n四、沈哲华（时任人保寿险收展业务部（后更名为服务营销业务部）副总经理）\r\n五、原俊（时任人保寿险运营管理部总经理）\r\n六、谢怡刚（时任人保寿险信息科技部总经理）\r\n七、王聪（时任人保寿险电子商务部副总经理）\r\n八、邹奕（时任人保寿险精算部副总经理）\r\n九、李深晓（时任人保寿险柳州市分公司副总经理）",
+        "finding": "团单加保未确认应收保费和保费收入；长期险超宽限期应冲回未冲回应收保费和保费收入；通过业务展期方式变相销售已停售保险产品；通过后台修改核心业务系统数据；意外险手续费率超预定附加费用率；养老年金保险实际红利分配方式与备案不一致；补充团体医疗保险协议收益率超保险合同约定；委托无资质机构开展保险代理业务",
+        "legal_basis": "《中华人民共和国保险法》第八十六条、第一百一十六条、第一百三十五条、第一百六十一条、第一百七十条、第一百七十一条",
+        "penalty": "一、对中国人民人寿保险股份有限公司罚款435万元\r\n二、对人保寿险柳州市分公司罚款50万元\r\n三、对于喆警告并处罚款10万元\r\n四、对沈哲华警告并处罚款10万元\r\n五、对原俊警告并处罚款6万元\r\n六、对谢怡刚警告并处罚款10万元\r\n七、对邹奕警告并处罚款10万元\r\n八、对李深晓警告并处罚款10万元\r\n九、对王聪警告并处罚款20万元",
+        "regulator": "国家金融监督管理总局",
+        "decision_date": "2023年12月28日"
+      },
+      "new_raw_sha256": "c650dd270272401dae336b30c38488c11774ec9bac8960863b1f5f17e550970b",
+      "new_full_text": "行政处罚决定书文号\r\n金罚决字〔2023〕55号\r\n被处罚当事人\r\n一、中国人民人寿保险股份有限公司\r\n二、人保寿险柳州市分公司\r\n三、于喆（时任人保寿险财务管理部副总经理）\r\n四、沈哲华（时任人保寿险收展业务部（后更名为服务营销业务部）副总经理）\r\n五、原俊（时任人保寿险运营管理部总经理）\r\n六、谢怡刚（时任人保寿险信息科技部总经理）\r\n七、王聪（时任人保寿险电子商务部副总经理）\r\n八、邹奕（时任人保寿险精算部副总经理）\r\n九、李深晓（时任人保寿险柳州市分公司副总经理）\r\n主要违法违规事实\r\n团单加保未确认应收保费和保费收入；长期险超宽限期应冲回未冲回应收保费和保费收入；通过业务展期方式变相销售已停售保险产品；通过后台修改核心业务系统数据；意外险手续费率超预定附加费用率；养老年金保险实际红利分配方式与备案不一致；补充团体医疗保险协议收益率超保险合同约定；委托无资质机构开展保险代理业务\r\n行政处罚依据\r\n《中华人民共和国保险法》第八十六条、第一百一十六条、第一百三十五条、第一百六十一条、第一百七十条、第一百七十一条\r\n行政处罚决定\r\n一、对中国人民人寿保险股份有限公司罚款435万元\r\n二、对人保寿险柳州市分公司罚款50万元\r\n三、对于喆警告并处罚款10万元\r\n四、对沈哲华警告并处罚款10万元\r\n五、对原俊警告并处罚款6万元\r\n六、对谢怡刚警告并处罚款10万元\r\n七、对邹奕警告并处罚款10万元\r\n八、对李深晓警告并处罚款10万元\r\n九、对王聪警告并处罚款20万元\r\n作出处罚决定的\r\n机关名称\r\n国家金融监督管理总局\r\n作出处罚决定的日期\r\n2023年12月28日",
+      "new_source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1144050&itemId=4113&generaltype=9",
+      "exact_substring_total": 6,
+      "all_candidate_pages_covered": true,
+      "model_snapshot": {
+        "id": "B093",
+        "status": "pending"
+      },
+      "candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F007546-35265fcec8254c7490b3808b",
+          "text_sha256": "40d2986f052641d7744a9f01f8c10c059ff0144de5fa3159d00e157bdb056708",
+          "full_text": "国家金融监督管理总局吉林监管局行政处罚信息公开表(吉金罚决字〔2023〕55号)\n国家金融监督管理总局吉林监管局行政处罚信息公开表\n行政处罚决定书文号\n吉金罚决字〔2023〕55号\n被处罚当事人\n卢阳(时任吉林省昌禾保险销售有限公\n司董事长兼总经理)\n主要违法违规事实\n对吉林省昌禾保险销售有限公司虚列\n人员套取费用、委托未在本机构进行\n执业登记的个人开展保险代理业务、\n超出规定的经营区域从事保险代理业\n务活动、未按规定对分支机构营业场\n所变更和分支机构主要负责人变更事\n项进行公开披露负有责任。\n行政处罚依据\n《中华人民共和国保险法》第一百七\n十条、第一百七十一条,《保险代理人\n监管规定》第二十一条、第六十六\n条、第九十四条、第九十九条、第一\n百零八条。\n行政处罚决定\n警告并处罚款3万元,同时撤销任职资\n格。\n作出处罚决定的机关名称\n国家金融监督管理总局吉林监管局\n作出处罚决定的日期\n2023年12月28日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 419,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "吉金罚决字〔2023〕55号",
+            "subject": "卢阳(时任吉林省昌禾保险销售有限公司董事长兼总经理)",
+            "facts": "对吉林省昌禾保险销售有限公司虚列人员套取费用、委托未在本机构进行执业登记的个人开展保险代理业务、超出规定的经营区域从事保险代理业务活动、未按规定对分支机构营业场所变更和分支机构主要负责人变更事项进行公开披露负有责任。",
+            "authority": "国家金融监督管理总局吉林监管局",
+            "date": "2023年12月28日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(吉",
+            "书文号吉"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 1,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007628-553e16ed7ed1758fb68e950b",
+          "text_sha256": "41bccfca2c67700eff9d61834b3d0f38525275d6f66d4d6905d89d4794fb4385",
+          "full_text": "国家金融监督管理总局济宁监管分局行政处罚信息公开表(济金罚决字〔2023〕55号)\n行政处罚决定书文号\n济金罚决字〔2023〕55号\n被处罚当事人\n刘晓芳(时任中国人民人寿保险股\n份有限公司济宁中心支公司总经\n理助理)\n主要违法违规事实\n对中国人民人寿保险股份有限公\n司济宁中心支公司利用保险业务\n为他人牟取不正当利益负有责任\n行政处罚依据\n《中华人民共和国保险法》第一\n百一十六条、第一百七十一条\n行政处罚决定\n警告并处罚款1万元\n作出处罚决定的机关名称\n国家金融监督管理总局济宁监管\n分局\n作出处罚决定的日期\n2023年12月29日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 279,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "济金罚决字〔2023〕55号",
+            "subject": "刘晓芳(时任中国人民人寿保险股份有限公司济宁中心支公司总经理助理)",
+            "facts": "对中国人民人寿保险股份有限公司济宁中心支公司利用保险业务为他人牟取不正当利益负有责任",
+            "authority": "国家金融监督管理总局济宁监管分局",
+            "date": "2023年12月29日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(济",
+            "书文号济"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 2,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007645-f581069d470994bcf4a89fa3",
+          "text_sha256": "12738fd0a850f3658b034f06d5eaaaa20a3376de7b855e9eb3f3944b93f3af1f",
+          "full_text": "国家金融监督管理总局烟台监管分局行政处罚信息公开表(烟金罚决字〔2023〕55号)\n行政处罚决定书文号\n烟金罚决字〔2023〕55号\n被处罚当事人\n曲广琪(时任华海沣泰保险代理\n有限公司烟台分公司代理人)\n主要违法违规事实\n对华海沣泰保险代理有限公司烟\n台分公司编制虚假财务资料负有\n责任\n行政处罚依据\n《中华人民共和国保险法》第八\n十六条、第一百三十二条、\n第一百七十一条\n行政处罚决定\n警告并处罚款1万元\n作出处罚决定的机关名称\n国家金融监督管理总局\n烟台监管分局\n作出处罚决定的日期\n2023年12月28日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 267,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "烟金罚决字〔2023〕55号",
+            "subject": "曲广琪(时任华海沣泰保险代理有限公司烟台分公司代理人)",
+            "facts": "对华海沣泰保险代理有限公司烟台分公司编制虚假财务资料负有责任",
+            "authority": "国家金融监督管理总局烟台监管分局",
+            "date": "2023年12月28日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(烟",
+            "书文号烟"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 3,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007701-159826af16267b1cae314e9a",
+          "text_sha256": "6b5ba30ed50937ec91668867772eb8e9e9719d448ce50ef74955c9f53df8754e",
+          "full_text": "国家金融监督管理总局陕西监管局行政处罚信息公开表 陕金罚决字〔2023〕55号\n行政处罚决定书文号\n陕金罚决字〔2023〕55号\n被处罚当事人\n中银保险有限公司陕西分公司\n主要违法违规事实\n给予投保人合同约定以外的其他利益\n行政处罚依据\n《中华人民共和国保险法》第一百一十\n六条、第一百六十一条\n行政处罚决定\n对中银保险有限公司陕西分公司处以7\n万元罚款\n作出处罚决定的机关\n名称\n国家金融监督管理总局陕西监管局\n作出处罚决定的日期\n2023年12月29日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 239,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "陕金罚决字〔2023〕55号",
+            "subject": "中银保险有限公司陕西分公司",
+            "facts": "给予投保人合同约定以外的其他利益",
+            "authority": "国家金融监督管理总局陕西监管局",
+            "date": "2023年12月29日"
+          },
+          "query_occurrence_prefix_context": [
+            "公开表陕",
+            "书文号陕"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 4,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007749-df1b624de8c8271f7ddd8dd1",
+          "text_sha256": "a0a258a3a378f36954d8b7f09ec1d77ed3fbe0fa7230c3da81a4cfce5b77cda3",
+          "full_text": "国家金融监督管理总局行政处罚信息公开表\n行政处罚决定书文号\n金罚决字〔2023〕55号\n被处罚当事人\n一、中国人民人寿保险股份有限公\n司\n二、人保寿险柳州市分公司\n三、于喆(时任人保寿险财务管理部\n副总经理)\n四、沈哲华(时任人保寿险收展业务\n部(后更名为服务营销业务部)副总经\n理)\n五、原俊(时任人保寿险运营管理部\n总经理)\n六、谢怡刚(时任人保寿险信息科技\n部总经理)\n七、王聪(时任人保寿险电子商务部\n副总经理)\n八、邹奕(时任人保寿险精算部副总\n经理)\n九、李深晓(时任人保寿险柳州市分\n公司副总经理)\n主要违法违规事实\n团单加保未确认应收保费和保费收\n入;长期险超宽限期应冲回未冲回应\n收保费和保费收入;通过业务展期方\n式变相销售已停售保险产品;通过后\n台修改核心业务系统数据;意外险手\n续费率超预定附加费用率;养老年金\n保险实际红利分配方式与备案不一\n致;补充团体医疗保险协议收益率超\n保险合同约定;委托无资质机构开展\n保险代理业务\n行政处罚依据\n《中华人民共和国保险法》第八十\n六条、第一百一十六条、第一百三\n十五条、第一百六十一条、第一百\n七十条、第一百七十一条\n行政处罚决定\n一、对中国人民人寿保险股份有限\n公司罚款435万元\n二、对人保寿险柳州市分公司罚款\n50万元\n三、对于喆警告并处罚款10万元\n四、对沈哲华警告并处罚款10万元\n五、对原俊警告并处罚款6万元\n六、对谢怡刚警告并处罚款10万元\n七、对邹奕警告并处罚款10万元\n八、对李深晓警告并处罚款10万元\n九、对王聪警告并处罚款20万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局\n作出处罚决定的日期\n2023年12月28日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 715,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "金罚决字〔2023〕55号",
+            "subject": "一、中国人民人寿保险股份有限公司二、人保寿险柳州市分公司三、于喆(时任人保寿险财务管理部副总经理)四、沈哲华(时任人保寿险收展业务部(后更名为服务营销业务部)副总经理)五、原俊(时任人保寿险运营管理部总经理)六、谢怡刚(时任人保寿险信息科技部总经理)七、王聪(时任人保寿险电子商务部副总经理)八、邹奕(时任人保寿险精算部副总经理)九、李深晓(时任人保寿险柳州市分公司副总经理)",
+            "facts": "团单加保未确认应收保费和保费收入;长期险超宽限期应冲回未冲回应收保费和保费收入;通过业务展期方式变相销售已停售保险产品;通过后台修改核心业务系统数据;意外险手续费率超预定附加费用率;养老年金保险实际红利分配方式与备案不一致;补充团体医疗保险协议收益率超保险合同约定;委托无资质机构开展保险代理业务",
+            "authority": "国家金融监督管理总局",
+            "date": "2023年12月28日"
+          },
+          "query_occurrence_prefix_context": [
+            "定书文号"
+          ],
+          "full_number_exact_after_heading": true,
+          "relation": "same_decision_reproduction_supported",
+          "lexical_rank_1_based": 5,
+          "identity_comparison": {
+            "document_no": true,
+            "party": true,
+            "finding": true,
+            "regulator": true,
+            "decision_date": true,
+            "penalty": true,
+            "legal_basis": true
+          },
+          "identity_basis": "完整文号、总局机关、全部主体、决定日期、全部违法事项、逐对象处罚及法律依据均在NFKC+去空白后相同；原全文多出标题/手机页脚或换行，非新增事实。",
+          "correction_or_obsolescence_supported": false,
+          "new_substantive_fact_detected": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008374-b9bcfdb3d1418fa44f5f5b87",
+          "text_sha256": "a0e492f9063c521975882e55cf826da0b07a9403aa245d5e699dcc304e88e06c",
+          "full_text": "国家金融监督管理总局江苏监管局\n行政处罚信息公开表\n行政处罚决定书文号\n苏金罚决字〔2023〕55号\n被处罚当事人\n泰康养老保险股份有限公司江苏分公\n司\n主要违法违规事实\n未经批准设立区域服务中心\n行政处罚依据\n《中华人民共和国保险法》第七十四\n条、第一百六十四条\n行政处罚决定\n罚款30万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局江苏监管局\n作出处罚决定的日期\n2023年10月11日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 208,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "苏金罚决字〔2023〕55号",
+            "subject": "泰康养老保险股份有限公司江苏分公司",
+            "facts": "未经批准设立区域服务中心",
+            "authority": "国家金融监督管理总局江苏监管局",
+            "date": "2023年10月11日"
+          },
+          "query_occurrence_prefix_context": [
+            "书文号苏"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 6,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        }
+      ],
+      "same_decision_source_ids": [
+        "FRV2-SOURCE-F007749-df1b624de8c8271f7ddd8dd1"
+      ],
+      "same_decision_count": 1,
+      "false_association_count": 5,
+      "assessment": "same_decision_already_in_frozen_sources",
+      "correction_or_obsolescence_supported": false,
+      "model_comparison": "本次快照未有terminal，仅做身份参照；pending不计模型通过，不等待或干预运行。",
+      "reference_treatment": "存在同案同事实重现，应先进行重复核对，不应仅因原文格式/哈希变化当新增或更正。旧知识卡是否误抽取需另审，此处不推断。",
+      "final_outcome_update": {
+        "status": "format_repair_exhausted",
+        "error": {
+          "code": "CASE_UNKNOWN",
+          "field": "",
+          "message": "CASE_UNKNOWN"
+        },
+        "proposal_actions": [
+          {
+            "attempt": 1,
+            "revision": 1,
+            "action": "add",
+            "reason": "原文为金罚决字〔2023〕55号行政处罚决定书，主体、文号、日期、机关、依据、处罚及多项独立违规事实均有逐字引文；检索命中的吉金罚决字、济金罚决字、烟金罚决字等同号文书主体或机关不同，不构成本案旧库命中，故新增。"
+          },
+          {
+            "attempt": 2,
+            "revision": 1,
+            "action": "add",
+            "reason": "原文为金罚决字〔2023〕55号行政处罚决定书，主体、文号、日期、机关、依据、处罚及多项独立违规事实均有逐字引文；检索命中的吉金罚决字、济金罚决字、烟金罚决字等同号文书主体或机关不同，不构成本案旧库命中，故新增。"
+          }
+        ],
+        "reviewer_decisions": [],
+        "duplicate_add_proposed": true,
+        "reviewer_final_approval": false,
+        "present_as_addition_in_shadow_views": {
+          "P": false,
+          "PR": false
+        },
+        "conclusion": "已提出同案重复新增，但CASE_UNKNOWN阻断，P和PR均无该新增来源。"
+      }
+    },
+    {
+      "id": "B098",
+      "new_fields": {
+        "document_no": "金罚决字〔2024〕3号",
+        "party": "陆家嘴国际信托有限公司",
+        "finding": "一、报送监管部门的报告报表不真实\r\n二、关联方和关联交易数据不真实\r\n三、以投资名义向不满足“四三二”要求的房地产项目融资\r\n四、未按约定用途使用信托贷款\r\n五、信托资金挪用于缴纳土地出让金\r\n六、信托产品信息披露不审慎\r\n七、违规接受保险资金投资事务管理类信托计划",
+        "legal_basis": "《中华人民共和国银行业监督管理法》第二十一条、第四十六条",
+        "penalty": "对陆家嘴信托罚款420万元",
+        "regulator": "国家金融监督管理总局",
+        "decision_date": "2024年4月22日"
+      },
+      "new_raw_sha256": "ad795fd60c8307201b2091cd1fdf9ef5ffb957bea2b52153c249593181d94e55",
+      "new_full_text": "行政处罚决定书文号\r\n金罚决字〔2024〕3号\r\n被处罚当事人\r\n陆家嘴国际信托有限公司\r\n主要违法违规事实\r\n一、报送监管部门的报告报表不真实\r\n二、关联方和关联交易数据不真实\r\n三、以投资名义向不满足“四三二”要求的房地产项目融资\r\n四、未按约定用途使用信托贷款\r\n五、信托资金挪用于缴纳土地出让金\r\n六、信托产品信息披露不审慎\r\n七、违规接受保险资金投资事务管理类信托计划\r\n行政处罚依据\r\n《中华人民共和国银行业监督管理法》第二十一条、第四十六条\r\n行政处罚决定\r\n对陆家嘴信托罚款420万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局\r\n作出处罚决定的日期\r\n2024年4月22日",
+      "new_source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1160136&itemId=4113&generaltype=9",
+      "exact_substring_total": 54,
+      "all_candidate_pages_covered": true,
+      "model_snapshot": {
+        "id": "B098",
+        "status": "pending"
+      },
+      "candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F005046-98f0b73ac04f9ed65ab7fddb",
+          "text_sha256": "83c15c05970a71405c11df8e4d7cfb6be9a1d2f027ac98994522a04f56c51089",
+          "full_text": "国家金融监督管理总局惠州监管分局行政处罚信息公开表(2024年3号)\n序\n号\n当事人名称\n行政处罚决\n定书文号\n主要违法违规行为\n行政处罚\n内容\n作出决定\n机关\n1\n珠江人寿保\n险股份有限\n公司惠州分\n公司\n惠金罚决字\n〔2024〕3\n号\n虚列费用\n罚款22\n万元\n国家金融\n监督管理\n总局惠州\n监管分局\n2\n刘北姣〔时\n任珠江人寿\n保险股份有\n限公司惠州\n分公司临时\n负责人、副\n总经理(主\n持工作)〕\n警告并罚\n款4万元\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 223,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "惠金罚决字〔2024〕3号",
+            "subject": "珠江人寿保险股份有限公司惠州分公司；刘北姣",
+            "facts": null,
+            "authority": "国家金融监督管理总局惠州监管分局",
+            "date": null
+          },
+          "query_occurrence_prefix_context": [
+            "分公司惠"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 1,
+          "manual_table_read_note": "列式原文完整读取后补录对象与完整文号；决定日期未单列则维持未知，不按抓取日期填补。",
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005060-54aa4979f55cb56cc50d0c4f",
+          "text_sha256": "e4d95981e47d62722f9b7ab61e55f7f5d03114e0033e2ddfcdcb371a85864b41",
+          "full_text": "株洲金融监管分局行政处罚信息公开表(株金罚决字〔2024〕3号)\n行政处罚决定书文号\n株金罚决字〔2024〕3号\n被处罚当事人\n中国太平洋财产保险股份有限公司炎陵\n支公司\n主要违法违规事实\n编制或提供虚假的报告、报表、文件、\n资料\n行政处罚依据\n《中华人民共和国保险法》第八十六\n条、第一百七十条\n行政处罚决定\n罚款10万元\n作出处罚决定的机关名称\n国家金融监督管理总局株洲监管分局\n作出处罚决定的日期\n2024年12月5日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 223,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "株金罚决字〔2024〕3号",
+            "subject": "中国太平洋财产保险股份有限公司炎陵支公司",
+            "facts": "编制或提供虚假的报告、报表、文件、资料",
+            "authority": "国家金融监督管理总局株洲监管分局",
+            "date": "2024年12月5日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(株",
+            "书文号株"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 2,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005376-89cf0157e2469dc28b052cd6",
+          "text_sha256": "a299352aa27be601fceaaa1ca7b7140809f6604e03711c2e7b5e99200a23a45a",
+          "full_text": "国家金融监督管理总局汉中监管分局行政处罚信息公开表\n汉金罚决字〔2024〕3号\n行政处罚决定书文号汉金罚决字〔2024〕3号\n被处罚当事人\n一、华泰人寿保险股份有限公司汉中中心\n支公司\n二、文涛(时任华泰人寿保险股份有限公司\n汉中中心支公司总经理)\n主要违法违规事实未及时为离职代理人办理执业登记注销手\n续\n行政处罚依据\n《保险代理人监管规定》第六十七条、第\n八十一条、第九十四条\n行政处罚决定\n一、对华泰人寿保险股份有限公司汉中中\n心支公司给予警告并处罚款1万元\n二、对文涛给予警告并处罚款0.2万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局汉中监管分局\n作出处罚决定的日期2024年10月12日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 313,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "汉金罚决字〔2024〕3号",
+            "subject": "一、华泰人寿保险股份有限公司汉中中心支公司二、文涛(时任华泰人寿保险股份有限公司汉中中心支公司总经理)",
+            "facts": "未及时为离职代理人办理执业登记注销手续",
+            "authority": "国家金融监督管理总局汉中监管分局",
+            "date": "2024年10月12日"
+          },
+          "query_occurrence_prefix_context": [
+            "公开表汉",
+            "书文号汉"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 3,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005547-eb898a82628431fd5e091b35",
+          "text_sha256": "6ea65a44e63b09d379c490f14347851078b9b03d4b0d1451f5ab1cba89f2489d",
+          "full_text": "国家金融监督管理总局中山监管分局行政处罚信息公开表(2024年3号)\n行政处罚决定书文号\n中金罚决字〔2024〕3号\n被处罚当事人\n一、富德财产保险股份有限公司中山\n中心支公司\n二、冯耀结(时任原富德财产保险股\n份有限公司中山中心支公司总经理)\n主要违法违规事实\n给予投保人保险合同约定以外利益\n行政处罚依据\n《中华人民共和国保险法》第八十六\n条、第一百一十六条、第一百六十一\n条、第一百七十条、第一百七十一条\n行政处罚决定\n一、对富德财产保险股份有限公司中\n山中心支公司罚款10万元\n二、对冯耀结警告并处罚款2万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局中山监管分局\n作出处罚决定的日期\n2024年9月13日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 320,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "中金罚决字〔2024〕3号",
+            "subject": "一、富德财产保险股份有限公司中山中心支公司二、冯耀结(时任原富德财产保险股份有限公司中山中心支公司总经理)",
+            "facts": "给予投保人保险合同约定以外利益",
+            "authority": "国家金融监督管理总局中山监管分局",
+            "date": "2024年9月13日"
+          },
+          "query_occurrence_prefix_context": [
+            "书文号中"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 4,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005748-6ae788f639ee567a4198cf82",
+          "text_sha256": "f899adad993646064af57d8b98b6532db135d3330dd0d87052b504b34780bf94",
+          "full_text": "国家金融监督管理总局保山监管分局行政处罚信息公开表\n(保金罚决字〔2024〕3号)\n行政处罚决定书文号\n保金罚决字〔2024〕3号\n被处罚当事人\n中国大地财产保险股份有限公司保山\n中心支公司\n主要违法违规事实\n编制虚假财务资料;虚挂个人代理业务\n套取手续费;给予投保人保险合同约定\n以外的利益\n行政处罚依据\n《中华人民共和国保险法》第八十六\n条、第一百一十六条、第一百六十一\n条、第一百七十条\n行政处罚决定\n罚款50万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局保山监管分局\n作出处罚决定的日期\n2024年8月12日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 272,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "保金罚决字〔2024〕3号",
+            "subject": "中国大地财产保险股份有限公司保山中心支公司",
+            "facts": "编制虚假财务资料;虚挂个人代理业务套取手续费;给予投保人保险合同约定以外的利益",
+            "authority": "国家金融监督管理总局保山监管分局",
+            "date": "2024年8月12日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(保",
+            "书文号保"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 5,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005891-f3308416e07c223bda7e37ef",
+          "text_sha256": "d24561a1f7a61b24ccd9c35cb1d91b50ae13b2140552843efebb31785e2b8625",
+          "full_text": "国家金融监督管理总局滁州监管分局行政处罚信息公开表(滁金罚决字〔2024〕3号)\n(财信吉祥人寿保险股份有限公司滁州中心支公司)\n行政处罚决定书文号\n滁金罚决字〔2024〕3号\n被处罚当事人\n财信吉祥人寿保险股份有限公司滁州中\n心支公司\n主要违法违规事实\n虚挂银保渠道业务套取费用\n行政处罚依据\n《中华人民共和国保险法》第八十六\n条、第一百七十条、第一百七十一条。\n行政处罚决定\n罚款15万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局滁州监管分局\n作出处罚决定的日期\n2024年7月26日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 258,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "滁金罚决字〔2024〕3号",
+            "subject": "财信吉祥人寿保险股份有限公司滁州中心支公司",
+            "facts": "虚挂银保渠道业务套取费用",
+            "authority": "国家金融监督管理总局滁州监管分局",
+            "date": "2024年7月26日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(滁",
+            "书文号滁"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 6,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005917-4c0cb2e03318a6c0eff92a31",
+          "text_sha256": "b9e46566fa99b30abd16241323d06e98e3a6c6cdda212e7d734112381c045bb0",
+          "full_text": "国家金融监督管理总局厦门监管局行政处罚信息公开表2024-3\n行政处罚决定书文号\n厦金罚决字〔2024〕3号\n被处罚当事人\n一、国泰财产保险有限责任公司厦\n门中心支公司\n二、张文远(时任国泰财产保险有限\n责任公司厦门中心支公司业务总监)\n主要违法违规事实\n利用保险代理人虚构保险中介业务\n套取费用\n行政处罚依据\n《中华人民共和国保险法》第一百\n六十一条、第一百七十一条\n行政处罚决定\n一、对国泰财产保险有限责任公司\n厦门中心支公司罚款25万元\n二、对张文远警告并处罚款8万元\n作出处罚决定的机关名称\n国家金融监督管理总局厦门监管局\n作出处罚决定的日期\n2024年7月16日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 297,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "厦金罚决字〔2024〕3号",
+            "subject": "一、国泰财产保险有限责任公司厦门中心支公司二、张文远(时任国泰财产保险有限责任公司厦门中心支公司业务总监)",
+            "facts": "利用保险代理人虚构保险中介业务套取费用",
+            "authority": "国家金融监督管理总局厦门监管局",
+            "date": "2024年7月16日"
+          },
+          "query_occurrence_prefix_context": [
+            "书文号厦"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 7,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005922-41fc5addf3d8f5da6e01a70d",
+          "text_sha256": "91d478d6b4d9471ac45eb8752f6a1fda6e0dccf059cd2ff9b07603ec8799a8db",
+          "full_text": "国家金融监督管理总局来宾监管分局行政处罚信息公开表\n(来金罚决字〔2024〕3号)\n行政处罚决定书文号\n来金罚决字〔2024〕3号\n被处罚当事人姓名或名称\n一、新华人寿保险股份有限公司来宾\n中心支公司\n二、韩磊(时任新华人寿来宾中支总经\n理助理)\n主要违法违规事实\n销售误导、承诺给予合同外利益\n行政处罚依据\n《中华人民共和国保险法》第一百六\n十一条、第一百七十一条\n行政处罚决定\n一、对新华人寿来宾中支罚款17万元\n二、对韩磊警告并处罚款2万元\n作出处罚决定的机关名称\n国家金融监督管理总局来宾监管分局\n作出处罚决定的日期\n2024年7月17日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 284,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "来金罚决字〔2024〕3号",
+            "subject": "姓名或名称一、新华人寿保险股份有限公司来宾中心支公司二、韩磊(时任新华人寿来宾中支总经理助理)",
+            "facts": "销售误导、承诺给予合同外利益",
+            "authority": "国家金融监督管理总局来宾监管分局",
+            "date": "2024年7月17日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(来",
+            "书文号来"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 8,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005923-d3624c3c777a0c4feab70c44",
+          "text_sha256": "904099e5098c6c6e1596a322e1bc7e03690e548f08fb3bc5c899053769d72487",
+          "full_text": "国家金融监督管理总局文山监管局行政处罚信息公开表\n(文金罚决字〔2024〕3号)\n行政处罚决定书文号\n文金罚决字〔2024〕3号\n被处罚当事人\n泰康人寿保险有限责任公司云南文山\n中心支公司\n主要违法违规事实\n代理人管理不当导致代理人给予投保\n人保险合同约定以外的利益;未按照规\n定使用经批准或者备案的保险条款\n行政处罚依据\n《保险代理人监管规定》第六十八\n条、第七十条、第一百一十条,《中华\n人民共和国保险法》第一百三十五\n条、第一百七十条\n行政处罚决定\n警告并处罚款13.3万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局文山监管分局\n作出处罚决定的日期\n2024年6月28日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 302,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "文金罚决字〔2024〕3号",
+            "subject": "泰康人寿保险有限责任公司云南文山中心支公司",
+            "facts": "代理人管理不当导致代理人给予投保人保险合同约定以外的利益;未按照规定使用经批准或者备案的保险条款",
+            "authority": "国家金融监督管理总局文山监管分局",
+            "date": "2024年6月28日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(文",
+            "书文号文"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 9,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005928-d9f167418b2cc3a3d7f0da27",
+          "text_sha256": "c7688063b431863afbf97438d47e008e21680fc22cdf18063e6feb131397c891",
+          "full_text": "国家金融监督管理总局防城港监管分局行政处罚信息公开表(防港金罚决字〔2024〕3号)\n行政处罚决定书文号\n防港金罚决字〔2024〕3号\n被处罚当事人\n一、中国人寿财产保险股份有限公司\n防城港市中心支公司\n二、计利杰(时任中国人寿财产保险\n股份有限公司防城港中心支公司副总\n经理)\n三、温金东(时任中国人寿财产保险\n股份有限公司防城港中心支公司总经\n理助理)\n四、张欣(时任中国人寿财产保险股\n份有限公司防城港中心支公司总经理\n助理)\n五、江国亮(时任中国人寿财产保险\n股份有限公司防城港中心支公司车\n行/个代/普通中介业务/数字渠道业\n务部副经理)\n主要违法违规事实\n财务业务数据不真实;以直接业务转\n为中介业务等方式套取手续费;未建\n立完整的从业人员培训档案\n行政处罚依据\n《中华人民共和国保险法》第一百六\n十一条、第一百七十条、第一百七十\n一条以及《保险代理人监管规定》第\n一百一十条、第九十四条\n行政处罚决定\n一、对中国人寿财险防城港市中心支\n公司罚款25.3万元\n二、对计利杰警告并处罚款3万元\n三、对温金东警告并处罚款2万元\n四、对张欣警告并处罚款2万元\n五、对江国亮警告并处罚款1000元\n作出处罚决定的\n机关名称\n国家金融监督管理总局防城港监管分\n局\n作出处罚决定的日期\n2024年7月18日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 564,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "防港金罚决字〔2024〕3号",
+            "subject": "一、中国人寿财产保险股份有限公司防城港市中心支公司二、计利杰(时任中国人寿财产保险股份有限公司防城港中心支公司副总经理)三、温金东(时任中国人寿财产保险股份有限公司防城港中心支公司总经理助理)四、张欣(时任中国人寿财产保险股份有限公司防城港中心支公司总经理助理)五、江国亮(时任中国人寿财产保险股份有限公司防城港中心支公司车行/个代/普通中介业务/数字渠道业务部副经理)",
+            "facts": "财务业务数据不真实;以直接业务转为中介业务等方式套取手续费;未建立完整的从业人员培训档案",
+            "authority": "国家金融监督管理总局防城港监管分局",
+            "date": "2024年7月18日"
+          },
+          "query_occurrence_prefix_context": [
+            "表(防港",
+            "文号防港"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 10,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005937-d4406d0956cb538c07db20b8",
+          "text_sha256": "47da9fb50197cd24586d6442dd1e9c11d6a28485a5c0a19d13df6ce19220d79d",
+          "full_text": "国家金融监督管理总局玉林监管分局行政处罚信息公开表\n(玉金罚决字〔2024〕3号)\n行政处罚决定书文号\n玉金罚决字〔2024〕3号\n被处罚当事人\n一、中国平安财产保险股份有限公司\n玉林中心支公司\n二、陈燕容(时任中国平安财产保险股\n份有限公司玉林中心支公司团体综合\n业务分部销售总监)\n三、陈思霖(时任中国平安财产保险股\n份有限公司玉林中心支公司车商业务\n分部销售经理)\n主要违法违规事实\n未按照规定使用经备案的保险条款和\n保险费率;虚构保险中介业务套取费用\n行政处罚依据\n《中华人民共和国保险法》第一百六\n十一条、第一百七十条、第一百七十\n一条\n行政处罚决定\n一、对中国平安财产保险股份有限公\n司玉林中心支公司责令改正,罚款17万\n元\n二、对陈燕容警告并处罚款1万元\n三、对陈思霖警告并处罚款1万元\n作出处罚决定的机关名\n称\n国家金融监督管理总局玉林监管分局\n作出处罚决定的日期\n2024年7月12日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 412,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "玉金罚决字〔2024〕3号",
+            "subject": "一、中国平安财产保险股份有限公司玉林中心支公司二、陈燕容(时任中国平安财产保险股份有限公司玉林中心支公司团体综合业务分部销售总监)三、陈思霖(时任中国平安财产保险股份有限公司玉林中心支公司车商业务分部销售经理)",
+            "facts": "未按照规定使用经备案的保险条款和保险费率;虚构保险中介业务套取费用",
+            "authority": "国家金融监督管理总局玉林监管分局",
+            "date": "2024年7月12日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(玉",
+            "书文号玉"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 11,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006118-79537d248b7f8cd254577644",
+          "text_sha256": "5779ca6709a0a8902b160c94edb169223b2afa535cdb6317fcc03e96b386e420",
+          "full_text": "国家金融监督管理总局黔西南监管分局行政处罚信息公开表\n行政处罚决定书文号\n黔西南金罚决字〔2024〕3号\n被处罚当事人\n中国太平洋财产保险股份有限公司黔西南中心\n支公司\n主要违法违规事实\n给予投保人、被保险人合同约定以外的其他利\n益\n行政处罚依据\n《中华人民共和国保险法》第一百一十六条、\n第一百六十一条\n行政处罚决定\n罚款21万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局黔西南监管分局\n作出处罚决定的日期\n2024年6月17日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 229,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "黔西南金罚决字〔2024〕3号",
+            "subject": "中国太平洋财产保险股份有限公司黔西南中心支公司",
+            "facts": "给予投保人、被保险人合同约定以外的其他利益",
+            "authority": "国家金融监督管理总局黔西南监管分局",
+            "date": "2024年6月17日"
+          },
+          "query_occurrence_prefix_context": [
+            "号黔西南"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 12,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006160-64caf73d85e3eb68f3da5b2a",
+          "text_sha256": "983383016d9dfc4a4e62f12bef9eabdfdde3bfed83d6325bb9ae5a98a9b96616",
+          "full_text": "国家金融监督管理总局常德监管分局行政处罚信息公开表(常金罚决字〔2024〕3号)\n国家金融监督管理总局常德监管分局\n行政处罚信息公开表\n行政处罚决定书文号\n常金罚决字〔2024〕3号\n被处罚当事人\n黄彩凤(时任泰康人寿保险有限责任公司\n湖南常德中心支公司营销部经理)\n主要违法违规事实\n对泰康人寿保险有限责任公司湖南常德\n中心支公司产品说明会部分课件存在销\n售误导行为承担直接责任\n行政处罚依据\n《保险公司管理规定》第六十九条\n行政处罚决定\n警告,并处罚款3000元\n作出处罚决定的机关名称\n国家金融监督管理总局常德监管分局\n作出处罚决定的日期\n2024年6月11日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 294,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "常金罚决字〔2024〕3号",
+            "subject": "黄彩凤(时任泰康人寿保险有限责任公司湖南常德中心支公司营销部经理)",
+            "facts": "对泰康人寿保险有限责任公司湖南常德中心支公司产品说明会部分课件存在销售误导行为承担直接责任",
+            "authority": "国家金融监督管理总局常德监管分局",
+            "date": "2024年6月11日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(常",
+            "书文号常"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 13,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006166-0c445137c4f7ea67e5f80560",
+          "text_sha256": "58af6477e5ab5ccb601a13b762939fc54dfe65e97296a8f7933f489c6f6828e7",
+          "full_text": "国家金融监督管理总局邯郸监管分局\n行政处罚信息公开表(邯金罚决字〔2024〕3号)\n行政处罚决定书文号\n邯金罚决字〔2024〕3号\n被处罚当事人\n一、河北新大众保险代理有限公司\n二、王军(时任河北新大众保险代理有限\n公司董事长)\n主要违法违规事实\n客户告知书制作不规范;临时负责人任职\n时间超过法定期限;未开立独立的佣金收\n取账户;委托未通过该机构进行执业登记\n的人员从事保险代理业务\n行政处罚依据\n《保险代理人监管规定》第三十五条、第\n四十九条、第五十四条、第六十六条、第\n九十三条、第九十四条、第一百零一条、\n第一百零八条\n行政处罚决定\n一、对河北新大众保险代理有限公司给予\n警告,合计并处四万元罚款\n二、对王军给予警告,合计并处二万元罚\n款\n作出处罚决定的机关名称\n国家金融监督管理总局邯郸监管分局\n作出处罚决定的日期\n2024年6月5日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 383,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "邯金罚决字〔2024〕3号",
+            "subject": "一、河北新大众保险代理有限公司二、王军(时任河北新大众保险代理有限公司董事长)",
+            "facts": "客户告知书制作不规范;临时负责人任职时间超过法定期限;未开立独立的佣金收取账户;委托未通过该机构进行执业登记的人员从事保险代理业务",
+            "authority": "国家金融监督管理总局邯郸监管分局",
+            "date": "2024年6月5日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(邯",
+            "书文号邯"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 14,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006213-a2375d841058bb18428d5329",
+          "text_sha256": "1fb35f4efcbbcdeca313758fdeb9217f7cf4f7623112f799c50dd7d2e4234bf8",
+          "full_text": "国家金融监督管理总局石嘴山监管分局行政处罚信息公开表(石金罚决字〔2024〕3号)\n行政处罚决定书文号\n石金罚决字〔2024〕3号\n被处罚当事人\n一、中国人民人寿保险股份有限公司石嘴山支\n公司\n二、祁自强(时为中国人民人寿保险股份有限\n公司石嘴山支公司经理)\n主要违法违规事实\n诱导保险代理人进行违背诚信义务的活动\n行政处罚依据\n《保险公司管理规定》第六十九条\n行政处罚决定\n一、对中国人民人寿保险股份有限公司石嘴山\n支公司警告并处罚款5000元\n二、对祁自强警告并处罚款5000元\n作出处罚决定的机关\n名称\n国家金融监督管理总局石嘴山监管分局\n作出处罚决定的日期\n2024年6月7日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 303,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "石金罚决字〔2024〕3号",
+            "subject": "一、中国人民人寿保险股份有限公司石嘴山支公司二、祁自强(时为中国人民人寿保险股份有限公司石嘴山支公司经理)",
+            "facts": "诱导保险代理人进行违背诚信义务的活动",
+            "authority": "国家金融监督管理总局石嘴山监管分局",
+            "date": "2024年6月7日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(石",
+            "书文号石"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 15,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006280-e46cf14f9fbbd288778f30ab",
+          "text_sha256": "7aa74397a71e7d3cea7a63bcf528810f14b92d6621127c62b6bd22ad142f26b0",
+          "full_text": "娄底金融监管分局行政处罚信息公开表(娄金罚决字〔2024〕3号)\n国家金融监督管理总局娄底监管分局\n行政处罚信息公开表\n行政处罚决定书文号\n娄金罚决字〔2024〕3号\n被处罚当事人\n中国人民财产保险股份有限公司\n娄底市分公司\n主要违法违规事实\n编制或者提供虚假的报告、报\n表、文件、资料;虚构保险中介业\n务套取手续费\n行政处罚依据\n《中华人民共和国保险法》第八十\n六条、第一百一十六条、第一百六\n十一条、第一百七十条\n行政处罚决定\n罚款人民币30万元\n作出处罚决定的机关名称\n国家金融监督管理总局娄底监管\n分局\n作出处罚决定的日期\n2024年 5月 29日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 289,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "娄金罚决字〔2024〕3号",
+            "subject": "中国人民财产保险股份有限公司娄底市分公司",
+            "facts": "编制或者提供虚假的报告、报表、文件、资料;虚构保险中介业务套取手续费",
+            "authority": "国家金融监督管理总局娄底监管分局",
+            "date": "2024年5月29日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(娄",
+            "书文号娄"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 16,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006294-b836d5829d92ea65ff118996",
+          "text_sha256": "175d7a0c3b175b34e98eb6fc195eb2e46eef881fcd0fa34026e6ad07249bcc16",
+          "full_text": "国家金融监督管理总局金华监管分局行政处罚信息公开表\n(金金罚决字〔2024〕3号)\n行政处罚决定书文号\n金金罚决字〔2024〕3号\n被处罚当事人\n一、中国人民人寿保险股份有限公司金\n华市中心支公司\n二、陈萍(时任中国人民人寿保险股份有\n限公司金华市中心支公司个险人力发展\n部副经理(主持工作))\n三、黎海燕(时任中国人民人寿保险股份\n有限公司金华市中心支公司代理人)\n主要违法违规事实\n个人代理人管理不到位,代理人委托其他\n人员从事保险代理业务\n行政处罚依据\n《保险代理人监管规定》第六十八条、\n第七十一条、第一百一十条、第一百零\n三条\n行政处罚决定\n一、对中国人民人寿保险股份有限公司\n金华市中心支公司警告,并处罚款0.3万元\n二、对陈萍警告,并处罚款人民币0.3万元\n三、对黎海燕警告,并处罚款人民币0.3万\n元\n作出处罚决定的\n机关名称\n国家金融监督管理总局金华监管分局\n作出处罚决定的日期\n2024年5月29日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 420,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "金金罚决字〔2024〕3号",
+            "subject": "一、中国人民人寿保险股份有限公司金华市中心支公司二、陈萍(时任中国人民人寿保险股份有限公司金华市中心支公司个险人力发展部副经理(主持工作))三、黎海燕(时任中国人民人寿保险股份有限公司金华市中心支公司代理人)",
+            "facts": "个人代理人管理不到位,代理人委托其他人员从事保险代理业务",
+            "authority": "国家金融监督管理总局金华监管分局",
+            "date": "2024年5月29日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(金",
+            "书文号金"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 17,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006390-68b1338e05dde85de1bb6712",
+          "text_sha256": "abf888547a5f3a735de76e7c53d6c0480ccc361196f4e07ab800ae602579be56",
+          "full_text": "国家金融监督管理总局揭阳监管分局行政处罚信息公开表(2024年3号)\n行政处罚决定书文号\n揭金罚决字〔2024〕3号\n被处罚当事人\n一、中国人寿财产保险股份有限公司揭阳\n中心支公司\n二、郑泽楷(时任中国人寿财产保险股份\n有限公司揭阳中心支公司总经理助理)\n三、林泽楠(时任中国人寿财产保险股份\n有限公司揭阳中心支公司车辆保险部、财\n产保险部、责意健保险部、信用保证保险\n部经理)\n四、罗海山(时任中国人寿财产保险股份\n有限公司普宁支公司副经理)\n五、罗培栋(时任中国人寿财产保险股份\n有限公司普宁支公司车行业务部业务员)\n主要违法违规事实\n给予投保人保险合同约定以外的其他利益\n行政处罚依据\n《中华人民共和国保险法》第一百一十六\n条、第一百六十一条、第一百七十一条\n行政处罚决定\n一、对中国人寿财产保险股份有限公司揭\n阳中心支公司罚款17万元\n二、对郑泽楷警告并处罚款5.5万元\n三、对林泽楠警告并处罚款1.5万元\n四、对罗海山警告并处罚款1万元\n五、对罗培栋警告并处罚款1万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局揭阳监管分局\n作出处罚决定的日期\n2024年5月20日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 501,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "揭金罚决字〔2024〕3号",
+            "subject": "一、中国人寿财产保险股份有限公司揭阳中心支公司二、郑泽楷(时任中国人寿财产保险股份有限公司揭阳中心支公司总经理助理)三、林泽楠(时任中国人寿财产保险股份有限公司揭阳中心支公司车辆保险部、财产保险部、责意健保险部、信用保证保险部经理)四、罗海山(时任中国人寿财产保险股份有限公司普宁支公司副经理)五、罗培栋(时任中国人寿财产保险股份有限公司普宁支公司车行业务部业务员)",
+            "facts": "给予投保人保险合同约定以外的其他利益",
+            "authority": "国家金融监督管理总局揭阳监管分局",
+            "date": "2024年5月20日"
+          },
+          "query_occurrence_prefix_context": [
+            "书文号揭"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 18,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006527-f35fbee948798f0c82adb10f",
+          "text_sha256": "c14a1809e6146024c225ad1ffa7f9acbddfa83804f135d9846e1699e1dd33c4a",
+          "full_text": "国家金融监督管理总局丹东监管分局行政处罚信息公开表\n行政处罚决定书文号\n丹金罚决字〔2024〕3号\n被处罚当事人\n中国人民财产保险股份有限公司东港支\n公司\n主要违法违规事实\n委托未持有本机构发放的执业证书的人\n员从事保险销售行为;对投保人隐瞒与保\n险合同有关的重要情况,包括保费具体金\n额、投保险种及险种变更情况\n行政处罚依据\n《保险销售从业人员监管办法》第三十\n一条;《中华人民共和国保险法》第一百\n六十一条\n行政处罚决定\n警告并罚款人民币6万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局丹东监管分局\n作出处罚决定的日期\n2024年5月6日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 285,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "丹金罚决字〔2024〕3号",
+            "subject": "中国人民财产保险股份有限公司东港支公司",
+            "facts": "委托未持有本机构发放的执业证书的人员从事保险销售行为;对投保人隐瞒与保险合同有关的重要情况,包括保费具体金额、投保险种及险种变更情况",
+            "authority": "国家金融监督管理总局丹东监管分局",
+            "date": "2024年5月6日"
+          },
+          "query_occurrence_prefix_context": [
+            "书文号丹"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 19,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006557-c4cafeabde435b724aba91e4",
+          "text_sha256": "16227b15d3a55349b2d23891d08ae3a88ae0318eb8c03475a79cde141f81ecac",
+          "full_text": "国家金融监督管理总局清远监管分局行政处罚信息公开表(2024年3号)\n行政处罚决定书文号\n清金罚决字〔2024〕3号\n被处罚当事人\n一、中国人寿财产保险股份有限公\n司清远中心支公司\n二、李月胜[时任中国人寿财产保\n险股份有限公司清远中心支公司副\n总经理(主持全面工作)]\n三、李维新(时任中国人寿财产保\n险股份有限公司清远中心支公司总\n经理助理)\n四、李文峰(时任中国人寿财产保\n险股份有限公司清远中心支公司农\n村业务部经理)\n五、江俊钧(时任中国人寿财产保\n险股份有限公司清远中心支公司农\n村业务部农险主管)\n主要违法违规事实\n未按照规定使用经备案的农业保险\n条款;未如实记录保险业务事项;给\n予投保人保险合同约定以外利益\n行政处罚依据\n《中华人民共和国保险法》第八十\n六条、第一百一十六条第四项、第\n一百三十五条、第一百六十一条、\n第一百七十条、第一百七十一条,\n《农业保险条例》第十九条\n行政处罚决定\n一、对中国人寿财产保险股份有限\n公司清远中心支公司罚款合计25\n万元\n二、对李月胜警告并处罚款1万元\n三、对李文峰警告并处罚款1万元\n四、对江俊钧警告并处罚款1万元\n五、对李维新警告并处罚款1万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局清远监管分\n局\n作出处罚决定的日期\n2024年4月26日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 565,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "清金罚决字〔2024〕3号",
+            "subject": "一、中国人寿财产保险股份有限公司清远中心支公司二、李月胜[时任中国人寿财产保险股份有限公司清远中心支公司副总经理(主持全面工作)]三、李维新(时任中国人寿财产保险股份有限公司清远中心支公司总经理助理)四、李文峰(时任中国人寿财产保险股份有限公司清远中心支公司农村业务部经理)五、江俊钧(时任中国人寿财产保险股份有限公司清远中心支公司农村业务部农险主管)",
+            "facts": "未按照规定使用经备案的农业保险条款;未如实记录保险业务事项;给予投保人保险合同约定以外利益",
+            "authority": "国家金融监督管理总局清远监管分局",
+            "date": "2024年4月26日"
+          },
+          "query_occurrence_prefix_context": [
+            "书文号清"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 20,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006590-34ecfacdd2707dffffc31fef",
+          "text_sha256": "de68b062b5c12912688ee0bd1de6c4fad4e50e238d1df45d6c62d781c00710ed",
+          "full_text": "国家金融监督管理总局昭通监管分局行政处罚信息公开表\n(昭金罚决字〔2024〕3号)\n行政处罚决定书文号\n昭金罚决字〔2024〕3号\n被处罚当事人\n泰康人寿保险有限责任公司云南昭通中心\n支公司\n主要违法违规事实\n对分支机构管理不到位;员工虚挂代理业务\n套取费用;编制虚假资料;虚假宣传保险产\n品;违规唆使、诱导保险代理人进行违背诚\n信义务的活动;违规委托医护人员销售健康\n保险产品\n行政处罚依据\n《中华人民共和国保险法》第八十六条、\n第一百一十六条、第一百六十一条、第一\n百七十条,《中华人民共和国行政处罚法》\n第二十八条,《保险公司管理规定》第三十\n五条、 第三十八条、第三十九条、第四十\n条、第五十三条、第六十九条,《保险公司\n内部控制基本准则》第二十二条,《健康保\n险管理办法》第三十七条、第六十五条\n行政处罚决定\n警告,没收违法所得0.1736万元,罚款\n24.6472万元,罚没合计24.8208万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局昭通监管分局\n作出处罚决定的日期\n2024年4月25日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 466,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "昭金罚决字〔2024〕3号",
+            "subject": "泰康人寿保险有限责任公司云南昭通中心支公司",
+            "facts": "对分支机构管理不到位;员工虚挂代理业务套取费用;编制虚假资料;虚假宣传保险产品;违规唆使、诱导保险代理人进行违背诚信义务的活动;违规委托医护人员销售健康保险产品",
+            "authority": "国家金融监督管理总局昭通监管分局",
+            "date": "2024年4月25日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(昭",
+            "书文号昭"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 21,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006727-472a45cff6ae63a455ca0182",
+          "text_sha256": "d2ea3462a0e191762246bc9f784279b101fb9052e409185666cc50d0858148a5",
+          "full_text": "国家金融监督管理总局商丘监管分局\n行政处罚信息公开表\n(商金罚决字〔2024〕3号)\n行政处罚决定书文号\n商金罚决字〔2024〕3号\n被处罚当事人\n国元农业保险股份有限公司商丘中心支\n公司\n主要违法违规事实\n编制提供虚假报表、资料;未经批准擅自\n变更营业场所\n行政处罚依据\n《中华人民共和国保险法》第八十四条\n第(三)项、第八十六条第二款、第一百\n六十二条、第一百七十条\n行政处罚决定\n罚款26万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局商丘监管分局\n作出处罚决定的日期\n2024年4月12日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 261,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "商金罚决字〔2024〕3号",
+            "subject": "国元农业保险股份有限公司商丘中心支公司",
+            "facts": "编制提供虚假报表、资料;未经批准擅自变更营业场所",
+            "authority": "国家金融监督管理总局商丘监管分局",
+            "date": "2024年4月12日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(商",
+            "书文号商"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 22,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006802-0b562500d12ceb13ff92312d",
+          "text_sha256": "4533f3dbf40d82eb64d2f30cfd57fb8bc884bf970d5809ccba7434ecc41c291f",
+          "full_text": "国家金融监督管理总局苏州监管分局\n行政处罚信息公开表\n行政处罚决定书文号\n苏州金罚决字〔2024〕3号\n被处罚当事人\n赵鹏(泰康人寿保险有限责任公司江苏\n苏州中心支公司副总经理(分管个险))\n主要违法违规事实\n对泰康人寿保险有限责任公司江苏苏\n州中心支公司欺骗投保人、虚挂人\n力、个人保险代理人执业登记管理不\n规范负有责任\n行政处罚依据\n《中华人民共和国保险法》第八十六\n条、第一百一十六条、第一百七十一\n条,《保险代理人监管规定》第六十七\n条、第八十一条、第九十四条\n行政处罚决定\n警告并处罚款6万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局苏州监管分局\n作出处罚决定的日期\n2024年3月29日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 313,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "苏州金罚决字〔2024〕3号",
+            "subject": "赵鹏(泰康人寿保险有限责任公司江苏苏州中心支公司副总经理(分管个险))",
+            "facts": "对泰康人寿保险有限责任公司江苏苏州中心支公司欺骗投保人、虚挂人力、个人保险代理人执业登记管理不规范负有责任",
+            "authority": "国家金融监督管理总局苏州监管分局",
+            "date": "2024年3月29日"
+          },
+          "query_occurrence_prefix_context": [
+            "文号苏州"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 23,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006858-3270489ca610d7fd2605462e",
+          "text_sha256": "4b35a3c768fb38c09fc3d6b0b5c02ca785504713c51e5935a38f13b522972f37",
+          "full_text": "国家金融监督管理总局三亚监管分局\n行政处罚信息公开表\n行政处罚决定书文号\n亚金罚决字〔2024〕3号\n被处罚当事人\n黄敏(时任三亚安骅汽车销售服务有限\n公司售后站长)\n主要违法违规事实\n对三亚安骅汽车销售服务有限公司未\n建立专门账簿记载保险代理业务收支\n情况、未开立独立的佣金收取账户、\n给予投保人、被保险人合同约定以外\n的利益负有责任\n行政处罚依据\n《中华人民共和国保险法》第一百二\n十三条、第一百三十一条,《保险代理\n人监管规定》第四十八条、第四十九\n条、第七十条、第九十七条、第一百\n零二条、第一百零八条\n行政处罚决定\n警告并罚款0.6万元\n作出行政处罚决定的机关名\n称\n国家金融监督管理总局三亚监管分局\n作出行政处罚决定的日期\n2024年4月2日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 338,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "亚金罚决字〔2024〕3号",
+            "subject": "黄敏(时任三亚安骅汽车销售服务有限公司售后站长)",
+            "facts": "对三亚安骅汽车销售服务有限公司未建立专门账簿记载保险代理业务收支情况、未开立独立的佣金收取账户、给予投保人、被保险人合同约定以外的利益负有责任",
+            "authority": null,
+            "date": null
+          },
+          "query_occurrence_prefix_context": [
+            "书文号亚"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 24,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006869-eb7333bac6dd097d85587934",
+          "text_sha256": "5a1a995370e844b4d058a644b539bd2f2bb54336adf03f603b7dd36aa6a9f9d2",
+          "full_text": "国家金融监督管理总局辽源监管分局行政处罚信息公开表\n(辽金罚决字〔2024〕3号)\n行政处罚决定书文号\n辽金罚决字〔2024〕3号\n被处罚当事人\n一、大家财产保险有限责任公司吉林分\n公司辽源中心支公司\n二、陈志刚(大家财产保险有限责任公司\n吉林分公司白城中心支公司副总经理(主\n持工作)(时任大家财险辽源中心支公司\n副总经理(主持工作))\n主要违法违规事实\n虚列费用\n行政处罚依据\n《中华人民共和国保险法》第八十六\n条、第一百七十条、第一百七十一条\n行政处罚决定\n一、对大家财产保险有限责任公司吉林\n分公司辽源中心支公司罚款22万元\n二、对陈志刚给予警告并罚款4万元\n作出处罚决定的机关名称\n国家金融监督管理总局辽源监管分局\n作出处罚决定的日期\n2024年3月27日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 344,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "辽金罚决字〔2024〕3号",
+            "subject": "一、大家财产保险有限责任公司吉林分公司辽源中心支公司二、陈志刚(大家财产保险有限责任公司吉林分公司白城中心支公司副总经理(主持工作)(时任大家财险辽源中心支公司副总经理(主持工作))",
+            "facts": "虚列费用",
+            "authority": "国家金融监督管理总局辽源监管分局",
+            "date": "2024年3月27日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(辽",
+            "书文号辽"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 25,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006937-091e141f136eace1d4182ca4",
+          "text_sha256": "992bcdc5ec259012bb398caa30821950865f65a9fb26f33915af567cfa12ead4",
+          "full_text": "国家金融监督管理总局迪庆监管分局行政处罚信息公开表(迪金罚决字〔2024〕3号)\n行政处罚决定书文号\n迪金罚决字〔2024〕3号\n被处罚当事人\n永安财产保险股份有限公司迪庆中心\n支公司\n主要违法违规事实\n编制虚假的报表、资料,通过虚列代办\n年检费套取费用;虚挂代理人套取费\n用;委托未取得合法资格的机构从事保\n险销售活动\n行政处罚依据\n《中华人民共和国保险法》第八十六\n条、第一百一十六条、第一百六十一\n条、第一百七十条\n行政处罚决定\n罚款28万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局迪庆监管分局\n作出处罚决定的日期\n2024年3月20日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 286,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "迪金罚决字〔2024〕3号",
+            "subject": "永安财产保险股份有限公司迪庆中心支公司",
+            "facts": "编制虚假的报表、资料,通过虚列代办年检费套取费用;虚挂代理人套取费用;委托未取得合法资格的机构从事保险销售活动",
+            "authority": "国家金融监督管理总局迪庆监管分局",
+            "date": "2024年3月20日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(迪",
+            "书文号迪"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 26,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006942-ffb65a7f628a7eac1445a8a1",
+          "text_sha256": "7e197056626bf21ae4d7146f41a70dc2c376a973273f59907f7e8e50f8064d41",
+          "full_text": "国家金融监督管理总局张家口监管分局行政处罚信息公开表(张金罚决字〔2024〕3号)\n行政处罚决定书文号\n张金罚决字〔2024〕3号\n被处罚当事人\n一、国华人寿保险股份有限公司张家口中\n心支公司\n二、李丽,时任国华人寿保险股份有限公\n司张家口中心支公司副总经理(主持工作)\n主要违法违规事实\n编制、提供虚假的报表、资料\n行政处罚依据\n《中华人民共和国保险法》第一百七十\n条、第一百七十一条\n行政处罚决定\n一、对国华人寿保险股份有限公司张家口\n中心支公司处罚款15万元\n二、对李丽警告并处罚款1.2万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局张家口监管分局\n作出处罚决定的日期\n2024年3月20日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 312,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "张金罚决字〔2024〕3号",
+            "subject": "一、国华人寿保险股份有限公司张家口中心支公司二、李丽,时任国华人寿保险股份有限公司张家口中心支公司副总经理(主持工作)",
+            "facts": "编制、提供虚假的报表、资料",
+            "authority": "国家金融监督管理总局张家口监管分局",
+            "date": "2024年3月20日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(张",
+            "书文号张"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 27,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006972-920b5c67a3fcb42cfded303c",
+          "text_sha256": "71cecdf1f0ee072c2956dac4bc19cf730638d228df74bb22c922af7dfd31194e",
+          "full_text": "国家金融监督管理总局常州监管分局\n行政处罚信息公开表\n行政处罚决定书文号\n常金罚决字〔2024〕3号\n被处罚当事人\n黄凯(时任幸福人寿保险股份有限公司\n常州中心支公司总经理)\n主要违法违规事实\n对幸福人寿保险股份有限公司常州中\n心支公司编制虚假财务资料、未建立\n完整的个人保险代理人培训档案负有\n责任\n行政处罚依据\n《中华人民共和国保险法》第八十六\n条、第一百七十一条;《保险代理人监\n管规定》第三十七条、第一百一十条\n行政处罚决定\n警告并处罚款2万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局常州监管分局\n作出处罚决定的日期\n2024年3月1日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 287,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "常金罚决字〔2024〕3号",
+            "subject": "黄凯(时任幸福人寿保险股份有限公司常州中心支公司总经理)",
+            "facts": "对幸福人寿保险股份有限公司常州中心支公司编制虚假财务资料、未建立完整的个人保险代理人培训档案负有责任",
+            "authority": "国家金融监督管理总局常州监管分局",
+            "date": "2024年3月1日"
+          },
+          "query_occurrence_prefix_context": [
+            "书文号常"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 28,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006982-cb0782db7ce91c57e6e0c06a",
+          "text_sha256": "050619b63acdb2149708d2e66eec7cbcede369fcc1fa8b3b8d4573de3a308453",
+          "full_text": "国家金融监督管理总局威海监管分局行政处罚信息公开表(威金罚决字〔2024〕3号)\n行政处罚决定书文号\n威金罚决字〔2024〕3号\n被处罚当事人\n中国平安人寿保险股份有限公司\n威海中心支公司\n主要违法违规事实\n虚列经营费用\n行政处罚依据\n《中华人民共和国保险法》第八\n十六条、第一百七十条\n行政处罚决定\n罚款12万元\n作出处罚决定的机关名称\n国家金融监督管理总局\n威海监管分局\n作出处罚决定的日期\n2024年3月5日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 218,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "威金罚决字〔2024〕3号",
+            "subject": "中国平安人寿保险股份有限公司威海中心支公司",
+            "facts": "虚列经营费用",
+            "authority": "国家金融监督管理总局威海监管分局",
+            "date": "2024年3月5日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(威",
+            "书文号威"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 29,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006986-eed836e58cede7df7fddf9c9",
+          "text_sha256": "216c92277c515497bdadf8ad8142f669aa45bbebc28b049d41e417ad1441a9ee",
+          "full_text": "国家金融监督管理总局本溪监管分局行政处罚信息公开表\n行政处罚决定书文号本金罚决字〔2024〕3号\n被处罚当事人\n天安财产保险股份有限公司本溪中心支\n公司\n主要违法违规事实\n虚构保险中介套取手续费\n行政处罚依据\n《中华人民共和国保险法》第一百一十\n六条、第一百六十一条\n行政处罚决定\n责令改正,罚款人民币10万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局本溪监管分局\n作出处罚决定的日期2024年2月29日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 216,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "本金罚决字〔2024〕3号",
+            "subject": "天安财产保险股份有限公司本溪中心支公司",
+            "facts": "虚构保险中介套取手续费",
+            "authority": "国家金融监督管理总局本溪监管分局",
+            "date": "2024年2月29日"
+          },
+          "query_occurrence_prefix_context": [
+            "书文号本"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 30,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007003-f2fa3fea32b03d55f7a31689",
+          "text_sha256": "f642e3b4c528af87f306af121c30089cd18ee175298b9269066aacf6e313edac",
+          "full_text": "国家金融监督管理总局衡阳监管分局行政处罚信息公开表(衡金罚决字〔2024〕3号)\n国家金融监督管理总局衡阳监管分局\n行政处罚信息公开表\n行政处罚决定书文号\n衡金罚决字〔2024〕3号\n被处罚当事人\n国华人寿保险股份有限公司衡阳中心\n支公司\n主要违法违规事实\n超犹豫期回访\n行政处罚依据\n《人身保险基本服务规定》第三十一\n条\n行政处罚决定\n警告,罚款1万元\n作出处罚决定的机关名称\n国家金融监督管理总局衡阳监管分局\n作出处罚决定的日期\n2024年2月27日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 238,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "衡金罚决字〔2024〕3号",
+            "subject": "国华人寿保险股份有限公司衡阳中心支公司",
+            "facts": "超犹豫期回访",
+            "authority": "国家金融监督管理总局衡阳监管分局",
+            "date": "2024年2月27日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(衡",
+            "书文号衡"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 31,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007037-053b15910338352d6589d44c",
+          "text_sha256": "09d7604ebd2aeb49c008ef010cb67d66e879b016076cac65c213301bc5f03c7c",
+          "full_text": "国家金融监督管理总局延边监管分局行政处罚信息公开表\n(延金罚决字〔2024〕3号)\n行政处罚决定书文号\n延金罚决字〔2024〕3号\n被处罚当事人\n崔英玉(时任合众人寿保险股份有限公司\n延边中心支公司个险负责人)\n主要违法违规事实\n对合众人寿保险股份有限公司延边中心\n支公司违反内部控制制度,在未取得执业\n证书情况下开展保险销售活动的行为负\n有责任\n行政处罚依据\n《保险公司管理规定》第五十五条、第\n六十九条\n行政处罚决定\n给予警告,处1万元罚款\n作出处罚决定的机关名称\n国家金融监督管理总局延边监管分局\n作出处罚决定的日期\n2024年2月18日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 283,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "延金罚决字〔2024〕3号",
+            "subject": "崔英玉(时任合众人寿保险股份有限公司延边中心支公司个险负责人)",
+            "facts": "对合众人寿保险股份有限公司延边中心支公司违反内部控制制度,在未取得执业证书情况下开展保险销售活动的行为负有责任",
+            "authority": "国家金融监督管理总局延边监管分局",
+            "date": "2024年2月18日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(延",
+            "书文号延"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 32,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007039-40b0bd88a7c32d49534a63f3",
+          "text_sha256": "ff0865ed8e2cb3ff56f8334ae67ab2bd45c55c983466b129239f2c7e7a83c588",
+          "full_text": "国家金融监督管理总局中卫监管分局行政处罚信息公开表 (卫金罚决字〔2024〕3号)\n作出处罚决定书文号\n卫金罚决字〔2024〕3号\n被处罚当事人\n一、中国大地财产保险股份有限公司海原\n支公司\n二、马占福(时任中国大地财产保险股份\n有限公司海原支公司经理)\n主要违法违规事实\n给予被保险人保险合同约定以外利益\n行政处罚依据\n《中华人民共和国保险法》第一百六十一\n条、第一百七十一条\n行政处罚决定\n一、对中国大地财产保险股份有限公司海\n原支公司罚款18.7万元\n二、对马占福警告并罚款6.2万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局中卫监管分局\n作出处罚决定的日期\n2024年2月19日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 307,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "卫金罚决字〔2024〕3号",
+            "subject": "一、中国大地财产保险股份有限公司海原支公司二、马占福(时任中国大地财产保险股份有限公司海原支公司经理)",
+            "facts": "给予被保险人保险合同约定以外利益",
+            "authority": "国家金融监督管理总局中卫监管分局",
+            "date": "2024年2月19日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(卫",
+            "书文号卫"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 33,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007047-62af89744b3d5e3d658f9503",
+          "text_sha256": "92a2ddf7b00a3db072c5d6783cba2a06426874def00c636aa999e96e20427cfb",
+          "full_text": "国家金融监督管理总局廊坊监管分局行政处罚信息公开表(廊金罚决字〔2024〕3号)\n行政处罚决定书文号\n廊金罚决字〔2024〕3号\n被处罚当事人\n一、河北国利安保险代理有限公司\n二、宋凡伟,时任河北国利安保险代理有限公\n司总经理、执行董事\n主要违法违规事实\n未按规定进行执业登记和管理、未按照规定\n管理业务档案、未按规定使用银行账户、与\n未取得保险兼业资格的机构或个人发生保险\n代理业务往来\n行政处罚依据\n《保险代理人监管规定》第四十九条、第五\n十条、第六十七条、第七十四条、第九十四\n条、第九十九条及第一百零八条规定\n行政处罚决定\n一、对河北国利安保险代理有限公司警告并\n处罚款3万元\n二、对宋凡伟警告并处罚款3万元\n作出处罚决定的机关名\n称\n国家金融监督管理总局廊坊监管分局\n作出处罚决定的日期\n2024年2月20日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 370,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "廊金罚决字〔2024〕3号",
+            "subject": "一、河北国利安保险代理有限公司二、宋凡伟,时任河北国利安保险代理有限公司总经理、执行董事",
+            "facts": "未按规定进行执业登记和管理、未按照规定管理业务档案、未按规定使用银行账户、与未取得保险兼业资格的机构或个人发生保险代理业务往来",
+            "authority": "国家金融监督管理总局廊坊监管分局",
+            "date": "2024年2月20日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(廊",
+            "书文号廊"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 34,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007061-0a281bff20c92bac9a438189",
+          "text_sha256": "89deba3cbe7254eaec772c4e52b8d58e9d42fab97d449742161ac175b15b6255",
+          "full_text": "国家金融监督管理总局汕头监管分局行政处罚信息公开表(2024年3号)\n行政处罚决定书文号\n汕金罚决字〔2024〕3号\n被处罚当事人\n一、中国出口信用保险公司广东分公\n司汕头营业部\n二、曾柏树[时任中国出口信用保险\n公司广东分公司汕头营业部负责人\n(主持工作)、副总经理(主持工作)]\n主要违法违规事实\n虚列费用\n行政处罚依据\n《中华人民共和国保险法》第八十六\n条第二款、第一百七十条第一项、第\n一百七十一条\n行政处罚决定\n一、对中国出口信用保险公司广东分\n公司汕头营业部罚款10万元\n二、对曾柏树警告并处罚款1万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局汕头监管分局\n作出处罚决定的日期\n2024年2月20日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 319,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "汕金罚决字〔2024〕3号",
+            "subject": "一、中国出口信用保险公司广东分公司汕头营业部二、曾柏树[时任中国出口信用保险公司广东分公司汕头营业部负责人(主持工作)、副总经理(主持工作)]",
+            "facts": "虚列费用",
+            "authority": "国家金融监督管理总局汕头监管分局",
+            "date": "2024年2月20日"
+          },
+          "query_occurrence_prefix_context": [
+            "书文号汕"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 35,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007063-2afc8df70f92e8803ce1b4c0",
+          "text_sha256": "5932b9bee4be96da56e11781e6b3326ca177cd9e7715fa4ba39be0df4c1f9e8e",
+          "full_text": "国家金融监督管理总局岳阳监管分局行政处罚信息公开表(岳金罚决字〔2024〕3号)\n国家金融监督管理总局岳阳监管分局\n行政处罚信息公开表\n行政处罚决定书文号\n岳金罚决字〔2024〕3号\n被处罚当事人\n李清霞(时任中国大地财产保险股份有限\n公司岳阳中心支公司新零售渠道经理)\n主要违法违规事实\n对大地财险岳阳中支给予投保人保险合\n同约定以外的其他利益行为负直接责任\n行政处罚依据\n《中华人民共和国保险法》第一百七十\n一条\n行政处罚决定\n警告,并罚款1万元\n作出处罚决定的机关名称\n国家金融监督管理总局岳阳监管分局\n作出处罚决定的日期\n2024年2月6日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 285,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "岳金罚决字〔2024〕3号",
+            "subject": "李清霞(时任中国大地财产保险股份有限公司岳阳中心支公司新零售渠道经理)",
+            "facts": "对大地财险岳阳中支给予投保人保险合同约定以外的其他利益行为负直接责任",
+            "authority": "国家金融监督管理总局岳阳监管分局",
+            "date": "2024年2月6日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(岳",
+            "书文号岳"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 36,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007120-cd0a153c1c451425a3b64cc1",
+          "text_sha256": "834ec2ba524ca5a812397124e15cddcf7785898783ee64092f9d2126e6bc4ff2",
+          "full_text": "国家金融监督管理总局贵州监管局行政处罚信息公开表\n行政处罚决定书文号\n贵金罚决字〔2024〕3号\n被处罚当事人\n胡雷(时任中国人寿保险股份有限公司贵阳市\n都司支公司经理)\n主要违法违规事实\n对中国人寿保险股份有限公司贵阳市都司支公\n司给予或者承诺给予投保人保险合同约定以外\n利益事项负有责任\n行政处罚依据\n《中华人民共和国保险法》第一百一十六条、\n第一百七十一条\n行政处罚决定\n警告并罚款1万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局贵州监管局\n作出处罚决定的日期\n2024年2月1日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 257,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "贵金罚决字〔2024〕3号",
+            "subject": "胡雷(时任中国人寿保险股份有限公司贵阳市都司支公司经理)",
+            "facts": "对中国人寿保险股份有限公司贵阳市都司支公司给予或者承诺给予投保人保险合同约定以外利益事项负有责任",
+            "authority": "国家金融监督管理总局贵州监管局",
+            "date": "2024年2月1日"
+          },
+          "query_occurrence_prefix_context": [
+            "书文号贵"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 37,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007161-4b1aaa7bf947bdf1f2391076",
+          "text_sha256": "519d4d00d0fb310325a3a4bb9945ae63bc489300dcee7190ea9d52a73c55eae0",
+          "full_text": "国家金融监督管理总局黔南分局行政处罚信息公开表\n行政处罚决定书文号\n黔南金罚决字〔2024〕3号\n被处罚当事人\n丰元敏(时任中国太平洋财产保险股份有限公\n司罗甸支公司专员)\n主要违法违规事实\n对中国太平洋财产保险股份有限公司罗甸支\n公司利用保险代理人从事虚构保险中介业务\n套取手续费事项负有责任\n行政处罚依据\n《中华人民共和国保险法》第一百一十六\n条、第一百七十一条\n行政处罚决定\n警告并处罚款5万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局黔南监管分局\n作出处罚决定的日期\n2024年1月25日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 262,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "黔南金罚决字〔2024〕3号",
+            "subject": "丰元敏(时任中国太平洋财产保险股份有限公司罗甸支公司专员)",
+            "facts": "对中国太平洋财产保险股份有限公司罗甸支公司利用保险代理人从事虚构保险中介业务套取手续费事项负有责任",
+            "authority": "国家金融监督管理总局黔南监管分局",
+            "date": "2024年1月25日"
+          },
+          "query_occurrence_prefix_context": [
+            "文号黔南"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 38,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007202-1074800f8064b2fb5771dd46",
+          "text_sha256": "efe142bd6386fa9d0f4b8ba78a8d24df97e501c4199211e2cc8fd8cdee10ebf8",
+          "full_text": "国家金融监督管理总局大连监管局行政处罚信息公开表(大金罚决字〔2024〕3号)\n行政处罚决定书文号\n大金罚决字〔2024〕3号\n被处罚当事人\n大连三杰海上保险公估有限公司\n主要违法违规事实\n与不具备从事保险业务或者保险中介业务资格的机构发生\n保险公估业务往来、未开立独立的资金专用账户收取保险\n公估业务报酬。\n行政处罚依据\n《保险公估人监管规定》第八十九条、第九十五条\n行政处罚决定\n责令改正,给予警告,合计罚款1.5万元\n作出处罚决定的机关名称\n国家金融监督管理总局大连监管局\n作出处罚决定的日期\n2024年1月25日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 271,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "大金罚决字〔2024〕3号",
+            "subject": "大连三杰海上保险公估有限公司",
+            "facts": "与不具备从事保险业务或者保险中介业务资格的机构发生保险公估业务往来、未开立独立的资金专用账户收取保险公估业务报酬。",
+            "authority": "国家金融监督管理总局大连监管局",
+            "date": "2024年1月25日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(大",
+            "书文号大"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 39,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007204-8bfe3ecffc46d6585eb08b73",
+          "text_sha256": "0631ba95383e899d1fe7cb0dbc9e601d99504fec753d2230aa5fd09448a92d5a",
+          "full_text": "国家金融监督管理总局湖南监管局行政处罚信息公开表(湘金罚决字〔2024〕3号)\n国家金融监督管理总局湖南监管局\n行政处罚信息公开表\n行政处罚决定书文号\n湘金罚决字〔2024〕3号\n被处罚当事人\n周瑛\n主要违法违规事实\n利用业务便利为其他机构牟取不\n正当利益\n行政处罚依据\n《中华人民共和国保险法》第一\n百七十一条\n行政处罚决定\n警告并处罚款1万元\n作出处罚决定的机关名称\n国家金融监督管理总局湖南监管\n局\n作出处罚决定的日期\n2024年1月23日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 234,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "湘金罚决字〔2024〕3号",
+            "subject": "周瑛",
+            "facts": "利用业务便利为其他机构牟取不正当利益",
+            "authority": "国家金融监督管理总局湖南监管局",
+            "date": "2024年1月23日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(湘",
+            "书文号湘"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 40,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007220-326a6dbe8b83effb7688467c",
+          "text_sha256": "ca4ed89594f2d0a335ddff296fbbcafe366428d7e4a02ed960ecbd693f9a969b",
+          "full_text": "国家金融监督管理总局济宁监管分局行政处罚信息公开表(济金罚决字〔2024〕3号)\n行政处罚决定书文号\n济金罚决字〔2024〕3号\n被处罚当事人\n中国人寿财产保险股份有限公司\n济宁市中心支公司\n主要违法违规事实\n编制虚假财务资料、给予投保人\n或被保险人保险合同约定以外的\n利益\n行政处罚依据\n《中华人民共和国保险法》第八\n十六条、第一百一十六条、第一\n百六十一条、第一百七十条\n行政处罚决定\n罚款24万元\n作出处罚决定的机关名称\n国家金融监督管理总局\n济宁监管分局\n作出处罚决定的日期\n2024年1月26日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 263,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "济金罚决字〔2024〕3号",
+            "subject": "中国人寿财产保险股份有限公司济宁市中心支公司",
+            "facts": "编制虚假财务资料、给予投保人或被保险人保险合同约定以外的利益",
+            "authority": "国家金融监督管理总局济宁监管分局",
+            "date": "2024年1月26日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(济",
+            "书文号济"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 41,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007233-61f4837e2cfe363f99e31d73",
+          "text_sha256": "40c81ff7ac11edb0a1477b7b7eada5535ee4cd6e1008aafb5b46b973e545e6ac",
+          "full_text": "国家金融监督管理总局淄博监管分局行政处罚信息公开表(淄金罚决字〔2024〕3号)\n行政处罚决定书文号\n淄金罚决字〔2024〕3号\n被处罚当事人\n中国平安财产保险股份有限公司\n淄博中心支公司\n主要违法违规事实\n报销事项与实际经济事项不符,未\n按照规定使用经备案的保险费率\n行政处罚依据\n《中华人民共和国保险法》第八\n十六条、第一百三十五条、第一\n百七十条\n行政处罚决定\n罚款28万元\n作出处罚决定的机关名称\n国家金融监督管理总局\n淄博监管分局\n作出处罚决定的日期\n2024年1月23日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 252,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "淄金罚决字〔2024〕3号",
+            "subject": "中国平安财产保险股份有限公司淄博中心支公司",
+            "facts": "报销事项与实际经济事项不符,未按照规定使用经备案的保险费率",
+            "authority": "国家金融监督管理总局淄博监管分局",
+            "date": "2024年1月23日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(淄",
+            "书文号淄"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 42,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007247-4c776740214dc519f9ec3c12",
+          "text_sha256": "3c20d18ca38190dc3b54b0b48b866711eb44259d3e4f99c9d7e779e5ab34f7fe",
+          "full_text": "国家金融监督管理总局东莞监管分局行政处罚信息公开表(2024年3号)\n行政处罚决定书文号\n东金罚决字〔2024〕3号\n被处罚当事人\n一、东莞市创新保险代理有限公司\n二、李家昊(时任东莞市创新保险代\n理有限公司副总经理)\n主要违法违规事实\n未按规定投保职业责任保险\n行政处罚依据\n《保险代理人监管规定》第六十一\n条、第九十七条第一项\n行政处罚决定\n一、对东莞市创新保险代理有限公\n司罚款2.5万元\n二、对李家昊警告并处罚款1.5万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局东莞监管分\n局\n作出处罚决定的日期\n2024年1月24日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 278,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "东金罚决字〔2024〕3号",
+            "subject": "一、东莞市创新保险代理有限公司二、李家昊(时任东莞市创新保险代理有限公司副总经理)",
+            "facts": "未按规定投保职业责任保险",
+            "authority": "国家金融监督管理总局东莞监管分局",
+            "date": "2024年1月24日"
+          },
+          "query_occurrence_prefix_context": [
+            "书文号东"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 43,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007310-9256d20d0883a7fc23ea01d4",
+          "text_sha256": "8eea8f427bcab8fa24e2d656cef3004bbc5c874b7d8e3844268c606484cbf92b",
+          "full_text": "国家金融监督管理总局贵港监管分局行政处罚信息公开表\n(贵金罚决字〔2024〕3号)\n行政处罚决定书文号\n贵金罚决字〔2024〕3号\n被处罚当事人姓名或名称\n一、中国平安人寿保险股份有限公\n司贵港中心支公司\n二、蒋培辉(时任中国平安人寿保险\n股份有限公司贵港中心支公司总经\n理)\n主要违法违规事实\n对保险产品的有关情况作虚假宣传;\n未向客户全面、准确披露保险产品\n信息\n行政处罚依据\n《中华人民共和国保险法》第一百\n一十六条、第一百六十一条、第一\n百七十一条,《保险公司管理规定》\n(原中国保险监督管理委员会令2009\n年第1号)第六十九条\n行政处罚决定\n一、对中国平安人寿保险股份有限\n公司贵港中心支公司警告并处罚款\n5.3万元\n二、对蒋培辉警告并处罚款1万元\n作出处罚决定的机关名称\n国家金融监督管理总局贵港监管分\n局\n作出处罚决定的日期\n2024年1月18日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 392,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "贵金罚决字〔2024〕3号",
+            "subject": "姓名或名称一、中国平安人寿保险股份有限公司贵港中心支公司二、蒋培辉(时任中国平安人寿保险股份有限公司贵港中心支公司总经理)",
+            "facts": "对保险产品的有关情况作虚假宣传;未向客户全面、准确披露保险产品信息",
+            "authority": "国家金融监督管理总局贵港监管分局",
+            "date": "2024年1月18日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(贵",
+            "书文号贵"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 44,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007312-9365b49a5f14a6fca4113dc0",
+          "text_sha256": "46b7654e9b0f8a4018530ce161ad662a2fdd42b6aa307fe9d81f04fa3f88f6f8",
+          "full_text": "国家金融监督管理总局白城监管分局行政处罚信息公开表\n(白金罚决字〔2024〕3号)\n行政处罚决定书文号\n白金罚决字〔2024〕3号\n被处罚当事人\n李靖荣 (时任中国人民财产保险股份有限\n公司白城市分公司临时负责人)\n主要违法违规事实\n对中国人民财产保险股份有限公司白城\n市分公司给予投保人保险合同约定以外\n利益事项负有责任\n行政处罚依据\n《中华人民共和国保险法》第一百七十\n一条\n行政处罚决定\n警告并处罚款10万元\n作出处罚决定的机关名称\n国家金融监督管理总局白城监管分局\n作出处罚决定的日期\n2024年1月15日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 268,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "白金罚决字〔2024〕3号",
+            "subject": "李靖荣(时任中国人民财产保险股份有限公司白城市分公司临时负责人)",
+            "facts": "对中国人民财产保险股份有限公司白城市分公司给予投保人保险合同约定以外利益事项负有责任",
+            "authority": "国家金融监督管理总局白城监管分局",
+            "date": "2024年1月15日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(白",
+            "书文号白"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 45,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007318-ec65482550a0e81efe78cba8",
+          "text_sha256": "f85d34a16e85616c3d058f258810eb34fa6ff178e40ce7134dfc6b9dee09809a",
+          "full_text": "国家金融监督管理总局滨州监管分局行政处罚信息公开表(滨金罚决字〔2024〕3号)\n行政处罚决定书文号\n滨金罚决字〔2024〕3号\n被处罚当事人\n青岛嘉华保险代理有限公司\n滨州分公司\n主要违法违规事实\n委托未进行执业登记的个人从事\n保险销售活动、未按规定出示客\n户告知书、未按规定建立和管理\n业务档案\n行政处罚依据\n《保险代理人监管规定》第三十\n八条、第五十条、第五十四条、\n第九十四条、第一百零一条、第\n一百零八条\n行政处罚决定\n警告并处罚款1.5万元\n作出处罚决定的机关名称\n国家金融监督管理总局\n滨州监管分局\n作出处罚决定的日期\n2024年1月18日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 288,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "滨金罚决字〔2024〕3号",
+            "subject": "青岛嘉华保险代理有限公司滨州分公司",
+            "facts": "委托未进行执业登记的个人从事保险销售活动、未按规定出示客户告知书、未按规定建立和管理业务档案",
+            "authority": "国家金融监督管理总局滨州监管分局",
+            "date": "2024年1月18日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(滨",
+            "书文号滨"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 46,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007323-77953d2ae9c8ddeea8dab372",
+          "text_sha256": "82a2214a3b1c51a5ec0c0fb90b7672294545f3ea4d2e934b0e5fc96cff5ce848",
+          "full_text": "国家金融监督管理总局德州监管分局行政处罚信息公开表(德金罚决字〔2024〕3号)\n行政处罚决定书文号\n德金罚决字〔2024〕3号\n被处罚当事人\n张亮(时任利安人寿保险股份有限\n公司德州中心支公司总经理助理\n(分管个险工作))\n主要违法违规事实\n对利安人寿保险股份有限公司德\n州中心支公司执业登记信息不真\n实负有责任\n行政处罚依据\n《保险代理人监管规定》第六十\n七条、第一百一十条\n行政处罚决定\n警告并处罚款0.5万元\n作出处罚决定的机关名称\n国家金融监督管理总局\n德州监管分局\n作出处罚决定的日期\n2024年1月18日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 270,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "德金罚决字〔2024〕3号",
+            "subject": "张亮(时任利安人寿保险股份有限公司德州中心支公司总经理助理(分管个险工作))",
+            "facts": "对利安人寿保险股份有限公司德州中心支公司执业登记信息不真实负有责任",
+            "authority": "国家金融监督管理总局德州监管分局",
+            "date": "2024年1月18日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(德",
+            "书文号德"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 47,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007325-376006be9ec8095ba213ce19",
+          "text_sha256": "8ba21281e39456926a012ec0a4a0aa94a5d9f4fa85b8c86dd20a9d8b5bd30e31",
+          "full_text": "国家金融监督管理总局菏泽监管分局行政处罚信息公开表(菏金罚决字〔2024〕3号)\n行政处罚决定书文号\n菏金罚决字〔2024〕3号\n被处罚当事人\n张德伟(时任菏泽惠和保险代理有限\n公司总经理助理)\n主要违法违规事实\n对菏泽惠和保险代理有限公司未按\n规定对从业人员进行执业登记管\n理、对从业人员的招录工作管理不\n到位、信息化工作管理不到位负有\n责任\n行政处罚依据\n《保险代理人监管规定》第三十六\n条、第三十八条、第五十一条、第\n六十六条、第六十七条、第九十四\n条、第一百零一条。\n行政处罚决定\n警告并处罚款0.9万元\n作出处罚决定的机关名称\n国家金融监督管理总局\n菏泽监管分局\n作出处罚决定的日期\n2024年1月16日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 318,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "菏金罚决字〔2024〕3号",
+            "subject": "张德伟(时任菏泽惠和保险代理有限公司总经理助理)",
+            "facts": "对菏泽惠和保险代理有限公司未按规定对从业人员进行执业登记管理、对从业人员的招录工作管理不到位、信息化工作管理不到位负有责任",
+            "authority": "国家金融监督管理总局菏泽监管分局",
+            "date": "2024年1月16日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(菏",
+            "书文号菏"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 48,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007336-a77b2a633efeaf653b79609b",
+          "text_sha256": "3a20e69122680be44d95e47fb9dca30defb85e6427335f03d9dfc2f816bde4e3",
+          "full_text": "国家金融监督管理总局朝阳监管分局行政处罚信息公开表\n行政处罚决定书文号\n朝金罚决字〔2024〕3号\n被处罚当事人\n中国太平洋人寿保险股份有限公司朝阳\n中心支公司\n主要违法违规事实\n给予投保人保险合同约定以外的保险费\n回扣或其他利益、内部控制不严格。\n行政处罚依据\n《中华人民共和国保险法》第一百一十\n六条(四)、第一百六十一条,《保险公司\n管理规定》第五十五条、第六十九条。\n行政处罚决定\n罚款合计6万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局朝阳监管分局\n作出处罚决定的日期\n2024年1月16日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 264,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "朝金罚决字〔2024〕3号",
+            "subject": "中国太平洋人寿保险股份有限公司朝阳中心支公司",
+            "facts": "给予投保人保险合同约定以外的保险费回扣或其他利益、内部控制不严格。",
+            "authority": "国家金融监督管理总局朝阳监管分局",
+            "date": "2024年1月16日"
+          },
+          "query_occurrence_prefix_context": [
+            "书文号朝"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 49,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007345-3a77ebc26f7cf7a6f521a6c5",
+          "text_sha256": "1e34bfbc928b9353e377d05bf8c1f9fad2527796c02d107fe14cd01b6599abbb",
+          "full_text": "国家金融监督管理总局江苏监管局\n行政处罚信息公开表\n行政处罚决定书文号\n苏金罚决字〔2024〕3号\n被处罚当事人\n蒋双平(泛华联兴保险销售股份公司江\n苏分公司主要负责人)\n主要违法违规事实\n对泛华联兴保险销售股份公司江苏分\n公司擅自聘任高级管理人员负有责任\n行政处罚依据\n《中华人民共和国保险法》第一百二\n十一条、第一百七十一条\n行政处罚决定\n警告并处罚款3.5万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局江苏监管局\n作出处罚决定的日期\n2024年1月10日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 244,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "苏金罚决字〔2024〕3号",
+            "subject": "蒋双平(泛华联兴保险销售股份公司江苏分公司主要负责人)",
+            "facts": "对泛华联兴保险销售股份公司江苏分公司擅自聘任高级管理人员负有责任",
+            "authority": "国家金融监督管理总局江苏监管局",
+            "date": "2024年1月10日"
+          },
+          "query_occurrence_prefix_context": [
+            "书文号苏"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 50,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007357-423aa42b2820c7b69487503a",
+          "text_sha256": "44def6ec76c19df4812d4925f18a15cc71ca6aa9a5382e2d2ec15ec80c64a2f9",
+          "full_text": "国家金融监督管理总局淮南监管分局\n行政处罚信息公开表\n(淮南金罚决字〔2024〕3号)\n行政处罚决定书文号\n淮南金罚决字〔2024〕3号\n被处罚当事人\n王天竹(时任中国人民财产保险股份有\n限公司淮南市分公司田家庵支公司经\n理)\n主要违法违规事实\n对中国人民财产保险股份有限公司淮\n南市分公司虚列费用套取资金用于补\n贴市场和给予投保人保险合同约定以\n外保险费回扣的违规行为负有责任\n行政处罚依据\n《中华人民共和国保险法》第八十六\n条、第一百一十六条、第一百七十一\n条\n行政处罚决定\n警告并处罚款2万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局淮南监管分局\n作出处罚决定的日期\n2024年1月18日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 311,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "淮南金罚决字〔2024〕3号",
+            "subject": "王天竹(时任中国人民财产保险股份有限公司淮南市分公司田家庵支公司经理)",
+            "facts": "对中国人民财产保险股份有限公司淮南市分公司虚列费用套取资金用于补贴市场和给予投保人保险合同约定以外保险费回扣的违规行为负有责任",
+            "authority": "国家金融监督管理总局淮南监管分局",
+            "date": "2024年1月18日"
+          },
+          "query_occurrence_prefix_context": [
+            "表(淮南",
+            "文号淮南"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 51,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007391-b465d24e49044ed8050ee7ff",
+          "text_sha256": "48d98ee1f1991f33bcdf797aa78dbc2734c70c8a906b193fc3afec789d7e338a",
+          "full_text": "国家金融监督管理总局陕西监管局行政处罚信息公开表 陕金罚决字〔2024〕3号\n行政处罚决定书文号\n陕金罚决字〔2024〕3号\n被处罚当事人\n刘庆斌(中煤财险陕西分公司综合合规车\n险部车险负责人)\n主要违法违规事实\n存在未按照规定使用经批准或者备案的\n条款费率的违法行为\n行政处罚依据\n《中华人民共和国保险法》第一百三十\n五条、《中华人民共和国保险法》第一\n百七十一条\n行政处罚决定\n警告并处以1万元罚款\n作出处罚决定的机关\n名称\n国家金融监督管理总局陕西监管局\n作出处罚决定的日期\n2024年1月5日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 261,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "陕金罚决字〔2024〕3号",
+            "subject": "刘庆斌(中煤财险陕西分公司综合合规车险部车险负责人)",
+            "facts": "存在未按照规定使用经批准或者备案的条款费率的违法行为",
+            "authority": "国家金融监督管理总局陕西监管局",
+            "date": "2024年1月5日"
+          },
+          "query_occurrence_prefix_context": [
+            "公开表陕",
+            "书文号陕"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 52,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007396-ba63f913795e3362d5939936",
+          "text_sha256": "c6f12230d457a77e238ce164b8a72ebd2d4002451a13d8a493c9c81a451f0a22",
+          "full_text": "国家金融监督管理总局上海监管局行政处罚信息公开表\n(沪金罚决字〔2024〕3号)\n行政处罚决定书文号\n沪金罚决字〔2024〕3号\n被处罚当事人\n史带财产保险股份有限公司\n主要违法违规事实\n网络安全管控不足\n行政处罚依据\n《中华人民共和国保险法》第一百六十一条\n行政处罚决定\n责令改正，并处罚款20万元\n作出处罚决定的机关\n名称\n国家金融监督管理总局上海监管局\n作出处罚决定的日期\n2024年1月3日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 210,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "沪金罚决字〔2024〕3号",
+            "subject": "史带财产保险股份有限公司",
+            "facts": "网络安全管控不足",
+            "authority": "国家金融监督管理总局上海监管局",
+            "date": "2024年1月3日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(沪",
+            "书文号沪"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 53,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007404-69e107b6e64e4272284885e2",
+          "text_sha256": "aff13e9504f9f6ed6defad667ea24a0d7b7d6e7a3254e10de729919761b14fc7",
+          "full_text": "国家金融监督管理总局盐城监管分局\n行政处罚信息公开表\n行政处罚决定书文号\n盐金罚决字〔2024〕3号\n被处罚当事人\n郭垒(平安人寿保险股份有限公司盐城\n中心支公司大丰营销服务部负责人)\n主要违法违规事实\n对平安人寿保险股份有限公司盐城中\n心支公司销售误导负有责任\n行政处罚依据\n《中华人民共和国保险法》第一百一\n十六条、第一百七十一条\n行政处罚决定\n警告并处罚款3万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局盐城监管分局\n作出处罚决定的日期\n2024年1月2日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 245,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "盐金罚决字〔2024〕3号",
+            "subject": "郭垒(平安人寿保险股份有限公司盐城中心支公司大丰营销服务部负责人)",
+            "facts": "对平安人寿保险股份有限公司盐城中心支公司销售误导负有责任",
+            "authority": "国家金融监督管理总局盐城监管分局",
+            "date": "2024年1月2日"
+          },
+          "query_occurrence_prefix_context": [
+            "书文号盐"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 54,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        }
+      ],
+      "same_decision_source_ids": [],
+      "same_decision_count": 0,
+      "false_association_count": 54,
+      "assessment": "no_same_decision_established_within_these_candidates",
+      "correction_or_obsolescence_supported": false,
+      "model_comparison": "本次快照未有terminal，仅做身份参照；pending不计模型通过，不等待或干预运行。",
+      "reference_treatment": "这组候选不能支持同案或更正，也不能证明全旧库不存在；不得把子串命中变为冲突hold。",
+      "final_outcome_update": {
+        "status": "experiment_protocol_approved_not_applied",
+        "error": null,
+        "proposal_actions": [
+          {
+            "attempt": 1,
+            "revision": 1,
+            "action": "add",
+            "reason": "完整读取处罚决定书后，可确认被处罚主体、文号、日期、机关、依据及罚款金额；七项违法违规事实均为机构层面行为，按独立事实分别记录。"
+          }
+        ],
+        "reviewer_decisions": [
+          "approve"
+        ],
+        "duplicate_add_proposed": false,
+        "reviewer_final_approval": true,
+        "present_as_addition_in_shadow_views": {
+          "P": true,
+          "PR": true
+        },
+        "conclusion": "本次身份候选集无同案；最终动作仅按终态记录，不将其反推为全库新颖性证明。"
+      }
+    },
+    {
+      "id": "B100",
+      "new_fields": {
+        "document_no": "金罚决字〔2023〕66号",
+        "party": "一、华安财保资产管理有限责任公司（以下简称华安资管）\r\n二、张雅硕（时任华安资管财务会计部总经理助理）\r\n三、刘灏（时任华安资管财务负责人、财务会计部总经理）\r\n四、何崴（时任华安资管固定收益部总经理、公司副总经理）\r\n五、车正（时任华安资管金融市场部副总经理）\r\n六、王凡（时任华安资管总经理助理）",
+        "finding": "一、高管人员违规兼职\r\n二、对受托保险资金未履行谨慎管理义务\r\n三、编制提供虚假报表\r\n四、债券投资不符合监管要求\r\n五、保险资金办理银行存款业务不合规\r\n六、为保险资金提供通道业务\r\n七、投资关联方股权的关联交易未审批\r\n八、财务数据不真实",
+        "legal_basis": "《中华人民共和国保险法》第一百零六条、第一百零七条、第一百六十四条、第一百七十条、第一百七十一条及《保险资金运用管理办法》等相关规定",
+        "penalty": "对机构罚款515万元，对张雅硕警告并罚款7万元，对刘灏警告并罚款7万元，对何崴警告并罚款7万元，对车正警告并罚款10万元，对王凡警告并罚款10万元",
+        "regulator": "国家金融监督管理总局",
+        "decision_date": "2023年12月28日"
+      },
+      "new_raw_sha256": "f01b3c7fc1eb9afca0244eade570beb4b5a7d44613f80bbf8df7a06b7a6b2126",
+      "new_full_text": "行政处罚决定书文号\r\n金罚决字〔2023〕66号\r\n被处罚当事人\r\n一、华安财保资产管理有限责任公司（以下简称华安资管）\r\n二、张雅硕（时任华安资管财务会计部总经理助理）\r\n三、刘灏（时任华安资管财务负责人、财务会计部总经理）\r\n四、何崴（时任华安资管固定收益部总经理、公司副总经理）\r\n五、车正（时任华安资管金融市场部副总经理）\r\n六、王凡（时任华安资管总经理助理）\r\n主要违法违规事实\r\n一、高管人员违规兼职\r\n二、对受托保险资金未履行谨慎管理义务\r\n三、编制提供虚假报表\r\n四、债券投资不符合监管要求\r\n五、保险资金办理银行存款业务不合规\r\n六、为保险资金提供通道业务\r\n七、投资关联方股权的关联交易未审批\r\n八、财务数据不真实\r\n行政处罚依据\r\n《中华人民共和国保险法》第一百零六条、第一百零七条、第一百六十四条、第一百七十条、第一百七十一条及《保险资金运用管理办法》等相关规定\r\n行政处罚决定\r\n对机构罚款515万元，对张雅硕警告并罚款7万元，对刘灏警告并罚款7万元，对何崴警告并罚款7万元，对车正警告并罚款10万元，对王凡警告并罚款10万元\r\n作出处罚决定的\r\n机关名称\r\n国家金融监督管理总局\r\n作出处罚决定的日期\r\n2023年12月28日",
+      "new_source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1143257&itemId=4113&generaltype=9",
+      "exact_substring_total": 6,
+      "all_candidate_pages_covered": true,
+      "model_snapshot": {
+        "id": "B100",
+        "status": "pending"
+      },
+      "candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F007489-33f90c0d51e1940ba9e266c6",
+          "text_sha256": "d2ccfcbe0ee6ca1305043cb135aab4673b6075122820c55a9047f7ad6adc69ac",
+          "full_text": "国家金融监督管理总局宁波监管局行政处罚信息公开表(甬金罚决字〔2023〕66号)\n行政处罚决定书文号\n甬金罚决字〔2023〕66号\n被处罚当事人\n金联安保险经纪(北京)有限公司宁波分\n公司\n主要违法违规事实\n财务业务数据不真实;未按规定使用银行\n账户;未按规定建立和管理业务档案;未按\n规定制作并保管客户告知书;未按规定进\n行执业登记和管理。\n行政处罚依据\n《保险经纪人监管规定》第八十八条、\n第九十五条、第一百条、第一百零一条\n行政处罚决定\n警告,并处罚款人民币两万元,责令停止接\n受新业务两年\n作出处罚决定的\n机关名称\n国家金融监督管理总局宁波监管局\n作出处罚决定的日期\n2023年12月27日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 310,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "甬金罚决字〔2023〕66号",
+            "subject": "金联安保险经纪(北京)有限公司宁波分公司",
+            "facts": "财务业务数据不真实;未按规定使用银行账户;未按规定建立和管理业务档案;未按规定制作并保管客户告知书;未按规定进行执业登记和管理。",
+            "authority": "国家金融监督管理总局宁波监管局",
+            "date": "2023年12月27日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(甬",
+            "书文号甬"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 1,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007587-88bda0e63a55ce90ad524450",
+          "text_sha256": "c75af354a6a483fbf6c1bb5fcb92b64dde39c6bedd130e975d913d17588837e3",
+          "full_text": "国家金融监督管理总局吉林监管局行政处罚信息公开表(吉金罚决字〔2023〕66号)\n国家金融监督管理总局吉林监管局\n行政处罚信息公开表\n行政处罚决定书文号\n吉金罚决字〔2023〕66号\n被处罚当事人\n魏永春(时任吉林省誉闻保险代理有限\n责任公司董事长兼总经理)\n主要违法违规事实\n对吉林省誉闻保险代理有限责任公司\n虚假列支费用、委托未在本机构进行\n执业登记的个人开展保险代理业务、\n开展保险业务未按规定制作并出示客\n户告知书、未按规定投保职业责任保\n险或缴存保证金、未按规定建立完整\n规范的业务档案负有责任。\n行政处罚依据\n《中华人民共和国保险法》第八十六\n条、第一百七十一条;《保险代理人监\n管规定》第五十条、第五十四条、第\n六十条、第六十六条、第九十四条、\n第九十七条、第一百零一条、第一百\n零八条\n行政处罚决定\n警告并罚款4万元,同时撤销任职资格\n作出处罚决定的\n机关名称\n国家金融监督管理总局吉林监管局\n作出处罚决定的日期\n2023年12月29日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 437,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "吉金罚决字〔2023〕66号",
+            "subject": "魏永春(时任吉林省誉闻保险代理有限责任公司董事长兼总经理)",
+            "facts": "对吉林省誉闻保险代理有限责任公司虚假列支费用、委托未在本机构进行执业登记的个人开展保险代理业务、开展保险业务未按规定制作并出示客户告知书、未按规定投保职业责任保险或缴存保证金、未按规定建立完整规范的业务档案负有责任。",
+            "authority": "国家金融监督管理总局吉林监管局",
+            "date": "2023年12月29日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(吉",
+            "书文号吉"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 2,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007731-d4b187cb37a53798cd0f5377",
+          "text_sha256": "01d521b7fdf2a6b65c78edf7bca4fce34abd70b0efab434eeee273ad120aa559",
+          "full_text": "国家金融监督管理总局上海监管局行政处罚信息公开表\n(沪金罚决字〔2023〕66号)\n行政处罚决定书文号\n沪金罚决字〔2023〕66号\n被处罚当事人\n李炜（时任交银人寿保险有限公司管理会\n计部副总经理（部门正职级）、总经理）\n主要违法违规事实\n李炜对交银人寿保险有限公司未按规定报\n送报表资料、编制提供虚假的报表资料负\n有责任。\n行政处罚依据\n《中华人民共和国保险法》第一百七十一\n条\n行政处罚决定\n警告，并处罚款合计2万元\n作出处罚决定的机关名称\n国家金融监督管理总局上海监管局\n作出处罚决定的日期\n2023年12月26日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 272,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "沪金罚决字〔2023〕66号",
+            "subject": "李炜(时任交银人寿保险有限公司管理会计部副总经理(部门正职级)、总经理)",
+            "facts": "李炜对交银人寿保险有限公司未按规定报送报表资料、编制提供虚假的报表资料负有责任。",
+            "authority": "国家金融监督管理总局上海监管局",
+            "date": "2023年12月26日"
+          },
+          "query_occurrence_prefix_context": [
+            "开表(沪",
+            "书文号沪"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 3,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007756-949e56293f1ce6a42f7474f0",
+          "text_sha256": "c8cb3be7aa36074dd8226111415d7557841bd647c99d27e8c139711800bde34a",
+          "full_text": "国家金融监督管理总局行政处罚信息公开表\n行政处罚决定书文号\n金罚决字〔2023〕66号\n被处罚当事人\n一、华安财保资产管理有限责任公司\n(以下简称华安资管)\n二、张雅硕(时任华安资管财务会计部\n总经理助理)\n三、刘灏(时任华安资管财务负责人、\n财务会计部总经理)\n四、何崴(时任华安资管固定收益部总\n经理、公司副总经理)\n五、车正(时任华安资管金融市场部副\n总经理)\n六、王凡(时任华安资管总经理助理)\n主要违法违规事实\n一、高管人员违规兼职\n二、对受托保险资金未履行谨慎管理\n义务\n三、编制提供虚假报表\n四、债券投资不符合监管要求\n五、保险资金办理银行存款业务不合规\n六、为保险资金提供通道业务\n七、投资关联方股权的关联交易未审批\n八、财务数据不真实\n行政处罚依据\n《中华人民共和国保险法》第一百零\n六条、第一百零七条、第一百六十四\n条、第一百七十条、第一百七十一条\n及《保险资金运用管理办法》等相关\n规定\n行政处罚决定\n对机构罚款515万元,对张雅硕警告并\n罚款7万元,对刘灏警告并罚款7万元,对\n何崴警告并罚款7万元,对车正警告并\n罚款10万元,对王凡警告并罚款10万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局\n作出处罚决定的日期\n2023年12月28日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 545,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "金罚决字〔2023〕66号",
+            "subject": "一、华安财保资产管理有限责任公司(以下简称华安资管)二、张雅硕(时任华安资管财务会计部总经理助理)三、刘灏(时任华安资管财务负责人、财务会计部总经理)四、何崴(时任华安资管固定收益部总经理、公司副总经理)五、车正(时任华安资管金融市场部副总经理)六、王凡(时任华安资管总经理助理)",
+            "facts": "一、高管人员违规兼职二、对受托保险资金未履行谨慎管理义务三、编制提供虚假报表四、债券投资不符合监管要求五、保险资金办理银行存款业务不合规六、为保险资金提供通道业务七、投资关联方股权的关联交易未审批八、财务数据不真实",
+            "authority": "国家金融监督管理总局",
+            "date": "2023年12月28日"
+          },
+          "query_occurrence_prefix_context": [
+            "定书文号"
+          ],
+          "full_number_exact_after_heading": true,
+          "relation": "same_decision_reproduction_supported",
+          "lexical_rank_1_based": 4,
+          "identity_comparison": {
+            "document_no": true,
+            "party": true,
+            "finding": true,
+            "regulator": true,
+            "decision_date": true,
+            "penalty": true,
+            "legal_basis": true
+          },
+          "identity_basis": "完整文号、总局机关、全部主体、决定日期、全部违法事项、逐对象处罚及法律依据均在NFKC+去空白后相同；原全文多出标题/手机页脚或换行，非新增事实。",
+          "correction_or_obsolescence_supported": false,
+          "new_substantive_fact_detected": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007838-722d76875695fde02c8e0576",
+          "text_sha256": "269c6244a9c48ba7ca3e3d65e49b61412b192c8a27122f078cc80cf84d290ef1",
+          "full_text": "国家金融监督管理总局陕西监管局行政处罚信息公开表 陕金罚决字〔2023〕66号\n行政处罚决定书文号\n陕金罚决字〔2023〕66号\n被处罚当事人\n一、阳光财产保险股份有限公司陕西省\n分公司\n二、赵会龙(时任阳光财产保险股份有限\n公司陕西省分公司农险部负责人兼非车\n险部总经理)\n主要违法违规事实\n未按照规定使用经批准或者备案的保险\n条款、保险费率\n行政处罚依据\n《中华人民共和国保险法》第一百三十\n五条、第一百七十条、第一百七十一条\n规定\n行政处罚决定\n对阳光财险陕西省分公司处以22万元罚\n款;对赵会龙给予警告,并处4万元罚款。\n作出处罚决定的机关\n名称\n国家金融监督管理总局陕西监管局\n作出处罚决定的日期\n2023年12月25日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 326,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "陕金罚决字〔2023〕66号",
+            "subject": "一、阳光财产保险股份有限公司陕西省分公司二、赵会龙(时任阳光财产保险股份有限公司陕西省分公司农险部负责人兼非车险部总经理)",
+            "facts": "未按照规定使用经批准或者备案的保险条款、保险费率",
+            "authority": "国家金融监督管理总局陕西监管局",
+            "date": "2023年12月25日"
+          },
+          "query_occurrence_prefix_context": [
+            "公开表陕",
+            "书文号陕"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 5,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008015-d76e6f438a251f94a48f2cf7",
+          "text_sha256": "a45133e7f0985cf081a49aae9fc13ced62575f7db3c6c28e7fa61d71b8c164e0",
+          "full_text": "国家金融监督管理总局深圳监管局行政处罚信息公开表\n行政处罚决定书文号\n深金罚决字〔2023〕66号\n被处罚当事人\n深圳市兆方联丰汽车销售服务有限\n公司\n主要违法违规事实\n保险业务过程中未制作并出示客户\n告知书\n行政处罚依据\n《保险代理人监管规定》第一百零\n一条\n行政处罚决定\n警告并处罚款1万元\n作出行政处罚决定的\n机关名称\n国家金融监督管理总局深圳监管局\n作出处罚决定的日期\n2023年12月12日\n手机扫一扫打开此页\n",
+          "full_read_codepoints": 211,
+          "read_pages": 1,
+          "parsed_fields_non_gold": {
+            "document_number": "深金罚决字〔2023〕66号",
+            "subject": "深圳市兆方联丰汽车销售服务有限公司",
+            "facts": "保险业务过程中未制作并出示客户告知书",
+            "authority": "国家金融监督管理总局深圳监管局",
+            "date": "2023年12月12日"
+          },
+          "query_occurrence_prefix_context": [
+            "书文号深"
+          ],
+          "full_number_exact_after_heading": false,
+          "relation": "lexical_substring_false_association",
+          "lexical_rank_1_based": 6,
+          "identity_basis": "候选完整文号含地区前缀或是另一决定；机关/主体/事实均为各地独立事项。仅金罚尾串及年度序号相同，不构成同文号、同案或冲突。",
+          "full_document_number_equal": false,
+          "same_case_supported": false
+        }
+      ],
+      "same_decision_source_ids": [
+        "FRV2-SOURCE-F007756-949e56293f1ce6a42f7474f0"
+      ],
+      "same_decision_count": 1,
+      "false_association_count": 5,
+      "assessment": "same_decision_already_in_frozen_sources",
+      "correction_or_obsolescence_supported": false,
+      "model_comparison": "本次快照未有terminal，仅做身份参照；pending不计模型通过，不等待或干预运行。",
+      "reference_treatment": "存在同案同事实重现，应先进行重复核对，不应仅因原文格式/哈希变化当新增或更正。旧知识卡是否误抽取需另审，此处不推断。",
+      "final_outcome_update": {
+        "status": "format_repair_exhausted",
+        "error": {
+          "code": "CASE_UNKNOWN",
+          "field": "",
+          "message": "CASE_UNKNOWN"
+        },
+        "proposal_actions": [
+          {
+            "attempt": 1,
+            "revision": 1,
+            "action": "add",
+            "reason": "证据为完整行政处罚决定书，文号、主体、日期、机关、依据、处罚及八项违法事实均有原文支撑；按字典核对，现有风险标签均不精确匹配“高管人员违规兼职”“对受托保险资金未履行谨慎管理义务”“编制提供虚假报表”“债券投资不符合监管要求”“保险资金办理银行存款业务不合规”“为保险资金提供通道业务”“投资关联方股权的关联交易未审批”“财务数据不真实”等事实，故不强行贴标签，仅新增案件与行为记录。"
+          },
+          {
+            "attempt": 2,
+            "revision": 1,
+            "action": "add",
+            "reason": "证据为完整行政处罚决定书，文号、主体、日期、机关、依据、处罚及八项违法事实均有原文支撑；按字典核对，现有风险标签均不精确匹配“高管人员违规兼职”“对受托保险资金未履行谨慎管理义务”“编制提供虚假报表”“债券投资不符合监管要求”“保险资金办理银行存款业务不合规”“为保险资金提供通道业务”“投资关联方股权的关联交易未审批”“财务数据不真实”等事实，故不强行贴标签，仅新增案件与行为记录。"
+          }
+        ],
+        "reviewer_decisions": [],
+        "duplicate_add_proposed": true,
+        "reviewer_final_approval": false,
+        "present_as_addition_in_shadow_views": {
+          "P": false,
+          "PR": false
+        },
+        "conclusion": "已提出同案重复新增，但CASE_UNKNOWN阻断，P和PR均无该新增来源。"
+      }
+    }
+  ],
+  "summary": {
+    "samples": 5,
+    "candidate_documents_full_read": 120,
+    "full_reads_with_verified_text_sha256": 120,
+    "same_decision_pairs": 3,
+    "same_decision_sample_ids": [
+      "B090",
+      "B093",
+      "B100"
+    ],
+    "lexical_false_association_pairs": 117,
+    "no_same_decision_established_in_candidate_set": [
+      "B004",
+      "B098"
+    ],
+    "model_terminal_in_snapshot": [
+      "B004"
+    ],
+    "pending_not_counted_as_pass": [
+      "B090",
+      "B093",
+      "B098",
+      "B100"
+    ]
+  },
+  "sample_manifest_sha256": "efa8715fe711a3deafdecdd4b54e1decda11d5f931b9dbdb8c8dc5341dc80f04",
+  "input_result_hashes": {},
+  "limits": [
+    "Codex来源身份抽查，非人工金标，不自动更正、删除或发布。",
+    "同案结论来自七类完整身份/事实字段一致，不来自文号子串命中或全文哈希相等。",
+    "无同案只限定这组文号子串候选；不声明全库不存在语义近似或其他格式文号材料。",
+    "原始旧库来源URL未载明或字段不齐时不补造；来源以冻结source_id及正文SHA定位。",
+    "pending仅为本次抽查快照，不计通过或失败，不等待新的terminal。"
+  ],
+  "final_outcomes_added_at_utc": "2026-10-23T11:38:07.509996+00:00",
+  "final_terminal_statuses": {
+    "B004": "format_repair_exhausted",
+    "B090": "budget_stopped",
+    "B093": "format_repair_exhausted",
+    "B098": "experiment_protocol_approved_not_applied",
+    "B100": "format_repair_exhausted"
+  },
+  "final_duplicate_outcomes": {
+    "duplicate_add_proposed": [
+      "B090",
+      "B093",
+      "B100"
+    ],
+    "reviewer_approved_duplicate_adds": [],
+    "P_diagnostic_duplicate_source_additions": [
+      "B090"
+    ],
+    "PR_approved_duplicate_source_additions": [],
+    "all_scope_terminal_now": true,
+    "earlier_pending_fields_are_historical_snapshot": true
+  }
+}

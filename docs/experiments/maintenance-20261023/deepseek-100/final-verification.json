@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "terminal_documents": 100,
+  "fixed_text_audits": 20,
+  "business_revision_audits": 14,
+  "raw_sha_checks": 100,
+  "old_protected_files": 61,
+  "old_assets_unchanged": true,
+  "report_details": 100,
+  "settled_requests": 404,
+  "unknown_requests": 8,
+  "charged_upper_cny": 7.314396,
+  "production_modified": false,
+  "dense_index_updated": false,
+  "quality_accepted": false,
+  "shadow_case_and_behavior_cards": {
+    "P": {
+      "source_count": 9730,
+      "added_case_cards": 90,
+      "added_behavior_cards": 140
+    },
+    "PR": {
+      "source_count": 9720,
+      "added_case_cards": 80,
+      "added_behavior_cards": 113
+    }
+  }
+}

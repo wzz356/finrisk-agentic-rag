@@ -1,0 +1,3658 @@
+{
+  "schema": "business-revision-audit/1",
+  "audit_type": "automated_read_only_retrospective_not_human_gold",
+  "scope": {
+    "cutoff_utc": "2026-10-23T11:39:20.728375+00:00",
+    "batch_fixed_denominator": 100,
+    "terminal_count_at_cutoff": 100,
+    "terminal_ids_at_cutoff": [
+      "B001",
+      "B002",
+      "B003",
+      "B004",
+      "B005",
+      "B006",
+      "B007",
+      "B008",
+      "B009",
+      "B010",
+      "B011",
+      "B012",
+      "B013",
+      "B014",
+      "B015",
+      "B016",
+      "B017",
+      "B018",
+      "B019",
+      "B020",
+      "B021",
+      "B022",
+      "B023",
+      "B024",
+      "B025",
+      "B026",
+      "B027",
+      "B028",
+      "B029",
+      "B030",
+      "B031",
+      "B032",
+      "B033",
+      "B034",
+      "B035",
+      "B036",
+      "B037",
+      "B038",
+      "B039",
+      "B040",
+      "B041",
+      "B042",
+      "B043",
+      "B044",
+      "B045",
+      "B046",
+      "B047",
+      "B048",
+      "B049",
+      "B050",
+      "B051",
+      "B052",
+      "B053",
+      "B054",
+      "B055",
+      "B056",
+      "B057",
+      "B058",
+      "B059",
+      "B060",
+      "B061",
+      "B062",
+      "B063",
+      "B064",
+      "B065",
+      "B066",
+      "B067",
+      "B068",
+      "B069",
+      "B070",
+      "B071",
+      "B072",
+      "B073",
+      "B074",
+      "B075",
+      "B076",
+      "B077",
+      "B078",
+      "B079",
+      "B080",
+      "B081",
+      "B082",
+      "B083",
+      "B084",
+      "B085",
+      "B086",
+      "B087",
+      "B088",
+      "B089",
+      "B090",
+      "B091",
+      "B092",
+      "B093",
+      "B094",
+      "B095",
+      "B096",
+      "B097",
+      "B098",
+      "B099",
+      "B100"
+    ],
+    "business_revision_count": 14,
+    "audited_ids": [
+      "B006",
+      "B015",
+      "B018",
+      "B020",
+      "B031",
+      "B044",
+      "B059",
+      "B061",
+      "B062",
+      "B074",
+      "B080",
+      "B085",
+      "B090",
+      "B096"
+    ],
+    "snapshot_terminal_sha256": {
+      "B001": "f9f6b4c4f5c2a6532f0be9ed9f8e70f4b7114c4bd76c2cd7ac493fb53f048ebf",
+      "B002": "21fedd02508a8988a2fcb520d85d02c5030daf35bee900fdb71aef20e5f504a1",
+      "B003": "7ba120225bda35f593524ba6ff64df04921966785bd508d4cbede725ecb41736",
+      "B004": "19cef6fcbae58d6ea2951eca7dc38d04d8a350f601a214f4af75fbf458111239",
+      "B005": "98f1c953831bb84006069c92514f14d9671b229cbe84c2a4199d7b54f09a98f5",
+      "B006": "086c08bb7e63eaacf0482c5e4288eaf8bada95ff2d29f8ba878474c5f3c266ef",
+      "B007": "35e8ea2b2cdf4f88f04b582ed672c2fe2683b693ae5ed913d19e5796f3e805c7",
+      "B008": "e7f63637b5137afde8e71a5e8f41c3bca3b6140ee4e35614abc428be186ce003",
+      "B009": "f1940a60e8167652aaaa53b80c45e893c97c7d372115f3816c0dd6719f3e8ef1",
+      "B010": "22482afb5a42b8fe2d8316a2b5c56f7a8d3be86a41651102ce9e4e634da3cfc6",
+      "B011": "37f80c56462d57eae8c4ec0dd1665d29af7e7e24b36603f15fd96529595f19cb",
+      "B012": "42e490597d4aa672d8a24f6cb00eb1cb0da6f3d2882d1ea4c4aa992f936f7e22",
+      "B013": "97877b4b349731e4ff2bac6ee9ce81e8080fc5145c49f80c9843591a39eb4ef4",
+      "B014": "450f5a18a17764f923640c8934817325090b19d176feb2d789fe85b4616cdda7",
+      "B015": "1f1fd825e841b33539c72b89c2d132de1b0c5ac199ee9b588a887dc6a1954bd8",
+      "B016": "9aa7771202b25e14b0a48c17860ba694939c73f3b582e3e339e42945f1d26515",
+      "B017": "0f2efd3c9be6e2156e8ab0b411a4eefae3376fb067b7f4ac11f2575c6b2c37f2",
+      "B018": "b0558bc460ce3b91e7ba27e68e392f972d6fc597e1d3ba6afa6fe546555c645a",
+      "B019": "2d2cee702d5652867f7d91a69329ba1669b6e46f2bf060e768c17c032c9dce10",
+      "B020": "b2e41ec9fe2e85c93b018ba6fbbcca93cbf690577acd578557fcf609ca2c5cc2",
+      "B021": "b05f7455d03ba44f08f409edd58e2d7b283e70c234e51042b99b20ff872aaa27",
+      "B022": "53eea74f1cbef1a6c47ccafba0349c1daf2ac21fa1c8899f495f12c014a08267",
+      "B023": "7095bd3667237b25700628c8fafb75fe0d45ac968a3811dff8c2b9c718bc7b2d",
+      "B024": "abbfa3ffb4f78234bf44d54bee54ebbe5608192ec49db51efe813a5211275808",
+      "B025": "4062091a49664e4e11c9d7180902164c153ea5f3b28bc83d336704329bb09b22",
+      "B026": "fba60c2998b2744e13d67157b24ede63f66f7e081ba6ca5a4f21a40646c8e33b",
+      "B027": "f61bb9313fd6a54ef899bec042d661ba2fcee2377a743c7b70679fc1149371b6",
+      "B028": "5aedc39e099082185c4dcfeb5e77aceba0c10b90c23f08d76dd8028bd3eb397a",
+      "B029": "329ee46e0b1a3589dd365de5ad4a7de53f00b8eeb50344153cc08526b9b2d048",
+      "B030": "b7fac908e03f3ddd8e2ae471f552cda8759f3c9f919e53ec29cc2edc300afec4",
+      "B031": "505e6f91a2ba5f9aa469ab72de93e8d545a0b977f98bd943bb343bd023a7f6f1",
+      "B032": "d4fcf415c3e0bfbfe10717a51a5ce460171a7b88af29b9dc04212062012d1fdd",
+      "B033": "afa048a1aae9e9716dbaa8be8bdd87d17549c501df693ec46bba990e12af9458",
+      "B034": "44a91f0940dca33a14f4bd2e0a0e50f7af989adf7df6fae3520c20a775da6a12",
+      "B035": "6c4cfe31963e222a0ba0e25ec303cd24bba0e11cf1384b4a0a176811d735f596",
+      "B036": "7134c43d9eaea515aabaaecd430f2ac27b9bf25c921981e37f6469092adde2fb",
+      "B037": "14eb86adb833de3b8303dfd79c4e117c607a6817450c897760ba2048e0f89a78",
+      "B038": "1eee07ea5f31d853214367d795368c9ebc38efa3b16a73aef56ff68242c326fb",
+      "B039": "ac215f8fce6c6857e17f9f2d2ac020bb147a708513e6c113e2940bc0cf2ced26",
+      "B040": "facbdf9853bda54ee27d2d86ae54521af9cb5ce1a2f96e65f27fef11d38c2c5d",
+      "B041": "beb8676fa0582c260ccbf4bab605e96b193fee1fc40e647148ba9e87cf7e425b",
+      "B042": "8338e63c63c721950bbf6456a8f269a35ed6618f15a65ebd123f0a978a06c77f",
+      "B043": "142d4c33940e847ae120157fe0507c5e97f9dcc982444077f74bec295ef910bc",
+      "B044": "d08207cde1df1b6bbe3a0f0e1ef7157eeffed2e536492abba9418f41b0574eb9",
+      "B045": "1fe11fa2130b0d96d5f5c15bc55269788dd7b6661886bcc4b4794e5d1aafe457",
+      "B046": "1474043df61983967455701c3459070409999d9b6f2857fd46aa01958f574798",
+      "B047": "dd34058bb1fcf06b8d689ba3fdb48d5125011f44188c822d8b8c4a62ac20f837",
+      "B048": "77d9abe3fb3cfe1a1d70b38227a4a453fb25f5118dc51ed9bcbfadfc6aa608ac",
+      "B049": "f607ebfec00f688e159b9282362276d1f72f403ec6bf0e93629e7bc6daacdc91",
+      "B050": "d982f63ebed0fdbf9a49255c4ab04fab6cb61991b45e9f5e8297f009476d0862",
+      "B051": "a00fecb5e27189d8e46ba0c5f1d99aeda774985c580409ab3c0592dfc1c6dc4e",
+      "B052": "9c17d05579cb8db1784ba8811f1bb185f003736ea54c87719e5bb75f2e0f3c81",
+      "B053": "f2266bfa2fdc8b6eee1a18bd0e610d3640f5628dd1f8558134f2a74972e0e93a",
+      "B054": "0b715c47564ed068e09e581dfff0d27facb376c30f0f53e080b42382506db74f",
+      "B055": "c9445f4eab8161ba0fc5645b9abe265931b60cdd1440dc23ecd7743b06b06fbd",
+      "B056": "05db7442fabe679a386c7a8b26f62e5afd7c9070d099854da28804002797df79",
+      "B057": "8780249c9132b47e2d072d3c39bc74876234c2980d8cac4e819a193f8e1593e1",
+      "B058": "392e9a4bd03c04b3c763a2869d6167eefe2356cd7f5c3f5ac957ae361ba00942",
+      "B059": "bf069872c88f084484ec69a1a023b79b57ed6be46cbcf2de07a873621d24e0be",
+      "B060": "0979576b35b3d0f70dbbf209dbd9e911ff38e85ef1494bb053bdd029f286e5d5",
+      "B061": "171ec11ddb4dff56d4336fdfb93fd6f0e935eee1437f21e27622a72d5d2a0e92",
+      "B062": "d81ef3f5fcbc5b02361b1d629446775935930612123983bbe699b04c04fe5521",
+      "B063": "eb9a6a15787de16a92cf6d009a2d4fcb336170904a26f9e84fe980fb0c24593f",
+      "B064": "7f03875caa68ac237ef21c50b9c01606da599ed9f0b88e9b04d04676c32ee626",
+      "B065": "29943c74f46c22eff22dc0118d15adfdd9c895e4f45ee98a57e8aa7cacc5f1e0",
+      "B066": "6098c37f8c91d4ac8cc54688a6c70f8dde3fe23e862eff16ac538c481c5f2cd5",
+      "B067": "d7644368f87629a221f338ed78a2ab4ed8a39b4059627003a5d885c7c2544bf9",
+      "B068": "38c1e8fbc98f9df21b0feb5df590e82d9e1adf0c8d55b401444b97a0400ed698",
+      "B069": "df0146198c0d3c14d53c007eee7c4be51beed95e95331d9a7436308fb4eb25bc",
+      "B070": "e65709cf441bd6ee548448c82cbdaac82f7cc450534afa2f9cff4d637eb17cd0",
+      "B071": "88833abc50db013c73bad315a4cfae71d4990d0bff01342f9e83f456e082bb69",
+      "B072": "4462a8dd4a793147b17a125bb0b2e15dfba677457ab1baab89e03e86e3d111d1",
+      "B073": "2f6155d0bc53d12d9daad23433f5b3fc6dd2e846410339d433f45424dc83227b",
+      "B074": "068409b2ead9dd057dd24920bca2bc71d4920881c0e02e99102000a4e6352a96",
+      "B075": "5be54f94b18ce0a54dab0fe363d32426a2f8df08aad4f84bd4c36eb2181a2e9b",
+      "B076": "b5d4ae4617e11ed7d183bcc19445509a8b410575a48f8564a56439fb8c978f58",
+      "B077": "e9e188db18034e55182a948e93156b550c23f3b8b1b73cbb9157330e400734cf",
+      "B078": "07d781fc36b749bf9b9934e74f9693a2b09d9f45cf30ee85323c318c5af445f5",
+      "B079": "f64e59ffb123dd1c2ef73238508c0af41708f09dbff9c8b9339b90327546ed7d",
+      "B080": "fe49d3fdbfc4be164adfc9bf710c1f4cdac513e8bc9982139e47d7ee9c61b0d5",
+      "B081": "78eb06de35fd293559ecb539ef14ab066f3fcaa481b4508dad492e45126a6941",
+      "B082": "583f1c8c8a44ae982423d1de77700c55cdadafa092e1224834809576de0dc168",
+      "B083": "6acb9ffdfe83228de81d9c8f977a2e5817260a890b98113eebe24d5759973b3f",
+      "B084": "0d321c9c432960748ffece9f4eb091d50a782d8f1e2eb1d7fc071505aaa258f6",
+      "B085": "00950344e6fdc9792e339dda8c89bd9a448a68997c6db4a8c0beda8e69e119c8",
+      "B086": "b44babf86978ac2818c0c5f16fc4b55708fa955ecba8e13cf813095d19d6dd4a",
+      "B087": "a8b875553af033c25ce6e9ab4de66ad5519716b840c5e8e4466fac17d676fe7e",
+      "B088": "6d3b66c2f8e59a58af2ce3fe6fd0b328550d30468e92f3692e3ee784a38e88c8",
+      "B089": "ce341596564c1334ae859950eed20b1c24cc88c1a4ae835bfa3de2edd9e0ed5c",
+      "B090": "94c92ff211b5a46efc7f829c9fb3e056238e8dc139856349eb82624d36bf16ff",
+      "B091": "e31b2c36d7d6694df1ea685e24f062f3195274d04faac23309de04434625e34c",
+      "B092": "d3213f0c6904f580f124d9a702d914b8b1c90ac46ec03781d9825a378bbbcd7f",
+      "B093": "b49cc79baaf9700b526d1cc7284d5768b7b1399c407050910b9722b73a711edc",
+      "B094": "5eaba692d40b176703523f589bd01c3a1ef7077dca3aa521f3755588f6ab7623",
+      "B095": "31adbd86694e9a17998a7d9c87e0c2fc42f07c9a4a2539e76852ed7eebe0db60",
+      "B096": "25aa9e68e30a140dab5e3b9fb798d69042313c5e9a9711a1e46e26f307d34141",
+      "B097": "c89ccf8c89ea24756e57fc52675d56443d2f51d54ffacc8c62fb3ab49364e1ff",
+      "B098": "5f034d4173d8f97a01b1d4838c7db393c5baf618d7bd9e2c663a1cd2ddf4ece0",
+      "B099": "921ecaed89590cb16a4f0ce9e213cd496854e663849973109d915c61f16c2148",
+      "B100": "17c6b78ff800751181ded193a98fa074053c97e0eb685e7f367c830346d3d93d"
+    },
+    "selection_rule": "all 100 completed terminal.json; all business_revision_used=true cases, including failed attempted revisions"
+  },
+  "method": {
+    "packet_tool": "audit_packet.py",
+    "sources": "complete frozen source text, P r1, PR r2, reviewer issues/disputed claims, selected raw actor/role/uncertainty/source_coverage, full frozen risk dictionary",
+    "api_calls": 0,
+    "credentials_read": false,
+    "frozen_or_result_files_modified": false,
+    "all_finding_quotes_verified_as_source_substrings": true,
+    "all_read_inputs_rehashed_unchanged": true,
+    "not_estimated": [
+      "human_gold_accuracy",
+      "full_batch_accuracy",
+      "production_admission",
+      "unreviewed_old_case_relationship"
+    ],
+    "complete_old_source_read_for_B090": true,
+    "final_all_100_terminals_seen": true
+  },
+  "summary": {
+    "audited_count": 14,
+    "terminal_status_counts": {
+      "experiment_protocol_approved_not_applied": 9,
+      "format_repair_exhausted": 2,
+      "held": 1,
+      "reviewer_requested_changes": 1,
+      "budget_stopped": 1
+    },
+    "cases_with_supported_label_removal_or_downgrade": 11,
+    "supported_label_correction_ids": [
+      "B006",
+      "B018",
+      "B031",
+      "B044",
+      "B059",
+      "B061",
+      "B062",
+      "B074",
+      "B080",
+      "B090",
+      "B096"
+    ],
+    "protocol_approved_among_these": 9,
+    "clear_reviewer_misattribution_or_reversal_ids": [
+      "B020",
+      "B059",
+      "B085"
+    ],
+    "no_substantive_business_value_change_ids": [
+      "B020"
+    ],
+    "case_identity_clarification_ids": [
+      "B015",
+      "B059"
+    ],
+    "remaining_clear_risk_tag_overreach_ids": [
+      "B015"
+    ],
+    "granularity_residual_ids": [
+      "B031"
+    ],
+    "responsibility_boundary_requires_review_ids": [
+      "B015",
+      "B059",
+      "B061",
+      "B062",
+      "B074"
+    ],
+    "interpretation": "supported correction counts measure specific observed changes, not correctness of each final case or reviewer accuracy",
+    "optional_label_suppression_ids": [
+      "B085"
+    ],
+    "duplicate_add_left_unresolved_ids": [
+      "B090"
+    ]
+  },
+  "input_sha256": {},
+  "cases": [
+    {
+      "id": "B006",
+      "text": "当事人: 车车保险销售服务有限公司四川省凉山营业部\r\n行政处罚决定书文号\r\n凉金监罚决字〔2026〕5号\r\n主要违法违规事实(案由)\r\n业务档案不规范不完整、未按规定履行客户告知书制作和出示义务、委托未通过本机构执业登记的人员从事保险代理业务\r\n行政处罚内容\r\n警告并罚款人民币2.5万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局凉山监管分局\r\n作出处罚决定的日期\r\n2026年7月2日\r\n来源公示\r\n国家金融监督管理总局凉山监管分局行政处罚信息公开表(凉金监罚决字〔2026〕5号)",
+      "stratum": "ordinary_institution",
+      "status": "experiment_protocol_approved_not_applied",
+      "error": null,
+      "proposals": [
+        {
+          "attempt": 1,
+          "revision": 1,
+          "output": {
+            "action": "add",
+            "reason": "公开处罚决定书完整可读，主体、文号、日期、机关、处罚内容均有直接引文；案由包含三项独立违规事实，分别记录为行为。旧库两次精确检索均0命中，但0命中不证明旧库不存在，故按新增提案提交。",
+            "case": {
+              "subject": "车车保险销售服务有限公司四川省凉山营业部",
+              "document_number": "凉金监罚决字〔2026〕5号",
+              "decision_date": "2026年7月2日",
+              "authority": "国家金融监督管理总局凉山监管分局",
+              "position": null,
+              "legal_basis": null,
+              "penalties": "警告并罚款人民币2.5万元",
+              "unknowns": [
+                "position",
+                "legal_basis"
+              ]
+            },
+            "behaviors": [
+              {
+                "actor": "车车保险销售服务有限公司四川省凉山营业部",
+                "role": "institution",
+                "action": "业务档案不规范不完整",
+                "risk_tags": [
+                  "其他"
+                ],
+                "unknowns": [
+                  "具体档案缺失范围与涉及保单数量未载明"
+                ]
+              },
+              {
+                "actor": "车车保险销售服务有限公司四川省凉山营业部",
+                "role": "institution",
+                "action": "未按规定履行客户告知书制作和出示义务",
+                "risk_tags": [
+                  "隐瞒重要信息"
+                ],
+                "unknowns": [
+                  "涉及客户数量及告知书具体缺失内容未载明"
+                ]
+              },
+              {
+                "actor": "车车保险销售服务有限公司四川省凉山营业部",
+                "role": "institution",
+                "action": "委托未通过本机构执业登记的人员从事保险代理业务",
+                "risk_tags": [
+                  "委托无资质机构销售",
+                  "代理人管理不到位"
+                ],
+                "unknowns": [
+                  "涉及人员数量、姓名及代理业务规模未载明"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "attempt": 2,
+          "revision": 2,
+          "output": {
+            "action": "add",
+            "reason": "公开处罚决定书完整可读，主体、文号、日期、机关、处罚内容均有直接引文；案由包含三项独立违规事实，分别记录为行为。旧库两次精确检索均0命中，但0命中不证明旧库不存在，故按新增提案提交。已按评审意见删除推断性标签：行为1不再贴“隐瞒重要信息”，行为2不再贴“委托无资质机构销售”和“代理人管理不到位”，均改归“其他”。",
+            "case": {
+              "subject": "车车保险销售服务有限公司四川省凉山营业部",
+              "document_number": "凉金监罚决字〔2026〕5号",
+              "decision_date": "2026年7月2日",
+              "authority": "国家金融监督管理总局凉山监管分局",
+              "position": null,
+              "legal_basis": null,
+              "penalties": "警告并罚款人民币2.5万元",
+              "unknowns": [
+                "position",
+                "legal_basis"
+              ]
+            },
+            "behaviors": [
+              {
+                "actor": "车车保险销售服务有限公司四川省凉山营业部",
+                "role": "institution",
+                "action": "业务档案不规范不完整",
+                "risk_tags": [
+                  "其他"
+                ],
+                "unknowns": [
+                  "具体档案缺失范围与涉及保单数量未载明"
+                ]
+              },
+              {
+                "actor": "车车保险销售服务有限公司四川省凉山营业部",
+                "role": "institution",
+                "action": "未按规定履行客户告知书制作和出示义务",
+                "risk_tags": [
+                  "其他"
+                ],
+                "unknowns": [
+                  "涉及客户数量及告知书具体缺失内容未载明"
+                ]
+              },
+              {
+                "actor": "车车保险销售服务有限公司四川省凉山营业部",
+                "role": "institution",
+                "action": "委托未通过本机构执业登记的人员从事保险代理业务",
+                "risk_tags": [
+                  "其他"
+                ],
+                "unknowns": [
+                  "涉及人员数量、姓名及代理业务规模未载明"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "reviews": [
+        {
+          "revision": 1,
+          "decision": "request_changes",
+          "issues": [
+            {
+              "issue_id": "issue:batch100-B006:tag-1",
+              "severity": "blocking",
+              "category": "overreach",
+              "operation_id": "op:batch100-B006:behaviors:1",
+              "claim_id": "claim:batch100-B006:behaviors:1:risk_tags",
+              "pointer": "/risk_tags",
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B006:L0005:1dc7ab65b2830abf:1dc7ab65b2830abf",
+                  "quote": "未按规定履行客户告知书制作和出示义务"
+                }
+              ],
+              "change_request": "删除“隐瞒重要信息”标签或改为“其他”；原文未载明告知书内容及客户未获重要合同信息的事实，不满足隐瞒重要信息的构成要件。"
+            },
+            {
+              "issue_id": "issue:batch100-B006:tag-2",
+              "severity": "blocking",
+              "category": "overreach",
+              "operation_id": "op:batch100-B006:behaviors:2",
+              "claim_id": "claim:batch100-B006:behaviors:2:risk_tags",
+              "pointer": "/risk_tags",
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B006:L0005:1dc7ab65b2830abf:1dc7ab65b2830abf",
+                  "quote": "委托未通过本机构执业登记的人员从事保险代理业务"
+                }
+              ],
+              "change_request": "删除“委托无资质机构销售”（对象为人员而非机构，要件不符）与“代理人管理不到位”（原文未载明管理失职事实）；建议仅保留“其他”或补充相应事实依据。"
+            }
+          ],
+          "disputed_claims": [
+            {
+              "claim_id": "claim:batch100-B006:behaviors:1:risk_tags",
+              "verdict": "unsupported",
+              "citations": [
+                {
+                  "segment_id": "B006:L0005:1dc7ab65b2830abf:1dc7ab65b2830abf",
+                  "quote": "未按规定履行客户告知书制作和出示义务"
+                }
+              ],
+              "comment": "“隐瞒重要信息”要求隐瞒或未充分告知重要合同信息；原文仅称未按规定制作和出示客户告知书，未载明告知书内容、是否含重要合同信息及客户是否因此未获信息，属推断性归类，不能贴肯定标签。建议改为“其他”或删除该标签。"
+            },
+            {
+              "claim_id": "claim:batch100-B006:behaviors:2:risk_tags",
+              "verdict": "unsupported",
+              "citations": [
+                {
+                  "segment_id": "B006:L0005:1dc7ab65b2830abf:1dc7ab65b2830abf",
+                  "quote": "委托未通过本机构执业登记的人员从事保险代理业务"
+                }
+              ],
+              "comment": "“委托无资质机构销售”要求对象为无合法资质的机构，原文对象是未通过本机构执业登记的人员，主体性质与要件均不符，不能贴该标签；“代理人管理不到位”亦需管理失职事实，原文仅述委托行为，未载明管理过错，属推断。建议仅保留“其他”或补充证据。"
+            }
+          ]
+        },
+        {
+          "revision": 2,
+          "decision": "approve",
+          "issues": [],
+          "disputed_claims": []
+        }
+      ],
+      "audit": {
+        "result": "supported_label_correction",
+        "summary": "删除/降级不满足全部要件的标签，有原文依据；三项行为及机构责任均保留。",
+        "corrections": [
+          {
+            "field": "behaviors/1/risk_tags",
+            "before": [
+              "隐瞒重要信息"
+            ],
+            "after": [
+              "其他"
+            ],
+            "assessment": "supported",
+            "reason": "原文仅载未制作/出示客户告知书，未载告知书的重要合同信息内容，不能肯定隐瞒重要信息。",
+            "quotes": [
+              "未按规定履行客户告知书制作和出示义务"
+            ]
+          },
+          {
+            "field": "behaviors/2/risk_tags",
+            "before": [
+              "委托无资质机构销售",
+              "代理人管理不到位"
+            ],
+            "after": [
+              "其他"
+            ],
+            "assessment": "supported_conservative",
+            "reason": "委托对象为未登记人员，不是无资质机构；原文没有另行展开管理不善导致违规的必要事实，撤去管理标签属保守处理。",
+            "quotes": [
+              "委托未通过本机构执业登记的人员从事保险代理业务"
+            ]
+          }
+        ],
+        "residuals": [],
+        "responsibility": "前后均为本机构，未将案由改归未登记人员；无新增责任主体矛盾。",
+        "reviewer_problem": null
+      },
+      "source_raw_sha256": "1dc7ab65b2830abf4806e7b44687aa3559fdd88af3dfef060a4ee1a7b194eba0",
+      "terminal_sha256": "086c08bb7e63eaacf0482c5e4288eaf8bada95ff2d29f8ba878474c5f3c266ef",
+      "paths": {
+        "initial_proposal": "[local path omitted from public export]",
+        "revised_proposal": "[local path omitted from public export]",
+        "terminal": "[local path omitted from public export]"
+      }
+    },
+    {
+      "id": "B015",
+      "text": "当事人: 中国太平洋人寿保险股份有限公司盐城中心支公司相关责任人\r\n主要违法违规事实(案由)\r\n虚列费用、销售误导、给予投保人合同约定以外的利益\r\n行政处罚内容\r\n对刘晓妍警告并罚款5万元。\r\n作出处罚决定的机关名称\r\n盐城金融监管分局\r\n作出处罚决定的日期\r\n2026年7月17日\r\n来源公示\r\n盐城金融监管分局行政处罚信息公开表",
+      "stratum": "ordinary_institution",
+      "status": "format_repair_exhausted",
+      "error": {
+        "code": "REVIEW_DECISION_CONSISTENCY",
+        "field": "",
+        "message": "REVIEW_DECISION_CONSISTENCY"
+      },
+      "proposals": [
+        {
+          "attempt": 1,
+          "revision": 1,
+          "output": {
+            "action": "add",
+            "reason": "公开处罚信息明确载明当事人、案由、处罚内容、处罚机关和日期，且独立检索未命中旧库记录；按新增处理。",
+            "case": {
+              "subject": "中国太平洋人寿保险股份有限公司盐城中心支公司相关责任人",
+              "document_number": null,
+              "decision_date": "2026年7月17日",
+              "authority": "盐城金融监管分局",
+              "position": null,
+              "legal_basis": null,
+              "penalties": "对刘晓妍警告并罚款5万元",
+              "unknowns": [
+                "document_number",
+                "position",
+                "legal_basis"
+              ]
+            },
+            "behaviors": [
+              {
+                "actor": "中国太平洋人寿保险股份有限公司盐城中心支公司相关责任人",
+                "role": "unspecified",
+                "action": "虚列费用",
+                "risk_tags": [
+                  "虚列费用套取资金"
+                ],
+                "unknowns": [
+                  "具体实施人员",
+                  "虚列费用金额及方式"
+                ]
+              },
+              {
+                "actor": "中国太平洋人寿保险股份有限公司盐城中心支公司相关责任人",
+                "role": "unspecified",
+                "action": "销售误导",
+                "risk_tags": [
+                  "销售误导"
+                ],
+                "unknowns": [
+                  "具体误导对象",
+                  "误导方式及产品"
+                ]
+              },
+              {
+                "actor": "中国太平洋人寿保险股份有限公司盐城中心支公司相关责任人",
+                "role": "unspecified",
+                "action": "给予投保人合同约定以外的利益",
+                "risk_tags": [
+                  "合同外利益"
+                ],
+                "unknowns": [
+                  "具体利益形式及金额",
+                  "涉及投保人"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "attempt": 2,
+          "revision": 2,
+          "output": {
+            "action": "add",
+            "reason": "公开处罚信息载明被处罚个人刘晓妍、三项违法违规事实、处罚内容、处罚机关和日期；原文未载明文号、职务和法律依据，已列为未知。按新增处理。",
+            "case": {
+              "subject": "刘晓妍",
+              "document_number": null,
+              "decision_date": "2026年7月17日",
+              "authority": "盐城金融监管分局",
+              "position": null,
+              "legal_basis": null,
+              "penalties": "对刘晓妍警告并罚款5万元",
+              "unknowns": [
+                "document_number",
+                "position",
+                "legal_basis"
+              ]
+            },
+            "behaviors": [
+              {
+                "actor": "刘晓妍",
+                "role": "responsible_person",
+                "action": "虚列费用",
+                "risk_tags": [
+                  "虚列费用套取资金"
+                ],
+                "unknowns": [
+                  "具体实施人员",
+                  "虚列费用金额及方式"
+                ]
+              },
+              {
+                "actor": "刘晓妍",
+                "role": "responsible_person",
+                "action": "销售误导",
+                "risk_tags": [
+                  "销售误导"
+                ],
+                "unknowns": [
+                  "具体误导对象",
+                  "误导方式及产品"
+                ]
+              },
+              {
+                "actor": "刘晓妍",
+                "role": "responsible_person",
+                "action": "给予投保人合同约定以外的利益",
+                "risk_tags": [
+                  "合同外利益"
+                ],
+                "unknowns": [
+                  "具体利益形式及金额",
+                  "涉及投保人"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "reviews": [
+        {
+          "revision": 1,
+          "decision": "request_changes",
+          "issues": [
+            {
+              "issue_id": "issue:batch100-B015:subject-actor",
+              "severity": "blocking",
+              "category": "actor",
+              "operation_id": "op:batch100-B015:case",
+              "claim_id": "claim:batch100-B015:case:subject",
+              "pointer": "/metadata/subject",
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B015:L0001:546341832a6ebae8:546341832a6ebae8",
+                  "quote": "当事人: 中国太平洋人寿保险股份有限公司盐城中心支公司相关责任人"
+                },
+                {
+                  "segment_id": "B015:L0005:546341832a6ebae8:546341832a6ebae8",
+                  "quote": "对刘晓妍警告并罚款5万元。"
+                }
+              ],
+              "change_request": "将主体明确为被处罚个人刘晓妍，所属机构为中国太平洋人寿保险股份有限公司盐城中心支公司；不得将“相关责任人”作为当事人主体值，也不得将机构与个人混同。"
+            },
+            {
+              "issue_id": "issue:batch100-B015:behavior-actors",
+              "severity": "blocking",
+              "category": "actor",
+              "operation_id": "op:batch100-B015:behaviors:0",
+              "claim_id": "claim:batch100-B015:behaviors:0:actor",
+              "pointer": "/actor",
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B015:L0001:546341832a6ebae8:546341832a6ebae8",
+                  "quote": "当事人: 中国太平洋人寿保险股份有限公司盐城中心支公司相关责任人"
+                },
+                {
+                  "segment_id": "B015:L0005:546341832a6ebae8:546341832a6ebae8",
+                  "quote": "对刘晓妍警告并罚款5万元。"
+                }
+              ],
+              "change_request": "三个behavior的actor均改为指向被处罚个人刘晓妍，并注明具体实施主体未知；不得以“相关责任人”笼统替代，也不得因处罚个人即认定其亲自实施具体行为。"
+            }
+          ],
+          "disputed_claims": [
+            {
+              "claim_id": "claim:batch100-B015:case:subject",
+              "verdict": "unsupported",
+              "citations": [
+                {
+                  "segment_id": "B015:L0001:546341832a6ebae8:546341832a6ebae8",
+                  "quote": "当事人: 中国太平洋人寿保险股份有限公司盐城中心支公司相关责任人"
+                }
+              ],
+              "comment": "原文当事人栏为“中国太平洋人寿保险股份有限公司盐城中心支公司相关责任人”，但处罚内容仅针对刘晓妍个人。将“相关责任人”作为主体值模糊且与处罚对象不一致；应明确主体为刘晓妍个人，机构仅为所属单位，不能把机构与个人混为当事人。"
+            },
+            {
+              "claim_id": "claim:batch100-B015:behaviors:0:actor",
+              "verdict": "unsupported",
+              "citations": [
+                {
+                  "segment_id": "B015:L0001:546341832a6ebae8:546341832a6ebae8",
+                  "quote": "当事人: 中国太平洋人寿保险股份有限公司盐城中心支公司相关责任人"
+                },
+                {
+                  "segment_id": "B015:L0005:546341832a6ebae8:546341832a6ebae8",
+                  "quote": "对刘晓妍警告并罚款5万元。"
+                }
+              ],
+              "comment": "actor填“相关责任人”笼统且与处罚对象刘晓妍不一致。处罚个人不等于已证该个人亲自实施具体行为，但actor至少应指向被处罚的刘晓妍个人，并注明具体实施主体未知。"
+            },
+            {
+              "claim_id": "claim:batch100-B015:behaviors:1:actor",
+              "verdict": "unsupported",
+              "citations": [
+                {
+                  "segment_id": "B015:L0001:546341832a6ebae8:546341832a6ebae8",
+                  "quote": "当事人: 中国太平洋人寿保险股份有限公司盐城中心支公司相关责任人"
+                },
+                {
+                  "segment_id": "B015:L0005:546341832a6ebae8:546341832a6ebae8",
+                  "quote": "对刘晓妍警告并罚款5万元。"
+                }
+              ],
+              "comment": "同behaviors:0:actor问题，actor笼统且与处罚对象不一致。"
+            },
+            {
+              "claim_id": "claim:batch100-B015:behaviors:2:actor",
+              "verdict": "unsupported",
+              "citations": [
+                {
+                  "segment_id": "B015:L0001:546341832a6ebae8:546341832a6ebae8",
+                  "quote": "当事人: 中国太平洋人寿保险股份有限公司盐城中心支公司相关责任人"
+                },
+                {
+                  "segment_id": "B015:L0005:546341832a6ebae8:546341832a6ebae8",
+                  "quote": "对刘晓妍警告并罚款5万元。"
+                }
+              ],
+              "comment": "同behaviors:0:actor问题，actor笼统且与处罚对象不一致。"
+            }
+          ]
+        },
+        {
+          "revision": 2,
+          "decision": "request_changes",
+          "issues": [
+            {
+              "issue_id": "issue:batch100-B015:source-coverage-L0001",
+              "severity": "non_blocking",
+              "category": "source",
+              "operation_id": "op:batch100-B015:case",
+              "claim_id": null,
+              "pointer": "/metadata/subject",
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B015:L0001:546341832a6ebae8:546341832a6ebae8",
+                  "quote": "当事人: 中国太平洋人寿保险股份有限公司盐城中心支公司相关责任人"
+                }
+              ],
+              "change_request": "source_coverage将L0001标为needs_clarification，但该段载明当事人为“中国太平洋人寿保险股份有限公司盐城中心支公司相关责任人”，属于与主体认定相关的业务事实（机构归属线索），不应仅以“未作为主体值采用”处理。请将该段改为mapped或至少说明其与刘晓妍主体及机构归属的关系，避免遗漏机构主体信息。"
+            }
+          ],
+          "disputed_claims": []
+        },
+        {
+          "revision": 2,
+          "decision": "request_changes",
+          "issues": [
+            {
+              "issue_id": "issue:batch100-B015:source-coverage-L0001",
+              "severity": "non_blocking",
+              "category": "source",
+              "operation_id": "op:batch100-B015:case",
+              "claim_id": null,
+              "pointer": "/metadata/subject",
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B015:L0001:546341832a6ebae8:546341832a6ebae8",
+                  "quote": "当事人: 中国太平洋人寿保险股份有限公司盐城中心支公司相关责任人"
+                }
+              ],
+              "change_request": "source_coverage将L0001标为needs_clarification，但该段载明当事人为“中国太平洋人寿保险股份有限公司盐城中心支公司相关责任人”，属于与主体认定相关的业务事实（机构归属线索），不应仅以“未作为主体值采用”处理。请将该段改为mapped或至少说明其与刘晓妍主体及机构归属的关系，避免遗漏机构主体信息。"
+            }
+          ],
+          "disputed_claims": []
+        }
+      ],
+      "audit": {
+        "result": "partial_case_disambiguation_with_residuals",
+        "summary": "刘晓妍是明确受处罚个人，case主体澄清有依据；行为主体仍不等于亲自实施者，机构归属和标签过度归类尚未解决。",
+        "corrections": [
+          {
+            "field": "case/subject",
+            "before": "中国太平洋人寿保险股份有限公司盐城中心支公司相关责任人",
+            "after": "刘晓妍",
+            "assessment": "supported_as_penalized_party",
+            "reason": "处罚内容直接点名刘晓妍，支持其为被处罚主体。",
+            "quotes": [
+              "对刘晓妍警告并罚款5万元。"
+            ]
+          },
+          {
+            "field": "behaviors/*/actor,role",
+            "before": "相关责任人/unspecified",
+            "after": "刘晓妍/responsible_person",
+            "assessment": "conditional_not_proof_of_direct_execution",
+            "reason": "三个actor的uncertainty明确写具体实施主体未知。仅能理解为被追责人员关联；若把actor作为亲自实施者确定事实，现有原文不支持。",
+            "quotes": [
+              "当事人: 中国太平洋人寿保险股份有限公司盐城中心支公司相关责任人",
+              "对刘晓妍警告并罚款5万元。"
+            ]
+          }
+        ],
+        "residuals": [
+          {
+            "kind": "unsupported_risk_tag_not_repaired",
+            "severity": "blocking_for_semantic_acceptance",
+            "field": "behaviors/0/risk_tags",
+            "detail": "初稿及修订都把“虚列费用”肯定映射为“虚列费用套取资金”；原文没有套取资金目的/结果，完整字典要求“通过虚假列支费用套取资金”。Reviewer两轮均漏检。"
+          },
+          {
+            "kind": "unresolved_affiliation_coverage",
+            "severity": "needs_review",
+            "field": "source_coverage/B015:L0001",
+            "detail": "修订将机构归属段由mapped改为needs_clarification；机构线索仍在原文但未落实到结构化字段。不能把该段当成与主体无关的标题。"
+          }
+        ],
+        "responsibility": "case处罚对象清楚；实施主体与责任人员仍须分开。修订已加uncertainty，不能把这一变化统计为已确认其亲自实施三项行为。",
+        "reviewer_problem": "第一轮要求actor指向个人同时又说实施主体未知，属于角色语义边界未统一；第二轮以仅non_blocking issue发request_changes，与全部claim_checks支持不一致，触发REVIEW_DECISION_CONSISTENCY并耗尽格式修正。"
+      },
+      "source_raw_sha256": "546341832a6ebae8ad72aa190e921474c5f1ee62f5c632ecddf4d6cb29648d83",
+      "terminal_sha256": "1f1fd825e841b33539c72b89c2d132de1b0c5ac199ee9b588a887dc6a1954bd8",
+      "paths": {
+        "initial_proposal": "[local path omitted from public export]",
+        "revised_proposal": "[local path omitted from public export]",
+        "terminal": "[local path omitted from public export]"
+      }
+    },
+    {
+      "id": "B018",
+      "text": "当事人: 车车保险销售服务有限公司滨州营业部\r\n行政处罚决定书文号\r\n滨金罚决字〔2026〕35号\r\n主要违法违规事实(案由)\r\n委托未进行执业登记人员从事保险销售\r\n行政处罚内容\r\n警告并处罚款1万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局滨州监管分局\r\n作出处罚决定的日期\r\n2026年7月17日\r\n来源公示\r\n国家金融监督管理总局滨州监管分局行政处罚信息公开表（滨金罚决字〔2026〕 35号-36号）",
+      "stratum": "ordinary_institution",
+      "status": "experiment_protocol_approved_not_applied",
+      "error": null,
+      "proposals": [
+        {
+          "attempt": 1,
+          "revision": 1,
+          "output": {
+            "action": "add",
+            "reason": "公开处罚决定书显示车车保险销售服务有限公司滨州营业部因委托未进行执业登记人员从事保险销售被警告并罚款1万元；旧库两次精确检索均无命中，但零命中不证明旧库不存在，故按新增提案提交。",
+            "case": {
+              "subject": "车车保险销售服务有限公司滨州营业部",
+              "document_number": "滨金罚决字〔2026〕35号",
+              "decision_date": "2026年7月17日",
+              "authority": "国家金融监督管理总局滨州监管分局",
+              "position": null,
+              "legal_basis": null,
+              "penalties": "警告并处罚款1万元",
+              "unknowns": [
+                "position",
+                "legal_basis"
+              ]
+            },
+            "behaviors": [
+              {
+                "actor": "车车保险销售服务有限公司滨州营业部",
+                "role": "institution",
+                "action": "委托未进行执业登记人员从事保险销售",
+                "risk_tags": [
+                  "委托无资质机构销售"
+                ],
+                "unknowns": [
+                  "具体被委托人员身份及执业登记状态细节",
+                  "委托行为发生时间与涉及保单范围"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "attempt": 2,
+          "revision": 2,
+          "output": {
+            "action": "add",
+            "reason": "公开处罚决定书显示车车保险销售服务有限公司滨州营业部因委托未进行执业登记人员从事保险销售被警告并罚款1万元；旧库两次精确检索均无命中，但零命中不证明旧库不存在，故按新增提案提交。已按复核意见删除“委托无资质机构销售”标签：原文对象为未进行执业登记人员，不满足该标签“机构资质”要件，且无其他字典标签可完整覆盖该事实，故risk_tags置空并保留原文事实。",
+            "case": {
+              "subject": "车车保险销售服务有限公司滨州营业部",
+              "document_number": "滨金罚决字〔2026〕35号",
+              "decision_date": "2026年7月17日",
+              "authority": "国家金融监督管理总局滨州监管分局",
+              "position": null,
+              "legal_basis": null,
+              "penalties": "警告并处罚款1万元",
+              "unknowns": [
+                "position",
+                "legal_basis"
+              ]
+            },
+            "behaviors": [
+              {
+                "actor": "车车保险销售服务有限公司滨州营业部",
+                "role": "institution",
+                "action": "委托未进行执业登记人员从事保险销售",
+                "risk_tags": [],
+                "unknowns": [
+                  "具体被委托人员身份及执业登记状态细节",
+                  "委托行为发生时间与涉及保单范围"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "reviews": [
+        {
+          "revision": 1,
+          "decision": "request_changes",
+          "issues": [
+            {
+              "issue_id": "issue:batch100-B018:risk-tag-overreach",
+              "severity": "blocking",
+              "category": "overreach",
+              "operation_id": "op:batch100-B018:behaviors:0",
+              "claim_id": "claim:batch100-B018:behaviors:0:risk_tags",
+              "pointer": "/risk_tags",
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B018:L0005:6130e8a8571c6669:6130e8a8571c6669",
+                  "quote": "委托未进行执业登记人员从事保险销售"
+                }
+              ],
+              "change_request": "“委托无资质机构销售”标签的必要条件为委托对象是不具有合法资质的机构；原文对象为未进行执业登记的人员，机构资质要件不满足。请删除该标签，或改为不超出原文的“其他”并注明依据，或置空标签。"
+            }
+          ],
+          "disputed_claims": [
+            {
+              "claim_id": "claim:batch100-B018:behaviors:0:risk_tags",
+              "verdict": "unsupported",
+              "citations": [
+                {
+                  "segment_id": "B018:L0005:6130e8a8571c6669:6130e8a8571c6669",
+                  "quote": "委托未进行执业登记人员从事保险销售"
+                }
+              ],
+              "comment": "字典“委托无资质机构销售”要求对象为不具有合法资质的机构；原文对象是“未进行执业登记人员”，属个人执业登记问题，与机构资质要件不等同，不能贴该肯定标签。提案自身也承认属近似归类。应删除该标签或改标为“其他”并说明，或留空标签。"
+            }
+          ]
+        },
+        {
+          "revision": 2,
+          "decision": "approve",
+          "issues": [],
+          "disputed_claims": []
+        }
+      ],
+      "audit": {
+        "result": "supported_label_correction",
+        "summary": "把“委托无资质机构销售”改为空标签正确，保留原行为。",
+        "corrections": [
+          {
+            "field": "behaviors/0/risk_tags",
+            "before": [
+              "委托无资质机构销售"
+            ],
+            "after": [],
+            "assessment": "supported",
+            "reason": "原文对象为未登记人员，不满足字典的机构对象要件。",
+            "quotes": [
+              "委托未进行执业登记人员从事保险销售"
+            ]
+          }
+        ],
+        "residuals": [],
+        "responsibility": "前后均为车车保险滨州营业部，未改变责任归属。",
+        "reviewer_problem": null
+      },
+      "source_raw_sha256": "6130e8a8571c6669b45c59e046832069d19ef274f65c0d16410582ae7177028b",
+      "terminal_sha256": "b0558bc460ce3b91e7ba27e68e392f972d6fc597e1d3ba6afa6fe546555c645a",
+      "paths": {
+        "initial_proposal": "[local path omitted from public export]",
+        "revised_proposal": "[local path omitted from public export]",
+        "terminal": "[local path omitted from public export]"
+      }
+    },
+    {
+      "id": "B020",
+      "text": "当事人: 阳光人寿保险股份有限公司天津分公司\r\n主要违法违规事实(案由)\r\n编制或者提供虚假的报告、报表、文件、资料\r\n行政处罚内容\r\n对阳光人寿保险股份有限公司天津分公司罚款40万元。对叶小义警告并处罚款7万元。\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局天津监管局\r\n作出处罚决定的日期\r\n2026年7月1日\r\n来源公示\r\n国家金融监督管理总局天津监管局行政处罚信息公开表",
+      "stratum": "ordinary_institution",
+      "status": "held",
+      "error": {
+        "code": "HOST_ERROR",
+        "field": null,
+        "message": "Error: SUBMISSION_INCOMPLETE_model_failure"
+      },
+      "proposals": [
+        {
+          "attempt": 1,
+          "revision": 1,
+          "output": {
+            "action": "add",
+            "reason": "公开处罚信息明确载明当事人、案由、处罚内容、处罚机关及日期，构成可新增的处罚记录；搜索零命中不能证明旧库不存在，故按新增处理。",
+            "case": {
+              "subject": "阳光人寿保险股份有限公司天津分公司",
+              "document_number": null,
+              "decision_date": "2026年7月1日",
+              "authority": "国家金融监督管理总局天津监管局",
+              "position": null,
+              "legal_basis": null,
+              "penalties": "对阳光人寿保险股份有限公司天津分公司罚款40万元；对叶小义警告并处罚款7万元",
+              "unknowns": [
+                "document_number",
+                "position",
+                "legal_basis"
+              ]
+            },
+            "behaviors": [
+              {
+                "actor": "阳光人寿保险股份有限公司天津分公司",
+                "role": "institution",
+                "action": "编制或者提供虚假的报告、报表、文件、资料",
+                "risk_tags": [
+                  "其他"
+                ],
+                "unknowns": [
+                  "具体虚假资料内容及涉及期间未载明"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "attempt": 2,
+          "revision": 2,
+          "output": {
+            "action": "add",
+            "reason": "公开处罚信息载明当事人、案由、处罚内容、处罚机关及日期，构成可新增的处罚记录；搜索零命中不能证明旧库不存在，故按新增处理。已按复核意见将风险标签限定为“其他”，并明确原文未载明费用列支或套取资金，不推断具体违规构成。",
+            "case": {
+              "subject": "阳光人寿保险股份有限公司天津分公司",
+              "document_number": null,
+              "decision_date": "2026年7月1日",
+              "authority": "国家金融监督管理总局天津监管局",
+              "position": null,
+              "legal_basis": null,
+              "penalties": "对阳光人寿保险股份有限公司天津分公司罚款40万元；对叶小义警告并处罚款7万元",
+              "unknowns": [
+                "document_number",
+                "position",
+                "legal_basis"
+              ]
+            },
+            "behaviors": [
+              {
+                "actor": "阳光人寿保险股份有限公司天津分公司",
+                "role": "institution",
+                "action": "编制或者提供虚假的报告、报表、文件、资料",
+                "risk_tags": [
+                  "其他"
+                ],
+                "unknowns": [
+                  "具体虚假资料内容及涉及期间未载明"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "reviews": [
+        {
+          "revision": 1,
+          "decision": "request_changes",
+          "issues": [
+            {
+              "issue_id": "issue:batch100-B020:risk-tag-overreach",
+              "severity": "non_blocking",
+              "category": "overreach",
+              "operation_id": "op:batch100-B020:behaviors:0",
+              "claim_id": "claim:batch100-B020:behaviors:0:risk_tags",
+              "pointer": "/risk_tags",
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B020:L0003:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+                  "quote": "编制或者提供虚假的报告、报表、文件、资料"
+                }
+              ],
+              "change_request": "risk_tags仅保留“其他”，并在uncertainty中明确：原文案由为编制或提供虚假报告、报表、文件、资料，未载明费用列支或套取资金，故不适用“虚列费用套取资金”等具体标签；不得以案由推断具体违规构成。"
+            }
+          ],
+          "disputed_claims": [
+            {
+              "claim_id": "claim:batch100-B020:behaviors:0:risk_tags",
+              "verdict": "unsupported",
+              "citations": [
+                {
+                  "segment_id": "B020:L0003:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+                  "quote": "编制或者提供虚假的报告、报表、文件、资料"
+                }
+              ],
+              "comment": "字典中“虚列费用套取资金”指通过虚假列支费用套取资金，与编制或提供虚假报告、报表、文件、资料并非同一要件；原文未载明费用列支或套取资金，不能据此贴该标签。归入“其他”虽可保留，但需说明该行为不满足任何具体标签要件，且不得暗示已构成虚列费用。建议维持“其他”并删除任何指向虚列费用的推断。"
+            }
+          ]
+        },
+        {
+          "revision": 2,
+          "decision": null,
+          "issues": null,
+          "disputed_claims": []
+        }
+      ],
+      "audit": {
+        "result": "non_substantive_revision_after_reviewer_misattribution",
+        "summary": "初稿本已仅贴“其他”；第二稿只加强uncertainty与reason说明，不能算作删除错误标签的成功纠错。",
+        "corrections": [
+          {
+            "field": "behaviors/0/risk_tags.uncertainty",
+            "before": "字典无直接对应标签，归入其他",
+            "after": "明确未载明费用列支或套取资金，不满足虚列费用套取资金等标签",
+            "assessment": "supported_explanation_only",
+            "reason": "解释符合原文，但risk_tags前后都为其他，业务事实、主体和处罚均未变。",
+            "quotes": [
+              "编制或者提供虚假的报告、报表、文件、资料"
+            ]
+          }
+        ],
+        "residuals": [
+          {
+            "kind": "final_review_incomplete",
+            "severity": "execution_failure",
+            "field": "reviewer-r2-a2.json",
+            "detail": "第二轮Reviewer未形成业务输出，终态held；不能把第二稿当已复核终稿。"
+          }
+        ],
+        "responsibility": "机构行为、机构40万元和叶小义警告并罚7万元均在两稿处罚文字中分别保留，没有把个人处罚串给机构。",
+        "reviewer_problem": "Reviewer将并未出现在初稿中的“虚列费用套取资金”当作需删除对象，并将已有“其他”标unsupported；可要求解释但不足以证明初稿存在该标签错误。"
+      },
+      "source_raw_sha256": "70c3d5dbf5cdeccdc2b567c748850ef7ee89ca7ae4242c2b4ebfc435d3443012",
+      "terminal_sha256": "b2e41ec9fe2e85c93b018ba6fbbcca93cbf690577acd578557fcf609ca2c5cc2",
+      "paths": {
+        "initial_proposal": "[local path omitted from public export]",
+        "revised_proposal": "[local path omitted from public export]",
+        "terminal": "[local path omitted from public export]"
+      }
+    },
+    {
+      "id": "B031",
+      "text": "当事人: 美联盛航保险代理有限公司廊坊分公司\r\n主要违法违规事实(案由)\r\n未建立完整规范的业务档案、执业登记和管理不规范、信息系统记录不准确、未严格落实培训管理要求\r\n行政处罚内容\r\n对美联盛航保险代理有限公司廊坊分公司给予警告并罚款2.4万元。对刘然给予警告并罚款2万元。\r\n作出处罚决定的机关名称\r\n廊坊金融监管分局\r\n作出处罚决定的日期\r\n2026年8月18日\r\n来源公示\r\n国家金融监督管理总局廊坊监管分局行政处罚信息公开表（廊金罚决字〔2026〕37号）",
+      "stratum": "ordinary_institution",
+      "status": "experiment_protocol_approved_not_applied",
+      "error": null,
+      "proposals": [
+        {
+          "attempt": 1,
+          "revision": 1,
+          "output": {
+            "action": "add",
+            "reason": "公开处罚信息显示美联盛航保险代理有限公司廊坊分公司因未建立完整规范的业务档案、执业登记和管理不规范、信息系统记录不准确、未严格落实培训管理要求被处罚，并对刘然给予警告罚款；两次检索均无命中，零命中不证明旧库不存在，但现有证据足以新增。",
+            "case": {
+              "subject": "美联盛航保险代理有限公司廊坊分公司",
+              "document_number": "廊金罚决字〔2026〕37号",
+              "decision_date": "2026年8月18日",
+              "authority": "廊坊金融监管分局",
+              "position": null,
+              "legal_basis": null,
+              "penalties": "对美联盛航保险代理有限公司廊坊分公司给予警告并罚款2.4万元；对刘然给予警告并罚款2万元。",
+              "unknowns": [
+                "position",
+                "legal_basis"
+              ]
+            },
+            "behaviors": [
+              {
+                "actor": "美联盛航保险代理有限公司廊坊分公司",
+                "role": "institution",
+                "action": "未建立完整规范的业务档案、执业登记和管理不规范、信息系统记录不准确、未严格落实培训管理要求",
+                "risk_tags": [
+                  "培训材料违规",
+                  "客户信息不真实"
+                ],
+                "unknowns": [
+                  "具体违规行为细节",
+                  "涉及客户及培训材料范围"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "attempt": 2,
+          "revision": 2,
+          "output": {
+            "action": "add",
+            "reason": "公开处罚信息载明美联盛航保险代理有限公司廊坊分公司因未建立完整规范的业务档案、执业登记和管理不规范、信息系统记录不准确、未严格落实培训管理要求被处罚，并对刘然给予警告罚款；两次检索均无命中，零命中不证明旧库不存在，但现有证据足以新增。经复核，删除缺乏充分依据的“培训材料违规”“客户信息不真实”标签，改为空标签数组。",
+            "case": {
+              "subject": "美联盛航保险代理有限公司廊坊分公司",
+              "document_number": "廊金罚决字〔2026〕37号",
+              "decision_date": "2026年8月18日",
+              "authority": "廊坊金融监管分局",
+              "position": null,
+              "legal_basis": null,
+              "penalties": "对美联盛航保险代理有限公司廊坊分公司给予警告并罚款2.4万元；对刘然给予警告并罚款2万元。",
+              "unknowns": [
+                "position",
+                "legal_basis"
+              ]
+            },
+            "behaviors": [
+              {
+                "actor": "美联盛航保险代理有限公司廊坊分公司",
+                "role": "institution",
+                "action": "未建立完整规范的业务档案、执业登记和管理不规范、信息系统记录不准确、未严格落实培训管理要求",
+                "risk_tags": [],
+                "unknowns": [
+                  "具体违规行为细节",
+                  "涉及客户及培训材料范围"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "reviews": [
+        {
+          "revision": 1,
+          "decision": "request_changes",
+          "issues": [
+            {
+              "issue_id": "issue:batch100-B031:risk-tags-overreach",
+              "severity": "blocking",
+              "category": "overreach",
+              "operation_id": "op:batch100-B031:behaviors:0",
+              "claim_id": "claim:batch100-B031:behaviors:0:risk_tags",
+              "pointer": "/risk_tags",
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B031:L0003:94677973809b731f:94677973809b731f",
+                  "quote": "未建立完整规范的业务档案、执业登记和管理不规范、信息系统记录不准确、未严格落实培训管理要求"
+                }
+              ],
+              "change_request": "删除“培训材料违规”和“客户信息不真实”两个标签，或改为空标签数组。原文仅载明未严格落实培训管理要求、信息系统记录不准确，未证明培训材料内容误导或客户信息虚假，标签全部必要条件不满足。"
+            }
+          ],
+          "disputed_claims": [
+            {
+              "claim_id": "claim:batch100-B031:behaviors:0:risk_tags",
+              "verdict": "unsupported",
+              "citations": [
+                {
+                  "segment_id": "B031:L0003:94677973809b731f:94677973809b731f",
+                  "quote": "未建立完整规范的业务档案、执业登记和管理不规范、信息系统记录不准确、未严格落实培训管理要求"
+                }
+              ],
+              "comment": "标签要件不满足：原文只说“未严格落实培训管理要求”，未说明培训材料存在误导或违规内容，不能支持“培训材料违规”；“信息系统记录不准确”不等于客户信息虚假或不真实，不能支持“客户信息不真实”。两项均为概括映射，超出原文语义边界，应删除或改为不贴标签。"
+            }
+          ]
+        },
+        {
+          "revision": 2,
+          "decision": "approve",
+          "issues": [],
+          "disputed_claims": []
+        }
+      ],
+      "audit": {
+        "result": "supported_label_correction_with_granularity_residual",
+        "summary": "删除培训材料和客户信息两个越界标签有依据；四项独立行为仍被合并为一条，粒度要求未落实。",
+        "corrections": [
+          {
+            "field": "behaviors/0/risk_tags",
+            "before": [
+              "培训材料违规",
+              "客户信息不真实"
+            ],
+            "after": [],
+            "assessment": "supported",
+            "reason": "培训管理要求不等于培训材料含违规内容；信息系统记录不准确没有限定为客户信息。",
+            "quotes": [
+              "未建立完整规范的业务档案、执业登记和管理不规范、信息系统记录不准确、未严格落实培训管理要求"
+            ]
+          }
+        ],
+        "residuals": [
+          {
+            "kind": "independent_behaviors_not_split",
+            "severity": "needs_review",
+            "field": "behaviors/0/action",
+            "detail": "完整四项事实仍在字符串中，没有事实文字丢失，但未按统一提示拆为独立行为，后续按行为检索/统计会合并作用域。"
+          }
+        ],
+        "responsibility": "机构actor保持，刘然个人2万元与机构2.4万元分别保留，没有臆造刘然亲自实施某项。",
+        "reviewer_problem": null
+      },
+      "source_raw_sha256": "94677973809b731fe6863b6979eb54ce576408efe211f34f316494b90237191c",
+      "terminal_sha256": "505e6f91a2ba5f9aa469ab72de93e8d545a0b977f98bd943bb343bd023a7f6f1",
+      "paths": {
+        "initial_proposal": "[local path omitted from public export]",
+        "revised_proposal": "[local path omitted from public export]",
+        "terminal": "[local path omitted from public export]"
+      }
+    },
+    {
+      "id": "B044",
+      "text": "当事人: 德华安顾人寿保险有限公司山东省分公司\r\n行政处罚决定书文号\r\n鲁金罚决字〔2026〕71号\r\n主要违法违规事实(案由)\r\n编制虚假的财务业务资料\r\n行政处罚内容\r\n罚款40万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局山东监管局\r\n作出处罚决定的日期\r\n2026年8月10日\r\n来源公示\r\n国家金融监督管理总局山东监管局行政处罚信息公开表（鲁金罚决字〔2026〕66号-73号）",
+      "stratum": "ordinary_institution",
+      "status": "experiment_protocol_approved_not_applied",
+      "error": null,
+      "proposals": [
+        {
+          "attempt": 1,
+          "revision": 1,
+          "output": {
+            "action": "add",
+            "reason": "新处罚决定书文号鲁金罚决字〔2026〕71号未在旧库检索结果中出现；旧库命中为2023年鲁银保监罚决字及2024/2025年其他文号，主体、文号、日期均不同，不构成同一案件。按原文新增机构处罚及对应行为。",
+            "case": {
+              "subject": "德华安顾人寿保险有限公司山东省分公司",
+              "document_number": "鲁金罚决字〔2026〕71号",
+              "decision_date": "2026年8月10日",
+              "authority": "国家金融监督管理总局山东监管局",
+              "position": null,
+              "legal_basis": null,
+              "penalties": "罚款40万元",
+              "unknowns": [
+                "position",
+                "legal_basis"
+              ]
+            },
+            "behaviors": [
+              {
+                "actor": "德华安顾人寿保险有限公司山东省分公司",
+                "role": "institution",
+                "action": "编制虚假的财务业务资料",
+                "risk_tags": [
+                  "虚列费用套取资金"
+                ],
+                "unknowns": [
+                  "具体虚假资料类型、涉及金额及是否套取资金未载明"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "attempt": 2,
+          "revision": 2,
+          "output": {
+            "action": "add",
+            "reason": "新处罚决定书文号鲁金罚决字〔2026〕71号未在旧库检索结果中出现；旧库命中为2023年鲁银保监罚决字及2024/2025年其他文号，主体、文号、日期均不同，不构成同一案件。按原文新增机构处罚及对应行为。已按复核意见删除缺乏“虚列费用、套取资金”要件的“虚列费用套取资金”标签，改贴有原文依据的“其他”。",
+            "case": {
+              "subject": "德华安顾人寿保险有限公司山东省分公司",
+              "document_number": "鲁金罚决字〔2026〕71号",
+              "decision_date": "2026年8月10日",
+              "authority": "国家金融监督管理总局山东监管局",
+              "position": null,
+              "legal_basis": null,
+              "penalties": "罚款40万元",
+              "unknowns": [
+                "position",
+                "legal_basis"
+              ]
+            },
+            "behaviors": [
+              {
+                "actor": "德华安顾人寿保险有限公司山东省分公司",
+                "role": "institution",
+                "action": "编制虚假的财务业务资料",
+                "risk_tags": [
+                  "其他"
+                ],
+                "unknowns": [
+                  "具体虚假资料类型、涉及金额及是否套取资金未载明"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "reviews": [
+        {
+          "revision": 1,
+          "decision": "request_changes",
+          "issues": [
+            {
+              "issue_id": "issue:batch100-B044:risk_tag_overreach",
+              "severity": "blocking",
+              "category": "overreach",
+              "operation_id": "op:batch100-B044:behaviors:0",
+              "claim_id": "claim:batch100-B044:behaviors:0:risk_tags",
+              "pointer": "/risk_tags",
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B044:L0005:e1835ff41791cad8:e1835ff41791cad8",
+                  "quote": "编制虚假的财务业务资料"
+                }
+              ],
+              "change_request": "“虚列费用套取资金”要求虚假列支费用并套取资金，原文仅载“编制虚假的财务业务资料”，缺少套取资金要件。请删除该标签或改为有原文依据的“其他”，或补充能证明虚列费用套取资金的原文引文后再贴该标签。"
+            }
+          ],
+          "disputed_claims": [
+            {
+              "claim_id": "claim:batch100-B044:behaviors:0:risk_tags",
+              "verdict": "unsupported",
+              "citations": [
+                {
+                  "segment_id": "B044:L0005:e1835ff41791cad8:e1835ff41791cad8",
+                  "quote": "编制虚假的财务业务资料"
+                }
+              ],
+              "comment": "原文仅表述“编制虚假的财务业务资料”，未载明虚列费用、套取资金等要件；字典“虚列费用套取资金”要求通过虚假列支费用套取资金，现有引文不足以支持该肯定标签。建议改为“其他”或补充能证明套取资金的原文依据，否则不应贴该标签。"
+            }
+          ]
+        },
+        {
+          "revision": 2,
+          "decision": "approve",
+          "issues": [],
+          "disputed_claims": []
+        }
+      ],
+      "audit": {
+        "result": "supported_label_correction",
+        "summary": "“虚列费用套取资金”降为“其他”有依据，原文只支持虚假财务业务资料。",
+        "corrections": [
+          {
+            "field": "behaviors/0/risk_tags",
+            "before": [
+              "虚列费用套取资金"
+            ],
+            "after": [
+              "其他"
+            ],
+            "assessment": "supported",
+            "reason": "原文未载虚假列支费用并套取资金的完整要件。",
+            "quotes": [
+              "编制虚假的财务业务资料"
+            ]
+          }
+        ],
+        "residuals": [],
+        "responsibility": "机构主体、行为、文号和40万元处罚前后保持。",
+        "reviewer_problem": null
+      },
+      "source_raw_sha256": "e1835ff41791cad8f3409f75092310bed26dad8bced3c5c8745c03d1aed8f4a0",
+      "terminal_sha256": "d08207cde1df1b6bbe3a0f0e1ef7157eeffed2e536492abba9418f41b0574eb9",
+      "paths": {
+        "initial_proposal": "[local path omitted from public export]",
+        "revised_proposal": "[local path omitted from public export]",
+        "terminal": "[local path omitted from public export]"
+      }
+    },
+    {
+      "id": "B059",
+      "text": "当事人: 张娟（时任山东汇盛保险代理有限公司法定代表人）\r\n行政处罚决定书文号\r\n淄金罚决字〔2026〕27号\r\n主要违法违规事实(案由)\r\n未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务\r\n行政处罚内容\r\n警告并罚款6万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局淄博监管分局\r\n作出处罚决定的日期\r\n2026年8月11日\r\n来源公示\r\n国家金融监督管理总局淄博监管分局行政处罚信息公开表（淄金罚决字〔2026〕27号）",
+      "stratum": "individual",
+      "status": "reviewer_requested_changes",
+      "error": null,
+      "proposals": [
+        {
+          "attempt": 1,
+          "revision": 1,
+          "output": {
+            "action": "add",
+            "reason": "公开处罚决定书完整可读，文号、主体、日期、机关、处罚内容均有原文引证；案由包含三项独立违规行为，分别记录。法律依据未在文书中列明，置null并列入unknowns。",
+            "case": {
+              "subject": "张娟（时任山东汇盛保险代理有限公司法定代表人）",
+              "document_number": "淄金罚决字〔2026〕27号",
+              "decision_date": "2026年8月11日",
+              "authority": "国家金融监督管理总局淄博监管分局",
+              "position": "山东汇盛保险代理有限公司法定代表人",
+              "legal_basis": null,
+              "penalties": "警告并罚款6万元",
+              "unknowns": [
+                "legal_basis"
+              ]
+            },
+            "behaviors": [
+              {
+                "actor": "山东汇盛保险代理有限公司",
+                "role": "institution",
+                "action": "未按规定投保职业责任保险或缴存保证金",
+                "risk_tags": [
+                  "其他"
+                ],
+                "unknowns": []
+              },
+              {
+                "actor": "山东汇盛保险代理有限公司",
+                "role": "institution",
+                "action": "未按规定开立独立的佣金收取账户",
+                "risk_tags": [
+                  "其他"
+                ],
+                "unknowns": []
+              },
+              {
+                "actor": "山东汇盛保险代理有限公司",
+                "role": "institution",
+                "action": "委托未通过本机构进行执业登记的个人从事保险代理业务",
+                "risk_tags": [
+                  "委托无资质机构销售"
+                ],
+                "unknowns": []
+              }
+            ]
+          }
+        },
+        {
+          "attempt": 2,
+          "revision": 2,
+          "output": {
+            "action": "add",
+            "reason": "公开处罚决定书完整可读，文号、当事人、日期、机关、处罚内容均有原文引证。当事人为张娟个人，原文案由未指明机构为行为主体，故三条行为actor记为张娟、role记为responsible_person，并注明个人责任与机构行为之区分。第三项行为对象为未执业登记的个人，与“委托无资质机构销售”要件不匹配，改归“其他”。法律依据未在文书中列明，置null并列入unknowns。",
+            "case": {
+              "subject": "张娟",
+              "document_number": "淄金罚决字〔2026〕27号",
+              "decision_date": "2026年8月11日",
+              "authority": "国家金融监督管理总局淄博监管分局",
+              "position": "山东汇盛保险代理有限公司法定代表人",
+              "legal_basis": null,
+              "penalties": "警告并罚款6万元",
+              "unknowns": [
+                "legal_basis"
+              ]
+            },
+            "behaviors": [
+              {
+                "actor": "张娟",
+                "role": "responsible_person",
+                "action": "未按规定投保职业责任保险或缴存保证金",
+                "risk_tags": [
+                  "其他"
+                ],
+                "unknowns": [
+                  "行为主体是否为公司机构而非个人亲自实施"
+                ]
+              },
+              {
+                "actor": "张娟",
+                "role": "responsible_person",
+                "action": "未按规定开立独立的佣金收取账户",
+                "risk_tags": [
+                  "其他"
+                ],
+                "unknowns": [
+                  "行为主体是否为公司机构而非个人亲自实施"
+                ]
+              },
+              {
+                "actor": "张娟",
+                "role": "responsible_person",
+                "action": "委托未通过本机构进行执业登记的个人从事保险代理业务",
+                "risk_tags": [
+                  "其他"
+                ],
+                "unknowns": [
+                  "行为主体是否为公司机构而非个人亲自实施"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "reviews": [
+        {
+          "revision": 1,
+          "decision": "request_changes",
+          "issues": [
+            {
+              "issue_id": "issue:batch100-B059:actor-role",
+              "severity": "blocking",
+              "category": "actor",
+              "operation_id": "op:batch100-B059:behaviors:0",
+              "claim_id": "claim:batch100-B059:behaviors:0:actor",
+              "pointer": "/actor",
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B059:L0001:90879508325875a7:90879508325875a7",
+                  "quote": "当事人: 张娟（时任山东汇盛保险代理有限公司法定代表人）"
+                },
+                {
+                  "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+                  "quote": "未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务"
+                }
+              ],
+              "change_request": "处罚对象为张娟个人，原文案由未指明机构为行为主体。请将三条behavior的actor改为张娟（或按原文可支持的主体），role改为responsible_person/unspecified，不得将机构行为与个人责任混同。"
+            },
+            {
+              "issue_id": "issue:batch100-B059:risk-tag-mismatch",
+              "severity": "blocking",
+              "category": "qualifier",
+              "operation_id": "op:batch100-B059:behaviors:2",
+              "claim_id": "claim:batch100-B059:behaviors:2:risk_tags",
+              "pointer": "/risk_tags",
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+                  "quote": "委托未通过本机构进行执业登记的个人从事保险代理业务"
+                }
+              ],
+              "change_request": "“委托无资质机构销售”要求对象为无资质机构，原文对象为未通过本机构执业登记的个人，要件不匹配。请改为“其他”或删除该标签；若保留派生归类，须以supported_as_hypothesis并明确不确定性，不得作为确定事实。"
+            },
+            {
+              "issue_id": "issue:batch100-B059:role-institution",
+              "severity": "blocking",
+              "category": "actor",
+              "operation_id": "op:batch100-B059:behaviors:1",
+              "claim_id": "claim:batch100-B059:behaviors:1:role",
+              "pointer": "/role",
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B059:L0001:90879508325875a7:90879508325875a7",
+                  "quote": "当事人: 张娟（时任山东汇盛保险代理有限公司法定代表人）"
+                }
+              ],
+              "change_request": "当事人为个人，role不应为institution。请按原文改为responsible_person或unspecified，并同步修正behaviors:0、behaviors:2的role。"
+            }
+          ],
+          "disputed_claims": [
+            {
+              "claim_id": "claim:batch100-B059:behaviors:0:actor",
+              "verdict": "unsupported",
+              "citations": [
+                {
+                  "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+                  "quote": "未按规定投保职业责任保险或缴存保证金"
+                }
+              ],
+              "comment": "原文案由未指明行为主体；当事人为张娟个人，处罚对象是个人。将actor填为山东汇盛保险代理有限公司缺乏原文直接支持，且与处罚个人事实存在责任归属混淆。应改为张娟或按原文主体待核。"
+            },
+            {
+              "claim_id": "claim:batch100-B059:behaviors:0:role",
+              "verdict": "unsupported",
+              "citations": [
+                {
+                  "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+                  "quote": "未按规定投保职业责任保险或缴存保证金"
+                }
+              ],
+              "comment": "处罚对象为张娟个人，role填institution与原文当事人身份不符；机构行为与个人责任需区分。"
+            },
+            {
+              "claim_id": "claim:batch100-B059:behaviors:1:actor",
+              "verdict": "unsupported",
+              "citations": [
+                {
+                  "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+                  "quote": "未按规定开立独立的佣金收取账户"
+                }
+              ],
+              "comment": "原文未指明该行为主体为山东汇盛保险代理有限公司；处罚对象为张娟个人，actor归属缺乏直接引证。"
+            },
+            {
+              "claim_id": "claim:batch100-B059:behaviors:1:role",
+              "verdict": "unsupported",
+              "citations": [
+                {
+                  "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+                  "quote": "未按规定开立独立的佣金收取账户"
+                }
+              ],
+              "comment": "当事人为个人，role填institution与原文不符。"
+            },
+            {
+              "claim_id": "claim:batch100-B059:behaviors:2:actor",
+              "verdict": "unsupported",
+              "citations": [
+                {
+                  "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+                  "quote": "委托未通过本机构进行执业登记的个人从事保险代理业务"
+                }
+              ],
+              "comment": "原文未明确该行为主体为山东汇盛保险代理有限公司；处罚对象为张娟个人，actor归属缺乏直接引证。"
+            },
+            {
+              "claim_id": "claim:batch100-B059:behaviors:2:role",
+              "verdict": "unsupported",
+              "citations": [
+                {
+                  "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+                  "quote": "委托未通过本机构进行执业登记的个人从事保险代理业务"
+                }
+              ],
+              "comment": "当事人为个人，role填institution与原文不符。"
+            },
+            {
+              "claim_id": "claim:batch100-B059:behaviors:2:risk_tags",
+              "verdict": "unsupported",
+              "citations": [
+                {
+                  "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+                  "quote": "委托未通过本机构进行执业登记的个人从事保险代理业务"
+                }
+              ],
+              "comment": "原文为委托未通过本机构执业登记的个人，对象是个人而非“无资质机构”，标签“委托无资质机构销售”要件不匹配；且该claim_type为derived_summary，按规则应仅在支持时用supported_as_hypothesis，当前归类不成立。"
+            }
+          ]
+        },
+        {
+          "revision": 2,
+          "decision": "request_changes",
+          "issues": [
+            {
+              "issue_id": "issue:batch100-B059:actor-attribution",
+              "severity": "blocking",
+              "category": "actor",
+              "operation_id": "op:batch100-B059:behaviors:0",
+              "claim_id": "claim:batch100-B059:behaviors:0:actor",
+              "pointer": "/actor",
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B059:L0001:90879508325875a7:90879508325875a7",
+                  "quote": "当事人: 张娟（时任山东汇盛保险代理有限公司法定代表人）"
+                },
+                {
+                  "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+                  "quote": "未按规定投保职业责任保险或缴存保证金"
+                }
+              ],
+              "change_request": "原文仅载明处罚对象为张娟个人，案由未指明其亲自实施该行为；不得以处罚对象推定行为实施者。请将actor改为机构（山东汇盛保险代理有限公司）或标注行为主体未知，并相应调整role，不得直接填responsible_person。"
+            },
+            {
+              "issue_id": "issue:batch100-B059:actor-attribution-1",
+              "severity": "blocking",
+              "category": "actor",
+              "operation_id": "op:batch100-B059:behaviors:1",
+              "claim_id": "claim:batch100-B059:behaviors:1:actor",
+              "pointer": "/actor",
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B059:L0001:90879508325875a7:90879508325875a7",
+                  "quote": "当事人: 张娟（时任山东汇盛保险代理有限公司法定代表人）"
+                },
+                {
+                  "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+                  "quote": "未按规定开立独立的佣金收取账户"
+                }
+              ],
+              "change_request": "同behaviors:0，原文未指明张娟亲自实施该行为，actor与role不得以处罚对象推定；请改为机构或标注未知。"
+            },
+            {
+              "issue_id": "issue:batch100-B059:actor-attribution-2",
+              "severity": "blocking",
+              "category": "actor",
+              "operation_id": "op:batch100-B059:behaviors:2",
+              "claim_id": "claim:batch100-B059:behaviors:2:actor",
+              "pointer": "/actor",
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B059:L0001:90879508325875a7:90879508325875a7",
+                  "quote": "当事人: 张娟（时任山东汇盛保险代理有限公司法定代表人）"
+                },
+                {
+                  "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+                  "quote": "委托未通过本机构进行执业登记的个人从事保险代理业务"
+                }
+              ],
+              "change_request": "同behaviors:0，原文未指明张娟亲自实施委托行为，actor与role不得以处罚对象推定；请改为机构或标注未知。"
+            },
+            {
+              "issue_id": "issue:batch100-B059:conflict-old-case",
+              "severity": "non_blocking",
+              "category": "conflict",
+              "operation_id": "op:batch100-B059:case",
+              "claim_id": null,
+              "pointer": null,
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+                  "quote": "未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务"
+                }
+              ],
+              "change_request": "旧库检索命中山东汇盛保险代理有限公司淄金罚决字〔2025〕37号，案由与本件三项完全一致，且对机构罚款9万元；本件为2026年27号对张娟个人处罚。请核对两案文号、主体与事实关系，确认是否属同一事实的机构与个人双罚，避免将机构行为重复归为个人行为；如属双罚，应在case中注明关联并保留机构行为记录。"
+            }
+          ],
+          "disputed_claims": [
+            {
+              "claim_id": "claim:batch100-B059:behaviors:0:actor",
+              "verdict": "needs_evidence",
+              "citations": [
+                {
+                  "segment_id": "B059:L0001:90879508325875a7:90879508325875a7",
+                  "quote": "当事人: 张娟（时任山东汇盛保险代理有限公司法定代表人）"
+                },
+                {
+                  "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+                  "quote": "未按规定投保职业责任保险或缴存保证金"
+                }
+              ],
+              "comment": "原文仅载明处罚对象为张娟个人，案由未指明该行为由张娟亲自实施；将actor直接填为张娟属于把处罚对象等同于行为实施者。旧库检索显示同一案由曾对山东汇盛保险代理有限公司作出处罚（淄金罚决字〔2025〕37号），存在机构行为与个人责任混同风险。应改为机构或标注行为主体未知，不能以个人处罚推定其亲自实施。"
+            },
+            {
+              "claim_id": "claim:batch100-B059:behaviors:0:role",
+              "verdict": "needs_evidence",
+              "citations": [
+                {
+                  "segment_id": "B059:L0001:90879508325875a7:90879508325875a7",
+                  "quote": "当事人: 张娟（时任山东汇盛保险代理有限公司法定代表人）"
+                }
+              ],
+              "comment": "role=responsible_person需以原文明确个人责任或其实施行为为前提；原文仅载明当事人身份与处罚，未说明责任认定依据，不能仅凭被处罚即归为responsible_person。"
+            },
+            {
+              "claim_id": "claim:batch100-B059:behaviors:1:actor",
+              "verdict": "needs_evidence",
+              "citations": [
+                {
+                  "segment_id": "B059:L0001:90879508325875a7:90879508325875a7",
+                  "quote": "当事人: 张娟（时任山东汇盛保险代理有限公司法定代表人）"
+                },
+                {
+                  "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+                  "quote": "未按规定开立独立的佣金收取账户"
+                }
+              ],
+              "comment": "同behaviors:0，原文未指明张娟亲自实施该行为，actor填个人缺乏原文支持，且旧库显示同类案由曾处罚机构。"
+            },
+            {
+              "claim_id": "claim:batch100-B059:behaviors:1:role",
+              "verdict": "needs_evidence",
+              "citations": [
+                {
+                  "segment_id": "B059:L0001:90879508325875a7:90879508325875a7",
+                  "quote": "当事人: 张娟（时任山东汇盛保险代理有限公司法定代表人）"
+                }
+              ],
+              "comment": "role=responsible_person缺乏原文责任认定依据，不能仅凭处罚对象推定。"
+            },
+            {
+              "claim_id": "claim:batch100-B059:behaviors:2:actor",
+              "verdict": "needs_evidence",
+              "citations": [
+                {
+                  "segment_id": "B059:L0001:90879508325875a7:90879508325875a7",
+                  "quote": "当事人: 张娟（时任山东汇盛保险代理有限公司法定代表人）"
+                },
+                {
+                  "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+                  "quote": "委托未通过本机构进行执业登记的个人从事保险代理业务"
+                }
+              ],
+              "comment": "同前，原文未指明张娟亲自实施委托行为，actor填个人缺乏支持。"
+            },
+            {
+              "claim_id": "claim:batch100-B059:behaviors:2:role",
+              "verdict": "needs_evidence",
+              "citations": [
+                {
+                  "segment_id": "B059:L0001:90879508325875a7:90879508325875a7",
+                  "quote": "当事人: 张娟（时任山东汇盛保险代理有限公司法定代表人）"
+                }
+              ],
+              "comment": "role=responsible_person缺乏原文责任认定依据。"
+            }
+          ]
+        }
+      ],
+      "audit": {
+        "result": "partial_label_correction_with_reviewer_attribution_reversal",
+        "summary": "删错标签和简化个人姓名有依据；机构actor改个人后再被要求改回机构/未知，责任归属未闭合。",
+        "corrections": [
+          {
+            "field": "case/subject",
+            "before": "张娟（时任山东汇盛保险代理有限公司法定代表人）",
+            "after": "张娟",
+            "assessment": "supported",
+            "reason": "姓名与任职分存，未丢弃法定代表人任职信息。",
+            "quotes": [
+              "当事人: 张娟（时任山东汇盛保险代理有限公司法定代表人）"
+            ]
+          },
+          {
+            "field": "behaviors/2/risk_tags",
+            "before": [
+              "委托无资质机构销售"
+            ],
+            "after": [
+              "其他"
+            ],
+            "assessment": "supported",
+            "reason": "委托对象为未执业登记的个人，不是无资质机构。",
+            "quotes": [
+              "委托未通过本机构进行执业登记的个人从事保险代理业务"
+            ]
+          },
+          {
+            "field": "behaviors/*/actor,role",
+            "before": "山东汇盛保险代理有限公司/institution",
+            "after": "张娟/responsible_person",
+            "assessment": "unresolved_not_established_as_execution_fact",
+            "reason": "原文列个人处罚与机构任职，但未展开三项行为由谁亲自实施；两稿分别肯定机构和个人都超出可直接确认的实施主体，修订的uncertainty不能替代字段责任边界。",
+            "quotes": [
+              "当事人: 张娟（时任山东汇盛保险代理有限公司法定代表人）",
+              "未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务"
+            ]
+          }
+        ],
+        "residuals": [
+          {
+            "kind": "actor_attribution_unresolved",
+            "severity": "blocking_for_semantic_acceptance",
+            "field": "behaviors/*/actor,role",
+            "detail": "终态仍reviewer_requested_changes，不能算修订通过。可保留张娟为处罚对象，但具体实施者需补证或保持未知，不据旧案相似度确定。"
+          },
+          {
+            "kind": "old_case_relation_not_verified",
+            "severity": "needs_review",
+            "field": "reviewer-r2-a2.json",
+            "detail": "Reviewer提及2025年37号同类案由与2026年27号个人处罚，年份/文号/处罚对象不同。其是否双罚关联未在本审查中独立核验；相同案由不是同一事实或冲突的证据。"
+          }
+        ],
+        "responsibility": "Reviewer第一轮指令把机构actor改成张娟及responsible_person；第二轮又因没有亲自实施证据要求改机构或未知。这是可直接观测的往返矛盾。",
+        "reviewer_problem": "第一轮另称derived_summary支持时应supported_as_hypothesis，也与本协议仅retrieval_hypothesis使用该verdict不符。机构/个人切换与旧案关联不能作为自动更正依据。"
+      },
+      "source_raw_sha256": "90879508325875a7cb547aea91243772460ebb834e4e5c052d9c75de1564e181",
+      "terminal_sha256": "bf069872c88f084484ec69a1a023b79b57ed6be46cbcf2de07a873621d24e0be",
+      "paths": {
+        "initial_proposal": "[local path omitted from public export]",
+        "revised_proposal": "[local path omitted from public export]",
+        "terminal": "[local path omitted from public export]"
+      }
+    },
+    {
+      "id": "B061",
+      "text": "当事人: 回国强（时任中国太平洋人寿保险股份有限公司阜新中心支公司总经理）\r\n行政处罚决定书文号\r\n阜金罚决字〔2026〕2号\r\n主要违法违规事实(案由)\r\n虚构中介业务套取手续费及财务、业务数据不真实\r\n行政处罚内容\r\n警告并罚款3万元\r\n作出处罚决定的机关名称\r\n阜新金融监管分局\r\n作出处罚决定的日期\r\n2026年7月24日\r\n来源公示\r\n阜新金融监管分局行政处罚信息公示列表",
+      "stratum": "individual",
+      "status": "experiment_protocol_approved_not_applied",
+      "error": null,
+      "proposals": [
+        {
+          "attempt": 1,
+          "revision": 1,
+          "output": {
+            "action": "add",
+            "reason": "公开处罚决定书完整可读，载明当事人回国强、文号、处罚日期、机关、任职、案由及处罚内容；检索零命中不能证明旧库不存在，故按新增提案提交。",
+            "case": {
+              "subject": "回国强",
+              "document_number": "阜金罚决字〔2026〕2号",
+              "decision_date": "2026年7月24日",
+              "authority": "阜新金融监管分局",
+              "position": "中国太平洋人寿保险股份有限公司阜新中心支公司总经理",
+              "legal_basis": null,
+              "penalties": "警告并罚款3万元",
+              "unknowns": [
+                "legal_basis"
+              ]
+            },
+            "behaviors": [
+              {
+                "actor": "回国强",
+                "role": "responsible_person",
+                "action": "虚构中介业务套取手续费",
+                "risk_tags": [
+                  "虚列费用套取资金"
+                ],
+                "unknowns": [
+                  "个人具体实施行为与主观状态"
+                ]
+              },
+              {
+                "actor": "回国强",
+                "role": "responsible_person",
+                "action": "财务、业务数据不真实",
+                "risk_tags": [
+                  "客户信息不真实"
+                ],
+                "unknowns": [
+                  "个人具体实施行为与主观状态"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "attempt": 2,
+          "revision": 2,
+          "output": {
+            "action": "add",
+            "reason": "公开处罚决定书完整可读，载明当事人回国强、文号、处罚日期、机关、任职、案由及处罚内容；检索零命中不能证明旧库不存在，故按新增提案提交。已按审核意见删除行为1中缺乏字典定义支撑的“客户信息不真实”标签，改为“其他”并说明原文未明确数据不真实的具体对象。",
+            "case": {
+              "subject": "回国强",
+              "document_number": "阜金罚决字〔2026〕2号",
+              "decision_date": "2026年7月24日",
+              "authority": "阜新金融监管分局",
+              "position": "中国太平洋人寿保险股份有限公司阜新中心支公司总经理",
+              "legal_basis": null,
+              "penalties": "警告并罚款3万元",
+              "unknowns": [
+                "legal_basis"
+              ]
+            },
+            "behaviors": [
+              {
+                "actor": "回国强",
+                "role": "responsible_person",
+                "action": "虚构中介业务套取手续费",
+                "risk_tags": [
+                  "虚列费用套取资金"
+                ],
+                "unknowns": [
+                  "个人具体实施行为与主观状态"
+                ]
+              },
+              {
+                "actor": "回国强",
+                "role": "responsible_person",
+                "action": "财务、业务数据不真实",
+                "risk_tags": [
+                  "其他"
+                ],
+                "unknowns": [
+                  "个人具体实施行为与主观状态",
+                  "数据不真实的具体对象"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "reviews": [
+        {
+          "revision": 1,
+          "decision": "request_changes",
+          "issues": [
+            {
+              "issue_id": "issue:batch100-B061:risk-tag-overreach",
+              "severity": "blocking",
+              "category": "overreach",
+              "operation_id": "op:batch100-B061:behaviors:1",
+              "claim_id": "claim:batch100-B061:behaviors:1:risk_tags",
+              "pointer": "/risk_tags",
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B061:L0005:92608e9a496eb0cc:92608e9a496eb0cc",
+                  "quote": "虚构中介业务套取手续费及财务、业务数据不真实"
+                }
+              ],
+              "change_request": "“财务、业务数据不真实”不满足字典“客户信息不真实”的定义（客户信息记录虚假或不真实），原文未提及客户信息。请删除该标签，或改为“其他”并在uncertainty中说明原文未明确数据不真实的具体对象，不得以最接近为由贴肯定标签。"
+            }
+          ],
+          "disputed_claims": [
+            {
+              "claim_id": "claim:batch100-B061:behaviors:1:risk_tags",
+              "verdict": "unsupported",
+              "citations": [
+                {
+                  "segment_id": "B061:L0005:92608e9a496eb0cc:92608e9a496eb0cc",
+                  "quote": "虚构中介业务套取手续费及财务、业务数据不真实"
+                }
+              ],
+              "comment": "“财务、业务数据不真实”不等于“客户信息不真实”，字典“客户信息不真实”指客户信息记录虚假，原文未涉及客户信息；该标签属过度推断，应删除或改列“其他”并说明依据不足。"
+            }
+          ]
+        },
+        {
+          "revision": 2,
+          "decision": "approve",
+          "issues": [],
+          "disputed_claims": []
+        }
+      ],
+      "audit": {
+        "result": "supported_label_correction_with_attribution_boundary",
+        "summary": "把财务业务数据不真实的客户信息标签降级有依据；个人责任边界和另一标签仍值得复核。",
+        "corrections": [
+          {
+            "field": "behaviors/1/risk_tags",
+            "before": [
+              "客户信息不真实"
+            ],
+            "after": [
+              "其他"
+            ],
+            "assessment": "supported",
+            "reason": "财务、业务数据没有被限定为客户信息，新增未知项保留了范围。",
+            "quotes": [
+              "虚构中介业务套取手续费及财务、业务数据不真实"
+            ]
+          }
+        ],
+        "residuals": [
+          {
+            "kind": "retained_tag_requires_precise_mapping",
+            "severity": "needs_review",
+            "field": "behaviors/0/risk_tags",
+            "detail": "保留“虚列费用套取资金”；原文明示虚构中介业务套取手续费，可支持虚构与套取，但未直说虚假列支费用。按完整字典的严格要件，费用列支这一映射需补充解释/证据，不能把当前fact零不确定性当已审定。"
+          },
+          {
+            "kind": "responsibility_vs_execution_boundary",
+            "severity": "needs_review",
+            "field": "behaviors/*/actor,role",
+            "detail": "actor仍为回国强、role为responsible_person，同时actor uncertainty明确未证亲自实施，unknowns也保留个人实施未知。作为责任人员关联可读，不能在下游抹去限定当直接实施事实；Reviewer对该边界的接受与B059不一致。"
+          }
+        ],
+        "responsibility": "此次只改标签，没有把责任由机构转给个人；个人actor及未证亲自实施的限定均前后保持。",
+        "reviewer_problem": null
+      },
+      "source_raw_sha256": "92608e9a496eb0cc0fafae15d97ed2a977c7277c0b80ac5b5dd7b0d26c26eaaa",
+      "terminal_sha256": "171ec11ddb4dff56d4336fdfb93fd6f0e935eee1437f21e27622a72d5d2a0e92",
+      "paths": {
+        "initial_proposal": "[local path omitted from public export]",
+        "revised_proposal": "[local path omitted from public export]",
+        "terminal": "[local path omitted from public export]"
+      }
+    },
+    {
+      "id": "B062",
+      "text": "当事人: 汤云波（时任平安人寿内蒙古分公司本部业务发展部经理）\r\n行政处罚决定书文号\r\n内金罚决字〔2026〕26号\r\n主要违法违规事实(案由)\r\n唆使、诱导保险代理人进行违背诚信义务的活动\r\n行政处罚内容\r\n警告并罚款0.5万元\r\n作出处罚决定的机关名称\r\n内蒙古金融监管局\r\n作出处罚决定的日期\r\n2026年7月30日\r\n来源公示\r\n国家金融监督管理总局内蒙古监管局行政处罚信息公开表（内金罚决字〔2026〕26号、27号）",
+      "stratum": "individual",
+      "status": "experiment_protocol_approved_not_applied",
+      "error": null,
+      "proposals": [
+        {
+          "attempt": 1,
+          "revision": 1,
+          "output": {
+            "action": "add",
+            "reason": "公开处罚决定书完整可读，载明当事人、文号、处罚日期、机关、任职、案由及处罚内容；旧库精确检索0命中不证明不存在，但本件证据充分且未发现冲突，故新增。",
+            "case": {
+              "subject": "汤云波",
+              "document_number": "内金罚决字〔2026〕26号",
+              "decision_date": "2026年7月30日",
+              "authority": "内蒙古金融监管局",
+              "position": "平安人寿内蒙古分公司本部业务发展部经理",
+              "legal_basis": null,
+              "penalties": "警告并罚款0.5万元",
+              "unknowns": [
+                "legal_basis"
+              ]
+            },
+            "behaviors": [
+              {
+                "actor": "汤云波",
+                "role": "responsible_person",
+                "action": "唆使、诱导保险代理人进行违背诚信义务的活动",
+                "risk_tags": [
+                  "诱导投保"
+                ],
+                "unknowns": [
+                  "具体唆使、诱导行为的内容、对象与方式"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "attempt": 2,
+          "revision": 2,
+          "output": {
+            "action": "add",
+            "reason": "公开处罚决定书完整可读，载明当事人、文号、处罚日期、机关、任职、案由及处罚内容；旧库精确检索0命中不证明不存在，但本件证据充分且未发现冲突，故新增。已按复核意见移除不满足字典全部要件的“诱导投保”标签，risk_tags保留为空并在unknowns中说明具体行为未展开。",
+            "case": {
+              "subject": "汤云波",
+              "document_number": "内金罚决字〔2026〕26号",
+              "decision_date": "2026年7月30日",
+              "authority": "内蒙古金融监管局",
+              "position": "平安人寿内蒙古分公司本部业务发展部经理",
+              "legal_basis": null,
+              "penalties": "警告并罚款0.5万元",
+              "unknowns": [
+                "legal_basis"
+              ]
+            },
+            "behaviors": [
+              {
+                "actor": "汤云波",
+                "role": "responsible_person",
+                "action": "唆使、诱导保险代理人进行违背诚信义务的活动",
+                "risk_tags": [],
+                "unknowns": [
+                  "具体唆使、诱导行为的内容、对象与方式"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "reviews": [
+        {
+          "revision": 1,
+          "decision": "request_changes",
+          "issues": [
+            {
+              "issue_id": "issue:batch100-B062:risk-tag-overreach",
+              "severity": "blocking",
+              "category": "overreach",
+              "operation_id": "op:batch100-B062:behaviors:0",
+              "claim_id": "claim:batch100-B062:behaviors:0:risk_tags",
+              "pointer": "/risk_tags",
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B062:L0005:92bd3dda77ee3591:92bd3dda77ee3591",
+                  "quote": "唆使、诱导保险代理人进行违背诚信义务的活动"
+                }
+              ],
+              "change_request": "删除risk_tags中的“诱导投保”。字典“诱导投保”要求对象为消费者/投保人，本案对象为保险代理人，且行为性质为唆使代理人违背诚信义务，不满足该标签全部要件；可保留空标签并在unknowns中说明具体行为未展开。"
+            }
+          ],
+          "disputed_claims": [
+            {
+              "claim_id": "claim:batch100-B062:behaviors:0:risk_tags",
+              "verdict": "unsupported",
+              "citations": [
+                {
+                  "segment_id": "B062:L0005:92bd3dda77ee3591:92bd3dda77ee3591",
+                  "quote": "唆使、诱导保险代理人进行违背诚信义务的活动"
+                }
+              ],
+              "comment": "字典“诱导投保”定义为使用不当手段诱导消费者投保，对象是投保人/消费者；本案对象是保险代理人，且行为是唆使、诱导代理人违背诚信义务，对象与要件均不匹配。提案自身也承认对象不完全一致，却仍贴肯定标签，属过度归类。应移除该标签或改为不贴标签并保留unknowns。"
+            }
+          ]
+        },
+        {
+          "revision": 2,
+          "decision": "approve",
+          "issues": [],
+          "disputed_claims": []
+        }
+      ],
+      "audit": {
+        "result": "supported_label_correction_with_attribution_boundary",
+        "summary": "删除“诱导投保”正确：被诱导对象是保险代理人，原文未写诱导消费者投保。",
+        "corrections": [
+          {
+            "field": "behaviors/0/risk_tags",
+            "before": [
+              "诱导投保"
+            ],
+            "after": [],
+            "assessment": "supported",
+            "reason": "对象和行为必要条件不符，空标签保留案由比近似肯定归类更有依据。",
+            "quotes": [
+              "唆使、诱导保险代理人进行违背诚信义务的活动"
+            ]
+          }
+        ],
+        "residuals": [
+          {
+            "kind": "responsibility_vs_execution_boundary",
+            "severity": "needs_review",
+            "field": "behaviors/0/actor,role",
+            "detail": "个人为明确处罚对象，但actor和role均fact且uncertainty为空；原文没有展开亲自唆使/诱导的细节。应仅作为个人责任关联，避免解释为已经确认亲自实施。本次标签修正未处理此界限。"
+          }
+        ],
+        "responsibility": "汤云波与任职前后不变，没有因改标签改变归属；直接实施与个人责任仍需区分。",
+        "reviewer_problem": null
+      },
+      "source_raw_sha256": "92bd3dda77ee3591d72cbc59525a1e883fedc32b6c20a49ef2a36ee137fff13d",
+      "terminal_sha256": "d81ef3f5fcbc5b02361b1d629446775935930612123983bbe699b04c04fe5521",
+      "paths": {
+        "initial_proposal": "[local path omitted from public export]",
+        "revised_proposal": "[local path omitted from public export]",
+        "terminal": "[local path omitted from public export]"
+      }
+    },
+    {
+      "id": "B074",
+      "text": "当事人: 乔静（时任中国平安人寿保险股份有限公司临沂中心支公司银行保险部经理）\r\n行政处罚决定书文号\r\n临金罚决字〔2026〕27号\r\n主要违法违规事实(案由)\r\n编制虚假财务资料\r\n行政处罚内容\r\n警告并罚款1.2万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局临沂监管分局\r\n作出处罚决定的日期\r\n2026年7月16日\r\n来源公示\r\n国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕 26号-27号）",
+      "stratum": "individual",
+      "status": "experiment_protocol_approved_not_applied",
+      "error": null,
+      "proposals": [
+        {
+          "attempt": 1,
+          "revision": 1,
+          "output": {
+            "action": "add",
+            "reason": "原文为针对乔静（时任中国平安人寿保险股份有限公司临沂中心支公司银行保险部经理）的行政处罚决定书，案由为编制虚假财务资料，处罚为警告并罚款1.2万元。旧库检索未命中同一文号或同一当事人，检索到的临金罚决字〔2024〕27号、〔2023〕27号与本案文号、主体、事实均不同，不构成冲突。",
+            "case": {
+              "subject": "乔静",
+              "document_number": "临金罚决字〔2026〕27号",
+              "decision_date": "2026年7月16日",
+              "authority": "国家金融监督管理总局临沂监管分局",
+              "position": "中国平安人寿保险股份有限公司临沂中心支公司银行保险部经理",
+              "legal_basis": null,
+              "penalties": "警告并罚款1.2万元",
+              "unknowns": [
+                "legal_basis"
+              ]
+            },
+            "behaviors": [
+              {
+                "actor": "乔静",
+                "role": "responsible_person",
+                "action": "编制虚假财务资料",
+                "risk_tags": [
+                  "虚列费用套取资金"
+                ],
+                "unknowns": [
+                  "具体虚假财务资料的内容、金额及是否套取资金未载明"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "attempt": 2,
+          "revision": 2,
+          "output": {
+            "action": "add",
+            "reason": "原文为针对乔静（时任中国平安人寿保险股份有限公司临沂中心支公司银行保险部经理）的行政处罚决定书，案由为编制虚假财务资料，处罚为警告并罚款1.2万元。旧库检索未命中同一文号或同一当事人；检索到的临金罚决字〔2024〕27号、〔2023〕27号与本案文号、主体、事实均不同，不构成冲突。按审核意见，原文仅载明“编制虚假财务资料”，未载明通过虚假列支费用套取资金，缺少“套取资金”目的要件，故不贴“虚列费用套取资金”标签，risk_tags为空，并在unknowns中保留具体行为细节未知。",
+            "case": {
+              "subject": "乔静",
+              "document_number": "临金罚决字〔2026〕27号",
+              "decision_date": "2026年7月16日",
+              "authority": "国家金融监督管理总局临沂监管分局",
+              "position": "中国平安人寿保险股份有限公司临沂中心支公司银行保险部经理",
+              "legal_basis": null,
+              "penalties": "警告并罚款1.2万元",
+              "unknowns": [
+                "legal_basis"
+              ]
+            },
+            "behaviors": [
+              {
+                "actor": "乔静",
+                "role": "responsible_person",
+                "action": "编制虚假财务资料",
+                "risk_tags": [],
+                "unknowns": [
+                  "具体虚假财务资料的内容、金额及是否套取资金未载明"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "reviews": [
+        {
+          "revision": 1,
+          "decision": "request_changes",
+          "issues": [
+            {
+              "issue_id": "issue:batch100-B074:risk_tag_overreach",
+              "severity": "blocking",
+              "category": "overreach",
+              "operation_id": "op:batch100-B074:behaviors:0",
+              "claim_id": "claim:batch100-B074:behaviors:0:risk_tags",
+              "pointer": "/risk_tags",
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B074:L0005:f429a16f485dec94:f429a16f485dec94",
+                  "quote": "编制虚假财务资料"
+                }
+              ],
+              "change_request": "原文仅表述“编制虚假财务资料”，未载明通过虚假列支费用套取资金，缺少“套取资金”这一额外目的要件，不能支持“虚列费用套取资金”标签。请删除该risk_tag，或改为不贴肯定标签并在unknowns中保留具体行为细节未知。"
+            }
+          ],
+          "disputed_claims": [
+            {
+              "claim_id": "claim:batch100-B074:behaviors:0:risk_tags",
+              "verdict": "unsupported",
+              "citations": [
+                {
+                  "segment_id": "B074:L0005:f429a16f485dec94:f429a16f485dec94",
+                  "quote": "编制虚假财务资料"
+                }
+              ],
+              "comment": "原文仅载明“编制虚假财务资料”，未说明通过虚假列支费用套取资金。字典中“虚列费用套取资金”要求通过虚假列支费用套取资金，该额外目的与资金去向要件缺失，不能贴肯定标签。建议删除该标签或改为不贴标签，并在unknowns中保留具体行为细节未知。"
+            }
+          ]
+        },
+        {
+          "revision": 2,
+          "decision": "approve",
+          "issues": [],
+          "disputed_claims": []
+        }
+      ],
+      "audit": {
+        "result": "supported_label_correction_with_attribution_boundary",
+        "summary": "删除“虚列费用套取资金”正确，原文没有套取资金目的或结果。",
+        "corrections": [
+          {
+            "field": "behaviors/0/risk_tags",
+            "before": [
+              "虚列费用套取资金"
+            ],
+            "after": [],
+            "assessment": "supported",
+            "reason": "仅有虚假财务资料不足以推出虚假列支费用套取资金。",
+            "quotes": [
+              "编制虚假财务资料"
+            ]
+          }
+        ],
+        "residuals": [
+          {
+            "kind": "responsibility_vs_execution_boundary",
+            "severity": "needs_review",
+            "field": "behaviors/0/actor,role",
+            "detail": "乔静是原文处罚对象，actor和role均fact且无个人实施限定；与B059要求明确亲自实施证据的尺度不同。不能仅凭标签改对认定整条行为归属已获确证。"
+          }
+        ],
+        "responsibility": "个人姓名、任职及1.2万元处罚保持；本次未解决字段对责任人员/实施人的区分。",
+        "reviewer_problem": null
+      },
+      "source_raw_sha256": "f429a16f485dec94599569fd04dcc2cc9a75f35a1e5a8c81f9efeb9a825b9a88",
+      "terminal_sha256": "068409b2ead9dd057dd24920bca2bc71d4920881c0e02e99102000a4e6352a96",
+      "paths": {
+        "initial_proposal": "[local path omitted from public export]",
+        "revised_proposal": "[local path omitted from public export]",
+        "terminal": "[local path omitted from public export]"
+      }
+    },
+    {
+      "id": "B080",
+      "text": "当事人: 中国太平洋人寿保险股份有限公司莆田中心支公司及相关责任人\r\n主要违法违规事实(案由)\r\n财务数据不真实；给予投保人保险合同约定以外的利益；委托医护人员销售健康保险\r\n行政处罚内容\r\n对中国太平洋人寿保险股份有限公司莆田中心支公司给予警告并处以34.5万元罚款；对颜景娥给予警告并处以6.4万元罚款；对李晓鹏给予警告并处以2.3万元罚款。\r\n作出处罚决定的机关名称\r\n莆田金融监管分局\r\n作出处罚决定的日期\r\n2026年8月4日\r\n来源公示\r\n莆田金融监管分局行政处罚信息公示表",
+      "stratum": "multi_subject",
+      "status": "experiment_protocol_approved_not_applied",
+      "error": null,
+      "proposals": [
+        {
+          "attempt": 1,
+          "revision": 1,
+          "output": {
+            "action": "add",
+            "reason": "公开处罚公示显示中国太平洋人寿保险股份有限公司莆田中心支公司因财务数据不真实、给予投保人合同外利益、委托医护人员销售健康保险被处罚，并对颜景娥、李晓鹏分别罚款；旧库精确检索0命中不证明不存在，但本公示构成可新增的独立处罚事实。",
+            "case": {
+              "subject": "中国太平洋人寿保险股份有限公司莆田中心支公司",
+              "document_number": null,
+              "decision_date": "2026年8月4日",
+              "authority": "莆田金融监管分局",
+              "position": null,
+              "legal_basis": null,
+              "penalties": "对中国太平洋人寿保险股份有限公司莆田中心支公司给予警告并处以34.5万元罚款；对颜景娥给予警告并处以6.4万元罚款；对李晓鹏给予警告并处以2.3万元罚款",
+              "unknowns": [
+                "document_number",
+                "position",
+                "legal_basis"
+              ]
+            },
+            "behaviors": [
+              {
+                "actor": "中国太平洋人寿保险股份有限公司莆田中心支公司",
+                "role": "institution",
+                "action": "财务数据不真实",
+                "risk_tags": [
+                  "其他"
+                ],
+                "unknowns": [
+                  "具体财务数据不真实的行为方式与金额"
+                ]
+              },
+              {
+                "actor": "中国太平洋人寿保险股份有限公司莆田中心支公司",
+                "role": "institution",
+                "action": "给予投保人保险合同约定以外的利益",
+                "risk_tags": [
+                  "合同外利益"
+                ],
+                "unknowns": [
+                  "具体利益形式与对象"
+                ]
+              },
+              {
+                "actor": "中国太平洋人寿保险股份有限公司莆田中心支公司",
+                "role": "institution",
+                "action": "委托医护人员销售健康保险",
+                "risk_tags": [
+                  "委托无资质机构销售"
+                ],
+                "unknowns": [
+                  "医护人员资质情况与销售具体行为"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "attempt": 2,
+          "revision": 2,
+          "output": {
+            "action": "add",
+            "reason": "公开处罚公示载明中国太平洋人寿保险股份有限公司莆田中心支公司因财务数据不真实、给予投保人合同外利益、委托医护人员销售健康保险被处罚，并对颜景娥、李晓鹏分别罚款；旧库精确检索0命中不证明不存在，但本公示构成可新增的独立处罚事实。已按评审意见删除“委托无资质机构销售”标签，改为“其他”并保留资质待核。",
+            "case": {
+              "subject": "中国太平洋人寿保险股份有限公司莆田中心支公司",
+              "document_number": null,
+              "decision_date": "2026年8月4日",
+              "authority": "莆田金融监管分局",
+              "position": null,
+              "legal_basis": null,
+              "penalties": "对中国太平洋人寿保险股份有限公司莆田中心支公司给予警告并处以34.5万元罚款；对颜景娥给予警告并处以6.4万元罚款；对李晓鹏给予警告并处以2.3万元罚款",
+              "unknowns": [
+                "document_number",
+                "position",
+                "legal_basis"
+              ]
+            },
+            "behaviors": [
+              {
+                "actor": "中国太平洋人寿保险股份有限公司莆田中心支公司",
+                "role": "institution",
+                "action": "财务数据不真实",
+                "risk_tags": [
+                  "其他"
+                ],
+                "unknowns": [
+                  "具体财务数据不真实的行为方式与金额"
+                ]
+              },
+              {
+                "actor": "中国太平洋人寿保险股份有限公司莆田中心支公司",
+                "role": "institution",
+                "action": "给予投保人保险合同约定以外的利益",
+                "risk_tags": [
+                  "合同外利益"
+                ],
+                "unknowns": [
+                  "具体利益形式与对象"
+                ]
+              },
+              {
+                "actor": "中国太平洋人寿保险股份有限公司莆田中心支公司",
+                "role": "institution",
+                "action": "委托医护人员销售健康保险",
+                "risk_tags": [
+                  "其他"
+                ],
+                "unknowns": [
+                  "医护人员资质情况与销售具体行为"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "reviews": [
+        {
+          "revision": 1,
+          "decision": "request_changes",
+          "issues": [
+            {
+              "issue_id": "issue:batch100-B080:risk-tag-overreach",
+              "severity": "blocking",
+              "category": "overreach",
+              "operation_id": "op:batch100-B080:behaviors:2",
+              "claim_id": "claim:batch100-B080:behaviors:2:risk_tags",
+              "pointer": "/risk_tags",
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B080:L0003:19f675500d33b5c4:19f675500d33b5c4",
+                  "quote": "财务数据不真实；给予投保人保险合同约定以外的利益；委托医护人员销售健康保险"
+                }
+              ],
+              "change_request": "删除'委托无资质机构销售'标签；原文未证明医护人员无资质，且医护人员不是机构。可改为'其他'，并在unknowns保留资质待核。"
+            }
+          ],
+          "disputed_claims": [
+            {
+              "claim_id": "claim:batch100-B080:behaviors:2:risk_tags",
+              "verdict": "unsupported",
+              "citations": [
+                {
+                  "segment_id": "B080:L0003:19f675500d33b5c4:19f675500d33b5c4",
+                  "quote": "财务数据不真实；给予投保人保险合同约定以外的利益；委托医护人员销售健康保险"
+                }
+              ],
+              "comment": "原文仅称委托医护人员销售健康保险，未载明医护人员无合法资质或属无资质机构；'委托无资质机构销售'标签要件不充分，且医护人员非机构。应改为'其他'或删除该标签并保留未知。"
+            }
+          ]
+        },
+        {
+          "revision": 2,
+          "decision": "approve",
+          "issues": [],
+          "disputed_claims": []
+        }
+      ],
+      "audit": {
+        "result": "supported_label_correction",
+        "summary": "医护人员不等于无资质机构，删去该标签改其他有依据；三主体处罚分别保留。",
+        "corrections": [
+          {
+            "field": "behaviors/2/risk_tags",
+            "before": [
+              "委托无资质机构销售"
+            ],
+            "after": [
+              "其他"
+            ],
+            "assessment": "supported",
+            "reason": "原文没有医护人员无合法资质事实，且对象为人员而非机构。保留资质待核而不肯定无资质符合原文。",
+            "quotes": [
+              "委托医护人员销售健康保险"
+            ]
+          }
+        ],
+        "residuals": [],
+        "responsibility": "机构actor保持；机构34.5万元、颜景娥6.4万元和李晓鹏2.3万元均保留，未把三项行为逐一强加给两个个人。",
+        "reviewer_problem": null
+      },
+      "source_raw_sha256": "19f675500d33b5c41788abd858bf73c2470662798b454c1963ea2e1e57dbfdaf",
+      "terminal_sha256": "fe49d3fdbfc4be164adfc9bf710c1f4cdac513e8bc9982139e47d7ee9c61b0d5",
+      "paths": {
+        "initial_proposal": "[local path omitted from public export]",
+        "revised_proposal": "[local path omitted from public export]",
+        "terminal": "[local path omitted from public export]"
+      }
+    },
+    {
+      "id": "B085",
+      "text": "当事人: 中国人寿保险股份有限公司大理分公司、相关分支机构及相关责任人\r\n主要违法违规事实(案由)\r\n委托未取得合法资格的机构从事保险销售活动、未按规定使用经备案的保险条款、提供有虚假陈述的报告、提供有虚假陈述的报告\r\n行政处罚内容\r\n对中国人寿保险股份有限公司大理分公司罚款57万元；对中国人寿保险股份有限公司祥云县支公司罚款12万元；对责任人胡艳东、赵漾锦、杨学诗给予警告并处罚款共计14万元\r\n作出处罚决定的机关名称\r\n大理金融监管分局\r\n作出处罚决定的日期\r\n2026年8月25日\r\n来源公示\r\n大理金融监管分局行政处罚信息公示列表",
+      "stratum": "multi_subject",
+      "status": "format_repair_exhausted",
+      "error": {
+        "code": "REVIEW_DECISION_CONSISTENCY",
+        "field": "",
+        "message": "REVIEW_DECISION_CONSISTENCY"
+      },
+      "proposals": [
+        {
+          "attempt": 1,
+          "revision": 1,
+          "output": {
+            "action": "add",
+            "reason": "公开处罚公示载明中国人寿大理分公司、祥云县支公司及相关责任人因委托无资质机构销售、未按规定使用备案条款、提供虚假陈述报告被处罚；旧库精确检索0命中不证明不存在，但本件证据完整且可独立建档，故新增。",
+            "case": {
+              "subject": "中国人寿保险股份有限公司大理分公司、中国人寿保险股份有限公司祥云县支公司及相关责任人",
+              "document_number": null,
+              "decision_date": "2026年8月25日",
+              "authority": "大理金融监管分局",
+              "position": null,
+              "legal_basis": null,
+              "penalties": "对中国人寿保险股份有限公司大理分公司罚款57万元；对中国人寿保险股份有限公司祥云县支公司罚款12万元；对责任人胡艳东、赵漾锦、杨学诗给予警告并处罚款共计14万元",
+              "unknowns": [
+                "document_number",
+                "position",
+                "legal_basis"
+              ]
+            },
+            "behaviors": [
+              {
+                "actor": "中国人寿保险股份有限公司大理分公司及相关分支机构",
+                "role": "institution",
+                "action": "委托未取得合法资格的机构从事保险销售活动",
+                "risk_tags": [
+                  "委托无资质机构销售"
+                ],
+                "unknowns": [
+                  "具体被委托机构名称、委托时间及涉及产品范围未载明"
+                ]
+              },
+              {
+                "actor": "中国人寿保险股份有限公司大理分公司及相关分支机构",
+                "role": "institution",
+                "action": "未按规定使用经备案的保险条款",
+                "risk_tags": [
+                  "未按规定使用费率条款"
+                ],
+                "unknowns": [
+                  "涉及的具体条款、产品及时间未载明"
+                ]
+              },
+              {
+                "actor": "中国人寿保险股份有限公司大理分公司及相关分支机构",
+                "role": "institution",
+                "action": "提供有虚假陈述的报告",
+                "risk_tags": [
+                  "其他"
+                ],
+                "unknowns": [
+                  "报告名称、提交对象及虚假陈述具体内容未载明"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "attempt": 2,
+          "revision": 2,
+          "output": {
+            "action": "add",
+            "reason": "公开处罚公示载明中国人寿大理分公司、祥云县支公司及相关责任人因委托无资质机构销售、未按规定使用备案条款、提供虚假陈述报告被处罚；旧库精确检索0命中不证明不存在，但本件证据完整且可独立建档，故新增。已按审核意见删除“提供有虚假陈述的报告”行为上的“其他”兜底标签，改为0标签并说明字典无对应具体标签。",
+            "case": {
+              "subject": "中国人寿保险股份有限公司大理分公司、中国人寿保险股份有限公司祥云县支公司及相关责任人",
+              "document_number": null,
+              "decision_date": "2026年8月25日",
+              "authority": "大理金融监管分局",
+              "position": null,
+              "legal_basis": null,
+              "penalties": "对中国人寿保险股份有限公司大理分公司罚款57万元；对中国人寿保险股份有限公司祥云县支公司罚款12万元；对责任人胡艳东、赵漾锦、杨学诗给予警告并处罚款共计14万元",
+              "unknowns": [
+                "document_number",
+                "position",
+                "legal_basis"
+              ]
+            },
+            "behaviors": [
+              {
+                "actor": "中国人寿保险股份有限公司大理分公司及相关分支机构",
+                "role": "institution",
+                "action": "委托未取得合法资格的机构从事保险销售活动",
+                "risk_tags": [
+                  "委托无资质机构销售"
+                ],
+                "unknowns": [
+                  "具体被委托机构名称、委托时间及涉及产品范围未载明"
+                ]
+              },
+              {
+                "actor": "中国人寿保险股份有限公司大理分公司及相关分支机构",
+                "role": "institution",
+                "action": "未按规定使用经备案的保险条款",
+                "risk_tags": [
+                  "未按规定使用费率条款"
+                ],
+                "unknowns": [
+                  "涉及的具体条款、产品及时间未载明"
+                ]
+              },
+              {
+                "actor": "中国人寿保险股份有限公司大理分公司及相关分支机构",
+                "role": "institution",
+                "action": "提供有虚假陈述的报告",
+                "risk_tags": [],
+                "unknowns": [
+                  "报告名称、提交对象及虚假陈述具体内容未载明",
+                  "字典中无对应具体风险标签"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "reviews": [
+        {
+          "revision": 1,
+          "decision": "request_changes",
+          "issues": [
+            {
+              "issue_id": "issue:batch100-B085:risk-tag-other",
+              "severity": "non_blocking",
+              "category": "qualifier",
+              "operation_id": "op:batch100-B085:behaviors:2",
+              "claim_id": "claim:batch100-B085:behaviors:2:risk_tags",
+              "pointer": "/risk_tags",
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B085:L0003:588de9bf76feebf6:588de9bf76feebf6",
+                  "quote": "提供有虚假陈述的报告、提供有虚假陈述的报告"
+                }
+              ],
+              "change_request": "“提供有虚假陈述的报告”与字典“其他”兜底标签的对应关系不明确；请说明归类依据，或改为不贴标签（允许0标签），避免以兜底标签掩盖未匹配的具体风险类型。"
+            }
+          ],
+          "disputed_claims": [
+            {
+              "claim_id": "claim:batch100-B085:behaviors:2:risk_tags",
+              "verdict": "unsupported",
+              "citations": [
+                {
+                  "segment_id": "B085:L0003:588de9bf76feebf6:588de9bf76feebf6",
+                  "quote": "提供有虚假陈述的报告、提供有虚假陈述的报告"
+                }
+              ],
+              "comment": "“提供有虚假陈述的报告”指向向监管报送材料虚假，字典中“其他”为兜底标签，但该行为与“客户信息不真实”“虚列费用套取资金”等均不同；归入“其他”缺乏字典定义上的明确依据，且未说明为何不适用更具体标签。建议改为不贴标签或补充字典依据。"
+            }
+          ]
+        },
+        {
+          "revision": 2,
+          "decision": "request_changes",
+          "issues": [
+            {
+              "issue_id": "issue:batch100-B085:case:subject-overreach",
+              "severity": "non_blocking",
+              "category": "actor",
+              "operation_id": "op:batch100-B085:case",
+              "claim_id": "claim:batch100-B085:case:subject",
+              "pointer": "/metadata/subject",
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B085:L0001:588de9bf76feebf6:588de9bf76feebf6",
+                  "quote": "当事人: 中国人寿保险股份有限公司大理分公司、相关分支机构及相关责任人"
+                }
+              ],
+              "change_request": "subject将“相关分支机构”具体化为“祥云县支公司”，但原文当事人行仅称“相关分支机构”，祥云县支公司仅出现在处罚内容中；建议保留原文表述或在subject中注明祥云县支公司系由处罚内容推知，避免将处罚对象直接等同于当事人列举。"
+            },
+            {
+              "issue_id": "issue:batch100-B085:behaviors:2:action-duplicate",
+              "severity": "non_blocking",
+              "category": "fact_inference",
+              "operation_id": "op:batch100-B085:behaviors:2",
+              "claim_id": "claim:batch100-B085:behaviors:2:action",
+              "pointer": "/action",
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B085:L0003:588de9bf76feebf6:588de9bf76feebf6",
+                  "quote": "提供有虚假陈述的报告、提供有虚假陈述的报告"
+                }
+              ],
+              "comment": "原文案由重复列示“提供有虚假陈述的报告”两次，proposal仅建一个behavior并引用重复片段；建议在unknowns或comment中说明重复列示是否对应两项独立事实，避免遗漏或合并错误。",
+              "change_request": "请核实原文重复列示是否代表两项独立违法行为；若为两项，应拆分behavior或说明合并依据；若为排版重复，应在unknowns中注明。"
+            }
+          ],
+          "disputed_claims": []
+        },
+        {
+          "revision": 2,
+          "decision": "request_changes",
+          "issues": [
+            {
+              "issue_id": "issue:batch100-B085:case:subject-overreach",
+              "severity": "non_blocking",
+              "category": "actor",
+              "operation_id": "op:batch100-B085:case",
+              "claim_id": "claim:batch100-B085:case:subject",
+              "pointer": "/metadata/subject",
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B085:L0001:588de9bf76feebf6:588de9bf76feebf6",
+                  "quote": "当事人: 中国人寿保险股份有限公司大理分公司、相关分支机构及相关责任人"
+                }
+              ],
+              "change_request": "subject将“相关分支机构”具体化为“祥云县支公司”，但原文当事人行仅称“相关分支机构”，祥云县支公司仅出现在处罚内容中；建议保留原文表述或在subject中注明祥云县支公司系由处罚内容推知，避免将处罚对象直接等同于当事人列举。"
+            },
+            {
+              "issue_id": "issue:batch100-B085:behaviors:2:action-duplicate",
+              "severity": "non_blocking",
+              "category": "fact_inference",
+              "operation_id": "op:batch100-B085:behaviors:2",
+              "claim_id": "claim:batch100-B085:behaviors:2:action",
+              "pointer": "/action",
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B085:L0003:588de9bf76feebf6:588de9bf76feebf6",
+                  "quote": "提供有虚假陈述的报告、提供有虚假陈述的报告"
+                }
+              ],
+              "change_request": "请核实原文重复列示是否代表两项独立违法行为；若为两项，应拆分behavior或说明合并依据；若为排版重复，应在unknowns中注明。"
+            }
+          ],
+          "disputed_claims": []
+        }
+      ],
+      "audit": {
+        "result": "optional_label_suppression_not_demonstrated_error_correction",
+        "summary": "把“其他”改空标签符合允许0标签，但不是由原文要件迫使的纠错；Reviewer对兜底标签尺度及处罚对象识别不稳。",
+        "corrections": [
+          {
+            "field": "behaviors/2/risk_tags",
+            "before": [
+              "其他"
+            ],
+            "after": [],
+            "assessment": "permitted_optional_not_proven_original_error",
+            "reason": "原文明确虚假陈述报告这一违规事实；字典“其他”定义为其他类型的违规行为。空标签可接受，但不能据没有专门标签就断言“其他”无依据。此改动未删除行为事实。",
+            "quotes": [
+              "提供有虚假陈述的报告、提供有虚假陈述的报告"
+            ]
+          }
+        ],
+        "residuals": [
+          {
+            "kind": "review_decision_consistency_failure",
+            "severity": "execution_contract_failure",
+            "field": "reviewer-r2-a2.json",
+            "detail": "第二轮全部claim_checks支持，只有non_blocking issues却request_changes，格式修正后重复，最终REVIEW_DECISION_CONSISTENCY。不能记为成功终稿。"
+          },
+          {
+            "kind": "duplicated_source_fact_not_resolved",
+            "severity": "needs_review",
+            "field": "behaviors/2/action",
+            "detail": "原文同一案由重复两次，P/PR合为一条。原文不能确证这是排版重复还是两项事实；说明未知合理，不应直接猜分成两项不同事实。"
+          }
+        ],
+        "responsibility": "两稿都保留机构57万元、祥云县支公司12万元和三名个人共14万元，行为用机构组而未编造个人具体实施分配。",
+        "reviewer_problem": "第一轮否定“其他”与字典兜底定义及其他案件尺度不一致；第二轮质疑subject列祥云县支公司，但处罚内容直接点名该公司，完整原文支持其为处罚对象，不应限定只能引用当事人首行。"
+      },
+      "source_raw_sha256": "588de9bf76feebf683ba19b24a9da9ffef325a376e29126d36fc7ec45070df12",
+      "terminal_sha256": "00950344e6fdc9792e339dda8c89bd9a448a68997c6db4a8c0beda8e69e119c8",
+      "paths": {
+        "initial_proposal": "[local path omitted from public export]",
+        "revised_proposal": "[local path omitted from public export]",
+        "terminal": "[local path omitted from public export]"
+      }
+    },
+    {
+      "id": "B090",
+      "text": "行政处罚决定书文号\r\n金罚决字〔2024〕5号\r\n被处罚当事人\r\n中国人民财产保险股份有限公司及其责任人员\r\n主要违法违规事实\r\n将直接业务虚挂中介业务套取手续费；少计提资产减值准备；招投标管理不规范；支农融资业务捆绑销售保险产品；相关报告、报表、文件和资料不真实；跨年度列支手续费等。\r\n行政处罚依据\r\n《中华人民共和国保险法》第八十六条、第一百一十六条、第一百三十五条、第一百六十一条、第一百七十条、第一百七十一条等\r\n行政处罚决定\r\n对中国人民财产保险股份有限公司罚款合计681万元。其中，总公司221万元，分支机构460万元。\r\n对蒋新伟警告并处罚款10万元\r\n对原宇玲警告并处罚款10万元\r\n对王学刚警告并处罚款20万元\r\n对倪宏警告并处罚款10万元\r\n对何祖望警告并处罚款1万元\r\n对周志文警告并处罚款10万元\r\n对纪翔警告并处罚款10万元\r\n对刘团聚警告并处罚款10万元\r\n对蒋士亮警告并处罚款20万元\r\n对李旭警告并处罚款10万元\r\n对潘振雄警告并处罚款20万元\r\n对洪祖强警告并处罚款10万元\r\n对杨卫警告并处罚款10万元\r\n对崔晓博警告并处罚款10万元\r\n对钱磊警告并处罚款10万元\r\n对姜掌厚警告并处罚款10万元\r\n对郭钢警告并处罚款20万元\r\n对梁晓旭警告并处罚款10万元\r\n对王彦波警告并处罚款10万元\r\n对武运宝警告并处罚款20万元\r\n对李彦君警告并处罚款20万元\r\n对沈宁警告并处罚款20万元\r\n对余饶林警告并处罚款10万元\r\n对程向民警告并处罚款10万元\r\n对周健警告并处罚款10万元\r\n作出处罚决定的\r\n机关名称\r\n国家金融监督管理总局\r\n作出处罚决定的日期\r\n2024年5月14日",
+      "stratum": "multi_subject",
+      "status": "budget_stopped",
+      "error": {
+        "code": "PROTECTED_FUTURE_EVENT_BUDGET",
+        "field": null,
+        "message": "Error: SUBMISSION_INCOMPLETE_ledger_denied"
+      },
+      "proposals": [
+        {
+          "attempt": 1,
+          "revision": 1,
+          "output": {
+            "action": "add",
+            "reason": "原文为金罚决字〔2024〕5号行政处罚决定书，主体、文号、日期、机关、依据、处罚均有明确引文；检索命中的其他“〔2024〕5号”为不同机关不同文号，不构成同一文书冲突。按原文逐项记录机构及责任人员处罚，并对未载明具体个人职务、个人对应具体行为等作未知处理。",
+            "case": {
+              "subject": "中国人民财产保险股份有限公司及其责任人员",
+              "document_number": "金罚决字〔2024〕5号",
+              "decision_date": "2024年5月14日",
+              "authority": "国家金融监督管理总局",
+              "position": null,
+              "legal_basis": "《中华人民共和国保险法》第八十六条、第一百一十六条、第一百三十五条、第一百六十一条、第一百七十条、第一百七十一条等",
+              "penalties": "对中国人民财产保险股份有限公司罚款合计681万元（总公司221万元，分支机构460万元）；对蒋新伟、原宇玲、倪宏、周志文、纪翔、刘团聚、李旭、洪祖强、杨卫、崔晓博、钱磊、姜掌厚、梁晓旭、王彦波、余饶林、程向民、周健各警告并处罚款10万元；对王学刚、蒋士亮、潘振雄、郭钢、武运宝、李彦君、沈宁各警告并处罚款20万元；对何祖望警告并处罚款1万元",
+              "unknowns": [
+                "position"
+              ]
+            },
+            "behaviors": [
+              {
+                "actor": "中国人民财产保险股份有限公司",
+                "role": "institution",
+                "action": "将直接业务虚挂中介业务套取手续费",
+                "risk_tags": [
+                  "虚列费用套取资金"
+                ],
+                "unknowns": []
+              },
+              {
+                "actor": "中国人民财产保险股份有限公司",
+                "role": "institution",
+                "action": "少计提资产减值准备",
+                "risk_tags": [
+                  "其他"
+                ],
+                "unknowns": []
+              },
+              {
+                "actor": "中国人民财产保险股份有限公司",
+                "role": "institution",
+                "action": "招投标管理不规范",
+                "risk_tags": [
+                  "其他"
+                ],
+                "unknowns": []
+              },
+              {
+                "actor": "中国人民财产保险股份有限公司",
+                "role": "institution",
+                "action": "支农融资业务捆绑销售保险产品",
+                "risk_tags": [
+                  "诱导投保"
+                ],
+                "unknowns": []
+              },
+              {
+                "actor": "中国人民财产保险股份有限公司",
+                "role": "institution",
+                "action": "相关报告、报表、文件和资料不真实",
+                "risk_tags": [
+                  "客户信息不真实"
+                ],
+                "unknowns": []
+              },
+              {
+                "actor": "中国人民财产保险股份有限公司",
+                "role": "institution",
+                "action": "跨年度列支手续费",
+                "risk_tags": [
+                  "其他"
+                ],
+                "unknowns": []
+              }
+            ]
+          }
+        },
+        {
+          "attempt": 2,
+          "revision": 2,
+          "output": {
+            "action": "add",
+            "reason": "原文为金罚决字〔2024〕5号行政处罚决定书，主体、文号、日期、机关、依据、处罚均有明确引文；检索命中的其他“〔2024〕5号”为不同机关不同文号，不构成同一文书冲突。按原文逐项记录机构及责任人员处罚，并对未载明具体个人职务、个人对应具体行为等作未知处理。已按复核意见删除“诱导投保”“客户信息不真实”两个要件不足的标签，相关行为改标“其他”。",
+            "case": {
+              "subject": "中国人民财产保险股份有限公司及其责任人员",
+              "document_number": "金罚决字〔2024〕5号",
+              "decision_date": "2024年5月14日",
+              "authority": "国家金融监督管理总局",
+              "position": null,
+              "legal_basis": "《中华人民共和国保险法》第八十六条、第一百一十六条、第一百三十五条、第一百六十一条、第一百七十条、第一百七十一条等",
+              "penalties": "对中国人民财产保险股份有限公司罚款合计681万元（总公司221万元，分支机构460万元）；对蒋新伟、原宇玲、倪宏、周志文、纪翔、刘团聚、李旭、洪祖强、杨卫、崔晓博、钱磊、姜掌厚、梁晓旭、王彦波、余饶林、程向民、周健各警告并处罚款10万元；对王学刚、蒋士亮、潘振雄、郭钢、武运宝、李彦君、沈宁各警告并处罚款20万元；对何祖望警告并处罚款1万元",
+              "unknowns": [
+                "position"
+              ]
+            },
+            "behaviors": [
+              {
+                "actor": "中国人民财产保险股份有限公司",
+                "role": "institution",
+                "action": "将直接业务虚挂中介业务套取手续费",
+                "risk_tags": [
+                  "虚列费用套取资金"
+                ],
+                "unknowns": []
+              },
+              {
+                "actor": "中国人民财产保险股份有限公司",
+                "role": "institution",
+                "action": "少计提资产减值准备",
+                "risk_tags": [
+                  "其他"
+                ],
+                "unknowns": []
+              },
+              {
+                "actor": "中国人民财产保险股份有限公司",
+                "role": "institution",
+                "action": "招投标管理不规范",
+                "risk_tags": [
+                  "其他"
+                ],
+                "unknowns": []
+              },
+              {
+                "actor": "中国人民财产保险股份有限公司",
+                "role": "institution",
+                "action": "支农融资业务捆绑销售保险产品",
+                "risk_tags": [
+                  "其他"
+                ],
+                "unknowns": []
+              },
+              {
+                "actor": "中国人民财产保险股份有限公司",
+                "role": "institution",
+                "action": "相关报告、报表、文件和资料不真实",
+                "risk_tags": [
+                  "其他"
+                ],
+                "unknowns": []
+              },
+              {
+                "actor": "中国人民财产保险股份有限公司",
+                "role": "institution",
+                "action": "跨年度列支手续费",
+                "risk_tags": [
+                  "其他"
+                ],
+                "unknowns": []
+              }
+            ]
+          }
+        },
+        {
+          "attempt": 3,
+          "revision": 2,
+          "output": null
+        }
+      ],
+      "reviews": [
+        {
+          "revision": 1,
+          "decision": "request_changes",
+          "issues": [
+            {
+              "issue_id": "issue:batch100-B090:tag-3",
+              "severity": "blocking",
+              "category": "qualifier",
+              "operation_id": "op:batch100-B090:behaviors:3",
+              "claim_id": "claim:batch100-B090:behaviors:3:risk_tags",
+              "pointer": "/risk_tags",
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4",
+                  "quote": "支农融资业务捆绑销售保险产品"
+                }
+              ],
+              "change_request": "删除“诱导投保”标签或补充能证明诱导手段、对象、情节的原文依据；仅“捆绑销售”不足以满足诱导投保的全部要件。"
+            },
+            {
+              "issue_id": "issue:batch100-B090:tag-4",
+              "severity": "blocking",
+              "category": "qualifier",
+              "operation_id": "op:batch100-B090:behaviors:4",
+              "claim_id": "claim:batch100-B090:behaviors:4:risk_tags",
+              "pointer": "/risk_tags",
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4",
+                  "quote": "相关报告、报表、文件和资料不真实"
+                }
+              ],
+              "change_request": "“客户信息不真实”标签与原文对象不符（原文为报告、报表、文件和资料不真实，未载明客户信息），应删除该标签或改为有原文依据的标签（如“其他”）。"
+            }
+          ],
+          "disputed_claims": [
+            {
+              "claim_id": "claim:batch100-B090:behaviors:3:risk_tags",
+              "verdict": "unsupported",
+              "citations": [
+                {
+                  "segment_id": "B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4",
+                  "quote": "支农融资业务捆绑销售保险产品"
+                }
+              ],
+              "comment": "“诱导投保”定义为使用不当手段诱导消费者投保，原文仅载明捆绑销售，未载明诱导手段、对象或具体情节，要件不足，不能贴肯定标签。"
+            },
+            {
+              "claim_id": "claim:batch100-B090:behaviors:4:risk_tags",
+              "verdict": "unsupported",
+              "citations": [
+                {
+                  "segment_id": "B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4",
+                  "quote": "相关报告、报表、文件和资料不真实"
+                }
+              ],
+              "comment": "“客户信息不真实”定义为客户信息记录虚假或不真实，原文指报告、报表、文件和资料不真实，未载明客户信息，对象要件不符，不能贴该标签。"
+            }
+          ]
+        }
+      ],
+      "audit": {
+        "result": "supported_label_correction_but_duplicate_unresolved_and_no_final_review",
+        "summary": "两项标签降级有依据，但P已检出同决定仍误称不同案，Reviewer分页漏读，新增判断漏改；PR未通过投影上界及后续事件预算，未形成复核终稿。",
+        "corrections": [
+          {
+            "field": "behaviors/3/risk_tags",
+            "before": [
+              "诱导投保"
+            ],
+            "after": [
+              "其他"
+            ],
+            "assessment": "supported_conservative",
+            "reason": "原文只有融资业务捆绑销售保险，未展开消费者及诱导手段/情节，撤去诱导标签属于保守处理，仍保留捆绑销售事实。",
+            "quotes": [
+              "支农融资业务捆绑销售保险产品"
+            ]
+          },
+          {
+            "field": "behaviors/4/risk_tags",
+            "before": [
+              "客户信息不真实"
+            ],
+            "after": [
+              "其他"
+            ],
+            "assessment": "supported",
+            "reason": "报告、报表、文件和资料不真实没有限定为客户信息。",
+            "quotes": [
+              "相关报告、报表、文件和资料不真实"
+            ]
+          }
+        ],
+        "residuals": [
+          {
+            "kind": "same_decision_reproduction_not_addressed",
+            "severity": "blocking_for_novelty_acceptance",
+            "field": "action,reason",
+            "detail": "P和PR均action=add、reason称命中均为其他机关不同文书；事实不符。对同一总局完整文号、主体、日期、六项事实、依据和全部处罚，至少须做重复核对，不能把再次重现当新案。"
+          },
+          {
+            "kind": "revised_projection_and_event_budget_failed",
+            "severity": "execution_failure",
+            "field": "terminal/revisions",
+            "detail": "已生成PR r2-a2，但业务投影超过30171字节，触发格式修正；后续r2-a3在发送前因PROTECTED_FUTURE_EVENT_BUDGET停止，未输出修正提案，也没有r2 Reviewer。"
+          }
+        ],
+        "responsibility": "机构六项行为保留；公司681万元拆分及25名个人处罚在两稿按金额分组保留，没有把个人逐一分配到六项行为。此不抵消同案重现未核对的问题。",
+        "reviewer_problem": "P查询实际返回4条且包含同案，未读完整旧文书就判不同；R默认返回3/4条，next_offset=3而未补页，两轮只纠标签、未纠重复新增。"
+      },
+      "source_raw_sha256": "8fce5a5696d103b41bb07db1c288ce3a28b2739b35c1ae04ddbc24a733f0acbf",
+      "terminal_sha256": "94c92ff211b5a46efc7f829c9fb3e056238e8dc139856349eb82624d36bf16ff",
+      "paths": {
+        "initial_proposal": "[local path omitted from public export]",
+        "revised_proposal": "[local path omitted from public export]",
+        "terminal": "[local path omitted from public export]"
+      },
+      "same_decision_evidence": {
+        "old_source_id": "FRV2-SOURCE-F006485-1f05a8186df09e487a899c36",
+        "complete_old_source_read": {
+          "source_id": "FRV2-SOURCE-F006485-1f05a8186df09e487a899c36",
+          "text_sha256": "c2395e8339f3599a207292be785a2e7419520e92b0f83702c8b956d1526c7951",
+          "start": 0,
+          "end": 718,
+          "total_codepoints": 718,
+          "text": "国家金融监督管理总局行政处罚信息公开表\n〔2024〕号\n行政处罚决定书文号\n金罚决字〔2024〕5号\n被处罚当事人\n中国人民财产保险股份有限公司及\n其责任人员\n主要违法违规事实\n将直接业务虚挂中介业务套取手续\n费;少计提资产减值准备;招投标管理\n不规范;支农融资业务捆绑销售保险\n产品;相关报告、报表、文件和资料\n不真实;跨年度列支手续费等。\n行政处罚依据\n《中华人民共和国保险法》第八十\n六条、第一百一十六条、第一百三\n十五条、第一百六十一条、第一百\n七十条、第一百七十一条等\n行政处罚决定\n对中国人民财产保险股份有限公司\n罚款合计681万元。其中,总公司221\n万元,分支机构460万元。\n对蒋新伟警告并处罚款10万元\n对原宇玲警告并处罚款10万元\n对王学刚警告并处罚款20万元\n对倪宏警告并处罚款10万元\n对何祖望警告并处罚款1万元\n对周志文警告并处罚款10万元\n对纪翔警告并处罚款10万元\n对刘团聚警告并处罚款10万元\n对蒋士亮警告并处罚款20万元\n对李旭警告并处罚款10万元\n对潘振雄警告并处罚款20万元\n对洪祖强警告并处罚款10万元\n对杨卫警告并处罚款10万元\n对崔晓博警告并处罚款10万元\n对钱磊警告并处罚款10万元\n对姜掌厚警告并处罚款10万元\n对郭钢警告并处罚款20万元\n对梁晓旭警告并处罚款10万元\n对王彦波警告并处罚款10万元\n对武运宝警告并处罚款20万元\n对李彦君警告并处罚款20万元\n对沈宁警告并处罚款20万元\n对余饶林警告并处罚款10万元\n对程向民警告并处罚款10万元\n对周健警告并处罚款10万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局\n作出处罚决定的日期\n2024年5月14日\n手机扫一扫打开此页\n",
+          "next_start": null,
+          "truncated": false
+        },
+        "identity_comparison": {
+          "document_no": true,
+          "party": true,
+          "finding": true,
+          "regulator": true,
+          "decision_date": true,
+          "penalty": true,
+          "legal_basis": true
+        },
+        "comparison_basis": "Independent full old source read; seven-field identity/fact/penalty comparison also recorded in identity-association-audit.json. Not raw SHA equality.",
+        "proposer_search": {
+          "args": {
+            "query": "金罚决字〔2024〕5号 中国人民财产保险股份有限公司",
+            "limit": 5
+          },
+          "total_matches": 4,
+          "returned_source_ids": [
+            "FRV2-SOURCE-F004943-b3417b69dc17776a3a7406cf",
+            "FRV2-SOURCE-F005001-d567742be202de2abb2fab6f",
+            "FRV2-SOURCE-F006285-2518c47eb4c9e0d79c31c139",
+            "FRV2-SOURCE-F006485-1f05a8186df09e487a899c36"
+          ],
+          "same_source_rank_in_actual_query": 4,
+          "raw_evidence_omitted_items": 0,
+          "read_record_calls": 0
+        },
+        "reviewer_search": {
+          "args": {
+            "query": "金罚决字〔2024〕5号 中国人民财产保险股份有限公司"
+          },
+          "total_matches": 4,
+          "returned_source_ids": [
+            "FRV2-SOURCE-F004943-b3417b69dc17776a3a7406cf",
+            "FRV2-SOURCE-F005001-d567742be202de2abb2fab6f",
+            "FRV2-SOURCE-F006285-2518c47eb4c9e0d79c31c139"
+          ],
+          "next_offset": 3,
+          "raw_evidence_omitted_items": 0,
+          "read_record_calls": 0
+        },
+        "important_distinction": "The broad document-number-only candidate rank was 22; the actual P subject+number query returned it at rank4. P retrieval hit then judgment failed; R missed the fourth result by not paging."
+      }
+    },
+    {
+      "id": "B096",
+      "text": "当事人: 中国人民人寿保险股份有限公司永州中心支公司及相关责任人\r\n主要违法违规事实(案由)\r\n直销业务虚挂代理人套取资金，编制虚假财务资料\r\n行政处罚内容\r\n对人保寿险永州中支罚款16.7万元。对唐玉玲、全艺琼等2名责任人员警告，并分别处罚款1.1万元。\r\n作出处罚决定的机关名称\r\n永州金融监管分局\r\n作出处罚决定的日期\r\n2026年7月28日\r\n来源公示\r\n国家金融监督管理总局永州监管分局行政处罚信息公示列表",
+      "stratum": "multi_subject",
+      "status": "experiment_protocol_approved_not_applied",
+      "error": null,
+      "proposals": [
+        {
+          "attempt": 1,
+          "revision": 1,
+          "output": {
+            "action": "add",
+            "reason": "公开处罚公示明确载明当事人、案由、处罚内容、决定机关和日期；检索零命中不能证明旧库不存在，故按新增提案处理。",
+            "case": {
+              "subject": "中国人民人寿保险股份有限公司永州中心支公司及相关责任人",
+              "document_number": null,
+              "decision_date": "2026年7月28日",
+              "authority": "永州金融监管分局",
+              "position": null,
+              "legal_basis": null,
+              "penalties": "对人保寿险永州中支罚款16.7万元；对唐玉玲、全艺琼等2名责任人员警告，并分别处罚款1.1万元",
+              "unknowns": [
+                "document_number",
+                "position",
+                "legal_basis"
+              ]
+            },
+            "behaviors": [
+              {
+                "actor": "中国人民人寿保险股份有限公司永州中心支公司",
+                "role": "institution",
+                "action": "直销业务虚挂代理人套取资金",
+                "risk_tags": [
+                  "虚列费用套取资金"
+                ],
+                "unknowns": []
+              },
+              {
+                "actor": "中国人民人寿保险股份有限公司永州中心支公司",
+                "role": "institution",
+                "action": "编制虚假财务资料",
+                "risk_tags": [
+                  "虚列费用套取资金"
+                ],
+                "unknowns": []
+              }
+            ]
+          }
+        },
+        {
+          "attempt": 2,
+          "revision": 2,
+          "output": {
+            "action": "add",
+            "reason": "公开处罚公示载明当事人、两项独立违法事实、处罚内容、决定机关和日期；检索零命中不能证明旧库不存在，故按新增提案处理。已按审核意见将“编制虚假财务资料”与“虚挂代理人套取资金”区分，前者不贴“虚列费用套取资金”标签，改标“其他”。",
+            "case": {
+              "subject": "中国人民人寿保险股份有限公司永州中心支公司及相关责任人",
+              "document_number": null,
+              "decision_date": "2026年7月28日",
+              "authority": "永州金融监管分局",
+              "position": null,
+              "legal_basis": null,
+              "penalties": "对人保寿险永州中支罚款16.7万元；对唐玉玲、全艺琼等2名责任人员警告，并分别处罚款1.1万元",
+              "unknowns": [
+                "document_number",
+                "position",
+                "legal_basis"
+              ]
+            },
+            "behaviors": [
+              {
+                "actor": "中国人民人寿保险股份有限公司永州中心支公司",
+                "role": "institution",
+                "action": "直销业务虚挂代理人套取资金",
+                "risk_tags": [
+                  "虚列费用套取资金"
+                ],
+                "unknowns": []
+              },
+              {
+                "actor": "中国人民人寿保险股份有限公司永州中心支公司",
+                "role": "institution",
+                "action": "编制虚假财务资料",
+                "risk_tags": [
+                  "其他"
+                ],
+                "unknowns": []
+              }
+            ]
+          }
+        }
+      ],
+      "reviews": [
+        {
+          "revision": 1,
+          "decision": "request_changes",
+          "issues": [
+            {
+              "issue_id": "issue:batch100-B096:behaviors:1:risk_tags",
+              "severity": "blocking",
+              "category": "overreach",
+              "operation_id": "op:batch100-B096:behaviors:1",
+              "claim_id": "claim:batch100-B096:behaviors:1:risk_tags",
+              "pointer": "/risk_tags",
+              "diff_line": null,
+              "citations": [
+                {
+                  "segment_id": "B096:L0003:fd765c2a741a06c6:fd765c2a741a06c6",
+                  "quote": "直销业务虚挂代理人套取资金，编制虚假财务资料"
+                }
+              ],
+              "change_request": "“编制虚假财务资料”不满足“虚列费用套取资金”的“通过虚假列支费用套取资金”要件，不能贴该肯定标签；请删除该标签，改标“其他”或依据字典另行论证贴切标签，并保留与第一项行为的区分。"
+            }
+          ],
+          "disputed_claims": [
+            {
+              "claim_id": "claim:batch100-B096:behaviors:1:risk_tags",
+              "verdict": "unsupported",
+              "citations": [
+                {
+                  "segment_id": "B096:L0003:fd765c2a741a06c6:fd765c2a741a06c6",
+                  "quote": "直销业务虚挂代理人套取资金，编制虚假财务资料"
+                }
+              ],
+              "comment": "“编制虚假财务资料”属于财务资料虚假，字典中“虚列费用套取资金”指通过虚假列支费用套取资金，二者语义不同；该行为不应复用套取资金标签，应改用“其他”或补充更贴切的标签，且需与第一项行为区分。"
+            }
+          ]
+        },
+        {
+          "revision": 2,
+          "decision": "approve",
+          "issues": [],
+          "disputed_claims": []
+        }
+      ],
+      "audit": {
+        "result": "supported_label_correction",
+        "summary": "不把第一项“套取资金”的目的扩给第二项“编制虚假财务资料”，标签分离有依据。",
+        "corrections": [
+          {
+            "field": "behaviors/1/risk_tags",
+            "before": [
+              "虚列费用套取资金"
+            ],
+            "after": [
+              "其他"
+            ],
+            "assessment": "supported",
+            "reason": "第一项明示套取资金，第二项只写编制虚假财务资料；即使在同句，也不能把第一项成立条件自动迁移给第二项。",
+            "quotes": [
+              "直销业务虚挂代理人套取资金，编制虚假财务资料"
+            ]
+          }
+        ],
+        "residuals": [],
+        "responsibility": "机构actor不变，两项行为分开；机构16.7万元、两名个人分别1.1万元均保留，未推断唐玉玲/全艺琼分别亲自实施哪项。",
+        "reviewer_problem": null
+      },
+      "source_raw_sha256": "fd765c2a741a06c66e021af0188c1a8a71d71e6283ec641e3f633c3697023a94",
+      "terminal_sha256": "25aa9e68e30a140dab5e3b9fb798d69042313c5e9a9711a1e46e26f307d34141",
+      "paths": {
+        "initial_proposal": "[local path omitted from public export]",
+        "revised_proposal": "[local path omitted from public export]",
+        "terminal": "[local path omitted from public export]"
+      }
+    }
+  ],
+  "limitations": [
+    "This is the Codex agent retrospective judgment over supplied texts, not human labeling or external authority verification.",
+    "The reviewer and proposer used the same model family; this audit does not replace the production independent-review policy.",
+    "Old-case relationship asserted in B059 reviewer text was not independently verified; similar allegations and dates do not establish duplicate/conflict.",
+    "Responsibility_person association and direct execution must remain distinct; individual actor ambiguity is flagged as boundary review, not automatically adjudicated wrong.",
+    "Final scope covers all14 business-revision cases among100 terminals; B093 is format repair only and is intentionally excluded.",
+    "B085 empty-tag change is allowed but not counted as correction of an established original label error.",
+    "B090 label revisions were generated but not finally reviewed or accepted because of projection and event-budget failures."
+  ],
+  "previous_snapshot_scope": {
+    "cutoff_utc": "2026-10-23T11:31:23.769423+00:00",
+    "batch_fixed_denominator": 100,
+    "terminal_count_at_cutoff": 88,
+    "terminal_ids_at_cutoff": [
+      "B001",
+      "B002",
+      "B003",
+      "B004",
+      "B005",
+      "B006",
+      "B007",
+      "B008",
+      "B009",
+      "B010",
+      "B011",
+      "B012",
+      "B013",
+      "B014",
+      "B015",
+      "B016",
+      "B017",
+      "B018",
+      "B019",
+      "B020",
+      "B021",
+      "B022",
+      "B023",
+      "B024",
+      "B025",
+      "B026",
+      "B027",
+      "B028",
+      "B029",
+      "B030",
+      "B031",
+      "B032",
+      "B033",
+      "B034",
+      "B035",
+      "B036",
+      "B037",
+      "B038",
+      "B039",
+      "B040",
+      "B041",
+      "B042",
+      "B043",
+      "B044",
+      "B045",
+      "B046",
+      "B047",
+      "B048",
+      "B049",
+      "B050",
+      "B051",
+      "B052",
+      "B053",
+      "B054",
+      "B055",
+      "B056",
+      "B057",
+      "B058",
+      "B059",
+      "B060",
+      "B061",
+      "B062",
+      "B063",
+      "B064",
+      "B065",
+      "B066",
+      "B067",
+      "B068",
+      "B069",
+      "B070",
+      "B071",
+      "B072",
+      "B073",
+      "B074",
+      "B075",
+      "B076",
+      "B077",
+      "B078",
+      "B079",
+      "B080",
+      "B081",
+      "B082",
+      "B083",
+      "B084",
+      "B086",
+      "B087",
+      "B088",
+      "B089"
+    ],
+    "business_revision_count": 11,
+    "audited_ids": [
+      "B006",
+      "B015",
+      "B018",
+      "B020",
+      "B031",
+      "B044",
+      "B059",
+      "B061",
+      "B062",
+      "B074",
+      "B080"
+    ],
+    "snapshot_terminal_sha256": {
+      "B001": "f9f6b4c4f5c2a6532f0be9ed9f8e70f4b7114c4bd76c2cd7ac493fb53f048ebf",
+      "B002": "21fedd02508a8988a2fcb520d85d02c5030daf35bee900fdb71aef20e5f504a1",
+      "B003": "7ba120225bda35f593524ba6ff64df04921966785bd508d4cbede725ecb41736",
+      "B004": "19cef6fcbae58d6ea2951eca7dc38d04d8a350f601a214f4af75fbf458111239",
+      "B005": "98f1c953831bb84006069c92514f14d9671b229cbe84c2a4199d7b54f09a98f5",
+      "B006": "086c08bb7e63eaacf0482c5e4288eaf8bada95ff2d29f8ba878474c5f3c266ef",
+      "B007": "35e8ea2b2cdf4f88f04b582ed672c2fe2683b693ae5ed913d19e5796f3e805c7",
+      "B008": "e7f63637b5137afde8e71a5e8f41c3bca3b6140ee4e35614abc428be186ce003",
+      "B009": "f1940a60e8167652aaaa53b80c45e893c97c7d372115f3816c0dd6719f3e8ef1",
+      "B010": "22482afb5a42b8fe2d8316a2b5c56f7a8d3be86a41651102ce9e4e634da3cfc6",
+      "B011": "37f80c56462d57eae8c4ec0dd1665d29af7e7e24b36603f15fd96529595f19cb",
+      "B012": "42e490597d4aa672d8a24f6cb00eb1cb0da6f3d2882d1ea4c4aa992f936f7e22",
+      "B013": "97877b4b349731e4ff2bac6ee9ce81e8080fc5145c49f80c9843591a39eb4ef4",
+      "B014": "450f5a18a17764f923640c8934817325090b19d176feb2d789fe85b4616cdda7",
+      "B015": "1f1fd825e841b33539c72b89c2d132de1b0c5ac199ee9b588a887dc6a1954bd8",
+      "B016": "9aa7771202b25e14b0a48c17860ba694939c73f3b582e3e339e42945f1d26515",
+      "B017": "0f2efd3c9be6e2156e8ab0b411a4eefae3376fb067b7f4ac11f2575c6b2c37f2",
+      "B018": "b0558bc460ce3b91e7ba27e68e392f972d6fc597e1d3ba6afa6fe546555c645a",
+      "B019": "2d2cee702d5652867f7d91a69329ba1669b6e46f2bf060e768c17c032c9dce10",
+      "B020": "b2e41ec9fe2e85c93b018ba6fbbcca93cbf690577acd578557fcf609ca2c5cc2",
+      "B021": "b05f7455d03ba44f08f409edd58e2d7b283e70c234e51042b99b20ff872aaa27",
+      "B022": "53eea74f1cbef1a6c47ccafba0349c1daf2ac21fa1c8899f495f12c014a08267",
+      "B023": "7095bd3667237b25700628c8fafb75fe0d45ac968a3811dff8c2b9c718bc7b2d",
+      "B024": "abbfa3ffb4f78234bf44d54bee54ebbe5608192ec49db51efe813a5211275808",
+      "B025": "4062091a49664e4e11c9d7180902164c153ea5f3b28bc83d336704329bb09b22",
+      "B026": "fba60c2998b2744e13d67157b24ede63f66f7e081ba6ca5a4f21a40646c8e33b",
+      "B027": "f61bb9313fd6a54ef899bec042d661ba2fcee2377a743c7b70679fc1149371b6",
+      "B028": "5aedc39e099082185c4dcfeb5e77aceba0c10b90c23f08d76dd8028bd3eb397a",
+      "B029": "329ee46e0b1a3589dd365de5ad4a7de53f00b8eeb50344153cc08526b9b2d048",
+      "B030": "b7fac908e03f3ddd8e2ae471f552cda8759f3c9f919e53ec29cc2edc300afec4",
+      "B031": "505e6f91a2ba5f9aa469ab72de93e8d545a0b977f98bd943bb343bd023a7f6f1",
+      "B032": "d4fcf415c3e0bfbfe10717a51a5ce460171a7b88af29b9dc04212062012d1fdd",
+      "B033": "afa048a1aae9e9716dbaa8be8bdd87d17549c501df693ec46bba990e12af9458",
+      "B034": "44a91f0940dca33a14f4bd2e0a0e50f7af989adf7df6fae3520c20a775da6a12",
+      "B035": "6c4cfe31963e222a0ba0e25ec303cd24bba0e11cf1384b4a0a176811d735f596",
+      "B036": "7134c43d9eaea515aabaaecd430f2ac27b9bf25c921981e37f6469092adde2fb",
+      "B037": "14eb86adb833de3b8303dfd79c4e117c607a6817450c897760ba2048e0f89a78",
+      "B038": "1eee07ea5f31d853214367d795368c9ebc38efa3b16a73aef56ff68242c326fb",
+      "B039": "ac215f8fce6c6857e17f9f2d2ac020bb147a708513e6c113e2940bc0cf2ced26",
+      "B040": "facbdf9853bda54ee27d2d86ae54521af9cb5ce1a2f96e65f27fef11d38c2c5d",
+      "B041": "beb8676fa0582c260ccbf4bab605e96b193fee1fc40e647148ba9e87cf7e425b",
+      "B042": "8338e63c63c721950bbf6456a8f269a35ed6618f15a65ebd123f0a978a06c77f",
+      "B043": "142d4c33940e847ae120157fe0507c5e97f9dcc982444077f74bec295ef910bc",
+      "B044": "d08207cde1df1b6bbe3a0f0e1ef7157eeffed2e536492abba9418f41b0574eb9",
+      "B045": "1fe11fa2130b0d96d5f5c15bc55269788dd7b6661886bcc4b4794e5d1aafe457",
+      "B046": "1474043df61983967455701c3459070409999d9b6f2857fd46aa01958f574798",
+      "B047": "dd34058bb1fcf06b8d689ba3fdb48d5125011f44188c822d8b8c4a62ac20f837",
+      "B048": "77d9abe3fb3cfe1a1d70b38227a4a453fb25f5118dc51ed9bcbfadfc6aa608ac",
+      "B049": "f607ebfec00f688e159b9282362276d1f72f403ec6bf0e93629e7bc6daacdc91",
+      "B050": "d982f63ebed0fdbf9a49255c4ab04fab6cb61991b45e9f5e8297f009476d0862",
+      "B051": "a00fecb5e27189d8e46ba0c5f1d99aeda774985c580409ab3c0592dfc1c6dc4e",
+      "B052": "9c17d05579cb8db1784ba8811f1bb185f003736ea54c87719e5bb75f2e0f3c81",
+      "B053": "f2266bfa2fdc8b6eee1a18bd0e610d3640f5628dd1f8558134f2a74972e0e93a",
+      "B054": "0b715c47564ed068e09e581dfff0d27facb376c30f0f53e080b42382506db74f",
+      "B055": "c9445f4eab8161ba0fc5645b9abe265931b60cdd1440dc23ecd7743b06b06fbd",
+      "B056": "05db7442fabe679a386c7a8b26f62e5afd7c9070d099854da28804002797df79",
+      "B057": "8780249c9132b47e2d072d3c39bc74876234c2980d8cac4e819a193f8e1593e1",
+      "B058": "392e9a4bd03c04b3c763a2869d6167eefe2356cd7f5c3f5ac957ae361ba00942",
+      "B059": "bf069872c88f084484ec69a1a023b79b57ed6be46cbcf2de07a873621d24e0be",
+      "B060": "0979576b35b3d0f70dbbf209dbd9e911ff38e85ef1494bb053bdd029f286e5d5",
+      "B061": "171ec11ddb4dff56d4336fdfb93fd6f0e935eee1437f21e27622a72d5d2a0e92",
+      "B062": "d81ef3f5fcbc5b02361b1d629446775935930612123983bbe699b04c04fe5521",
+      "B063": "eb9a6a15787de16a92cf6d009a2d4fcb336170904a26f9e84fe980fb0c24593f",
+      "B064": "7f03875caa68ac237ef21c50b9c01606da599ed9f0b88e9b04d04676c32ee626",
+      "B065": "29943c74f46c22eff22dc0118d15adfdd9c895e4f45ee98a57e8aa7cacc5f1e0",
+      "B066": "6098c37f8c91d4ac8cc54688a6c70f8dde3fe23e862eff16ac538c481c5f2cd5",
+      "B067": "d7644368f87629a221f338ed78a2ab4ed8a39b4059627003a5d885c7c2544bf9",
+      "B068": "38c1e8fbc98f9df21b0feb5df590e82d9e1adf0c8d55b401444b97a0400ed698",
+      "B069": "df0146198c0d3c14d53c007eee7c4be51beed95e95331d9a7436308fb4eb25bc",
+      "B070": "e65709cf441bd6ee548448c82cbdaac82f7cc450534afa2f9cff4d637eb17cd0",
+      "B071": "88833abc50db013c73bad315a4cfae71d4990d0bff01342f9e83f456e082bb69",
+      "B072": "4462a8dd4a793147b17a125bb0b2e15dfba677457ab1baab89e03e86e3d111d1",
+      "B073": "2f6155d0bc53d12d9daad23433f5b3fc6dd2e846410339d433f45424dc83227b",
+      "B074": "068409b2ead9dd057dd24920bca2bc71d4920881c0e02e99102000a4e6352a96",
+      "B075": "5be54f94b18ce0a54dab0fe363d32426a2f8df08aad4f84bd4c36eb2181a2e9b",
+      "B076": "b5d4ae4617e11ed7d183bcc19445509a8b410575a48f8564a56439fb8c978f58",
+      "B077": "e9e188db18034e55182a948e93156b550c23f3b8b1b73cbb9157330e400734cf",
+      "B078": "07d781fc36b749bf9b9934e74f9693a2b09d9f45cf30ee85323c318c5af445f5",
+      "B079": "f64e59ffb123dd1c2ef73238508c0af41708f09dbff9c8b9339b90327546ed7d",
+      "B080": "fe49d3fdbfc4be164adfc9bf710c1f4cdac513e8bc9982139e47d7ee9c61b0d5",
+      "B081": "78eb06de35fd293559ecb539ef14ab066f3fcaa481b4508dad492e45126a6941",
+      "B082": "583f1c8c8a44ae982423d1de77700c55cdadafa092e1224834809576de0dc168",
+      "B083": "6acb9ffdfe83228de81d9c8f977a2e5817260a890b98113eebe24d5759973b3f",
+      "B084": "0d321c9c432960748ffece9f4eb091d50a782d8f1e2eb1d7fc071505aaa258f6",
+      "B086": "b44babf86978ac2818c0c5f16fc4b55708fa955ecba8e13cf813095d19d6dd4a",
+      "B087": "a8b875553af033c25ce6e9ab4de66ad5519716b840c5e8e4466fac17d676fe7e",
+      "B088": "6d3b66c2f8e59a58af2ce3fe6fd0b328550d30468e92f3692e3ee784a38e88c8",
+      "B089": "ce341596564c1334ae859950eed20b1c24cc88c1a4ae835bfa3de2edd9e0ed5c"
+    },
+    "selection_rule": "all terminal.json with mtime <= cutoff and business_revision_used=true; later completions intentionally excluded"
+  },
+  "updated_at_utc": "2026-10-23T11:39:20.770725+00:00"
+}

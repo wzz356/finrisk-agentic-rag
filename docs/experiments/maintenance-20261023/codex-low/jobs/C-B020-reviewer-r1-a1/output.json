@@ -1,0 +1,150 @@
+{
+  "decision": "approve",
+  "claim_checks": [
+    {
+      "claim_id": "claim:codex12-B020:case:subject",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B020:L0001:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "quote": "当事人: 阳光人寿保险股份有限公司天津分公司"
+        }
+      ],
+      "comment": "当事人与机构名称直接一致。"
+    },
+    {
+      "claim_id": "claim:codex12-B020:case:document_number",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B020:L0011:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "quote": "国家金融监督管理总局天津监管局行政处罚信息公开表"
+        }
+      ],
+      "comment": "已核对完整原文，未列文号；null及不确定性适当。"
+    },
+    {
+      "claim_id": "claim:codex12-B020:case:decision_date",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B020:L0009:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "quote": "2026年7月1日"
+        }
+      ],
+      "comment": "处罚决定日期直接记载。"
+    },
+    {
+      "claim_id": "claim:codex12-B020:case:authority",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B020:L0007:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "quote": "国家金融监督管理总局天津监管局"
+        }
+      ],
+      "comment": "处罚机关直接记载。"
+    },
+    {
+      "claim_id": "claim:codex12-B020:case:position",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B020:L0005:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "quote": "对阳光人寿保险股份有限公司天津分公司罚款40万元。对叶小义警告并处罚款7万元。"
+        }
+      ],
+      "comment": "全文未列叶小义职务，保留null适当。"
+    },
+    {
+      "claim_id": "claim:codex12-B020:case:legal_basis",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B020:L0003:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "quote": "编制或者提供虚假的报告、报表、文件、资料"
+        }
+      ],
+      "comment": "全文未列法律依据，保留null适当。"
+    },
+    {
+      "claim_id": "claim:codex12-B020:case:penalties",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B020:L0005:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "quote": "对阳光人寿保险股份有限公司天津分公司罚款40万元。对叶小义警告并处罚款7万元。"
+        }
+      ],
+      "comment": "机构罚款40万元及叶小义警告、罚款7万元均与原文一致，未当作个人实施事实。"
+    },
+    {
+      "claim_id": "claim:codex12-B020:case:unknowns",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B020:L0011:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "quote": "国家金融监督管理总局天津监管局行政处罚信息公开表"
+        }
+      ],
+      "comment": "完整原文确实缺少文号、职务及法律依据，unknowns完整。"
+    },
+    {
+      "claim_id": "claim:codex12-B020:behaviors:0:actor",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B020:L0001:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "quote": "当事人: 阳光人寿保险股份有限公司天津分公司"
+        }
+      ],
+      "comment": "当事人栏目结合案由支持机构行为归属，未推定个人亲自实施。"
+    },
+    {
+      "claim_id": "claim:codex12-B020:behaviors:0:role",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B020:L0001:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "quote": "当事人: 阳光人寿保险股份有限公司天津分公司"
+        }
+      ],
+      "comment": "机构身份由公司分支机构名称支持。"
+    },
+    {
+      "claim_id": "claim:codex12-B020:behaviors:0:action",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B020:L0003:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "quote": "编制或者提供虚假的报告、报表、文件、资料"
+        }
+      ],
+      "comment": "行为保留原文或者关系，未拆造额外行为。"
+    },
+    {
+      "claim_id": "claim:codex12-B020:behaviors:0:risk_tags",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B020:L0003:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "quote": "编制或者提供虚假的报告、报表、文件、资料"
+        }
+      ],
+      "comment": "虚假报告资料属于其他违规；不具备客户信息、套取资金或营销标签的必要条件。"
+    },
+    {
+      "claim_id": "claim:codex12-B020:behaviors:0:unknowns",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B020:L0003:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "quote": "编制或者提供虚假的报告、报表、文件、资料"
+        }
+      ],
+      "comment": "全文未说明具体资料、目的、对象、渠道和个人责任性质，保留未知适当。"
+    }
+  ],
+  "omission_check_completed": true,
+  "issues": []
+}

@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "action": "add",
+  "reason": "完整原文载明独立机构处罚事实；按完整文号及主体检索均未命中，检索局限不证明旧库绝无此案。提出新增影子提案，保留未披露细节和法律依据，不推定具体违规手段。",
+  "production_admission": false,
+  "tool_calls": 3,
+  "output_sha256": "566d6dfed82840ca12a992633291ca5955f2985fd0069fc76a581bd306cb6ab2"
+}

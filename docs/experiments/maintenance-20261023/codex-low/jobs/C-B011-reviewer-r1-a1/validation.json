@@ -1,0 +1,7 @@
+{
+  "valid": true,
+  "decision": "approve",
+  "production_admission": false,
+  "tool_calls": 3,
+  "output_sha256": "da21f9f98f171f966e48544511400bcc0ec3f6ca1cf1a8c1c5d21116217aef24"
+}

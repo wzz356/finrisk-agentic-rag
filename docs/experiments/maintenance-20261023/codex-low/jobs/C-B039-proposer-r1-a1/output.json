@@ -1,0 +1,390 @@
+{
+  "source_coverage": [
+    {
+      "disposition": "mapped",
+      "segment_id": "B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616",
+      "field_refs": [
+        "case/subject",
+        "case/position",
+        "behaviors/0/actor",
+        "behaviors/0/role",
+        "behaviors/1/actor",
+        "behaviors/1/role",
+        "behaviors/2/actor",
+        "behaviors/2/role"
+      ],
+      "reason": "对应案件信息或独立违法行为，已逐项引用。"
+    },
+    {
+      "disposition": "not_material",
+      "segment_id": "B039:L0002:b7dee6a36c99e616:b7dee6a36c99e616",
+      "field_refs": [],
+      "reason": "字段标题或来源公示，无新增独立业务事实。"
+    },
+    {
+      "disposition": "mapped",
+      "segment_id": "B039:L0003:b7dee6a36c99e616:b7dee6a36c99e616",
+      "field_refs": [
+        "case/document_number"
+      ],
+      "reason": "对应案件信息或独立违法行为，已逐项引用。"
+    },
+    {
+      "disposition": "not_material",
+      "segment_id": "B039:L0004:b7dee6a36c99e616:b7dee6a36c99e616",
+      "field_refs": [],
+      "reason": "字段标题或来源公示，无新增独立业务事实。"
+    },
+    {
+      "disposition": "mapped",
+      "segment_id": "B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616",
+      "field_refs": [
+        "case/legal_basis",
+        "case/unknowns",
+        "behaviors/0/action",
+        "behaviors/0/risk_tags",
+        "behaviors/0/unknowns",
+        "behaviors/1/action",
+        "behaviors/1/risk_tags",
+        "behaviors/1/unknowns",
+        "behaviors/2/action",
+        "behaviors/2/risk_tags",
+        "behaviors/2/unknowns"
+      ],
+      "reason": "对应案件信息或独立违法行为，已逐项引用。"
+    },
+    {
+      "disposition": "not_material",
+      "segment_id": "B039:L0006:b7dee6a36c99e616:b7dee6a36c99e616",
+      "field_refs": [],
+      "reason": "字段标题或来源公示，无新增独立业务事实。"
+    },
+    {
+      "disposition": "mapped",
+      "segment_id": "B039:L0007:b7dee6a36c99e616:b7dee6a36c99e616",
+      "field_refs": [
+        "case/penalties"
+      ],
+      "reason": "对应案件信息或独立违法行为，已逐项引用。"
+    },
+    {
+      "disposition": "not_material",
+      "segment_id": "B039:L0008:b7dee6a36c99e616:b7dee6a36c99e616",
+      "field_refs": [],
+      "reason": "字段标题或来源公示，无新增独立业务事实。"
+    },
+    {
+      "disposition": "mapped",
+      "segment_id": "B039:L0009:b7dee6a36c99e616:b7dee6a36c99e616",
+      "field_refs": [
+        "case/authority"
+      ],
+      "reason": "对应案件信息或独立违法行为，已逐项引用。"
+    },
+    {
+      "disposition": "not_material",
+      "segment_id": "B039:L0010:b7dee6a36c99e616:b7dee6a36c99e616",
+      "field_refs": [],
+      "reason": "字段标题或来源公示，无新增独立业务事实。"
+    },
+    {
+      "disposition": "mapped",
+      "segment_id": "B039:L0011:b7dee6a36c99e616:b7dee6a36c99e616",
+      "field_refs": [
+        "case/decision_date"
+      ],
+      "reason": "对应案件信息或独立违法行为，已逐项引用。"
+    },
+    {
+      "disposition": "not_material",
+      "segment_id": "B039:L0012:b7dee6a36c99e616:b7dee6a36c99e616",
+      "field_refs": [],
+      "reason": "字段标题或来源公示，无新增独立业务事实。"
+    },
+    {
+      "disposition": "not_material",
+      "segment_id": "B039:L0013:b7dee6a36c99e616:b7dee6a36c99e616",
+      "field_refs": [],
+      "reason": "字段标题或来源公示，无新增独立业务事实。"
+    }
+  ],
+  "action": "add",
+  "behaviors": [
+    {
+      "action": {
+        "uncertainty": null,
+        "claim_type": "fact",
+        "value": "给予投保人保险合同约定以外的利益",
+        "citations": [
+          {
+            "quote": "给予投保人保险合同约定以外的利益",
+            "segment_id": "B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616"
+          }
+        ]
+      },
+      "actor": {
+        "uncertainty": null,
+        "claim_type": "fact",
+        "value": "山东远通兴华保险代理有限公司",
+        "citations": [
+          {
+            "quote": "山东远通兴华保险代理有限公司",
+            "segment_id": "B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616"
+          }
+        ]
+      },
+      "role": {
+        "uncertainty": null,
+        "claim_type": "fact",
+        "value": "institution",
+        "citations": [
+          {
+            "quote": "山东远通兴华保险代理有限公司",
+            "segment_id": "B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616"
+          }
+        ]
+      },
+      "risk_tags": {
+        "uncertainty": null,
+        "claim_type": "fact",
+        "value": [
+          "合同外利益"
+        ],
+        "citations": [
+          {
+            "quote": "给予投保人保险合同约定以外的利益",
+            "segment_id": "B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616"
+          }
+        ]
+      },
+      "unknowns": {
+        "uncertainty": "原文仅列案由，未披露具体实施时间、方式。",
+        "claim_type": "fact",
+        "value": [
+          "具体实施时间",
+          "具体实施方式"
+        ],
+        "citations": [
+          {
+            "quote": "给予投保人保险合同约定以外的利益",
+            "segment_id": "B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616"
+          }
+        ]
+      }
+    },
+    {
+      "action": {
+        "uncertainty": null,
+        "claim_type": "fact",
+        "value": "收取保险公司工作人员给予的合同约定外酬金",
+        "citations": [
+          {
+            "quote": "收取保险公司工作人员给予的合同约定外酬金",
+            "segment_id": "B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616"
+          }
+        ]
+      },
+      "actor": {
+        "uncertainty": null,
+        "claim_type": "fact",
+        "value": "山东远通兴华保险代理有限公司",
+        "citations": [
+          {
+            "quote": "山东远通兴华保险代理有限公司",
+            "segment_id": "B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616"
+          }
+        ]
+      },
+      "role": {
+        "uncertainty": null,
+        "claim_type": "fact",
+        "value": "institution",
+        "citations": [
+          {
+            "quote": "山东远通兴华保险代理有限公司",
+            "segment_id": "B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616"
+          }
+        ]
+      },
+      "risk_tags": {
+        "uncertainty": null,
+        "claim_type": "fact",
+        "value": [],
+        "citations": [
+          {
+            "quote": "收取保险公司工作人员给予的合同约定外酬金",
+            "segment_id": "B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616"
+          }
+        ]
+      },
+      "unknowns": {
+        "uncertainty": "原文仅列案由，未披露具体实施时间、方式。",
+        "claim_type": "fact",
+        "value": [
+          "具体实施时间",
+          "具体实施方式"
+        ],
+        "citations": [
+          {
+            "quote": "收取保险公司工作人员给予的合同约定外酬金",
+            "segment_id": "B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616"
+          }
+        ]
+      }
+    },
+    {
+      "action": {
+        "uncertainty": null,
+        "claim_type": "fact",
+        "value": "未开立独立的佣金收取账户",
+        "citations": [
+          {
+            "quote": "未开立独立的佣金收取账户",
+            "segment_id": "B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616"
+          }
+        ]
+      },
+      "actor": {
+        "uncertainty": null,
+        "claim_type": "fact",
+        "value": "山东远通兴华保险代理有限公司",
+        "citations": [
+          {
+            "quote": "山东远通兴华保险代理有限公司",
+            "segment_id": "B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616"
+          }
+        ]
+      },
+      "role": {
+        "uncertainty": null,
+        "claim_type": "fact",
+        "value": "institution",
+        "citations": [
+          {
+            "quote": "山东远通兴华保险代理有限公司",
+            "segment_id": "B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616"
+          }
+        ]
+      },
+      "risk_tags": {
+        "uncertainty": null,
+        "claim_type": "fact",
+        "value": [],
+        "citations": [
+          {
+            "quote": "未开立独立的佣金收取账户",
+            "segment_id": "B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616"
+          }
+        ]
+      },
+      "unknowns": {
+        "uncertainty": "原文仅列案由，未披露具体实施时间、方式。",
+        "claim_type": "fact",
+        "value": [
+          "具体实施时间",
+          "具体实施方式"
+        ],
+        "citations": [
+          {
+            "quote": "未开立独立的佣金收取账户",
+            "segment_id": "B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616"
+          }
+        ]
+      }
+    }
+  ],
+  "reason": "完整原文明确列出本机构本次处罚及三项独立行为。按主体检索冻结旧库零命中，但零命中不证明不存在；现有证据未发现同一决定，提出新增影子提案。第二、三项行为不满足具体业务标签定义，保留零标签。",
+  "case": {
+    "legal_basis": {
+      "uncertainty": "原文未披露法律依据。",
+      "claim_type": "fact",
+      "value": null,
+      "citations": [
+        {
+          "quote": "给予投保人保险合同约定以外的利益、收取保险公司工作人员给予的合同约定外酬金、未开立独立的佣金收取账户",
+          "segment_id": "B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616"
+        }
+      ]
+    },
+    "authority": {
+      "uncertainty": null,
+      "claim_type": "fact",
+      "value": "国家金融监督管理总局临沂监管分局",
+      "citations": [
+        {
+          "quote": "国家金融监督管理总局临沂监管分局",
+          "segment_id": "B039:L0009:b7dee6a36c99e616:b7dee6a36c99e616"
+        }
+      ]
+    },
+    "subject": {
+      "uncertainty": null,
+      "claim_type": "fact",
+      "value": "山东远通兴华保险代理有限公司",
+      "citations": [
+        {
+          "quote": "山东远通兴华保险代理有限公司",
+          "segment_id": "B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616"
+        }
+      ]
+    },
+    "decision_date": {
+      "uncertainty": null,
+      "claim_type": "fact",
+      "value": "2026年8月13日",
+      "citations": [
+        {
+          "quote": "2026年8月13日",
+          "segment_id": "B039:L0011:b7dee6a36c99e616:b7dee6a36c99e616"
+        }
+      ]
+    },
+    "unknowns": {
+      "uncertainty": "原文未披露任职信息与法律依据。",
+      "claim_type": "fact",
+      "value": [
+        "position",
+        "legal_basis"
+      ],
+      "citations": [
+        {
+          "quote": "给予投保人保险合同约定以外的利益、收取保险公司工作人员给予的合同约定外酬金、未开立独立的佣金收取账户",
+          "segment_id": "B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616"
+        }
+      ]
+    },
+    "position": {
+      "uncertainty": "未载明任职信息。",
+      "claim_type": "fact",
+      "value": null,
+      "citations": [
+        {
+          "quote": "山东远通兴华保险代理有限公司",
+          "segment_id": "B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616"
+        }
+      ]
+    },
+    "document_number": {
+      "uncertainty": null,
+      "claim_type": "fact",
+      "value": "临金罚决字〔2026〕31号",
+      "citations": [
+        {
+          "quote": "临金罚决字〔2026〕31号",
+          "segment_id": "B039:L0003:b7dee6a36c99e616:b7dee6a36c99e616"
+        }
+      ]
+    },
+    "penalties": {
+      "uncertainty": null,
+      "claim_type": "fact",
+      "value": "警告并罚款11万元",
+      "citations": [
+        {
+          "quote": "警告并罚款11万元",
+          "segment_id": "B039:L0007:b7dee6a36c99e616:b7dee6a36c99e616"
+        }
+      ]
+    }
+  }
+}

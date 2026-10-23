@@ -1,0 +1,1362 @@
+{
+  "ledger_states": {
+    "settled": 404,
+    "unknown": 8
+  },
+  "duplicate_request_keys": 0,
+  "future_holds_after_all_terminal": 0,
+  "known_usage_matches_spent": true,
+  "role_bindings": [
+    {
+      "sample_id": "B001",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B001",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B002",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B002",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B003",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B004",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B004",
+      "role_file": "proposer-r1-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B005",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B006",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B006",
+      "role_file": "proposer-r2-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B006",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B006",
+      "role_file": "reviewer-r2-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B007",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B007",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B008",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B008",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B009",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B009",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B010",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B010",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B011",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B011",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B012",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B012",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B013",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B013",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B014",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B014",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B015",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B015",
+      "role_file": "proposer-r2-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B015",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B015",
+      "role_file": "reviewer-r2-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B015",
+      "role_file": "reviewer-r2-a3.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B016",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B016",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B017",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B017",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B018",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B018",
+      "role_file": "proposer-r2-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B018",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B018",
+      "role_file": "reviewer-r2-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B019",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B019",
+      "role_file": "proposer-r1-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B020",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B020",
+      "role_file": "proposer-r2-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B020",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B020",
+      "role_file": "reviewer-r2-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B021",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B021",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B022",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B022",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B023",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B023",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B024",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B024",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B025",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B026",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B026",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B027",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B027",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B028",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B028",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B029",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B029",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B030",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B030",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B031",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B031",
+      "role_file": "proposer-r2-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B031",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B031",
+      "role_file": "reviewer-r2-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B032",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B032",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B033",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B033",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B034",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B034",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B035",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B035",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B036",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B036",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B037",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B037",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B038",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B038",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B039",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B039",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B040",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B040",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B041",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B041",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B042",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B042",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B043",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B043",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B044",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B044",
+      "role_file": "proposer-r2-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B044",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B044",
+      "role_file": "reviewer-r2-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B045",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B045",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B046",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B046",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B047",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B047",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B048",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B048",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B049",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B049",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B050",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B050",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B051",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B051",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B052",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B052",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B053",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B053",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B054",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B054",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B055",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B056",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B056",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B057",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B057",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B058",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B058",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B059",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B059",
+      "role_file": "proposer-r2-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B059",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B059",
+      "role_file": "reviewer-r2-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B060",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B060",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B061",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B061",
+      "role_file": "proposer-r2-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B061",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B061",
+      "role_file": "reviewer-r2-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B062",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B062",
+      "role_file": "proposer-r2-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B062",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B062",
+      "role_file": "reviewer-r2-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B063",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B063",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B064",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B064",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B065",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B065",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B066",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B066",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B067",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B067",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B068",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B068",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B069",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B069",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B070",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B070",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B071",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B071",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B072",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B072",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B073",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B073",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B074",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B074",
+      "role_file": "proposer-r2-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B074",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B074",
+      "role_file": "reviewer-r2-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B075",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B075",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B076",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B076",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B077",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B077",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B078",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B078",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B079",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B079",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B079",
+      "role_file": "reviewer-r1-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B080",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B080",
+      "role_file": "proposer-r2-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B080",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B080",
+      "role_file": "reviewer-r2-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B081",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B081",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B082",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B082",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B083",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B083",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B084",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B084",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B085",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B085",
+      "role_file": "proposer-r2-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B085",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B085",
+      "role_file": "reviewer-r2-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B085",
+      "role_file": "reviewer-r2-a3.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B086",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B086",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B087",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B087",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B088",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B089",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B089",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B090",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B090",
+      "role_file": "proposer-r2-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B090",
+      "role_file": "proposer-r2-a3.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B090",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B091",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B091",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B092",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B093",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B093",
+      "role_file": "proposer-r1-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B094",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B094",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B095",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B095",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B096",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B096",
+      "role_file": "proposer-r2-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B096",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B096",
+      "role_file": "reviewer-r2-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B097",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B097",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B098",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B098",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B099",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B099",
+      "role_file": "reviewer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B100",
+      "role_file": "proposer-r1-a1.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    },
+    {
+      "sample_id": "B100",
+      "role_file": "proposer-r1-a2.json",
+      "response_bound": true,
+      "required_reads_search_passed_if_submitted": true
+    }
+  ],
+  "production_assets_unchanged": true
+}

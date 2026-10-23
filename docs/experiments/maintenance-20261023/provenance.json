@@ -1,0 +1,1348 @@
+{
+  "schema": "public-maintenance-export/1",
+  "date": "2026-10-23",
+  "base_snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+  "original_files_modified": false,
+  "note": "Source hashes identify the private originals. Export hashes are recorded separately. No private logs, credentials, quota snapshots, large duplicate corpus or runnable live inference adapter are included.",
+  "exports": [
+    {
+      "source": "Codex轻度思考维护实测_20261023/experiment-metrics.json",
+      "original_sha256": "9f8f19ba7d9c64ae67e3cd216b320ad7c52e964539d5ecbaf02d6a10458c87e4",
+      "public_file": "codex-low/experiment-metrics.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/paired-results.json",
+      "original_sha256": "57e58cbe5d53274d4198d28625cc2030c8929dde678b4c8e5fb6971525ef6ec3",
+      "public_file": "codex-low/paired-results.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/final-verification.json",
+      "original_sha256": "47711f6aa101d3197b9bcfc28ce894aaf6580aab86dff26d1e798f6c8bcee49d",
+      "public_file": "codex-low/final-verification.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/sample_manifest.json",
+      "original_sha256": "0de5cdc3f848a5a55c1697a25a15f2741bd5d9018ff8a16151c26e8f7b466d59",
+      "public_file": "codex-low/samples.json",
+      "transformation": "Whitelist source identity, complete extracted text, hashes, URL and selection stratum."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/experiment-metrics.json",
+      "original_sha256": "4fab7fff16f927d5fc51093e3008d840be5579a9c8b21bb3d17c245af00cc397",
+      "public_file": "deepseek-100/experiment-metrics.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/paired-results.json",
+      "original_sha256": "03af9fc0a90e66237a48358e91b8542d4737a7833cdd1632d0c729c76f6c830a",
+      "public_file": "deepseek-100/paired-results.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/final-verification.json",
+      "original_sha256": "65127b5931a2f9b7c7f74c1dff27bbd0eca14e9f7371fa8583cbb4274ca6688b",
+      "public_file": "deepseek-100/final-verification.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/sample_manifest.json",
+      "original_sha256": "efa8715fe711a3deafdecdd4b54e1decda11d5f931b9dbdb8c8dc5341dc80f04",
+      "public_file": "deepseek-100/samples.json",
+      "transformation": "Whitelist source identity, complete extracted text, hashes, URL and selection stratum."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/source-card-audit.json",
+      "original_sha256": "2a674c8d51988c5571306636a364cf0be13c31a6622fc79c244dc2a3eb88f159",
+      "public_file": "codex-low/source-card-audit.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/duplicate-readback-checks.json",
+      "original_sha256": "425f78ecc9e086635b259ca2b15305e54bc1a7f580cdaaec8d6d1a619d31790b",
+      "public_file": "codex-low/duplicate-readback-checks.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/shadow-readback.json",
+      "original_sha256": "89d1666d59908dc777571880332c39bd1c8c37eefc9235701498fcd646a5a349",
+      "public_file": "codex-low/shadow-readback.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/business-schema.json",
+      "original_sha256": "217cdb06c877bd1155d1c095ba7078a206279b09e9294572663501b094146c82",
+      "public_file": "codex-low/business-schema.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/review-schema.json",
+      "original_sha256": "949c2ba4bbf3d1089752c2773876d5e4e04406157b37f59dc868b2ac7666862f",
+      "public_file": "codex-low/review-schema.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/dictionary.json",
+      "original_sha256": "3e98c94952f2a066399e473e083d88ed2ef9aad5522b7d32906aceac8849518d",
+      "public_file": "codex-low/dictionary.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/review-only-summary.json",
+      "original_sha256": "94e1c4dc4bbfdf2a5868967b4e1eeac101ee5a425f7e473f88d4fdd91e2bdc88",
+      "public_file": "codex-low/review-only-summary.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/quality-audit.json",
+      "original_sha256": "9136be55226939d30caaa52c18e78a4e60b3bf000577b2d3f72d1b37bb95c215",
+      "public_file": "deepseek-100/quality-audit.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/fixed-audit-root.json",
+      "original_sha256": "b2377a1cb071b3af49c1703b9178ecdbaead9d3b896e66f2dc1243048cf9d7dc",
+      "public_file": "deepseek-100/fixed-audit-root.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/fixed-audit-data.json",
+      "original_sha256": "70d4c189401cf6870470cebf4ad5e1d047b359a5517a1d82b4d39d304ed40783",
+      "public_file": "deepseek-100/fixed-audit-data.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/identity-association-audit.json",
+      "original_sha256": "094d280ed6fe49711d2e1b84b75caee9ca1fbda1b64ecd7ee9c5bbe2f544cb31",
+      "public_file": "deepseek-100/identity-association-audit.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/business-revision-audit.json",
+      "original_sha256": "560449ae22ed5a210e4138401102afa39e4c999bb1d66a3c9fa4eb06f370d7ae",
+      "public_file": "deepseek-100/business-revision-audit.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/run-integrity.json",
+      "original_sha256": "62333e9385a809367ffcf595f4095460d20083bd957e1d0002b7368a384cd7f7",
+      "public_file": "deepseek-100/run-integrity.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/selection_summary.json",
+      "original_sha256": "9695c8c9888f5a6853416cbbd2a2a76ea99c1322a0064cc0d6d67fe79eb084c5",
+      "public_file": "deepseek-100/selection_summary.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/dictionary-full.json",
+      "original_sha256": "3e98c94952f2a066399e473e083d88ed2ef9aad5522b7d32906aceac8849518d",
+      "public_file": "deepseek-100/dictionary-full.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/identity-association-audit.md",
+      "original_sha256": "4678862a877c896e9005f22aa090fd29501b7df77e60a1d35c77dcc73ea7b92b",
+      "public_file": "deepseek-100/identity-association-audit.md",
+      "transformation": "Remove shared account quota observations; retain conclusions and limitations."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/business-revision-audit.md",
+      "original_sha256": "d10f77e3ec7318a97a4d5813872ee074dca6c595aebfefbaf9cfefa8900ca78c",
+      "public_file": "deepseek-100/business-revision-audit.md",
+      "transformation": "Remove shared account quota observations; retain conclusions and limitations."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/实验结论.md",
+      "original_sha256": "cc0493e491236106ddf9a5ee5a1b2536dc8bf2acf113d79690f77195adefdab1",
+      "public_file": "codex-low/conclusion.md",
+      "transformation": "Remove shared account quota observations; retain conclusions and limitations."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/百份知识维护实验结论.md",
+      "original_sha256": "fc6bf72cbfec740e0803e43e5eeee7f33a57c619965cbdb278fc9c5f86235d81",
+      "public_file": "deepseek-100/conclusion.md",
+      "transformation": "Remove shared account quota observations; retain conclusions and limitations."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/old-assets-after.json",
+      "original_sha256": "7764f79317c0bb9ad25dc09dcada211dbe4bdaec2149e1b298fdc2e0279fd39b",
+      "public_file": "codex-low/old-assets-after.json",
+      "transformation": "Aggregate protection result only; omit private absolute file inventory."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/protection_after.json",
+      "original_sha256": "73d86b208bd095fa295d13464c92921694e7e0645fd367502508ee104a2c673c",
+      "public_file": "deepseek-100/protection_after.json",
+      "transformation": "Aggregate protection result only; omit private absolute file inventory."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/shadow/CodexPR/manifest.json",
+      "original_sha256": "e34951412bca2a1b3fb8bc9eeedd2cafcc3a4e0c58dbff9f0f10e6edd3c68ef8",
+      "public_file": "codex-low/shadow/CodexPR/manifest.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/shadow/CodexPR/cards.jsonl",
+      "original_sha256": "74c133666231a95cbe284426a7f6f5881f085affa97847829db12d88769ce46e",
+      "public_file": "codex-low/shadow/CodexPR/cards.jsonl",
+      "transformation": "Sanitized experimental cards only; not a production release."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B002-proposer-r1-a1/output.json",
+      "original_sha256": "7164f6415eb0a7cf7daf8d09cff54859d0922af1e9e6db79143cd53ee9107d1a",
+      "public_file": "codex-low/jobs/C-B002-proposer-r1-a1/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B002-proposer-r1-a1/validation.json",
+      "original_sha256": "377b3d287b995587afbfec9039f4c2a3c6c114fac34023e8898d2f9aebac3ac8",
+      "public_file": "codex-low/jobs/C-B002-proposer-r1-a1/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B002-proposer-r1-a2/output.json",
+      "original_sha256": "c20f2c755ae7c18ae2b896c071c568aa94d8272ddb0d4a0a15dd00521671f41b",
+      "public_file": "codex-low/jobs/C-B002-proposer-r1-a2/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B002-proposer-r1-a2/validation.json",
+      "original_sha256": "c3cf6de5ac37bfb81ab2ac4871ba95ddee1999c3472fe7c481b797c7606a19e5",
+      "public_file": "codex-low/jobs/C-B002-proposer-r1-a2/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B002-reviewer-r1-a1/output.json",
+      "original_sha256": "c27b35e851b84078582352b9eace9c8acbc7812077b96e23fe5f6c1fe20f522a",
+      "public_file": "codex-low/jobs/C-B002-reviewer-r1-a1/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B002-reviewer-r1-a1/validation.json",
+      "original_sha256": "60a4e1262ea2d571a3924d4f1de76482aba0831b2d27b207885ec12e795c1d63",
+      "public_file": "codex-low/jobs/C-B002-reviewer-r1-a1/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B003-proposer-r1-a1/output.json",
+      "original_sha256": "c0bf6b47e79362be7f97b6211aa08fa5c86e633a94625aaaff85528b0563b1bc",
+      "public_file": "codex-low/jobs/C-B003-proposer-r1-a1/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B003-proposer-r1-a1/validation.json",
+      "original_sha256": "b9584474b892edc4b1a8d1d69b0f085ed4414a46f2ee0563dfeaf8c66b4fbe7b",
+      "public_file": "codex-low/jobs/C-B003-proposer-r1-a1/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B003-reviewer-r1-a1/output.json",
+      "original_sha256": "9935742f19192a5f3ea0e9c0fa00375c34822625ab061b4d3822aad66f35b769",
+      "public_file": "codex-low/jobs/C-B003-reviewer-r1-a1/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B003-reviewer-r1-a1/validation.json",
+      "original_sha256": "9cb889ea8642f79a6ba0ebc48b7335c3f8c50637c1c9041687c4c997194b9ff5",
+      "public_file": "codex-low/jobs/C-B003-reviewer-r1-a1/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B005-proposer-r1-a1/output.json",
+      "original_sha256": "6a410d2ff02eb72e40f340ce099ed84684373adf7813a4e52b93e89046cdeb51",
+      "public_file": "codex-low/jobs/C-B005-proposer-r1-a1/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B005-proposer-r1-a1/validation.json",
+      "original_sha256": "c827a378c99302c8f11b060f78827b4e583e1fd528d71fa0fafb73c56cf87910",
+      "public_file": "codex-low/jobs/C-B005-proposer-r1-a1/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B009-proposer-r1-a1/output.json",
+      "original_sha256": "566d6dfed82840ca12a992633291ca5955f2985fd0069fc76a581bd306cb6ab2",
+      "public_file": "codex-low/jobs/C-B009-proposer-r1-a1/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B009-proposer-r1-a1/validation.json",
+      "original_sha256": "e9c386996a74e42b2077d4619e8e1d4fb7a3e9da7505e728a9ffa7ea36455af8",
+      "public_file": "codex-low/jobs/C-B009-proposer-r1-a1/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B009-reviewer-r1-a1/output.json",
+      "original_sha256": "ea81cefa266ad8984b9493d61c2261b097e37954676eb4dece0a2100cbccf7b8",
+      "public_file": "codex-low/jobs/C-B009-reviewer-r1-a1/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B009-reviewer-r1-a1/validation.json",
+      "original_sha256": "52f706c040e11e546a60a9dc7cad81cda7312e5dd9c349254b0273ba4bf9a117",
+      "public_file": "codex-low/jobs/C-B009-reviewer-r1-a1/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B011-proposer-r1-a1/output.json",
+      "original_sha256": "ea67b048be79236bd66f6bdc6615c106916020ac4fd03593f5599c4c3fc69faa",
+      "public_file": "codex-low/jobs/C-B011-proposer-r1-a1/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B011-proposer-r1-a1/validation.json",
+      "original_sha256": "377b3d287b995587afbfec9039f4c2a3c6c114fac34023e8898d2f9aebac3ac8",
+      "public_file": "codex-low/jobs/C-B011-proposer-r1-a1/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B011-proposer-r1-a2/output.json",
+      "original_sha256": "293294f5e0f55c1d98811cd0de9d627aa3d07191fdad435b69d5987c00917950",
+      "public_file": "codex-low/jobs/C-B011-proposer-r1-a2/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B011-proposer-r1-a2/validation.json",
+      "original_sha256": "a9f1f17f8f3290b9b147fd21656262b26aa67960995a57af3175c5186634ca94",
+      "public_file": "codex-low/jobs/C-B011-proposer-r1-a2/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B011-reviewer-r1-a1/output.json",
+      "original_sha256": "da21f9f98f171f966e48544511400bcc0ec3f6ca1cf1a8c1c5d21116217aef24",
+      "public_file": "codex-low/jobs/C-B011-reviewer-r1-a1/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B011-reviewer-r1-a1/validation.json",
+      "original_sha256": "692c9ccd454de95bcdf373c4f7cfd052588848cd08f6335aeb2167fe2b9a422b",
+      "public_file": "codex-low/jobs/C-B011-reviewer-r1-a1/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B020-proposer-r1-a1/output.json",
+      "original_sha256": "3906ed79316b4fdbed65bbec975031315d4954b8ff55f0d6c730b2a9c0563496",
+      "public_file": "codex-low/jobs/C-B020-proposer-r1-a1/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B020-proposer-r1-a1/validation.json",
+      "original_sha256": "938f8fbd31f51bc9bf2914bf940a4f674b5396632b1ed92ccd33bb4f8223f46d",
+      "public_file": "codex-low/jobs/C-B020-proposer-r1-a1/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B020-reviewer-r1-a1/output.json",
+      "original_sha256": "37b3f31d81414511a5637013980dceeb8fd37c86836b3dbb7be8c159cfd0ad70",
+      "public_file": "codex-low/jobs/C-B020-reviewer-r1-a1/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B020-reviewer-r1-a1/validation.json",
+      "original_sha256": "ceeb01d079fe6a4476f8d72461387885704a5b3130e5ee92601bcf532f79fe36",
+      "public_file": "codex-low/jobs/C-B020-reviewer-r1-a1/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B039-proposer-r1-a1/output.json",
+      "original_sha256": "cc9bab18c338cbae6649adb8ea3054774a6a50a391a210d333f47d2fb6d40987",
+      "public_file": "codex-low/jobs/C-B039-proposer-r1-a1/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B039-proposer-r1-a1/validation.json",
+      "original_sha256": "b0ce9b8401c02359be50d695216830b36962a6af4017ee6ad9909c74cc288b95",
+      "public_file": "codex-low/jobs/C-B039-proposer-r1-a1/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B039-reviewer-r1-a1/output.json",
+      "original_sha256": "29df4af0133956f8156ac2451369f9642df5dff683e510f742761412ea3b6d85",
+      "public_file": "codex-low/jobs/C-B039-reviewer-r1-a1/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B039-reviewer-r1-a1/validation.json",
+      "original_sha256": "847e3c40a6fe792ffe7e30b90096f42d277e85f4f0e1872757b9a9920745623f",
+      "public_file": "codex-low/jobs/C-B039-reviewer-r1-a1/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B052-proposer-r1-a1/output.json",
+      "original_sha256": "d168ecec4119289882bbaf4a07268474c58be3a5b34c0a968830f8caade50019",
+      "public_file": "codex-low/jobs/C-B052-proposer-r1-a1/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B052-proposer-r1-a1/validation.json",
+      "original_sha256": "f8fbac94f46568dfb2866d3277b92fccfe15d3e7a7d910c7e031851fe504cb20",
+      "public_file": "codex-low/jobs/C-B052-proposer-r1-a1/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B052-reviewer-r1-a1/output.json",
+      "original_sha256": "1b863649865830a41be6e0e967131fbd4ca7567cb1a4f1e83442a37ff911454a",
+      "public_file": "codex-low/jobs/C-B052-reviewer-r1-a1/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B052-reviewer-r1-a1/validation.json",
+      "original_sha256": "4e6f207c0dc0c61f0d412ccc47f472015897c4e11ab3c85ad973f9188c1ab4f2",
+      "public_file": "codex-low/jobs/C-B052-reviewer-r1-a1/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B059-proposer-r1-a1/output.json",
+      "original_sha256": "f463989553dc4261fedcf3bbdd17059f513f79ba2654c57d4ef75cbae9f6f390",
+      "public_file": "codex-low/jobs/C-B059-proposer-r1-a1/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B059-proposer-r1-a1/validation.json",
+      "original_sha256": "377b3d287b995587afbfec9039f4c2a3c6c114fac34023e8898d2f9aebac3ac8",
+      "public_file": "codex-low/jobs/C-B059-proposer-r1-a1/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B059-proposer-r1-a2/output.json",
+      "original_sha256": "89870cb6c8c65bd27bff3df9fa31e60b1931800967aa25360ac1790d0e45c09b",
+      "public_file": "codex-low/jobs/C-B059-proposer-r1-a2/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B059-proposer-r1-a2/validation.json",
+      "original_sha256": "8d663509ca2c09f8d9d617ff9c95ab023e3df71f147ca6afa43d3a9d7c24c5b1",
+      "public_file": "codex-low/jobs/C-B059-proposer-r1-a2/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B090-proposer-r1-a1/output.json",
+      "original_sha256": "6bdab5c8e4eb09a92c263c058572ad63d0d3cbe5dccf3dd797d50ad89b836fdf",
+      "public_file": "codex-low/jobs/C-B090-proposer-r1-a1/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B090-proposer-r1-a1/validation.json",
+      "original_sha256": "c8605f5ee27534595765343efd67c0843ec48efbef6b666a1c9a63018467c665",
+      "public_file": "codex-low/jobs/C-B090-proposer-r1-a1/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B093-proposer-r1-a1/output.json",
+      "original_sha256": "b01bd953ffe0a2bd6488736314a76e027d92e415a2df86605c3ad4185ce05244",
+      "public_file": "codex-low/jobs/C-B093-proposer-r1-a1/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B093-proposer-r1-a1/validation.json",
+      "original_sha256": "9260d3af00f0d68a62760981a318c913656f2c1d08fd50056c7937b8dbf983c5",
+      "public_file": "codex-low/jobs/C-B093-proposer-r1-a1/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B100-proposer-r1-a1/output.json",
+      "original_sha256": "b2ec55db497a0db2f9fb16fc3df3679c6962e88021b2e920739e44b69f8cb144",
+      "public_file": "codex-low/jobs/C-B100-proposer-r1-a1/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B100-proposer-r1-a1/validation.json",
+      "original_sha256": "6d364171ec138be23ba5444ebc749c4a33bfbdfee14f7f6c8d09c803867386ea",
+      "public_file": "codex-low/jobs/C-B100-proposer-r1-a1/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/R-B002-reviewer-r1-a1/output.json",
+      "original_sha256": "6c02a962a20e001860aed5444ddca5e173cad8c999c2ee2ae29fec756428614d",
+      "public_file": "codex-low/jobs/R-B002-reviewer-r1-a1/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/R-B002-reviewer-r1-a1/validation.json",
+      "original_sha256": "19980d08383d85c321571b1edd6e1da929c21e1c52629e9c169a42efe07a7ae2",
+      "public_file": "codex-low/jobs/R-B002-reviewer-r1-a1/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/R-B009-reviewer-r1-a1/output.json",
+      "original_sha256": "43a88f24f6a60215f2deb958c82f8c3038f2bc6c2cc530d1e5ed30a3ecc77ba0",
+      "public_file": "codex-low/jobs/R-B009-reviewer-r1-a1/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/R-B009-reviewer-r1-a1/validation.json",
+      "original_sha256": "a90ce61a24f6c293101034d2baac1c04e89ee2ff8d9ef71af7044a629a4b5830",
+      "public_file": "codex-low/jobs/R-B009-reviewer-r1-a1/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/R-B011-reviewer-r1-a1/output.json",
+      "original_sha256": "15c8ab8720ec113a98629926f2170dabebc268a886663b71e4d8bd86844c2c4b",
+      "public_file": "codex-low/jobs/R-B011-reviewer-r1-a1/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/R-B011-reviewer-r1-a1/validation.json",
+      "original_sha256": "60f3b22aab31bce9f65f0f3e05d1142246a14fe878fb37000da1da2862314dd4",
+      "public_file": "codex-low/jobs/R-B011-reviewer-r1-a1/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/R-B020-reviewer-r1-a1/output.json",
+      "original_sha256": "2324ab61dd4f005bf18af3bfbd3814ca24733e3fd12bcaf441cbe7aefacdafce",
+      "public_file": "codex-low/jobs/R-B020-reviewer-r1-a1/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/R-B020-reviewer-r1-a1/validation.json",
+      "original_sha256": "f7085f967c035f976ea2d1e610721217f498c4fb9f6be882843b38ed2330af40",
+      "public_file": "codex-low/jobs/R-B020-reviewer-r1-a1/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/R-B039-reviewer-r1-a1/output.json",
+      "original_sha256": "b13cf14fd65058a026809890be1a6faf16abf2a794541050647666aa2361ff58",
+      "public_file": "codex-low/jobs/R-B039-reviewer-r1-a1/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/R-B039-reviewer-r1-a1/validation.json",
+      "original_sha256": "8c555f3e1000cbd35fd3bb79035125627bc4a6e892f3c1c2e0447d9ad5b4e826",
+      "public_file": "codex-low/jobs/R-B039-reviewer-r1-a1/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/R-B052-reviewer-r1-a1/output.json",
+      "original_sha256": "c9682918bf93266ab39684bb64c1cabe365927fc8c47451ad1166c525658cb06",
+      "public_file": "codex-low/jobs/R-B052-reviewer-r1-a1/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/R-B052-reviewer-r1-a1/validation.json",
+      "original_sha256": "bc29a3cb34e5739526c570a5dfe9aa61783eb6dbd907048a813f2c376eeb5217",
+      "public_file": "codex-low/jobs/R-B052-reviewer-r1-a1/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/R-B059-reviewer-r1-a1/output.json",
+      "original_sha256": "208a18d770fe6c808da3ef4b581723ce139949bd72a6ffed8d760e85740710c9",
+      "public_file": "codex-low/jobs/R-B059-reviewer-r1-a1/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/R-B059-reviewer-r1-a1/validation.json",
+      "original_sha256": "8ffb8b921d510d489aa01cfd033d08981578a1727ada93b35aa0fc5187ebb984",
+      "public_file": "codex-low/jobs/R-B059-reviewer-r1-a1/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/R-B090-reviewer-r1-a1/output.json",
+      "original_sha256": "e09d74938cad98259a99a63445d9b04c9a24c75df279b6954df275846f3c89b9",
+      "public_file": "codex-low/jobs/R-B090-reviewer-r1-a1/output.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/R-B090-reviewer-r1-a1/validation.json",
+      "original_sha256": "106dd15d1bce44e5ed7633e04214a8cfccd19778e76495da04501cac8350873f",
+      "public_file": "codex-low/jobs/R-B090-reviewer-r1-a1/validation.json",
+      "transformation": "Remove local paths and account metadata; preserve business values and outcomes."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B001/terminal.json",
+      "original_sha256": "f9f6b4c4f5c2a6532f0be9ed9f8e70f4b7114c4bd76c2cd7ac493fb53f048ebf",
+      "public_file": "deepseek-100/results/B001/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B002/terminal.json",
+      "original_sha256": "21fedd02508a8988a2fcb520d85d02c5030daf35bee900fdb71aef20e5f504a1",
+      "public_file": "deepseek-100/results/B002/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B003/terminal.json",
+      "original_sha256": "7ba120225bda35f593524ba6ff64df04921966785bd508d4cbede725ecb41736",
+      "public_file": "deepseek-100/results/B003/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B004/terminal.json",
+      "original_sha256": "19cef6fcbae58d6ea2951eca7dc38d04d8a350f601a214f4af75fbf458111239",
+      "public_file": "deepseek-100/results/B004/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B005/terminal.json",
+      "original_sha256": "98f1c953831bb84006069c92514f14d9671b229cbe84c2a4199d7b54f09a98f5",
+      "public_file": "deepseek-100/results/B005/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B006/terminal.json",
+      "original_sha256": "086c08bb7e63eaacf0482c5e4288eaf8bada95ff2d29f8ba878474c5f3c266ef",
+      "public_file": "deepseek-100/results/B006/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B007/terminal.json",
+      "original_sha256": "35e8ea2b2cdf4f88f04b582ed672c2fe2683b693ae5ed913d19e5796f3e805c7",
+      "public_file": "deepseek-100/results/B007/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B008/terminal.json",
+      "original_sha256": "e7f63637b5137afde8e71a5e8f41c3bca3b6140ee4e35614abc428be186ce003",
+      "public_file": "deepseek-100/results/B008/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B009/terminal.json",
+      "original_sha256": "f1940a60e8167652aaaa53b80c45e893c97c7d372115f3816c0dd6719f3e8ef1",
+      "public_file": "deepseek-100/results/B009/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B010/terminal.json",
+      "original_sha256": "22482afb5a42b8fe2d8316a2b5c56f7a8d3be86a41651102ce9e4e634da3cfc6",
+      "public_file": "deepseek-100/results/B010/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B011/terminal.json",
+      "original_sha256": "37f80c56462d57eae8c4ec0dd1665d29af7e7e24b36603f15fd96529595f19cb",
+      "public_file": "deepseek-100/results/B011/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B012/terminal.json",
+      "original_sha256": "42e490597d4aa672d8a24f6cb00eb1cb0da6f3d2882d1ea4c4aa992f936f7e22",
+      "public_file": "deepseek-100/results/B012/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B013/terminal.json",
+      "original_sha256": "97877b4b349731e4ff2bac6ee9ce81e8080fc5145c49f80c9843591a39eb4ef4",
+      "public_file": "deepseek-100/results/B013/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B014/terminal.json",
+      "original_sha256": "450f5a18a17764f923640c8934817325090b19d176feb2d789fe85b4616cdda7",
+      "public_file": "deepseek-100/results/B014/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B015/terminal.json",
+      "original_sha256": "1f1fd825e841b33539c72b89c2d132de1b0c5ac199ee9b588a887dc6a1954bd8",
+      "public_file": "deepseek-100/results/B015/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B016/terminal.json",
+      "original_sha256": "9aa7771202b25e14b0a48c17860ba694939c73f3b582e3e339e42945f1d26515",
+      "public_file": "deepseek-100/results/B016/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B017/terminal.json",
+      "original_sha256": "0f2efd3c9be6e2156e8ab0b411a4eefae3376fb067b7f4ac11f2575c6b2c37f2",
+      "public_file": "deepseek-100/results/B017/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B018/terminal.json",
+      "original_sha256": "b0558bc460ce3b91e7ba27e68e392f972d6fc597e1d3ba6afa6fe546555c645a",
+      "public_file": "deepseek-100/results/B018/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B019/terminal.json",
+      "original_sha256": "2d2cee702d5652867f7d91a69329ba1669b6e46f2bf060e768c17c032c9dce10",
+      "public_file": "deepseek-100/results/B019/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B020/terminal.json",
+      "original_sha256": "b2e41ec9fe2e85c93b018ba6fbbcca93cbf690577acd578557fcf609ca2c5cc2",
+      "public_file": "deepseek-100/results/B020/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B021/terminal.json",
+      "original_sha256": "b05f7455d03ba44f08f409edd58e2d7b283e70c234e51042b99b20ff872aaa27",
+      "public_file": "deepseek-100/results/B021/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B022/terminal.json",
+      "original_sha256": "53eea74f1cbef1a6c47ccafba0349c1daf2ac21fa1c8899f495f12c014a08267",
+      "public_file": "deepseek-100/results/B022/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B023/terminal.json",
+      "original_sha256": "7095bd3667237b25700628c8fafb75fe0d45ac968a3811dff8c2b9c718bc7b2d",
+      "public_file": "deepseek-100/results/B023/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B024/terminal.json",
+      "original_sha256": "abbfa3ffb4f78234bf44d54bee54ebbe5608192ec49db51efe813a5211275808",
+      "public_file": "deepseek-100/results/B024/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B025/terminal.json",
+      "original_sha256": "4062091a49664e4e11c9d7180902164c153ea5f3b28bc83d336704329bb09b22",
+      "public_file": "deepseek-100/results/B025/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B026/terminal.json",
+      "original_sha256": "fba60c2998b2744e13d67157b24ede63f66f7e081ba6ca5a4f21a40646c8e33b",
+      "public_file": "deepseek-100/results/B026/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B027/terminal.json",
+      "original_sha256": "f61bb9313fd6a54ef899bec042d661ba2fcee2377a743c7b70679fc1149371b6",
+      "public_file": "deepseek-100/results/B027/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B028/terminal.json",
+      "original_sha256": "5aedc39e099082185c4dcfeb5e77aceba0c10b90c23f08d76dd8028bd3eb397a",
+      "public_file": "deepseek-100/results/B028/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B029/terminal.json",
+      "original_sha256": "329ee46e0b1a3589dd365de5ad4a7de53f00b8eeb50344153cc08526b9b2d048",
+      "public_file": "deepseek-100/results/B029/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B030/terminal.json",
+      "original_sha256": "b7fac908e03f3ddd8e2ae471f552cda8759f3c9f919e53ec29cc2edc300afec4",
+      "public_file": "deepseek-100/results/B030/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B031/terminal.json",
+      "original_sha256": "505e6f91a2ba5f9aa469ab72de93e8d545a0b977f98bd943bb343bd023a7f6f1",
+      "public_file": "deepseek-100/results/B031/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B032/terminal.json",
+      "original_sha256": "d4fcf415c3e0bfbfe10717a51a5ce460171a7b88af29b9dc04212062012d1fdd",
+      "public_file": "deepseek-100/results/B032/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B033/terminal.json",
+      "original_sha256": "afa048a1aae9e9716dbaa8be8bdd87d17549c501df693ec46bba990e12af9458",
+      "public_file": "deepseek-100/results/B033/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B034/terminal.json",
+      "original_sha256": "44a91f0940dca33a14f4bd2e0a0e50f7af989adf7df6fae3520c20a775da6a12",
+      "public_file": "deepseek-100/results/B034/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B035/terminal.json",
+      "original_sha256": "6c4cfe31963e222a0ba0e25ec303cd24bba0e11cf1384b4a0a176811d735f596",
+      "public_file": "deepseek-100/results/B035/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B036/terminal.json",
+      "original_sha256": "7134c43d9eaea515aabaaecd430f2ac27b9bf25c921981e37f6469092adde2fb",
+      "public_file": "deepseek-100/results/B036/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B037/terminal.json",
+      "original_sha256": "14eb86adb833de3b8303dfd79c4e117c607a6817450c897760ba2048e0f89a78",
+      "public_file": "deepseek-100/results/B037/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B038/terminal.json",
+      "original_sha256": "1eee07ea5f31d853214367d795368c9ebc38efa3b16a73aef56ff68242c326fb",
+      "public_file": "deepseek-100/results/B038/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B039/terminal.json",
+      "original_sha256": "ac215f8fce6c6857e17f9f2d2ac020bb147a708513e6c113e2940bc0cf2ced26",
+      "public_file": "deepseek-100/results/B039/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B040/terminal.json",
+      "original_sha256": "facbdf9853bda54ee27d2d86ae54521af9cb5ce1a2f96e65f27fef11d38c2c5d",
+      "public_file": "deepseek-100/results/B040/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B041/terminal.json",
+      "original_sha256": "beb8676fa0582c260ccbf4bab605e96b193fee1fc40e647148ba9e87cf7e425b",
+      "public_file": "deepseek-100/results/B041/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B042/terminal.json",
+      "original_sha256": "8338e63c63c721950bbf6456a8f269a35ed6618f15a65ebd123f0a978a06c77f",
+      "public_file": "deepseek-100/results/B042/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B043/terminal.json",
+      "original_sha256": "142d4c33940e847ae120157fe0507c5e97f9dcc982444077f74bec295ef910bc",
+      "public_file": "deepseek-100/results/B043/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B044/terminal.json",
+      "original_sha256": "d08207cde1df1b6bbe3a0f0e1ef7157eeffed2e536492abba9418f41b0574eb9",
+      "public_file": "deepseek-100/results/B044/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B045/terminal.json",
+      "original_sha256": "1fe11fa2130b0d96d5f5c15bc55269788dd7b6661886bcc4b4794e5d1aafe457",
+      "public_file": "deepseek-100/results/B045/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B046/terminal.json",
+      "original_sha256": "1474043df61983967455701c3459070409999d9b6f2857fd46aa01958f574798",
+      "public_file": "deepseek-100/results/B046/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B047/terminal.json",
+      "original_sha256": "dd34058bb1fcf06b8d689ba3fdb48d5125011f44188c822d8b8c4a62ac20f837",
+      "public_file": "deepseek-100/results/B047/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B048/terminal.json",
+      "original_sha256": "77d9abe3fb3cfe1a1d70b38227a4a453fb25f5118dc51ed9bcbfadfc6aa608ac",
+      "public_file": "deepseek-100/results/B048/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B049/terminal.json",
+      "original_sha256": "f607ebfec00f688e159b9282362276d1f72f403ec6bf0e93629e7bc6daacdc91",
+      "public_file": "deepseek-100/results/B049/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B050/terminal.json",
+      "original_sha256": "d982f63ebed0fdbf9a49255c4ab04fab6cb61991b45e9f5e8297f009476d0862",
+      "public_file": "deepseek-100/results/B050/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B051/terminal.json",
+      "original_sha256": "a00fecb5e27189d8e46ba0c5f1d99aeda774985c580409ab3c0592dfc1c6dc4e",
+      "public_file": "deepseek-100/results/B051/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B052/terminal.json",
+      "original_sha256": "9c17d05579cb8db1784ba8811f1bb185f003736ea54c87719e5bb75f2e0f3c81",
+      "public_file": "deepseek-100/results/B052/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B053/terminal.json",
+      "original_sha256": "f2266bfa2fdc8b6eee1a18bd0e610d3640f5628dd1f8558134f2a74972e0e93a",
+      "public_file": "deepseek-100/results/B053/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B054/terminal.json",
+      "original_sha256": "0b715c47564ed068e09e581dfff0d27facb376c30f0f53e080b42382506db74f",
+      "public_file": "deepseek-100/results/B054/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B055/terminal.json",
+      "original_sha256": "c9445f4eab8161ba0fc5645b9abe265931b60cdd1440dc23ecd7743b06b06fbd",
+      "public_file": "deepseek-100/results/B055/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B056/terminal.json",
+      "original_sha256": "05db7442fabe679a386c7a8b26f62e5afd7c9070d099854da28804002797df79",
+      "public_file": "deepseek-100/results/B056/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B057/terminal.json",
+      "original_sha256": "8780249c9132b47e2d072d3c39bc74876234c2980d8cac4e819a193f8e1593e1",
+      "public_file": "deepseek-100/results/B057/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B058/terminal.json",
+      "original_sha256": "392e9a4bd03c04b3c763a2869d6167eefe2356cd7f5c3f5ac957ae361ba00942",
+      "public_file": "deepseek-100/results/B058/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B059/terminal.json",
+      "original_sha256": "bf069872c88f084484ec69a1a023b79b57ed6be46cbcf2de07a873621d24e0be",
+      "public_file": "deepseek-100/results/B059/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B060/terminal.json",
+      "original_sha256": "0979576b35b3d0f70dbbf209dbd9e911ff38e85ef1494bb053bdd029f286e5d5",
+      "public_file": "deepseek-100/results/B060/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B061/terminal.json",
+      "original_sha256": "171ec11ddb4dff56d4336fdfb93fd6f0e935eee1437f21e27622a72d5d2a0e92",
+      "public_file": "deepseek-100/results/B061/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B062/terminal.json",
+      "original_sha256": "d81ef3f5fcbc5b02361b1d629446775935930612123983bbe699b04c04fe5521",
+      "public_file": "deepseek-100/results/B062/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B063/terminal.json",
+      "original_sha256": "eb9a6a15787de16a92cf6d009a2d4fcb336170904a26f9e84fe980fb0c24593f",
+      "public_file": "deepseek-100/results/B063/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B064/terminal.json",
+      "original_sha256": "7f03875caa68ac237ef21c50b9c01606da599ed9f0b88e9b04d04676c32ee626",
+      "public_file": "deepseek-100/results/B064/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B065/terminal.json",
+      "original_sha256": "29943c74f46c22eff22dc0118d15adfdd9c895e4f45ee98a57e8aa7cacc5f1e0",
+      "public_file": "deepseek-100/results/B065/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B066/terminal.json",
+      "original_sha256": "6098c37f8c91d4ac8cc54688a6c70f8dde3fe23e862eff16ac538c481c5f2cd5",
+      "public_file": "deepseek-100/results/B066/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B067/terminal.json",
+      "original_sha256": "d7644368f87629a221f338ed78a2ab4ed8a39b4059627003a5d885c7c2544bf9",
+      "public_file": "deepseek-100/results/B067/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B068/terminal.json",
+      "original_sha256": "38c1e8fbc98f9df21b0feb5df590e82d9e1adf0c8d55b401444b97a0400ed698",
+      "public_file": "deepseek-100/results/B068/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B069/terminal.json",
+      "original_sha256": "df0146198c0d3c14d53c007eee7c4be51beed95e95331d9a7436308fb4eb25bc",
+      "public_file": "deepseek-100/results/B069/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B070/terminal.json",
+      "original_sha256": "e65709cf441bd6ee548448c82cbdaac82f7cc450534afa2f9cff4d637eb17cd0",
+      "public_file": "deepseek-100/results/B070/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B071/terminal.json",
+      "original_sha256": "88833abc50db013c73bad315a4cfae71d4990d0bff01342f9e83f456e082bb69",
+      "public_file": "deepseek-100/results/B071/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B072/terminal.json",
+      "original_sha256": "4462a8dd4a793147b17a125bb0b2e15dfba677457ab1baab89e03e86e3d111d1",
+      "public_file": "deepseek-100/results/B072/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B073/terminal.json",
+      "original_sha256": "2f6155d0bc53d12d9daad23433f5b3fc6dd2e846410339d433f45424dc83227b",
+      "public_file": "deepseek-100/results/B073/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B074/terminal.json",
+      "original_sha256": "068409b2ead9dd057dd24920bca2bc71d4920881c0e02e99102000a4e6352a96",
+      "public_file": "deepseek-100/results/B074/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B075/terminal.json",
+      "original_sha256": "5be54f94b18ce0a54dab0fe363d32426a2f8df08aad4f84bd4c36eb2181a2e9b",
+      "public_file": "deepseek-100/results/B075/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B076/terminal.json",
+      "original_sha256": "b5d4ae4617e11ed7d183bcc19445509a8b410575a48f8564a56439fb8c978f58",
+      "public_file": "deepseek-100/results/B076/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B077/terminal.json",
+      "original_sha256": "e9e188db18034e55182a948e93156b550c23f3b8b1b73cbb9157330e400734cf",
+      "public_file": "deepseek-100/results/B077/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B078/terminal.json",
+      "original_sha256": "07d781fc36b749bf9b9934e74f9693a2b09d9f45cf30ee85323c318c5af445f5",
+      "public_file": "deepseek-100/results/B078/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B079/terminal.json",
+      "original_sha256": "f64e59ffb123dd1c2ef73238508c0af41708f09dbff9c8b9339b90327546ed7d",
+      "public_file": "deepseek-100/results/B079/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B080/terminal.json",
+      "original_sha256": "fe49d3fdbfc4be164adfc9bf710c1f4cdac513e8bc9982139e47d7ee9c61b0d5",
+      "public_file": "deepseek-100/results/B080/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B081/terminal.json",
+      "original_sha256": "78eb06de35fd293559ecb539ef14ab066f3fcaa481b4508dad492e45126a6941",
+      "public_file": "deepseek-100/results/B081/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B082/terminal.json",
+      "original_sha256": "583f1c8c8a44ae982423d1de77700c55cdadafa092e1224834809576de0dc168",
+      "public_file": "deepseek-100/results/B082/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B083/terminal.json",
+      "original_sha256": "6acb9ffdfe83228de81d9c8f977a2e5817260a890b98113eebe24d5759973b3f",
+      "public_file": "deepseek-100/results/B083/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B084/terminal.json",
+      "original_sha256": "0d321c9c432960748ffece9f4eb091d50a782d8f1e2eb1d7fc071505aaa258f6",
+      "public_file": "deepseek-100/results/B084/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B085/terminal.json",
+      "original_sha256": "00950344e6fdc9792e339dda8c89bd9a448a68997c6db4a8c0beda8e69e119c8",
+      "public_file": "deepseek-100/results/B085/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B086/terminal.json",
+      "original_sha256": "b44babf86978ac2818c0c5f16fc4b55708fa955ecba8e13cf813095d19d6dd4a",
+      "public_file": "deepseek-100/results/B086/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B087/terminal.json",
+      "original_sha256": "a8b875553af033c25ce6e9ab4de66ad5519716b840c5e8e4466fac17d676fe7e",
+      "public_file": "deepseek-100/results/B087/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B088/terminal.json",
+      "original_sha256": "6d3b66c2f8e59a58af2ce3fe6fd0b328550d30468e92f3692e3ee784a38e88c8",
+      "public_file": "deepseek-100/results/B088/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B089/terminal.json",
+      "original_sha256": "ce341596564c1334ae859950eed20b1c24cc88c1a4ae835bfa3de2edd9e0ed5c",
+      "public_file": "deepseek-100/results/B089/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B090/terminal.json",
+      "original_sha256": "94c92ff211b5a46efc7f829c9fb3e056238e8dc139856349eb82624d36bf16ff",
+      "public_file": "deepseek-100/results/B090/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B091/terminal.json",
+      "original_sha256": "e31b2c36d7d6694df1ea685e24f062f3195274d04faac23309de04434625e34c",
+      "public_file": "deepseek-100/results/B091/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B092/terminal.json",
+      "original_sha256": "d3213f0c6904f580f124d9a702d914b8b1c90ac46ec03781d9825a378bbbcd7f",
+      "public_file": "deepseek-100/results/B092/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B093/terminal.json",
+      "original_sha256": "b49cc79baaf9700b526d1cc7284d5768b7b1399c407050910b9722b73a711edc",
+      "public_file": "deepseek-100/results/B093/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B094/terminal.json",
+      "original_sha256": "5eaba692d40b176703523f589bd01c3a1ef7077dca3aa521f3755588f6ab7623",
+      "public_file": "deepseek-100/results/B094/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B095/terminal.json",
+      "original_sha256": "31adbd86694e9a17998a7d9c87e0c2fc42f07c9a4a2539e76852ed7eebe0db60",
+      "public_file": "deepseek-100/results/B095/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B096/terminal.json",
+      "original_sha256": "25aa9e68e30a140dab5e3b9fb798d69042313c5e9a9711a1e46e26f307d34141",
+      "public_file": "deepseek-100/results/B096/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B097/terminal.json",
+      "original_sha256": "c89ccf8c89ea24756e57fc52675d56443d2f51d54ffacc8c62fb3ab49364e1ff",
+      "public_file": "deepseek-100/results/B097/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B098/terminal.json",
+      "original_sha256": "5f034d4173d8f97a01b1d4838c7db393c5baf618d7bd9e2c663a1cd2ddf4ece0",
+      "public_file": "deepseek-100/results/B098/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B099/terminal.json",
+      "original_sha256": "921ecaed89590cb16a4f0ce9e213cd496854e663849973109d915c61f16c2148",
+      "public_file": "deepseek-100/results/B099/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/results/B100/terminal.json",
+      "original_sha256": "17c6b78ff800751181ded193a98fa074053c97e0eb685e7f367c830346d3d93d",
+      "public_file": "deepseek-100/results/B100/terminal.json",
+      "transformation": "Whitelist terminal decision, validation, revision and failure fields; omit worker/provider metadata."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B002-proposer-r1-a1/tool-trace.jsonl",
+      "original_sha256": "fed29fcafb19ad1d2cf019eb9bb5c9d232d9177c432e738ac6eb797be442bdf7",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B002-proposer-r1-a2/tool-trace.jsonl",
+      "original_sha256": "b124d02c69d51f19d54c311db81de4fe99717997c2a0e37922be39722a1db1cf",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B002-reviewer-r1-a1/tool-trace.jsonl",
+      "original_sha256": "50a0a53083ee8caec5670d826cc00843680518d3f95754c5dbf9f85eae922b21",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B003-proposer-r1-a1/tool-trace.jsonl",
+      "original_sha256": "77593cba8901443aa84f2a42dc8d8f746d7c3bc96537bf4409a95e6e9c31146b",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B003-reviewer-r1-a1/tool-trace.jsonl",
+      "original_sha256": "8d07857b8a97992cce50b0aacd9ec0ff8576e04cabddc43611a0047d55cc0a06",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B005-proposer-r1-a1/tool-trace.jsonl",
+      "original_sha256": "e7b7786f0b29e1e3c641f6b3101873e9abbd7dd4710cdf5318e0693e81db6b5d",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B009-proposer-r1-a1/tool-trace.jsonl",
+      "original_sha256": "0a9491672a60415a8fbcd4e83de66fb3fab5822909a46a038f260db33ae7fe15",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B009-reviewer-r1-a1/tool-trace.jsonl",
+      "original_sha256": "af15c6c552871986a6e2ef790d39a9d0707622d0ff1f4eb6550c75a6922432f4",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B011-proposer-r1-a1/tool-trace.jsonl",
+      "original_sha256": "59484cfed19739a037a5c482d02304c6f6c263f2e5fc70e4df923ce24ad06128",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B011-proposer-r1-a2/tool-trace.jsonl",
+      "original_sha256": "4cd678a9393935f2fcf50e03067eb0c007169dec4957d46a43e7015fc19a03e2",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B011-reviewer-r1-a1/tool-trace.jsonl",
+      "original_sha256": "78d1fdb3a4243652850b6ec9c02b585a1a0a3d901d6a0cd66d34e1f8a73135db",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B020-proposer-r1-a1/tool-trace.jsonl",
+      "original_sha256": "e0455c32ab64a818a01c0f5c79d29c3d410f80381e0e9c3aa1337ba513b4af7a",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B020-reviewer-r1-a1/tool-trace.jsonl",
+      "original_sha256": "34c2b786b0fa5bf6e4b77bf5320848fd0d57b1f491dce34d01ac0f5824d0c9ac",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B039-proposer-r1-a1/tool-trace.jsonl",
+      "original_sha256": "9e4044ff7e090741a34e85076f99b76cd93064627086f4a72f1e88703c4c9e3f",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B039-reviewer-r1-a1/tool-trace.jsonl",
+      "original_sha256": "64a68a220b1b14d138d5426b1518337ab200ac966e8830e40977280b5836601c",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B052-proposer-r1-a1/tool-trace.jsonl",
+      "original_sha256": "d20daf20dd00b99b44922c840304722c516a3e2bb560d8c6220f30669baf2bd9",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B052-reviewer-r1-a1/tool-trace.jsonl",
+      "original_sha256": "baa08656b6273b2576b840f0116e75ae61f49ba6976a333f55dbd1312d282899",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B059-proposer-r1-a1/tool-trace.jsonl",
+      "original_sha256": "96f2db1b5725e8be37c6224ddcf98feff188f0e48596e58fdfbf77a895ba422b",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B059-proposer-r1-a2/tool-trace.jsonl",
+      "original_sha256": "494b409f4adbd360b780bc2dbc61d958d33da3a8affc18f8ef78d724971eba8f",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B090-proposer-r1-a1/tool-trace.jsonl",
+      "original_sha256": "b41053b9946c460cad150dd2c69ec7be1deb4e479d827bb05c09adf1be93eade",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B093-proposer-r1-a1/tool-trace.jsonl",
+      "original_sha256": "76af44500f1f407bd0dab4d456abfae24cb5def79b0ed50315e01319d1e19ecb",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/C-B100-proposer-r1-a1/tool-trace.jsonl",
+      "original_sha256": "15c35a62a30f9d569de61489bf28b10ec39aeb5ef393ee12fec5cb46d53c9d34",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/R-B002-reviewer-r1-a1/tool-trace.jsonl",
+      "original_sha256": "a399a58e8cf12b518a6ce386206f54d013cdaeeecd47954b12d562d843926519",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/R-B009-reviewer-r1-a1/tool-trace.jsonl",
+      "original_sha256": "a8f08cccd9953f253e65aad2c7690f5a6266a9a58db3ac3f2d20d04483c08707",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/R-B011-reviewer-r1-a1/tool-trace.jsonl",
+      "original_sha256": "fe96985d277348fc5466f50d28c8f3c3dae2421b56ddf93348c58841c83ac85c",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/R-B020-reviewer-r1-a1/tool-trace.jsonl",
+      "original_sha256": "0171285f555f9694a0f6aeb724c61ea10c7ce530abd8e1512c4103c25f18b119",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/R-B039-reviewer-r1-a1/tool-trace.jsonl",
+      "original_sha256": "bd3eec05c891455263bf0e0d75ccc6d00478d9a83b5f6673787f38b16f5058e3",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/R-B052-reviewer-r1-a1/tool-trace.jsonl",
+      "original_sha256": "fe3aa1a6d317e6e0df3b560472010fe8aa09fc07053db7edfa7c6f95db9030ba",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/R-B059-reviewer-r1-a1/tool-trace.jsonl",
+      "original_sha256": "9404fce3c3014626621500b51e4e890e3844c8f4807352386b7b5185d6337c6f",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/jobs/R-B090-reviewer-r1-a1/tool-trace.jsonl",
+      "original_sha256": "6ee1305d5830b116d370536e8c1684ca21ea94c0a0419c0a8ce0292a0c15efe4",
+      "public_file": "codex-low/evidence-calls.json",
+      "transformation": "Aggregate complete evidence action/result projections; omit internal task identifiers and paths."
+    },
+    {
+      "source": "Codex轻度思考维护实测_20261023/Codex轻度思考维护实测报告.html",
+      "original_sha256": "8d99cd3a2139bd093b0567872a17b641a90de74a66e82b2c584574d6df786c9c",
+      "public_file": "codex-low/report.html",
+      "transformation": "Public notice; remove account quota; rewrite unavailable evidence links."
+    },
+    {
+      "source": "百份知识维护影子实验_20261023/百份知识维护实验报告.html",
+      "original_sha256": "30c47c829766fa7a1bde6f5be5205d5147e3d5049750dcae4063a2017b35b877",
+      "public_file": "deepseek-100/report.html",
+      "transformation": "Public notice; remove account quota; rewrite unavailable evidence links."
+    }
+  ],
+  "public_text_newlines": "LF; JSON string escapes preserve extracted source newlines"
+}

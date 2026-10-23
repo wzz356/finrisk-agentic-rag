@@ -1,0 +1,33 @@
+{
+  "eligible": 8,
+  "skipped": [
+    {
+      "id": "B093",
+      "reason": "no mechanically valid original revision1 add changeset; no reviewer result fabricated"
+    },
+    {
+      "id": "B100",
+      "reason": "no mechanically valid original revision1 add changeset; no reviewer result fabricated"
+    },
+    {
+      "id": "B003",
+      "reason": "no mechanically valid original revision1 add changeset; no reviewer result fabricated"
+    },
+    {
+      "id": "B005",
+      "reason": "no mechanically valid original revision1 add changeset; no reviewer result fabricated"
+    }
+  ],
+  "decisions": {
+    "request_changes": 5,
+    "approve": 3
+  },
+  "profile": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "execution": "codex-native",
+    "production_admission": false
+  },
+  "gold_blind": true,
+  "not_generalization_test": true
+}

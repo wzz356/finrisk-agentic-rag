@@ -1,0 +1,260 @@
+{
+  "decision": "approve",
+  "claim_checks": [
+    {
+      "claim_id": "claim:codex12-B011:case:subject",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B011:L0001:339151b595131ad2:339151b595131ad2",
+          "quote": "当事人: 山东汇联保险经纪有限公司"
+        }
+      ],
+      "comment": "原文明确支持该事实、类型及引文。"
+    },
+    {
+      "claim_id": "claim:codex12-B011:case:document_number",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B011:L0003:339151b595131ad2:339151b595131ad2",
+          "quote": "潍金罚决字〔2026〕15号"
+        }
+      ],
+      "comment": "原文明确支持该事实、类型及引文。"
+    },
+    {
+      "claim_id": "claim:codex12-B011:case:decision_date",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B011:L0011:339151b595131ad2:339151b595131ad2",
+          "quote": "2026年8月21日"
+        }
+      ],
+      "comment": "原文明确支持该事实、类型及引文。"
+    },
+    {
+      "claim_id": "claim:codex12-B011:case:authority",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B011:L0009:339151b595131ad2:339151b595131ad2",
+          "quote": "国家金融监督管理总局潍坊监管分局"
+        }
+      ],
+      "comment": "原文明确支持该事实、类型及引文。"
+    },
+    {
+      "claim_id": "claim:codex12-B011:case:position",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B011:L0001:339151b595131ad2:339151b595131ad2",
+          "quote": "当事人: 山东汇联保险经纪有限公司"
+        }
+      ],
+      "comment": "已读完整原文，未载相应职务、法律依据或实施细节；保留未知及不确定性有支持。"
+    },
+    {
+      "claim_id": "claim:codex12-B011:case:legal_basis",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B011:L0005:339151b595131ad2:339151b595131ad2",
+          "quote": "与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告"
+        }
+      ],
+      "comment": "已读完整原文，未载相应职务、法律依据或实施细节；保留未知及不确定性有支持。"
+    },
+    {
+      "claim_id": "claim:codex12-B011:case:penalties",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B011:L0007:339151b595131ad2:339151b595131ad2",
+          "quote": "通报批评，警告，罚款3.5万元"
+        }
+      ],
+      "comment": "原文明确支持该事实、类型及引文。"
+    },
+    {
+      "claim_id": "claim:codex12-B011:case:unknowns",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B011:L0005:339151b595131ad2:339151b595131ad2",
+          "quote": "与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告"
+        }
+      ],
+      "comment": "已读完整原文，未载相应职务、法律依据或实施细节；保留未知及不确定性有支持。"
+    },
+    {
+      "claim_id": "claim:codex12-B011:behaviors:0:actor",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B011:L0001:339151b595131ad2:339151b595131ad2",
+          "quote": "当事人: 山东汇联保险经纪有限公司"
+        }
+      ],
+      "comment": "机构当事人与案由结合支持机构行为归属，未推定个人实施。"
+    },
+    {
+      "claim_id": "claim:codex12-B011:behaviors:0:role",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B011:L0001:339151b595131ad2:339151b595131ad2",
+          "quote": "当事人: 山东汇联保险经纪有限公司"
+        }
+      ],
+      "comment": "机构当事人与案由结合支持机构行为归属，未推定个人实施。"
+    },
+    {
+      "claim_id": "claim:codex12-B011:behaviors:0:action",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B011:L0005:339151b595131ad2:339151b595131ad2",
+          "quote": "与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告"
+        }
+      ],
+      "comment": "原文明确支持该事实、类型及引文。"
+    },
+    {
+      "claim_id": "claim:codex12-B011:behaviors:0:risk_tags",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B011:L0005:339151b595131ad2:339151b595131ad2",
+          "quote": "与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告"
+        }
+      ],
+      "comment": "逐项核对完整字典：该行为无对应专类，其他标签适用；未推定委托销售、客户信息虚假或隐瞒合同信息。"
+    },
+    {
+      "claim_id": "claim:codex12-B011:behaviors:0:unknowns",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B011:L0005:339151b595131ad2:339151b595131ad2",
+          "quote": "与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告"
+        }
+      ],
+      "comment": "已读完整原文，未载相应职务、法律依据或实施细节；保留未知及不确定性有支持。"
+    },
+    {
+      "claim_id": "claim:codex12-B011:behaviors:1:actor",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B011:L0001:339151b595131ad2:339151b595131ad2",
+          "quote": "当事人: 山东汇联保险经纪有限公司"
+        }
+      ],
+      "comment": "机构当事人与案由结合支持机构行为归属，未推定个人实施。"
+    },
+    {
+      "claim_id": "claim:codex12-B011:behaviors:1:role",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B011:L0001:339151b595131ad2:339151b595131ad2",
+          "quote": "当事人: 山东汇联保险经纪有限公司"
+        }
+      ],
+      "comment": "机构当事人与案由结合支持机构行为归属，未推定个人实施。"
+    },
+    {
+      "claim_id": "claim:codex12-B011:behaviors:1:action",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B011:L0005:339151b595131ad2:339151b595131ad2",
+          "quote": "与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告"
+        }
+      ],
+      "comment": "原文明确支持该事实、类型及引文。"
+    },
+    {
+      "claim_id": "claim:codex12-B011:behaviors:1:risk_tags",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B011:L0005:339151b595131ad2:339151b595131ad2",
+          "quote": "与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告"
+        }
+      ],
+      "comment": "逐项核对完整字典：该行为无对应专类，其他标签适用；未推定委托销售、客户信息虚假或隐瞒合同信息。"
+    },
+    {
+      "claim_id": "claim:codex12-B011:behaviors:1:unknowns",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B011:L0005:339151b595131ad2:339151b595131ad2",
+          "quote": "与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告"
+        }
+      ],
+      "comment": "已读完整原文，未载相应职务、法律依据或实施细节；保留未知及不确定性有支持。"
+    },
+    {
+      "claim_id": "claim:codex12-B011:behaviors:2:actor",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B011:L0001:339151b595131ad2:339151b595131ad2",
+          "quote": "当事人: 山东汇联保险经纪有限公司"
+        }
+      ],
+      "comment": "机构当事人与案由结合支持机构行为归属，未推定个人实施。"
+    },
+    {
+      "claim_id": "claim:codex12-B011:behaviors:2:role",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B011:L0001:339151b595131ad2:339151b595131ad2",
+          "quote": "当事人: 山东汇联保险经纪有限公司"
+        }
+      ],
+      "comment": "机构当事人与案由结合支持机构行为归属，未推定个人实施。"
+    },
+    {
+      "claim_id": "claim:codex12-B011:behaviors:2:action",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B011:L0005:339151b595131ad2:339151b595131ad2",
+          "quote": "与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告"
+        }
+      ],
+      "comment": "原文明确支持该事实、类型及引文。"
+    },
+    {
+      "claim_id": "claim:codex12-B011:behaviors:2:risk_tags",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B011:L0005:339151b595131ad2:339151b595131ad2",
+          "quote": "与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告"
+        }
+      ],
+      "comment": "逐项核对完整字典：该行为无对应专类，其他标签适用；未推定委托销售、客户信息虚假或隐瞒合同信息。"
+    },
+    {
+      "claim_id": "claim:codex12-B011:behaviors:2:unknowns",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B011:L0005:339151b595131ad2:339151b595131ad2",
+          "quote": "与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告"
+        }
+      ],
+      "comment": "已读完整原文，未载相应职务、法律依据或实施细节；保留未知及不确定性有支持。"
+    }
+  ],
+  "omission_check_completed": true,
+  "issues": []
+}

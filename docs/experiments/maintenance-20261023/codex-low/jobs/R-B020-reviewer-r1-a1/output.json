@@ -1,0 +1,150 @@
+{
+  "claim_checks": [
+    {
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B020:L0001:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "quote": "当事人: 阳光人寿保险股份有限公司天津分公司"
+        }
+      ],
+      "claim_id": "claim:batch100-B020:case:subject",
+      "comment": "当事人名称与原文一致。"
+    },
+    {
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B020:L0011:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "quote": "国家金融监督管理总局天津监管局行政处罚信息公开表"
+        }
+      ],
+      "claim_id": "claim:batch100-B020:case:document_number",
+      "comment": "完整原文未载文号，保留null及不确定性恰当。"
+    },
+    {
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B020:L0009:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "quote": "2026年7月1日"
+        }
+      ],
+      "claim_id": "claim:batch100-B020:case:decision_date",
+      "comment": "处罚日期与原文一致。"
+    },
+    {
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B020:L0007:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "quote": "国家金融监督管理总局天津监管局"
+        }
+      ],
+      "claim_id": "claim:batch100-B020:case:authority",
+      "comment": "处罚机关与原文一致。"
+    },
+    {
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B020:L0005:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "quote": "对叶小义警告并处罚款7万元。"
+        }
+      ],
+      "claim_id": "claim:batch100-B020:case:position",
+      "comment": "原文仅列个人处罚，未列职务或所属机构，保留未知。"
+    },
+    {
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B020:L0003:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "quote": "编制或者提供虚假的报告、报表、文件、资料"
+        }
+      ],
+      "claim_id": "claim:batch100-B020:case:legal_basis",
+      "comment": "完整原文未载法律依据，未补造。"
+    },
+    {
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B020:L0005:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "quote": "对阳光人寿保险股份有限公司天津分公司罚款40万元。对叶小义警告并处罚款7万元。"
+        }
+      ],
+      "claim_id": "claim:batch100-B020:case:penalties",
+      "comment": "机构罚款40万元、个人警告及罚款7万元均完整保留。"
+    },
+    {
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B020:L0011:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "quote": "国家金融监督管理总局天津监管局行政处罚信息公开表"
+        }
+      ],
+      "claim_id": "claim:batch100-B020:case:unknowns",
+      "comment": "已核对全文，所列缺失字段确未出现。"
+    },
+    {
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B020:L0001:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "quote": "当事人: 阳光人寿保险股份有限公司天津分公司"
+        }
+      ],
+      "claim_id": "claim:batch100-B020:behaviors:0:actor",
+      "comment": "当事人栏目结合案由支持机构行为归属，未推定个人亲自实施。"
+    },
+    {
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B020:L0001:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "quote": "当事人: 阳光人寿保险股份有限公司天津分公司"
+        }
+      ],
+      "claim_id": "claim:batch100-B020:behaviors:0:role",
+      "comment": "分公司为机构，角色正确。"
+    },
+    {
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B020:L0003:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "quote": "编制或者提供虚假的报告、报表、文件、资料"
+        }
+      ],
+      "claim_id": "claim:batch100-B020:behaviors:0:action",
+      "comment": "保留原文单项案由，未扩充具体实施细节。"
+    },
+    {
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B020:L0003:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "quote": "编制或者提供虚假的报告、报表、文件、资料"
+        }
+      ],
+      "claim_id": "claim:batch100-B020:behaviors:0:risk_tags",
+      "comment": "按完整字典定义，案由无其他具体标签必要要件，其他标签适当。"
+    },
+    {
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B020:L0003:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "quote": "编制或者提供虚假的报告、报表、文件、资料"
+        }
+      ],
+      "claim_id": "claim:batch100-B020:behaviors:0:unknowns",
+      "comment": "全文未提供虚假资料内容或期间，未知说明恰当。"
+    }
+  ],
+  "decision": "approve",
+  "omission_check_completed": true,
+  "issues": []
+}

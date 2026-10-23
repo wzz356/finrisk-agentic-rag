@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "action": "add",
+  "reason": "完整原文支持独立处罚记录；以孙中娇及完整文号分别检索均零命中，检索不证明绝对不存在。提出影子新增，区分受罚个人与实施者，三项行为分别记录。",
+  "production_admission": false,
+  "tool_calls": 3,
+  "output_sha256": "d168ecec4119289882bbaf4a07268474c58be3a5b34c0a968830f8caade50019"
+}

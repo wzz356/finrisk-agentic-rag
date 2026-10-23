@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "action": "add",
+  "reason": "完整原文明确列出本机构本次处罚及三项独立行为。按主体检索冻结旧库零命中，但零命中不证明不存在；现有证据未发现同一决定，提出新增影子提案。第二、三项行为不满足具体业务标签定义，保留零标签。",
+  "production_admission": false,
+  "tool_calls": 2,
+  "output_sha256": "cc9bab18c338cbae6649adb8ea3054774a6a50a391a210d333f47d2fb6d40987"
+}

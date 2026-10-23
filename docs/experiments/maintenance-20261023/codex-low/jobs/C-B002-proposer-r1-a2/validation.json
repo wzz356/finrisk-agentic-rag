@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "action": "add",
+  "reason": "完整原文支持独立处罚事实；自行检索完整文号零命中，未发现重复但零命中不证明不存在。保留法律依据、实施主体及套取资金条件未知，提出新增。",
+  "production_admission": false,
+  "tool_calls": 2,
+  "output_sha256": "c20f2c755ae7c18ae2b896c071c568aa94d8272ddb0d4a0a15dd00521671f41b"
+}

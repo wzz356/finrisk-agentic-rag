@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "action": "add",
+  "reason": "完整原文支持一项机构违规及机构、个人处罚。按主体检索旧库零命中，但不据此断言不存在；未发现重复决定证据，提出新增影子事实，保留缺失字段与个人实施情况未知。",
+  "production_admission": false,
+  "tool_calls": 2,
+  "output_sha256": "3906ed79316b4fdbed65bbec975031315d4954b8ff55f0d6c730b2a9c0563496"
+}

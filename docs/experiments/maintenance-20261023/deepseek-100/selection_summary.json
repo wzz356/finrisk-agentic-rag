@@ -1,0 +1,74 @@
+{
+  "schema": "exploratory-batch-selection-summary/1",
+  "seed": 20261023,
+  "kind": "exploratory_batch_not_human_gold",
+  "selected": 100,
+  "actual_strata": {
+    "ordinary_institution": 44,
+    "individual": 30,
+    "multi_subject": 20,
+    "bank_insurance_boundary": 5,
+    "stage_or_missing": 1
+  },
+  "length_codepoints": {
+    "min": 146,
+    "median": 204.0,
+    "p90": 259,
+    "max": 708,
+    "total": 22416,
+    "over_8000": 0
+  },
+  "raw_sha_verified": 100,
+  "crlf_documents": 100,
+  "unique_urls": 100,
+  "unique_case_groups": 100,
+  "baseline_documents": 9640,
+  "baseline_snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+  "baseline_sources_sha256": "19b8a8d334a86f4459fb7ce255cda2f0fa8e2545d59778eacaf8a0e4978ec3b4",
+  "candidate_hit_document_counts": {
+    "url": 0,
+    "document_no": 5,
+    "party": 11
+  },
+  "any_candidate_hit": 13,
+  "no_exact_candidate_hit": 87,
+  "issue_counts": {
+    "DECISION_NUMBER_NOT_SEPARATELY_STATED": 42,
+    "LEGAL_BASIS_NOT_SEPARATELY_STATED": 92,
+    "COMBINED_PARTIES_NEED_ATTRIBUTION_REVIEW": 24,
+    "TEMPLATE_FIELDS_MISSING": 1,
+    "AGGREGATE_PENALTY_NO_PER_PERSON_SPLIT": 11
+  },
+  "exclusion_counts": {
+    "seen_or_reserved_digest": 22,
+    "seen_or_reserved_url": 109,
+    "seen_or_reserved_document_no": 20,
+    "no_insurance_signal": 407,
+    "excluded_related_group_rows": 109
+  },
+  "target_shortages": {
+    "stage_or_missing": 4,
+    "bank_insurance_boundary": 0,
+    "multi_subject": 0,
+    "individual": 0,
+    "ordinary_institution": 6
+  },
+  "adjustments": [
+    {
+      "to": "individual",
+      "count": 5,
+      "reason": "Insufficient unseen independent groups in target strata; no insurance-free filler."
+    },
+    {
+      "to": "multi_subject",
+      "count": 5,
+      "reason": "Insufficient unseen independent groups in target strata; no insurance-free filler."
+    }
+  ],
+  "pure_bank_controls": 0,
+  "api_calls": 0,
+  "production_modified": false,
+  "human_approved": false,
+  "scope_warning": "Stage, word-only, and bank-party documents remain review triage; no automatic punishment or update conclusion.",
+  "association_warning": "Exact candidate clues are not duplicate/update gold; zero hits do not prove absence. No fabricated correction/obsolete references."
+}

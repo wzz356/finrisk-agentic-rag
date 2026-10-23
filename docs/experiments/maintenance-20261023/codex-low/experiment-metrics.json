@@ -1,0 +1,94 @@
+{
+  "profile": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "execution": "codex-native",
+    "production_admission": false
+  },
+  "execution_route": "native Codex subagents, fresh context, explicit model/effort override",
+  "native_max_parallel_roles": 3,
+  "initial_parallel_roles": 2,
+  "full_pipeline_denominator": 12,
+  "full_pipeline_statuses": {
+    "experiment_protocol_approved_not_applied": 7,
+    "format_repair_exhausted": 1,
+    "proposed_no_change_unreviewed": 4
+  },
+  "review_only": {
+    "eligible": 8,
+    "skipped": [
+      {
+        "id": "B093",
+        "reason": "no mechanically valid original revision1 add changeset; no reviewer result fabricated"
+      },
+      {
+        "id": "B100",
+        "reason": "no mechanically valid original revision1 add changeset; no reviewer result fabricated"
+      },
+      {
+        "id": "B003",
+        "reason": "no mechanically valid original revision1 add changeset; no reviewer result fabricated"
+      },
+      {
+        "id": "B005",
+        "reason": "no mechanically valid original revision1 add changeset; no reviewer result fabricated"
+      }
+    ],
+    "decisions": {
+      "request_changes": 5,
+      "approve": 3
+    },
+    "profile": {
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "low",
+      "execution": "codex-native",
+      "production_admission": false
+    },
+    "gold_blind": true,
+    "not_generalization_test": true
+  },
+  "role_tasks": 30,
+  "evidence_tool_calls": 87,
+  "format_repair_tasks": 3,
+  "business_revisions": 0,
+  "per_role_token_usage": null,
+  "observation_window_minutes": 23.616282721360523,
+  "observation_timing_note": "host dispatch/completion observations; includes coordination, validation and queues; not pure inference latency",
+  "deepseek_calls_this_round": 0,
+  "production_modified": false,
+  "old_files_protected": 1343,
+  "shadow": {
+    "schema": "lexical-experiment-shadow/1",
+    "snapshot_id": "CodexPR-7b3054573cf1d46d99464ab9",
+    "source_count": 9647,
+    "assets": {
+      "sources": {
+        "path": "[local path omitted from public export]",
+        "sha256": "7b3054573cf1d46d99464ab94cfcdadd278ab77668627a48c8ec13b6c73c4904"
+      },
+      "dictionary": {
+        "path": "[local path omitted from public export]",
+        "sha256": "0588febf140ada823980fdbe0c5691d77bc02ed439cb8d44e6cfef1cda12d8bb"
+      }
+    },
+    "cards": {
+      "path": "[local path omitted from public export]",
+      "sha256": "74c133666231a95cbe284426a7f6f5881f085affa97847829db12d88769ce46e"
+    },
+    "base_snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+    "added_documents": 7,
+    "added_case_cards": 7,
+    "added_behavior_cards": 13,
+    "old_bytes_preserved": true,
+    "production_admission": false,
+    "human_approved": false,
+    "limitations": "Isolated exact lexical source search/read and grounded cards. No new dense/BGE or production Agent registry publication."
+  },
+  "limits": [
+    "Known-failure enriched 12-case diagnostic; not an unseen test or overall accuracy estimate.",
+    "Model and execution layer changed together; native agents can perform sequential searches/reads. Not a controlled model-only A/B.",
+    "no_change/hold retain the original unreviewed action route. No production receipt or real correction/deactivation.",
+    "Native task token/request metering is unavailable. Account quota changes include coordination and other shared usage.",
+    "CLI ChatGPT auth probe rejected exact requested model; it did not silently run another model. Actual tasks use native agent model override."
+  ]
+}

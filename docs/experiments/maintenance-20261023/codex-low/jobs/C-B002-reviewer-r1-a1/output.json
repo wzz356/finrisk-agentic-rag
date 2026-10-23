@@ -1,0 +1,154 @@
+{
+  "decision": "approve",
+  "claim_checks": [
+    {
+      "claim_id": "claim:codex12-B002:case:subject",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B002:L0001:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "当事人: 刘义键（时任中国太平洋财产保险股份有限公司德阳中心支公司农险部经理）"
+        }
+      ],
+      "comment": "value及fact类型与完整原文、所引文句一致，未扩张事实。"
+    },
+    {
+      "claim_id": "claim:codex12-B002:case:document_number",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B002:L0003:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "德金监罚决字〔2026〕11号"
+        }
+      ],
+      "comment": "value及fact类型与完整原文、所引文句一致，未扩张事实。"
+    },
+    {
+      "claim_id": "claim:codex12-B002:case:decision_date",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B002:L0011:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "2026年8月24日"
+        }
+      ],
+      "comment": "value及fact类型与完整原文、所引文句一致，未扩张事实。"
+    },
+    {
+      "claim_id": "claim:codex12-B002:case:authority",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B002:L0009:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "国家金融监督管理总局德阳监管分局"
+        }
+      ],
+      "comment": "value及fact类型与完整原文、所引文句一致，未扩张事实。"
+    },
+    {
+      "claim_id": "claim:codex12-B002:case:position",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B002:L0001:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "当事人: 刘义键（时任中国太平洋财产保险股份有限公司德阳中心支公司农险部经理）"
+        }
+      ],
+      "comment": "value及fact类型与完整原文、所引文句一致，未扩张事实。"
+    },
+    {
+      "claim_id": "claim:codex12-B002:case:legal_basis",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B002:L0005:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "编制虚假资料虚列费用"
+        }
+      ],
+      "comment": "完整公开表未载法律依据，null及不确定性成立。"
+    },
+    {
+      "claim_id": "claim:codex12-B002:case:penalties",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B002:L0007:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "警告并处罚款人民币1.5万元"
+        },
+        {
+          "segment_id": "B002:L0001:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "当事人: 刘义键（时任中国太平洋财产保险股份有限公司德阳中心支公司农险部经理）"
+        }
+      ],
+      "comment": "value及fact类型与完整原文、所引文句一致，未扩张事实。"
+    },
+    {
+      "claim_id": "claim:codex12-B002:case:unknowns",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B002:L0005:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "编制虚假资料虚列费用"
+        }
+      ],
+      "comment": "完整原文无法律条款，列为未知成立。"
+    },
+    {
+      "claim_id": "claim:codex12-B002:behaviors:0:actor",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B002:L0005:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "编制虚假资料虚列费用"
+        }
+      ],
+      "comment": "原文未明确实施主体，保留null且未由受罚个人推定实施人，成立。"
+    },
+    {
+      "claim_id": "claim:codex12-B002:behaviors:0:role",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B002:L0005:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "编制虚假资料虚列费用"
+        }
+      ],
+      "comment": "原文未披露个人实施及责任分工，unspecified与不确定性相符。"
+    },
+    {
+      "claim_id": "claim:codex12-B002:behaviors:0:action",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B002:L0005:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "编制虚假资料虚列费用"
+        }
+      ],
+      "comment": "value及fact类型与完整原文、所引文句一致，未扩张事实。"
+    },
+    {
+      "claim_id": "claim:codex12-B002:behaviors:0:risk_tags",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B002:L0005:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "编制虚假资料虚列费用"
+        }
+      ],
+      "comment": "已核对完整字典：套取资金条件未披露，其他销售、渠道、管理等要件亦无依据，允许空标签。"
+    },
+    {
+      "claim_id": "claim:codex12-B002:behaviors:0:unknowns",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B002:L0005:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "编制虚假资料虚列费用"
+        }
+      ],
+      "comment": "完整原文未披露所列字段，保留未知成立。"
+    }
+  ],
+  "omission_check_completed": true,
+  "issues": []
+}
