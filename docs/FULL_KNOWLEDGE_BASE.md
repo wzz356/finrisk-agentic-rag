@@ -1,5 +1,7 @@
 # 完整V2知识库交付（2026-10-19）
 
+本页保留旧版本说明；最新交付见[2026-10-24完整知识库](KNOWLEDGE_FULL_20261024.md)。
+
 代码与知识库统一从本仓库交付：[下载本版Release](https://github.com/wzz356/finrisk-agentic-rag/releases/tag/knowledge-v2-20261019)。大数据放Release附件，普通clone仍保持轻量。**无需Git LFS。**
 
 ## 版本与内容
@@ -35,7 +37,7 @@ Get-FileHash "downloads\finrisk-v2-runtime-20261019.zip" -Algorithm SHA256
 Get-FileHash "downloads\finrisk-v2-normalized-20261019.zip" -Algorithm SHA256
 ```
 
-将结果与本仓库`knowledge/release-manifest.json`中固定SHA256比较。只有要阅读知识卡时，下载结构化包即可；只有运行检索时，下载运行包即可。需要完整交付则下载两份。
+将结果与本仓库`knowledge/2026-10-19/release-manifest.json`中固定SHA256比较。只有要阅读知识卡时，下载结构化包即可；只有运行检索时，下载运行包即可。需要完整交付则下载两份。
 
 ```powershell
 Expand-Archive "downloads\finrisk-v2-runtime-20261019.zip" "runtime\knowledge-v2\assets"

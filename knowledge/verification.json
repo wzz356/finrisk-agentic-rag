@@ -1,31 +1,110 @@
 {
   "status": "passed",
-  "sources": 9640,
-  "units": 65478,
-  "normalized_counts": {
-    "documents": 9640,
-    "cases": 15621,
-    "behaviors": 25187,
-    "evidence": 114968,
-    "annotations": 182364,
-    "materials": 12081
-  },
-  "all_runtime_source_spans": "passed",
-  "all_normalized_evidence_spans": "passed",
-  "core_ids_and_checked_relations": "passed",
-  "dense_order_token_audit_model_fingerprint_vector_hash": "passed",
   "archives": [
     {
-      "file": "finrisk-v2-normalized-20261019.zip",
-      "members": 21,
+      "file": "finrisk-original_dataset-runtime-20261024.zip",
+      "sha256": "8bc0703c56953e261d45295c4b1dd06b74227466a8c922889b00e6fdd8281b73",
+      "members": 9,
       "crc_and_sha256": "passed"
     },
     {
-      "file": "finrisk-v2-runtime-20261019.zip",
+      "file": "finrisk-original_dataset-normalized-20261024.zip",
+      "sha256": "98d24c82142d768365c746a4002b61b5511bb9c1f281b4f91c63cf30a3383292",
+      "members": 22,
+      "crc_and_sha256": "passed"
+    },
+    {
+      "file": "finrisk-official_crawl-runtime-20261024.zip",
+      "sha256": "bb9a254b5e98968910f2dd5170adbc2e000e8672fa86e70ee465f60a71a92121",
       "members": 9,
+      "crc_and_sha256": "passed"
+    },
+    {
+      "file": "finrisk-official_crawl-normalized-20261024.zip",
+      "sha256": "72f85b49f8d9798457e8cb3e40e972558a30df50ce28f901a7003b1621909176",
+      "members": 22,
+      "crc_and_sha256": "passed"
+    },
+    {
+      "file": "finrisk-source-audit-20261024.zip",
+      "sha256": "821c0b5106afab294f6776c12f793c4e996819f7482b7cf9efb560dfb7c5f1a9",
+      "members": 1234,
+      "crc_and_sha256": "passed"
+    },
+    {
+      "file": "finrisk-regulations-reference-20261024.zip",
+      "sha256": "047028fc44c099917e9dbb7439c12c72bfeba1bdc36ccb813f51762a1e6b6261",
+      "members": 58,
       "crc_and_sha256": "passed"
     }
   ],
+  "partitions": {
+    "original_dataset": {
+      "sources": 10000,
+      "indexed_sources": 10000,
+      "units": 67594,
+      "normalized_counts": {
+        "source_inventory": 10000,
+        "documents": 10000,
+        "cases": 16173,
+        "behaviors": 25924,
+        "evidence": 119081,
+        "annotations": 187890,
+        "materials": 12081,
+        "reviews": 10000
+      },
+      "all_runtime_evidence_spans": "passed",
+      "all_normalized_evidence_spans": "passed",
+      "relocated_installation": "passed",
+      "real_local_bge_query": "passed",
+      "sample_file_id": "F010000",
+      "sample_rank": 10,
+      "sample_query": "金学思 松原 虚列费用"
+    },
+    "official_crawl": {
+      "sources": 850,
+      "indexed_sources": 849,
+      "units": 2889,
+      "normalized_counts": {
+        "source_inventory": 850,
+        "documents": 850,
+        "cases": 1895,
+        "behaviors": 2448,
+        "evidence": 10510,
+        "annotations": 18478,
+        "materials": 0,
+        "reviews": 850
+      },
+      "all_runtime_evidence_spans": "passed",
+      "all_normalized_evidence_spans": "passed",
+      "relocated_installation": "passed",
+      "real_local_bge_query": "passed",
+      "sample_file_id": "WEB-36ccbb86b692c8bdaad7d385c7837ae7",
+      "sample_rank": 2,
+      "sample_query": "中华联合财产保险股份有限公司丹东中心支公司"
+    }
+  },
   "model_requests_sent": 0,
-  "semantic_or_human_approval_claimed": false
+  "application_default_changed": false,
+  "human_approval_claimed": false,
+  "new_effect_metrics_computed": false,
+  "prior_release_coverage": {
+    "old_source_count": 9640,
+    "missing": [],
+    "old_web": [
+      {
+        "official_file_id": "WEB-226fafe8de3eb6c8deb08b5680d37228",
+        "text_sha256": "226fafe8de3eb6c8deb08b5680d372289aa08535005c91dc70f0ced02e8cc963",
+        "title": "国家金融监督管理总局长治监管分局行政处罚信息公开表（长金管罚决字〔2026〕18、19号）",
+        "source_id": "FRV2-SOURCE-WEB-226fafe8de3eb6c8deb08b5680d37228-f446df84a80ebe0d220442f3"
+      }
+    ],
+    "all_covered": true
+  },
+  "installer_regression_tests": {
+    "passed": 4,
+    "failed": 0,
+    "initial_environment_failure": "System TEMP ACL denied; passed unchanged tests with workspace TEMP/TMP"
+  },
+  "query_result_interpretation": "Operation/relocation checks only; queries differ from prior smoke queries, not an accuracy or ranking improvement experiment."
 }

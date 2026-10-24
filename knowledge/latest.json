@@ -1,0 +1,7 @@
+{
+  "release": "knowledge-full-20261024",
+  "release_url": "https://github.com/wzz356/finrisk-agentic-rag/releases/tag/knowledge-full-20261024",
+  "manifest": "release-manifest.json",
+  "documentation": "../docs/KNOWLEDGE_FULL_20261024.md",
+  "automatic_activation": false
+}
