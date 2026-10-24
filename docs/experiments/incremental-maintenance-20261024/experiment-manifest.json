@@ -1,0 +1,36 @@
+{
+  "schema": "codex-incremental100-experiment/1",
+  "profile": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "execution": "codex-native"
+  },
+  "native_max_parallel_roles": 3,
+  "new_material_count": 100,
+  "development": 20,
+  "formal": 80,
+  "controlled": 16,
+  "data_manifest_sha256": "e420ab2d8ffd541647fe99feb17a688e208809deeb7d2919e308e07f165bbea5",
+  "code_v1": {
+    "controls.py": "d3a0c72be6f262b9f7b26773189fbd97df1e6a9cbf53b47608bba982b9d4da00",
+    "data_core.py": "b95c44b09beebe7baac2ea48baae3c1adc32698c5465f81ee28d82c47a7e0d9a",
+    "evidence_tool.py": "18971573960094ee87c2d4cff668830eca45387a5ab52b83770a78e34c6f213b",
+    "freeze_inputs.py": "9f6b294499a993c810da8abff8fa503590c8a8f40e47e44050adb25b3a96a29a",
+    "prepare_jobs.py": "1840c14e11a4100142ad4a2b16b3656ed1fd3046656affa78dc57dd89668fca6",
+    "protocol_host.py": "9f01fac726e71cb7dfd099397396f348180ef11865f80725318c3fa5abb3f9a3",
+    "select_samples.py": "5c5036dc04d9b916b8d6392ab0d6ef7eb30873d8edba407930e1e1eb2044a4fa",
+    "shadow_store.py": "e65c14c2974656472d1b09d71654713b2b97d173e0fb1ea23c5f87960e5ffddd"
+  },
+  "query_sha256": "fea91f7b0259498a963963849dd5c93e38ebbbdffcbc093b6bad91acad388692",
+  "human_audit_sha256": "f324ee052f209d316578aa1786f3efdc68ef42c985273057d97aa9d6f74afc84",
+  "production_admission": false,
+  "provider_token_billing": null,
+  "deepseek_requests": 0,
+  "development_gate": {
+    "min_valid_dual_role": 18,
+    "denominator": 20,
+    "zero_destructive_mutation": true
+  },
+  "formal_evaluation_started": false,
+  "human_reference_status": "pending"
+}

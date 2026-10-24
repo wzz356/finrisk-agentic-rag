@@ -1,0 +1,142 @@
+{
+  "decision": "approve",
+  "schema": "codex-incremental-review/1",
+  "issues": [],
+  "checks": [
+    {
+      "reason": "原文为保险公司时任经理的行政处罚信息公示，载有确定处罚内容，属于保险处罚审查范围，新增处理有依据。",
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0001",
+          "quote": "当事人: 欧阳钰涵（时任阳光财产保险股份有限公司鄢陵支公司经理）",
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0007",
+          "quote": "警告并罚款人民币1.2万元",
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0"
+        }
+      ],
+      "status": "supported",
+      "check": "scope"
+    },
+    {
+      "reason": "当事人为欧阳钰涵，文号许金罚决字〔2026〕11号，机关许昌金融监管分局，决定日期2026年7月10日；提案各身份字段与原文一致。",
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0001",
+          "quote": "当事人: 欧阳钰涵（时任阳光财产保险股份有限公司鄢陵支公司经理）",
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0003",
+          "quote": "许金罚决字〔2026〕11号",
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0009",
+          "quote": "许昌金融监管分局",
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0011",
+          "quote": "2026年7月10日",
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0"
+        }
+      ],
+      "status": "supported",
+      "check": "identity"
+    },
+    {
+      "reason": "唯一案由是未经核准变更机构营业场所，处罚为警告并罚款人民币1.2万元；提案未添加资金去向或其他违法行为。",
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0005",
+          "quote": "未经核准变更机构营业场所",
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0007",
+          "quote": "警告并罚款人民币1.2万元",
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0"
+        }
+      ],
+      "status": "supported",
+      "check": "facts"
+    },
+    {
+      "reason": "经理身份及个人受罚均有明文，但原文未说明实际实施变更人员。行为actor置null并在unknowns列actor，未把欧阳钰涵受罚推成亲自实施，处理恰当。",
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0001",
+          "quote": "当事人: 欧阳钰涵（时任阳光财产保险股份有限公司鄢陵支公司经理）",
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0005",
+          "quote": "未经核准变更机构营业场所",
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0"
+        }
+      ],
+      "status": "supported",
+      "check": "actors"
+    },
+    {
+      "reason": "营业场所未经核准变更没有对应具体官方标签，原文也未提供销售、返佣、财务套取等标签必要事实；允许零标签，提案保留空数组有依据。",
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0005",
+          "quote": "未经核准变更机构营业场所",
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0"
+        }
+      ],
+      "status": "supported",
+      "check": "tags"
+    },
+    {
+      "reason": "全文仅载一个案由及一项警告并罚款处罚，一案一行为已覆盖。未披露具体实施经过及时间，提案保留未知而未虚构，无可识别遗漏。",
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0005",
+          "quote": "未经核准变更机构营业场所",
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0007",
+          "quote": "警告并罚款人民币1.2万元",
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0"
+        }
+      ],
+      "status": "supported",
+      "check": "completeness"
+    },
+    {
+      "reason": "已独立按完整文号、姓名检索均未命中，按鄢陵检索并全文阅读两份2012年中华联合旧文，涉及张继业及机构的虚假材料、虚列工资，与本案阳光财险欧阳钰涵场所变更不构成重复或更正。有限检索不证明全库无重复；提案未声称全库排重，未改旧卡或建立关系合理。",
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0001",
+          "quote": "当事人: 欧阳钰涵（时任阳光财产保险股份有限公司鄢陵支公司经理）",
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0005",
+          "quote": "未经核准变更机构营业场所",
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-F001891-df4b4ddd5020eb9aa8225e73:L0007",
+          "quote": "你在担任中华联合财产保险股份有限公司许昌中心支公司鄢陵支公司经理期间,对该公司在我局2012年7月24日现场检查时向检查组提供虚假文件资料的行为负有直接责任。",
+          "source_id": "FRV2-SOURCE-F001891-df4b4ddd5020eb9aa8225e73"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-F001894-bd72f4ff2aa007d983ef34b3:L0006",
+          "quote": "2012年1月至5月期间,你公司未如实记录保险事项,虚列人员工资套取费用4.4万元,在我局2012年7月24日对你公司现场检查时提供虚假文件资料。",
+          "source_id": "FRV2-SOURCE-F001894-bd72f4ff2aa007d983ef34b3"
+        }
+      ],
+      "status": "supported",
+      "check": "history"
+    }
+  ],
+  "reason": "独立全文核验及旧库检索后，新增保险处罚及单一行为有据；个人受罚与实际实施人员作了恰当区分，零标签及未知保留合理，未发现需改动事项。"
+}

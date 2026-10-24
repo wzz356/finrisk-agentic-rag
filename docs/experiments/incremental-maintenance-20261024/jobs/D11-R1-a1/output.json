@@ -1,0 +1,152 @@
+{
+  "schema": "codex-incremental-review/1",
+  "decision": "approve",
+  "reason": "新文为保险机构行政处罚公示，提案准确提取唯一案由、机构及35万元罚款；未将概括案由扩展为套取资金等具体行为。独立全文核查新文、检索文号及机构并全文读取关系旧文后，支持新增并保留2010年历史案，未发现实质错误。",
+  "checks": [
+    {
+      "check": "scope",
+      "status": "supported",
+      "reason": "当事人为财产保险公司河南分公司，原文明示行政处罚及罚款，属于保险处罚审查范围。",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0001",
+          "quote": "当事人: 安诚财产保险股份有限公司河南分公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0007",
+          "quote": "罚款35万元"
+        }
+      ]
+    },
+    {
+      "check": "identity",
+      "status": "supported",
+      "reason": "机构、文号、决定机关与日期均与新文一致，日期规范化为2026-08-25有据。",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0001",
+          "quote": "当事人: 安诚财产保险股份有限公司河南分公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0003",
+          "quote": "豫金罚决字〔2026〕65号"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0009",
+          "quote": "河南金融监管局"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0011",
+          "quote": "2026年8月25日"
+        }
+      ]
+    },
+    {
+      "check": "facts",
+      "status": "supported",
+      "reason": "唯一披露案由为编制或者提供虚假报告等资料，处罚为罚款35万元，摘要未增加违法细节。",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0005",
+          "quote": "编制或者提供虚假的报告、报表、文件、资料"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0007",
+          "quote": "罚款35万元"
+        }
+      ]
+    },
+    {
+      "check": "actors",
+      "status": "supported",
+      "reason": "新文仅列机构当事人，行为卡将机构记为被处罚机构，未指定个人实施者或个人责任；具体人员保留未知恰当。",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0001",
+          "quote": "当事人: 安诚财产保险股份有限公司河南分公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0005",
+          "quote": "编制或者提供虚假的报告、报表、文件、资料"
+        }
+      ]
+    },
+    {
+      "check": "tags",
+      "status": "supported",
+      "reason": "虚假资料案由未说明虚列费用、套取资金或保险销售误导等标签必要事实，使用0标签符合允许范围，未借用旧案细节推断。",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0005",
+          "quote": "编制或者提供虚假的报告、报表、文件、资料"
+        }
+      ]
+    },
+    {
+      "check": "completeness",
+      "status": "supported",
+      "reason": "新文只有一个概括案由及一项机构罚款，已分别记录案件与行为；实施方式、发生时间、人员和资金去向原文未披露，保留未知合理。",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0001",
+          "quote": "当事人: 安诚财产保险股份有限公司河南分公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0005",
+          "quote": "编制或者提供虚假的报告、报表、文件、资料"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0007",
+          "quote": "罚款35万元"
+        }
+      ]
+    },
+    {
+      "check": "history",
+      "status": "supported",
+      "reason": "已按完整文号和机构独立检索，并全文读取所指旧源。新文为2026年65号、35万元罚款，旧文为同机构2010年16号、50万元及停办新业务；无更正撤销表述，distinct_related与保留旧案新增处理有据。检索未命中不被视为全库无重复。",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0003",
+          "quote": "豫金罚决字〔2026〕65号"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0007",
+          "quote": "罚款35万元"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F002889-3af2b0ad0d36b40bd7231acd",
+          "segment_id": "FRV2-SOURCE-F002889-3af2b0ad0d36b40bd7231acd:L0004",
+          "quote": "名称:安诚财产保险股份有限公司河南分公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F002889-3af2b0ad0d36b40bd7231acd",
+          "segment_id": "FRV2-SOURCE-F002889-3af2b0ad0d36b40bd7231acd:L0002",
+          "quote": "豫保监罚〔2010〕16号"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F002889-3af2b0ad0d36b40bd7231acd",
+          "segment_id": "FRV2-SOURCE-F002889-3af2b0ad0d36b40bd7231acd:L0010",
+          "quote": "责令改正,罚款五十万元,并责令在郑州、洛阳和南阳三市停止办理机动车辆强制保险新业务一个月,时间为2010年7月1日至7月31日。"
+        }
+      ]
+    }
+  ],
+  "issues": []
+}

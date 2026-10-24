@@ -1,0 +1,169 @@
+{
+  "schema": "codex-incremental/1",
+  "action": "add",
+  "reason": "已完整读取新文，按完整文号、王彪姓名和赛罕区检索旧库。文号检索未命中；完整读取姓名命中的旧文，其任职机构为恒邦财险常州中心支公司，文号为常金罚决字〔2026〕13号，与本次平安人寿赛罕区营销服务部、内金罚决字〔2026〕27号及处罚内容不同，不能因同名合并。赛罕区命中预览涉及其他当事人，不据此建立关系。按独立新案新增；未声称全库无重复。",
+  "case_cards": [
+    {
+      "local_id": "case-1",
+      "subject": "王彪",
+      "document_number": "内金罚决字〔2026〕27号",
+      "decision_date": "2026年7月30日",
+      "authority": "内蒙古金融监管局",
+      "penalties": [
+        {
+          "text": "警告并罚款0.5万元",
+          "subject": "王彪",
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+              "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0001",
+              "quote": "当事人: 王彪（时任平安人寿赛罕区营销服务部负责人）"
+            },
+            {
+              "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+              "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0007",
+              "quote": "警告并罚款0.5万元"
+            }
+          ]
+        }
+      ],
+      "summary": "王彪时任平安人寿赛罕区营销服务部负责人，因唆使、诱导保险代理人进行违背诚信义务的活动，受到警告并罚款0.5万元。",
+      "unknowns": [
+        "代理人具体活动及对象",
+        "是否与同名旧案当事人为同一自然人"
+      ],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0001",
+          "quote": "当事人: 王彪（时任平安人寿赛罕区营销服务部负责人）"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0003",
+          "quote": "内金罚决字〔2026〕27号"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0005",
+          "quote": "唆使、诱导保险代理人进行违背诚信义务的活动"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0007",
+          "quote": "警告并罚款0.5万元"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0009",
+          "quote": "内蒙古金融监管局"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0011",
+          "quote": "2026年7月30日"
+        }
+      ]
+    }
+  ],
+  "behavior_cards": [
+    {
+      "local_id": "behavior-1",
+      "case_id": "case-1",
+      "actor": "王彪",
+      "actor_role": "时任平安人寿赛罕区营销服务部负责人；本次受处罚当事人",
+      "summary": "唆使、诱导保险代理人进行违背诚信义务的活动。",
+      "risk_tags": [],
+      "unknowns": [
+        "被唆使、诱导的保险代理人身份",
+        "违背诚信义务活动的具体内容",
+        "代理人是否实际实施相关活动"
+      ],
+      "conditions": [],
+      "negations": [],
+      "exceptions": [],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0001",
+          "quote": "当事人: 王彪（时任平安人寿赛罕区营销服务部负责人）"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0005",
+          "quote": "唆使、诱导保险代理人进行违背诚信义务的活动"
+        }
+      ]
+    }
+  ],
+  "targets": [],
+  "relations": [
+    {
+      "old_source_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f",
+      "relation": "distinct_related",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0001",
+          "quote": "当事人: 王彪（时任平安人寿赛罕区营销服务部负责人）"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0003",
+          "quote": "内金罚决字〔2026〕27号"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f",
+          "segment_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f:L0029",
+          "quote": "王彪(恒邦财产保"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f",
+          "segment_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f:L0030",
+          "quote": "险股份有限公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f",
+          "segment_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f:L0031",
+          "quote": "常州中心支公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f",
+          "segment_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f:L0032",
+          "quote": "总经理)"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f",
+          "segment_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f:L0033",
+          "quote": "常金罚决字"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f",
+          "segment_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f:L0034",
+          "quote": "〔2026〕13"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f",
+          "segment_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f:L0035",
+          "quote": "号"
+        }
+      ]
+    }
+  ],
+  "uncertainties": [
+    "两案当事人同名，但缺乏证明为同一自然人的信息；不据同名合并。",
+    "新文未披露代理人具体活动，不推断欺骗投保人、诱导投保或代理人管理不到位等标签。"
+  ],
+  "evidence": [
+    {
+      "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+      "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0001",
+      "quote": "当事人: 王彪（时任平安人寿赛罕区营销服务部负责人）"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+      "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0005",
+      "quote": "唆使、诱导保险代理人进行违背诚信义务的活动"
+    }
+  ]
+}

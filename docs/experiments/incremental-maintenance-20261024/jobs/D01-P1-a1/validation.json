@@ -1,0 +1,15 @@
+{
+  "valid": true,
+  "action": "exclude_from_penalty",
+  "decision": null,
+  "job_id": "D01-P1-a1",
+  "model_profile": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "execution": "codex-native"
+  },
+  "role_tool_calls": 3,
+  "complete_reads": [
+    "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843"
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "checks": [
+    {
+      "check": "scope",
+      "status": "supported",
+      "reason": "保险经纪分公司因欺骗投保人受到明确行政罚款，属于保险处罚审查范围。",
+      "evidence": [
+        {
+          "quote": "当事人: 北京恒丰保险经纪有限公司上海分公司",
+          "segment_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:L0001",
+          "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922"
+        },
+        {
+          "quote": "罚款6万元",
+          "segment_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:L0007",
+          "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922"
+        }
+      ]
+    },
+    {
+      "check": "identity",
+      "status": "supported",
+      "reason": "主体、个案57号文号、上海金融监管局及2026年7月13日均有明文；56-60号只是来源公示合集范围。",
+      "evidence": [
+        {
+          "quote": "当事人: 北京恒丰保险经纪有限公司上海分公司",
+          "segment_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:L0001",
+          "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922"
+        },
+        {
+          "quote": "沪金罚决字〔2026〕57号",
+          "segment_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:L0003",
+          "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922"
+        },
+        {
+          "quote": "上海金融监管局",
+          "segment_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:L0009",
+          "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922"
+        },
+        {
+          "quote": "2026年7月13日",
+          "segment_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:L0011",
+          "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922"
+        },
+        {
+          "quote": "国家金融监督管理总局上海监管局行政处罚信息公开表（沪金罚决字〔2026〕56-60号）",
+          "segment_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:L0013",
+          "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922"
+        }
+      ]
+    },
+    {
+      "check": "facts",
+      "status": "supported",
+      "reason": "提案仅记录欺骗投保人和罚款6万元，与原文一致，没有补写欺骗方式、产品或资金去向。",
+      "evidence": [
+        {
+          "quote": "欺骗投保人",
+          "segment_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:L0005",
+          "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922"
+        },
+        {
+          "quote": "罚款6万元",
+          "segment_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:L0007",
+          "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922"
+        }
+      ]
+    },
+    {
+      "check": "actors",
+      "status": "supported",
+      "reason": "被处罚当事人为该分公司，行为卡以被处罚机构身份归属案由；具体实施人员明确保留未知，没有推定个人责任。",
+      "evidence": [
+        {
+          "quote": "当事人: 北京恒丰保险经纪有限公司上海分公司",
+          "segment_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:L0001",
+          "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922"
+        },
+        {
+          "quote": "欺骗投保人",
+          "segment_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:L0005",
+          "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922"
+        }
+      ]
+    },
+    {
+      "check": "tags",
+      "status": "supported",
+      "reason": "唯一标签欺骗投保人为案由直接表述，满足明确依据；未据此扩展为夸大收益、虚假宣传等缺少必要事实的标签。",
+      "evidence": [
+        {
+          "quote": "欺骗投保人",
+          "segment_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:L0005",
+          "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922"
+        }
+      ]
+    },
+    {
+      "check": "completeness",
+      "status": "supported",
+      "reason": "全文仅披露一项案由及一项罚款，提案一案一行为覆盖已披露内容；具体方式、产品和实施人员的未知处理恰当，无条件、否定或例外被遗漏。",
+      "evidence": [
+        {
+          "quote": "欺骗投保人",
+          "segment_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:L0005",
+          "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922"
+        },
+        {
+          "quote": "罚款6万元",
+          "segment_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:L0007",
+          "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922"
+        }
+      ]
+    },
+    {
+      "check": "history",
+      "status": "supported",
+      "reason": "已独立按完整文号及恒丰主干检索，均无候选。提案未断言全库无重复，保留检索范围限制，未无据更正、覆盖或删除历史；当前新增有依据。",
+      "evidence": [
+        {
+          "quote": "沪金罚决字〔2026〕57号",
+          "segment_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:L0003",
+          "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922"
+        }
+      ]
+    }
+  ],
+  "issues": [],
+  "schema": "codex-incremental-review/1",
+  "decision": "approve",
+  "reason": "新文全文支持提案主体、案由、处罚及身份字段，唯一风险标签有明确原文依据，未知边界保留恰当；独立旧库检索未发现候选，未作无依据历史变更。"
+}

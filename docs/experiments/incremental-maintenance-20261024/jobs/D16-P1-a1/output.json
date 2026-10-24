@@ -1,0 +1,231 @@
+{
+  "targets": [],
+  "uncertainties": [
+    "新文未载文号、具体行为时间、实施人、金额及关联方身份。",
+    "所给官方标签无精确对应项，行为卡暂不赋标签。"
+  ],
+  "evidence": [
+    {
+      "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0001",
+      "quote": "当事人: 恒大人寿保险有限公司",
+      "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+    },
+    {
+      "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0003",
+      "quote": "保险资金运用严重不合规、向关联方输送利益，投后管理不合规，报送的报告报表存在虚假记载等。",
+      "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+    },
+    {
+      "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0005",
+      "quote": "对恒大人寿保险有限公司吊销业务许可证。",
+      "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+    }
+  ],
+  "relations": [
+    {
+      "old_source_id": "FRV2-SOURCE-F000828-252aa76bef90f9647ab5ea4d",
+      "relation": "distinct_related",
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0003",
+          "quote": "保险资金运用严重不合规、向关联方输送利益，投后管理不合规，报送的报告报表存在虚假记载等。",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0005",
+          "quote": "对恒大人寿保险有限公司吊销业务许可证。",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0009",
+          "quote": "2026年8月21日",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-F000828-252aa76bef90f9647ab5ea4d:L0018",
+          "quote": "2016年1-11月,恒大人寿未按照保险资金委托投资管理要求开展股票投资,股票投资交易笔数2480笔,股票平均持有期73天,其中9月下旬至11月上旬短期炒作相关股票造成恶劣社会影响。",
+          "source_id": "FRV2-SOURCE-F000828-252aa76bef90f9647ab5ea4d"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-F000828-252aa76bef90f9647ab5ea4d:L0027",
+          "quote": "2017年2月25日",
+          "source_id": "FRV2-SOURCE-F000828-252aa76bef90f9647ab5ea4d"
+        }
+      ]
+    }
+  ],
+  "behavior_cards": [
+    {
+      "risk_tags": [],
+      "conditions": [],
+      "negations": [],
+      "summary": "保险资金运用严重不合规。",
+      "actor": "恒大人寿保险有限公司",
+      "actor_role": "被处罚保险公司",
+      "exceptions": [],
+      "local_id": "D16-B1",
+      "case_id": "D16-C1",
+      "unknowns": [
+        "具体实施人",
+        "行为发生时间",
+        "具体事实及金额"
+      ],
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0001",
+          "quote": "当事人: 恒大人寿保险有限公司",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0003",
+          "quote": "保险资金运用严重不合规、向关联方输送利益，投后管理不合规，报送的报告报表存在虚假记载等。",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        }
+      ]
+    },
+    {
+      "risk_tags": [],
+      "conditions": [],
+      "negations": [],
+      "summary": "向关联方输送利益。",
+      "actor": "恒大人寿保险有限公司",
+      "actor_role": "被处罚保险公司",
+      "exceptions": [],
+      "local_id": "D16-B2",
+      "case_id": "D16-C1",
+      "unknowns": [
+        "具体实施人",
+        "行为发生时间",
+        "具体事实及金额",
+        "关联方具体身份及资金去向"
+      ],
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0001",
+          "quote": "当事人: 恒大人寿保险有限公司",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0003",
+          "quote": "保险资金运用严重不合规、向关联方输送利益，投后管理不合规，报送的报告报表存在虚假记载等。",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        }
+      ]
+    },
+    {
+      "risk_tags": [],
+      "conditions": [],
+      "negations": [],
+      "summary": "投后管理不合规。",
+      "actor": "恒大人寿保险有限公司",
+      "actor_role": "被处罚保险公司",
+      "exceptions": [],
+      "local_id": "D16-B3",
+      "case_id": "D16-C1",
+      "unknowns": [
+        "具体实施人",
+        "行为发生时间",
+        "具体事实及金额"
+      ],
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0001",
+          "quote": "当事人: 恒大人寿保险有限公司",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0003",
+          "quote": "保险资金运用严重不合规、向关联方输送利益，投后管理不合规，报送的报告报表存在虚假记载等。",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        }
+      ]
+    },
+    {
+      "risk_tags": [],
+      "conditions": [],
+      "negations": [],
+      "summary": "报送的报告报表存在虚假记载。",
+      "actor": "恒大人寿保险有限公司",
+      "actor_role": "被处罚保险公司",
+      "exceptions": [],
+      "local_id": "D16-B4",
+      "case_id": "D16-C1",
+      "unknowns": [
+        "具体实施人",
+        "行为发生时间",
+        "具体事实及金额"
+      ],
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0001",
+          "quote": "当事人: 恒大人寿保险有限公司",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0003",
+          "quote": "保险资金运用严重不合规、向关联方输送利益，投后管理不合规，报送的报告报表存在虚假记载等。",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        }
+      ]
+    }
+  ],
+  "reason": "已完整阅读新文并按恒大人寿保险有限公司检索旧库，全文核查同一主体2017年保险资金运用处罚。旧案为2016年股票投资行为，2017年作出处罚；新文为2026年吊销业务许可证，列明资金运用、关联方利益输送、投后管理及报告报表虚假记载。无撤销、更正或替代旧案的明示证据，按独立案件新增，保留旧记录；检索范围不构成全库无重复证明。",
+  "case_cards": [
+    {
+      "authority": "金融监管总局",
+      "penalties": [
+        {
+          "evidence": [
+            {
+              "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0005",
+              "quote": "对恒大人寿保险有限公司吊销业务许可证。",
+              "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+            }
+          ],
+          "text": "吊销业务许可证",
+          "subject": "恒大人寿保险有限公司"
+        }
+      ],
+      "document_number": null,
+      "summary": "恒大人寿因保险资金运用严重不合规、向关联方输送利益、投后管理不合规及报送报告报表存在虚假记载等，被金融监管总局吊销业务许可证。",
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0001",
+          "quote": "当事人: 恒大人寿保险有限公司",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0003",
+          "quote": "保险资金运用严重不合规、向关联方输送利益，投后管理不合规，报送的报告报表存在虚假记载等。",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0005",
+          "quote": "对恒大人寿保险有限公司吊销业务许可证。",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0007",
+          "quote": "金融监管总局",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0009",
+          "quote": "2026年8月21日",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        }
+      ],
+      "local_id": "D16-C1",
+      "subject": "恒大人寿保险有限公司",
+      "decision_date": "2026年8月21日",
+      "unknowns": [
+        "document_number",
+        "具体实施人",
+        "行为发生时间",
+        "逐项处罚对应关系"
+      ]
+    }
+  ],
+  "action": "add",
+  "schema": "codex-incremental/1"
+}

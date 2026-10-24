@@ -1,0 +1,181 @@
+{
+  "schema": "codex-incremental/1",
+  "action": "add",
+  "reason": "已全文核查新文，按完整文号及机构检索旧库，并全文核查同机构豫保监罚〔2010〕16号旧案。新案为2026年65号处罚，旧案为2010年16号处罚，文号、决定时间及处罚内容不同；无更正或撤销旧案证据，保留历史并新增。新文仅载虚假报告资料概括案由，不据此推定虚列费用套取资金。",
+  "case_cards": [
+    {
+      "local_id": "case-1",
+      "subject": "安诚财产保险股份有限公司河南分公司",
+      "document_number": "豫金罚决字〔2026〕65号",
+      "decision_date": "2026-08-25",
+      "authority": "河南金融监管局",
+      "penalties": [
+        {
+          "text": "罚款35万元",
+          "subject": "安诚财产保险股份有限公司河南分公司",
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+              "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0007",
+              "quote": "罚款35万元"
+            }
+          ]
+        }
+      ],
+      "summary": "安诚财产保险股份有限公司河南分公司因编制或者提供虚假的报告、报表、文件、资料，被河南金融监管局罚款35万元。",
+      "unknowns": [
+        "具体虚假材料及实施方式未披露",
+        "违法行为发生时间未披露",
+        "具体实施人员未披露",
+        "资金去向未披露"
+      ],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0001",
+          "quote": "当事人: 安诚财产保险股份有限公司河南分公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0003",
+          "quote": "豫金罚决字〔2026〕65号"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0009",
+          "quote": "河南金融监管局"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0011",
+          "quote": "2026年8月25日"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0005",
+          "quote": "编制或者提供虚假的报告、报表、文件、资料"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0007",
+          "quote": "罚款35万元"
+        }
+      ]
+    }
+  ],
+  "behavior_cards": [
+    {
+      "local_id": "behavior-1",
+      "case_id": "case-1",
+      "actor": "安诚财产保险股份有限公司河南分公司",
+      "actor_role": "被处罚机构",
+      "summary": "编制或者提供虚假的报告、报表、文件、资料。",
+      "risk_tags": [],
+      "unknowns": [
+        "具体虚假材料及实施方式未披露",
+        "具体实施人员未披露",
+        "资金去向未披露"
+      ],
+      "conditions": [],
+      "negations": [],
+      "exceptions": [],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0001",
+          "quote": "当事人: 安诚财产保险股份有限公司河南分公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0005",
+          "quote": "编制或者提供虚假的报告、报表、文件、资料"
+        }
+      ]
+    }
+  ],
+  "targets": [],
+  "relations": [
+    {
+      "old_source_id": "FRV2-SOURCE-F002889-3af2b0ad0d36b40bd7231acd",
+      "relation": "distinct_related",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0001",
+          "quote": "当事人: 安诚财产保险股份有限公司河南分公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0003",
+          "quote": "豫金罚决字〔2026〕65号"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0011",
+          "quote": "2026年8月25日"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0007",
+          "quote": "罚款35万元"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F002889-3af2b0ad0d36b40bd7231acd",
+          "segment_id": "FRV2-SOURCE-F002889-3af2b0ad0d36b40bd7231acd:L0004",
+          "quote": "名称:安诚财产保险股份有限公司河南分公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F002889-3af2b0ad0d36b40bd7231acd",
+          "segment_id": "FRV2-SOURCE-F002889-3af2b0ad0d36b40bd7231acd:L0002",
+          "quote": "豫保监罚〔2010〕16号"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F002889-3af2b0ad0d36b40bd7231acd",
+          "segment_id": "FRV2-SOURCE-F002889-3af2b0ad0d36b40bd7231acd:L0017",
+          "quote": "二〇一〇年六月三十日"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F002889-3af2b0ad0d36b40bd7231acd",
+          "segment_id": "FRV2-SOURCE-F002889-3af2b0ad0d36b40bd7231acd:L0010",
+          "quote": "责令改正,罚款五十万元,并责令在郑州、洛阳和南阳三市停止办理机动车辆强制保险新业务一个月,时间为2010年7月1日至7月31日。"
+        }
+      ]
+    }
+  ],
+  "uncertainties": [
+    "检索范围内文号未命中不代表全库无重复；同机构历史案不构成新旧冲突。",
+    "概括案由不足以确定虚列费用套取资金或其他具体官方标签。"
+  ],
+  "evidence": [
+    {
+      "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+      "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0001",
+      "quote": "当事人: 安诚财产保险股份有限公司河南分公司"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+      "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0003",
+      "quote": "豫金罚决字〔2026〕65号"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+      "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0009",
+      "quote": "河南金融监管局"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+      "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0011",
+      "quote": "2026年8月25日"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+      "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0005",
+      "quote": "编制或者提供虚假的报告、报表、文件、资料"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+      "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0007",
+      "quote": "罚款35万元"
+    }
+  ]
+}

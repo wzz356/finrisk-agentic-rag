@@ -1,0 +1,42 @@
+{
+  "schema": "codex-incremental/1",
+  "action": "exclude_from_penalty",
+  "reason": "已全文核查：当事人为中国光大银行上海江湾社区支行（原中国光大银行上海北外滩社区支行），沪金罚决字〔2026〕94号由上海金融监管局于2026年7月21日作出，案由为遗失金融许可证，处罚为警告并罚款1万元。该材料属于银行金融许可证管理处罚，未涉及保险业务，应排除于保险处罚审查范围。已按完整文号及现名主体检索旧库，所查范围均未命中；此结果不证明全库不存在重复，未判断任何新旧关系。",
+  "case_cards": [],
+  "behavior_cards": [],
+  "targets": [],
+  "relations": [],
+  "uncertainties": [],
+  "evidence": [
+    {
+      "source_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843",
+      "segment_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843:L0001",
+      "quote": "当事人: 中国光大银行上海江湾社区支行（原中国光大银行上海北外滩社区支行）"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843",
+      "segment_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843:L0003",
+      "quote": "沪金罚决字〔2026〕94号"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843",
+      "segment_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843:L0005",
+      "quote": "遗失金融许可证"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843",
+      "segment_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843:L0007",
+      "quote": "警告并罚款1万元"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843",
+      "segment_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843:L0009",
+      "quote": "上海金融监管局"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843",
+      "segment_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843:L0011",
+      "quote": "2026年7月21日"
+    }
+  ]
+}

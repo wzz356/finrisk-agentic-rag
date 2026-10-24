@@ -1,0 +1,163 @@
+[
+  {
+    "query_id": "OLD-01",
+    "target_source_id": "FRV2-SOURCE-F000000-fdb4e4bade6d50cd855db46e",
+    "hit_at_10": true,
+    "composite_ids": [
+      "FRV2-SOURCE-F000000-fdb4e4bade6d50cd855db46e",
+      "FRV2-SOURCE-F005485-c589aff44c6e20f36d0558f5"
+    ]
+  },
+  {
+    "query_id": "OLD-02",
+    "target_source_id": "FRV2-SOURCE-F000001-2283471bb4f30cf2bdc5b909",
+    "hit_at_10": true,
+    "composite_ids": [
+      "FRV2-SOURCE-F000001-2283471bb4f30cf2bdc5b909"
+    ]
+  },
+  {
+    "query_id": "OLD-03",
+    "target_source_id": "FRV2-SOURCE-F000002-af7ee0bc11b09c43a33c69d6",
+    "hit_at_10": true,
+    "composite_ids": [
+      "FRV2-SOURCE-F000002-af7ee0bc11b09c43a33c69d6"
+    ]
+  },
+  {
+    "query_id": "OLD-04",
+    "target_source_id": "FRV2-SOURCE-F000003-40e80277a47f4d1ead17d8fc",
+    "hit_at_10": true,
+    "composite_ids": [
+      "FRV2-SOURCE-F000003-40e80277a47f4d1ead17d8fc"
+    ]
+  },
+  {
+    "query_id": "OLD-05",
+    "target_source_id": "FRV2-SOURCE-F000004-ccd384168b44c57f89a4d688",
+    "hit_at_10": true,
+    "composite_ids": [
+      "FRV2-SOURCE-F000004-ccd384168b44c57f89a4d688"
+    ]
+  },
+  {
+    "query_id": "OLD-06",
+    "target_source_id": "FRV2-SOURCE-F000005-0759b5487eb23debe1b3f06e",
+    "hit_at_10": true,
+    "composite_ids": [
+      "FRV2-SOURCE-F000005-0759b5487eb23debe1b3f06e"
+    ]
+  },
+  {
+    "query_id": "OLD-07",
+    "target_source_id": "FRV2-SOURCE-F000006-a470984fe4463c604bba5cf0",
+    "hit_at_10": true,
+    "composite_ids": [
+      "FRV2-SOURCE-F000006-a470984fe4463c604bba5cf0"
+    ]
+  },
+  {
+    "query_id": "OLD-08",
+    "target_source_id": "FRV2-SOURCE-F000007-48dbb8e9cfcadea2f510ea20",
+    "hit_at_10": true,
+    "composite_ids": [
+      "FRV2-SOURCE-F000007-48dbb8e9cfcadea2f510ea20"
+    ]
+  },
+  {
+    "query_id": "OLD-09",
+    "target_source_id": "FRV2-SOURCE-F000008-ee6124d23f343344bba31172",
+    "hit_at_10": true,
+    "composite_ids": [
+      "FRV2-SOURCE-F000008-ee6124d23f343344bba31172"
+    ]
+  },
+  {
+    "query_id": "OLD-10",
+    "target_source_id": "FRV2-SOURCE-F000009-46145df86144e152372e7a4b",
+    "hit_at_10": true,
+    "composite_ids": [
+      "FRV2-SOURCE-F000009-46145df86144e152372e7a4b"
+    ]
+  },
+  {
+    "query_id": "OLD-11",
+    "target_source_id": "FRV2-SOURCE-F000010-4950b017ff71d9f6bc9af715",
+    "hit_at_10": true,
+    "composite_ids": [
+      "FRV2-SOURCE-F000010-4950b017ff71d9f6bc9af715"
+    ]
+  },
+  {
+    "query_id": "OLD-12",
+    "target_source_id": "FRV2-SOURCE-F000011-e3fcfe3540b0f3b638f2f6b1",
+    "hit_at_10": true,
+    "composite_ids": [
+      "FRV2-SOURCE-F000011-e3fcfe3540b0f3b638f2f6b1"
+    ]
+  },
+  {
+    "query_id": "OLD-13",
+    "target_source_id": "FRV2-SOURCE-F000012-a195a7807cc0a2c70d4b18cf",
+    "hit_at_10": true,
+    "composite_ids": [
+      "FRV2-SOURCE-F000012-a195a7807cc0a2c70d4b18cf"
+    ]
+  },
+  {
+    "query_id": "OLD-14",
+    "target_source_id": "FRV2-SOURCE-F000013-05589706e8b861f2a5186908",
+    "hit_at_10": true,
+    "composite_ids": [
+      "FRV2-SOURCE-F000013-05589706e8b861f2a5186908"
+    ]
+  },
+  {
+    "query_id": "OLD-15",
+    "target_source_id": "FRV2-SOURCE-F000014-411f9f3351b2896ceadaef45",
+    "hit_at_10": true,
+    "composite_ids": [
+      "FRV2-SOURCE-F000014-411f9f3351b2896ceadaef45"
+    ]
+  },
+  {
+    "query_id": "OLD-16",
+    "target_source_id": "FRV2-SOURCE-F000015-6bb012316a406f6c09f905de",
+    "hit_at_10": true,
+    "composite_ids": [
+      "FRV2-SOURCE-F000015-6bb012316a406f6c09f905de"
+    ]
+  },
+  {
+    "query_id": "OLD-17",
+    "target_source_id": "FRV2-SOURCE-F000016-044554982e428582e915dc07",
+    "hit_at_10": true,
+    "composite_ids": [
+      "FRV2-SOURCE-F000016-044554982e428582e915dc07"
+    ]
+  },
+  {
+    "query_id": "OLD-18",
+    "target_source_id": "FRV2-SOURCE-F000017-35d73c549f1446907b9f7291",
+    "hit_at_10": true,
+    "composite_ids": [
+      "FRV2-SOURCE-F000017-35d73c549f1446907b9f7291"
+    ]
+  },
+  {
+    "query_id": "OLD-19",
+    "target_source_id": "FRV2-SOURCE-F000018-1d2c39be714151f0db76afa8",
+    "hit_at_10": true,
+    "composite_ids": [
+      "FRV2-SOURCE-F000018-1d2c39be714151f0db76afa8"
+    ]
+  },
+  {
+    "query_id": "OLD-20",
+    "target_source_id": "FRV2-SOURCE-F000019-de85d5398c4511d7f9cc85cf",
+    "hit_at_10": true,
+    "composite_ids": [
+      "FRV2-SOURCE-F000019-de85d5398c4511d7f9cc85cf"
+    ]
+  }
+]

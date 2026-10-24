@@ -1,0 +1,147 @@
+{
+  "reason": "独立核对全文与旧库检索，四项行为、处罚主体金额及两项标签有依据，未知责任与文号得到保留；新增且不覆盖历史处理可接受。",
+  "issues": [],
+  "checks": [
+    {
+      "check": "scope",
+      "status": "supported",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "未按照规定使用经批准或备案的保险费率，给予投保人、被保险人保险合同约定以外的利益，通过保险代理人套取手续费，跨区域经营保险业务",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0003"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "对英大泰和财产保险股份有限公司天津分公司警告并处罚款合计66万元。 对张静警告并处罚款9万元；对张勇警告并处罚款8万元，对刘少辉警告并处罚款1万元。",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0005"
+        }
+      ],
+      "reason": "保险分公司因费率、合同外利益、手续费及跨区域经营受到警告和罚款，属于保险处罚范围，新增处理适当。"
+    },
+    {
+      "check": "identity",
+      "status": "supported",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "当事人: 英大泰和财产保险股份有限公司天津分公司",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0001"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "国家金融监督管理总局天津监管局",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0007"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "2026年8月7日",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0009"
+        }
+      ],
+      "reason": "当事人为英大泰和财产保险股份有限公司天津分公司；机关为天津监管局，日期为2026年8月7日。全文未载文号，document_number置空且列入unknowns恰当。"
+    },
+    {
+      "check": "facts",
+      "status": "supported",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "未按照规定使用经批准或备案的保险费率，给予投保人、被保险人保险合同约定以外的利益，通过保险代理人套取手续费，跨区域经营保险业务",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0003"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "对英大泰和财产保险股份有限公司天津分公司警告并处罚款合计66万元。 对张静警告并处罚款9万元；对张勇警告并处罚款8万元，对刘少辉警告并处罚款1万元。",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0005"
+        }
+      ],
+      "reason": "四项违法事实逐项对应原文；机构警告并罚66万元，张静9万元、张勇8万元、刘少辉1万元且均警告，金额和对象无错配。"
+    },
+    {
+      "check": "actors",
+      "status": "supported",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "当事人: 英大泰和财产保险股份有限公司天津分公司",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0001"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "未按照规定使用经批准或备案的保险费率，给予投保人、被保险人保险合同约定以外的利益，通过保险代理人套取手续费，跨区域经营保险业务",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0003"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "对英大泰和财产保险股份有限公司天津分公司警告并处罚款合计66万元。 对张静警告并处罚款9万元；对张勇警告并处罚款8万元，对刘少辉警告并处罚款1万元。",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0005"
+        }
+      ],
+      "reason": "行为卡实施主体限于被处罚天津分公司；三名个人仅保留原文明示的处罚，未臆造职务或逐项责任。套取手续费的具体实施人及资金去向亦保留未知。"
+    },
+    {
+      "check": "tags",
+      "status": "supported",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "未按照规定使用经批准或备案的保险费率，给予投保人、被保险人保险合同约定以外的利益，通过保险代理人套取手续费，跨区域经营保险业务",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0003"
+        }
+      ],
+      "reason": "原文明示未按规定使用备案费率与合同外利益，支持对应两标签。通过代理人套取手续费未明示虚假列支或管理失职，不足支持虚列费用套取资金、代理人管理不到位；未强贴此类标签适当，跨区域经营保留零标签亦可。"
+    },
+    {
+      "check": "completeness",
+      "status": "supported",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "未按照规定使用经批准或备案的保险费率，给予投保人、被保险人保险合同约定以外的利益，通过保险代理人套取手续费，跨区域经营保险业务",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0003"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "对英大泰和财产保险股份有限公司天津分公司警告并处罚款合计66万元。 对张静警告并处罚款9万元；对张勇警告并处罚款8万元，对刘少辉警告并处罚款1万元。",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0005"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "国家金融监督管理总局天津监管局",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0007"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "2026年8月7日",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0009"
+        }
+      ],
+      "reason": "完整原文四项独立行为均分卡保留，机构和三名个人处罚全部收录；机关、日期和未披露文号均处理，无实质遗漏，未将未知背景补成事实。"
+    },
+    {
+      "check": "history",
+      "status": "supported",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "当事人: 英大泰和财产保险股份有限公司天津分公司",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0001"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "对英大泰和财产保险股份有限公司天津分公司警告并处罚款合计66万元。 对张静警告并处罚款9万元；对张勇警告并处罚款8万元，对刘少辉警告并处罚款1万元。",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0005"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "2026年8月7日",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0009"
+        }
+      ],
+      "reason": "本人独立全文读取并以英大、天津检索旧库未命中，再检索英大泰和得到有限候选；检索不足以证明全库无重复，提案已保留此限制。提案没有旧关系或targets，没有更正撤销依据，采取add并保留历史、不因其他年份机构或个人处罚自动覆盖旧案适当。"
+    }
+  ],
+  "decision": "approve",
+  "schema": "codex-incremental-review/1"
+}

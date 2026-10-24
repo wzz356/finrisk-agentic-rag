@@ -1,0 +1,157 @@
+{
+  "decision": "approve",
+  "reason": "新文为保险个人处罚，身份、行为及处罚均与提案一致。独立查完整文号无命中，姓名候选旧文已完整阅读，与新案机构、文号、处罚不同；提案保留自然人是否同一及具体活动未知，新增并保留区别关系有依据。",
+  "schema": "codex-incremental-review/1",
+  "issues": [],
+  "checks": [
+    {
+      "check": "scope",
+      "reason": "平安人寿营销服务部负责人因保险代理人相关行为受行政处罚，属于保险处罚范围。",
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0001",
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "quote": "当事人: 王彪（时任平安人寿赛罕区营销服务部负责人）"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0005",
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "quote": "唆使、诱导保险代理人进行违背诚信义务的活动"
+        }
+      ],
+      "status": "supported"
+    },
+    {
+      "check": "identity",
+      "reason": "当事人为王彪、时任平安人寿赛罕区营销服务部负责人，27号文的日期和机关均明确；未把来源标题中的26号混入本案。",
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0001",
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "quote": "当事人: 王彪（时任平安人寿赛罕区营销服务部负责人）"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0003",
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "quote": "内金罚决字〔2026〕27号"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0009",
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "quote": "内蒙古金融监管局"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0011",
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "quote": "2026年7月30日"
+        }
+      ],
+      "status": "supported"
+    },
+    {
+      "check": "facts",
+      "reason": "提案忠实记录唆使、诱导代理人违背诚信义务的活动及警告并罚款0.5万元，没有扩写具体销售行为。",
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0005",
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "quote": "唆使、诱导保险代理人进行违背诚信义务的活动"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0007",
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "quote": "警告并罚款0.5万元"
+        }
+      ],
+      "status": "supported"
+    },
+    {
+      "check": "actors",
+      "reason": "新文将王彪列为当事人，可归属其唆使、诱导行为；代理人身份、活动细节和是否实际实施均未披露，提案恰当保留未知。",
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0001",
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "quote": "当事人: 王彪（时任平安人寿赛罕区营销服务部负责人）"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0005",
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "quote": "唆使、诱导保险代理人进行违背诚信义务的活动"
+        }
+      ],
+      "status": "supported"
+    },
+    {
+      "check": "tags",
+      "reason": "原文仅列违背诚信义务的概括案由，不足认定欺骗投保人、诱导投保或管理不善等标签必要要件；零标签符合允许范围。",
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0005",
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "quote": "唆使、诱导保险代理人进行违背诚信义务的活动"
+        }
+      ],
+      "status": "supported"
+    },
+    {
+      "check": "completeness",
+      "reason": "新文仅有一项行为和一项个人处罚，提案一案一行为完整覆盖；具体活动及对象未披露，不应补写。",
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0005",
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "quote": "唆使、诱导保险代理人进行违背诚信义务的活动"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0007",
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "quote": "警告并罚款0.5万元"
+        }
+      ],
+      "status": "supported"
+    },
+    {
+      "check": "history",
+      "reason": "独立完整文号检索未命中；王彪姓名命中的旧源已完整读，其为恒邦财险常州中心支公司总经理，常金罚决字〔2026〕13号、警告并罚款16万元，与新案不同。区别关系及不合并、不更正旧案有据，同名不确认为同一自然人。",
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0001",
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "quote": "当事人: 王彪（时任平安人寿赛罕区营销服务部负责人）"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0003",
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "quote": "内金罚决字〔2026〕27号"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f:L0029",
+          "source_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f",
+          "quote": "王彪(恒邦财产保"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f:L0031",
+          "source_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f",
+          "quote": "常州中心支公司"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f:L0033",
+          "source_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f",
+          "quote": "常金罚决字"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f:L0034",
+          "source_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f",
+          "quote": "〔2026〕13"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f:L0037",
+          "source_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f",
+          "quote": "16万元"
+        }
+      ],
+      "status": "supported"
+    }
+  ]
+}

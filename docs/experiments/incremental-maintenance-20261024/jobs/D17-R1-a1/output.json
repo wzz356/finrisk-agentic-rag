@@ -1,0 +1,116 @@
+{
+  "schema": "codex-incremental-review/1",
+  "checks": [
+    {
+      "reason": "原文明示保险公司资金运用违规及行政处罚，属于保险处罚审查范围，新增处理有依据。",
+      "evidence": [
+        {
+          "quote": "未按照规定运用保险公司资金等",
+          "segment_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7:L0003",
+          "source_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7"
+        },
+        {
+          "quote": "对华夏久盈资产管理有限责任公司罚款70万元。对陈淑翠禁止10年进入保险业。",
+          "segment_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7:L0005",
+          "source_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7"
+        }
+      ],
+      "check": "scope",
+      "status": "supported"
+    },
+    {
+      "reason": "当事人、金融监管总局和2025年12月19日均与原文一致；全文没有文号，document_number置空并记录未知恰当。",
+      "evidence": [
+        {
+          "quote": "当事人: 华夏久盈资产管理有限责任公司及相关责任人员",
+          "segment_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7:L0001",
+          "source_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7"
+        },
+        {
+          "quote": "金融监管总局",
+          "segment_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7:L0007",
+          "source_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7"
+        },
+        {
+          "quote": "2025年12月19日",
+          "segment_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7:L0009",
+          "source_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7"
+        }
+      ],
+      "check": "identity",
+      "status": "supported"
+    },
+    {
+      "reason": "仅提取未按规定运用保险公司资金这一已披露行为，公司罚款70万元及陈淑翠禁入保险业10年准确，未凭资金运用推断虚列费用或返佣。",
+      "evidence": [
+        {
+          "quote": "未按照规定运用保险公司资金等",
+          "segment_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7:L0003",
+          "source_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7"
+        },
+        {
+          "quote": "对华夏久盈资产管理有限责任公司罚款70万元。对陈淑翠禁止10年进入保险业。",
+          "segment_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7:L0005",
+          "source_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7"
+        }
+      ],
+      "check": "facts",
+      "status": "supported"
+    },
+    {
+      "reason": "当事人包含公司及相关责任人员，处罚段指名陈淑翠，但未披露具体实施人、职务或逐项责任；行为actor置空并列入unknowns，没有把受罚人直接推为实施者。",
+      "evidence": [
+        {
+          "quote": "当事人: 华夏久盈资产管理有限责任公司及相关责任人员",
+          "segment_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7:L0001",
+          "source_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7"
+        },
+        {
+          "quote": "对华夏久盈资产管理有限责任公司罚款70万元。对陈淑翠禁止10年进入保险业。",
+          "segment_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7:L0005",
+          "source_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7"
+        }
+      ],
+      "check": "actors",
+      "status": "supported"
+    },
+    {
+      "reason": "保险资金违规运用没有披露虚假列支套取资金、资金去向、销售或客户利益等具体要件；保留零标签恰当。",
+      "evidence": [
+        {
+          "quote": "未按照规定运用保险公司资金等",
+          "segment_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7:L0003",
+          "source_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7"
+        }
+      ],
+      "check": "tags",
+      "status": "supported"
+    },
+    {
+      "reason": "提案覆盖全文已披露主体、行为、两项处罚及决定机关日期；案由的“等”未展开，保留其他事实及具体实施方式未知恰当，不能要求补造未披露行为。",
+      "evidence": [
+        {
+          "quote": "未按照规定运用保险公司资金等",
+          "segment_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7:L0003",
+          "source_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7"
+        },
+        {
+          "quote": "对华夏久盈资产管理有限责任公司罚款70万元。对陈淑翠禁止10年进入保险业。",
+          "segment_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7:L0005",
+          "source_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7"
+        }
+      ],
+      "check": "completeness",
+      "status": "supported"
+    },
+    {
+      "reason": "本次独立按华夏久盈关键词及陈淑翠姓名搜索均零命中；提案明确检索范围限制且无旧关系或targets，没有把未命中断言为全库无重复，也没有无证据更正或覆盖历史。",
+      "evidence": [],
+      "check": "history",
+      "status": "supported"
+    }
+  ],
+  "issues": [],
+  "reason": "独立完整阅读新文并检索机构及个人后，提案准确覆盖已披露保险处罚，身份和责任未知处理恰当，零标签及不改旧有依据，未发现实质问题。",
+  "decision": "approve"
+}

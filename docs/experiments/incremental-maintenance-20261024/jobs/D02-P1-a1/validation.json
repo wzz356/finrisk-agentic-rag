@@ -1,0 +1,15 @@
+{
+  "valid": true,
+  "action": "add",
+  "decision": null,
+  "job_id": "D02-P1-a1",
+  "model_profile": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "execution": "codex-native"
+  },
+  "role_tool_calls": 4,
+  "complete_reads": [
+    "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811"
+  ]
+}

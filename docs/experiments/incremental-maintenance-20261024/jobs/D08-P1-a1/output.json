@@ -1,0 +1,161 @@
+{
+  "reason": "已完整阅读新文，确认临沂交运盛通保险代理有限责任公司因两项违规于2026年7月16日被临沂监管分局警告并罚款8万元。按完整文号及机构主干分别检索旧库均未命中；该检索边界不证明全库不存在重复，当前没有可核实的旧案关系或更正依据。",
+  "targets": [],
+  "schema": "codex-incremental/1",
+  "behavior_cards": [
+    {
+      "actor": "临沂交运盛通保险代理有限责任公司",
+      "negations": [],
+      "local_id": "behavior-1",
+      "actor_role": "受处罚机构",
+      "summary": "聘任不具有任职资格的人员。",
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0001",
+          "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+          "quote": "当事人: 临沂交运盛通保险代理有限责任公司"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0005",
+          "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+          "quote": "聘任不具有任职资格的人员"
+        }
+      ],
+      "case_id": "case-1",
+      "conditions": [],
+      "risk_tags": [],
+      "unknowns": [
+        "被聘人员身份、具体职务及任职资格缺失类型未披露"
+      ],
+      "exceptions": []
+    },
+    {
+      "actor": "临沂交运盛通保险代理有限责任公司",
+      "negations": [],
+      "local_id": "behavior-2",
+      "actor_role": "受处罚机构",
+      "summary": "未开立独立的代收保险费账户。",
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0001",
+          "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+          "quote": "当事人: 临沂交运盛通保险代理有限责任公司"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0005",
+          "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+          "quote": "未开立独立的代收保险费账户"
+        }
+      ],
+      "case_id": "case-1",
+      "conditions": [],
+      "risk_tags": [],
+      "unknowns": [
+        "代收保险费实际存放账户及资金去向未披露"
+      ],
+      "exceptions": []
+    }
+  ],
+  "action": "add",
+  "evidence": [
+    {
+      "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0001",
+      "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+      "quote": "当事人: 临沂交运盛通保险代理有限责任公司"
+    },
+    {
+      "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0003",
+      "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+      "quote": "临金罚决字〔2026〕24号"
+    },
+    {
+      "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0009",
+      "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+      "quote": "国家金融监督管理总局临沂监管分局"
+    },
+    {
+      "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0011",
+      "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+      "quote": "2026年7月16日"
+    },
+    {
+      "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0005",
+      "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+      "quote": "聘任不具有任职资格的人员、未开立独立的代收保险费账户"
+    },
+    {
+      "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0007",
+      "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+      "quote": "警告并罚款8万元"
+    }
+  ],
+  "case_cards": [
+    {
+      "subject": "临沂交运盛通保险代理有限责任公司",
+      "local_id": "case-1",
+      "summary": "该公司聘任不具有任职资格的人员，且未开立独立的代收保险费账户，被警告并罚款8万元。",
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0001",
+          "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+          "quote": "当事人: 临沂交运盛通保险代理有限责任公司"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0003",
+          "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+          "quote": "临金罚决字〔2026〕24号"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0009",
+          "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+          "quote": "国家金融监督管理总局临沂监管分局"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0011",
+          "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+          "quote": "2026年7月16日"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0005",
+          "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+          "quote": "聘任不具有任职资格的人员、未开立独立的代收保险费账户"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0007",
+          "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+          "quote": "警告并罚款8万元"
+        }
+      ],
+      "authority": "国家金融监督管理总局临沂监管分局",
+      "unknowns": [
+        "两项违法行为各自对应的罚款金额未披露",
+        "相关人员身份、个人责任和行为发生时间未披露"
+      ],
+      "document_number": "临金罚决字〔2026〕24号",
+      "decision_date": "2026-07-16",
+      "penalties": [
+        {
+          "text": "警告并罚款8万元",
+          "evidence": [
+            {
+              "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0001",
+              "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+              "quote": "当事人: 临沂交运盛通保险代理有限责任公司"
+            },
+            {
+              "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0007",
+              "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+              "quote": "警告并罚款8万元"
+            }
+          ],
+          "subject": "临沂交运盛通保险代理有限责任公司"
+        }
+      ]
+    }
+  ],
+  "uncertainties": [
+    "现有官方标签中无精确对应标签，不将任职资格问题推为委托无资质机构销售，也不将账户设置问题推为虚列费用套取资金。",
+    "检索仅覆盖完整文号和机构主干查询，未命中不代表全库不存在重复。"
+  ],
+  "relations": []
+}

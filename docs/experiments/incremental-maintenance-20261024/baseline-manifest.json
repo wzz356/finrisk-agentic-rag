@@ -1,0 +1,55 @@
+{
+  "old_sources": 10000,
+  "new_sources": 850,
+  "old_record_count": 42097,
+  "raw_bytes_verified": 850,
+  "original_only_baseline": true,
+  "new_model_cards_exposed": false,
+  "dictionary_count": 27,
+  "files": {
+    "baseline.sqlite": "d9c26d2f6f261dea5bc82d97e9209018814603826f9d57eaae3d3bdea21b55c9",
+    "dictionary.json": "bd0f83cdd619d3252aa36c5069daf1a3c5042998af076e744823f4e43e12d55b",
+    "new_sources.jsonl": "ec590ff7a604c2fba138743bb96973e47fdcbaba68fc327b4769febff48deeeb",
+    "preflight_850.jsonl": "39734e99aeaa037e028f3645f5404589284138d269fe120f695db887e003408c",
+    "sample_manifest.json": "d913451c875fafc8ddd7ad5b765d7532117c99674030313c6cf6af71be6bb183"
+  },
+  "selection": {
+    "targets": {
+      "development": 20,
+      "formal": 80,
+      "development_strata": {
+        "N": 8,
+        "R": 8,
+        "U": 4
+      },
+      "formal_strata": {
+        "N": 32,
+        "R": 32,
+        "U": 16
+      }
+    },
+    "actual_development": {
+      "N": 8,
+      "R": 8,
+      "U": 4
+    },
+    "actual_formal": {
+      "N": 32,
+      "R": 32,
+      "U": 16
+    },
+    "known_families_excluded": 97,
+    "formal_unique_families": 61
+  },
+  "preflight_strata": {
+    "R": 680,
+    "U": 83,
+    "N": 87
+  },
+  "preparation_note": "Initial slow substring preflight interrupted; exact-only preparation retained under preparation-attempts. Before any model dispatch, added source-grounded legal-entity/party indexing. Related candidates do not certify same case or conflict.",
+  "record_projection": "source-grounded baseline cards + experiment active=True (all original sources indexed); not human approval",
+  "preparation_changes": [
+    "Source-grounded party/head relation index before inference; exact-only attempt preserved",
+    "Explicit active flag added to experimental baseline record projection before inference; original SQLite copy preserved"
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "schema": "codex-incremental-review/1",
+  "decision": "approve",
+  "reason": "独立完整阅读新文，并按完整文号和普浩检索旧库均无命中；原文明确为银行贷款审查个人处罚，排除于保险处罚范围有充分依据。提案未把无命中当作全库去重证明，也未改动历史。",
+  "checks": [
+    {
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab",
+          "segment_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab:L0005",
+          "quote": "贷款审查不尽职"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab",
+          "segment_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab:L0007",
+          "quote": "禁止从事银行业工作4年"
+        }
+      ],
+      "reason": "当事人为国家开发银行分行任职人员，案由为贷款审查不尽职，处罚为银行业禁业，明确不属于保险处罚范围。",
+      "status": "supported",
+      "check": "scope"
+    },
+    {
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab",
+          "segment_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab:L0001",
+          "quote": "当事人: 普浩（时任国家开发银行河南省分行客户三处处长）"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab",
+          "segment_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab:L0003",
+          "quote": "豫金罚决字〔2026〕45号"
+        }
+      ],
+      "reason": "普浩的姓名、时任机构职务及文号均与原文一致，未误认机构为被处罚主体。",
+      "status": "supported",
+      "check": "identity"
+    },
+    {
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab",
+          "segment_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab:L0005",
+          "quote": "贷款审查不尽职"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab",
+          "segment_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab:L0007",
+          "quote": "禁止从事银行业工作4年"
+        }
+      ],
+      "reason": "提案准确保留贷款审查不尽职及禁止从事银行业工作4年的内容，没有增加罚款、资金去向或具体实施细节。",
+      "status": "supported",
+      "check": "facts"
+    },
+    {
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab",
+          "segment_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab:L0001",
+          "quote": "当事人: 普浩（时任国家开发银行河南省分行客户三处处长）"
+        }
+      ],
+      "reason": "原文处罚对象为普浩个人；提案仅说明其时任职务，没有向银行机构或其他人员扩张责任。",
+      "status": "supported",
+      "check": "actors"
+    },
+    {
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab",
+          "segment_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab:L0005",
+          "quote": "贷款审查不尽职"
+        }
+      ],
+      "reason": "贷款审查案由不具备保险官方标签的必要要件；排除后不建行为卡、不贴保险标签合理。",
+      "status": "supported",
+      "check": "tags"
+    },
+    {
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab",
+          "segment_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab:L0005",
+          "quote": "贷款审查不尽职"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab",
+          "segment_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab:L0007",
+          "quote": "禁止从事银行业工作4年"
+        }
+      ],
+      "reason": "完整原文仅一项银行贷款审查违规及一项禁业处罚，没有遗漏需独立入库的保险行为；空卡片符合排除决定。",
+      "status": "supported",
+      "check": "completeness"
+    },
+    {
+      "evidence": [],
+      "reason": "自行按完整文号及普浩检索均无命中，仅限于所查范围；提案明确未证明全库无重复，且targets和relations为空，不删除或覆盖历史记录。",
+      "status": "supported",
+      "check": "history"
+    }
+  ],
+  "issues": []
+}

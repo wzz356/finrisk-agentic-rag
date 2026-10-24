@@ -1,0 +1,143 @@
+{
+  "schema": "codex-incremental/1",
+  "action": "add",
+  "reason": "已完整阅读新文，并按完整文号及当事人全称分别检索旧库，均未命中候选；该结果仅限所查范围。原文明示机构主体、文号、决定日期、处罚机关、违法行为和罚款，可新增独立案件及行为卡。未发现足以确认重复或更正、替代旧记录的证据。",
+  "case_cards": [
+    {
+      "local_id": "D15-C1",
+      "subject": "中国平安财产保险股份有限公司上海市虹口支公司",
+      "document_number": "沪金罚决字〔2026〕66号",
+      "decision_date": "2026-07-21",
+      "authority": "上海金融监管局",
+      "penalties": [
+        {
+          "text": "罚款22万元",
+          "subject": "中国平安财产保险股份有限公司上海市虹口支公司",
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+              "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0001",
+              "quote": "当事人: 中国平安财产保险股份有限公司上海市虹口支公司"
+            },
+            {
+              "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+              "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0007",
+              "quote": "罚款22万元"
+            }
+          ]
+        }
+      ],
+      "summary": "中国平安财产保险股份有限公司上海市虹口支公司因未按照规定使用经备案的保险条款、保险费率，被上海金融监管局罚款22万元。",
+      "unknowns": [],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0001",
+          "quote": "当事人: 中国平安财产保险股份有限公司上海市虹口支公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0003",
+          "quote": "沪金罚决字〔2026〕66号"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0005",
+          "quote": "未按照规定使用经备案的保险条款、保险费率"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0007",
+          "quote": "罚款22万元"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0009",
+          "quote": "上海金融监管局"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0011",
+          "quote": "2026年7月21日"
+        }
+      ]
+    }
+  ],
+  "behavior_cards": [
+    {
+      "local_id": "D15-B1",
+      "case_id": "D15-C1",
+      "actor": "中国平安财产保险股份有限公司上海市虹口支公司",
+      "actor_role": "违法机构",
+      "summary": "未按照规定使用经备案的保险条款、保险费率。",
+      "risk_tags": [
+        {
+          "tag": "未按规定使用费率条款",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+              "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0005",
+              "quote": "未按照规定使用经备案的保险条款、保险费率"
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "具体保险产品、违规期间及具体实施人员未披露"
+      ],
+      "conditions": [],
+      "negations": [],
+      "exceptions": [],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0001",
+          "quote": "当事人: 中国平安财产保险股份有限公司上海市虹口支公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0005",
+          "quote": "未按照规定使用经备案的保险条款、保险费率"
+        }
+      ]
+    }
+  ],
+  "targets": [],
+  "relations": [],
+  "uncertainties": [
+    "按完整文号和当事人全称检索均无候选，不代表已证明全库无重复。"
+  ],
+  "evidence": [
+    {
+      "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+      "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0001",
+      "quote": "当事人: 中国平安财产保险股份有限公司上海市虹口支公司"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+      "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0003",
+      "quote": "沪金罚决字〔2026〕66号"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+      "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0005",
+      "quote": "未按照规定使用经备案的保险条款、保险费率"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+      "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0007",
+      "quote": "罚款22万元"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+      "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0009",
+      "quote": "上海金融监管局"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+      "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0011",
+      "quote": "2026年7月21日"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "checks": [
+    {
+      "check": "scope",
+      "status": "supported",
+      "evidence": [
+        {
+          "quote": "当事人: 恒大人寿保险有限公司",
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0001",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "quote": "对恒大人寿保险有限公司吊销业务许可证。",
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0005",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        }
+      ],
+      "reason": "当事人为保险公司，原文明确为行政处罚，吊销业务许可证是处罚内容，属于保险处罚审查范围。"
+    },
+    {
+      "check": "identity",
+      "status": "supported",
+      "evidence": [
+        {
+          "quote": "当事人: 恒大人寿保险有限公司",
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0001",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "quote": "金融监管总局",
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0007",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "quote": "2026年8月21日",
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0009",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        }
+      ],
+      "reason": "公司全称、金融监管总局及2026年8月21日均有明文；未载文号，提案置空并在unknowns列出document_number，未补造。"
+    },
+    {
+      "check": "facts",
+      "status": "supported",
+      "evidence": [
+        {
+          "quote": "保险资金运用严重不合规、向关联方输送利益，投后管理不合规，报送的报告报表存在虚假记载等。",
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0003",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "quote": "对恒大人寿保险有限公司吊销业务许可证。",
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0005",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        }
+      ],
+      "reason": "四张行为卡分别对应资金运用严重不合规、关联方利益输送、投后管理及报告报表虚假记载，处罚为吊销业务许可证；未推断具体金额、交易或资金最终去向。"
+    },
+    {
+      "check": "actors",
+      "status": "supported",
+      "evidence": [
+        {
+          "quote": "当事人: 恒大人寿保险有限公司",
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0001",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "quote": "保险资金运用严重不合规、向关联方输送利益，投后管理不合规，报送的报告报表存在虚假记载等。",
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0003",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        }
+      ],
+      "reason": "以被处罚公司作为行为主体有当事人及案由支持；原文未列自然人、具体实施人或关联方身份，提案保留这些未知，未移植旧案刘浩、吕海龙的责任。"
+    },
+    {
+      "check": "tags",
+      "status": "supported",
+      "evidence": [
+        {
+          "quote": "保险资金运用严重不合规、向关联方输送利益，投后管理不合规，报送的报告报表存在虚假记载等。",
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0003",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        }
+      ],
+      "reason": "关联方利益输送不等于向投保人给予合同外利益，报告报表虚假记载也不等于客户信息不真实；未载虚列费用套取资金。四张卡不赋具体标签符合证据边界，允许0标签。"
+    },
+    {
+      "check": "completeness",
+      "status": "supported",
+      "evidence": [
+        {
+          "quote": "保险资金运用严重不合规、向关联方输送利益，投后管理不合规，报送的报告报表存在虚假记载等。",
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0003",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "quote": "对恒大人寿保险有限公司吊销业务许可证。",
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0005",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        }
+      ],
+      "reason": "已覆盖原文全部四项明确违法行为和唯一处罚，并保留实施人、行为时间、具体事实金额及逐项处罚对应关系未知；原文的“等”未提供可补录的其他行为。"
+    },
+    {
+      "check": "history",
+      "status": "supported",
+      "evidence": [
+        {
+          "quote": "保险资金运用严重不合规、向关联方输送利益，投后管理不合规，报送的报告报表存在虚假记载等。",
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0003",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "quote": "对恒大人寿保险有限公司吊销业务许可证。",
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0005",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "quote": "2026年8月21日",
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0009",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "quote": "2016年1-11月,恒大人寿未按照保险资金委托投资管理要求开展股票投资,股票投资交易笔数2480笔,股票平均持有期73天,其中9月下旬至11月上旬短期炒作相关股票造成恶劣社会影响。",
+          "segment_id": "FRV2-SOURCE-F000828-252aa76bef90f9647ab5ea4d:L0018",
+          "source_id": "FRV2-SOURCE-F000828-252aa76bef90f9647ab5ea4d"
+        },
+        {
+          "quote": "2017年2月25日",
+          "segment_id": "FRV2-SOURCE-F000828-252aa76bef90f9647ab5ea4d:L0027",
+          "source_id": "FRV2-SOURCE-F000828-252aa76bef90f9647ab5ea4d"
+        }
+      ],
+      "reason": "自行检索恒大人寿并完整阅读提案所指旧源。旧源为2016年股票投资行为、2017年处罚，新源为2026年吊销许可证，处理为同主体相关但独立的处罚决定有依据；无撤销或更正明示，保留旧案且不设targets恰当。该结论不宣称新旧具体行为毫无重叠，也不将检索视为全库无重复证明。"
+    }
+  ],
+  "schema": "codex-incremental-review/1",
+  "issues": [],
+  "decision": "approve",
+  "reason": "新文全文支持保险处罚新增、四项独立行为和吊销业务许可证；身份缺失及事实细节恰当保留未知。独立检索并全文核查指定旧案，未发现应更正或取代旧案的证据，提案未越界推断。"
+}

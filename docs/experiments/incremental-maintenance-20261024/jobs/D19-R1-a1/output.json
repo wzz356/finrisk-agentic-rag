@@ -1,0 +1,116 @@
+{
+  "schema": "codex-incremental-review/1",
+  "decision": "approve",
+  "issues": [],
+  "reason": "新文是保险机构行政处罚公示，提案身份、行为、处罚与原文一致，未知及空标签处理恰当；无已证实旧关系，不作无依据更正或撤销。",
+  "checks": [
+    {
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32",
+          "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0004",
+          "quote": "行政处罚内容"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32",
+          "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0005",
+          "quote": "对人保寿险吉林省分公司警告并罚款1万元。"
+        }
+      ],
+      "check": "scope",
+      "reason": "原文明确列行政处罚内容并对寿险机构警告及罚款；许可证超期是处罚案由，不能将其误作行政许可批复，纳入保险处罚范围有依据。",
+      "status": "supported"
+    },
+    {
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32",
+          "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0001",
+          "quote": "当事人: 人保寿险吉林省分公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32",
+          "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0007",
+          "quote": "吉林金融监管局"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32",
+          "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0009",
+          "quote": "2026年7月30日"
+        }
+      ],
+      "check": "identity",
+      "reason": "当事人、处罚机关和决定日期均逐项载明，提案一致；全文没有处罚文号，以null并在unknowns列document_number恰当。",
+      "status": "supported"
+    },
+    {
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32",
+          "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0003",
+          "quote": "换领许可证超期"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32",
+          "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0005",
+          "quote": "对人保寿险吉林省分公司警告并罚款1万元。"
+        }
+      ],
+      "check": "facts",
+      "reason": "唯一违法事实为换领许可证超期，处罚为警告并罚款1万元；提案未扩写超期时长、资金去向或其他违法情节。",
+      "status": "supported"
+    },
+    {
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32",
+          "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0001",
+          "quote": "当事人: 人保寿险吉林省分公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32",
+          "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0005",
+          "quote": "对人保寿险吉林省分公司警告并罚款1万元。"
+        }
+      ],
+      "check": "actors",
+      "reason": "机构是明确当事人与受处罚对象，actor_role使用受处罚机构恰当；原文没有具体实施人员或个人责任分配，提案保留实施人员未知，未虚构个人归属。",
+      "status": "supported"
+    },
+    {
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32",
+          "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0003",
+          "quote": "换领许可证超期"
+        }
+      ],
+      "check": "tags",
+      "reason": "许可证换领超期没有销售误导、合同外利益、费用套取等标签必要事实；允许0标签，空risk_tags合理，无需强填其他。",
+      "status": "supported"
+    },
+    {
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32",
+          "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0003",
+          "quote": "换领许可证超期"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32",
+          "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0005",
+          "quote": "对人保寿险吉林省分公司警告并罚款1万元。"
+        }
+      ],
+      "check": "completeness",
+      "reason": "全文只列一个行为与一项机构处罚，单案单行为卡完整覆盖；文号、超期时长及具体人员确未载明，已分别保留未知，没有遗漏原文明示的独立行为。",
+      "status": "supported"
+    },
+    {
+      "evidence": [],
+      "check": "history",
+      "reason": "独立以完整机构名检索0命中，再以人保寿险、吉林短词检索得到1个候选；搜索结果不足以确认同案或全库无重复。提案明确限定检索结论，未引用旧文内容、未建立关系或改动旧卡，新增处理有依据。",
+      "status": "supported"
+    }
+  ]
+}

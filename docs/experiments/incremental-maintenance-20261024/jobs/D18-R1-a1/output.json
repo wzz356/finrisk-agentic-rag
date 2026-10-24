@@ -1,0 +1,124 @@
+{
+  "decision": "request_changes",
+  "issues": [
+    {
+      "message": "将exclude_from_penalty改为hold，删除已确定属于资产管理业务处罚的断言，列明保险业务关联未知；机构名称和投后管理案由不足以证明明确非保险。",
+      "location": "action/reason",
+      "code": "SCOPE_UNPROVEN_EXCLUSION",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-e072f834c6c7c12c9d5cc9bc5877c3d1-59ede1394b15411129a8f709",
+          "quote": "当事人: 中国银河资产管理有限责任公司及相关责任人员",
+          "segment_id": "FRV2-SOURCE-WEB-e072f834c6c7c12c9d5cc9bc5877c3d1-59ede1394b15411129a8f709:L0001"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-e072f834c6c7c12c9d5cc9bc5877c3d1-59ede1394b15411129a8f709",
+          "quote": "投后管理不到位。",
+          "segment_id": "FRV2-SOURCE-WEB-e072f834c6c7c12c9d5cc9bc5877c3d1-59ede1394b15411129a8f709:L0003"
+        }
+      ]
+    }
+  ],
+  "schema": "codex-incremental-review/1",
+  "reason": "原文未明确业务类型，仅凭资产管理机构名称与投后管理不到位，不能确定属于非保险业务。应将排除改为hold，保留保险关联待核。其余处罚事实及未知处理有依据。",
+  "checks": [
+    {
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-e072f834c6c7c12c9d5cc9bc5877c3d1-59ede1394b15411129a8f709",
+          "quote": "当事人: 中国银河资产管理有限责任公司及相关责任人员",
+          "segment_id": "FRV2-SOURCE-WEB-e072f834c6c7c12c9d5cc9bc5877c3d1-59ede1394b15411129a8f709:L0001"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-e072f834c6c7c12c9d5cc9bc5877c3d1-59ede1394b15411129a8f709",
+          "quote": "投后管理不到位。",
+          "segment_id": "FRV2-SOURCE-WEB-e072f834c6c7c12c9d5cc9bc5877c3d1-59ede1394b15411129a8f709:L0003"
+        }
+      ],
+      "check": "scope",
+      "reason": "机构名称及投后管理案由均不足以明确排除保险关联；原文没有明确非保险业务描述，适合hold。",
+      "status": "unsupported"
+    },
+    {
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-e072f834c6c7c12c9d5cc9bc5877c3d1-59ede1394b15411129a8f709",
+          "quote": "当事人: 中国银河资产管理有限责任公司及相关责任人员",
+          "segment_id": "FRV2-SOURCE-WEB-e072f834c6c7c12c9d5cc9bc5877c3d1-59ede1394b15411129a8f709:L0001"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-e072f834c6c7c12c9d5cc9bc5877c3d1-59ede1394b15411129a8f709",
+          "quote": "对中国银河资产管理有限责任公司罚款30万元。对张旭给予警告。",
+          "segment_id": "FRV2-SOURCE-WEB-e072f834c6c7c12c9d5cc9bc5877c3d1-59ede1394b15411129a8f709:L0005"
+        }
+      ],
+      "check": "identity",
+      "reason": "公司名称及张旭姓名与原文一致，未载文号及张旭职务被恰当保留未知。",
+      "status": "supported"
+    },
+    {
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-e072f834c6c7c12c9d5cc9bc5877c3d1-59ede1394b15411129a8f709",
+          "quote": "投后管理不到位。",
+          "segment_id": "FRV2-SOURCE-WEB-e072f834c6c7c12c9d5cc9bc5877c3d1-59ede1394b15411129a8f709:L0003"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-e072f834c6c7c12c9d5cc9bc5877c3d1-59ede1394b15411129a8f709",
+          "quote": "对中国银河资产管理有限责任公司罚款30万元。对张旭给予警告。",
+          "segment_id": "FRV2-SOURCE-WEB-e072f834c6c7c12c9d5cc9bc5877c3d1-59ede1394b15411129a8f709:L0005"
+        }
+      ],
+      "check": "facts",
+      "reason": "罚款30万元、张旭警告及投后管理不到位均准确，但将其确定为资产管理业务处罚超出原文业务范围信息。",
+      "status": "unsupported"
+    },
+    {
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-e072f834c6c7c12c9d5cc9bc5877c3d1-59ede1394b15411129a8f709",
+          "quote": "对中国银河资产管理有限责任公司罚款30万元。对张旭给予警告。",
+          "segment_id": "FRV2-SOURCE-WEB-e072f834c6c7c12c9d5cc9bc5877c3d1-59ede1394b15411129a8f709:L0005"
+        }
+      ],
+      "check": "actors",
+      "reason": "没有将投后管理行为具体归给张旭，也未推断其职务或责任分工，符合原文信息限度。",
+      "status": "supported"
+    },
+    {
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-e072f834c6c7c12c9d5cc9bc5877c3d1-59ede1394b15411129a8f709",
+          "quote": "投后管理不到位。",
+          "segment_id": "FRV2-SOURCE-WEB-e072f834c6c7c12c9d5cc9bc5877c3d1-59ede1394b15411129a8f709:L0003"
+        }
+      ],
+      "check": "tags",
+      "reason": "没有强加保险销售或营销标签；投后管理不到位不足以支持词典中具体保险违规标签。",
+      "status": "supported"
+    },
+    {
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-e072f834c6c7c12c9d5cc9bc5877c3d1-59ede1394b15411129a8f709",
+          "quote": "投后管理不到位。",
+          "segment_id": "FRV2-SOURCE-WEB-e072f834c6c7c12c9d5cc9bc5877c3d1-59ede1394b15411129a8f709:L0003"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-e072f834c6c7c12c9d5cc9bc5877c3d1-59ede1394b15411129a8f709",
+          "quote": "对中国银河资产管理有限责任公司罚款30万元。对张旭给予警告。",
+          "segment_id": "FRV2-SOURCE-WEB-e072f834c6c7c12c9d5cc9bc5877c3d1-59ede1394b15411129a8f709:L0005"
+        }
+      ],
+      "check": "completeness",
+      "reason": "提案已覆盖公司与个人处罚及唯一案由，并列出文号、张旭职务和责任认定缺失；暂不建卡本身可作为待核处理。",
+      "status": "supported"
+    },
+    {
+      "evidence": [],
+      "check": "history",
+      "reason": "独立检索中国银河资产管理未命中，仅限该检索范围；提案未断言全库无重复，也未新增旧关系或修改历史，处理有依据。",
+      "status": "supported"
+    }
+  ]
+}

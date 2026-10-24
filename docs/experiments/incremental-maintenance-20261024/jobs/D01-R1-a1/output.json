@@ -1,0 +1,127 @@
+{
+  "schema": "codex-incremental-review/1",
+  "decision": "approve",
+  "reason": "新文明确为银行支行遗失金融许可证的行政处罚，排除于保险处罚审查有依据；提案事实与全文一致，未无据建立或修改旧关系。",
+  "checks": [
+    {
+      "evidence": [
+        {
+          "quote": "当事人: 中国光大银行上海江湾社区支行（原中国光大银行上海北外滩社区支行）",
+          "source_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843",
+          "segment_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843:L0001"
+        },
+        {
+          "quote": "遗失金融许可证",
+          "source_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843",
+          "segment_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843:L0005"
+        }
+      ],
+      "status": "supported",
+      "reason": "当事人为银行支行，唯一案由是遗失金融许可证，全文未涉及保险业务，排除范围适当。",
+      "check": "scope"
+    },
+    {
+      "evidence": [
+        {
+          "quote": "当事人: 中国光大银行上海江湾社区支行（原中国光大银行上海北外滩社区支行）",
+          "source_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843",
+          "segment_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843:L0001"
+        },
+        {
+          "quote": "沪金罚决字〔2026〕94号",
+          "source_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843",
+          "segment_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843:L0003"
+        }
+      ],
+      "status": "supported",
+      "reason": "提案准确保留现名、原名及个案文号，没有把来源公开表的批次文号当作本案文号。",
+      "check": "identity"
+    },
+    {
+      "evidence": [
+        {
+          "quote": "遗失金融许可证",
+          "source_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843",
+          "segment_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843:L0005"
+        },
+        {
+          "quote": "警告并罚款1万元",
+          "source_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843",
+          "segment_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843:L0007"
+        },
+        {
+          "quote": "上海金融监管局",
+          "source_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843",
+          "segment_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843:L0009"
+        },
+        {
+          "quote": "2026年7月21日",
+          "source_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843",
+          "segment_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843:L0011"
+        }
+      ],
+      "status": "supported",
+      "reason": "案由、警告及1万元罚款、决定机关和决定日期均与新文相符。",
+      "check": "facts"
+    },
+    {
+      "evidence": [
+        {
+          "quote": "当事人: 中国光大银行上海江湾社区支行（原中国光大银行上海北外滩社区支行）",
+          "source_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843",
+          "segment_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843:L0001"
+        }
+      ],
+      "status": "supported",
+      "reason": "原文只列银行支行为当事人，提案未推断具体遗失实施人或个人责任，也未新增个人处罚。",
+      "check": "actors"
+    },
+    {
+      "evidence": [
+        {
+          "quote": "遗失金融许可证",
+          "source_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843",
+          "segment_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843:L0005"
+        }
+      ],
+      "status": "supported",
+      "reason": "本案不进入保险处罚库，未附加保险风险标签；许可证遗失事实不足以支持销售或财务类标签。",
+      "check": "tags"
+    },
+    {
+      "evidence": [
+        {
+          "quote": "遗失金融许可证",
+          "source_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843",
+          "segment_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843:L0005"
+        },
+        {
+          "quote": "警告并罚款1万元",
+          "source_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843",
+          "segment_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843:L0007"
+        }
+      ],
+      "status": "supported",
+      "reason": "已独立完整阅读新文，全文只有一个银行许可证遗失案由及一项机构处罚；排除处置下空案件卡、行为卡合理，无遗漏保险独立行为。",
+      "check": "completeness"
+    },
+    {
+      "evidence": [
+        {
+          "quote": "沪金罚决字〔2026〕94号",
+          "source_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843",
+          "segment_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843:L0003"
+        },
+        {
+          "quote": "当事人: 中国光大银行上海江湾社区支行（原中国光大银行上海北外滩社区支行）",
+          "source_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843",
+          "segment_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843:L0001"
+        }
+      ],
+      "status": "supported",
+      "reason": "独立按完整文号和现名主体检索均未命中；仅能说明所查范围结果，不能证明全库无重复。提案明确保留该限制，未声称去重完成，亦未提出旧关系或旧卡变更。",
+      "check": "history"
+    }
+  ],
+  "issues": []
+}

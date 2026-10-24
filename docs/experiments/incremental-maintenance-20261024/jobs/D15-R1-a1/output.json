@@ -1,0 +1,127 @@
+{
+  "schema": "codex-incremental-review/1",
+  "decision": "approve",
+  "reason": "已独立完整阅读新文，并以完整文号及机构关键词检索旧库，未命中候选。新增案件、单项行为及标签均有原文依据，未补造个人责任或覆盖历史；检索局限已恰当保留。",
+  "checks": [
+    {
+      "check": "scope",
+      "status": "supported",
+      "reason": "当事人为财产保险支公司，原文明确行政处罚及罚款，属于保险处罚审查范围。",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0001",
+          "quote": "当事人: 中国平安财产保险股份有限公司上海市虹口支公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0007",
+          "quote": "罚款22万元"
+        }
+      ]
+    },
+    {
+      "check": "identity",
+      "status": "supported",
+      "reason": "机构全称、独立文号66号、上海金融监管局和2026年7月21日均与原文一致；未误将来源公示63-95号范围当作本案文号。",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0001",
+          "quote": "当事人: 中国平安财产保险股份有限公司上海市虹口支公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0003",
+          "quote": "沪金罚决字〔2026〕66号"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0009",
+          "quote": "上海金融监管局"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0011",
+          "quote": "2026年7月21日"
+        }
+      ]
+    },
+    {
+      "check": "facts",
+      "status": "supported",
+      "reason": "原文仅列未按规定使用经备案条款、费率及罚款22万元，提案准确提取，未推断返佣、资金去向或额外违法事实。",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0005",
+          "quote": "未按照规定使用经备案的保险条款、保险费率"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0007",
+          "quote": "罚款22万元"
+        }
+      ]
+    },
+    {
+      "check": "actors",
+      "status": "supported",
+      "reason": "行为及罚款均归属本案明确的机构当事人，未将未披露的实施人员或责任人员补写为个人主体。",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0001",
+          "quote": "当事人: 中国平安财产保险股份有限公司上海市虹口支公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0005",
+          "quote": "未按照规定使用经备案的保险条款、保险费率"
+        }
+      ]
+    },
+    {
+      "check": "tags",
+      "status": "supported",
+      "reason": "唯一标签未按规定使用费率条款与案由直接对应，备案条款、费率和违规使用要件均已明确，无额外推断标签。",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0005",
+          "quote": "未按照规定使用经备案的保险条款、保险费率"
+        }
+      ]
+    },
+    {
+      "check": "completeness",
+      "status": "supported",
+      "reason": "全文仅有一项案由及一项罚款，分别形成一案一行为充分；具体产品、期间及个人未披露而保留未知，没有遗漏独立行为或处罚。",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0005",
+          "quote": "未按照规定使用经备案的保险条款、保险费率"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0007",
+          "quote": "罚款22万元"
+        }
+      ]
+    },
+    {
+      "check": "history",
+      "status": "supported",
+      "reason": "独立按沪金罚决字〔2026〕66号及平安、虹口关键词检索均无候选，仅能说明所查范围未命中。提案明确该局限，未宣称全库去重已证实，也未设置更正、替代或删除历史目标，新增处理有依据。",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0003",
+          "quote": "沪金罚决字〔2026〕66号"
+        }
+      ]
+    }
+  ],
+  "issues": []
+}

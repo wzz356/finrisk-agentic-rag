@@ -1,0 +1,37 @@
+{
+  "type": "posthoc_coordinator_explanation_not_human_gold",
+  "human_approved": false,
+  "original_model_results_preserved": true,
+  "effect_on_original_counts": "none; original result remains add=14, exclude_from_penalty=5, hold=1",
+  "needs_additional_scope_verification": [
+    "D14",
+    "D20"
+  ],
+  "findings": [
+    {
+      "sample_id": "D01",
+      "assessment": "Bank financial-license management; subject plus disclosed violation supports exclusion from the insurance review scope."
+    },
+    {
+      "sample_id": "D05",
+      "assessment": "Loan review negligence explicitly concerns lending; exclusion is comparatively well supported."
+    },
+    {
+      "sample_id": "D12",
+      "assessment": "Credit and auto-finance management violations disclosed; exclusion is comparatively well supported."
+    },
+    {
+      "sample_id": "D14",
+      "assessment": "Bank position and banking ban support the suggestion, but the employee-management allegation is broad; verify specific business before formal exclusion."
+    },
+    {
+      "sample_id": "D20",
+      "assessment": "Wealth-management institution and investment-control allegations led to exclusion, but business scope was not independently verified; apply a consistent evidence threshold with D18."
+    },
+    {
+      "sample_id": "D18",
+      "assessment": "Post-investment management does not disclose investment or fund type; Reviewer changed exclusion to hold. This is a revision, not proven accuracy improvement."
+    }
+  ],
+  "production_admission": false
+}
