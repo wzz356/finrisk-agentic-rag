@@ -15,6 +15,8 @@ from typing import Any
 from urllib.parse import urlsplit
 from uuid import uuid4
 
+from offline.insurance_relevance import evaluate_insurance_scope
+
 _HASH = re.compile(r"[0-9a-f]{64}\Z")
 _SCHEMA = """
 CREATE TABLE IF NOT EXISTS batches (
@@ -275,6 +277,10 @@ class CollectionStore:
     def _document(
         self, connection: sqlite3.Connection, row: sqlite3.Row, batch_id: str | None = None
     ) -> dict:
+        raw_text = self._read_blob(row["raw_sha256"]).decode("utf-8-sig")
+        if hashlib.sha256(raw_text.encode("utf-8")).hexdigest() != row["digest"]:
+            raise ValueError("DOCUMENT_HASH_MISMATCH")
+        scope = evaluate_insurance_scope(raw_text)
         sources = []
         for source in connection.execute(
             "SELECT batch_id, raw_sha256, metadata, created_at "
@@ -311,6 +317,7 @@ class CollectionStore:
                 "status": "baseline_duplicate" if row["baseline_duplicate"] else "collected",
                 "baseline_duplicate": bool(row["baseline_duplicate"]),
                 "contains_insurance": bool(row["contains_insurance"]),
+                "scope_assessment": scope,
                 "metadata": metadata,
                 "sources": sources,
                 "raw_versions": versions,

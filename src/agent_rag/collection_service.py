@@ -404,7 +404,7 @@ class CollectionService:
         index = []
         for offset in range(0, self.store.documents(args["batch_id"], limit=1)["total"], 100):
             for item in self.store.documents(args["batch_id"], offset=offset, limit=100)["items"]:
-                if item["baseline_duplicate"] or not item["contains_insurance"]:
+                if item["baseline_duplicate"]:
                     continue
                 document = self.store.read_document(item["digest"])
                 path = self._inside(texts / (item["digest"] + ".txt"))

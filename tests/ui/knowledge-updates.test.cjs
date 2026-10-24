@@ -264,3 +264,9 @@ test('维护状态单独失败仍允许采集，不沿用旧维护状态启动�
   await assert.rejects(controller.importMaintenanceBatch('b1'),/先成功读取维护状态/);
   controller.stop();
 });
+
+test('范围建议不能被展示为已审核，旧关键词字段不替代分流结果',()=>{
+  assert.match(ui.scopeText({contains_insurance:true}),/重新分流/);
+  assert.match(ui.scopeText({scope_assessment:{category:'insurance_entity'}}),/任职线索.*尚未审核/);
+  assert.match(ui.scopeText({scope_assessment:{category:'non_insurance_candidate'}}),/待核.*尚未审核/);
+});

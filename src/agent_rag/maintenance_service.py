@@ -184,8 +184,7 @@ class MaintenanceService:
             page = inventory.documents(batch_id, offset, 100)
             for item in page["items"]:
                 document = inventory.read_document(item["digest"])
-                if not document["contains_insurance"]:
-                    continue
+                scope = document["scope_assessment"]
                 eligible_count += 1
                 if max_documents is not None and len(ids) >= max_documents:
                     continue
@@ -202,7 +201,10 @@ class MaintenanceService:
                     "new_source",
                     [source["evidence_id"]],
                     [],
-                    "隔离采集原件；待独立核查重复关系与业务范围。",
+                    "隔离采集原件；待独立核查重复关系与业务范围。"
+                    + f"范围建议：{scope['category']}；路由：{scope['route']}；"
+                    + "依据：" + "；".join(e["reason"] for e in scope["evidence"])
+                    + "；待核：" + "；".join(scope["unknowns"]),
                 )
                 ids.append(event["id"])
             offset += len(page["items"])

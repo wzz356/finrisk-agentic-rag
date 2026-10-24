@@ -8,6 +8,12 @@
   const active = new Set(['queued', 'pending', 'running', 'processing']);
   const terminal = new Set(['completed', 'failed', 'partial', 'incomplete', 'cancelled', 'interrupted', 'rejected']);
   const ready = new Set(['ready']);
+  function scopeText(item) {
+    const scope = item?.scope_assessment;
+    if (!scope) return '范围待重新分流';
+    const labels = {insurance_entity:'保险机构或任职线索',insurance_business:'涉及保险业务',non_insurance_candidate:'非保险建议，待核',uncertain:'业务范围待核'};
+    return `${labels[scope.category] || '业务范围待核'} · 尚未审核`;
+  }
   const names = {queued:'排队中',pending:'等待中',running:'执行中',processing:'处理中',collecting:'采集中',completed:'完成',failed:'失败',partial:'未完整完成',incomplete:'未完整完成',cancelled:'已取消',interrupted:'已中断',rejected:'已拒绝',ready:'待选定',validated:'已校验',built:'已构建',collected:'已采集',imported:'已导入',processed:'已处理',partially_processed:'部分处理，仍有待处理或待核文书',no_new_documents:'无新增待处理文书',needs_review:'需要人工复核',baseline_duplicate:'基线已有正文',crawl:'官网补采',official_crawl:'官网补采',scheduled_crawl:'每日采集',legacy_import:'历史导入',import_history:'历史导入',history:'历史导入',process:'原件处理',activate:'版本选定',usage:'扩展使用'};
   const label = value => names[value] || String(value || '未记录');
   function safeDisplay(value) {
@@ -337,7 +343,7 @@
         const meta = item.metadata || {}, digest = item.digest || item.text_sha256 || item.sha256;
         const tr = node('tr'), source = node('td');
         source.append(safeLink(item.source || meta.source || '官方原件',item.source_url || item.url || meta.source_url || meta.url));
-        tr.append(node('td',item.title || meta.title || item.source_id || digest || '未命名原件'),source,node('td',item.published_at || item.publish_date || meta.publish_date || '未记录'),node('td',label(item.status || item.processing_status || 'collected')));
+        tr.append(node('td',item.title || meta.title || item.source_id || digest || '未命名原件'),source,node('td',item.published_at || item.publish_date || meta.publish_date || '未记录'),node('td',`${label(item.status || item.processing_status || 'collected')} · ${scopeText(item)}`));
         const action = node('td'); action.append(button('查看原文',()=>showText(digest,0),textBusy || !digest)); tr.append(action); el('documents').append(tr);
       }
     }
@@ -379,5 +385,5 @@
     render(controller.state); controller.start().catch(()=>{});
     return controller;
   }
-  return {createRequest,createController,validateCrawl,validateProcess,resumeCrawlInput,schedulerText,selectionText,jobText,maintenanceText,safeDisplay,mount};
+  return {createRequest,createController,validateCrawl,validateProcess,resumeCrawlInput,schedulerText,selectionText,jobText,maintenanceText,safeDisplay,scopeText,mount};
 });

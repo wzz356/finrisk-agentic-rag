@@ -21,7 +21,7 @@ from urllib.parse import urlparse
 
 from agent_rag.contracts import canonical_json
 from agent_rag.v2_snapshot import V2KnowledgeSnapshot, file_hash, rows
-from offline.penalty_crawler.filter import BANK_PARTY_RE
+from offline.insurance_relevance import evaluate_insurance_scope
 
 
 def write_json(path: Path, value: dict) -> None:
@@ -85,6 +85,7 @@ def append_jsonl(base: Path, delta: Path, destination: Path) -> None:
 
 
 def pending_documents(crawl: Path, known: set[str], *, include_bank_insurance=False) -> list[dict]:
+    """Keep scope-review sources visible; the legacy bank flag no longer drops them."""
     crawl = crawl.resolve()
     result, seen = [], set(known)
     for row in rows(crawl / "index.jsonl") if (crawl / "index.jsonl").is_file() else []:
@@ -104,8 +105,7 @@ def pending_documents(crawl: Path, known: set[str], *, include_bank_insurance=Fa
         raw = path.read_bytes()
         text = raw.decode("utf-8-sig")
         digest = hashlib.sha256(text.encode("utf-8")).hexdigest()
-        if (digest in seen or "保险" not in text
-                or (BANK_PARTY_RE.search(text) and not include_bank_insurance)):
+        if digest in seen:
             continue
         seen.add(digest)
         result.append(
@@ -113,6 +113,7 @@ def pending_documents(crawl: Path, known: set[str], *, include_bank_insurance=Fa
                 **row,
                 "txt_path": str(path),
                 "full_text": text,
+                "scope_assessment": evaluate_insurance_scope(text),
                 "text_sha256": digest,
                 "source_sha256": hashlib.sha256(raw).hexdigest(),
                 "file_id": "WEB-" + digest[:32],
@@ -547,6 +548,19 @@ def run_update(
         origins = {s.get("origin_key"): s for s in base.sources.values() if s.get("origin_key")}
         for source in pending[:max_documents]:
             cache = registry / "candidates" / source["text_sha256"]
+            if source["scope_assessment"]["route"] == "scope_review":
+                entry = {
+                    "file_id": source["file_id"],
+                    "code": "SCOPE_REVIEW_REQUIRED",
+                    "scope_assessment": source["scope_assessment"],
+                    "status": "needs_manual_review",
+                    "run": str(run),
+                    "candidate_dir": str(cache),
+                }
+                write_json(cache / "source.json", source)
+                write_json(cache / "disposition.json", entry)
+                review.append(entry)
+                continue
             if source["origin_key"] in origins:
                 entry = {
                     "file_id": source["file_id"],

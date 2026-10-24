@@ -1,9 +1,7 @@
-"""采集案例的保险相关性筛选、银行当事人排除与去重。
+"""采集案例的保险范围分流与去重。
 
-口径（2026-08-22 与案例库侧确认）：原始语料为保险业处罚（财险/寿险/中介/个人），
-银行代销保险被罚的文书虽含"保险"字样但当事人是银行，不入库；寿险公司
-"银行保险部/银行渠道部"的个人责任人案是保险口径，不误伤；保险资管公司属
-保险业机构，放行。
+范围统一采用主体、任职与业务事实分流。银行代理保险可进入候选审核；
+明确非保险的记录保留排除建议，未知材料继续待核，不能因无关键词永久跳过。
 
 去重三级：采集侧 state.json（已见 docId）→ 本模块 ingested.jsonl 台账 sha1 →
 案例库侧 case_id = "U" + sha256(文件字节)[:15]（与 CaseManagementService 同一算法，
@@ -16,6 +14,8 @@ import json
 import re
 from hashlib import sha1, sha256
 from pathlib import Path
+
+from offline.insurance_relevance import evaluate_insurance_scope
 
 INSURANCE_KEYWORD = "保险"
 BANK_PARTY_RE = re.compile(
@@ -81,6 +81,7 @@ def collect_pending(
         "non_insurance": 0,
         "bank_party": 0,
         "missing_file": 0,
+        "scope_review": 0,
     }
     pending: list[dict[str, object]] = []
     seen_sha1: set[str] = set()
@@ -112,18 +113,18 @@ def collect_pending(
             if case_id_for_file(txt) in existing_case_ids:
                 stats["already_ingested"] += 1
                 continue
-            if not include_all and INSURANCE_KEYWORD not in text:
+            scope = evaluate_insurance_scope(text)
+            if not include_all and scope["relevance"] == "non_insurance":
                 stats["non_insurance"] += 1
-                continue
-            if not include_all and BANK_PARTY_RE.search(text):
-                stats["bank_party"] += 1
-                continue
+            if scope["route"] == "scope_review":
+                stats["scope_review"] += 1
             seen_sha1.add(digest)
             pending.append(
                 {
                     "txt_path": txt,
                     "sha1": digest,
                     "title": str(row.get("title") or ""),
+                    "scope_assessment": scope,
                     "source_url": str(row.get("source_url") or ""),
                 }
             )
