@@ -110,3 +110,7 @@ V2适配器保留了原实验的资产、版本和哈希约束，并不是适用
 ## 采集与维护管理
 
 本机页面为 `/agent-rag/knowledge`，命令入口为 `scripts/manage_knowledge.py`。默认合成演示可查看空库存和未配置状态；需要另外绑定兼容的V2快照与构建资产后，才能使用管理注册器。详见[采集说明](docs/ISOLATED_COLLECTION.md)、[维护门禁](docs/KNOWLEDGE_MAINTENANCE.md)及[合成回放](docs/KNOWLEDGE_MAINTENANCE_REPLAY.md)。原件、完整知识库、签名密钥、人工参照和运行账本均需使用者在本地管理。
+
+## 100条风险识别实测
+
+本批80条官方风险材料与20条已核定非风险对照，最终风险初筛准确率为98%（98/100）。[汇报、完整测试集与逐条生成结果](docs/experiments/agent-binary100-20261025/README.md)包含测试方法、重试记录及适用范围。

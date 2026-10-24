@@ -1,0 +1,45 @@
+{
+  "total": 100,
+  "official_risk_items": 80,
+  "approved_nonrisk_controls": 20,
+  "original_accuracy": 0.94,
+  "original_correct": 94,
+  "original_valid_binary_outputs": 95,
+  "accuracy_after_one_manual_failure_recovery": 0.98,
+  "correct_after_recovery": 98,
+  "valid_binary_outputs_after_recovery": 99,
+  "risk_correct": 78,
+  "risk_denominator": 80,
+  "risk_identification_rate_failure_as_incorrect": 0.975,
+  "nonrisk_correct": 20,
+  "nonrisk_denominator": 20,
+  "misclassification_ids": [
+    "Q074"
+  ],
+  "execution_failure_ids": [
+    "Q001"
+  ],
+  "outcome_matrix": {
+    "risk": {
+      "predicted_risk": 78,
+      "predicted_nonrisk": 1,
+      "failed": 1
+    },
+    "nonrisk": {
+      "predicted_risk": 0,
+      "predicted_nonrisk": 20,
+      "failed": 0
+    }
+  },
+  "original_main_model_calls": 360,
+  "original_binary_closure_attempts": 91,
+  "original_search_query_attempts": 172,
+  "manual_recovery_calls": 5,
+  "recovery_successes": 4,
+  "final_needs_review_true": 96,
+  "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+  "known_new_recovery_cost_cny": 0.01481,
+  "unknown_new_recovery_reserved_cny": 0.055848,
+  "cumulative_budget_occupancy_cny": 42.194714,
+  "scope": "二分类风险初筛；包含最终收敛与人工失败恢复；非独立盲测、非完整审查或官方综合指标。"
+}

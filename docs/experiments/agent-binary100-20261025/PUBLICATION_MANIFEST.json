@@ -1,0 +1,28 @@
+{
+  "schema": "finrisk-binary100-publication/1",
+  "dataset_records": 100,
+  "generated_output_records": 100,
+  "raw_report_records": 100,
+  "accuracy": 0.98,
+  "risk_correct": 78,
+  "nonrisk_correct": 20,
+  "failed": [
+    "Q001"
+  ],
+  "misclassified": [
+    "Q074"
+  ],
+  "new_model_calls": 0,
+  "published_byte_identical_to_local": true,
+  "original_agent_code_changed": false,
+  "files": {
+    "Agent风险识别实测答辩报告.md": "ae3beffac77f014bdfd06e1aa472a5c39e199d7a7d9e0c6510edef3311fc2f63",
+    "100条测试集与生成结果.md": "306ba277d665c798a89116ac944cead2067c58cad8878d0e91c0bd4f3301b347",
+    "实测汇报与100条结果.html": "0cf752adf45198a8c632aff7f8e82279cd2f01da45041e13847c8fdc610161b0",
+    "测试集.jsonl": "2246202a988516884fc19dcb4a580691929c851f4e43b63282658d5e96b39f1d",
+    "生成结果.jsonl": "b105ca9a176478f536237a6535947b1c0e20ec9d213e7959d2836410671fca33",
+    "原始审查报告.jsonl": "2f2b7b239eccc89a261e2f78478045ef28b8b4bd3fbe90b89a1d8ee358ac8fc9",
+    "指标.json": "788405087bca53f6ea19ec24cb0517e3aff0aaabaf9aba14d9730f8e234b3ed8",
+    "verification.json": "1530352ff14bfe5814d01131a8be72ad7c131bb8f91848853d03c6d368ccb4e1"
+  }
+}
