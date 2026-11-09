@@ -1,0 +1,21 @@
+{
+  "project": "FinRisk",
+  "integration_date": "2026-11-09",
+  "history_strategy": "git subtree without squash; original commits and authors retained",
+  "sources": [
+    {
+      "path": "apps/workbench",
+      "repository": "https://github.com/qby1210/finrisk-framework",
+      "commit": "f68cf35b5dd2c358e3977da0f029ad984d60149c",
+      "tracked_files": 309
+    },
+    {
+      "path": "apps/agentic-rag",
+      "repository": "https://github.com/wzz356/finrisk-agentic-rag",
+      "commit": "c0cf642bc2ee1aad6ea8759b8fe6effecc72da5c",
+      "tracked_files": 642
+    }
+  ],
+  "knowledge_release": "https://github.com/wzz356/finrisk-agentic-rag/releases/tag/knowledge-full-20261024",
+  "license": "No new license is assigned. Original and third-party notices remain applicable."
+}

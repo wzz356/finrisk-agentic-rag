@@ -1,0 +1,30 @@
+# Local environments, credentials and generated assets
+**/.venv/
+**/.agent-venv/
+**/node_modules/
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/.cache/
+**/.tmp/
+**/runtime/
+**/outputs/
+.env
+.env.*
+!.env.example
+*.py[cod]
+*.log
+*.key
+*.pem
+*.pfx
+*.zip
+.DS_Store
+
+# The complete KB, embeddings and raw PDFs are restored separately.
+apps/workbench/raw_pdfs/
+apps/workbench/models/
+apps/workbench/checkpoints/
+apps/workbench/data/cache/
+apps/workbench/data/processed/knowledge/
+apps/agentic-rag/agent_harness/dist/
