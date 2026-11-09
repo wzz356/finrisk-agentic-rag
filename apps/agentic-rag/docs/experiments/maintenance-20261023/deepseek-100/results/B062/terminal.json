@@ -1,0 +1,57 @@
+{
+  "id": "B062",
+  "status": "experiment_protocol_approved_not_applied",
+  "production_admission": false,
+  "receipt": null,
+  "format_repairs": {
+    "proposer": 0,
+    "reviewer": 0
+  },
+  "business_revision_used": true,
+  "revisions": [
+    {
+      "revision": 1,
+      "phase": "proposer",
+      "role_attempt": 1,
+      "action": "add",
+      "mechanical_valid": true
+    },
+    {
+      "revision": 1,
+      "phase": "reviewer",
+      "role_attempt": 1,
+      "decision": "request_changes",
+      "validation": {
+        "experiment_review_valid": true,
+        "decision": "request_changes",
+        "production_admission": false,
+        "receipt": null
+      }
+    },
+    {
+      "revision": 2,
+      "phase": "proposer",
+      "role_attempt": 2,
+      "action": "add",
+      "mechanical_valid": true
+    },
+    {
+      "revision": 2,
+      "phase": "reviewer",
+      "role_attempt": 2,
+      "decision": "approve",
+      "validation": {
+        "experiment_review_valid": true,
+        "decision": "approve",
+        "production_admission": false,
+        "receipt": null
+      }
+    }
+  ],
+  "terminal_error": null,
+  "stop_reason": "completed",
+  "format_repairs_used": {
+    "proposer": 0,
+    "reviewer": 0
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "decision": "request_changes",
+  "claim_checks": [
+    {
+      "claim_id": "claim:batch100-B059:case:subject",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B059:L0001:90879508325875a7:90879508325875a7",
+          "quote": "当事人: 张娟（时任山东汇盛保险代理有限公司法定代表人）"
+        }
+      ],
+      "comment": "完整原文支持该字段、引文及事实类型。"
+    },
+    {
+      "claim_id": "claim:batch100-B059:case:document_number",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B059:L0003:90879508325875a7:90879508325875a7",
+          "quote": "淄金罚决字〔2026〕27号"
+        }
+      ],
+      "comment": "完整原文支持该字段、引文及事实类型。"
+    },
+    {
+      "claim_id": "claim:batch100-B059:case:decision_date",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B059:L0011:90879508325875a7:90879508325875a7",
+          "quote": "2026年8月11日"
+        }
+      ],
+      "comment": "完整原文支持该字段、引文及事实类型。"
+    },
+    {
+      "claim_id": "claim:batch100-B059:case:authority",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B059:L0009:90879508325875a7:90879508325875a7",
+          "quote": "国家金融监督管理总局淄博监管分局"
+        }
+      ],
+      "comment": "完整原文支持该字段、引文及事实类型。"
+    },
+    {
+      "claim_id": "claim:batch100-B059:case:position",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B059:L0001:90879508325875a7:90879508325875a7",
+          "quote": "张娟（时任山东汇盛保险代理有限公司法定代表人）"
+        }
+      ],
+      "comment": "完整原文支持该字段、引文及事实类型。"
+    },
+    {
+      "claim_id": "claim:batch100-B059:case:legal_basis",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+          "quote": "未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务"
+        }
+      ],
+      "comment": "完整原文支持该字段、引文及事实类型。"
+    },
+    {
+      "claim_id": "claim:batch100-B059:case:penalties",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B059:L0007:90879508325875a7:90879508325875a7",
+          "quote": "警告并罚款6万元"
+        }
+      ],
+      "comment": "完整原文支持该字段、引文及事实类型。"
+    },
+    {
+      "claim_id": "claim:batch100-B059:case:unknowns",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+          "quote": "未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务"
+        }
+      ],
+      "comment": "完整原文支持该字段、引文及事实类型。"
+    },
+    {
+      "claim_id": "claim:batch100-B059:behaviors:0:actor",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+          "quote": "未按规定投保职业责任保险或缴存保证金"
+        }
+      ],
+      "comment": "完整原文支持该字段、引文及事实类型。"
+    },
+    {
+      "claim_id": "claim:batch100-B059:behaviors:0:role",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+          "quote": "未按规定投保职业责任保险或缴存保证金"
+        }
+      ],
+      "comment": "完整原文支持该字段、引文及事实类型。"
+    },
+    {
+      "claim_id": "claim:batch100-B059:behaviors:0:action",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+          "quote": "未按规定投保职业责任保险或缴存保证金"
+        }
+      ],
+      "comment": "完整原文支持该字段、引文及事实类型。"
+    },
+    {
+      "claim_id": "claim:batch100-B059:behaviors:0:risk_tags",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+          "quote": "未按规定投保职业责任保险或缴存保证金"
+        }
+      ],
+      "comment": "完整原文支持该字段、引文及事实类型。"
+    },
+    {
+      "claim_id": "claim:batch100-B059:behaviors:0:unknowns",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+          "quote": "未按规定投保职业责任保险或缴存保证金"
+        }
+      ],
+      "comment": "完整原文支持该字段、引文及事实类型。"
+    },
+    {
+      "claim_id": "claim:batch100-B059:behaviors:1:actor",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+          "quote": "未按规定开立独立的佣金收取账户"
+        }
+      ],
+      "comment": "完整原文支持该字段、引文及事实类型。"
+    },
+    {
+      "claim_id": "claim:batch100-B059:behaviors:1:role",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+          "quote": "未按规定开立独立的佣金收取账户"
+        }
+      ],
+      "comment": "完整原文支持该字段、引文及事实类型。"
+    },
+    {
+      "claim_id": "claim:batch100-B059:behaviors:1:action",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+          "quote": "未按规定开立独立的佣金收取账户"
+        }
+      ],
+      "comment": "完整原文支持该字段、引文及事实类型。"
+    },
+    {
+      "claim_id": "claim:batch100-B059:behaviors:1:risk_tags",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+          "quote": "未按规定开立独立的佣金收取账户"
+        }
+      ],
+      "comment": "完整原文支持该字段、引文及事实类型。"
+    },
+    {
+      "claim_id": "claim:batch100-B059:behaviors:1:unknowns",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+          "quote": "未按规定开立独立的佣金收取账户"
+        }
+      ],
+      "comment": "完整原文支持该字段、引文及事实类型。"
+    },
+    {
+      "claim_id": "claim:batch100-B059:behaviors:2:actor",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+          "quote": "委托未通过本机构进行执业登记的个人从事保险代理业务"
+        }
+      ],
+      "comment": "完整原文支持该字段、引文及事实类型。"
+    },
+    {
+      "claim_id": "claim:batch100-B059:behaviors:2:role",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+          "quote": "委托未通过本机构进行执业登记的个人从事保险代理业务"
+        }
+      ],
+      "comment": "完整原文支持该字段、引文及事实类型。"
+    },
+    {
+      "claim_id": "claim:batch100-B059:behaviors:2:action",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+          "quote": "委托未通过本机构进行执业登记的个人从事保险代理业务"
+        }
+      ],
+      "comment": "完整原文支持该字段、引文及事实类型。"
+    },
+    {
+      "claim_id": "claim:batch100-B059:behaviors:2:risk_tags",
+      "verdict": "unsupported",
+      "citations": [
+        {
+          "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+          "quote": "委托未通过本机构进行执业登记的个人从事保险代理业务"
+        }
+      ],
+      "comment": "标签要求受托者为不具有合法资质的机构；原文仅为未通过本机构执业登记的个人，主体类型和资质条件均不能等同。"
+    },
+    {
+      "claim_id": "claim:batch100-B059:behaviors:2:unknowns",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+          "quote": "委托未通过本机构进行执业登记的个人从事保险代理业务"
+        }
+      ],
+      "comment": "完整原文支持该字段、引文及事实类型。"
+    }
+  ],
+  "omission_check_completed": true,
+  "issues": [
+    {
+      "issue_id": "issue:B059:tag",
+      "severity": "blocking",
+      "category": "overreach",
+      "operation_id": "op:batch100-B059:behaviors:2",
+      "claim_id": "claim:batch100-B059:behaviors:2:risk_tags",
+      "pointer": "/risk_tags",
+      "diff_line": null,
+      "citations": [
+        {
+          "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+          "quote": "委托未通过本机构进行执业登记的个人从事保险代理业务"
+        }
+      ],
+      "change_request": "删除“委托无资质机构销售”标签，按字典必要要件重新归类，允许零标签；不得用最接近原则把个人视为机构或把未登记推定为无合法资质。三项行为及案件信息已核对，无额外行为遗漏。旧库完整文号搜索零命中仅作检索结果，不证明不存在。"
+    }
+  ]
+}

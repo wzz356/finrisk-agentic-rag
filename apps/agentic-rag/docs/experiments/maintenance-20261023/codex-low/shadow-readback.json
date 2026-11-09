@@ -1,0 +1,67 @@
+{
+  "added_sources": [
+    {
+      "id": "B002",
+      "source_id": "shadow:B002:00ccffe5776bd7da",
+      "full_text_preserved": true
+    },
+    {
+      "id": "B011",
+      "source_id": "shadow:B011:339151b595131ad2",
+      "full_text_preserved": true
+    },
+    {
+      "id": "B052",
+      "source_id": "shadow:B052:33b1c13468ee7182",
+      "full_text_preserved": true
+    },
+    {
+      "id": "B020",
+      "source_id": "shadow:B020:70c3d5dbf5cdeccd",
+      "full_text_preserved": true
+    },
+    {
+      "id": "B003",
+      "source_id": "shadow:B003:05ad4426ea7bf82b",
+      "full_text_preserved": true
+    },
+    {
+      "id": "B009",
+      "source_id": "shadow:B009:273e209021fbd316",
+      "full_text_preserved": true
+    },
+    {
+      "id": "B039",
+      "source_id": "shadow:B039:b7dee6a36c99e616",
+      "full_text_preserved": true
+    }
+  ],
+  "manifest": {
+    "schema": "lexical-experiment-shadow/1",
+    "snapshot_id": "CodexPR-7b3054573cf1d46d99464ab9",
+    "source_count": 9647,
+    "assets": {
+      "sources": {
+        "path": "[local path omitted from public export]",
+        "sha256": "7b3054573cf1d46d99464ab94cfcdadd278ab77668627a48c8ec13b6c73c4904"
+      },
+      "dictionary": {
+        "path": "[local path omitted from public export]",
+        "sha256": "0588febf140ada823980fdbe0c5691d77bc02ed439cb8d44e6cfef1cda12d8bb"
+      }
+    },
+    "cards": {
+      "path": "[local path omitted from public export]",
+      "sha256": "74c133666231a95cbe284426a7f6f5881f085affa97847829db12d88769ce46e"
+    },
+    "base_snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+    "added_documents": 7,
+    "added_case_cards": 7,
+    "added_behavior_cards": 13,
+    "old_bytes_preserved": true,
+    "production_admission": false,
+    "human_approved": false,
+    "limitations": "Isolated exact lexical source search/read and grounded cards. No new dense/BGE or production Agent registry publication."
+  },
+  "production_published": false
+}

@@ -1,0 +1,13 @@
+{
+  "kind": "decision",
+  "goal": "mechanism_search",
+  "focus_refs": [
+    {
+      "segment_id": "S0001",
+      "quote": "购买这份保险就送购物卡。",
+      "occurrence": 1
+    }
+  ],
+  "gap_updates": [],
+  "accepted_evidence_ids": []
+}

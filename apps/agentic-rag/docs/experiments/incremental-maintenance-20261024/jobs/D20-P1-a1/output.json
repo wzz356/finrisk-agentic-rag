@@ -1,0 +1,30 @@
+{
+  "schema": "codex-incremental/1",
+  "action": "exclude_from_penalty",
+  "reason": "原文主体为华夏理财有限责任公司及相关责任人员，所述业务事实为投资运作、系统管控和监管数据报送违规，属于理财业务处罚，未涉及保险承保、销售、理赔或保险资金等事实，排除出保险处罚审查范围。已按机构主干“华夏理财”搜索旧库，未命中；此结果仅限本次查询，不代表全库不存在重复。",
+  "case_cards": [],
+  "behavior_cards": [],
+  "targets": [],
+  "relations": [],
+  "uncertainties": [
+    "原文未列处罚决定文号。",
+    "原文未披露具体投资事项、王涛与张志涛各自行为及各自罚款金额。"
+  ],
+  "evidence": [
+    {
+      "quote": "当事人: 华夏理财有限责任公司及相关责任人员",
+      "segment_id": "FRV2-SOURCE-WEB-fcea4b1a0c9a56c0ec0093236ddf6a47-eb0eaf6818b34fd0e9ae33e9:L0001",
+      "source_id": "FRV2-SOURCE-WEB-fcea4b1a0c9a56c0ec0093236ddf6a47-eb0eaf6818b34fd0e9ae33e9"
+    },
+    {
+      "quote": "投资运作不规范，系统管控不到位，监管数据报送不合规等",
+      "segment_id": "FRV2-SOURCE-WEB-fcea4b1a0c9a56c0ec0093236ddf6a47-eb0eaf6818b34fd0e9ae33e9:L0003",
+      "source_id": "FRV2-SOURCE-WEB-fcea4b1a0c9a56c0ec0093236ddf6a47-eb0eaf6818b34fd0e9ae33e9"
+    },
+    {
+      "quote": "对华夏理财有限责任公司罚款1200万元。对王涛、张志涛警告并罚款合计10万元。",
+      "segment_id": "FRV2-SOURCE-WEB-fcea4b1a0c9a56c0ec0093236ddf6a47-eb0eaf6818b34fd0e9ae33e9:L0005",
+      "source_id": "FRV2-SOURCE-WEB-fcea4b1a0c9a56c0ec0093236ddf6a47-eb0eaf6818b34fd0e9ae33e9"
+    }
+  ]
+}

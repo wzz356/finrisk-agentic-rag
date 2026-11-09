@@ -1,0 +1,32 @@
+{
+  "id": "B055",
+  "status": "held",
+  "production_admission": false,
+  "receipt": null,
+  "format_repairs": {
+    "proposer": 0,
+    "reviewer": 0
+  },
+  "business_revision_used": false,
+  "revisions": [
+    {
+      "revision": 1,
+      "phase": "proposer",
+      "error": {
+        "code": "HOST_ERROR",
+        "field": null,
+        "message": "Error: SUBMISSION_INCOMPLETE_model_failure"
+      }
+    }
+  ],
+  "terminal_error": {
+    "code": "HOST_ERROR",
+    "field": null,
+    "message": "Error: SUBMISSION_INCOMPLETE_model_failure"
+  },
+  "stop_reason": "HOST_ERROR",
+  "format_repairs_used": {
+    "proposer": 0,
+    "reviewer": 0
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "action": "add",
+  "behavior_cards": [
+    {
+      "exceptions": [],
+      "actor_role": "受处罚机构",
+      "local_id": "behavior-1",
+      "case_id": "case-1",
+      "actor": "人保寿险吉林省分公司",
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0001",
+          "quote": "当事人: 人保寿险吉林省分公司",
+          "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0003",
+          "quote": "换领许可证超期",
+          "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32"
+        }
+      ],
+      "risk_tags": [],
+      "conditions": [],
+      "unknowns": [
+        "超期时长",
+        "具体实施人员"
+      ],
+      "negations": [],
+      "summary": "换领许可证超期。"
+    }
+  ],
+  "evidence": [
+    {
+      "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0001",
+      "quote": "当事人: 人保寿险吉林省分公司",
+      "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32"
+    },
+    {
+      "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0003",
+      "quote": "换领许可证超期",
+      "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32"
+    },
+    {
+      "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0005",
+      "quote": "对人保寿险吉林省分公司警告并罚款1万元。",
+      "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32"
+    },
+    {
+      "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0007",
+      "quote": "吉林金融监管局",
+      "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32"
+    },
+    {
+      "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0009",
+      "quote": "2026年7月30日",
+      "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32"
+    }
+  ],
+  "targets": [],
+  "schema": "codex-incremental/1",
+  "uncertainties": [
+    "原文未载处罚文号、超期时长及具体实施人员。",
+    "检索未核实到同案旧文，不能据此证明全库不存在重复。"
+  ],
+  "case_cards": [
+    {
+      "local_id": "case-1",
+      "document_number": null,
+      "subject": "人保寿险吉林省分公司",
+      "authority": "吉林金融监管局",
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0001",
+          "quote": "当事人: 人保寿险吉林省分公司",
+          "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0003",
+          "quote": "换领许可证超期",
+          "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0005",
+          "quote": "对人保寿险吉林省分公司警告并罚款1万元。",
+          "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0007",
+          "quote": "吉林金融监管局",
+          "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0009",
+          "quote": "2026年7月30日",
+          "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32"
+        }
+      ],
+      "penalties": [
+        {
+          "evidence": [
+            {
+              "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0005",
+              "quote": "对人保寿险吉林省分公司警告并罚款1万元。",
+              "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32"
+            }
+          ],
+          "subject": "人保寿险吉林省分公司",
+          "text": "警告并罚款1万元"
+        }
+      ],
+      "unknowns": [
+        "document_number"
+      ],
+      "decision_date": "2026年7月30日",
+      "summary": "人保寿险吉林省分公司因换领许可证超期，被吉林金融监管局于2026年7月30日警告并罚款1万元。"
+    }
+  ],
+  "reason": "已全文核查：本文是对人保寿险吉林省分公司换领许可证超期作出的行政处罚，明确警告并罚款1万元，并非行政许可批复。按原文主体及人保寿险、吉林短词检索旧库，完整主体未命中，短词候选为牡丹江机构案件，未据预览建立关系；所查范围不足以断言全库无重复。",
+  "relations": []
+}

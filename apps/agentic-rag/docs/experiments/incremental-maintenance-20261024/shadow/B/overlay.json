@@ -1,0 +1,2002 @@
+{
+  "schema": "codex-incremental-shadow/1",
+  "arm": "B",
+  "production_admission": false,
+  "human_approved": false,
+  "base": {
+    "sha256": "d9c26d2f6f261dea5bc82d97e9209018814603826f9d57eaae3d3bdea21b55c9",
+    "source_count": 10000,
+    "availability": "External read-only experiment baseline; SQLite is not included in this evidence package."
+  },
+  "source_dispositions": {
+    "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843": "exclude_from_penalty",
+    "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811": "add",
+    "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4": "add",
+    "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2": "add",
+    "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab": "exclude_from_penalty",
+    "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0": "add",
+    "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9": "add",
+    "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61": "add",
+    "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0": "add",
+    "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922": "add",
+    "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec": "add",
+    "FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb": "exclude_from_penalty",
+    "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b": "add",
+    "FRV2-SOURCE-WEB-621de61b089171eb0fd4bee1ae21a85b-8e1b963c35973b02e4d58123": "exclude_from_penalty",
+    "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f": "add",
+    "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b": "add",
+    "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7": "add",
+    "FRV2-SOURCE-WEB-e072f834c6c7c12c9d5cc9bc5877c3d1-59ede1394b15411129a8f709": "hold",
+    "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32": "add",
+    "FRV2-SOURCE-WEB-fcea4b1a0c9a56c0ec0093236ddf6a47-eb0eaf6818b34fd0e9ae33e9": "exclude_from_penalty"
+  },
+  "added_records": {
+    "event:f781b322ff0dd04f7572868f:FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:case-1": {
+      "subject": "李梓通",
+      "document_number": "豫金罚决字〔2026〕64号",
+      "decision_date": "2026年8月25日",
+      "authority": "河南金融监管局",
+      "penalties": [
+        {
+          "text": "警告，罚款5万元",
+          "subject": "李梓通",
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+              "segment_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:L0001",
+              "quote": "当事人: 李梓通（时任中原农险郑州市分公司总经理助理）"
+            },
+            {
+              "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+              "segment_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:L0007",
+              "quote": "警告，罚款5万元"
+            }
+          ]
+        }
+      ],
+      "summary": "李梓通时任中原农险郑州市分公司总经理助理，因编制或者提供虚假的报告、报表、文件、资料，被河南金融监管局警告并罚款5万元。",
+      "unknowns": [
+        "具体实施方式及个人责任方式未披露",
+        "资金去向未披露"
+      ],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+          "segment_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:L0001",
+          "quote": "当事人: 李梓通（时任中原农险郑州市分公司总经理助理）"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+          "segment_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:L0003",
+          "quote": "豫金罚决字〔2026〕64号"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+          "segment_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:L0009",
+          "quote": "河南金融监管局"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+          "segment_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:L0011",
+          "quote": "2026年8月25日"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+          "segment_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:L0005",
+          "quote": "编制或者提供虚假的报告、报表、文件、资料"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+          "segment_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:L0007",
+          "quote": "警告，罚款5万元"
+        }
+      ],
+      "record_id": "event:f781b322ff0dd04f7572868f:FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:case-1",
+      "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:f781b322ff0dd04f7572868f:FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:behavior-1": {
+      "case_id": "event:f781b322ff0dd04f7572868f:FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:case-1",
+      "actor": "李梓通",
+      "actor_role": "时任中原农险郑州市分公司总经理助理",
+      "summary": "案由为编制或者提供虚假的报告、报表、文件、资料；原文未区分具体编制或提供行为及个人责任方式。",
+      "risk_tags": [],
+      "unknowns": [
+        "虚假资料具体内容未披露",
+        "未说明是否涉及虚列费用或套取资金",
+        "具体实施人及个人责任方式未披露"
+      ],
+      "conditions": [],
+      "negations": [],
+      "exceptions": [],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+          "segment_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:L0001",
+          "quote": "当事人: 李梓通（时任中原农险郑州市分公司总经理助理）"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+          "segment_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:L0005",
+          "quote": "编制或者提供虚假的报告、报表、文件、资料"
+        }
+      ],
+      "record_id": "event:f781b322ff0dd04f7572868f:FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:behavior-1",
+      "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:aa4d114dddb079d3695bf253:FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:case-1": {
+      "subject": "王彪",
+      "document_number": "内金罚决字〔2026〕27号",
+      "decision_date": "2026年7月30日",
+      "authority": "内蒙古金融监管局",
+      "penalties": [
+        {
+          "text": "警告并罚款0.5万元",
+          "subject": "王彪",
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+              "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0001",
+              "quote": "当事人: 王彪（时任平安人寿赛罕区营销服务部负责人）"
+            },
+            {
+              "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+              "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0007",
+              "quote": "警告并罚款0.5万元"
+            }
+          ]
+        }
+      ],
+      "summary": "王彪时任平安人寿赛罕区营销服务部负责人，因唆使、诱导保险代理人进行违背诚信义务的活动，受到警告并罚款0.5万元。",
+      "unknowns": [
+        "代理人具体活动及对象",
+        "是否与同名旧案当事人为同一自然人"
+      ],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0001",
+          "quote": "当事人: 王彪（时任平安人寿赛罕区营销服务部负责人）"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0003",
+          "quote": "内金罚决字〔2026〕27号"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0005",
+          "quote": "唆使、诱导保险代理人进行违背诚信义务的活动"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0007",
+          "quote": "警告并罚款0.5万元"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0009",
+          "quote": "内蒙古金融监管局"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0011",
+          "quote": "2026年7月30日"
+        }
+      ],
+      "record_id": "event:aa4d114dddb079d3695bf253:FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:case-1",
+      "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:aa4d114dddb079d3695bf253:FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:behavior-1": {
+      "case_id": "event:aa4d114dddb079d3695bf253:FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:case-1",
+      "actor": "王彪",
+      "actor_role": "时任平安人寿赛罕区营销服务部负责人；本次受处罚当事人",
+      "summary": "唆使、诱导保险代理人进行违背诚信义务的活动。",
+      "risk_tags": [],
+      "unknowns": [
+        "被唆使、诱导的保险代理人身份",
+        "违背诚信义务活动的具体内容",
+        "代理人是否实际实施相关活动"
+      ],
+      "conditions": [],
+      "negations": [],
+      "exceptions": [],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0001",
+          "quote": "当事人: 王彪（时任平安人寿赛罕区营销服务部负责人）"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0005",
+          "quote": "唆使、诱导保险代理人进行违背诚信义务的活动"
+        }
+      ],
+      "record_id": "event:aa4d114dddb079d3695bf253:FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:behavior-1",
+      "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:1ae5c9aad8aaf8a59e0ba950:FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:case-1": {
+      "subject": "中国邮政集团公司辽宁省凤城市分公司",
+      "document_number": "丹金罚决字〔2026〕7号",
+      "decision_date": "2026-08-19",
+      "authority": "丹东金融监管分局",
+      "penalties": [
+        {
+          "text": "警告，并罚款1万元",
+          "subject": "中国邮政集团公司辽宁省凤城市分公司",
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+              "segment_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:L0001",
+              "quote": "当事人: 中国邮政集团公司辽宁省凤城市分公司"
+            },
+            {
+              "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+              "segment_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:L0007",
+              "quote": "警告，并罚款1万元"
+            }
+          ]
+        }
+      ],
+      "summary": "中国邮政集团公司辽宁省凤城市分公司因管理不善遗失《保险兼业代理业务许可证》，被丹东金融监管分局警告并罚款1万元。",
+      "unknowns": [],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+          "segment_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:L0001",
+          "quote": "当事人: 中国邮政集团公司辽宁省凤城市分公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+          "segment_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:L0003",
+          "quote": "丹金罚决字〔2026〕7号"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+          "segment_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:L0005",
+          "quote": "因管理不善遗失《保险兼业代理业务许可证》"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+          "segment_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:L0007",
+          "quote": "警告，并罚款1万元"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+          "segment_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:L0009",
+          "quote": "丹东金融监管分局"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+          "segment_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:L0011",
+          "quote": "2026年8月19日"
+        }
+      ],
+      "record_id": "event:1ae5c9aad8aaf8a59e0ba950:FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:case-1",
+      "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:1ae5c9aad8aaf8a59e0ba950:FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:behavior-1": {
+      "case_id": "event:1ae5c9aad8aaf8a59e0ba950:FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:case-1",
+      "actor": "中国邮政集团公司辽宁省凤城市分公司",
+      "actor_role": "被处罚机构",
+      "summary": "因管理不善遗失《保险兼业代理业务许可证》。",
+      "risk_tags": [],
+      "unknowns": [
+        "具体经办人员及遗失经过未披露"
+      ],
+      "conditions": [],
+      "negations": [],
+      "exceptions": [],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+          "segment_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:L0001",
+          "quote": "当事人: 中国邮政集团公司辽宁省凤城市分公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+          "segment_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:L0005",
+          "quote": "因管理不善遗失《保险兼业代理业务许可证》"
+        }
+      ],
+      "record_id": "event:1ae5c9aad8aaf8a59e0ba950:FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:behavior-1",
+      "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:04f757c338bb2fcaee4e778f:FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0:case-1": {
+      "evidence": [
+        {
+          "quote": "当事人: 简敏（时任渤海财险呼和浩特中心支公司副总经理（主持工作））",
+          "segment_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0:L0001",
+          "source_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0"
+        },
+        {
+          "quote": "内金罚决字〔2026〕24号",
+          "segment_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0:L0003",
+          "source_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0"
+        },
+        {
+          "quote": "招投标业务虚假记载为个人代理业务",
+          "segment_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0:L0005",
+          "source_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0"
+        },
+        {
+          "quote": "警告并罚款2万元",
+          "segment_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0:L0007",
+          "source_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0"
+        },
+        {
+          "quote": "内蒙古金融监管局",
+          "segment_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0:L0009",
+          "source_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0"
+        },
+        {
+          "quote": "2026年7月30日",
+          "segment_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0:L0011",
+          "source_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0"
+        }
+      ],
+      "subject": "简敏",
+      "penalties": [
+        {
+          "text": "警告并罚款2万元",
+          "evidence": [
+            {
+              "quote": "当事人: 简敏（时任渤海财险呼和浩特中心支公司副总经理（主持工作））",
+              "segment_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0:L0001",
+              "source_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0"
+            },
+            {
+              "quote": "警告并罚款2万元",
+              "segment_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0:L0007",
+              "source_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0"
+            }
+          ],
+          "subject": "简敏"
+        }
+      ],
+      "decision_date": "2026年7月30日",
+      "unknowns": [
+        "具体责任形式及实施方式未披露",
+        "资金去向未披露"
+      ],
+      "summary": "简敏因招投标业务虚假记载为个人代理业务被内蒙古金融监管局警告并罚款2万元。原文未说明其具体实施方式。",
+      "authority": "内蒙古金融监管局",
+      "document_number": "内金罚决字〔2026〕24号",
+      "record_id": "event:04f757c338bb2fcaee4e778f:FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0:case-1",
+      "source_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:04f757c338bb2fcaee4e778f:FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0:behavior-1": {
+      "risk_tags": [],
+      "evidence": [
+        {
+          "quote": "招投标业务虚假记载为个人代理业务",
+          "segment_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0:L0005",
+          "source_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0"
+        },
+        {
+          "quote": "当事人: 简敏（时任渤海财险呼和浩特中心支公司副总经理（主持工作））",
+          "segment_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0:L0001",
+          "source_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0"
+        }
+      ],
+      "actor_role": "具体实施人未披露；简敏为受处罚当事人，时任副总经理（主持工作）",
+      "unknowns": [
+        "actor",
+        "具体实施方式",
+        "是否套取资金及资金去向"
+      ],
+      "case_id": "event:04f757c338bb2fcaee4e778f:FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0:case-1",
+      "summary": "招投标业务被虚假记载为个人代理业务。原文仅列明简敏受罚，未明确其亲自实施该记载，亦未披露套取资金或向客户返佣。",
+      "conditions": [],
+      "negations": [],
+      "actor": null,
+      "exceptions": [],
+      "record_id": "event:04f757c338bb2fcaee4e778f:FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0:behavior-1",
+      "source_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:ea5a757e47347292296026a5:FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:case-1": {
+      "subject": "张涛",
+      "document_number": "庆金监行处〔2026〕49号",
+      "decision_date": "2026-07-03",
+      "authority": "国家金融监督管理总局庆阳监管分局",
+      "penalties": [
+        {
+          "text": "警告并处罚款0.5万元",
+          "subject": "张涛",
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+              "segment_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:L0001",
+              "quote": "当事人: 张涛（时任太平人寿庆阳中支个险本部临时负责人、经理）"
+            },
+            {
+              "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+              "segment_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:L0007",
+              "quote": "警告并处罚款0.5万元"
+            }
+          ]
+        }
+      ],
+      "summary": "张涛（时任太平人寿庆阳中支个险本部临时负责人、经理）因未按照规定保管业务经营活动有关资料相关事项，被警告并处罚款0.5万元。原文未明确其亲自实施行为或具体责任形式。",
+      "unknowns": [
+        "具体责任形式",
+        "亲自实施人与具体保管环节"
+      ],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+          "segment_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:L0001",
+          "quote": "当事人: 张涛（时任太平人寿庆阳中支个险本部临时负责人、经理）"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+          "segment_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:L0003",
+          "quote": "庆金监行处〔2026〕49号"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+          "segment_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:L0005",
+          "quote": "未按照规定保管业务经营活动有关资料"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+          "segment_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:L0007",
+          "quote": "警告并处罚款0.5万元"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+          "segment_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:L0009",
+          "quote": "国家金融监督管理总局庆阳监管分局"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+          "segment_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:L0011",
+          "quote": "2026年7月3日"
+        }
+      ],
+      "record_id": "event:ea5a757e47347292296026a5:FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:case-1",
+      "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:ea5a757e47347292296026a5:FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:behavior-1": {
+      "case_id": "event:ea5a757e47347292296026a5:FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:case-1",
+      "actor": null,
+      "actor_role": "具体实施人及其角色未载明；张涛为受罚当事人，时任太平人寿庆阳中支个险本部临时负责人、经理。",
+      "summary": "未按照规定保管业务经营活动有关资料；原文未明确具体实施人、资料类别、保管方式或张涛的具体责任形式。",
+      "risk_tags": [],
+      "unknowns": [
+        "actor",
+        "具体资料类别",
+        "具体保管违规方式",
+        "张涛的具体责任形式"
+      ],
+      "conditions": [],
+      "negations": [],
+      "exceptions": [],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+          "segment_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:L0001",
+          "quote": "当事人: 张涛（时任太平人寿庆阳中支个险本部临时负责人、经理）"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+          "segment_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:L0005",
+          "quote": "未按照规定保管业务经营活动有关资料"
+        }
+      ],
+      "record_id": "event:ea5a757e47347292296026a5:FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:behavior-1",
+      "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:e667b7fb8eb91d46aae9ab7c:FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:case-1": {
+      "subject": "临沂交运盛通保险代理有限责任公司",
+      "summary": "该公司聘任不具有任职资格的人员，且未开立独立的代收保险费账户，被警告并罚款8万元。",
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0001",
+          "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+          "quote": "当事人: 临沂交运盛通保险代理有限责任公司"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0003",
+          "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+          "quote": "临金罚决字〔2026〕24号"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0009",
+          "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+          "quote": "国家金融监督管理总局临沂监管分局"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0011",
+          "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+          "quote": "2026年7月16日"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0005",
+          "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+          "quote": "聘任不具有任职资格的人员、未开立独立的代收保险费账户"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0007",
+          "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+          "quote": "警告并罚款8万元"
+        }
+      ],
+      "authority": "国家金融监督管理总局临沂监管分局",
+      "unknowns": [
+        "两项违法行为各自对应的罚款金额未披露",
+        "相关人员身份、个人责任和行为发生时间未披露"
+      ],
+      "document_number": "临金罚决字〔2026〕24号",
+      "decision_date": "2026-07-16",
+      "penalties": [
+        {
+          "text": "警告并罚款8万元",
+          "evidence": [
+            {
+              "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0001",
+              "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+              "quote": "当事人: 临沂交运盛通保险代理有限责任公司"
+            },
+            {
+              "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0007",
+              "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+              "quote": "警告并罚款8万元"
+            }
+          ],
+          "subject": "临沂交运盛通保险代理有限责任公司"
+        }
+      ],
+      "record_id": "event:e667b7fb8eb91d46aae9ab7c:FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:case-1",
+      "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:e667b7fb8eb91d46aae9ab7c:FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:behavior-1": {
+      "actor": "临沂交运盛通保险代理有限责任公司",
+      "negations": [],
+      "actor_role": "受处罚机构",
+      "summary": "聘任不具有任职资格的人员。",
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0001",
+          "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+          "quote": "当事人: 临沂交运盛通保险代理有限责任公司"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0005",
+          "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+          "quote": "聘任不具有任职资格的人员"
+        }
+      ],
+      "case_id": "event:e667b7fb8eb91d46aae9ab7c:FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:case-1",
+      "conditions": [],
+      "risk_tags": [],
+      "unknowns": [
+        "被聘人员身份、具体职务及任职资格缺失类型未披露"
+      ],
+      "exceptions": [],
+      "record_id": "event:e667b7fb8eb91d46aae9ab7c:FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:behavior-1",
+      "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:e667b7fb8eb91d46aae9ab7c:FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:behavior-2": {
+      "actor": "临沂交运盛通保险代理有限责任公司",
+      "negations": [],
+      "actor_role": "受处罚机构",
+      "summary": "未开立独立的代收保险费账户。",
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0001",
+          "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+          "quote": "当事人: 临沂交运盛通保险代理有限责任公司"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:L0005",
+          "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+          "quote": "未开立独立的代收保险费账户"
+        }
+      ],
+      "case_id": "event:e667b7fb8eb91d46aae9ab7c:FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:case-1",
+      "conditions": [],
+      "risk_tags": [],
+      "unknowns": [
+        "代收保险费实际存放账户及资金去向未披露"
+      ],
+      "exceptions": [],
+      "record_id": "event:e667b7fb8eb91d46aae9ab7c:FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61:behavior-2",
+      "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:6f0ff52b18e0874df2932601:FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:D09-C1": {
+      "penalties": [
+        {
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+              "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0001",
+              "quote": "当事人: 欧阳钰涵（时任阳光财产保险股份有限公司鄢陵支公司经理）"
+            },
+            {
+              "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+              "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0007",
+              "quote": "警告并罚款人民币1.2万元"
+            }
+          ],
+          "subject": "欧阳钰涵",
+          "text": "警告并罚款人民币1.2万元"
+        }
+      ],
+      "subject": "欧阳钰涵",
+      "authority": "许昌金融监管分局",
+      "summary": "欧阳钰涵时任阳光财产保险股份有限公司鄢陵支公司经理，因未经核准变更机构营业场所，被许昌金融监管分局警告并罚款人民币1.2万元。",
+      "document_number": "许金罚决字〔2026〕11号",
+      "unknowns": [
+        "原文未明确实际实施变更的人员及具体实施经过"
+      ],
+      "decision_date": "2026年7月10日",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0001",
+          "quote": "当事人: 欧阳钰涵（时任阳光财产保险股份有限公司鄢陵支公司经理）"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0003",
+          "quote": "许金罚决字〔2026〕11号"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0005",
+          "quote": "未经核准变更机构营业场所"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0007",
+          "quote": "警告并罚款人民币1.2万元"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0009",
+          "quote": "许昌金融监管分局"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0011",
+          "quote": "2026年7月10日"
+        }
+      ],
+      "record_id": "event:6f0ff52b18e0874df2932601:FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:D09-C1",
+      "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:6f0ff52b18e0874df2932601:FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:D09-B1": {
+      "risk_tags": [],
+      "negations": [],
+      "case_id": "event:6f0ff52b18e0874df2932601:FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:D09-C1",
+      "actor": null,
+      "unknowns": [
+        "actor",
+        "具体实施经过及发生时间未载明"
+      ],
+      "actor_role": "实际实施人员未明；受处罚人为时任经理欧阳钰涵",
+      "summary": "未经核准变更机构营业场所；本公示将该案由列为欧阳钰涵受处罚的违法违规事实，未交代实际实施人员。",
+      "exceptions": [],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0001",
+          "quote": "当事人: 欧阳钰涵（时任阳光财产保险股份有限公司鄢陵支公司经理）"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0005",
+          "quote": "未经核准变更机构营业场所"
+        }
+      ],
+      "conditions": [],
+      "record_id": "event:6f0ff52b18e0874df2932601:FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:D09-B1",
+      "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:9330a659ba87d38393d22a87:FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:case-1": {
+      "subject": "北京恒丰保险经纪有限公司上海分公司",
+      "document_number": "沪金罚决字〔2026〕57号",
+      "decision_date": "2026-07-13",
+      "authority": "上海金融监管局",
+      "penalties": [
+        {
+          "text": "罚款6万元",
+          "subject": "北京恒丰保险经纪有限公司上海分公司",
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922",
+              "segment_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:L0001",
+              "quote": "当事人: 北京恒丰保险经纪有限公司上海分公司"
+            },
+            {
+              "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922",
+              "segment_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:L0007",
+              "quote": "罚款6万元"
+            }
+          ]
+        }
+      ],
+      "summary": "北京恒丰保险经纪有限公司上海分公司因欺骗投保人，被上海金融监管局罚款6万元。",
+      "unknowns": [
+        "具体欺骗方式及涉及产品未披露",
+        "具体实施人员未披露"
+      ],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922",
+          "segment_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:L0001",
+          "quote": "当事人: 北京恒丰保险经纪有限公司上海分公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922",
+          "segment_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:L0003",
+          "quote": "沪金罚决字〔2026〕57号"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922",
+          "segment_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:L0005",
+          "quote": "欺骗投保人"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922",
+          "segment_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:L0007",
+          "quote": "罚款6万元"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922",
+          "segment_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:L0009",
+          "quote": "上海金融监管局"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922",
+          "segment_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:L0011",
+          "quote": "2026年7月13日"
+        }
+      ],
+      "record_id": "event:9330a659ba87d38393d22a87:FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:case-1",
+      "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:9330a659ba87d38393d22a87:FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:behavior-1": {
+      "case_id": "event:9330a659ba87d38393d22a87:FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:case-1",
+      "actor": "北京恒丰保险经纪有限公司上海分公司",
+      "actor_role": "被处罚机构",
+      "summary": "欺骗投保人；原文未披露具体欺骗方式。",
+      "risk_tags": [
+        {
+          "tag": "欺骗投保人",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922",
+              "segment_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:L0005",
+              "quote": "欺骗投保人"
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "具体欺骗方式",
+        "具体实施人员"
+      ],
+      "conditions": [],
+      "negations": [],
+      "exceptions": [],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922",
+          "segment_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:L0001",
+          "quote": "当事人: 北京恒丰保险经纪有限公司上海分公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922",
+          "segment_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:L0005",
+          "quote": "欺骗投保人"
+        }
+      ],
+      "record_id": "event:9330a659ba87d38393d22a87:FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922:behavior-1",
+      "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:33b7d1de10551731e3839a20:FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:case-1": {
+      "subject": "安诚财产保险股份有限公司河南分公司",
+      "document_number": "豫金罚决字〔2026〕65号",
+      "decision_date": "2026-08-25",
+      "authority": "河南金融监管局",
+      "penalties": [
+        {
+          "text": "罚款35万元",
+          "subject": "安诚财产保险股份有限公司河南分公司",
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+              "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0007",
+              "quote": "罚款35万元"
+            }
+          ]
+        }
+      ],
+      "summary": "安诚财产保险股份有限公司河南分公司因编制或者提供虚假的报告、报表、文件、资料，被河南金融监管局罚款35万元。",
+      "unknowns": [
+        "具体虚假材料及实施方式未披露",
+        "违法行为发生时间未披露",
+        "具体实施人员未披露",
+        "资金去向未披露"
+      ],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0001",
+          "quote": "当事人: 安诚财产保险股份有限公司河南分公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0003",
+          "quote": "豫金罚决字〔2026〕65号"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0009",
+          "quote": "河南金融监管局"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0011",
+          "quote": "2026年8月25日"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0005",
+          "quote": "编制或者提供虚假的报告、报表、文件、资料"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0007",
+          "quote": "罚款35万元"
+        }
+      ],
+      "record_id": "event:33b7d1de10551731e3839a20:FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:case-1",
+      "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:33b7d1de10551731e3839a20:FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:behavior-1": {
+      "case_id": "event:33b7d1de10551731e3839a20:FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:case-1",
+      "actor": "安诚财产保险股份有限公司河南分公司",
+      "actor_role": "被处罚机构",
+      "summary": "编制或者提供虚假的报告、报表、文件、资料。",
+      "risk_tags": [],
+      "unknowns": [
+        "具体虚假材料及实施方式未披露",
+        "具体实施人员未披露",
+        "资金去向未披露"
+      ],
+      "conditions": [],
+      "negations": [],
+      "exceptions": [],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0001",
+          "quote": "当事人: 安诚财产保险股份有限公司河南分公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0005",
+          "quote": "编制或者提供虚假的报告、报表、文件、资料"
+        }
+      ],
+      "record_id": "event:33b7d1de10551731e3839a20:FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:behavior-1",
+      "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:b4ee66ae81f1cee16039eec4:FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:case-1": {
+      "penalties": [
+        {
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+              "quote": "对英大泰和财产保险股份有限公司天津分公司警告并处罚款合计66万元。 对张静警告并处罚款9万元；对张勇警告并处罚款8万元，对刘少辉警告并处罚款1万元。",
+              "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0005"
+            }
+          ],
+          "text": "警告并处罚款合计66万元",
+          "subject": "英大泰和财产保险股份有限公司天津分公司"
+        },
+        {
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+              "quote": "对英大泰和财产保险股份有限公司天津分公司警告并处罚款合计66万元。 对张静警告并处罚款9万元；对张勇警告并处罚款8万元，对刘少辉警告并处罚款1万元。",
+              "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0005"
+            }
+          ],
+          "text": "警告并处罚款9万元",
+          "subject": "张静"
+        },
+        {
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+              "quote": "对英大泰和财产保险股份有限公司天津分公司警告并处罚款合计66万元。 对张静警告并处罚款9万元；对张勇警告并处罚款8万元，对刘少辉警告并处罚款1万元。",
+              "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0005"
+            }
+          ],
+          "text": "警告并处罚款8万元",
+          "subject": "张勇"
+        },
+        {
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+              "quote": "对英大泰和财产保险股份有限公司天津分公司警告并处罚款合计66万元。 对张静警告并处罚款9万元；对张勇警告并处罚款8万元，对刘少辉警告并处罚款1万元。",
+              "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0005"
+            }
+          ],
+          "text": "警告并处罚款1万元",
+          "subject": "刘少辉"
+        }
+      ],
+      "subject": "英大泰和财产保险股份有限公司天津分公司",
+      "decision_date": "2026-08-07",
+      "authority": "国家金融监督管理总局天津监管局",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "当事人: 英大泰和财产保险股份有限公司天津分公司",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0001"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "未按照规定使用经批准或备案的保险费率，给予投保人、被保险人保险合同约定以外的利益，通过保险代理人套取手续费，跨区域经营保险业务",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0003"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "对英大泰和财产保险股份有限公司天津分公司警告并处罚款合计66万元。 对张静警告并处罚款9万元；对张勇警告并处罚款8万元，对刘少辉警告并处罚款1万元。",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0005"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "国家金融监督管理总局天津监管局",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0007"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "2026年8月7日",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0009"
+        }
+      ],
+      "unknowns": [
+        "document_number",
+        "三名个人的职务及逐项责任归属未披露"
+      ],
+      "document_number": null,
+      "summary": "天津监管局对天津分公司四项保险业务违法违规行为警告并罚款66万元，并分别对张静、张勇、刘少辉警告及罚款9万元、8万元、1万元。",
+      "record_id": "event:b4ee66ae81f1cee16039eec4:FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:case-1",
+      "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:b4ee66ae81f1cee16039eec4:FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:behavior-1": {
+      "actor": "英大泰和财产保险股份有限公司天津分公司",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "未按照规定使用经批准或备案的保险费率",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0003"
+        }
+      ],
+      "exceptions": [],
+      "risk_tags": [
+        {
+          "tag": "未按规定使用费率条款",
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+              "quote": "未按照规定使用经批准或备案的保险费率",
+              "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0003"
+            }
+          ],
+          "basis": "explicit"
+        }
+      ],
+      "unknowns": [
+        "个人逐项责任归属未披露"
+      ],
+      "negations": [],
+      "conditions": [],
+      "case_id": "event:b4ee66ae81f1cee16039eec4:FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:case-1",
+      "summary": "未按照规定使用经批准或备案的保险费率",
+      "actor_role": "被处罚保险机构",
+      "record_id": "event:b4ee66ae81f1cee16039eec4:FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:behavior-1",
+      "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:b4ee66ae81f1cee16039eec4:FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:behavior-2": {
+      "actor": "英大泰和财产保险股份有限公司天津分公司",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "给予投保人、被保险人保险合同约定以外的利益",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0003"
+        }
+      ],
+      "exceptions": [],
+      "risk_tags": [
+        {
+          "tag": "合同外利益",
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+              "quote": "给予投保人、被保险人保险合同约定以外的利益",
+              "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0003"
+            }
+          ],
+          "basis": "explicit"
+        }
+      ],
+      "unknowns": [
+        "个人逐项责任归属未披露"
+      ],
+      "negations": [],
+      "conditions": [],
+      "case_id": "event:b4ee66ae81f1cee16039eec4:FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:case-1",
+      "summary": "给予投保人、被保险人保险合同约定以外的利益",
+      "actor_role": "被处罚保险机构",
+      "record_id": "event:b4ee66ae81f1cee16039eec4:FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:behavior-2",
+      "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:b4ee66ae81f1cee16039eec4:FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:behavior-3": {
+      "actor": "英大泰和财产保险股份有限公司天津分公司",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "通过保险代理人套取手续费",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0003"
+        }
+      ],
+      "exceptions": [],
+      "risk_tags": [],
+      "unknowns": [
+        "个人逐项责任归属未披露",
+        "套取手续费的具体实施人、方式及资金去向未披露"
+      ],
+      "negations": [],
+      "conditions": [],
+      "case_id": "event:b4ee66ae81f1cee16039eec4:FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:case-1",
+      "summary": "通过保险代理人套取手续费",
+      "actor_role": "被处罚保险机构",
+      "record_id": "event:b4ee66ae81f1cee16039eec4:FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:behavior-3",
+      "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:b4ee66ae81f1cee16039eec4:FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:behavior-4": {
+      "actor": "英大泰和财产保险股份有限公司天津分公司",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "跨区域经营保险业务",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0003"
+        }
+      ],
+      "exceptions": [],
+      "risk_tags": [],
+      "unknowns": [
+        "个人逐项责任归属未披露"
+      ],
+      "negations": [],
+      "conditions": [],
+      "case_id": "event:b4ee66ae81f1cee16039eec4:FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:case-1",
+      "summary": "跨区域经营保险业务",
+      "actor_role": "被处罚保险机构",
+      "record_id": "event:b4ee66ae81f1cee16039eec4:FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:behavior-4",
+      "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:5d86cc3526fc25f5177fc4f6:FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:D15-C1": {
+      "subject": "中国平安财产保险股份有限公司上海市虹口支公司",
+      "document_number": "沪金罚决字〔2026〕66号",
+      "decision_date": "2026-07-21",
+      "authority": "上海金融监管局",
+      "penalties": [
+        {
+          "text": "罚款22万元",
+          "subject": "中国平安财产保险股份有限公司上海市虹口支公司",
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+              "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0001",
+              "quote": "当事人: 中国平安财产保险股份有限公司上海市虹口支公司"
+            },
+            {
+              "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+              "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0007",
+              "quote": "罚款22万元"
+            }
+          ]
+        }
+      ],
+      "summary": "中国平安财产保险股份有限公司上海市虹口支公司因未按照规定使用经备案的保险条款、保险费率，被上海金融监管局罚款22万元。",
+      "unknowns": [],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0001",
+          "quote": "当事人: 中国平安财产保险股份有限公司上海市虹口支公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0003",
+          "quote": "沪金罚决字〔2026〕66号"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0005",
+          "quote": "未按照规定使用经备案的保险条款、保险费率"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0007",
+          "quote": "罚款22万元"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0009",
+          "quote": "上海金融监管局"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0011",
+          "quote": "2026年7月21日"
+        }
+      ],
+      "record_id": "event:5d86cc3526fc25f5177fc4f6:FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:D15-C1",
+      "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:5d86cc3526fc25f5177fc4f6:FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:D15-B1": {
+      "case_id": "event:5d86cc3526fc25f5177fc4f6:FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:D15-C1",
+      "actor": "中国平安财产保险股份有限公司上海市虹口支公司",
+      "actor_role": "违法机构",
+      "summary": "未按照规定使用经备案的保险条款、保险费率。",
+      "risk_tags": [
+        {
+          "tag": "未按规定使用费率条款",
+          "basis": "explicit",
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+              "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0005",
+              "quote": "未按照规定使用经备案的保险条款、保险费率"
+            }
+          ]
+        }
+      ],
+      "unknowns": [
+        "具体保险产品、违规期间及具体实施人员未披露"
+      ],
+      "conditions": [],
+      "negations": [],
+      "exceptions": [],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0001",
+          "quote": "当事人: 中国平安财产保险股份有限公司上海市虹口支公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+          "segment_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:L0005",
+          "quote": "未按照规定使用经备案的保险条款、保险费率"
+        }
+      ],
+      "record_id": "event:5d86cc3526fc25f5177fc4f6:FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f:D15-B1",
+      "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:36471b34c9e88c697407e3cf:FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:D16-C1": {
+      "authority": "金融监管总局",
+      "penalties": [
+        {
+          "evidence": [
+            {
+              "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0005",
+              "quote": "对恒大人寿保险有限公司吊销业务许可证。",
+              "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+            }
+          ],
+          "text": "吊销业务许可证",
+          "subject": "恒大人寿保险有限公司"
+        }
+      ],
+      "document_number": null,
+      "summary": "恒大人寿因保险资金运用严重不合规、向关联方输送利益、投后管理不合规及报送报告报表存在虚假记载等，被金融监管总局吊销业务许可证。",
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0001",
+          "quote": "当事人: 恒大人寿保险有限公司",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0003",
+          "quote": "保险资金运用严重不合规、向关联方输送利益，投后管理不合规，报送的报告报表存在虚假记载等。",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0005",
+          "quote": "对恒大人寿保险有限公司吊销业务许可证。",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0007",
+          "quote": "金融监管总局",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0009",
+          "quote": "2026年8月21日",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        }
+      ],
+      "subject": "恒大人寿保险有限公司",
+      "decision_date": "2026年8月21日",
+      "unknowns": [
+        "document_number",
+        "具体实施人",
+        "行为发生时间",
+        "逐项处罚对应关系"
+      ],
+      "record_id": "event:36471b34c9e88c697407e3cf:FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:D16-C1",
+      "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:36471b34c9e88c697407e3cf:FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:D16-B1": {
+      "risk_tags": [],
+      "conditions": [],
+      "negations": [],
+      "summary": "保险资金运用严重不合规。",
+      "actor": "恒大人寿保险有限公司",
+      "actor_role": "被处罚保险公司",
+      "exceptions": [],
+      "case_id": "event:36471b34c9e88c697407e3cf:FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:D16-C1",
+      "unknowns": [
+        "具体实施人",
+        "行为发生时间",
+        "具体事实及金额"
+      ],
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0001",
+          "quote": "当事人: 恒大人寿保险有限公司",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0003",
+          "quote": "保险资金运用严重不合规、向关联方输送利益，投后管理不合规，报送的报告报表存在虚假记载等。",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        }
+      ],
+      "record_id": "event:36471b34c9e88c697407e3cf:FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:D16-B1",
+      "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:36471b34c9e88c697407e3cf:FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:D16-B2": {
+      "risk_tags": [],
+      "conditions": [],
+      "negations": [],
+      "summary": "向关联方输送利益。",
+      "actor": "恒大人寿保险有限公司",
+      "actor_role": "被处罚保险公司",
+      "exceptions": [],
+      "case_id": "event:36471b34c9e88c697407e3cf:FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:D16-C1",
+      "unknowns": [
+        "具体实施人",
+        "行为发生时间",
+        "具体事实及金额",
+        "关联方具体身份及资金去向"
+      ],
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0001",
+          "quote": "当事人: 恒大人寿保险有限公司",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0003",
+          "quote": "保险资金运用严重不合规、向关联方输送利益，投后管理不合规，报送的报告报表存在虚假记载等。",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        }
+      ],
+      "record_id": "event:36471b34c9e88c697407e3cf:FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:D16-B2",
+      "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:36471b34c9e88c697407e3cf:FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:D16-B3": {
+      "risk_tags": [],
+      "conditions": [],
+      "negations": [],
+      "summary": "投后管理不合规。",
+      "actor": "恒大人寿保险有限公司",
+      "actor_role": "被处罚保险公司",
+      "exceptions": [],
+      "case_id": "event:36471b34c9e88c697407e3cf:FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:D16-C1",
+      "unknowns": [
+        "具体实施人",
+        "行为发生时间",
+        "具体事实及金额"
+      ],
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0001",
+          "quote": "当事人: 恒大人寿保险有限公司",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0003",
+          "quote": "保险资金运用严重不合规、向关联方输送利益，投后管理不合规，报送的报告报表存在虚假记载等。",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        }
+      ],
+      "record_id": "event:36471b34c9e88c697407e3cf:FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:D16-B3",
+      "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:36471b34c9e88c697407e3cf:FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:D16-B4": {
+      "risk_tags": [],
+      "conditions": [],
+      "negations": [],
+      "summary": "报送的报告报表存在虚假记载。",
+      "actor": "恒大人寿保险有限公司",
+      "actor_role": "被处罚保险公司",
+      "exceptions": [],
+      "case_id": "event:36471b34c9e88c697407e3cf:FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:D16-C1",
+      "unknowns": [
+        "具体实施人",
+        "行为发生时间",
+        "具体事实及金额"
+      ],
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0001",
+          "quote": "当事人: 恒大人寿保险有限公司",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0003",
+          "quote": "保险资金运用严重不合规、向关联方输送利益，投后管理不合规，报送的报告报表存在虚假记载等。",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        }
+      ],
+      "record_id": "event:36471b34c9e88c697407e3cf:FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:D16-B4",
+      "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:e2ae44c655c70b1e6326b4ac:FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7:case-1": {
+      "authority": "金融监管总局",
+      "decision_date": "2025年12月19日",
+      "penalties": [
+        {
+          "subject": "华夏久盈资产管理有限责任公司",
+          "text": "罚款70万元",
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7",
+              "segment_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7:L0005",
+              "quote": "对华夏久盈资产管理有限责任公司罚款70万元。对陈淑翠禁止10年进入保险业。"
+            }
+          ]
+        },
+        {
+          "subject": "陈淑翠",
+          "text": "禁止10年进入保险业",
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7",
+              "segment_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7:L0005",
+              "quote": "对华夏久盈资产管理有限责任公司罚款70万元。对陈淑翠禁止10年进入保险业。"
+            }
+          ]
+        }
+      ],
+      "summary": "华夏久盈资产管理有限责任公司及相关责任人员因未按照规定运用保险公司资金等被处罚，公司罚款70万元，陈淑翠被禁止10年进入保险业。",
+      "document_number": null,
+      "subject": "华夏久盈资产管理有限责任公司及相关责任人员",
+      "unknowns": [
+        "document_number",
+        "其他违法事实未展开",
+        "陈淑翠具体职务及逐项责任归属"
+      ],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7",
+          "segment_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7:L0001",
+          "quote": "当事人: 华夏久盈资产管理有限责任公司及相关责任人员"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7",
+          "segment_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7:L0003",
+          "quote": "未按照规定运用保险公司资金等"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7",
+          "segment_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7:L0005",
+          "quote": "对华夏久盈资产管理有限责任公司罚款70万元。对陈淑翠禁止10年进入保险业。"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7",
+          "segment_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7:L0007",
+          "quote": "金融监管总局"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7",
+          "segment_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7:L0009",
+          "quote": "2025年12月19日"
+        }
+      ],
+      "record_id": "event:e2ae44c655c70b1e6326b4ac:FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7:case-1",
+      "source_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:e2ae44c655c70b1e6326b4ac:FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7:behavior-1": {
+      "exceptions": [],
+      "negations": [],
+      "summary": "未按照规定运用保险公司资金，具体运用方式和个人责任分工未披露。",
+      "risk_tags": [],
+      "conditions": [],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7",
+          "segment_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7:L0003",
+          "quote": "未按照规定运用保险公司资金等"
+        }
+      ],
+      "unknowns": [
+        "actor",
+        "资金具体去向",
+        "具体实施方式",
+        "个人逐项责任归属"
+      ],
+      "actor_role": "具体实施人未披露",
+      "actor": null,
+      "case_id": "event:e2ae44c655c70b1e6326b4ac:FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7:case-1",
+      "record_id": "event:e2ae44c655c70b1e6326b4ac:FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7:behavior-1",
+      "source_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:365f6ad3a41fdbfbbab15790:FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:case-1": {
+      "document_number": null,
+      "subject": "人保寿险吉林省分公司",
+      "authority": "吉林金融监管局",
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0001",
+          "quote": "当事人: 人保寿险吉林省分公司",
+          "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0003",
+          "quote": "换领许可证超期",
+          "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0005",
+          "quote": "对人保寿险吉林省分公司警告并罚款1万元。",
+          "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0007",
+          "quote": "吉林金融监管局",
+          "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0009",
+          "quote": "2026年7月30日",
+          "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32"
+        }
+      ],
+      "penalties": [
+        {
+          "evidence": [
+            {
+              "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0005",
+              "quote": "对人保寿险吉林省分公司警告并罚款1万元。",
+              "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32"
+            }
+          ],
+          "subject": "人保寿险吉林省分公司",
+          "text": "警告并罚款1万元"
+        }
+      ],
+      "unknowns": [
+        "document_number"
+      ],
+      "decision_date": "2026年7月30日",
+      "summary": "人保寿险吉林省分公司因换领许可证超期，被吉林金融监管局于2026年7月30日警告并罚款1万元。",
+      "record_id": "event:365f6ad3a41fdbfbbab15790:FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:case-1",
+      "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    },
+    "event:365f6ad3a41fdbfbbab15790:FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:behavior-1": {
+      "exceptions": [],
+      "actor_role": "受处罚机构",
+      "case_id": "event:365f6ad3a41fdbfbbab15790:FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:case-1",
+      "actor": "人保寿险吉林省分公司",
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0001",
+          "quote": "当事人: 人保寿险吉林省分公司",
+          "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:L0003",
+          "quote": "换领许可证超期",
+          "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32"
+        }
+      ],
+      "risk_tags": [],
+      "conditions": [],
+      "unknowns": [
+        "超期时长",
+        "具体实施人员"
+      ],
+      "negations": [],
+      "summary": "换领许可证超期。",
+      "record_id": "event:365f6ad3a41fdbfbbab15790:FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32:behavior-1",
+      "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32",
+      "human_review_status": "pending",
+      "publication_status": "candidate"
+    }
+  },
+  "changed_records": {},
+  "history": {},
+  "aliases": {},
+  "relations": [
+    {
+      "old_source_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f",
+      "relation": "distinct_related",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0001",
+          "quote": "当事人: 王彪（时任平安人寿赛罕区营销服务部负责人）"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+          "segment_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4:L0003",
+          "quote": "内金罚决字〔2026〕27号"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f",
+          "segment_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f:L0029",
+          "quote": "王彪(恒邦财产保"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f",
+          "segment_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f:L0030",
+          "quote": "险股份有限公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f",
+          "segment_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f:L0031",
+          "quote": "常州中心支公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f",
+          "segment_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f:L0032",
+          "quote": "总经理)"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f",
+          "segment_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f:L0033",
+          "quote": "常金罚决字"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f",
+          "segment_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f:L0034",
+          "quote": "〔2026〕13"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f",
+          "segment_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f:L0035",
+          "quote": "号"
+        }
+      ],
+      "new_source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4"
+    },
+    {
+      "old_source_id": "FRV2-SOURCE-F002889-3af2b0ad0d36b40bd7231acd",
+      "relation": "distinct_related",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0001",
+          "quote": "当事人: 安诚财产保险股份有限公司河南分公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0003",
+          "quote": "豫金罚决字〔2026〕65号"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0011",
+          "quote": "2026年8月25日"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+          "segment_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec:L0007",
+          "quote": "罚款35万元"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F002889-3af2b0ad0d36b40bd7231acd",
+          "segment_id": "FRV2-SOURCE-F002889-3af2b0ad0d36b40bd7231acd:L0004",
+          "quote": "名称:安诚财产保险股份有限公司河南分公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F002889-3af2b0ad0d36b40bd7231acd",
+          "segment_id": "FRV2-SOURCE-F002889-3af2b0ad0d36b40bd7231acd:L0002",
+          "quote": "豫保监罚〔2010〕16号"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F002889-3af2b0ad0d36b40bd7231acd",
+          "segment_id": "FRV2-SOURCE-F002889-3af2b0ad0d36b40bd7231acd:L0017",
+          "quote": "二〇一〇年六月三十日"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F002889-3af2b0ad0d36b40bd7231acd",
+          "segment_id": "FRV2-SOURCE-F002889-3af2b0ad0d36b40bd7231acd:L0010",
+          "quote": "责令改正,罚款五十万元,并责令在郑州、洛阳和南阳三市停止办理机动车辆强制保险新业务一个月,时间为2010年7月1日至7月31日。"
+        }
+      ],
+      "new_source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec"
+    },
+    {
+      "old_source_id": "FRV2-SOURCE-F000828-252aa76bef90f9647ab5ea4d",
+      "relation": "distinct_related",
+      "evidence": [
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0003",
+          "quote": "保险资金运用严重不合规、向关联方输送利益，投后管理不合规，报送的报告报表存在虚假记载等。",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0005",
+          "quote": "对恒大人寿保险有限公司吊销业务许可证。",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b:L0009",
+          "quote": "2026年8月21日",
+          "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-F000828-252aa76bef90f9647ab5ea4d:L0018",
+          "quote": "2016年1-11月,恒大人寿未按照保险资金委托投资管理要求开展股票投资,股票投资交易笔数2480笔,股票平均持有期73天,其中9月下旬至11月上旬短期炒作相关股票造成恶劣社会影响。",
+          "source_id": "FRV2-SOURCE-F000828-252aa76bef90f9647ab5ea4d"
+        },
+        {
+          "segment_id": "FRV2-SOURCE-F000828-252aa76bef90f9647ab5ea4d:L0027",
+          "quote": "2017年2月25日",
+          "source_id": "FRV2-SOURCE-F000828-252aa76bef90f9647ab5ea4d"
+        }
+      ],
+      "new_source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "event:22cd33f34bec9f55743ee091:FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843",
+      "action": "exclude_from_penalty",
+      "experiment_only": true,
+      "reason": "已全文核查：当事人为中国光大银行上海江湾社区支行（原中国光大银行上海北外滩社区支行），沪金罚决字〔2026〕94号由上海金融监管局于2026年7月21日作出，案由为遗失金融许可证，处罚为警告并罚款1万元。该材料属于银行金融许可证管理处罚，未涉及保险业务，应排除于保险处罚审查范围。已按完整文号及现名主体检索旧库，所查范围均未命中；此结果不证明全库不存在重复，未判断任何新旧关系。"
+    },
+    {
+      "event_id": "event:f781b322ff0dd04f7572868f:FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+      "action": "add",
+      "experiment_only": true,
+      "reason": "新文明确李梓通、时任中原农险郑州市分公司总经理助理、豫金罚决字〔2026〕64号及处罚机关日期。已全文阅读新文，按完整文号、姓名及中原农险主干检索旧库；文号和姓名未命中，机构检索出现候选但未全文核实，故不建立关系，也不声称全库无重复。新文无更正或撤销旧案的证据，按独立个人处罚新增。"
+    },
+    {
+      "event_id": "event:aa4d114dddb079d3695bf253:FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+      "action": "add",
+      "experiment_only": true,
+      "reason": "已完整读取新文，按完整文号、王彪姓名和赛罕区检索旧库。文号检索未命中；完整读取姓名命中的旧文，其任职机构为恒邦财险常州中心支公司，文号为常金罚决字〔2026〕13号，与本次平安人寿赛罕区营销服务部、内金罚决字〔2026〕27号及处罚内容不同，不能因同名合并。赛罕区命中预览涉及其他当事人，不据此建立关系。按独立新案新增；未声称全库无重复。"
+    },
+    {
+      "event_id": "event:1ae5c9aad8aaf8a59e0ba950:FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+      "action": "add",
+      "experiment_only": true,
+      "reason": "已完整阅读新文，核查当事人、文号、决定机关与日期。按完整文号及当事人搜索旧库均未命中候选，仅能说明本次查询范围内未发现候选。该案为保险兼业代理许可证管理违法的行政处罚，新增一案一行为；不将许可证管理不善推断为代理人管理不到位。"
+    },
+    {
+      "event_id": "event:7b842182fa4d26c98e28429b:FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab",
+      "action": "exclude_from_penalty",
+      "experiment_only": true,
+      "reason": "已完整阅读原文，并按完整文号豫金罚决字〔2026〕45号及当事人普浩检索旧库，两次检索均未命中；该结果不证明全库不存在重复。原文明确为国家开发银行河南省分行任职个人因贷款审查不尽职被禁止从事银行业工作4年的银行业务处罚，未涉及保险业务，应排除于本次保险处罚知识范围。未读取旧文，不建立旧案关系或修改旧记录。"
+    },
+    {
+      "event_id": "event:04f757c338bb2fcaee4e778f:FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0",
+      "action": "add",
+      "experiment_only": true,
+      "reason": "已完整阅读新文，核实当事人为简敏，时任渤海财险呼和浩特中心支公司副总经理（主持工作），文号为内金罚决字〔2026〕24号。按完整文号、简敏及渤海财险搜索旧库，前两项未命中，机构主干返回的9项候选预览主体、文号与本案不同；未核实旧文关系，不作重复、更正或替代判断。新增个人处罚案，保留具体实施人与资金去向未知，不把个人受罚等同亲自实施。"
+    },
+    {
+      "event_id": "event:ea5a757e47347292296026a5:FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+      "action": "add",
+      "experiment_only": true,
+      "reason": "新文为张涛（时任太平人寿庆阳中支个险本部临时负责人、经理）的保险行政处罚，文号庆金监行处〔2026〕49号。完整阅读新文后，按完整文号、太平人寿庆阳、张涛及太平人寿检索旧库；完整文号与明确机构主干未命中，姓名候选涉及其他机构，太平人寿宽泛检索存在多项候选，尚不能声称全库无重复。现有证据支持新增个人处罚记录，不支持更正或撤销旧案；个人受罚不等同于亲自实施资料保管违规。"
+    },
+    {
+      "event_id": "event:e667b7fb8eb91d46aae9ab7c:FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+      "action": "add",
+      "experiment_only": true,
+      "reason": "已完整阅读新文，确认临沂交运盛通保险代理有限责任公司因两项违规于2026年7月16日被临沂监管分局警告并罚款8万元。按完整文号及机构主干分别检索旧库均未命中；该检索边界不证明全库不存在重复，当前没有可核实的旧案关系或更正依据。"
+    },
+    {
+      "event_id": "event:6f0ff52b18e0874df2932601:FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+      "action": "add",
+      "experiment_only": true,
+      "reason": "已全文阅读新文，核实当事人欧阳钰涵、时任机构经理身份、许金罚决字〔2026〕11号、处罚机关和日期。按完整文号及姓名检索未命中，按鄢陵检索仅出现不同保险机构及不同责任人的2012年候选，未据此建立旧文关系；上述检索不代表全库排重。新文是保险行政处罚，可新增；未提供更正或撤销旧案证据。"
+    },
+    {
+      "event_id": "event:9330a659ba87d38393d22a87:FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922",
+      "action": "add",
+      "experiment_only": true,
+      "reason": "新文为保险经纪机构行政处罚，主体、文号、处罚机关、决定日期及罚款金额明确。已按完整文号、完整主体及机构主干恒丰搜索旧库，均未命中候选；该检索范围不足以证明全库无重复，当前按独立新案新增。来源公示中的56-60号为合集范围，个案文号为57号。"
+    },
+    {
+      "event_id": "event:33b7d1de10551731e3839a20:FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+      "action": "add",
+      "experiment_only": true,
+      "reason": "已全文核查新文，按完整文号及机构检索旧库，并全文核查同机构豫保监罚〔2010〕16号旧案。新案为2026年65号处罚，旧案为2010年16号处罚，文号、决定时间及处罚内容不同；无更正或撤销旧案证据，保留历史并新增。新文仅载虚假报告资料概括案由，不据此推定虚列费用套取资金。"
+    },
+    {
+      "event_id": "event:b5128bdbe04825614f96193f:FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb",
+      "action": "exclude_from_penalty",
+      "experiment_only": true,
+      "reason": "已全文核查：当事人为平安银行股份有限公司盐城分行及相关责任人员，案由为信贷业务管理不到位、汽车金融业务管理不审慎，属于银行信贷及汽车金融处罚，未载明保险业务违法事实，故排除出保险处罚审查范围。按机构全称检索旧库未命中；该结果仅限所查主体范围，不证明全库不存在重复，不调整旧记录。"
+    },
+    {
+      "event_id": "event:b4ee66ae81f1cee16039eec4:FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+      "action": "add",
+      "experiment_only": true,
+      "reason": "已完整读取新文，核实天津分公司、处罚机关、决定日期及机构和三名个人的处罚。按完整机构名称及英大、天津独立词组合搜索旧库未命中；英大泰和主干搜索存在其他机构候选，不能据此声称全库无重复。新文未载文号，也无更正或撤销旧案的证据，按四项独立行为新增，不改旧卡。"
+    },
+    {
+      "event_id": "event:0f4ef5a6cde1d4b6bb950242:FRV2-SOURCE-WEB-621de61b089171eb0fd4bee1ae21a85b-8e1b963c35973b02e4d58123",
+      "action": "exclude_from_penalty",
+      "experiment_only": true,
+      "reason": "已完整阅读新文，并按完整文号沪金罚决字〔2026〕85号检索旧库，所查范围未命中，不能据此断言全库无重复。本文当事人为黄俊，时任交通银行股份有限公司上海浦东分行对公客户经理，案由为员工行为管理严重违反审慎经营规则，处罚为禁止从事银行业工作十年，明确属于银行业务行政处罚，不属于本次保险处罚审查范围。未核实旧文，不建立旧源关系或修改旧卡。"
+    },
+    {
+      "event_id": "event:5d86cc3526fc25f5177fc4f6:FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+      "action": "add",
+      "experiment_only": true,
+      "reason": "已完整阅读新文，并按完整文号及当事人全称分别检索旧库，均未命中候选；该结果仅限所查范围。原文明示机构主体、文号、决定日期、处罚机关、违法行为和罚款，可新增独立案件及行为卡。未发现足以确认重复或更正、替代旧记录的证据。"
+    },
+    {
+      "event_id": "event:36471b34c9e88c697407e3cf:FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b",
+      "action": "add",
+      "experiment_only": true,
+      "reason": "已完整阅读新文并按恒大人寿保险有限公司检索旧库，全文核查同一主体2017年保险资金运用处罚。旧案为2016年股票投资行为，2017年作出处罚；新文为2026年吊销业务许可证，列明资金运用、关联方利益输送、投后管理及报告报表虚假记载。无撤销、更正或替代旧案的明示证据，按独立案件新增，保留旧记录；检索范围不构成全库无重复证明。"
+    },
+    {
+      "event_id": "event:e2ae44c655c70b1e6326b4ac:FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7",
+      "action": "add",
+      "experiment_only": true,
+      "reason": "完整阅读新文，按机构主干华夏久盈及个人陈淑翠分别搜索旧库均未命中，仅限所查范围。新文明确为保险资金运用行政处罚，新增案件及已披露行为；没有旧记录更正或撤销证据，不改旧。"
+    },
+    {
+      "event_id": "event:c9e2d3bd71b3ad930e065f78:FRV2-SOURCE-WEB-e072f834c6c7c12c9d5cc9bc5877c3d1-59ede1394b15411129a8f709",
+      "action": "hold",
+      "experiment_only": true,
+      "reason": "已完整核对原文：主体为中国银河资产管理有限责任公司及相关责任人员，案由为投后管理不到位；金融监管总局于2026年4月24日对公司罚款30万元、对张旭给予警告。原文未说明所涉投资或业务类型，机构名称与投后管理案由不足以确定保险关联，也不足以确定为非保险业务，故暂缓纳入，待核业务范围。已按机构主干“中国银河资产管理”搜索旧库，所查范围未命中，不据此断言全库无重复；未核实旧源，不建立关系或修改历史。"
+    },
+    {
+      "event_id": "event:365f6ad3a41fdbfbbab15790:FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32",
+      "action": "add",
+      "experiment_only": true,
+      "reason": "已全文核查：本文是对人保寿险吉林省分公司换领许可证超期作出的行政处罚，明确警告并罚款1万元，并非行政许可批复。按原文主体及人保寿险、吉林短词检索旧库，完整主体未命中，短词候选为牡丹江机构案件，未据预览建立关系；所查范围不足以断言全库无重复。"
+    },
+    {
+      "event_id": "event:7d312681d1000f2ae9964f43:FRV2-SOURCE-WEB-fcea4b1a0c9a56c0ec0093236ddf6a47-eb0eaf6818b34fd0e9ae33e9",
+      "action": "exclude_from_penalty",
+      "experiment_only": true,
+      "reason": "原文主体为华夏理财有限责任公司及相关责任人员，所述业务事实为投资运作、系统管控和监管数据报送违规，属于理财业务处罚，未涉及保险承保、销售、理赔或保险资金等事实，排除出保险处罚审查范围。已按机构主干“华夏理财”搜索旧库，未命中；此结果仅限本次查询，不代表全库不存在重复。"
+    }
+  ],
+  "application": {
+    "conflicts": [],
+    "applied": [
+      {
+        "proposal_index": 0,
+        "event_id": "event:22cd33f34bec9f55743ee091:FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843",
+        "changed_record_ids": [],
+        "experiment_only": true
+      },
+      {
+        "proposal_index": 1,
+        "event_id": "event:f781b322ff0dd04f7572868f:FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+        "changed_record_ids": [],
+        "experiment_only": true
+      },
+      {
+        "proposal_index": 2,
+        "event_id": "event:aa4d114dddb079d3695bf253:FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+        "changed_record_ids": [],
+        "experiment_only": true
+      },
+      {
+        "proposal_index": 3,
+        "event_id": "event:1ae5c9aad8aaf8a59e0ba950:FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+        "changed_record_ids": [],
+        "experiment_only": true
+      },
+      {
+        "proposal_index": 4,
+        "event_id": "event:7b842182fa4d26c98e28429b:FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab",
+        "changed_record_ids": [],
+        "experiment_only": true
+      },
+      {
+        "proposal_index": 5,
+        "event_id": "event:04f757c338bb2fcaee4e778f:FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0",
+        "changed_record_ids": [],
+        "experiment_only": true
+      },
+      {
+        "proposal_index": 6,
+        "event_id": "event:ea5a757e47347292296026a5:FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+        "changed_record_ids": [],
+        "experiment_only": true
+      },
+      {
+        "proposal_index": 7,
+        "event_id": "event:e667b7fb8eb91d46aae9ab7c:FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+        "changed_record_ids": [],
+        "experiment_only": true
+      },
+      {
+        "proposal_index": 8,
+        "event_id": "event:6f0ff52b18e0874df2932601:FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+        "changed_record_ids": [],
+        "experiment_only": true
+      },
+      {
+        "proposal_index": 9,
+        "event_id": "event:9330a659ba87d38393d22a87:FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922",
+        "changed_record_ids": [],
+        "experiment_only": true
+      },
+      {
+        "proposal_index": 10,
+        "event_id": "event:33b7d1de10551731e3839a20:FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+        "changed_record_ids": [],
+        "experiment_only": true
+      },
+      {
+        "proposal_index": 11,
+        "event_id": "event:b5128bdbe04825614f96193f:FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb",
+        "changed_record_ids": [],
+        "experiment_only": true
+      },
+      {
+        "proposal_index": 12,
+        "event_id": "event:b4ee66ae81f1cee16039eec4:FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+        "changed_record_ids": [],
+        "experiment_only": true
+      },
+      {
+        "proposal_index": 13,
+        "event_id": "event:0f4ef5a6cde1d4b6bb950242:FRV2-SOURCE-WEB-621de61b089171eb0fd4bee1ae21a85b-8e1b963c35973b02e4d58123",
+        "changed_record_ids": [],
+        "experiment_only": true
+      },
+      {
+        "proposal_index": 14,
+        "event_id": "event:5d86cc3526fc25f5177fc4f6:FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+        "changed_record_ids": [],
+        "experiment_only": true
+      },
+      {
+        "proposal_index": 15,
+        "event_id": "event:36471b34c9e88c697407e3cf:FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b",
+        "changed_record_ids": [],
+        "experiment_only": true
+      },
+      {
+        "proposal_index": 16,
+        "event_id": "event:e2ae44c655c70b1e6326b4ac:FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7",
+        "changed_record_ids": [],
+        "experiment_only": true
+      },
+      {
+        "proposal_index": 17,
+        "event_id": "event:c9e2d3bd71b3ad930e065f78:FRV2-SOURCE-WEB-e072f834c6c7c12c9d5cc9bc5877c3d1-59ede1394b15411129a8f709",
+        "changed_record_ids": [],
+        "experiment_only": true
+      },
+      {
+        "proposal_index": 18,
+        "event_id": "event:365f6ad3a41fdbfbbab15790:FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32",
+        "changed_record_ids": [],
+        "experiment_only": true
+      },
+      {
+        "proposal_index": 19,
+        "event_id": "event:7d312681d1000f2ae9964f43:FRV2-SOURCE-WEB-fcea4b1a0c9a56c0ec0093236ddf6a47-eb0eaf6818b34fd0e9ae33e9",
+        "changed_record_ids": [],
+        "experiment_only": true
+      }
+    ],
+    "pending_proposal_indices": [],
+    "experiment_only": true
+  },
+  "active_new_source_ids": [
+    "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+    "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+    "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+    "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0",
+    "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+    "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+    "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+    "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922",
+    "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+    "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+    "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+    "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b",
+    "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7",
+    "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32"
+  ],
+  "closure_only": true
+}

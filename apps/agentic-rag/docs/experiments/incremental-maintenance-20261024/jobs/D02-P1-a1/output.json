@@ -1,0 +1,136 @@
+{
+  "schema": "codex-incremental/1",
+  "action": "add",
+  "reason": "新文明确李梓通、时任中原农险郑州市分公司总经理助理、豫金罚决字〔2026〕64号及处罚机关日期。已全文阅读新文，按完整文号、姓名及中原农险主干检索旧库；文号和姓名未命中，机构检索出现候选但未全文核实，故不建立关系，也不声称全库无重复。新文无更正或撤销旧案的证据，按独立个人处罚新增。",
+  "case_cards": [
+    {
+      "local_id": "case-1",
+      "subject": "李梓通",
+      "document_number": "豫金罚决字〔2026〕64号",
+      "decision_date": "2026年8月25日",
+      "authority": "河南金融监管局",
+      "penalties": [
+        {
+          "text": "警告，罚款5万元",
+          "subject": "李梓通",
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+              "segment_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:L0001",
+              "quote": "当事人: 李梓通（时任中原农险郑州市分公司总经理助理）"
+            },
+            {
+              "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+              "segment_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:L0007",
+              "quote": "警告，罚款5万元"
+            }
+          ]
+        }
+      ],
+      "summary": "李梓通时任中原农险郑州市分公司总经理助理，因编制或者提供虚假的报告、报表、文件、资料，被河南金融监管局警告并罚款5万元。",
+      "unknowns": [
+        "具体实施方式及个人责任方式未披露",
+        "资金去向未披露"
+      ],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+          "segment_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:L0001",
+          "quote": "当事人: 李梓通（时任中原农险郑州市分公司总经理助理）"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+          "segment_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:L0003",
+          "quote": "豫金罚决字〔2026〕64号"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+          "segment_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:L0009",
+          "quote": "河南金融监管局"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+          "segment_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:L0011",
+          "quote": "2026年8月25日"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+          "segment_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:L0005",
+          "quote": "编制或者提供虚假的报告、报表、文件、资料"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+          "segment_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:L0007",
+          "quote": "警告，罚款5万元"
+        }
+      ]
+    }
+  ],
+  "behavior_cards": [
+    {
+      "local_id": "behavior-1",
+      "case_id": "case-1",
+      "actor": "李梓通",
+      "actor_role": "时任中原农险郑州市分公司总经理助理",
+      "summary": "案由为编制或者提供虚假的报告、报表、文件、资料；原文未区分具体编制或提供行为及个人责任方式。",
+      "risk_tags": [],
+      "unknowns": [
+        "虚假资料具体内容未披露",
+        "未说明是否涉及虚列费用或套取资金",
+        "具体实施人及个人责任方式未披露"
+      ],
+      "conditions": [],
+      "negations": [],
+      "exceptions": [],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+          "segment_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:L0001",
+          "quote": "当事人: 李梓通（时任中原农险郑州市分公司总经理助理）"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+          "segment_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:L0005",
+          "quote": "编制或者提供虚假的报告、报表、文件、资料"
+        }
+      ]
+    }
+  ],
+  "targets": [],
+  "relations": [],
+  "uncertainties": [
+    "机构检索候选未全文核实，未认定与其存在重复、更正、替代或关联关系。"
+  ],
+  "evidence": [
+    {
+      "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+      "segment_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:L0001",
+      "quote": "当事人: 李梓通（时任中原农险郑州市分公司总经理助理）"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+      "segment_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:L0003",
+      "quote": "豫金罚决字〔2026〕64号"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+      "segment_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:L0009",
+      "quote": "河南金融监管局"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+      "segment_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:L0011",
+      "quote": "2026年8月25日"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+      "segment_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:L0005",
+      "quote": "编制或者提供虚假的报告、报表、文件、资料"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+      "segment_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811:L0007",
+      "quote": "警告，罚款5万元"
+    }
+  ]
+}

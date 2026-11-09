@@ -1,0 +1,43 @@
+{
+  "release": "knowledge-v2-20261019",
+  "origin_snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+  "source_count": 9640,
+  "chunk_count": 65478,
+  "human_approved": false,
+  "semantic_coverage_verified": false,
+  "new_856_included": false,
+  "regulation_library_included": false,
+  "counts": {
+    "data/annotations.jsonl": 182364,
+    "data/behaviors.jsonl": 25187,
+    "data/cases.jsonl": 15621,
+    "data/documents.jsonl": 9640,
+    "data/evidence.jsonl": 114968,
+    "data/materials.jsonl": 12081,
+    "data/reviews.jsonl": 9640,
+    "data/source_inventory.jsonl": 9640,
+    "extensions/candidate_snapshots.jsonl": 9640,
+    "extensions/document_evidence.jsonl": 118724,
+    "extensions/id_registry.jsonl": 513486,
+    "extensions/issues.jsonl": 0,
+    "extensions/quote_bindings.jsonl": 455240,
+    "extensions/responsibility_relations.jsonl": 0,
+    "reading/behavior_reading.jsonl": 25187,
+    "reading/case_reading.jsonl": 15621,
+    "reading/document_index.jsonl": 9640
+  },
+  "assets": [
+    {
+      "file": "finrisk-v2-runtime-20261019.zip",
+      "bytes": 136095509,
+      "sha256": "088a1f33b711d0962adcc7a8692960174cd991a572c3f38a98f46ea721e737ad",
+      "members": 9
+    },
+    {
+      "file": "finrisk-v2-normalized-20261019.zip",
+      "bytes": 116149048,
+      "sha256": "b874e8c209aabba10537be480887ff3f39d390c3cfb530bdfc6015555252187d",
+      "members": 21
+    }
+  ]
+}

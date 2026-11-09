@@ -1,0 +1,252 @@
+{
+  "behaviors": [
+    {
+      "action": {
+        "value": "编制或者提供虚假的报告、报表、文件、资料",
+        "citations": [
+          {
+            "quote": "编制或者提供虚假的报告、报表、文件、资料",
+            "segment_id": "B020:L0003:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd"
+          }
+        ],
+        "claim_type": "fact",
+        "uncertainty": null
+      },
+      "risk_tags": {
+        "value": [
+          "其他"
+        ],
+        "citations": [
+          {
+            "quote": "编制或者提供虚假的报告、报表、文件、资料",
+            "segment_id": "B020:L0003:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd"
+          }
+        ],
+        "claim_type": "fact",
+        "uncertainty": "仅可归为其他；未说明客户信息、虚列费用、销售宣传等具体条件"
+      },
+      "role": {
+        "value": "institution",
+        "citations": [
+          {
+            "quote": "当事人: 阳光人寿保险股份有限公司天津分公司",
+            "segment_id": "B020:L0001:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd"
+          }
+        ],
+        "claim_type": "fact",
+        "uncertainty": null
+      },
+      "actor": {
+        "value": "阳光人寿保险股份有限公司天津分公司",
+        "citations": [
+          {
+            "quote": "当事人: 阳光人寿保险股份有限公司天津分公司",
+            "segment_id": "B020:L0001:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd"
+          }
+        ],
+        "claim_type": "fact",
+        "uncertainty": null
+      },
+      "unknowns": {
+        "value": [
+          "具体报告资料",
+          "目的",
+          "对象",
+          "渠道",
+          "叶小义责任性质及是否亲自实施"
+        ],
+        "citations": [
+          {
+            "quote": "编制或者提供虚假的报告、报表、文件、资料",
+            "segment_id": "B020:L0003:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd"
+          }
+        ],
+        "claim_type": "fact",
+        "uncertainty": "原文未说明上述细节，不能由个人受罚推定亲自实施"
+      }
+    }
+  ],
+  "source_coverage": [
+    {
+      "disposition": "mapped",
+      "field_refs": [
+        "case/subject",
+        "behaviors/0/actor",
+        "behaviors/0/role"
+      ],
+      "segment_id": "B020:L0001:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+      "reason": "对应事实字段或缺失信息边界"
+    },
+    {
+      "disposition": "not_material",
+      "field_refs": [],
+      "segment_id": "B020:L0002:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+      "reason": "栏目标题，无独立业务事实"
+    },
+    {
+      "disposition": "mapped",
+      "field_refs": [
+        "case/legal_basis",
+        "behaviors/0/action",
+        "behaviors/0/risk_tags",
+        "behaviors/0/unknowns"
+      ],
+      "segment_id": "B020:L0003:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+      "reason": "对应事实字段或缺失信息边界"
+    },
+    {
+      "disposition": "not_material",
+      "field_refs": [],
+      "segment_id": "B020:L0004:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+      "reason": "栏目标题，无独立业务事实"
+    },
+    {
+      "disposition": "mapped",
+      "field_refs": [
+        "case/penalties",
+        "case/position"
+      ],
+      "segment_id": "B020:L0005:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+      "reason": "对应事实字段或缺失信息边界"
+    },
+    {
+      "disposition": "not_material",
+      "field_refs": [],
+      "segment_id": "B020:L0006:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+      "reason": "栏目标题，无独立业务事实"
+    },
+    {
+      "disposition": "mapped",
+      "field_refs": [
+        "case/authority"
+      ],
+      "segment_id": "B020:L0007:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+      "reason": "对应事实字段或缺失信息边界"
+    },
+    {
+      "disposition": "not_material",
+      "field_refs": [],
+      "segment_id": "B020:L0008:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+      "reason": "栏目标题，无独立业务事实"
+    },
+    {
+      "disposition": "mapped",
+      "field_refs": [
+        "case/decision_date"
+      ],
+      "segment_id": "B020:L0009:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+      "reason": "对应事实字段或缺失信息边界"
+    },
+    {
+      "disposition": "not_material",
+      "field_refs": [],
+      "segment_id": "B020:L0010:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+      "reason": "栏目标题，无独立业务事实"
+    },
+    {
+      "disposition": "mapped",
+      "field_refs": [
+        "case/document_number",
+        "case/unknowns"
+      ],
+      "segment_id": "B020:L0011:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+      "reason": "对应事实字段或缺失信息边界"
+    }
+  ],
+  "case": {
+    "unknowns": {
+      "value": [
+        "document_number",
+        "position",
+        "legal_basis"
+      ],
+      "citations": [
+        {
+          "quote": "国家金融监督管理总局天津监管局行政处罚信息公开表",
+          "segment_id": "B020:L0011:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd"
+        }
+      ],
+      "claim_type": "fact",
+      "uncertainty": "全文未提供文号、职务和法律依据"
+    },
+    "penalties": {
+      "value": "对阳光人寿保险股份有限公司天津分公司罚款40万元。对叶小义警告并处罚款7万元。",
+      "citations": [
+        {
+          "quote": "对阳光人寿保险股份有限公司天津分公司罚款40万元。对叶小义警告并处罚款7万元。",
+          "segment_id": "B020:L0005:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd"
+        }
+      ],
+      "claim_type": "fact",
+      "uncertainty": null
+    },
+    "position": {
+      "value": null,
+      "citations": [
+        {
+          "quote": "对阳光人寿保险股份有限公司天津分公司罚款40万元。对叶小义警告并处罚款7万元。",
+          "segment_id": "B020:L0005:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd"
+        }
+      ],
+      "claim_type": "fact",
+      "uncertainty": "未列叶小义职务"
+    },
+    "document_number": {
+      "value": null,
+      "citations": [
+        {
+          "quote": "国家金融监督管理总局天津监管局行政处罚信息公开表",
+          "segment_id": "B020:L0011:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd"
+        }
+      ],
+      "claim_type": "fact",
+      "uncertainty": "原文未列文号"
+    },
+    "authority": {
+      "value": "国家金融监督管理总局天津监管局",
+      "citations": [
+        {
+          "quote": "国家金融监督管理总局天津监管局",
+          "segment_id": "B020:L0007:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd"
+        }
+      ],
+      "claim_type": "fact",
+      "uncertainty": null
+    },
+    "legal_basis": {
+      "value": null,
+      "citations": [
+        {
+          "quote": "编制或者提供虚假的报告、报表、文件、资料",
+          "segment_id": "B020:L0003:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd"
+        }
+      ],
+      "claim_type": "fact",
+      "uncertainty": "原文未列法律条款"
+    },
+    "decision_date": {
+      "value": "2026年7月1日",
+      "citations": [
+        {
+          "quote": "2026年7月1日",
+          "segment_id": "B020:L0009:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd"
+        }
+      ],
+      "claim_type": "fact",
+      "uncertainty": null
+    },
+    "subject": {
+      "value": "阳光人寿保险股份有限公司天津分公司",
+      "citations": [
+        {
+          "quote": "当事人: 阳光人寿保险股份有限公司天津分公司",
+          "segment_id": "B020:L0001:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd"
+        }
+      ],
+      "claim_type": "fact",
+      "uncertainty": null
+    }
+  },
+  "action": "add",
+  "reason": "完整原文支持一项机构违规及机构、个人处罚。按主体检索旧库零命中，但不据此断言不存在；未发现重复决定证据，提出新增影子事实，保留缺失字段与个人实施情况未知。"
+}

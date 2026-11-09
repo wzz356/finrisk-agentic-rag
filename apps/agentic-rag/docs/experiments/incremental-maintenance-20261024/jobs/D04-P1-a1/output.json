@@ -1,0 +1,132 @@
+{
+  "schema": "codex-incremental/1",
+  "action": "add",
+  "reason": "已完整阅读新文，核查当事人、文号、决定机关与日期。按完整文号及当事人搜索旧库均未命中候选，仅能说明本次查询范围内未发现候选。该案为保险兼业代理许可证管理违法的行政处罚，新增一案一行为；不将许可证管理不善推断为代理人管理不到位。",
+  "case_cards": [
+    {
+      "local_id": "case-1",
+      "subject": "中国邮政集团公司辽宁省凤城市分公司",
+      "document_number": "丹金罚决字〔2026〕7号",
+      "decision_date": "2026-08-19",
+      "authority": "丹东金融监管分局",
+      "penalties": [
+        {
+          "text": "警告，并罚款1万元",
+          "subject": "中国邮政集团公司辽宁省凤城市分公司",
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+              "segment_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:L0001",
+              "quote": "当事人: 中国邮政集团公司辽宁省凤城市分公司"
+            },
+            {
+              "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+              "segment_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:L0007",
+              "quote": "警告，并罚款1万元"
+            }
+          ]
+        }
+      ],
+      "summary": "中国邮政集团公司辽宁省凤城市分公司因管理不善遗失《保险兼业代理业务许可证》，被丹东金融监管分局警告并罚款1万元。",
+      "unknowns": [],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+          "segment_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:L0001",
+          "quote": "当事人: 中国邮政集团公司辽宁省凤城市分公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+          "segment_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:L0003",
+          "quote": "丹金罚决字〔2026〕7号"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+          "segment_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:L0005",
+          "quote": "因管理不善遗失《保险兼业代理业务许可证》"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+          "segment_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:L0007",
+          "quote": "警告，并罚款1万元"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+          "segment_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:L0009",
+          "quote": "丹东金融监管分局"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+          "segment_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:L0011",
+          "quote": "2026年8月19日"
+        }
+      ]
+    }
+  ],
+  "behavior_cards": [
+    {
+      "local_id": "behavior-1",
+      "case_id": "case-1",
+      "actor": "中国邮政集团公司辽宁省凤城市分公司",
+      "actor_role": "被处罚机构",
+      "summary": "因管理不善遗失《保险兼业代理业务许可证》。",
+      "risk_tags": [],
+      "unknowns": [
+        "具体经办人员及遗失经过未披露"
+      ],
+      "conditions": [],
+      "negations": [],
+      "exceptions": [],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+          "segment_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:L0001",
+          "quote": "当事人: 中国邮政集团公司辽宁省凤城市分公司"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+          "segment_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:L0005",
+          "quote": "因管理不善遗失《保险兼业代理业务许可证》"
+        }
+      ]
+    }
+  ],
+  "targets": [],
+  "relations": [],
+  "uncertainties": [
+    "文书未披露遗失的具体经过及经办人员。",
+    "本次文号和当事人查询未命中，不代表已证明全库无重复。"
+  ],
+  "evidence": [
+    {
+      "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+      "segment_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:L0001",
+      "quote": "当事人: 中国邮政集团公司辽宁省凤城市分公司"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+      "segment_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:L0003",
+      "quote": "丹金罚决字〔2026〕7号"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+      "segment_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:L0005",
+      "quote": "因管理不善遗失《保险兼业代理业务许可证》"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+      "segment_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:L0007",
+      "quote": "警告，并罚款1万元"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+      "segment_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:L0009",
+      "quote": "丹东金融监管分局"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+      "segment_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2:L0011",
+      "quote": "2026年8月19日"
+    }
+  ]
+}

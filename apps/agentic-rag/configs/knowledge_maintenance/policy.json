@@ -1,0 +1,36 @@
+{
+  "schema": "finrisk-maintenance-policy/1.0",
+  "policy_id": "MAINTENANCE-OFFLINE-DEFAULT",
+  "live": false,
+  "require_heterogeneous_review": true,
+  "max_repair_rounds": 1,
+  "proposer_concurrency": 2,
+  "reviewer_concurrency": 1,
+  "currency": "CNY",
+  "batch_cap_microunits": null,
+  "price_policy_sha256": null,
+  "max_event_model_requests": 28,
+  "max_event_tool_actions": 88,
+  "event_deadline_seconds": 900,
+  "model_request_timeout_seconds": 90,
+  "event_token_budget": 240000,
+  "provider_auto_retries": 0,
+  "stages": {
+    "propose": {
+      "model_requests": 8,
+      "tool_actions": 24
+    },
+    "review": {
+      "model_requests": 10,
+      "tool_actions": 32
+    },
+    "repair": {
+      "model_requests": 4,
+      "tool_actions": 12
+    },
+    "rereview": {
+      "model_requests": 6,
+      "tool_actions": 20
+    }
+  }
+}

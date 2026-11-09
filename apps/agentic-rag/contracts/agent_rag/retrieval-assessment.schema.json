@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "input_sha256", "snapshot_id", "evaluation_protocol_sha256", "report_sha256", "retrieval_status", "queries", "points", "human_semantic_review_status"],
+  "properties": {
+    "schema_version": {"const": "finrisk-retrieval-assessment/1.0"},
+    "task_id": {"type": "string", "minLength": 1},
+    "input_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "snapshot_id": {"type": "string", "minLength": 1},
+    "evaluation_protocol_sha256": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"},
+    "report_sha256": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"},
+    "retrieval_status": {"enum": ["not_run", "completed", "partial", "error"]},
+    "queries": {"type": "array", "maxItems": 8, "items": {
+      "type": "object", "additionalProperties": false,
+      "required": ["query_id", "complete", "status", "ranking_coverage"],
+      "properties": {
+        "query_id": {"type": "string", "minLength": 1}, "complete": {"type": "boolean"},
+        "status": {"enum": ["ok", "empty", "partial", "error"]},
+        "error_code": {"type": ["string", "null"], "pattern": "^[A-Z_0-9]{1,64}$"},
+        "ranking_coverage": {"type": ["object", "null"]}
+      }
+    }},
+    "points": {"type": "array", "maxItems": 32, "items": {
+      "type": "object", "additionalProperties": false,
+      "required": ["risk_point_id", "assessment_status", "case_match_status", "needs_manual_review"],
+      "properties": {
+        "risk_point_id": {"type": "string", "minLength": 1},
+        "assessment_status": {"enum": ["model_assessed", "model_assessed_with_retrieval_limits", "needs_input", "blocked", "not_assessed"]},
+        "case_match_status": {"enum": ["reliable_match", "partial_match", "no_reliable_match", "not_required", "not_completed"]},
+        "needs_manual_review": {"type": "boolean"}
+      }
+    }},
+    "human_semantic_review_status": {"const": "awaiting_human_review"}
+  }
+}

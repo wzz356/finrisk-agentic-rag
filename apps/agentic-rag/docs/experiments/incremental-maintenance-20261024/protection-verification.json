@@ -1,0 +1,19 @@
+{
+  "protected_files": 3076,
+  "all_unchanged": true,
+  "changed": [],
+  "frozen_inputs_unchanged": true,
+  "frozen_input_changes": [],
+  "production_modified": false,
+  "old_experiments_modified": false,
+  "formal_roles_dispatched": 0,
+  "controlled_roles_dispatched": 0,
+  "development_completed": 20,
+  "native_roles": 42,
+  "evidence_calls": 143,
+  "tests_passed": 54,
+  "tests_failed": 0,
+  "human_reference_pending": true,
+  "source_release": "knowledge-full-20261024",
+  "new_effect_claim": "No accuracy or conflict-cleanup claim"
+}

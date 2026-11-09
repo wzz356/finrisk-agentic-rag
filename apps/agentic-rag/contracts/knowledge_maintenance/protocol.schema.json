@@ -1,0 +1,1400 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:finrisk:knowledge-maintenance:design:1.0",
+  "title": "FinRisk知识维护设计协议（非生产接入声明）",
+  "$comment": "外层结构契约；跨引用、业务after、密码认证、读取轨迹与准入必须另由可信程序验证。",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/Bundle"
+    },
+    {
+      "$ref": "#/$defs/Changeset"
+    },
+    {
+      "$ref": "#/$defs/Receipt"
+    },
+    {
+      "$ref": "#/$defs/Policy"
+    },
+    {
+      "$ref": "#/$defs/Release"
+    }
+  ],
+  "$defs": {
+    "EvidenceKey": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "evidence_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "raw_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "text_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "evidence_id",
+        "raw_sha256",
+        "text_sha256"
+      ]
+    },
+    "Evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "evidence_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "origin_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "raw_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "text_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "media_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "text_encoding": {
+          "const": "utf-8"
+        },
+        "extractor_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "text_length_codepoints": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "observed_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "example_only": {
+          "const": true
+        }
+      },
+      "required": [
+        "evidence_id",
+        "origin_id",
+        "raw_sha256",
+        "text_sha256",
+        "media_type",
+        "text_encoding",
+        "extractor_version",
+        "text",
+        "text_length_codepoints",
+        "observed_at",
+        "example_only"
+      ]
+    },
+    "Citation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "evidence_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "raw_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "text_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "start": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "quote": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "evidence_id",
+        "raw_sha256",
+        "text_sha256",
+        "start",
+        "end",
+        "quote"
+      ]
+    },
+    "Scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "scope_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "classification": {
+          "enum": [
+            "public",
+            "team_private",
+            "business_sensitive"
+          ]
+        }
+      },
+      "required": [
+        "scope_id",
+        "classification"
+      ]
+    },
+    "Bindings": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "dictionary_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "business_schema_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "tool_contract_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "proposer_prompt_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "reviewer_prompt_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "policy_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "dictionary_sha256",
+        "business_schema_sha256",
+        "tool_contract_sha256",
+        "proposer_prompt_sha256",
+        "reviewer_prompt_sha256",
+        "policy_sha256"
+      ]
+    },
+    "Event": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "event_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "event_type": {
+          "enum": [
+            "new_source",
+            "source_revision",
+            "extraction_correction",
+            "duplicate_relation",
+            "law_revision",
+            "deactivation",
+            "conflict_report",
+            "periodic_consolidation"
+          ]
+        },
+        "idempotency_key": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "event_id",
+        "event_type",
+        "idempotency_key",
+        "reason"
+      ]
+    },
+    "Operation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "operation_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "add",
+            "revise",
+            "relate",
+            "deactivate"
+          ]
+        },
+        "record_kind": {
+          "enum": [
+            "case",
+            "behavior",
+            "law_article",
+            "guide",
+            "relation"
+          ]
+        },
+        "target_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "expected_record_version": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "before_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "after": {
+          "type": "object",
+          "minProperties": 1
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "operation_id",
+        "kind",
+        "record_kind",
+        "target_id",
+        "expected_record_version",
+        "before_sha256",
+        "after",
+        "reason"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "enum": [
+                  "add",
+                  "relate"
+                ]
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "expected_record_version": {
+                "type": "null"
+              },
+              "before_sha256": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "expected_record_version": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 9007199254740991
+              },
+              "before_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "Claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "claim_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "operation_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pointer": {
+          "type": "string",
+          "pattern": "^(?:/(?:[^~/]|~[01])*)+$"
+        },
+        "claim_type": {
+          "enum": [
+            "fact",
+            "retrieval_hypothesis",
+            "derived_summary",
+            "legal_rule"
+          ]
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "citations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Citation"
+          },
+          "minItems": 1
+        },
+        "uncertainty": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "claim_id",
+        "operation_id",
+        "pointer",
+        "claim_type",
+        "statement",
+        "citations",
+        "uncertainty"
+      ]
+    },
+    "SourceCoverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "evidence_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "text_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "start": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "disposition": {
+          "enum": [
+            "mapped",
+            "not_material",
+            "needs_clarification"
+          ]
+        },
+        "claim_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "evidence_id",
+        "text_sha256",
+        "start",
+        "end",
+        "disposition",
+        "claim_ids",
+        "reason"
+      ]
+    },
+    "ProposerRun": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "provider": {
+          "type": "string",
+          "minLength": 1
+        },
+        "model_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "model_family": {
+          "type": "string",
+          "minLength": 1
+        },
+        "execution_mode": {
+          "enum": [
+            "fixture",
+            "session_assisted",
+            "live"
+          ]
+        },
+        "adapter_config_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "prompt_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "tool_contract_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "trace_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "run_id",
+        "provider",
+        "model_id",
+        "model_family",
+        "execution_mode",
+        "adapter_config_sha256",
+        "prompt_sha256",
+        "tool_contract_sha256",
+        "trace_sha256"
+      ]
+    },
+    "Changeset": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "finrisk-changeset/1.0"
+        },
+        "changeset_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "event": {
+          "$ref": "#/$defs/Event"
+        },
+        "base_knowledge_commit": {
+          "type": "string",
+          "pattern": "^(?:[0-9a-f]{40}|[0-9a-f]{64})$"
+        },
+        "scope": {
+          "$ref": "#/$defs/Scope"
+        },
+        "bindings": {
+          "$ref": "#/$defs/Bindings"
+        },
+        "proposer_run": {
+          "$ref": "#/$defs/ProposerRun"
+        },
+        "proposer_attestation_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "evidence_manifest_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/EvidenceKey"
+          },
+          "minItems": 1
+        },
+        "operations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Operation"
+          },
+          "minItems": 1,
+          "maxItems": 40
+        },
+        "claims": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Claim"
+          },
+          "minItems": 1
+        },
+        "source_coverage": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SourceCoverage"
+          },
+          "minItems": 1
+        },
+        "affected_record_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "dependency_manifest_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "changeset_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "schema",
+        "changeset_id",
+        "revision",
+        "event",
+        "base_knowledge_commit",
+        "scope",
+        "bindings",
+        "proposer_run",
+        "proposer_attestation_sha256",
+        "evidence_manifest_sha256",
+        "evidence_refs",
+        "operations",
+        "claims",
+        "source_coverage",
+        "affected_record_ids",
+        "dependency_manifest_sha256",
+        "changeset_sha256"
+      ]
+    },
+    "Reviewer": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "provider": {
+          "type": "string",
+          "minLength": 1
+        },
+        "model_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "model_family": {
+          "type": "string",
+          "minLength": 1
+        },
+        "execution_mode": {
+          "enum": [
+            "fixture",
+            "session_assisted",
+            "live"
+          ]
+        },
+        "independence": {
+          "enum": [
+            "heterogeneous",
+            "same_family",
+            "fixture"
+          ]
+        },
+        "adapter_config_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "prompt_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "tool_contract_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "policy_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "provider",
+        "model_id",
+        "model_family",
+        "execution_mode",
+        "independence",
+        "adapter_config_sha256",
+        "prompt_sha256",
+        "tool_contract_sha256",
+        "policy_sha256"
+      ]
+    },
+    "ClaimCheck": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "claim_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "verdict": {
+          "enum": [
+            "supported",
+            "supported_as_hypothesis",
+            "unsupported",
+            "needs_evidence"
+          ]
+        },
+        "citations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Citation"
+          },
+          "minItems": 0
+        },
+        "comment": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "claim_id",
+        "verdict",
+        "citations",
+        "comment"
+      ]
+    },
+    "ReadCoverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "evidence_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "text_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "text_length_codepoints": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "ranges": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "start": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "end": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "start",
+              "end"
+            ]
+          },
+          "minItems": 1
+        },
+        "complete": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "evidence_id",
+        "text_sha256",
+        "text_length_codepoints",
+        "ranges",
+        "complete"
+      ]
+    },
+    "Issue": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "issue_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "severity": {
+          "enum": [
+            "blocking",
+            "non_blocking"
+          ]
+        },
+        "category": {
+          "enum": [
+            "source",
+            "citation",
+            "actor",
+            "omission",
+            "qualifier",
+            "fact_inference",
+            "conflict",
+            "overreach",
+            "law_scope",
+            "dependency",
+            "permission",
+            "process"
+          ]
+        },
+        "operation_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "claim_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "pointer": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^(?:/(?:[^~/]|~[01])*)+$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "diff_line": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "citations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Citation"
+          },
+          "minItems": 0
+        },
+        "change_request": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "issue_id",
+        "severity",
+        "category",
+        "operation_id",
+        "claim_id",
+        "pointer",
+        "diff_line",
+        "citations",
+        "change_request"
+      ]
+    },
+    "Authentication": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "algorithm": {
+          "const": "HMAC-SHA256"
+        },
+        "key_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "signature": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "algorithm",
+        "key_id",
+        "signature"
+      ]
+    },
+    "Receipt": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "finrisk-review-receipt/1.0"
+        },
+        "receipt_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "changeset_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "changeset_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "base_knowledge_commit": {
+          "type": "string",
+          "pattern": "^(?:[0-9a-f]{40}|[0-9a-f]{64})$"
+        },
+        "proposer_attestation_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "evidence_manifest_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "reviewer": {
+          "$ref": "#/$defs/Reviewer"
+        },
+        "decision": {
+          "enum": [
+            "approve",
+            "request_changes",
+            "needs_evidence",
+            "reject"
+          ]
+        },
+        "claim_checks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ClaimCheck"
+          },
+          "minItems": 1
+        },
+        "source_reads": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ReadCoverage"
+          },
+          "minItems": 1
+        },
+        "omission_check_completed": {
+          "type": "boolean"
+        },
+        "issues": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Issue"
+          },
+          "minItems": 0
+        },
+        "independent_search_trace_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "trace_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "budget_policy_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "budget_ledger_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "stop_reason": {
+          "enum": [
+            "completed",
+            "budget_exhausted",
+            "budget_uncertain",
+            "deadline_exceeded",
+            "tool_failure",
+            "interrupted",
+            "no_progress"
+          ]
+        },
+        "issued_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "authentication": {
+          "$ref": "#/$defs/Authentication"
+        }
+      },
+      "required": [
+        "schema",
+        "receipt_id",
+        "changeset_id",
+        "revision",
+        "changeset_sha256",
+        "base_knowledge_commit",
+        "proposer_attestation_sha256",
+        "evidence_manifest_sha256",
+        "reviewer",
+        "decision",
+        "claim_checks",
+        "source_reads",
+        "omission_check_completed",
+        "issues",
+        "independent_search_trace_ids",
+        "trace_sha256",
+        "budget_policy_id",
+        "budget_ledger_sha256",
+        "stop_reason",
+        "issued_at",
+        "authentication"
+      ]
+    },
+    "StageLimit": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "model_requests": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "tool_actions": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        }
+      },
+      "required": [
+        "model_requests",
+        "tool_actions"
+      ]
+    },
+    "Policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "finrisk-maintenance-policy/1.0"
+        },
+        "policy_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "live": {
+          "type": "boolean"
+        },
+        "require_heterogeneous_review": {
+          "type": "boolean"
+        },
+        "max_repair_rounds": {
+          "const": 1
+        },
+        "proposer_concurrency": {
+          "const": 2
+        },
+        "reviewer_concurrency": {
+          "const": 1
+        },
+        "currency": {
+          "const": "CNY"
+        },
+        "batch_cap_microunits": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "price_policy_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "max_event_model_requests": {
+          "const": 28
+        },
+        "max_event_tool_actions": {
+          "const": 88
+        },
+        "event_deadline_seconds": {
+          "const": 900
+        },
+        "model_request_timeout_seconds": {
+          "const": 90
+        },
+        "event_token_budget": {
+          "const": 240000
+        },
+        "provider_auto_retries": {
+          "const": 0
+        },
+        "stages": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "propose": {
+              "$ref": "#/$defs/StageLimit"
+            },
+            "review": {
+              "$ref": "#/$defs/StageLimit"
+            },
+            "repair": {
+              "$ref": "#/$defs/StageLimit"
+            },
+            "rereview": {
+              "$ref": "#/$defs/StageLimit"
+            }
+          },
+          "required": [
+            "propose",
+            "review",
+            "repair",
+            "rereview"
+          ]
+        }
+      },
+      "required": [
+        "schema",
+        "policy_id",
+        "live",
+        "require_heterogeneous_review",
+        "max_repair_rounds",
+        "proposer_concurrency",
+        "reviewer_concurrency",
+        "currency",
+        "batch_cap_microunits",
+        "price_policy_sha256",
+        "max_event_model_requests",
+        "max_event_tool_actions",
+        "event_deadline_seconds",
+        "model_request_timeout_seconds",
+        "event_token_budget",
+        "provider_auto_retries",
+        "stages"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "live": {
+                "const": true
+              }
+            },
+            "required": [
+              "live"
+            ]
+          },
+          "then": {
+            "properties": {
+              "batch_cap_microunits": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 9007199254740991
+              },
+              "price_policy_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "Artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "raw_catalog",
+            "case_snapshot",
+            "law_scope",
+            "guides_relations",
+            "bm25",
+            "dense_vectors",
+            "dense_model_fingerprint",
+            "row_id_map",
+            "active_records",
+            "reader_index",
+            "dictionary",
+            "query_policy",
+            "acl_policy"
+          ]
+        },
+        "asset_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "required": {
+          "const": true
+        }
+      },
+      "required": [
+        "kind",
+        "asset_id",
+        "sha256",
+        "required"
+      ]
+    },
+    "Release": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "finrisk-knowledge-release/1.0"
+        },
+        "release_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "parent_release_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "knowledge_commit": {
+          "type": "string",
+          "pattern": "^(?:[0-9a-f]{40}|[0-9a-f]{64})$"
+        },
+        "changeset_sha256s": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "minItems": 1
+        },
+        "receipt_sha256s": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "minItems": 1
+        },
+        "artifacts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Artifact"
+          },
+          "minItems": 13
+        },
+        "cache_namespace": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "candidate",
+            "validated",
+            "selectable"
+          ]
+        },
+        "regression_report_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "example_only": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "schema",
+        "release_id",
+        "parent_release_id",
+        "knowledge_commit",
+        "changeset_sha256s",
+        "receipt_sha256s",
+        "artifacts",
+        "cache_namespace",
+        "status",
+        "regression_report_sha256",
+        "example_only"
+      ]
+    },
+    "Bundle": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "finrisk-maintenance-design-bundle/1.0"
+        },
+        "example_only": {
+          "const": true
+        },
+        "warning": {
+          "type": "string",
+          "minLength": 1
+        },
+        "policy": {
+          "$ref": "#/$defs/Policy"
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "minItems": 1
+        },
+        "changesets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Changeset"
+          },
+          "minItems": 1
+        },
+        "review_receipts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Receipt"
+          },
+          "minItems": 1
+        },
+        "release_manifest_example": {
+          "$ref": "#/$defs/Release"
+        },
+        "expected_outcomes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "revision": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 9007199254740991
+              },
+              "review_decision": {
+                "type": "string",
+                "minLength": 1
+              },
+              "production_admission": {
+                "const": false
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "revision",
+              "review_decision",
+              "production_admission",
+              "reason"
+            ]
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "schema",
+        "example_only",
+        "warning",
+        "policy",
+        "evidence",
+        "changesets",
+        "review_receipts",
+        "release_manifest_example",
+        "expected_outcomes"
+      ]
+    }
+  }
+}

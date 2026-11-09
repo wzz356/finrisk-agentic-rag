@@ -1,0 +1,41 @@
+{
+  "id": "B019",
+  "status": "format_repair_exhausted",
+  "production_admission": false,
+  "receipt": null,
+  "format_repairs": {
+    "proposer": 1,
+    "reviewer": 0
+  },
+  "business_revision_used": false,
+  "revisions": [
+    {
+      "revision": 1,
+      "phase": "proposer",
+      "error": {
+        "code": "MODEL_SCHEMA",
+        "field": "/behaviors/2/action/value",
+        "message": "MODEL_SCHEMA: /behaviors/2/action/value"
+      }
+    },
+    {
+      "revision": 1,
+      "phase": "proposer",
+      "error": {
+        "code": "ACTOR_UNKNOWN",
+        "field": "",
+        "message": "ACTOR_UNKNOWN"
+      }
+    }
+  ],
+  "terminal_error": {
+    "code": "ACTOR_UNKNOWN",
+    "field": "",
+    "message": "ACTOR_UNKNOWN"
+  },
+  "stop_reason": "ACTOR_UNKNOWN",
+  "format_repairs_used": {
+    "proposer": 1,
+    "reviewer": 0
+  }
+}

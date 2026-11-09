@@ -1,0 +1,222 @@
+{
+  "case_cards": [
+    {
+      "penalties": [
+        {
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+              "quote": "对英大泰和财产保险股份有限公司天津分公司警告并处罚款合计66万元。 对张静警告并处罚款9万元；对张勇警告并处罚款8万元，对刘少辉警告并处罚款1万元。",
+              "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0005"
+            }
+          ],
+          "text": "警告并处罚款合计66万元",
+          "subject": "英大泰和财产保险股份有限公司天津分公司"
+        },
+        {
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+              "quote": "对英大泰和财产保险股份有限公司天津分公司警告并处罚款合计66万元。 对张静警告并处罚款9万元；对张勇警告并处罚款8万元，对刘少辉警告并处罚款1万元。",
+              "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0005"
+            }
+          ],
+          "text": "警告并处罚款9万元",
+          "subject": "张静"
+        },
+        {
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+              "quote": "对英大泰和财产保险股份有限公司天津分公司警告并处罚款合计66万元。 对张静警告并处罚款9万元；对张勇警告并处罚款8万元，对刘少辉警告并处罚款1万元。",
+              "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0005"
+            }
+          ],
+          "text": "警告并处罚款8万元",
+          "subject": "张勇"
+        },
+        {
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+              "quote": "对英大泰和财产保险股份有限公司天津分公司警告并处罚款合计66万元。 对张静警告并处罚款9万元；对张勇警告并处罚款8万元，对刘少辉警告并处罚款1万元。",
+              "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0005"
+            }
+          ],
+          "text": "警告并处罚款1万元",
+          "subject": "刘少辉"
+        }
+      ],
+      "subject": "英大泰和财产保险股份有限公司天津分公司",
+      "decision_date": "2026-08-07",
+      "authority": "国家金融监督管理总局天津监管局",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "当事人: 英大泰和财产保险股份有限公司天津分公司",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0001"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "未按照规定使用经批准或备案的保险费率，给予投保人、被保险人保险合同约定以外的利益，通过保险代理人套取手续费，跨区域经营保险业务",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0003"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "对英大泰和财产保险股份有限公司天津分公司警告并处罚款合计66万元。 对张静警告并处罚款9万元；对张勇警告并处罚款8万元，对刘少辉警告并处罚款1万元。",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0005"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "国家金融监督管理总局天津监管局",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0007"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "2026年8月7日",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0009"
+        }
+      ],
+      "unknowns": [
+        "document_number",
+        "三名个人的职务及逐项责任归属未披露"
+      ],
+      "local_id": "case-1",
+      "document_number": null,
+      "summary": "天津监管局对天津分公司四项保险业务违法违规行为警告并罚款66万元，并分别对张静、张勇、刘少辉警告及罚款9万元、8万元、1万元。"
+    }
+  ],
+  "uncertainties": [
+    "新文未披露行政处罚决定书文号。",
+    "通过保险代理人套取手续费不直接证明虚列费用、资金去向或代理人管理不到位，未据此赋予相关标签。",
+    "旧库搜索范围有限，未断言全库无重复。"
+  ],
+  "evidence": [
+    {
+      "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+      "quote": "未按照规定使用经批准或备案的保险费率，给予投保人、被保险人保险合同约定以外的利益，通过保险代理人套取手续费，跨区域经营保险业务",
+      "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0003"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+      "quote": "对英大泰和财产保险股份有限公司天津分公司警告并处罚款合计66万元。 对张静警告并处罚款9万元；对张勇警告并处罚款8万元，对刘少辉警告并处罚款1万元。",
+      "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0005"
+    }
+  ],
+  "action": "add",
+  "targets": [],
+  "relations": [],
+  "behavior_cards": [
+    {
+      "actor": "英大泰和财产保险股份有限公司天津分公司",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "未按照规定使用经批准或备案的保险费率",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0003"
+        }
+      ],
+      "exceptions": [],
+      "risk_tags": [
+        {
+          "tag": "未按规定使用费率条款",
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+              "quote": "未按照规定使用经批准或备案的保险费率",
+              "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0003"
+            }
+          ],
+          "basis": "explicit"
+        }
+      ],
+      "unknowns": [
+        "个人逐项责任归属未披露"
+      ],
+      "negations": [],
+      "conditions": [],
+      "local_id": "behavior-1",
+      "case_id": "case-1",
+      "summary": "未按照规定使用经批准或备案的保险费率",
+      "actor_role": "被处罚保险机构"
+    },
+    {
+      "actor": "英大泰和财产保险股份有限公司天津分公司",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "给予投保人、被保险人保险合同约定以外的利益",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0003"
+        }
+      ],
+      "exceptions": [],
+      "risk_tags": [
+        {
+          "tag": "合同外利益",
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+              "quote": "给予投保人、被保险人保险合同约定以外的利益",
+              "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0003"
+            }
+          ],
+          "basis": "explicit"
+        }
+      ],
+      "unknowns": [
+        "个人逐项责任归属未披露"
+      ],
+      "negations": [],
+      "conditions": [],
+      "local_id": "behavior-2",
+      "case_id": "case-1",
+      "summary": "给予投保人、被保险人保险合同约定以外的利益",
+      "actor_role": "被处罚保险机构"
+    },
+    {
+      "actor": "英大泰和财产保险股份有限公司天津分公司",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "通过保险代理人套取手续费",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0003"
+        }
+      ],
+      "exceptions": [],
+      "risk_tags": [],
+      "unknowns": [
+        "个人逐项责任归属未披露",
+        "套取手续费的具体实施人、方式及资金去向未披露"
+      ],
+      "negations": [],
+      "conditions": [],
+      "local_id": "behavior-3",
+      "case_id": "case-1",
+      "summary": "通过保险代理人套取手续费",
+      "actor_role": "被处罚保险机构"
+    },
+    {
+      "actor": "英大泰和财产保险股份有限公司天津分公司",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+          "quote": "跨区域经营保险业务",
+          "segment_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b:L0003"
+        }
+      ],
+      "exceptions": [],
+      "risk_tags": [],
+      "unknowns": [
+        "个人逐项责任归属未披露"
+      ],
+      "negations": [],
+      "conditions": [],
+      "local_id": "behavior-4",
+      "case_id": "case-1",
+      "summary": "跨区域经营保险业务",
+      "actor_role": "被处罚保险机构"
+    }
+  ],
+  "reason": "已完整读取新文，核实天津分公司、处罚机关、决定日期及机构和三名个人的处罚。按完整机构名称及英大、天津独立词组合搜索旧库未命中；英大泰和主干搜索存在其他机构候选，不能据此声称全库无重复。新文未载文号，也无更正或撤销旧案的证据，按四项独立行为新增，不改旧卡。",
+  "schema": "codex-incremental/1"
+}

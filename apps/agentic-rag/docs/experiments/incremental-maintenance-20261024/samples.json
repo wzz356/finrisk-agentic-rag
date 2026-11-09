@@ -1,0 +1,3885 @@
+{
+  "schema": "codex-incremental100-samples/1",
+  "samples": [
+    {
+      "source_id": "FRV2-SOURCE-WEB-d820483120f7d35ada45f13c4aa847fc-f9ea794a07f23cc049b80843",
+      "text": "当事人: 中国光大银行上海江湾社区支行（原中国光大银行上海北外滩社区支行）\r\n行政处罚决定书文号\r\n沪金罚决字〔2026〕94号\r\n主要违法违规事实(案由)\r\n遗失金融许可证\r\n行政处罚内容\r\n警告并罚款1万元\r\n作出处罚决定的机关名称\r\n上海金融监管局\r\n作出处罚决定的日期\r\n2026年7月21日\r\n来源公示\r\n国家金融监督管理总局上海监管局行政处罚信息公开表（沪金罚决字〔2026〕63-95号）",
+      "text_sha256": "d820483120f7d35ada45f13c4aa847fc79b15fe65e3986320d7da3270b2a7fd0",
+      "file_id": "WEB-d820483120f7d35ada45f13c4aa847fc",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1265322_r31.txt",
+        "raw_sha256": "d820483120f7d35ada45f13c4aa847fc79b15fe65e3986320d7da3270b2a7fd0",
+        "bytes": 501
+      },
+      "identity": {
+        "party": "中国光大银行上海江湾社区支行（原中国光大银行上海北外滩社区支行）",
+        "document_numbers": [
+          "沪金罚决字〔2026〕94号",
+          "沪金罚决字〔2026〕63-95号"
+        ],
+        "authority": "上海金融监管局",
+        "decision_date": "2026年7月21日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1265322",
+      "old_candidates": [],
+      "sample_id": "D01",
+      "stage": "development"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-ed747df0b2cdaa1074c281ac99d2640b-fe0bff5430d8c2a31cf77811",
+      "text": "当事人: 李梓通（时任中原农险郑州市分公司总经理助理）\r\n行政处罚决定书文号\r\n豫金罚决字〔2026〕64号\r\n主要违法违规事实(案由)\r\n编制或者提供虚假的报告、报表、文件、资料\r\n行政处罚内容\r\n警告，罚款5万元\r\n作出处罚决定的机关名称\r\n河南金融监管局\r\n作出处罚决定的日期\r\n2026年8月25日\r\n来源公示\r\n国家金融监督管理总局河南监管局行政处罚信息公示表",
+      "text_sha256": "ed747df0b2cdaa1074c281ac99d2640b1dd706bef2c2e0b3c843a81d55e2c5bb",
+      "file_id": "WEB-ed747df0b2cdaa1074c281ac99d2640b",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269228&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1269228_r2.txt",
+        "raw_sha256": "ed747df0b2cdaa1074c281ac99d2640b1dd706bef2c2e0b3c843a81d55e2c5bb",
+        "bytes": 471
+      },
+      "identity": {
+        "party": "李梓通（时任中原农险郑州市分公司总经理助理）",
+        "document_numbers": [
+          "豫金罚决字〔2026〕64号"
+        ],
+        "authority": "河南金融监管局",
+        "decision_date": "2026年8月25日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1269228",
+      "old_candidates": [],
+      "sample_id": "D02",
+      "stage": "development"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-0b525eb74caba62ba58ccaaebd7fa2b0-4f824e0553652f058faf9cb4",
+      "text": "当事人: 王彪（时任平安人寿赛罕区营销服务部负责人）\r\n行政处罚决定书文号\r\n内金罚决字〔2026〕27号\r\n主要违法违规事实(案由)\r\n唆使、诱导保险代理人进行违背诚信义务的活动\r\n行政处罚内容\r\n警告并罚款0.5万元\r\n作出处罚决定的机关名称\r\n内蒙古金融监管局\r\n作出处罚决定的日期\r\n2026年7月30日\r\n来源公示\r\n国家金融监督管理总局内蒙古监管局行政处罚信息公开表（内金罚决字〔2026〕26号、27号）",
+      "text_sha256": "0b525eb74caba62ba58ccaaebd7fa2b05bc7166f07576364fd4d304249d49872",
+      "file_id": "WEB-0b525eb74caba62ba58ccaaebd7fa2b0",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268237&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1268237_r2.txt",
+        "raw_sha256": "0b525eb74caba62ba58ccaaebd7fa2b05bc7166f07576364fd4d304249d49872",
+        "bytes": 523
+      },
+      "identity": {
+        "party": "王彪（时任平安人寿赛罕区营销服务部负责人）",
+        "document_numbers": [
+          "内金罚决字〔2026〕27号",
+          "内金罚决字〔2026〕26号"
+        ],
+        "authority": "内蒙古金融监管局",
+        "decision_date": "2026年7月30日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1268237",
+      "old_candidates": [],
+      "sample_id": "D03",
+      "stage": "development"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-e0875a5e93c3dd093eac2e8adfcc912f-a689b47f34f4bed2a986b5c2",
+      "text": "当事人: 中国邮政集团公司辽宁省凤城市分公司\r\n行政处罚决定书文号\r\n丹金罚决字〔2026〕7号\r\n主要违法违规事实(案由)\r\n因管理不善遗失《保险兼业代理业务许可证》\r\n行政处罚内容\r\n警告，并罚款1万元\r\n作出处罚决定的机关名称\r\n丹东金融监管分局\r\n作出处罚决定的日期\r\n2026年8月19日\r\n来源公示\r\n丹东金融监管分局行政处罚信息公示列表",
+      "text_sha256": "e0875a5e93c3dd093eac2e8adfcc912ff32d387824c948cbcf31a4cf53e5db9e",
+      "file_id": "WEB-e0875a5e93c3dd093eac2e8adfcc912f",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268572&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1268572_r1.txt",
+        "raw_sha256": "e0875a5e93c3dd093eac2e8adfcc912ff32d387824c948cbcf31a4cf53e5db9e",
+        "bytes": 443
+      },
+      "identity": {
+        "party": "中国邮政集团公司辽宁省凤城市分公司",
+        "document_numbers": [
+          "丹金罚决字〔2026〕7号"
+        ],
+        "authority": "丹东金融监管分局",
+        "decision_date": "2026年8月19日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1268572",
+      "old_candidates": [],
+      "sample_id": "D04",
+      "stage": "development"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab",
+      "text": "当事人: 普浩（时任国家开发银行河南省分行客户三处处长）\r\n行政处罚决定书文号\r\n豫金罚决字〔2026〕45号\r\n主要违法违规事实(案由)\r\n贷款审查不尽职\r\n行政处罚内容\r\n禁止从事银行业工作4年\r\n作出处罚决定的机关名称\r\n河南金融监管局\r\n作出处罚决定的日期\r\n2026年8月25日\r\n来源公示\r\n国家金融监督管理总局河南监管局行政处罚信息公示表",
+      "text_sha256": "67d49397f51a2315da364c1c1280b6d7ff2f0f8de2eccd6a13b61a2a75904175",
+      "file_id": "WEB-67d49397f51a2315da364c1c1280b6d7",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269228&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1269228_r9.txt",
+        "raw_sha256": "67d49397f51a2315da364c1c1280b6d7ff2f0f8de2eccd6a13b61a2a75904175",
+        "bytes": 444
+      },
+      "identity": {
+        "party": "普浩（时任国家开发银行河南省分行客户三处处长）",
+        "document_numbers": [
+          "豫金罚决字〔2026〕45号"
+        ],
+        "authority": "河南金融监管局",
+        "decision_date": "2026年8月25日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1269228",
+      "old_candidates": [],
+      "sample_id": "D05",
+      "stage": "development"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0",
+      "text": "当事人: 简敏（时任渤海财险呼和浩特中心支公司副总经理（主持工作））\r\n行政处罚决定书文号\r\n内金罚决字〔2026〕24号\r\n主要违法违规事实(案由)\r\n招投标业务虚假记载为个人代理业务\r\n行政处罚内容\r\n警告并罚款2万元\r\n作出处罚决定的机关名称\r\n内蒙古金融监管局\r\n作出处罚决定的日期\r\n2026年7月30日\r\n来源公示\r\n国家金融监督管理总局内蒙古监管局行政处罚信息公开表（内金罚决字〔2026〕24号、25号）",
+      "text_sha256": "ed44bb2d078736155c85ce698be4dbeae270b8db145c97b96c17b96ff34d2a2d",
+      "file_id": "WEB-ed44bb2d078736155c85ce698be4dbea",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268236&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1268236_r1.txt",
+        "raw_sha256": "ed44bb2d078736155c85ce698be4dbeae270b8db145c97b96c17b96ff34d2a2d",
+        "bytes": 530
+      },
+      "identity": {
+        "party": "简敏（时任渤海财险呼和浩特中心支公司副总经理（主持工作））",
+        "document_numbers": [
+          "内金罚决字〔2026〕24号"
+        ],
+        "authority": "内蒙古金融监管局",
+        "decision_date": "2026年7月30日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1268236",
+      "old_candidates": [],
+      "sample_id": "D06",
+      "stage": "development"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+      "text": "当事人: 张涛（时任太平人寿庆阳中支个险本部临时负责人、经理）\r\n行政处罚决定书文号\r\n庆金监行处〔2026〕49号\r\n主要违法违规事实(案由)\r\n未按照规定保管业务经营活动有关资料\r\n行政处罚内容\r\n警告并处罚款0.5万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局庆阳监管分局\r\n作出处罚决定的日期\r\n2026年7月3日\r\n来源公示\r\n国家金融监督管理总局庆阳监管分局行政处罚信息公示表（庆金监行处〔2026〕47号、48号、49号）",
+      "text_sha256": "65c3a402aac773bd883d9436bfbbf826eaf387cc18d2ae6f6c1ab06e4d6f6aea",
+      "file_id": "WEB-65c3a402aac773bd883d9436bfbbf826",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263125&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1263125_r6.txt",
+        "raw_sha256": "65c3a402aac773bd883d9436bfbbf826eaf387cc18d2ae6f6c1ab06e4d6f6aea",
+        "bytes": 560
+      },
+      "identity": {
+        "party": "张涛（时任太平人寿庆阳中支个险本部临时负责人、经理）",
+        "document_numbers": [
+          "庆金监行处〔2026〕49号",
+          "庆金监行处〔2026〕47号"
+        ],
+        "authority": "国家金融监督管理总局庆阳监管分局",
+        "decision_date": "2026年7月3日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1263125",
+      "old_candidates": [],
+      "sample_id": "D07",
+      "stage": "development"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-a5c4384516cf81aef6dfe9ff19950ab7-9225566286592430f84cbf61",
+      "text": "当事人: 临沂交运盛通保险代理有限责任公司\r\n行政处罚决定书文号\r\n临金罚决字〔2026〕24号\r\n主要违法违规事实(案由)\r\n聘任不具有任职资格的人员、未开立独立的代收保险费账户\r\n行政处罚内容\r\n警告并罚款8万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局临沂监管分局\r\n作出处罚决定的日期\r\n2026年7月16日\r\n来源公示\r\n国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕24号-25号）",
+      "text_sha256": "a5c4384516cf81aef6dfe9ff19950ab75e05fc58e4aab2830b71006579ddc198",
+      "file_id": "WEB-a5c4384516cf81aef6dfe9ff19950ab7",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264672&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1264672_r1.txt",
+        "raw_sha256": "a5c4384516cf81aef6dfe9ff19950ab75e05fc58e4aab2830b71006579ddc198",
+        "bytes": 543
+      },
+      "identity": {
+        "party": "临沂交运盛通保险代理有限责任公司",
+        "document_numbers": [
+          "临金罚决字〔2026〕24号"
+        ],
+        "authority": "国家金融监督管理总局临沂监管分局",
+        "decision_date": "2026年7月16日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1264672",
+      "old_candidates": [],
+      "sample_id": "D08",
+      "stage": "development"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+      "text": "当事人: 欧阳钰涵（时任阳光财产保险股份有限公司鄢陵支公司经理）\r\n行政处罚决定书文号\r\n许金罚决字〔2026〕11号\r\n主要违法违规事实(案由)\r\n未经核准变更机构营业场所\r\n行政处罚内容\r\n警告并罚款人民币1.2万元\r\n作出处罚决定的机关名称\r\n许昌金融监管分局\r\n作出处罚决定的日期\r\n2026年7月10日\r\n来源公示\r\n国家金融监督管理总局许昌监管分局行政处罚信息公示表",
+      "text_sha256": "99a9aa7ad7f4cb4a744ac2cb5ecbec736dc5de547c18326985a6387864f53c50",
+      "file_id": "WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264165&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1264165_r2.txt",
+        "raw_sha256": "99a9aa7ad7f4cb4a744ac2cb5ecbec736dc5de547c18326985a6387864f53c50",
+        "bytes": 479
+      },
+      "identity": {
+        "party": "欧阳钰涵（时任阳光财产保险股份有限公司鄢陵支公司经理）",
+        "document_numbers": [
+          "许金罚决字〔2026〕11号"
+        ],
+        "authority": "许昌金融监管分局",
+        "decision_date": "2026年7月10日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1264165",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F000017-35d73c549f1446907b9f7291",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000020-8124901d036a528f5586c000",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000052-3496803e49610b0d0e2afa35",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000057-bd8635df74d62ef336a9dfde",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000100-cfb75989c48bcb640be06ba0",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000104-0e2fe93fa1d292649bf4e614",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000116-c5712caa0e75e820b1ac0a8d",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000164-7878d51a517cb563aeedeee8",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000166-eda2aeae9f9fead253c0a4d9",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000181-e8467f1160fbcfbd76078128",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "D09",
+      "stage": "development"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-d8a613d0ad15651664fb09cfb7bc33b1-2ee7b469d848c0a5f2a5b922",
+      "text": "当事人: 北京恒丰保险经纪有限公司上海分公司\r\n行政处罚决定书文号\r\n沪金罚决字〔2026〕57号\r\n主要违法违规事实(案由)\r\n欺骗投保人\r\n行政处罚内容\r\n罚款6万元\r\n作出处罚决定的机关名称\r\n上海金融监管局\r\n作出处罚决定的日期\r\n2026年7月13日\r\n来源公示\r\n国家金融监督管理总局上海监管局行政处罚信息公开表（沪金罚决字〔2026〕56-60号）",
+      "text_sha256": "d8a613d0ad15651664fb09cfb7bc33b133c75b56d78ad9b2af443b0e98296599",
+      "file_id": "WEB-d8a613d0ad15651664fb09cfb7bc33b1",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264257&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1264257_r1.txt",
+        "raw_sha256": "d8a613d0ad15651664fb09cfb7bc33b133c75b56d78ad9b2af443b0e98296599",
+        "bytes": 441
+      },
+      "identity": {
+        "party": "北京恒丰保险经纪有限公司上海分公司",
+        "document_numbers": [
+          "沪金罚决字〔2026〕57号",
+          "沪金罚决字〔2026〕56-60号"
+        ],
+        "authority": "上海金融监管局",
+        "decision_date": "2026年7月13日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1264257",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F000538-9af1f457bb35ecf31a0fa3ba",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F001184-dff7be8036f02fc124eb0d4a",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F001470-a7fbc68c4df2edecc2c45e21",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F003311-c9e96ae2b2c3dbe0e74ec0eb",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F003413-4d29a95b92a96af7ee482f78",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004712-1ff7ea06a6fab7a11943529f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006517-039a05ce873ce52aa821e2a2",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006787-883e8004c1ecabd0ad172e7b",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "D10",
+      "stage": "development"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-dd0ac7afbc68c3fcdff91f9d01ad6307-d81a05601b4819f4b46b3fec",
+      "text": "当事人: 安诚财产保险股份有限公司河南分公司\r\n行政处罚决定书文号\r\n豫金罚决字〔2026〕65号\r\n主要违法违规事实(案由)\r\n编制或者提供虚假的报告、报表、文件、资料\r\n行政处罚内容\r\n罚款35万元\r\n作出处罚决定的机关名称\r\n河南金融监管局\r\n作出处罚决定的日期\r\n2026年8月25日\r\n来源公示\r\n国家金融监督管理总局河南监管局行政处罚信息公示表",
+      "text_sha256": "dd0ac7afbc68c3fcdff91f9d01ad63071e769ad0f0afa56bdaaa67e5ef2ce686",
+      "file_id": "WEB-dd0ac7afbc68c3fcdff91f9d01ad6307",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269228&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1269228_r5.txt",
+        "raw_sha256": "dd0ac7afbc68c3fcdff91f9d01ad63071e769ad0f0afa56bdaaa67e5ef2ce686",
+        "bytes": 448
+      },
+      "identity": {
+        "party": "安诚财产保险股份有限公司河南分公司",
+        "document_numbers": [
+          "豫金罚决字〔2026〕65号"
+        ],
+        "authority": "河南金融监管局",
+        "decision_date": "2026年8月25日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1269228",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F000228-ed2939b53e10948a04851b42",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000331-3f1c992da8d544879e5aef0e",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000597-7b4876e9ce77c0534f9ff748",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000598-43e0cd83ddbf6515491ece0f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000734-ee3f597eba6874bbff6ddad1",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F001395-d572880bf37bbb7418cc97c8",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F001538-95783ddff8b5f6a27b8b1ad6",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F001674-25e392298f392d2eadff75d7",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F002011-e7490321f6840786bc05ab56",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F002227-c600cfc1f04e579c1e981111",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "D11",
+      "stage": "development"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb",
+      "text": "当事人: 平安银行股份有限公司盐城分行及相关责任人员\r\n主要违法违规事实(案由)\r\n信贷业务管理不到位、汽车金融业务管理不审慎\r\n行政处罚内容\r\n对平安银行股份有限公司盐城分行罚款65万元。对王玉成、张弦警告并罚款共计10万元。\r\n作出处罚决定的机关名称\r\n盐城金融监管分局\r\n作出处罚决定的日期\r\n2026年7月3日\r\n来源公示\r\n国家金融监督管理总局盐城监管分局行政处罚信息公开表",
+      "text_sha256": "728ab051af65196c153df4916e6b0472328abd746120fc24cc037015c1d05fe0",
+      "file_id": "WEB-728ab051af65196c153df4916e6b0472",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263327&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1263327_r1.txt",
+        "raw_sha256": "728ab051af65196c153df4916e6b0472328abd746120fc24cc037015c1d05fe0",
+        "bytes": 508
+      },
+      "identity": {
+        "party": "平安银行股份有限公司盐城分行及相关责任人员",
+        "document_numbers": [],
+        "authority": "盐城金融监管分局",
+        "decision_date": "2026年7月3日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1263327",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F002435-8010eff0c93180d5f193571f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004588-1971eeb979eb90531833be05",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005839-4d882b3c7e38ea91e4ffaba5",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008544-f91ec7921e72cc3e1d8c6ed1",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008740-a403adeb5c3b387abbade697",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "D12",
+      "stage": "development"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-884796d71200bba450b5b890d06eeae6-4c8134334779a86d1d74953b",
+      "text": "当事人: 英大泰和财产保险股份有限公司天津分公司\r\n主要违法违规事实(案由)\r\n未按照规定使用经批准或备案的保险费率，给予投保人、被保险人保险合同约定以外的利益，通过保险代理人套取手续费，跨区域经营保险业务\r\n行政处罚内容\r\n对英大泰和财产保险股份有限公司天津分公司警告并处罚款合计66万元。 对张静警告并处罚款9万元；对张勇警告并处罚款8万元，对刘少辉警告并处罚款1万元。\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局天津监管局\r\n作出处罚决定的日期\r\n2026年8月7日\r\n来源公示\r\n国家金融监督管理总局天津监管局行政处罚信息公开表",
+      "text_sha256": "884796d71200bba450b5b890d06eeae68befbd5a4120e7a9ac147649270a1fcc",
+      "file_id": "WEB-884796d71200bba450b5b890d06eeae6",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267323&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1267323.txt",
+        "raw_sha256": "884796d71200bba450b5b890d06eeae68befbd5a4120e7a9ac147649270a1fcc",
+        "bytes": 741
+      },
+      "identity": {
+        "party": "英大泰和财产保险股份有限公司天津分公司",
+        "document_numbers": [],
+        "authority": "国家金融监督管理总局天津监管局",
+        "decision_date": "2026年8月7日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1267323",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F000313-5822783db091da829916f11b",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000459-8fea6fd4cb9b783fc8f94663",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F002435-8010eff0c93180d5f193571f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004256-3c76cb422d3bc2fa74c86467",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004366-221a52a9f61a6370443be357",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004567-d3eef1d457294082502edf57",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004588-1971eeb979eb90531833be05",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004918-485a82e174e41fddd9625faf",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004936-cacc155cf2dae8cd3cf16d35",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005122-e096d117f79b8acc9ce88cd2",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "D13",
+      "stage": "development"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-621de61b089171eb0fd4bee1ae21a85b-8e1b963c35973b02e4d58123",
+      "text": "当事人: 黄俊（时任交通银行股份有限公司上海浦东分行对公客户经理）\r\n行政处罚决定书文号\r\n沪金罚决字〔2026〕85号\r\n主要违法违规事实(案由)\r\n员工行为管理严重违反审慎经营规则\r\n行政处罚内容\r\n禁止从事银行业工作十年\r\n作出处罚决定的机关名称\r\n上海金融监管局\r\n作出处罚决定的日期\r\n2026年7月21日\r\n来源公示\r\n国家金融监督管理总局上海监管局行政处罚信息公开表（沪金罚决字〔2026〕63-95号）",
+      "text_sha256": "621de61b089171eb0fd4bee1ae21a85bc1340b76d68e86f5ee8ea0b336a2d290",
+      "file_id": "WEB-621de61b089171eb0fd4bee1ae21a85b",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1265322_r33.txt",
+        "raw_sha256": "621de61b089171eb0fd4bee1ae21a85bc1340b76d68e86f5ee8ea0b336a2d290",
+        "bytes": 527
+      },
+      "identity": {
+        "party": "黄俊（时任交通银行股份有限公司上海浦东分行对公客户经理）",
+        "document_numbers": [
+          "沪金罚决字〔2026〕85号",
+          "沪金罚决字〔2026〕63-95号"
+        ],
+        "authority": "上海金融监管局",
+        "decision_date": "2026年7月21日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1265322",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F002435-8010eff0c93180d5f193571f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004588-1971eeb979eb90531833be05",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008740-a403adeb5c3b387abbade697",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "D14",
+      "stage": "development"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-bd5223bf59c4f8f6c7ca423d8d679e4a-24dc37ab51e6ede88ec1193f",
+      "text": "当事人: 中国平安财产保险股份有限公司上海市虹口支公司\r\n行政处罚决定书文号\r\n沪金罚决字〔2026〕66号\r\n主要违法违规事实(案由)\r\n未按照规定使用经备案的保险条款、保险费率\r\n行政处罚内容\r\n罚款22万元\r\n作出处罚决定的机关名称\r\n上海金融监管局\r\n作出处罚决定的日期\r\n2026年7月21日\r\n来源公示\r\n国家金融监督管理总局上海监管局行政处罚信息公开表（沪金罚决字〔2026〕63-95号）",
+      "text_sha256": "bd5223bf59c4f8f6c7ca423d8d679e4a718bdba0e6b171eb50436e1143c10de3",
+      "file_id": "WEB-bd5223bf59c4f8f6c7ca423d8d679e4a",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1265322_r5.txt",
+        "raw_sha256": "bd5223bf59c4f8f6c7ca423d8d679e4a718bdba0e6b171eb50436e1143c10de3",
+        "bytes": 502
+      },
+      "identity": {
+        "party": "中国平安财产保险股份有限公司上海市虹口支公司",
+        "document_numbers": [
+          "沪金罚决字〔2026〕66号",
+          "沪金罚决字〔2026〕63-95号"
+        ],
+        "authority": "上海金融监管局",
+        "decision_date": "2026年7月21日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1265322",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F000035-e81153c8d21f534e882dd383",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000049-5a21bd12e561029ad557e04a",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000050-1a3697063617b5d94c4e692f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000061-d23b473819cc9392d7f970db",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000081-fafac74cae3d99b733bbda55",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000142-c3e5a0b8b4e4e5d51e84dedb",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000143-736234801105dae3c6d46247",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000151-e16b9b1fae0979e8fb132251",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000184-5cf9b492d3710c7e897fd79d",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000193-09a40ff91bb90f1d18895262",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "D15",
+      "stage": "development"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-0681b2744adfdb21b218cc20b975702e-c2f0ab84ffdd045aa4a8378b",
+      "text": "当事人: 恒大人寿保险有限公司\r\n主要违法违规事实(案由)\r\n保险资金运用严重不合规、向关联方输送利益，投后管理不合规，报送的报告报表存在虚假记载等。\r\n行政处罚内容\r\n对恒大人寿保险有限公司吊销业务许可证。\r\n作出处罚决定的机关名称\r\n金融监管总局\r\n作出处罚决定的日期\r\n2026年8月21日\r\n来源公示\r\n国家金融监督管理总局行政处罚信息公示列表",
+      "text_sha256": "0681b2744adfdb21b218cc20b975702ee2623a07a492f5adb24c12f44d5e8be8",
+      "file_id": "WEB-0681b2744adfdb21b218cc20b975702e",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268890&itemId=4113&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4113/1268890_r3.txt",
+        "raw_sha256": "0681b2744adfdb21b218cc20b975702ee2623a07a492f5adb24c12f44d5e8be8",
+        "bytes": 466
+      },
+      "identity": {
+        "party": "恒大人寿保险有限公司",
+        "document_numbers": [],
+        "authority": "金融监管总局",
+        "decision_date": "2026年8月21日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1268890",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F000262-dfc1a24e90c0bdba9122a686",
+          "match_basis": "literal_party_field"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000657-ba005a7bc5a307611f6ef088",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000828-252aa76bef90f9647ab5ea4d",
+          "match_basis": "literal_party_field"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005548-bf3f941980a7d488e63c7e4e",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008567-29accafce41d4e5c47ef39c3",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008568-d494215c701ff72e5b5332fc",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008571-51dba1a0eefda59c16beb6e5",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "D16",
+      "stage": "development"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-ec68d6bb485885f08540cbaa8253c80f-0f5261fffdc11f99c41844e7",
+      "text": "当事人: 华夏久盈资产管理有限责任公司及相关责任人员\r\n主要违法违规事实(案由)\r\n未按照规定运用保险公司资金等\r\n行政处罚内容\r\n对华夏久盈资产管理有限责任公司罚款70万元。对陈淑翠禁止10年进入保险业。\r\n作出处罚决定的机关名称\r\n金融监管总局\r\n作出处罚决定的日期\r\n2025年12月19日\r\n来源公示\r\n国家金融监督管理总局行政处罚信息公示列表",
+      "text_sha256": "ec68d6bb485885f08540cbaa8253c80f2d6f70858e0118ce41099bef78574402",
+      "file_id": "WEB-ec68d6bb485885f08540cbaa8253c80f",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1238354&itemId=4113&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4113/1238354_r3.txt",
+        "raw_sha256": "ec68d6bb485885f08540cbaa8253c80f2d6f70858e0118ce41099bef78574402",
+        "bytes": 456
+      },
+      "identity": {
+        "party": "华夏久盈资产管理有限责任公司及相关责任人员",
+        "document_numbers": [],
+        "authority": "金融监管总局",
+        "decision_date": "2025年12月19日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "U",
+      "family": "nfra:1238354",
+      "old_candidates": [],
+      "sample_id": "D17",
+      "stage": "development"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-e072f834c6c7c12c9d5cc9bc5877c3d1-59ede1394b15411129a8f709",
+      "text": "当事人: 中国银河资产管理有限责任公司及相关责任人员\r\n主要违法违规事实(案由)\r\n投后管理不到位。\r\n行政处罚内容\r\n对中国银河资产管理有限责任公司罚款30万元。对张旭给予警告。\r\n作出处罚决定的机关名称\r\n金融监管总局\r\n作出处罚决定的日期\r\n2026年4月24日\r\n来源公示\r\n国家金融监督管理总局行政处罚信息公示列表",
+      "text_sha256": "e072f834c6c7c12c9d5cc9bc5877c3d146ed643d32aa0379dd0bff78bed7c28c",
+      "file_id": "WEB-e072f834c6c7c12c9d5cc9bc5877c3d1",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1255842&itemId=4113&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4113/1255842_r1.txt",
+        "raw_sha256": "e072f834c6c7c12c9d5cc9bc5877c3d146ed643d32aa0379dd0bff78bed7c28c",
+        "bytes": 420
+      },
+      "identity": {
+        "party": "中国银河资产管理有限责任公司及相关责任人员",
+        "document_numbers": [],
+        "authority": "金融监管总局",
+        "decision_date": "2026年4月24日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "U",
+      "family": "nfra:1255842",
+      "old_candidates": [],
+      "sample_id": "D18",
+      "stage": "development"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-e234ad4caacc9fdd1bed04764a45962a-791bf363a7abcdc60580fb32",
+      "text": "当事人: 人保寿险吉林省分公司\r\n主要违法违规事实(案由)\r\n换领许可证超期\r\n行政处罚内容\r\n对人保寿险吉林省分公司警告并罚款1万元。\r\n作出处罚决定的机关名称\r\n吉林金融监管局\r\n作出处罚决定的日期\r\n2026年7月30日\r\n来源公示\r\n国家金融监督管理总局吉林监管局行政处罚信息公示列表",
+      "text_sha256": "e234ad4caacc9fdd1bed04764a45962af911c157764431ffabc9f0835eb6cf2b",
+      "file_id": "WEB-e234ad4caacc9fdd1bed04764a45962a",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266238&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1266238.txt",
+        "raw_sha256": "e234ad4caacc9fdd1bed04764a45962af911c157764431ffabc9f0835eb6cf2b",
+        "bytes": 374
+      },
+      "identity": {
+        "party": "人保寿险吉林省分公司",
+        "document_numbers": [],
+        "authority": "吉林金融监管局",
+        "decision_date": "2026年7月30日",
+        "non_penalty_hint": true,
+        "proposed_hint": false
+      },
+      "stratum": "U",
+      "family": "nfra:1266238",
+      "old_candidates": [],
+      "sample_id": "D19",
+      "stage": "development"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-fcea4b1a0c9a56c0ec0093236ddf6a47-eb0eaf6818b34fd0e9ae33e9",
+      "text": "当事人: 华夏理财有限责任公司及相关责任人员\r\n主要违法违规事实(案由)\r\n投资运作不规范，系统管控不到位，监管数据报送不合规等\r\n行政处罚内容\r\n对华夏理财有限责任公司罚款1200万元。对王涛、张志涛警告并罚款合计10万元。\r\n作出处罚决定的机关名称\r\n金融监管总局\r\n作出处罚决定的日期\r\n2025年9月12日\r\n来源公示\r\n国家金融监督管理总局行政处罚信息公示列表",
+      "text_sha256": "fcea4b1a0c9a56c0ec0093236ddf6a4741cc0e55983f0b1e7b3a5a07a61c9aa7",
+      "file_id": "WEB-fcea4b1a0c9a56c0ec0093236ddf6a47",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1225641&itemId=4113&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4113/1225641_r3.txt",
+        "raw_sha256": "fcea4b1a0c9a56c0ec0093236ddf6a4741cc0e55983f0b1e7b3a5a07a61c9aa7",
+        "bytes": 481
+      },
+      "identity": {
+        "party": "华夏理财有限责任公司及相关责任人员",
+        "document_numbers": [],
+        "authority": "金融监管总局",
+        "decision_date": "2025年9月12日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "U",
+      "family": "nfra:1225641",
+      "old_candidates": [],
+      "sample_id": "D20",
+      "stage": "development"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-5743e77fa3e76d69e7e6df4f45d1a098-1b5fe37c6db6f1537bed2944",
+      "text": "当事人: 中国农业发展银行辽宁省喀左县支行\r\n行政处罚决定书文号\r\n朝金罚决字〔2026〕5号\r\n主要违法违规事实(案由)\r\n贷后管理不到位\r\n行政处罚内容\r\n罚款30万元\r\n作出处罚决定的机关名称\r\n朝阳金融监管分局\r\n作出处罚决定的日期\r\n2026年7月6日\r\n来源公示\r\n朝阳金融监管分局行政处罚信息公示列表",
+      "text_sha256": "5743e77fa3e76d69e7e6df4f45d1a098d700755a44dfa7ea2e39ad9a02eec925",
+      "file_id": "WEB-5743e77fa3e76d69e7e6df4f45d1a098",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263224&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1263224_r3.txt",
+        "raw_sha256": "5743e77fa3e76d69e7e6df4f45d1a098d700755a44dfa7ea2e39ad9a02eec925",
+        "bytes": 389
+      },
+      "identity": {
+        "party": "中国农业发展银行辽宁省喀左县支行",
+        "document_numbers": [
+          "朝金罚决字〔2026〕5号"
+        ],
+        "authority": "朝阳金融监管分局",
+        "decision_date": "2026年7月6日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1263224",
+      "old_candidates": [],
+      "sample_id": "E01",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-6c19b7b97e750972bd96548336148adb-71c36d7fdda9a4794f822ad2",
+      "text": "当事人: 王旭（时任都邦财险河南分公司总经理助理）\r\n行政处罚决定书文号\r\n豫金罚决字〔2026〕47号\r\n主要违法违规事实(案由)\r\n编制或者提供虚假的报告、报表、文件、资料\r\n行政处罚内容\r\n警告，罚款7万元\r\n作出处罚决定的机关名称\r\n河南金融监管局\r\n作出处罚决定的日期\r\n2026年7月17日\r\n来源公示\r\n国家金融监督管理总局河南监管局行政处罚信息公示表",
+      "text_sha256": "6c19b7b97e750972bd96548336148adbeffcb88c38207cee85ff1773fab1ac6e",
+      "file_id": "WEB-6c19b7b97e750972bd96548336148adb",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264877&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1264877_r2.txt",
+        "raw_sha256": "6c19b7b97e750972bd96548336148adbeffcb88c38207cee85ff1773fab1ac6e",
+        "bytes": 465
+      },
+      "identity": {
+        "party": "王旭（时任都邦财险河南分公司总经理助理）",
+        "document_numbers": [
+          "豫金罚决字〔2026〕47号"
+        ],
+        "authority": "河南金融监管局",
+        "decision_date": "2026年7月17日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1264877",
+      "old_candidates": [],
+      "sample_id": "E02",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-f0ff5d5662a9212bfe9c1ee6136f7a0e-7a5bf181b8887d14249ba6b1",
+      "text": "当事人: 丁宝峰（时任中信银行营口分行行长）\r\n行政处罚决定书文号\r\n营金监罚决字〔2026〕3号\r\n主要违法违规事实(案由)\r\n规避授信审批权限申报贷款、贷款“三查”不到位\r\n行政处罚内容\r\n警告\r\n作出处罚决定的机关名称\r\n营口金融监管分局\r\n作出处罚决定的日期\r\n2026年7月10日\r\n来源公示\r\n营口金融监管分局行政处罚信息公示列表",
+      "text_sha256": "f0ff5d5662a9212bfe9c1ee6136f7a0ec7f88a6993743d3cfbca678098834f9b",
+      "file_id": "WEB-f0ff5d5662a9212bfe9c1ee6136f7a0e",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264160&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1264160_r2.txt",
+        "raw_sha256": "f0ff5d5662a9212bfe9c1ee6136f7a0ec7f88a6993743d3cfbca678098834f9b",
+        "bytes": 433
+      },
+      "identity": {
+        "party": "丁宝峰（时任中信银行营口分行行长）",
+        "document_numbers": [
+          "营金监罚决字〔2026〕3号"
+        ],
+        "authority": "营口金融监管分局",
+        "decision_date": "2026年7月10日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1264160",
+      "old_candidates": [],
+      "sample_id": "E03",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-226fec9895f7b7c7961d86e0302e8ba6-593e235444a01382303e9ba3",
+      "text": "行政处罚决定书文号行政处罚决定书文号\r\n金罚决字〔2024〕32号\r\n被处罚当事人\r\n中银理财有限责任公司\r\n主要违法违规事实\r\n中银理财有限责任公司理财业务存在以下违法违规行为：\r\n一、未能有效穿透识别底层资产\r\n二、非标底层资产到期日晚于封闭式理财产品到期日\r\n行政处罚依据\r\n《中华人民共和国银行业监督管理法》第二十一条、第四十六条及相关审慎经营规则。\r\n行政处罚决定\r\n罚款250万元\r\n作出处罚决定的\r\n机关名称\r\n国家金融监督管理总局\r\n作出处罚决定的日期\r\n2024年6月24日",
+      "text_sha256": "226fec9895f7b7c7961d86e0302e8ba66119bc69f0fd60e19e817598980a5c52",
+      "file_id": "WEB-226fec9895f7b7c7961d86e0302e8ba6",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1167686&itemId=4113&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4113/1167686.txt",
+        "raw_sha256": "226fec9895f7b7c7961d86e0302e8ba66119bc69f0fd60e19e817598980a5c52",
+        "bytes": 642
+      },
+      "identity": {
+        "party": "中银理财有限责任公司",
+        "document_numbers": [
+          "金罚决字〔2024〕32号"
+        ],
+        "authority": null,
+        "decision_date": "2024年6月24日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1167686",
+      "old_candidates": [],
+      "sample_id": "E04",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-0d20b0abbf0c35dd957102589a8f9c51-5caf4c4899eccc18ec05b908",
+      "text": "当事人: 李长存\r\n行政处罚决定书文号\r\n辽金罚决〔2026〕26号\r\n主要违法违规事实(案由)\r\n业务财务数据不真实\r\n行政处罚内容\r\n警告并罚款4万元\r\n作出处罚决定的机关名称\r\n辽宁金融监管局\r\n作出处罚决定的日期\r\n2026年8月18日\r\n来源公示\r\n辽宁金融监管局行政处罚信息公示列表",
+      "text_sha256": "0d20b0abbf0c35dd957102589a8f9c5126b371e481c7ac396dbc8788154411e1",
+      "file_id": "WEB-0d20b0abbf0c35dd957102589a8f9c51",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268420&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1268420_r2.txt",
+        "raw_sha256": "0d20b0abbf0c35dd957102589a8f9c5126b371e481c7ac396dbc8788154411e1",
+        "bytes": 357
+      },
+      "identity": {
+        "party": "李长存",
+        "document_numbers": [
+          "辽金罚决〔2026〕26号"
+        ],
+        "authority": "辽宁金融监管局",
+        "decision_date": "2026年8月18日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1268420",
+      "old_candidates": [],
+      "sample_id": "E05",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-fd82169e5d2fd19114aa5071d4c64d6a-0f97946ef8fef6812d25fe9d",
+      "text": "当事人: 全亮（时任中国农业发展银行辽宁省喀左县支行行长）\r\n行政处罚决定书文号\r\n朝金罚决字〔2026〕6号\r\n主要违法违规事实(案由)\r\n贷后管理不到位\r\n行政处罚内容\r\n警告\r\n作出处罚决定的机关名称\r\n朝阳金融监管分局\r\n作出处罚决定的日期\r\n2026年7月6日\r\n来源公示\r\n朝阳金融监管分局行政处罚信息公示列表",
+      "text_sha256": "fd82169e5d2fd19114aa5071d4c64d6abd4b199f8a46b6403fb2c248603cfa4f",
+      "file_id": "WEB-fd82169e5d2fd19114aa5071d4c64d6a",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263224&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1263224_r4.txt",
+        "raw_sha256": "fd82169e5d2fd19114aa5071d4c64d6abd4b199f8a46b6403fb2c248603cfa4f",
+        "bytes": 405
+      },
+      "identity": {
+        "party": "全亮（时任中国农业发展银行辽宁省喀左县支行行长）",
+        "document_numbers": [
+          "朝金罚决字〔2026〕6号"
+        ],
+        "authority": "朝阳金融监管分局",
+        "decision_date": "2026年7月6日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1263224",
+      "old_candidates": [],
+      "sample_id": "E06",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-63758fca59bb0b5f9e975a7292e37e6b-eba85c393c336ac264a7f597",
+      "text": "当事人: 中国农业发展银行辽宁省建平县支行\r\n行政处罚决定书文号\r\n朝金罚决字〔2026〕3号\r\n主要违法违规事实(案由)\r\n贷后管理不到位\r\n行政处罚内容\r\n罚款20万元\r\n作出处罚决定的机关名称\r\n朝阳金融监管分局\r\n作出处罚决定的日期\r\n2026年7月6日\r\n来源公示\r\n朝阳金融监管分局行政处罚信息公示列表",
+      "text_sha256": "63758fca59bb0b5f9e975a7292e37e6b015e752f84a6cf208ad2098158ae3bc3",
+      "file_id": "WEB-63758fca59bb0b5f9e975a7292e37e6b",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263224&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1263224_r1.txt",
+        "raw_sha256": "63758fca59bb0b5f9e975a7292e37e6b015e752f84a6cf208ad2098158ae3bc3",
+        "bytes": 389
+      },
+      "identity": {
+        "party": "中国农业发展银行辽宁省建平县支行",
+        "document_numbers": [
+          "朝金罚决字〔2026〕3号"
+        ],
+        "authority": "朝阳金融监管分局",
+        "decision_date": "2026年7月6日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1263224",
+      "old_candidates": [],
+      "sample_id": "E07",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-b8472c079f8255b6501a25ee9b5984ff-d62e1185bce1daea7ffb06d9",
+      "text": "行政处罚决定书文号行政处罚决定书文号\r\n金罚决字〔2024〕34号\r\n被处罚当事人\r\n招银理财有限责任公司\r\n主要违法违规事实\r\n招银理财有限责任公司理财业务存在以下违法违规行为：\r\n一、未能有效穿透识别底层资产\r\n二、信息披露不规范\r\n行政处罚依据\r\n《中华人民共和国银行业监督管理法》第二十一条、第四十六条及相关审慎经营规则。\r\n行政处罚决定\r\n罚款850万元\r\n作出处罚决定的\r\n机关名称\r\n国家金融监督管理总局\r\n作出处罚决定的日期\r\n2024年6月24日",
+      "text_sha256": "b8472c079f8255b6501a25ee9b5984ff418c10e6f1f35a45a09603d0346d2328",
+      "file_id": "WEB-b8472c079f8255b6501a25ee9b5984ff",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1167692&itemId=4113&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4113/1167692.txt",
+        "raw_sha256": "b8472c079f8255b6501a25ee9b5984ff418c10e6f1f35a45a09603d0346d2328",
+        "bytes": 600
+      },
+      "identity": {
+        "party": "招银理财有限责任公司",
+        "document_numbers": [
+          "金罚决字〔2024〕34号"
+        ],
+        "authority": null,
+        "decision_date": "2024年6月24日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1167692",
+      "old_candidates": [],
+      "sample_id": "E08",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-21f32ba7d7454c28b5cf3cb2d16a0276-a283db1259460888c97af7b5",
+      "text": "当事人: 李雪娜\r\n行政处罚决定书文号\r\n辽金罚决〔2026〕25号\r\n主要违法违规事实(案由)\r\n虚构保险中介业务\r\n行政处罚内容\r\n警告并罚款7万元\r\n作出处罚决定的机关名称\r\n辽宁金融监管局\r\n作出处罚决定的日期\r\n2026年8月18日\r\n来源公示\r\n辽宁金融监管局行政处罚信息公示列表",
+      "text_sha256": "21f32ba7d7454c28b5cf3cb2d16a02769fc52be2b8c886b22279061cd526e6ce",
+      "file_id": "WEB-21f32ba7d7454c28b5cf3cb2d16a0276",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268420&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1268420_r4.txt",
+        "raw_sha256": "21f32ba7d7454c28b5cf3cb2d16a02769fc52be2b8c886b22279061cd526e6ce",
+        "bytes": 354
+      },
+      "identity": {
+        "party": "李雪娜",
+        "document_numbers": [
+          "辽金罚决〔2026〕25号"
+        ],
+        "authority": "辽宁金融监管局",
+        "decision_date": "2026年8月18日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1268420",
+      "old_candidates": [],
+      "sample_id": "E09",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-2fe5c41c37ba2c5239ff8049765da7cc-29380b5842955fb8a565ad12",
+      "text": "当事人: 陈晓捷（时任青州中银富登村镇银行有限公司零售金融部总经理）\r\n行政处罚决定书文号\r\n潍金罚决字〔2026〕10号\r\n主要违法违规事实(案由)\r\n贷款管理不到位\r\n行政处罚内容\r\n警告\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局潍坊监管分局\r\n作出处罚决定的日期\r\n2026年8月20日\r\n来源公示\r\n国家金融监督管理总局潍坊监管分局行政处罚信息公开表（潍金罚决字〔2026〕9号-11号 ）",
+      "text_sha256": "2fe5c41c37ba2c5239ff8049765da7cc15a9a117ed53c521584d0b22e1cf8e1c",
+      "file_id": "WEB-2fe5c41c37ba2c5239ff8049765da7cc",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269208&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1269208_r2.txt",
+        "raw_sha256": "2fe5c41c37ba2c5239ff8049765da7cc15a9a117ed53c521584d0b22e1cf8e1c",
+        "bytes": 509
+      },
+      "identity": {
+        "party": "陈晓捷（时任青州中银富登村镇银行有限公司零售金融部总经理）",
+        "document_numbers": [
+          "潍金罚决字〔2026〕10号",
+          "潍金罚决字〔2026〕9号"
+        ],
+        "authority": "国家金融监督管理总局潍坊监管分局",
+        "decision_date": "2026年8月20日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1269208",
+      "old_candidates": [],
+      "sample_id": "E10",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-9c17689e821d72d7b4360b507ce4d67f-2be28d9871110ebd6be2dbec",
+      "text": "当事人: 陈波（时任广安区建安信用社主任、广安农商银行建安支行行长、广安农商银行悦来支行行长）\r\n行政处罚决定书文号\r\n广安金监罚决字〔2025〕6号\r\n主要违法违规事实(案由)\r\n贷款管理不到位，导致形成风险；虚增存贷款规模\r\n行政处罚内容\r\n警告并罚款７万元。\r\n作出处罚决定的机关名称\r\n广安金融监管分局\r\n作出处罚决定的日期\r\n2026年7月2日\r\n来源公示\r\n国家金融监督管理总局广安监管分局行政处罚信息公开表（广安金监罚决字〔2025〕1号；广安金监罚决字〔2025〕2号；广安金监罚决字〔2025〕3号；广安金监罚决字〔2025〕4号；广安金监罚决字〔2025〕5号；广安金监罚决字〔2025〕6号）",
+      "text_sha256": "9c17689e821d72d7b4360b507ce4d67f022e41e2f7214e0281d929817104f81c",
+      "file_id": "WEB-9c17689e821d72d7b4360b507ce4d67f",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263024&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1263024_r6.txt",
+        "raw_sha256": "9c17689e821d72d7b4360b507ce4d67f022e41e2f7214e0281d929817104f81c",
+        "bytes": 783
+      },
+      "identity": {
+        "party": "陈波（时任广安区建安信用社主任、广安农商银行建安支行行长、广安农商银行悦来支行行长）",
+        "document_numbers": [
+          "广安金监罚决字〔2025〕6号",
+          "广安金监罚决字〔2025〕1号",
+          "广安金监罚决字〔2025〕2号",
+          "广安金监罚决字〔2025〕3号",
+          "广安金监罚决字〔2025〕4号",
+          "广安金监罚决字〔2025〕5号"
+        ],
+        "authority": "广安金融监管分局",
+        "decision_date": "2026年7月2日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1263024",
+      "old_candidates": [],
+      "sample_id": "E11",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-4fed0e9a4d6e3f8fd510ffda578c6aeb-7ea611b9bf82c5eb51d2ed6b",
+      "text": "当事人: 杨天志（时任思南长征村镇银行有限责任公司董事长）\r\n行政处罚决定书文号\r\n铜金罚决字〔2026〕14号\r\n主要违法违规事实(案由)\r\n融资担保公司准入不审慎\r\n行政处罚内容\r\n警告\r\n作出处罚决定的机关名称\r\n铜仁金融监管分局\r\n作出处罚决定的日期\r\n2026年7月24日\r\n来源公示\r\n国家金融监督管理总局铜仁监管分局行政处罚信息公开表（铜金罚决字〔2026〕13-15号）",
+      "text_sha256": "4fed0e9a4d6e3f8fd510ffda578c6aeb40496ce645c85358ec0d7fcefc16743b",
+      "file_id": "WEB-4fed0e9a4d6e3f8fd510ffda578c6aeb",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265627&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1265627_r2.txt",
+        "raw_sha256": "4fed0e9a4d6e3f8fd510ffda578c6aeb40496ce645c85358ec0d7fcefc16743b",
+        "bytes": 479
+      },
+      "identity": {
+        "party": "杨天志（时任思南长征村镇银行有限责任公司董事长）",
+        "document_numbers": [
+          "铜金罚决字〔2026〕14号",
+          "铜金罚决字〔2026〕13-15号"
+        ],
+        "authority": "铜仁金融监管分局",
+        "decision_date": "2026年7月24日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1265627",
+      "old_candidates": [],
+      "sample_id": "E12",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-eaefc2dc25895a29352dfad4e2ae472f-e278d76578ed79b2ca5eebbc",
+      "text": "当事人: 吴猛（时任沿河土家族自治县农村信用合作联社副理事长、主任）\r\n行政处罚决定书文号\r\n铜金罚决字〔2026〕11号\r\n主要违法违规事实(案由)\r\n信贷资金被挪用\r\n行政处罚内容\r\n警告\r\n作出处罚决定的机关名称\r\n铜仁金融监管分局\r\n作出处罚决定的日期\r\n2026年7月24日\r\n来源公示\r\n国家金融监督管理总局铜仁监管分局行政处罚信息公开表（铜金罚决字〔2026〕9-12号）",
+      "text_sha256": "eaefc2dc25895a29352dfad4e2ae472fe7c7b204a6c40c763131d457378bbcea",
+      "file_id": "WEB-eaefc2dc25895a29352dfad4e2ae472f",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265617&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1265617_r3.txt",
+        "raw_sha256": "eaefc2dc25895a29352dfad4e2ae472fe7c7b204a6c40c763131d457378bbcea",
+        "bytes": 481
+      },
+      "identity": {
+        "party": "吴猛（时任沿河土家族自治县农村信用合作联社副理事长、主任）",
+        "document_numbers": [
+          "铜金罚决字〔2026〕11号",
+          "铜金罚决字〔2026〕9-12号"
+        ],
+        "authority": "铜仁金融监管分局",
+        "decision_date": "2026年7月24日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1265617",
+      "old_candidates": [],
+      "sample_id": "E13",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-2880b43b1bfd026637bf4e9c3a25b124-0d2c8bcff8d20ad252819b06",
+      "text": "当事人: 汪玉强（时任原渑池农村商业银行党委委员）\r\n行政处罚决定书文号\r\n三金罚决字〔2026〕7号\r\n主要违法违规事实(案由)\r\n迟报案件信息\r\n行政处罚内容\r\n警告\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局三门峡监管分局\r\n作出处罚决定的日期\r\n2026年7月10日\r\n来源公示\r\n国家金融监督管理总局三门峡监管分局行政处罚信息公示表",
+      "text_sha256": "2880b43b1bfd026637bf4e9c3a25b1245fcca67ba906cf144271dcc33eb89374",
+      "file_id": "WEB-2880b43b1bfd026637bf4e9c3a25b124",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264171&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1264171_r3.txt",
+        "raw_sha256": "2880b43b1bfd026637bf4e9c3a25b1245fcca67ba906cf144271dcc33eb89374",
+        "bytes": 442
+      },
+      "identity": {
+        "party": "汪玉强（时任原渑池农村商业银行党委委员）",
+        "document_numbers": [
+          "三金罚决字〔2026〕7号"
+        ],
+        "authority": "国家金融监督管理总局三门峡监管分局",
+        "decision_date": "2026年7月10日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1264171",
+      "old_candidates": [],
+      "sample_id": "E14",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-12f6be4ac0d7b799728de035de41176b-910ba1c222267338edf9ed09",
+      "text": "行政处罚决定书文号行政处罚决定书文号\r\n金罚决字〔2024〕31号\r\n被处罚当事人\r\n建信理财有限责任公司\r\n主要违法违规事实\r\n建信理财有限责任公司理财业务存在以下违法违规行为：\r\n一、未能有效穿透识别底层资产\r\n二、信息披露不规范\r\n行政处罚依据\r\n《中华人民共和国银行业监督管理法》第二十一条、第四十六条及相关审慎经营规则。\r\n行政处罚决定\r\n罚款400万元\r\n作出处罚决定的\r\n机关名称\r\n国家金融监督管理总局\r\n作出处罚决定的日期\r\n2024年6月24日",
+      "text_sha256": "12f6be4ac0d7b799728de035de41176b46bb69041f1b91c6f4ae0ad92eec0ec3",
+      "file_id": "WEB-12f6be4ac0d7b799728de035de41176b",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1167683&itemId=4113&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4113/1167683.txt",
+        "raw_sha256": "12f6be4ac0d7b799728de035de41176b46bb69041f1b91c6f4ae0ad92eec0ec3",
+        "bytes": 600
+      },
+      "identity": {
+        "party": "建信理财有限责任公司",
+        "document_numbers": [
+          "金罚决字〔2024〕31号"
+        ],
+        "authority": null,
+        "decision_date": "2024年6月24日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1167683",
+      "old_candidates": [],
+      "sample_id": "E15",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-854d570536512797ca594783990ea43f-caf1a973aa039ae1e1c5aebf",
+      "text": "当事人: 刘泉（时任交通银行兰州天鹅湖支行客户经理、副行长 ）\r\n行政处罚决定书文号\r\n甘金监行处〔2026〕310号\r\n主要违法违规事实(案由)\r\n存在员工行为管理不到位的违法行为\r\n行政处罚内容\r\n禁止从事银行业工作直至终身\r\n作出处罚决定的机关名称\r\n甘肃金融监管局\r\n作出处罚决定的日期\r\n2026年8月14日\r\n来源公示\r\n国家金融监督管理总局甘肃监管局行政处罚信息公示表（甘金监行处〔2026〕309号、 310号、311号）",
+      "text_sha256": "854d570536512797ca594783990ea43fb6d0c93aa41d710b75c9c29c322e7cb7",
+      "file_id": "WEB-854d570536512797ca594783990ea43f",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268478&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1268478_r3.txt",
+        "raw_sha256": "854d570536512797ca594783990ea43fb6d0c93aa41d710b75c9c29c322e7cb7",
+        "bytes": 543
+      },
+      "identity": {
+        "party": "刘泉（时任交通银行兰州天鹅湖支行客户经理、副行长 ）",
+        "document_numbers": [
+          "甘金监行处〔2026〕310号",
+          "甘金监行处〔2026〕309号"
+        ],
+        "authority": "甘肃金融监管局",
+        "decision_date": "2026年8月14日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1268478",
+      "old_candidates": [],
+      "sample_id": "E16",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-b9de76a218124b9b2e461907c8ca5ffb-eb3f993c430d40c9a2ccde95",
+      "text": "当事人: 兰方刚（时任思南长征村镇银行有限责任公司行长）\r\n行政处罚决定书文号\r\n铜金罚决字〔2026〕15号\r\n主要违法违规事实(案由)\r\n融资担保公司准入不审慎\r\n行政处罚内容\r\n警告\r\n作出处罚决定的机关名称\r\n铜仁金融监管分局\r\n作出处罚决定的日期\r\n2026年7月24日\r\n来源公示\r\n国家金融监督管理总局铜仁监管分局行政处罚信息公开表（铜金罚决字〔2026〕13-15号）",
+      "text_sha256": "b9de76a218124b9b2e461907c8ca5ffb61824d7df317ed1dbf3b17b22c430d74",
+      "file_id": "WEB-b9de76a218124b9b2e461907c8ca5ffb",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265627&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1265627_r3.txt",
+        "raw_sha256": "b9de76a218124b9b2e461907c8ca5ffb61824d7df317ed1dbf3b17b22c430d74",
+        "bytes": 476
+      },
+      "identity": {
+        "party": "兰方刚（时任思南长征村镇银行有限责任公司行长）",
+        "document_numbers": [
+          "铜金罚决字〔2026〕15号",
+          "铜金罚决字〔2026〕13-15号"
+        ],
+        "authority": "铜仁金融监管分局",
+        "decision_date": "2026年7月24日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1265627",
+      "old_candidates": [],
+      "sample_id": "E17",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-31c8e67ec9ceaeb8e6a01e1124c34cf8-d132ba5d1badd676fd61ad12",
+      "text": "当事人: 方力（时任中信银行营口分行行长）\r\n行政处罚决定书文号\r\n营金监罚决字〔2026〕4号\r\n主要违法违规事实(案由)\r\n贷款“三查”不到位\r\n行政处罚内容\r\n警告\r\n作出处罚决定的机关名称\r\n营口金融监管分局\r\n作出处罚决定的日期\r\n2026年7月10日\r\n来源公示\r\n营口金融监管分局行政处罚信息公示列表",
+      "text_sha256": "31c8e67ec9ceaeb8e6a01e1124c34cf80dedfdab173dd16828115192ba8e9a86",
+      "file_id": "WEB-31c8e67ec9ceaeb8e6a01e1124c34cf8",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264160&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1264160_r3.txt",
+        "raw_sha256": "31c8e67ec9ceaeb8e6a01e1124c34cf80dedfdab173dd16828115192ba8e9a86",
+        "bytes": 391
+      },
+      "identity": {
+        "party": "方力（时任中信银行营口分行行长）",
+        "document_numbers": [
+          "营金监罚决字〔2026〕4号"
+        ],
+        "authority": "营口金融监管分局",
+        "decision_date": "2026年7月10日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1264160",
+      "old_candidates": [],
+      "sample_id": "E18",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-3c591a46d913294e7fde21aec572a00d-793ca94e407c436b1fb7949e",
+      "text": "当事人: 秦溢（时任武胜农商银行风险与合规管理部负责人）\r\n行政处罚决定书文号\r\n广安金监罚决字〔2025〕2号\r\n主要违法违规事实(案由)\r\n未按规定报送重大关联交易\r\n行政处罚内容\r\n警告\r\n作出处罚决定的机关名称\r\n广安金融监管分局\r\n作出处罚决定的日期\r\n2026年7月2日\r\n来源公示\r\n国家金融监督管理总局广安监管分局行政处罚信息公开表（广安金监罚决字〔2025〕1号；广安金监罚决字〔2025〕2号；广安金监罚决字〔2025〕3号；广安金监罚决字〔2025〕4号；广安金监罚决字〔2025〕5号；广安金监罚决字〔2025〕6号）",
+      "text_sha256": "3c591a46d913294e7fde21aec572a00d88b37a860b7a0df21fbecf8adcbcc075",
+      "file_id": "WEB-3c591a46d913294e7fde21aec572a00d",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263024&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1263024_r2.txt",
+        "raw_sha256": "3c591a46d913294e7fde21aec572a00d88b37a860b7a0df21fbecf8adcbcc075",
+        "bytes": 675
+      },
+      "identity": {
+        "party": "秦溢（时任武胜农商银行风险与合规管理部负责人）",
+        "document_numbers": [
+          "广安金监罚决字〔2025〕2号",
+          "广安金监罚决字〔2025〕1号",
+          "广安金监罚决字〔2025〕3号",
+          "广安金监罚决字〔2025〕4号",
+          "广安金监罚决字〔2025〕5号",
+          "广安金监罚决字〔2025〕6号"
+        ],
+        "authority": "广安金融监管分局",
+        "decision_date": "2026年7月2日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1263024",
+      "old_candidates": [],
+      "sample_id": "E19",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-7984e7135ddb159de94ca3eddbe2a18e-27d9cbfe79e79d0b94444714",
+      "text": "行政处罚决定书文号行政处罚决定书文号\r\n金罚决字〔2024〕35号\r\n被处罚当事人\r\n平安理财有限责任公司\r\n主要违法违规事实\r\n平安理财有限责任公司理财业务存在以下违法违规行为：\r\n一、未能有效穿透识别底层资产\r\n二、信息披露不规范\r\n三、非标底层资产到期日晚于封闭式理财产品到期日\r\n行政处罚依据\r\n《中华人民共和国银行业监督管理法》第二十一条、第四十六条及相关审慎经营规则。\r\n行政处罚决定\r\n罚款650万元\r\n作出处罚决定的\r\n机关名称\r\n国家金融监督管理总局\r\n作出处罚决定的日期\r\n2024年6月24日",
+      "text_sha256": "7984e7135ddb159de94ca3eddbe2a18e9e9175c02303fb4edb7de78ee74a7474",
+      "file_id": "WEB-7984e7135ddb159de94ca3eddbe2a18e",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1167694&itemId=4113&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4113/1167694.txt",
+        "raw_sha256": "7984e7135ddb159de94ca3eddbe2a18e9e9175c02303fb4edb7de78ee74a7474",
+        "bytes": 671
+      },
+      "identity": {
+        "party": "平安理财有限责任公司",
+        "document_numbers": [
+          "金罚决字〔2024〕35号"
+        ],
+        "authority": null,
+        "decision_date": "2024年6月24日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1167694",
+      "old_candidates": [],
+      "sample_id": "E20",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-c1e914f9858f49484764ef6ca361a6e2-d61214ac7e968b09e48c3b9e",
+      "text": "银监会机关 行政处罚信息公开表（金罚决字〔2024〕25号）\r\n（交银金融资产投资有限公司）\r\n行政处罚决定书文号\r\n金罚决字〔2024〕25号\r\n被处罚当事人\r\n交银金融资产投资有限公司\r\n主要违法违规事实\r\n（案由）\r\n未经批准变更住所\r\n行政处罚依据\r\n《中华人民共和国银行业监督管理法》第四十五条第（二）款及《金融资产投资公司管理办法（试行）》（中国银行保险监督管理委员会令2018年第4号）第十九条、第六十二条\r\n行政处罚决定\r\n罚款100万元\r\n作出处罚决定的\r\n机关名称\r\n国家金融监督管理总局\r\n作出处罚决定的日期\r\n2024年5月16日",
+      "text_sha256": "c1e914f9858f49484764ef6ca361a6e2054e14c483200ea5ed2d153ad940c47f",
+      "file_id": "WEB-c1e914f9858f49484764ef6ca361a6e2",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1163134&itemId=4113&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4113/1163134.txt",
+        "raw_sha256": "c1e914f9858f49484764ef6ca361a6e2054e14c483200ea5ed2d153ad940c47f",
+        "bytes": 707
+      },
+      "identity": {
+        "party": "交银金融资产投资有限公司",
+        "document_numbers": [
+          "金罚决字〔2024〕25号"
+        ],
+        "authority": null,
+        "decision_date": "2024年5月16日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1163134",
+      "old_candidates": [],
+      "sample_id": "E21",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-09c726c0778b06b3a082708d571bcf27-30874f54008180aee6a3524b",
+      "text": "行政处罚决定书文号\r\n金罚决字〔2024〕2号\r\n被处罚当事人\r\n崔斌（时任陆家嘴国际信托有限公司总经理）\r\n主要违法违规事实\r\n一、以投资名义向不满足“四三二”要求的房地产项目融资\r\n二、未按约定用途使用信托贷款\r\n三、信托资金挪用于缴纳土地出让金\r\n行政处罚依据\r\n《中华人民共和国银行业监督管理法》第二十一条、第四十八条\r\n行政处罚决定\r\n对崔斌警告并罚款15万元\r\n作出处罚决定的\r\n机关名称\r\n国家金融监督管理总局\r\n作出处罚决定的日期\r\n2024年4月22日",
+      "text_sha256": "09c726c0778b06b3a082708d571bcf27621f19f68e4d23af34800b7f6fa55212",
+      "file_id": "WEB-09c726c0778b06b3a082708d571bcf27",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1160145&itemId=4113&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4113/1160145.txt",
+        "raw_sha256": "09c726c0778b06b3a082708d571bcf27621f19f68e4d23af34800b7f6fa55212",
+        "bytes": 613
+      },
+      "identity": {
+        "party": "崔斌（时任陆家嘴国际信托有限公司总经理）",
+        "document_numbers": [
+          "金罚决字〔2024〕2号"
+        ],
+        "authority": null,
+        "decision_date": "2024年4月22日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1160145",
+      "old_candidates": [],
+      "sample_id": "E22",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-2990593c107e55b254676b9839366a33-28027f269d0fae0d937ba80f",
+      "text": "当事人: 王常斌 （时任交通银行兰州天鹅湖支行副行长（主持工作）\r\n行政处罚决定书文号\r\n甘金监行处〔2026〕309号\r\n主要违法违规事实(案由)\r\n存在员工行为管理不到位的违法行为\r\n行政处罚内容\r\n警告并处罚款人民币五万元\r\n作出处罚决定的机关名称\r\n甘肃金融监管局\r\n作出处罚决定的日期\r\n2026年8月14日\r\n来源公示\r\n国家金融监督管理总局甘肃监管局行政处罚信息公示表（甘金监行处〔2026〕309号、 310号、311号）",
+      "text_sha256": "2990593c107e55b254676b9839366a33d997dd23b3a02513ba35473b1ea99401",
+      "file_id": "WEB-2990593c107e55b254676b9839366a33",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268478&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1268478_r2.txt",
+        "raw_sha256": "2990593c107e55b254676b9839366a33d997dd23b3a02513ba35473b1ea99401",
+        "bytes": 543
+      },
+      "identity": {
+        "party": "王常斌 （时任交通银行兰州天鹅湖支行副行长（主持工作）",
+        "document_numbers": [
+          "甘金监行处〔2026〕309号"
+        ],
+        "authority": "甘肃金融监管局",
+        "decision_date": "2026年8月14日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1268478",
+      "old_candidates": [],
+      "sample_id": "E23",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-10310b75cf7ff404b9ed20d0f7e5b27c-b9a0a77955990d874de78415",
+      "text": "行政处罚决定书文号行政处罚决定书文号\r\n金罚决字〔2024〕33号\r\n被处罚当事人\r\n信银理财有限责任公司\r\n主要违法违规事实\r\n信银理财有限责任公司理财业务存在以下违法违规行为：\r\n一、信息披露不规范\r\n二、理财业务投后管理勤勉尽职义务履行不到位\r\n三、单只公募理财产品持有单只债券超过净资产的10%\r\n四、未以公允价值计量相关理财产品投资的金融资产\r\n行政处罚依据\r\n《中华人民共和国银行业监督管理法》第二十一条、第四十六条及相关审慎经营规则。\r\n行政处罚决定\r\n罚款750万元\r\n作出处罚决定的\r\n机关名称\r\n国家金融监督管理总局\r\n作出处罚决定的日期\r\n2024年6月24日",
+      "text_sha256": "10310b75cf7ff404b9ed20d0f7e5b27c8216c30219e53abadf37ecf5b20bd7b5",
+      "file_id": "WEB-10310b75cf7ff404b9ed20d0f7e5b27c",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1167688&itemId=4113&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4113/1167688.txt",
+        "raw_sha256": "10310b75cf7ff404b9ed20d0f7e5b27c8216c30219e53abadf37ecf5b20bd7b5",
+        "bytes": 763
+      },
+      "identity": {
+        "party": "信银理财有限责任公司",
+        "document_numbers": [
+          "金罚决字〔2024〕33号"
+        ],
+        "authority": null,
+        "decision_date": "2024年6月24日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1167688",
+      "old_candidates": [],
+      "sample_id": "E24",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-ff3fc77263405fc7f131cb8cdaab8f17-144d67b43e64feb5ddeda242",
+      "text": "当事人: 田代刚（时任沿河土家族自治县农村信用合作联社人力资源部经理）\r\n行政处罚决定书文号\r\n铜金罚决字〔2026〕12号\r\n主要违法违规事实(案由)\r\n理事未经任职资格核准实际履职\r\n行政处罚内容\r\n警告\r\n作出处罚决定的机关名称\r\n铜仁金融监管分局\r\n作出处罚决定的日期\r\n2026年7月24日\r\n来源公示\r\n国家金融监督管理总局铜仁监管分局行政处罚信息公开表（铜金罚决字〔2026〕9-12号）",
+      "text_sha256": "ff3fc77263405fc7f131cb8cdaab8f17c6519eb0d04f22a2a059f783332f96cd",
+      "file_id": "WEB-ff3fc77263405fc7f131cb8cdaab8f17",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265617&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1265617_r4.txt",
+        "raw_sha256": "ff3fc77263405fc7f131cb8cdaab8f17c6519eb0d04f22a2a059f783332f96cd",
+        "bytes": 505
+      },
+      "identity": {
+        "party": "田代刚（时任沿河土家族自治县农村信用合作联社人力资源部经理）",
+        "document_numbers": [
+          "铜金罚决字〔2026〕12号",
+          "铜金罚决字〔2026〕9-12号"
+        ],
+        "authority": "铜仁金融监管分局",
+        "decision_date": "2026年7月24日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1265617",
+      "old_candidates": [],
+      "sample_id": "E25",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-476a961eed7d61a75bc3142baf41dc94-c0ae246140948aea7733b3d9",
+      "text": "当事人: 包强（时任沿河土家族自治县农村信用合作联社理事长）\r\n行政处罚决定书文号\r\n铜金罚决字〔2026〕10号\r\n主要违法违规事实(案由)\r\n理事未经任职资格核准实际履职\r\n行政处罚内容\r\n警告\r\n作出处罚决定的机关名称\r\n铜仁金融监管分局\r\n作出处罚决定的日期\r\n2026年7月24日\r\n来源公示\r\n国家金融监督管理总局铜仁监管分局行政处罚信息公开表（铜金罚决字〔2026〕9-12号）",
+      "text_sha256": "476a961eed7d61a75bc3142baf41dc9433871f983ac4a72d057d561d2fe6cfcc",
+      "file_id": "WEB-476a961eed7d61a75bc3142baf41dc94",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265617&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1265617_r2.txt",
+        "raw_sha256": "476a961eed7d61a75bc3142baf41dc9433871f983ac4a72d057d561d2fe6cfcc",
+        "bytes": 490
+      },
+      "identity": {
+        "party": "包强（时任沿河土家族自治县农村信用合作联社理事长）",
+        "document_numbers": [
+          "铜金罚决字〔2026〕10号",
+          "铜金罚决字〔2026〕9-12号"
+        ],
+        "authority": "铜仁金融监管分局",
+        "decision_date": "2026年7月24日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1265617",
+      "old_candidates": [],
+      "sample_id": "E26",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-d7ed5d51a1a1102cf92deada82e3830f-6a503cb7459586cd9abcbfd8",
+      "text": "当事人: 蒲昆（时任武胜农商银行副行长）\r\n行政处罚决定书文号\r\n广安金监罚决字〔2025〕4号\r\n主要违法违规事实(案由)\r\n未落实集团客户统一授信监管要求\r\n行政处罚内容\r\n警告\r\n作出处罚决定的机关名称\r\n广安金融监管分局\r\n作出处罚决定的日期\r\n2026年7月2日\r\n来源公示\r\n国家金融监督管理总局广安监管分局行政处罚信息公开表（广安金监罚决字〔2025〕1号；广安金监罚决字〔2025〕2号；广安金监罚决字〔2025〕3号；广安金监罚决字〔2025〕4号；广安金监罚决字〔2025〕5号；广安金监罚决字〔2025〕6号）",
+      "text_sha256": "d7ed5d51a1a1102cf92deada82e3830ffa28b212583af9c165b3105a0da3f866",
+      "file_id": "WEB-d7ed5d51a1a1102cf92deada82e3830f",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263024&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1263024_r4.txt",
+        "raw_sha256": "d7ed5d51a1a1102cf92deada82e3830ffa28b212583af9c165b3105a0da3f866",
+        "bytes": 660
+      },
+      "identity": {
+        "party": "蒲昆（时任武胜农商银行副行长）",
+        "document_numbers": [
+          "广安金监罚决字〔2025〕4号",
+          "广安金监罚决字〔2025〕1号",
+          "广安金监罚决字〔2025〕2号",
+          "广安金监罚决字〔2025〕3号",
+          "广安金监罚决字〔2025〕5号",
+          "广安金监罚决字〔2025〕6号"
+        ],
+        "authority": "广安金融监管分局",
+        "decision_date": "2026年7月2日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1263024",
+      "old_candidates": [],
+      "sample_id": "E27",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-1320465438364fd788d75284c4a11697-54d8679d2bab67073e6dabee",
+      "text": "当事人: 思南长征村镇银行有限责任公司\r\n行政处罚决定书文号\r\n铜金罚决字〔2026〕13号\r\n主要违法违规事实(案由)\r\n融资担保公司准入不审慎\r\n行政处罚内容\r\n罚款20万元\r\n作出处罚决定的机关名称\r\n铜仁金融监管分局\r\n作出处罚决定的日期\r\n2026年7月24日\r\n来源公示\r\n国家金融监督管理总局铜仁监管分局行政处罚信息公开表（铜金罚决字〔2026〕13-15号）",
+      "text_sha256": "1320465438364fd788d75284c4a116970d5c0142a36afbad2e5f55030960c96d",
+      "file_id": "WEB-1320465438364fd788d75284c4a11697",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265627&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1265627_r1.txt",
+        "raw_sha256": "1320465438364fd788d75284c4a116970d5c0142a36afbad2e5f55030960c96d",
+        "bytes": 457
+      },
+      "identity": {
+        "party": "思南长征村镇银行有限责任公司",
+        "document_numbers": [
+          "铜金罚决字〔2026〕13号",
+          "铜金罚决字〔2026〕13-15号"
+        ],
+        "authority": "铜仁金融监管分局",
+        "decision_date": "2026年7月24日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1265627",
+      "old_candidates": [],
+      "sample_id": "E28",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-18b4aff1b8929bbe16ef2a24785fdeb5-1c16f2c88b54378a3adcbc6e",
+      "text": "当事人: 孟庆利（时任青州中银富登村镇银行有限公司三农金融部总经理）\r\n行政处罚决定书文号\r\n潍金罚决字〔2026〕11号\r\n主要违法违规事实(案由)\r\n贷款管理不到位\r\n行政处罚内容\r\n警告\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局潍坊监管分局\r\n作出处罚决定的日期\r\n2026年8月20日\r\n来源公示\r\n国家金融监督管理总局潍坊监管分局行政处罚信息公开表（潍金罚决字〔2026〕9号-11号 ）",
+      "text_sha256": "18b4aff1b8929bbe16ef2a24785fdeb54b1a4b0bcc8ad81bfb5642a4d7207fb4",
+      "file_id": "WEB-18b4aff1b8929bbe16ef2a24785fdeb5",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269208&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1269208_r3.txt",
+        "raw_sha256": "18b4aff1b8929bbe16ef2a24785fdeb54b1a4b0bcc8ad81bfb5642a4d7207fb4",
+        "bytes": 509
+      },
+      "identity": {
+        "party": "孟庆利（时任青州中银富登村镇银行有限公司三农金融部总经理）",
+        "document_numbers": [
+          "潍金罚决字〔2026〕11号",
+          "潍金罚决字〔2026〕9号"
+        ],
+        "authority": "国家金融监督管理总局潍坊监管分局",
+        "decision_date": "2026年8月20日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1269208",
+      "old_candidates": [],
+      "sample_id": "E29",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-ab2a0ba19d37f3cbc7d712c0db9b07aa-1b5ead23e4fc4e5222a9cced",
+      "text": "当事人: 胡晓林\r\n主要违法违规事实(案由)\r\n内控管理不到位。\r\n行政处罚内容\r\n警告\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局大连监管局\r\n作出处罚决定的日期\r\n2026年7月16日\r\n来源公示\r\n国家金融监督管理总局大连监管局行政处罚信息公开表（大金罚决字〔2026〕35、36、37、38号）",
+      "text_sha256": "ab2a0ba19d37f3cbc7d712c0db9b07aa6eb58d440294d0c728b77f8d100713a5",
+      "file_id": "WEB-ab2a0ba19d37f3cbc7d712c0db9b07aa",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264640&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1264640_r3.txt",
+        "raw_sha256": "ab2a0ba19d37f3cbc7d712c0db9b07aa6eb58d440294d0c728b77f8d100713a5",
+        "bytes": 376
+      },
+      "identity": {
+        "party": "胡晓林",
+        "document_numbers": [
+          "大金罚决字〔2026〕35、36、37、38号"
+        ],
+        "authority": "国家金融监督管理总局大连监管局",
+        "decision_date": "2026年7月16日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1264640",
+      "old_candidates": [],
+      "sample_id": "E30",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-e7a42d7598d6c90e22b30985d8a19a51-2046cca82f517561c4ad74b9",
+      "text": "当事人: 肖泽标\r\n主要违法违规事实(案由)\r\n内控管理不到位。\r\n行政处罚内容\r\n警告\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局大连监管局\r\n作出处罚决定的日期\r\n2026年7月16日\r\n来源公示\r\n国家金融监督管理总局大连监管局行政处罚信息公开表（大金罚决字〔2026〕35、36、37、38号）",
+      "text_sha256": "e7a42d7598d6c90e22b30985d8a19a514e34cf50a0e3a119eba47d00fe631dd0",
+      "file_id": "WEB-e7a42d7598d6c90e22b30985d8a19a51",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264640&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1264640_r2.txt",
+        "raw_sha256": "e7a42d7598d6c90e22b30985d8a19a514e34cf50a0e3a119eba47d00fe631dd0",
+        "bytes": 376
+      },
+      "identity": {
+        "party": "肖泽标",
+        "document_numbers": [
+          "大金罚决字〔2026〕35、36、37、38号"
+        ],
+        "authority": "国家金融监督管理总局大连监管局",
+        "decision_date": "2026年7月16日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1264640",
+      "old_candidates": [],
+      "sample_id": "E31",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-c293a1430507dafe080ddeff9f1aa9d7-781d16b89d8a47ad3649de30",
+      "text": "当事人: 刘建东（时任中国农业发展银行辽宁省建平县支行行长）\r\n行政处罚决定书文号\r\n朝金罚决字〔2026〕4号\r\n主要违法违规事实(案由)\r\n贷后管理不到位\r\n行政处罚内容\r\n警告\r\n作出处罚决定的机关名称\r\n朝阳金融监管分局\r\n作出处罚决定的日期\r\n2026年7月6日\r\n来源公示\r\n朝阳金融监管分局行政处罚信息公示列表",
+      "text_sha256": "c293a1430507dafe080ddeff9f1aa9d74b1a032f41a72ab945c35f8e8436f3b0",
+      "file_id": "WEB-c293a1430507dafe080ddeff9f1aa9d7",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263224&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1263224_r2.txt",
+        "raw_sha256": "c293a1430507dafe080ddeff9f1aa9d74b1a032f41a72ab945c35f8e8436f3b0",
+        "bytes": 408
+      },
+      "identity": {
+        "party": "刘建东（时任中国农业发展银行辽宁省建平县支行行长）",
+        "document_numbers": [
+          "朝金罚决字〔2026〕4号"
+        ],
+        "authority": "朝阳金融监管分局",
+        "decision_date": "2026年7月6日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "N",
+      "family": "nfra:1263224",
+      "old_candidates": [],
+      "sample_id": "E32",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-73a060c0932b16f2624b634724ce645b-826759ee3131045f10eea9bb",
+      "text": "当事人: 四川鸿霖保险代理有限公司及相关责任人\r\n主要违法违规事实(案由)\r\n未如实记载保险业务\r\n行政处罚内容\r\n对四川鸿霖保险代理有限公司处罚款人民币20万元，对吴文静给予警告并处罚款人民币4万元。\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局四川监管局\r\n作出处罚决定的日期\r\n2026年8月7日\r\n来源公示\r\n国家金融监督管理总局四川监管局行政处罚信息公开表",
+      "text_sha256": "73a060c0932b16f2624b634724ce645b9428de259ec0782a32819c89edf187aa",
+      "file_id": "WEB-73a060c0932b16f2624b634724ce645b",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267234&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1267234.txt",
+        "raw_sha256": "73a060c0932b16f2624b634724ce645b9428de259ec0782a32819c89edf187aa",
+        "bytes": 489
+      },
+      "identity": {
+        "party": "四川鸿霖保险代理有限公司及相关责任人",
+        "document_numbers": [],
+        "authority": "国家金融监督管理总局四川监管局",
+        "decision_date": "2026年8月7日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1267234",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F000493-0b7a56e9ebf3589bbe2e7736",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F001317-770d156d2c93620229ff5e71",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F002507-09e60e7bd2ffb6e256127669",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005058-d62795ad5f5c05ac1d9d7c9e",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005846-715081116149eafe43c001df",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006931-c904553014aeb1f3a1f1a2d5",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007540-eb6ab663ec5ca4e5c23c3dd4",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007737-80a988d1274cc225fd6c032c",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007853-2f9c00bc3b2e0157db9ec4cb",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E33",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-7d9264b28c2fc89e1b3079619c97de98-6e256cf460c455f676865f7e",
+      "text": "行政处罚决定书文号\r\n金罚决字〔2024〕11号\r\n被处罚当事人\r\n朱汉明（时任平安银行股份有限公司武汉分行副行长）\r\n主要违法违规事实\r\n对平安银行股份有限公司以贵金属产业基金模式融出资金违规用于股权投资负有责任\r\n行政处罚依据\r\n《中华人民共和国银行业监督管理法》第二十一条、第四十八条及相关审慎经营规则\r\n行政处罚决定\r\n警告并处罚款5万元\r\n作出处罚决定的\r\n机关名称\r\n国家金融监督管理总局\r\n作出处罚决定的日期\r\n2024年5月14日",
+      "text_sha256": "7d9264b28c2fc89e1b3079619c97de98fc568bf7248b14ff62da5e4418758f80",
+      "file_id": "WEB-7d9264b28c2fc89e1b3079619c97de98",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1162471&itemId=4113&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4113/1162471.txt",
+        "raw_sha256": "7d9264b28c2fc89e1b3079619c97de98fc568bf7248b14ff62da5e4418758f80",
+        "bytes": 585
+      },
+      "identity": {
+        "party": "朱汉明（时任平安银行股份有限公司武汉分行副行长）",
+        "document_numbers": [
+          "金罚决字〔2024〕11号"
+        ],
+        "authority": null,
+        "decision_date": "2024年5月14日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1162471",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F002435-8010eff0c93180d5f193571f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004588-1971eeb979eb90531833be05",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005839-4d882b3c7e38ea91e4ffaba5",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008544-f91ec7921e72cc3e1d8c6ed1",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008740-a403adeb5c3b387abbade697",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E34",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-ec02abe86ec70b2f8213dd1c537f3e96-7784fd9ea8276c85ac9d5425",
+      "text": "当事人: 陈燕君（时任上海银行股份有限公司嘉定支行公司业务二部经理）\r\n行政处罚决定书文号\r\n沪金罚决字〔2026〕112号\r\n主要违法违规事实(案由)\r\n银行承兑汇票业务背景审查不严\r\n行政处罚内容\r\n警告并罚款5万元\r\n作出处罚决定的机关名称\r\n上海金融监管局\r\n作出处罚决定的日期\r\n2026年8月3日\r\n来源公示\r\n国家金融监督管理总局上海监管局行政处罚信息公开表（沪金罚决字〔2026〕102-112，115-129号）",
+      "text_sha256": "ec02abe86ec70b2f8213dd1c537f3e96353bacaf10719ad85452542deee31b3a",
+      "file_id": "WEB-ec02abe86ec70b2f8213dd1c537f3e96",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1266731_r11.txt",
+        "raw_sha256": "ec02abe86ec70b2f8213dd1c537f3e96353bacaf10719ad85452542deee31b3a",
+        "bytes": 525
+      },
+      "identity": {
+        "party": "陈燕君（时任上海银行股份有限公司嘉定支行公司业务二部经理）",
+        "document_numbers": [
+          "沪金罚决字〔2026〕112号"
+        ],
+        "authority": "上海金融监管局",
+        "decision_date": "2026年8月3日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1266731",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F002435-8010eff0c93180d5f193571f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004588-1971eeb979eb90531833be05",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008740-a403adeb5c3b387abbade697",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E35",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-49f30f893596d946c4aed676d228f349-73b3a53c022f4d254d8a26e1",
+      "text": "当事人: 包晓妩（时任中国农业银行股份有限公司上海市分行营业部副总经理）\r\n行政处罚决定书文号\r\n沪金罚决字〔2026〕125号\r\n主要违法违规事实(案由)\r\n固定资产贷款管理严重违反审慎经营规则\r\n行政处罚内容\r\n警告并罚款5万元\r\n作出处罚决定的机关名称\r\n上海金融监管局\r\n作出处罚决定的日期\r\n2026年8月3日\r\n来源公示\r\n国家金融监督管理总局上海监管局行政处罚信息公开表（沪金罚决字〔2026〕102-112，115-129号）",
+      "text_sha256": "49f30f893596d946c4aed676d228f34923289ea88659ced8d5d086253be94211",
+      "file_id": "WEB-49f30f893596d946c4aed676d228f349",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1266731_r22.txt",
+        "raw_sha256": "49f30f893596d946c4aed676d228f34923289ea88659ced8d5d086253be94211",
+        "bytes": 543
+      },
+      "identity": {
+        "party": "包晓妩（时任中国农业银行股份有限公司上海市分行营业部副总经理）",
+        "document_numbers": [
+          "沪金罚决字〔2026〕125号"
+        ],
+        "authority": "上海金融监管局",
+        "decision_date": "2026年8月3日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1266731",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F000330-3a569675a80cdbfabe17d48d",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F001278-1348a239dd03ecc3a6856110",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F001574-7e600ec374b3cad4e2854c0f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F001575-af5b73883031903ccfe638f3",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F002435-8010eff0c93180d5f193571f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004409-d72808c62c1ca63ae6dcad7e",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004588-1971eeb979eb90531833be05",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004944-20bf01bc6b5c2ff461eac413",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008740-a403adeb5c3b387abbade697",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008906-c1b765d48087aeea1ada3431",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E36",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-f66c0981e7d42092f5dddd6c33fcff55-e0ae11002cc3cd2c8d22ae69",
+      "text": "当事人: 长城人寿保险股份有限公司重庆分公司及相关责任人\r\n主要违法违规事实(案由)\r\n虚列银保业务佣金套取费用\r\n行政处罚内容\r\n对长城人寿保险股份有限公司重庆分公司罚款23万元。对刘情警告并罚款5万元。\r\n作出处罚决定的机关名称\r\n重庆金融监管局\r\n作出处罚决定的日期\r\n2026年8月6日\r\n来源公示\r\n国家金融监督管理总局重庆监管局行政处罚信息公示列表",
+      "text_sha256": "f66c0981e7d42092f5dddd6c33fcff55f9d5ab30efacc652dd4baaaeb7f5b5a6",
+      "file_id": "WEB-f66c0981e7d42092f5dddd6c33fcff55",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267130&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1267130_r2.txt",
+        "raw_sha256": "f66c0981e7d42092f5dddd6c33fcff55f9d5ab30efacc652dd4baaaeb7f5b5a6",
+        "bytes": 474
+      },
+      "identity": {
+        "party": "长城人寿保险股份有限公司重庆分公司及相关责任人",
+        "document_numbers": [],
+        "authority": "重庆金融监管局",
+        "decision_date": "2026年8月6日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1267130",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F001175-e2dadf133a5042ac9b08fd26",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F001218-dc7768c714d894b28540259d",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F002435-8010eff0c93180d5f193571f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F002487-929963dbfdd0910d23db5ccb",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F003506-177097f8f554f864be814136",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F003998-7d65f61f1cc18f5d1318e1c0",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004331-62ed3c3f6f1986b52aaf2552",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004588-1971eeb979eb90531833be05",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004973-1e8ae76d16c25d202d7e8653",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004998-0e283f21cb2b87027fa1c60b",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E37",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-36a00322e072f10f779b8b1c4e5a9e5f-122120eaf7933f76263fb0c0",
+      "text": "当事人: 平安银行股份有限公司台州分行及相关责任人\r\n主要违法违规事实(案由)\r\n通过不正当方式吸收存款等。\r\n行政处罚内容\r\n对平安银行股份有限公司台州分行罚款100万元；对严晓丽警告。\r\n作出处罚决定的机关名称\r\n台州金融监管分局\r\n作出处罚决定的日期\r\n2026年7月28日\r\n来源公示\r\n国家金融监督管理总局台州监管分局行政处罚信息公开表",
+      "text_sha256": "36a00322e072f10f779b8b1c4e5a9e5fcc6005fe2ed44dc57b1251e95e73cbc7",
+      "file_id": "WEB-36a00322e072f10f779b8b1c4e5a9e5f",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265439&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1265439_r1.txt",
+        "raw_sha256": "36a00322e072f10f779b8b1c4e5a9e5fcc6005fe2ed44dc57b1251e95e73cbc7",
+        "bytes": 451
+      },
+      "identity": {
+        "party": "平安银行股份有限公司台州分行及相关责任人",
+        "document_numbers": [],
+        "authority": "台州金融监管分局",
+        "decision_date": "2026年7月28日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1265439",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F002435-8010eff0c93180d5f193571f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004588-1971eeb979eb90531833be05",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005839-4d882b3c7e38ea91e4ffaba5",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008544-f91ec7921e72cc3e1d8c6ed1",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008740-a403adeb5c3b387abbade697",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E38",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-876bbd70794b3187fe4bc8b1c33d0311-656790041676ce10ecfa92c8",
+      "text": "当事人: 中国邮政储蓄银行股份有限公司合肥市分行及相关责任人\r\n主要违法违规事实(案由)\r\n贷款三查不尽职\r\n行政处罚内容\r\n对中国邮政储蓄银行股份有限公司合肥市分行罚款35万元。对史晓杰禁止从事银行业工作终身。\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局安徽监管局\r\n作出处罚决定的日期\r\n2026年7月23日\r\n来源公示\r\n国家金融监督管理总局安徽监管局行政处罚信息公开表",
+      "text_sha256": "876bbd70794b3187fe4bc8b1c33d0311a24c35c59be5fb2007b2a865fff7d93f",
+      "file_id": "WEB-876bbd70794b3187fe4bc8b1c33d0311",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268455&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1268455_r2.txt",
+        "raw_sha256": "876bbd70794b3187fe4bc8b1c33d0311a24c35c59be5fb2007b2a865fff7d93f",
+        "bytes": 507
+      },
+      "identity": {
+        "party": "中国邮政储蓄银行股份有限公司合肥市分行及相关责任人",
+        "document_numbers": [],
+        "authority": "国家金融监督管理总局安徽监管局",
+        "decision_date": "2026年7月23日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1268455",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F000330-3a569675a80cdbfabe17d48d",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F002435-8010eff0c93180d5f193571f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004278-7a270b30f6a781f5591467e2",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004588-1971eeb979eb90531833be05",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004601-dec7a8cfcab1910009597cab",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005690-165ac652640c526ddcf6c0be",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005694-495490a228b5a076b4f2cd24",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007471-9fcc65b5747ead87c647fcb1",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008051-24fdfcaaadfe322e95cafc97",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008740-a403adeb5c3b387abbade697",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E39",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-a52f378c9265723833c75bf5898f1eff-8b071cd7cfd7af6d091cb2f0",
+      "text": "当事人: 广东徐闻农村商业银行股份有限公司及相关责任人员\r\n主要违法违规事实(案由)\r\n贷款审查不到位、贷后管理不尽职\r\n行政处罚内容\r\n对广东徐闻农村商业银行股份有限公司罚款90万元。对李宜应、窦文仁、邹扬华分别给予警告。\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局湛江监管分局\r\n作出处罚决定的日期\r\n2026年7月3日\r\n来源公示\r\n国家金融监督管理总局湛江监管分局行政处罚信息公示列表",
+      "text_sha256": "a52f378c9265723833c75bf5898f1eff7fe8a67d19727eb1806409c756b02542",
+      "file_id": "WEB-a52f378c9265723833c75bf5898f1eff",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263264&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1263264.txt",
+        "raw_sha256": "a52f378c9265723833c75bf5898f1eff7fe8a67d19727eb1806409c756b02542",
+        "bytes": 533
+      },
+      "identity": {
+        "party": "广东徐闻农村商业银行股份有限公司及相关责任人员",
+        "document_numbers": [],
+        "authority": "国家金融监督管理总局湛江监管分局",
+        "decision_date": "2026年7月3日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1263264",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F002435-8010eff0c93180d5f193571f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004588-1971eeb979eb90531833be05",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008740-a403adeb5c3b387abbade697",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E40",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-bc90f7f86b3dc88fe82ec179ba1625ef-98464971cf7da1d709093ab5",
+      "text": "当事人: 富德生命人寿保险股份有限公司北京分公司及相关责任人\r\n主要违法违规事实(案由)\r\n虚列费用、理赔内控管理不到位\r\n行政处罚内容\r\n对富德生命人寿保险股份有限公司北京分公司给予警告，并处罚款31万元；对王超给予警告，并处罚款6万元；对责任人崔克勤给予警告，并处罚款5万元。\r\n作出处罚决定的机关名称\r\n北京金融监管局\r\n作出处罚决定的日期\r\n2026年7月10日\r\n来源公示\r\n国家金融监督管理总局北京监管局行政处罚信息公开表",
+      "text_sha256": "bc90f7f86b3dc88fe82ec179ba1625ef9c5bfa9921b289b6fbf05f4bf72dfb41",
+      "file_id": "WEB-bc90f7f86b3dc88fe82ec179ba1625ef",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263795&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1263795_r2.txt",
+        "raw_sha256": "bc90f7f86b3dc88fe82ec179ba1625ef9c5bfa9921b289b6fbf05f4bf72dfb41",
+        "bytes": 581
+      },
+      "identity": {
+        "party": "富德生命人寿保险股份有限公司北京分公司及相关责任人",
+        "document_numbers": [],
+        "authority": "北京金融监管局",
+        "decision_date": "2026年7月10日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1263795",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F000208-f566d0c274a396216216e880",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000209-c2f939c9f8a19c11c4bf0e62",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000651-f595d68a0a194097ac72962c",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000775-3fd9b5fe958ee2cc0d7593c0",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000839-4dfba7c2c2021c8012af9274",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F001048-018bc7e591b98574ded51352",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F001170-de392ac2d8a3c5e19957fa16",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F001174-f19be15f37e8ff5c316f443e",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F001214-1b324fd8d892784ab8b45fd2",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F001413-da828734edc37f35ce969e9c",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E41",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-a8237159e60c8bee2c0bb48e98d76d80-22e8bed8a426ab1010ad5297",
+      "text": "当事人: 中国平安人寿保险股份有限公司厦门分公司及相关责任人员\r\n主要违法违规事实(案由)\r\n给予合同约定以外其他利益\r\n行政处罚内容\r\n对中国平安人寿保险股份有限公司厦门分公司罚款30万元；对周顺忠警告并罚款7万元，对林霞警告并罚款3万元。\r\n作出处罚决定的机关名称\r\n厦门金融监管局\r\n作出处罚决定的日期\r\n2026年8月28日\r\n来源公示\r\n国家金融监督管理总局厦门监管局行政处罚信息公开表（编号：2026-7）",
+      "text_sha256": "a8237159e60c8bee2c0bb48e98d76d803f313b45d8a496df2b8f42736e79d8c9",
+      "file_id": "WEB-a8237159e60c8bee2c0bb48e98d76d80",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269753&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1269753_r1.txt",
+        "raw_sha256": "a8237159e60c8bee2c0bb48e98d76d803f313b45d8a496df2b8f42736e79d8c9",
+        "bytes": 545
+      },
+      "identity": {
+        "party": "中国平安人寿保险股份有限公司厦门分公司及相关责任人员",
+        "document_numbers": [],
+        "authority": "厦门金融监管局",
+        "decision_date": "2026年8月28日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1269753",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F000055-9d5f40812ad7410247507b07",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000067-54ab21b4cc66c5b5f184f4f8",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000090-206edc2604ba76f6e182f92f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000092-37a6c2bce159966b25700524",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000097-364f2a05f76187aefa18d158",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000101-c4673143ce9e175b851c4a2c",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000109-bb1796886e645749a177181b",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000114-fe866095f72a7e208364aaed",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000133-50e3123747dcc44176f139bc",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000145-3709a83ec05c0b45963b3e82",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E42",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-d92aea9ab1c86d32ca442873d170d902-f7a428bb751cc1a179ac5244",
+      "text": "当事人: 江西赣县农村商业银行股份有限公司及相关责任人\r\n主要违法违规事实(案由)\r\n内部控制管理不到位\r\n行政处罚内容\r\n对江西赣县农村商业银行股份有限公司罚款35万元；对王婷禁止5年从事银行业工作；对侯艳玲、曾莉、曾玉林分别给予警告。\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局赣州监管分局\r\n作出处罚决定的日期\r\n2026年7月7日\r\n来源公示\r\n国家金融监督管理总局赣州监管分局行政处罚信息公开表",
+      "text_sha256": "d92aea9ab1c86d32ca442873d170d9021ec13e5959f17eeb986608b8b7751456",
+      "file_id": "WEB-d92aea9ab1c86d32ca442873d170d902",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263776&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1263776.txt",
+        "raw_sha256": "d92aea9ab1c86d32ca442873d170d9021ec13e5959f17eeb986608b8b7751456",
+        "bytes": 549
+      },
+      "identity": {
+        "party": "江西赣县农村商业银行股份有限公司及相关责任人",
+        "document_numbers": [],
+        "authority": "国家金融监督管理总局赣州监管分局",
+        "decision_date": "2026年7月7日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1263776",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F002435-8010eff0c93180d5f193571f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004588-1971eeb979eb90531833be05",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008740-a403adeb5c3b387abbade697",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E43",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-abf9f34d8b0238c7093bb06f58827921-1fb7c7d36abe238c9e61ba91",
+      "text": "当事人: 恒丰银行股份有限公司徐州分行及相关责任人员\r\n主要违法违规事实(案由)\r\n违规向项目资本金不足的企业提供融资、厂房按揭贷款管理不尽职\r\n行政处罚内容\r\n对恒丰银行股份有限公司徐州分行罚款70万元。对姜军、丁强警告并罚款共计12万元。\r\n作出处罚决定的机关名称\r\n徐州金融监管分局\r\n作出处罚决定的日期\r\n2026年7月3日\r\n来源公示\r\n国家金融监督管理总局徐州监管分局行政处罚信息公开表",
+      "text_sha256": "abf9f34d8b0238c7093bb06f5882792183772364aa7327c6b4c9d328b3f15ad8",
+      "file_id": "WEB-abf9f34d8b0238c7093bb06f58827921",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264614&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1264614_r5.txt",
+        "raw_sha256": "abf9f34d8b0238c7093bb06f5882792183772364aa7327c6b4c9d328b3f15ad8",
+        "bytes": 529
+      },
+      "identity": {
+        "party": "恒丰银行股份有限公司徐州分行及相关责任人员",
+        "document_numbers": [],
+        "authority": "徐州金融监管分局",
+        "decision_date": "2026年7月3日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1264614",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F002435-8010eff0c93180d5f193571f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004588-1971eeb979eb90531833be05",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008740-a403adeb5c3b387abbade697",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E44",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-358dfa354c0586f37113da9d65572c11-606350fa94457807956dca4e",
+      "text": "当事人: 阳光财产保险股份有限公司建水支公司及相关责任人\r\n主要违法违规事实(案由)\r\n利用开展保险业务为其他机构或者个人牟取不正当利益\r\n行政处罚内容\r\n对阳光财产保险股份有限公司建水支公司罚款12万元;对责任人李建华警告并罚款4万元；对责任人普婉滢警告并罚款4万元。\r\n作出处罚决定的机关名称\r\n红河金融监管分局\r\n作出处罚决定的日期\r\n2026年7月29日\r\n来源公示\r\n红河金融监管分局行政处罚信息公示列表",
+      "text_sha256": "358dfa354c0586f37113da9d65572c1168f7bd9709fd2ec7b0d42eaedf27e810",
+      "file_id": "WEB-358dfa354c0586f37113da9d65572c11",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268001&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1268001_r2.txt",
+        "raw_sha256": "358dfa354c0586f37113da9d65572c1168f7bd9709fd2ec7b0d42eaedf27e810",
+        "bytes": 549
+      },
+      "identity": {
+        "party": "阳光财产保险股份有限公司建水支公司及相关责任人",
+        "document_numbers": [],
+        "authority": "红河金融监管分局",
+        "decision_date": "2026年7月29日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1268001",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F000017-35d73c549f1446907b9f7291",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000020-8124901d036a528f5586c000",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000052-3496803e49610b0d0e2afa35",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000057-bd8635df74d62ef336a9dfde",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000100-cfb75989c48bcb640be06ba0",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000104-0e2fe93fa1d292649bf4e614",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000116-c5712caa0e75e820b1ac0a8d",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000164-7878d51a517cb563aeedeee8",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000166-eda2aeae9f9fead253c0a4d9",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000181-e8467f1160fbcfbd76078128",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E45",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-29520c4316c15644c3d4e416f58971bc-8d43036764b99ed0881f9887",
+      "text": "当事人: 何晔凤（时任中国农业银行股份有限公司上海嘉定支行副行长）\r\n行政处罚决定书文号\r\n沪金罚决字〔2026〕128号\r\n主要违法违规事实(案由)\r\n固定资产贷款管理严重违反审慎经营规则\r\n行政处罚内容\r\n警告并罚款5万元\r\n作出处罚决定的机关名称\r\n上海金融监管局\r\n作出处罚决定的日期\r\n2026年8月3日\r\n来源公示\r\n国家金融监督管理总局上海监管局行政处罚信息公开表（沪金罚决字〔2026〕102-112，115-129号）",
+      "text_sha256": "29520c4316c15644c3d4e416f58971bcfce7a6f66e8eb2667e998f65dc595462",
+      "file_id": "WEB-29520c4316c15644c3d4e416f58971bc",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1266731_r25.txt",
+        "raw_sha256": "29520c4316c15644c3d4e416f58971bcfce7a6f66e8eb2667e998f65dc595462",
+        "bytes": 534
+      },
+      "identity": {
+        "party": "何晔凤（时任中国农业银行股份有限公司上海嘉定支行副行长）",
+        "document_numbers": [
+          "沪金罚决字〔2026〕128号"
+        ],
+        "authority": "上海金融监管局",
+        "decision_date": "2026年8月3日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1266731",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F000330-3a569675a80cdbfabe17d48d",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F001278-1348a239dd03ecc3a6856110",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F001574-7e600ec374b3cad4e2854c0f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F001575-af5b73883031903ccfe638f3",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F002435-8010eff0c93180d5f193571f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004409-d72808c62c1ca63ae6dcad7e",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004588-1971eeb979eb90531833be05",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004944-20bf01bc6b5c2ff461eac413",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008740-a403adeb5c3b387abbade697",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008906-c1b765d48087aeea1ada3431",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E46",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-28d211c5b9d60eafe4b55b96fecdd520-b05324e58faa8b2c00504000",
+      "text": "当事人: 平安银行股份有限公司泰州分行及相关责任人员\r\n主要违法违规事实(案由)\r\n项目贷款贷前调查不到位、贷后管理不到位；流动资金贷款贷后管理不到位\r\n行政处罚内容\r\n对平安银行股份有限公司泰州分行罚款90万元。对王勇警告并罚款8万元。\r\n作出处罚决定的机关名称\r\n泰州金融监管分局\r\n作出处罚决定的日期\r\n2026年7月29日\r\n来源公示\r\n泰州金融监管分局行政处罚信息公开表",
+      "text_sha256": "28d211c5b9d60eafe4b55b96fecdd520ae248e22c9184a574da22ca92a506e57",
+      "file_id": "WEB-28d211c5b9d60eafe4b55b96fecdd520",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266171&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1266171.txt",
+        "raw_sha256": "28d211c5b9d60eafe4b55b96fecdd520ae248e22c9184a574da22ca92a506e57",
+        "bytes": 502
+      },
+      "identity": {
+        "party": "平安银行股份有限公司泰州分行及相关责任人员",
+        "document_numbers": [],
+        "authority": "泰州金融监管分局",
+        "decision_date": "2026年7月29日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1266171",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F002435-8010eff0c93180d5f193571f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004588-1971eeb979eb90531833be05",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005839-4d882b3c7e38ea91e4ffaba5",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008544-f91ec7921e72cc3e1d8c6ed1",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008740-a403adeb5c3b387abbade697",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E47",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-eb903fbc094ff004faf519e49046949a-e75f6e88e500fe5e88359dbe",
+      "text": "行政处罚决定书文号\r\n金罚决字〔2023〕58号\r\n被处罚当事人\r\n高巍（时任大连银行股份有限公司理债业务部职员）\r\n主要违法违规事实\r\n虚假整改，购买银行虚假理财并以复杂交易结构实现不良资产二次虚假出表\r\n行政处罚依据\r\n《中华人民共和国银行业监督管理法》第二十一条、第四十八条及相关审慎经营规则\r\n行政处罚决定\r\n警告\r\n作出处罚决定的\r\n机关名称\r\n国家金融监督管理总局\r\n作出处罚决定的日期\r\n2023年12月28日",
+      "text_sha256": "eb903fbc094ff004faf519e49046949adfb187d38322b7c532e966aa5ad876b4",
+      "file_id": "WEB-eb903fbc094ff004faf519e49046949a",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1143254&itemId=4113&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4113/1143254.txt",
+        "raw_sha256": "eb903fbc094ff004faf519e49046949adfb187d38322b7c532e966aa5ad876b4",
+        "bytes": 552
+      },
+      "identity": {
+        "party": "高巍（时任大连银行股份有限公司理债业务部职员）",
+        "document_numbers": [
+          "金罚决字〔2023〕58号"
+        ],
+        "authority": null,
+        "decision_date": "2023年12月28日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1143254",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F002435-8010eff0c93180d5f193571f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004588-1971eeb979eb90531833be05",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008740-a403adeb5c3b387abbade697",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E48",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-a14ed3755ddef08a0aed3ff30ca7c5d6-c819d38ff6d593a03fab5fc1",
+      "text": "当事人: 蔡毅（时任平安银行股份有限公司贵阳分行行长助理）\r\n行政处罚决定书文号\r\n贵金罚决字〔2026〕27号\r\n主要违法违规事实(案由)\r\n违规单户转让个人抵押不良贷款\r\n行政处罚内容\r\n警告\r\n作出处罚决定的机关名称\r\n贵州金融监管局\r\n作出处罚决定的日期\r\n2026年7月10日\r\n来源公示\r\n国家金融监督管理总局贵州监管局行政处罚信息公开表（贵金罚决字〔2026〕25-29号）",
+      "text_sha256": "a14ed3755ddef08a0aed3ff30ca7c5d62571f204afd5724f0c3a77eb34a0c0a9",
+      "file_id": "WEB-a14ed3755ddef08a0aed3ff30ca7c5d6",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264234&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1264234_r3.txt",
+        "raw_sha256": "a14ed3755ddef08a0aed3ff30ca7c5d62571f204afd5724f0c3a77eb34a0c0a9",
+        "bytes": 482
+      },
+      "identity": {
+        "party": "蔡毅（时任平安银行股份有限公司贵阳分行行长助理）",
+        "document_numbers": [
+          "贵金罚决字〔2026〕27号",
+          "贵金罚决字〔2026〕25-29号"
+        ],
+        "authority": "贵州金融监管局",
+        "decision_date": "2026年7月10日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1264234",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F002435-8010eff0c93180d5f193571f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004588-1971eeb979eb90531833be05",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005839-4d882b3c7e38ea91e4ffaba5",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008544-f91ec7921e72cc3e1d8c6ed1",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008740-a403adeb5c3b387abbade697",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E49",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-a5e9195fde6da8f602befb4b36931b15-9e59d1daffdd365094aeec42",
+      "text": "当事人: 李育宏（时任中国人寿保险股份有限公司通辽分公司副总经理）\r\n行政处罚决定书文号\r\n通金罚决字〔2026〕7号\r\n主要违法违规事实(案由)\r\n投保人信息不真实\r\n行政处罚内容\r\n警告并罚款1万元\r\n作出处罚决定的机关名称\r\n通辽金融监管分局\r\n作出处罚决定的日期\r\n2026年8月3日\r\n来源公示\r\n国家金融监督管理总局通辽监管分局行政处罚信息公开表（通金罚决字〔2026〕4号-7号）",
+      "text_sha256": "a5e9195fde6da8f602befb4b36931b156d5de452ef9f88ca738deabab0a8d56e",
+      "file_id": "WEB-a5e9195fde6da8f602befb4b36931b15",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268249&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1268249_r4.txt",
+        "raw_sha256": "a5e9195fde6da8f602befb4b36931b156d5de452ef9f88ca738deabab0a8d56e",
+        "bytes": 497
+      },
+      "identity": {
+        "party": "李育宏（时任中国人寿保险股份有限公司通辽分公司副总经理）",
+        "document_numbers": [
+          "通金罚决字〔2026〕7号",
+          "通金罚决字〔2026〕4号"
+        ],
+        "authority": "通辽金融监管分局",
+        "decision_date": "2026年8月3日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1268249",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F000011-e3fcfe3540b0f3b638f2f6b1",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000028-91dbe4c6bb34e4a46737b375",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000040-b53542dba1dc7da0298203b2",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000053-f1a0d5646346a8c33295d83c",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000068-5d9d69f12bebde9ae711858e",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000084-01e7a07de7d67063c6b47dc7",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000085-f104c47982a0668e478ab28d",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000113-541b831706447952cf3d225c",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000115-82d10bd0a840a98256c414c2",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000118-e9335fae19263291f55c6098",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E50",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-35c500a824d9f8eba48f2c205d15da3d-1679a405779dc4991d37e92f",
+      "text": "当事人: 葛宇（时任招商银行股份有限公司临沂解放路支行行长助理）\r\n行政处罚决定书文号\r\n临金罚决字〔2026〕21号\r\n主要违法违规事实(案由)\r\n贷前调查不到位\r\n行政处罚内容\r\n警告\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局临沂监管分局\r\n作出处罚决定的日期\r\n2026年7月16日\r\n来源公示\r\n国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕20号-21号）",
+      "text_sha256": "35c500a824d9f8eba48f2c205d15da3d96edade9401813d144fefef702f1e68f",
+      "file_id": "WEB-35c500a824d9f8eba48f2c205d15da3d",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264669&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1264669_r2.txt",
+        "raw_sha256": "35c500a824d9f8eba48f2c205d15da3d96edade9401813d144fefef702f1e68f",
+        "bytes": 503
+      },
+      "identity": {
+        "party": "葛宇（时任招商银行股份有限公司临沂解放路支行行长助理）",
+        "document_numbers": [
+          "临金罚决字〔2026〕21号",
+          "临金罚决字〔2026〕20号"
+        ],
+        "authority": "国家金融监督管理总局临沂监管分局",
+        "decision_date": "2026年7月16日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1264669",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F002435-8010eff0c93180d5f193571f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004588-1971eeb979eb90531833be05",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005672-5f9d52fcb8220f11c8c84981",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008740-a403adeb5c3b387abbade697",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E51",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-600f64fb4e0d9ba363b75d3ff0abbb30-13dbc2ffc32c4ff2b787761d",
+      "text": "当事人: 安徽五河农村商业银行股份有限公司城关支行及相关责任人\r\n主要违法违规事实(案由)\r\n员工行为管理不到位\r\n行政处罚内容\r\n对安徽五河农村商业银行股份有限公司城关支行罚款30万元。对沈先将、许旭东警告。\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局蚌埠监管分局\r\n作出处罚决定的日期\r\n2026年7月9日\r\n来源公示\r\n国家金融监督管理总局蚌埠监管分局行政处罚信息公开表",
+      "text_sha256": "600f64fb4e0d9ba363b75d3ff0abbb3035104be178da593581ad031b77028ea2",
+      "file_id": "WEB-600f64fb4e0d9ba363b75d3ff0abbb30",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265539&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1265539_r2.txt",
+        "raw_sha256": "600f64fb4e0d9ba363b75d3ff0abbb3035104be178da593581ad031b77028ea2",
+        "bytes": 509
+      },
+      "identity": {
+        "party": "安徽五河农村商业银行股份有限公司城关支行及相关责任人",
+        "document_numbers": [],
+        "authority": "国家金融监督管理总局蚌埠监管分局",
+        "decision_date": "2026年7月9日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1265539",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F002435-8010eff0c93180d5f193571f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004588-1971eeb979eb90531833be05",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008740-a403adeb5c3b387abbade697",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E52",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-9986747685b728dc038b3b3ac471ba5f-7c1b822364740acfa7eb4fe3",
+      "text": "当事人: 永安财产保险股份有限公司临沂中心支公司\r\n行政处罚决定书文号\r\n临金罚决字〔2026〕22号\r\n主要违法违规事实(案由)\r\n利用保险代理人虚构保险中介业务套取费用\r\n行政处罚内容\r\n罚款15.5万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局临沂监管分局\r\n作出处罚决定的日期\r\n2026年7月16日\r\n来源公示\r\n国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕22号-23号）",
+      "text_sha256": "9986747685b728dc038b3b3ac471ba5f0c1cdb5c960e4855ed13ce37a7949311",
+      "file_id": "WEB-9986747685b728dc038b3b3ac471ba5f",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264670&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1264670_r1.txt",
+        "raw_sha256": "9986747685b728dc038b3b3ac471ba5f0c1cdb5c960e4855ed13ce37a7949311",
+        "bytes": 525
+      },
+      "identity": {
+        "party": "永安财产保险股份有限公司临沂中心支公司",
+        "document_numbers": [
+          "临金罚决字〔2026〕22号"
+        ],
+        "authority": "国家金融监督管理总局临沂监管分局",
+        "decision_date": "2026年7月16日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1264670",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F000058-d3b95159e46808a5e98bdd91",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000287-f23348b176228c752070109a",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000442-bd4e86fe5a24555e170d3eef",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000454-53fa8220531f576875a9ce4d",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000719-29716ab56ad4f50ca87ea56e",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F001105-3182d321adbf15f8582311a2",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F001543-f952307740a6008d8166c8b3",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F001745-6e7c96b96c0af54900402bc9",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F001869-66fa0361d2d47fddd3657def",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F001870-aa37d814c16b0b383bf000b8",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E53",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-01ae97da078cb782c2838fb0b468a1a6-73b0e30e113999e144ce7e49",
+      "text": "当事人: 中国银行股份有限公司温州市分行及相关责任人\r\n主要违法违规事实(案由)\r\n授信业务“三查”严重不审慎。\r\n行政处罚内容\r\n对中国银行股份有限公司温州市分行罚款35万元；对黄益瑾警告。\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局温州监管分局\r\n作出处罚决定的日期\r\n2026年7月20日\r\n来源公示\r\n国家金融监督管理总局温州监管分局行政处罚信息公开表",
+      "text_sha256": "01ae97da078cb782c2838fb0b468a1a62b2a8905b335f0b55625ed39bf8fecd4",
+      "file_id": "WEB-01ae97da078cb782c2838fb0b468a1a6",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264971&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1264971_r1.txt",
+        "raw_sha256": "01ae97da078cb782c2838fb0b468a1a62b2a8905b335f0b55625ed39bf8fecd4",
+        "bytes": 483
+      },
+      "identity": {
+        "party": "中国银行股份有限公司温州市分行及相关责任人",
+        "document_numbers": [],
+        "authority": "国家金融监督管理总局温州监管分局",
+        "decision_date": "2026年7月20日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1264971",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F002435-8010eff0c93180d5f193571f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004588-1971eeb979eb90531833be05",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008740-a403adeb5c3b387abbade697",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E54",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-c4e8bb99f2e6cf8e9b70b20b32c45c22-2766e350b2c23d6f353a587c",
+      "text": "当事人: 交通银行股份有限公司曲靖分行及相关责任人\r\n主要违法违规事实(案由)\r\n贷后管理不到位\r\n行政处罚内容\r\n对交通银行股份有限公司曲靖分行罚款30万元。对责任人贺娇予以警告。\r\n作出处罚决定的机关名称\r\n曲靖金融监管分局\r\n作出处罚决定的日期\r\n2026年7月9日\r\n来源公示\r\n曲靖金融监管分局行政处罚信息公示列表",
+      "text_sha256": "c4e8bb99f2e6cf8e9b70b20b32c45c22b06d340c4527605cb22a7288d7305265",
+      "file_id": "WEB-c4e8bb99f2e6cf8e9b70b20b32c45c22",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264154&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1264154_r2.txt",
+        "raw_sha256": "c4e8bb99f2e6cf8e9b70b20b32c45c22b06d340c4527605cb22a7288d7305265",
+        "bytes": 422
+      },
+      "identity": {
+        "party": "交通银行股份有限公司曲靖分行及相关责任人",
+        "document_numbers": [],
+        "authority": "曲靖金融监管分局",
+        "decision_date": "2026年7月9日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1264154",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F002435-8010eff0c93180d5f193571f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004588-1971eeb979eb90531833be05",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008740-a403adeb5c3b387abbade697",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E55",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-daa1409605bd3e610e633079882c7624-de3958dfb1e2611a9a99c0e1",
+      "text": "当事人: 崔佳佳（时任中国太平洋财产保险股份有限公司枣庄市高新区支公司经理）\r\n行政处罚决定书文号\r\n鲁金罚决字〔2026〕89号\r\n主要违法违规事实(案由)\r\n编制虚假的财务资料\r\n行政处罚内容\r\n警告并罚款1万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局山东监管局\r\n作出处罚决定的日期\r\n2026年8月10日\r\n来源公示\r\n国家金融监督管理总局山东监管局行政处罚信息公开表（鲁金罚决字〔2026〕74号-92号）",
+      "text_sha256": "daa1409605bd3e610e633079882c7624938cc39809376d457fe96e809bf2e085",
+      "file_id": "WEB-daa1409605bd3e610e633079882c7624",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268371&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1268371_r16.txt",
+        "raw_sha256": "daa1409605bd3e610e633079882c7624938cc39809376d457fe96e809bf2e085",
+        "bytes": 537
+      },
+      "identity": {
+        "party": "崔佳佳（时任中国太平洋财产保险股份有限公司枣庄市高新区支公司经理）",
+        "document_numbers": [
+          "鲁金罚决字〔2026〕89号",
+          "鲁金罚决字〔2026〕74号"
+        ],
+        "authority": "国家金融监督管理总局山东监管局",
+        "decision_date": "2026年8月10日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1268371",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F000007-48dbb8e9cfcadea2f510ea20",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000008-ee6124d23f343344bba31172",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000009-46145df86144e152372e7a4b",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000010-4950b017ff71d9f6bc9af715",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000039-d6b054ba2edb8ada905b6bcd",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000054-5a2e7309071903c7e0c722fd",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000083-cb5841511d2613da3d1394f3",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000089-f3a0d8406139e0edace87222",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000110-bf6e9bca7c8d8a46b3eefd53",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000139-e6994b06b1e90fa8e6b72661",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E56",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-029c2b8609329469da199d20e76dab2c-f53180ee74ab282708d6763b",
+      "text": "当事人: 郭娟（时任恒邦财产保险股份有限公司长治中心支公司总经理助理（主持工作）、副总经理（主持工作））\r\n行政处罚决定书文号\r\n长金管罚决字〔2026〕19号\r\n主要违法违规事实(案由)\r\n对恒邦财产保险股份有限公司长治中心支公司给予投保人保险合同约定以外的保险费回扣或者其他利益负有责任\r\n行政处罚内容\r\n警告，罚款4万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局长治监管分局\r\n作出处罚决定的日期\r\n2026年8月17日\r\n行政处罚依据\r\n《中华人民共和国保险法》第一百一十六条、第一百七十一条\r\n来源公示\r\n国家金融监督管理总局长治监管分局行政处罚信息公开表（长金管罚决字〔2026〕18、19号）",
+      "text_sha256": "029c2b8609329469da199d20e76dab2c72a3c3f8f3e4c0d9d7a89fd40355f8e5",
+      "file_id": "WEB-029c2b8609329469da199d20e76dab2c",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268783&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1268783_r2.txt",
+        "raw_sha256": "029c2b8609329469da199d20e76dab2c72a3c3f8f3e4c0d9d7a89fd40355f8e5",
+        "bytes": 813
+      },
+      "identity": {
+        "party": "郭娟（时任恒邦财产保险股份有限公司长治中心支公司总经理助理（主持工作）、副总经理（主持工作））",
+        "document_numbers": [
+          "长金管罚决字〔2026〕19号",
+          "长金管罚决字〔2026〕18、19号"
+        ],
+        "authority": "国家金融监督管理总局长治监管分局",
+        "decision_date": "2026年8月17日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1268783",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F002435-8010eff0c93180d5f193571f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004146-1dac29abdad9bfe77f7440c8",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004588-1971eeb979eb90531833be05",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004692-39457880299e2c2fb3ede6b0",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004876-946c1a1326e2b89833491c79",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005689-b326f5c3a73865ba6790b00d",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006161-5d8833a22a1d97c7b21eb80e",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006477-33ca3990dc60bac7573b0bfc",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006478-0d464fb09b3e1246fd86a296",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E57",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-7b944d4b15d6eb016ba2c1418f374d52-5e73a60e2ad62200d045e320",
+      "text": "当事人: 中国光大银行股份有限公司\r\n主要违法违规事实(案由)\r\n信息科技外包管理存在不足、监管数据错报等事项\r\n行政处罚内容\r\n对中国光大银行股份有限公司罚款430万元\r\n作出处罚决定的机关名称\r\n金融监管总局\r\n作出处罚决定的日期\r\n2025年9月12日\r\n来源公示\r\n国家金融监督管理总局行政处罚信息公示列表",
+      "text_sha256": "7b944d4b15d6eb016ba2c1418f374d523f3c0a251ae7a5050af853619f5d2e99",
+      "file_id": "WEB-7b944d4b15d6eb016ba2c1418f374d52",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1225649&itemId=4113&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4113/1225649_r3.txt",
+        "raw_sha256": "7b944d4b15d6eb016ba2c1418f374d523f3c0a251ae7a5050af853619f5d2e99",
+        "bytes": 403
+      },
+      "identity": {
+        "party": "中国光大银行股份有限公司",
+        "document_numbers": [],
+        "authority": "金融监管总局",
+        "decision_date": "2025年9月12日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1225649",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F002435-8010eff0c93180d5f193571f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004588-1971eeb979eb90531833be05",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008740-a403adeb5c3b387abbade697",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E58",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-9165d664ca20d8399206b92bd5892a15-2f70a323b8db156562afa15b",
+      "text": "当事人: 姜徴巍（时任上海银行股份有限公司信用卡中心市场企划部高级经理）\r\n行政处罚决定书文号\r\n沪金罚决字〔2026〕110号\r\n主要违法违规事实(案由)\r\n未开立独立的代理保险业务佣金收取账户\r\n行政处罚内容\r\n警告并罚款1万元\r\n作出处罚决定的机关名称\r\n上海金融监管局\r\n作出处罚决定的日期\r\n2026年8月3日\r\n来源公示\r\n国家金融监督管理总局上海监管局行政处罚信息公开表（沪金罚决字〔2026〕102-112，115-129号）",
+      "text_sha256": "9165d664ca20d8399206b92bd5892a15a9e1dc4410edf23db85a631f37e3c1b1",
+      "file_id": "WEB-9165d664ca20d8399206b92bd5892a15",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1266731_r9.txt",
+        "raw_sha256": "9165d664ca20d8399206b92bd5892a15a9e1dc4410edf23db85a631f37e3c1b1",
+        "bytes": 543
+      },
+      "identity": {
+        "party": "姜徴巍（时任上海银行股份有限公司信用卡中心市场企划部高级经理）",
+        "document_numbers": [
+          "沪金罚决字〔2026〕110号"
+        ],
+        "authority": "上海金融监管局",
+        "decision_date": "2026年8月3日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1266731",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F002435-8010eff0c93180d5f193571f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004588-1971eeb979eb90531833be05",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008740-a403adeb5c3b387abbade697",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E59",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-651b3a36524e7368b30b8ab1e854a028-ce7bac7fc24cdcc1047b94e5",
+      "text": "当事人: 浙商银行股份有限公司武汉分行及相关责任人\r\n主要违法违规事实(案由)\r\n经营性物业贷款贷前调查贷后管理不尽职；项目贷款管理不审慎，贷款资金被挪用等\r\n行政处罚内容\r\n对机构罚款155万元，对王轶卿警告，对张军、刘心佳警告并罚款共计10万元。\r\n作出处罚决定的机关名称\r\n湖北金融监管局\r\n作出处罚决定的日期\r\n2026年8月14日\r\n来源公示\r\n国家金融监督管理总局湖北监管局行政处罚信息公示列表",
+      "text_sha256": "651b3a36524e7368b30b8ab1e854a028917b5f75ce3afafca04e4bacac87dd50",
+      "file_id": "WEB-651b3a36524e7368b30b8ab1e854a028",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268137&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1268137_r2.txt",
+        "raw_sha256": "651b3a36524e7368b30b8ab1e854a028917b5f75ce3afafca04e4bacac87dd50",
+        "bytes": 537
+      },
+      "identity": {
+        "party": "浙商银行股份有限公司武汉分行及相关责任人",
+        "document_numbers": [],
+        "authority": "湖北金融监管局",
+        "decision_date": "2026年8月14日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1268137",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F002435-8010eff0c93180d5f193571f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004588-1971eeb979eb90531833be05",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008740-a403adeb5c3b387abbade697",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E60",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-74d7346202e9f3de79da46f397956589-01aa2362fa61c7340e8411cd",
+      "text": "当事人: 姜忠全（时任中信银行股份有限公司哈尔滨松北支行行长）\r\n行政处罚决定书文号\r\n黑金监罚决字〔2026〕65号\r\n主要违法违规事实(案由)\r\n贷前调查不尽职\r\n行政处罚内容\r\n警告\r\n作出处罚决定的机关名称\r\n黑龙江金融监管局\r\n作出处罚决定的日期\r\n2026年7月22日\r\n来源公示\r\n国家金融监督管理总局黑龙江监管局行政处罚信息公开表（黑金监罚决字〔2026〕64、65、66号）",
+      "text_sha256": "74d7346202e9f3de79da46f3979565896fc893999a3e46d6bd52a1fa25a25244",
+      "file_id": "WEB-74d7346202e9f3de79da46f397956589",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265408&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1265408_r2.txt",
+        "raw_sha256": "74d7346202e9f3de79da46f3979565896fc893999a3e46d6bd52a1fa25a25244",
+        "bytes": 486
+      },
+      "identity": {
+        "party": "姜忠全（时任中信银行股份有限公司哈尔滨松北支行行长）",
+        "document_numbers": [
+          "黑金监罚决字〔2026〕65号",
+          "黑金监罚决字〔2026〕64、65、66号"
+        ],
+        "authority": "黑龙江金融监管局",
+        "decision_date": "2026年7月22日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1265408",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F000674-7b740293028c604cc1e513a3",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F002435-8010eff0c93180d5f193571f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004109-6a6a5fdc4ca30b5275a53c3e",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004588-1971eeb979eb90531833be05",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008740-a403adeb5c3b387abbade697",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E61",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-44d828433f83bf8d273316012ea1839e-af2a12bce6dd4e4a155f612c",
+      "text": "当事人: 吴建平（时任上海银行股份有限公司市北分行公司业务部授信部业务经理）\r\n行政处罚决定书文号\r\n沪金罚决字〔2026〕111号\r\n主要违法违规事实(案由)\r\n贷款管理严重违反审慎经营规则\r\n行政处罚内容\r\n警告并罚款5万元\r\n作出处罚决定的机关名称\r\n上海金融监管局\r\n作出处罚决定的日期\r\n2026年8月3日\r\n来源公示\r\n国家金融监督管理总局上海监管局行政处罚信息公开表（沪金罚决字〔2026〕102-112，115-129号）",
+      "text_sha256": "44d828433f83bf8d273316012ea1839e4f8ea57108645190c525da7e922d1f48",
+      "file_id": "WEB-44d828433f83bf8d273316012ea1839e",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1266731_r10.txt",
+        "raw_sha256": "44d828433f83bf8d273316012ea1839e4f8ea57108645190c525da7e922d1f48",
+        "bytes": 537
+      },
+      "identity": {
+        "party": "吴建平（时任上海银行股份有限公司市北分行公司业务部授信部业务经理）",
+        "document_numbers": [
+          "沪金罚决字〔2026〕111号"
+        ],
+        "authority": "上海金融监管局",
+        "decision_date": "2026年8月3日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1266731",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F002435-8010eff0c93180d5f193571f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004588-1971eeb979eb90531833be05",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008740-a403adeb5c3b387abbade697",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E62",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-5c88675167b60a74dc52fc2e066ef4e0-1a0bb447f890fa285267cbba",
+      "text": "当事人: 中国大地财产保险股份有限公司揭阳中心支公司及相关责任人\r\n主要违法违规事实(案由)\r\n不实列支服务费、员工绩效薪酬，实际作为市场展业费用\r\n行政处罚内容\r\n对中国大地财产保险股份有限公司揭阳中心支公司罚款12万元。对郑艳葵给予警告，罚款1.5万元。\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局揭阳监管分局\r\n作出处罚决定的日期\r\n2026年7月21日\r\n来源公示\r\n揭阳金融监管分局行政处罚信息公开列表",
+      "text_sha256": "5c88675167b60a74dc52fc2e066ef4e098797e36d390e8d2985d4c149eb09ab1",
+      "file_id": "WEB-5c88675167b60a74dc52fc2e066ef4e0",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265275&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1265275_r1.txt",
+        "raw_sha256": "5c88675167b60a74dc52fc2e066ef4e098797e36d390e8d2985d4c149eb09ab1",
+        "bytes": 555
+      },
+      "identity": {
+        "party": "中国大地财产保险股份有限公司揭阳中心支公司及相关责任人",
+        "document_numbers": [],
+        "authority": "国家金融监督管理总局揭阳监管分局",
+        "decision_date": "2026年7月21日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1265275",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F000059-aecdce947b96744eae2e627e",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000127-1a90aaafadf14adcf27b807d",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000149-c9817fe6728d918e0231c570",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000161-bab2741419601057b27c391d",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000162-7578eee4c23e24f403217ebf",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000163-941a775e8dceacf16118027b",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000183-de36be339cc719822983484d",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000191-039ce98c770fdb6ec5e3675a",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000192-da7e5975aaa2d3e99fd940a6",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F000198-0f0e72206263ca116d598856",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E63",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-50b721549ef41a3399950834f9b68957-49907ade56a69f423b07e119",
+      "text": "当事人: 阳光保险集团股份有限公司及相关责任人员\r\n主要违法违规事实(案由)\r\n关联交易管理不到位，偿付能力报告数据不准确等。\r\n行政处罚内容\r\n对阳光保险集团股份有限公司罚款140万元。对张艳秋、张秀美警告并罚款共计18万元。\r\n作出处罚决定的机关名称\r\n金融监管总局\r\n作出处罚决定的日期\r\n2026年2月27日\r\n来源公示\r\n国家金融监督管理总局行政处罚信息公示列表",
+      "text_sha256": "50b721549ef41a3399950834f9b68957013ea5e517c577dc25d43b251ebb421c",
+      "file_id": "WEB-50b721549ef41a3399950834f9b68957",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1250417&itemId=4113&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4113/1250417_r2.txt",
+        "raw_sha256": "50b721549ef41a3399950834f9b68957013ea5e517c577dc25d43b251ebb421c",
+        "bytes": 486
+      },
+      "identity": {
+        "party": "阳光保险集团股份有限公司及相关责任人员",
+        "document_numbers": [],
+        "authority": "金融监管总局",
+        "decision_date": "2026年2月27日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "R",
+      "family": "nfra:1250417",
+      "old_candidates": [
+        {
+          "source_id": "FRV2-SOURCE-F002435-8010eff0c93180d5f193571f",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F003989-1ea04f55b9672238cd812a07",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004588-1971eeb979eb90531833be05",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008740-a403adeb5c3b387abbade697",
+          "match_basis": "shared_legal_entity_head_related_not_same_case"
+        }
+      ],
+      "sample_id": "E64",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-869ae61a2b3cf8a9fbadb538a129aa09-fe1e309433228100dd06989c",
+      "text": "曹华军：\r\n经查，2018年1月至2019年10月你在银行机构工作期间，对贷款管理严重不审慎行为负有责任。根据《中华人民共和国银行业监督管理法》第四十八条第（三）项的规定，我分局拟对你作出禁止从事银行业工作3年的行政处罚。\r\n因采取直接送达、邮寄送达等方式无法送达处罚文书，现依法向你公告送达《国家金融监督管理总局桂林监管分局行政处罚事先告知书》（桂林金罚告字〔2026〕1号）。请在本公告发出之日起三十日内到我分局领取，逾期视为送达。\r\n根据《中华人民共和国行政处罚法》第四十四条、第四十五条的规定，你如对上述处罚意见有异议，可在接到本告知书之日起10个工作日内向我分局提出陈述和申辩；逾期未提出陈述和申辩，视为放弃陈述和申辩的权利。\r\n根据《中华人民共和国行政处罚法》第六十三条、第六十四条，《国家金融监督管理总局行政处罚办法》第五十五条、第五十六条的规定，你享有听证的权利，如要求举行听证，可以在收到本告知书之日起5个工作日内向我分局提交本人签字的听证申请书，说明听证的要求和理由。逾期不提出申请的，视为放弃听证权利。\r\n联系电话：0773-5812362\r\n联系地址：桂林市七星区育才路10号\r\n桂林金融监管分局\r\n2026年8月21日",
+      "text_sha256": "869ae61a2b3cf8a9fbadb538a129aa096bab87aa0cc123f508479d90f486ff07",
+      "file_id": "WEB-869ae61a2b3cf8a9fbadb538a129aa09",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268994&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1268994.txt",
+        "raw_sha256": "869ae61a2b3cf8a9fbadb538a129aa096bab87aa0cc123f508479d90f486ff07",
+        "bytes": 1452
+      },
+      "identity": {
+        "party": null,
+        "document_numbers": [
+          "桂林金罚告字〔2026〕1号"
+        ],
+        "authority": null,
+        "decision_date": null,
+        "non_penalty_hint": false,
+        "proposed_hint": true
+      },
+      "stratum": "U",
+      "family": "nfra:1268994",
+      "old_candidates": [],
+      "sample_id": "E65",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-c87ca52658f7b7411c38f2fda2031332-fab8c885190ff0bc18de4e01",
+      "text": "当事人: 现代财产保险（中国）有限公司、相关分支机构及相关责任人\r\n主要违法违规事实(案由)\r\n未按照规定使用经备案的保险条款，虚列费用\r\n行政处罚内容\r\n对现代财产保险（中国）有限公司罚款25万元；对现代财产保险（中国）有限公司四川分公司、湖北分公司分别处以罚款45万元、30万元；对责任人朴海燕、谢伟、叶成、刘薇蔚分别给予警告并处罚款5万元、8万元、4万元、5万元。\r\n作出处罚决定的机关名称\r\n北京金融监管局\r\n作出处罚决定的日期\r\n2026年7月24日\r\n来源公示\r\n国家金融监督管理总局北京监管局行政处罚信息公开表",
+      "text_sha256": "c87ca52658f7b7411c38f2fda2031332eda65714f91ec247150486624683704d",
+      "file_id": "WEB-c87ca52658f7b7411c38f2fda2031332",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265524&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1265524.txt",
+        "raw_sha256": "c87ca52658f7b7411c38f2fda2031332eda65714f91ec247150486624683704d",
+        "bytes": 704
+      },
+      "identity": {
+        "party": "现代财产保险（中国）有限公司、相关分支机构及相关责任人",
+        "document_numbers": [],
+        "authority": "北京金融监管局",
+        "decision_date": "2026年7月24日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "U",
+      "family": "nfra:1265524",
+      "old_candidates": [],
+      "sample_id": "E66",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-944bdc831426c989280fe43fb28be4bf-84c72dee5a4eb66f499a9b96",
+      "text": "马利波：\r\n经查，你在内蒙古银行包头包百支行担任支行行长期间，对违规向1户企业办理流动资金贷款问题负有直接责任。根据《中华人民共和国银行业监督管理法》第四十八条规定，我分局拟给予禁止三年从事银行业工作的行政处罚。\r\n因采取直接送达、委托送达、邮寄送达等方式无法送达事先告知书，现依法向你公告送达《国家金融监督管理总局包头监管分局行政处罚事先告知书》（包金罚告字〔2026〕7号）。请在本公告发出之日起三十日内到我分局领取，逾期视为送达。\r\n根据《中华人民共和国行政处罚法》第四十四条、第四十五条的规定，当事人可在接到本告知书之日起十个工作日内向我分局提出陈述和申辩。逾期未提出视为放弃陈述和申辩的权利。\r\n根据《国家金融监督管理总局行政处罚办法》第五十五条的规定，当事人享有听证的权利，如要求举行听证，请在收到本告知书之日起五个工作日内向我分局提交听证申请书，说明听证的要求和理由，并签字或盖章。逾期不提出申请的，视为放弃听证权利。\r\n联系人：李敏\r\n联系电话：0472-6988073\r\n联系地址：包头市青山区钢铁大街7号正翔国际B6号楼\r\n国家金融监督管理总局包头监管分局\r\n2026年8月17日",
+      "text_sha256": "944bdc831426c989280fe43fb28be4bfeaa45777ee8a23ad1d59c358ba6b72be",
+      "file_id": "WEB-944bdc831426c989280fe43fb28be4bf",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268244&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1268244.txt",
+        "raw_sha256": "944bdc831426c989280fe43fb28be4bfeaa45777ee8a23ad1d59c358ba6b72be",
+        "bytes": 1408
+      },
+      "identity": {
+        "party": null,
+        "document_numbers": [
+          "包金罚告字〔2026〕7号"
+        ],
+        "authority": null,
+        "decision_date": null,
+        "non_penalty_hint": false,
+        "proposed_hint": true
+      },
+      "stratum": "U",
+      "family": "nfra:1268244",
+      "old_candidates": [],
+      "sample_id": "E67",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-3bf9c493e012df0d4b2a71ce7759eb27-e0ca60bd446848b1434936a6",
+      "text": "当事人: 天津滨海德商村镇银行\r\n主要违法违规事实(案由)\r\n资产风险分类不准确\r\n行政处罚内容\r\n对天津滨海德商村镇银行罚款30万元。对吴力宏警告。\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局天津监管局\r\n作出处罚决定的日期\r\n2026年7月20日\r\n来源公示\r\n国家金融监督管理总局天津监管局行政处罚信息公开表",
+      "text_sha256": "3bf9c493e012df0d4b2a71ce7759eb27de369bd45343d6169b53bc3df763f2f0",
+      "file_id": "WEB-3bf9c493e012df0d4b2a71ce7759eb27",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265049&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1265049.txt",
+        "raw_sha256": "3bf9c493e012df0d4b2a71ce7759eb27de369bd45343d6169b53bc3df763f2f0",
+        "bytes": 414
+      },
+      "identity": {
+        "party": "天津滨海德商村镇银行",
+        "document_numbers": [],
+        "authority": "国家金融监督管理总局天津监管局",
+        "decision_date": "2026年7月20日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "U",
+      "family": "nfra:1265049",
+      "old_candidates": [],
+      "sample_id": "E68",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-36fe421132ae9590ce0f5f8a71f021a8-1b023c4a41be0b2ee6096940",
+      "text": "当事人: 华夏久盈资产管理有限责任公司相关责任人\r\n主要违法违规事实(案由)\r\n关联方报告中存在虚假记载和重大遗漏、协助其他机构违规大幅虚增偿付能力、违规运用资金造成重大损失等\r\n行政处罚内容\r\n对丁德胜、赵瑜纲、崔勇、张洪涛、梁志勇、蒋健、奚星华、仲长昊、陈慧、于凌雁、张洪新、郭滨、谢民、黄伟、高志强、吕婧、付李艳、程东胜、马丽、张蔚蔚、张莹、杨清、徐淼、禹浩、刘艺等责任人员警告并罚款共计266万元。对丁德胜、赵瑜纲、崔勇、张洪涛、蒋健等责任人员撤销任职资格。对丁德胜、赵瑜纲、崔勇、梁志勇、蒋健等责任人员终身禁止进入保险业；对张洪涛禁止进入保险业15年；对陈慧禁止进入保险业5年；对于凌雁、张洪新、郭滨、谢民等责任人员禁止进入保险业1年。\r\n作出处罚决定的机关名称\r\n金融监管总局\r\n作出处罚决定的日期\r\n2025年6月6日\r\n来源公示\r\n国家金融监督管理总局行政处罚信息公示列表",
+      "text_sha256": "36fe421132ae9590ce0f5f8a71f021a8186ddf5f61f88f9876b103f29cabd7cf",
+      "file_id": "WEB-36fe421132ae9590ce0f5f8a71f021a8",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1212831&itemId=4113&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4113/1212831_r2.txt",
+        "raw_sha256": "36fe421132ae9590ce0f5f8a71f021a8186ddf5f61f88f9876b103f29cabd7cf",
+        "bytes": 1108
+      },
+      "identity": {
+        "party": "华夏久盈资产管理有限责任公司相关责任人",
+        "document_numbers": [],
+        "authority": "金融监管总局",
+        "decision_date": "2025年6月6日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "U",
+      "family": "nfra:1212831",
+      "old_candidates": [],
+      "sample_id": "E69",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-2418928965a18bd3ac9e9b6f3c19d405-76d3632b934cf0ad3a5e24cc",
+      "text": "夏大文：\r\n经查，2018年至2019年你在银行机构工作期间，对贷款管理严重不审慎行为负有责任。根据《中华人民共和国银行业监督管理法》第四十八条第（三）项的规定，我分局拟对你作出禁止从事银行业工作3年的行政处罚。\r\n因采取直接送达、邮寄送达等方式无法送达处罚文书，现依法向你公告送达《国家金融监督管理总局桂林监管分局行政处罚事先告知书》（桂林金罚告字〔2026〕1号）。请在本公告发出之日起三十日内到我分局领取，逾期视为送达。\r\n根据《中华人民共和国行政处罚法》第四十四条、第四十五条的规定，你如对上述处罚意见有异议，可在接到本告知书之日起10个工作日内向我分局提出陈述和申辩；逾期未提出陈述和申辩，视为放弃陈述和申辩的权利。\r\n根据《中华人民共和国行政处罚法》第六十三条、第六十四条，《国家金融监督管理总局行政处罚办法》第五十五条、第五十六条的规定，你享有听证的权利，如要求举行听证，可以在收到本告知书之日起5个工作日内向我分局提交本人签字的听证申请书，说明听证的要求和理由。逾期不提出申请的，视为放弃听证权利。\r\n联系电话：0773-5812362\r\n联系地址：桂林市七星区育才路10号\r\n桂林金融监管分局\r\n2026年8月21日",
+      "text_sha256": "2418928965a18bd3ac9e9b6f3c19d40527c0ece74390403171ee1098932c2a3d",
+      "file_id": "WEB-2418928965a18bd3ac9e9b6f3c19d405",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269003&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1269003.txt",
+        "raw_sha256": "2418928965a18bd3ac9e9b6f3c19d40527c0ece74390403171ee1098932c2a3d",
+        "bytes": 1443
+      },
+      "identity": {
+        "party": null,
+        "document_numbers": [
+          "桂林金罚告字〔2026〕1号"
+        ],
+        "authority": null,
+        "decision_date": null,
+        "non_penalty_hint": false,
+        "proposed_hint": true
+      },
+      "stratum": "U",
+      "family": "nfra:1269003",
+      "old_candidates": [],
+      "sample_id": "E70",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-612cb670ff70f0b77761d4a9ef324f31-ad0bb3d09d4f617df0647e01",
+      "text": "当事人: 太平资产管理有限公司及相关责任人员\r\n主要违法违规事实(案由)\r\n未按照规定运用保险公司资金等\r\n行政处罚内容\r\n对太平资产管理有限公司罚款70万元。对施泓亦禁止5年进入保险业。\r\n作出处罚决定的机关名称\r\n金融监管总局\r\n作出处罚决定的日期\r\n2025年10月11日\r\n来源公示\r\n国家金融监督管理总局行政处罚信息公示列表",
+      "text_sha256": "612cb670ff70f0b77761d4a9ef324f311bd2f6ad7487ee4168cdd3ceca9c418d",
+      "file_id": "WEB-612cb670ff70f0b77761d4a9ef324f31",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1228899&itemId=4113&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4113/1228899_r2.txt",
+        "raw_sha256": "612cb670ff70f0b77761d4a9ef324f311bd2f6ad7487ee4168cdd3ceca9c418d",
+        "bytes": 431
+      },
+      "identity": {
+        "party": "太平资产管理有限公司及相关责任人员",
+        "document_numbers": [],
+        "authority": "金融监管总局",
+        "decision_date": "2025年10月11日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "U",
+      "family": "nfra:1228899",
+      "old_candidates": [],
+      "sample_id": "E71",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-65a545851cea916aa710798c49c0dc7e-aaeeefba2cf906adc8af8827",
+      "text": "当事人: 大众银行（香港）有限公司深圳分行及相关责任人\r\n主要违法违规事实(案由)\r\n个人消费贷款“三查”不到位\r\n行政处罚内容\r\n对机构罚款45万元；对许利明给予警告并罚款5万元\r\n作出处罚决定的机关名称\r\n深圳金融监管局\r\n作出处罚决定的日期\r\n2026年7月3日\r\n来源公示\r\n深圳金融监管局行政处罚信息公示表",
+      "text_sha256": "65a545851cea916aa710798c49c0dc7e33aeee22d84ff15f38345fbd4e7176c4",
+      "file_id": "WEB-65a545851cea916aa710798c49c0dc7e",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263273&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1263273_r1.txt",
+        "raw_sha256": "65a545851cea916aa710798c49c0dc7e33aeee22d84ff15f38345fbd4e7176c4",
+        "bytes": 408
+      },
+      "identity": {
+        "party": "大众银行（香港）有限公司深圳分行及相关责任人",
+        "document_numbers": [],
+        "authority": "深圳金融监管局",
+        "decision_date": "2026年7月3日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "U",
+      "family": "nfra:1263273",
+      "old_candidates": [],
+      "sample_id": "E72",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-25e7438608127be5c4529e9e6c3c7b83-433e497c9f413614abbd0a03",
+      "text": "当事人: 国机财务有限责任公司及相关责任人\r\n主要违法违规事实(案由)\r\n贷款风险分类不准确，未真实反映资产质量\r\n行政处罚内容\r\n对国机财务有限责任公司罚款40万元；对黄亚杰给予警告。\r\n作出处罚决定的机关名称\r\n北京金融监管局\r\n作出处罚决定的日期\r\n2026年8月14日\r\n来源公示\r\n国家金融监督管理总局北京监管局行政处罚信息公开表",
+      "text_sha256": "25e7438608127be5c4529e9e6c3c7b8344d25c11283f398bb06e1f722ccd0958",
+      "file_id": "WEB-25e7438608127be5c4529e9e6c3c7b83",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267961&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1267961.txt",
+        "raw_sha256": "25e7438608127be5c4529e9e6c3c7b8344d25c11283f398bb06e1f722ccd0958",
+        "bytes": 444
+      },
+      "identity": {
+        "party": "国机财务有限责任公司及相关责任人",
+        "document_numbers": [],
+        "authority": "北京金融监管局",
+        "decision_date": "2026年8月14日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "U",
+      "family": "nfra:1267961",
+      "old_candidates": [],
+      "sample_id": "E73",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-a884dfef39de69d4ca66bf9df7427cf4-269b085fd27cda9e95774ce4",
+      "text": "当事人: 扶风县农村信用合作联社及相关责任人员\r\n主要违法违规事实(案由)\r\n贷款三查不尽职\r\n行政处罚内容\r\n对扶风县农村信用合作联社罚款30万元。对马宗明、刘忠绪分别予以警告。\r\n作出处罚决定的机关名称\r\n宝鸡金融监管分局\r\n作出处罚决定的日期\r\n2026年7月17日\r\n来源公示\r\n国家金融监督管理总局宝鸡监管分局行政处罚信息公示表",
+      "text_sha256": "a884dfef39de69d4ca66bf9df7427cf4fc21fb70c391baa17538c611a62f72f4",
+      "file_id": "WEB-a884dfef39de69d4ca66bf9df7427cf4",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264639&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1264639.txt",
+        "raw_sha256": "a884dfef39de69d4ca66bf9df7427cf4fc21fb70c391baa17538c611a62f72f4",
+        "bytes": 441
+      },
+      "identity": {
+        "party": "扶风县农村信用合作联社及相关责任人员",
+        "document_numbers": [],
+        "authority": "宝鸡金融监管分局",
+        "decision_date": "2026年7月17日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "U",
+      "family": "nfra:1264639",
+      "old_candidates": [],
+      "sample_id": "E74",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-f66ea270e00af1faa97928e7d258796d-0334b0b81da477562cfe33a7",
+      "text": "漆楚航：\r\n经查，2018年至2019年你在银行机构工作期间，对贷款管理严重不审慎行为负有责任。根据《中华人民共和国银行业监督管理法》第四十八条第（三）项的规定，我分局拟对你作出禁止从事银行业工作3年的行政处罚。\r\n因采取直接送达、邮寄送达等方式无法送达处罚文书，现依法向你公告送达《国家金融监督管理总局桂林监管分局行政处罚事先告知书》（桂林金罚告字〔2026〕1号）。请在本公告发出之日起三十日内到我分局领取，逾期视为送达。\r\n根据《中华人民共和国行政处罚法》第四十四条、第四十五条的规定，你如对上述处罚意见有异议，可在接到本告知书之日起10个工作日内向我分局提出陈述和申辩；逾期未提出陈述和申辩，视为放弃陈述和申辩的权利。\r\n根据《中华人民共和国行政处罚法》第六十三条、第六十四条，《国家金融监督管理总局行政处罚办法》第五十五条、第五十六条的规定，你享有听证的权利，如要求举行听证，可以在收到本告知书之日起5个工作日内向我分局提交本人签字的听证申请书，说明听证的要求和理由。逾期不提出申请的，视为放弃听证权利。\r\n联系电话：0773-5812362\r\n联系地址：桂林市七星区育才路10号\r\n桂林金融监管分局\r\n2026年8月21日",
+      "text_sha256": "f66ea270e00af1faa97928e7d258796da061dc08fbc14f5b2eae933ac91f746b",
+      "file_id": "WEB-f66ea270e00af1faa97928e7d258796d",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269001&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1269001.txt",
+        "raw_sha256": "f66ea270e00af1faa97928e7d258796da061dc08fbc14f5b2eae933ac91f746b",
+        "bytes": 1443
+      },
+      "identity": {
+        "party": null,
+        "document_numbers": [
+          "桂林金罚告字〔2026〕1号"
+        ],
+        "authority": null,
+        "decision_date": null,
+        "non_penalty_hint": false,
+        "proposed_hint": true
+      },
+      "stratum": "U",
+      "family": "nfra:1269001",
+      "old_candidates": [],
+      "sample_id": "E75",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-3695beb44c50da8e95e664a04e893879-5da9820fd29b9c88e809af8e",
+      "text": "当事人: 中国农业发展银行宿迁市分行及相关责任人员\r\n主要违法违规事实(案由)\r\n未严格落实实贷实付要求、贷后管理不到位\r\n行政处罚内容\r\n对中国农业发展银行宿迁市分行罚款80万元。对杜涛警告并罚款14万元。\r\n作出处罚决定的机关名称\r\n宿迁金融监管分局\r\n作出处罚决定的日期\r\n2026年7月8日\r\n来源公示\r\n国家金融监督管理总局宿迁监管分局行政处罚信息公开表",
+      "text_sha256": "3695beb44c50da8e95e664a04e893879d9ad9a6370b47025303882dbb5acb170",
+      "file_id": "WEB-3695beb44c50da8e95e664a04e893879",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263972&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1263972_r3.txt",
+        "raw_sha256": "3695beb44c50da8e95e664a04e893879d9ad9a6370b47025303882dbb5acb170",
+        "bytes": 478
+      },
+      "identity": {
+        "party": "中国农业发展银行宿迁市分行及相关责任人员",
+        "document_numbers": [],
+        "authority": "宿迁金融监管分局",
+        "decision_date": "2026年7月8日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "U",
+      "family": "nfra:1263972",
+      "old_candidates": [],
+      "sample_id": "E76",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-360c9399e1fa46835df42f3ccfb069ee-270b16a404c15d73a45de3da",
+      "text": "当事人: 中国进出口银行\r\n主要违法违规事实(案由)\r\n国别风险管理不到位、薪酬支付管理不到位等事项\r\n行政处罚内容\r\n对中国进出口银行罚款130万元\r\n作出处罚决定的机关名称\r\n金融监管总局\r\n作出处罚决定的日期\r\n2025年9月12日\r\n来源公示\r\n国家金融监督管理总局行政处罚信息公示列表",
+      "text_sha256": "360c9399e1fa46835df42f3ccfb069eebfe5ba5aff91f2df8818accc905c4c78",
+      "file_id": "WEB-360c9399e1fa46835df42f3ccfb069ee",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1225649&itemId=4113&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4113/1225649_r1.txt",
+        "raw_sha256": "360c9399e1fa46835df42f3ccfb069eebfe5ba5aff91f2df8818accc905c4c78",
+        "bytes": 373
+      },
+      "identity": {
+        "party": "中国进出口银行",
+        "document_numbers": [],
+        "authority": "金融监管总局",
+        "decision_date": "2025年9月12日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "U",
+      "family": "nfra:1225649",
+      "old_candidates": [],
+      "sample_id": "E77",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-8032dd5bbb4d448cba8a4945e7ba55b0-c21496b1146af6ea149e8a3d",
+      "text": "当事人: 光大银行成都分行及其辖属支行、相关责任人员\r\n主要违法违规事实(案由)\r\n员工行为管理不到位，贷款管理不到位\r\n行政处罚内容\r\n对光大银行成都分行罚款155万元，对光大银行成都三洞桥支行罚款35万元，对光大银行成都蜀汉路支行罚款100万元。对米传文、蒋毅、孙萍、彭刚警告并罚款共计25万元。对张可禁止从事银行业工作终身，对朱晓雪禁止从事银行业工作4年，对田嫄禁止从事银行业工作3年，对刘国文禁止从事银行业工作3年。\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局四川监管局\r\n作出处罚决定的日期\r\n2026年7月13日\r\n来源公示\r\n国家金融监督管理总局四川监管局行政处罚信息公开表",
+      "text_sha256": "8032dd5bbb4d448cba8a4945e7ba55b07bcd336fa00bfab426892e55c1f69e1a",
+      "file_id": "WEB-8032dd5bbb4d448cba8a4945e7ba55b0",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264421&itemId=4114&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4114/1264421.txt",
+        "raw_sha256": "8032dd5bbb4d448cba8a4945e7ba55b07bcd336fa00bfab426892e55c1f69e1a",
+        "bytes": 803
+      },
+      "identity": {
+        "party": "光大银行成都分行及其辖属支行、相关责任人员",
+        "document_numbers": [],
+        "authority": "国家金融监督管理总局四川监管局",
+        "decision_date": "2026年7月13日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "U",
+      "family": "nfra:1264421",
+      "old_candidates": [],
+      "sample_id": "E78",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-f76d7f221d186764b211248b1dfcb4f8-fcca36e8783e7190512c429b",
+      "text": "当事人: 奎屯国民村镇银行有限责任公司及相关责任人\r\n主要违法违规事实(案由)\r\n信贷业务管理不到位\r\n行政处罚内容\r\n对该行罚款40万元。对唐洪斌警告\r\n作出处罚决定的机关名称\r\n伊犁金融监管分局\r\n作出处罚决定的日期\r\n2026年7月27日\r\n来源公示\r\n伊犁金融监管分局行政处罚信息公示列表",
+      "text_sha256": "f76d7f221d186764b211248b1dfcb4f8c9ae44ab83bad72341a7ffbceaae4adc",
+      "file_id": "WEB-f76d7f221d186764b211248b1dfcb4f8",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265848&itemId=4115&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4115/1265848_r1.txt",
+        "raw_sha256": "f76d7f221d186764b211248b1dfcb4f8c9ae44ab83bad72341a7ffbceaae4adc",
+        "bytes": 378
+      },
+      "identity": {
+        "party": "奎屯国民村镇银行有限责任公司及相关责任人",
+        "document_numbers": [],
+        "authority": "伊犁金融监管分局",
+        "decision_date": "2026年7月27日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "U",
+      "family": "nfra:1265848",
+      "old_candidates": [],
+      "sample_id": "E79",
+      "stage": "formal"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-6c5061b266d55d7931336afb8d4cccf2-569a9db6cc1d9b0038188093",
+      "text": "当事人: 原工商银行员工李超、易重彬\r\n主要违法违规事实(案由)\r\n利用职务便利违规开展理财业务，严重违反审慎经营规则\r\n行政处罚内容\r\n对李超禁止5年从事银行业工作；对易重彬禁止7年从事银行业工作。\r\n作出处罚决定的机关名称\r\n金融监管总局\r\n作出处罚决定的日期\r\n2025年9月5日\r\n来源公示\r\n国家金融监督管理总局行政处罚信息公示列表",
+      "text_sha256": "6c5061b266d55d7931336afb8d4cccf2a4adcbed8b30f0895ce3875c74077b5c",
+      "file_id": "WEB-6c5061b266d55d7931336afb8d4cccf2",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1224725&itemId=4113&generaltype=9",
+      "origin": "official_crawl",
+      "raw_binding": {
+        "member": "official_crawl/raw/4113/1224725_r1.txt",
+        "raw_sha256": "6c5061b266d55d7931336afb8d4cccf2a4adcbed8b30f0895ce3875c74077b5c",
+        "bytes": 449
+      },
+      "identity": {
+        "party": "原工商银行员工李超、易重彬",
+        "document_numbers": [],
+        "authority": "金融监管总局",
+        "decision_date": "2025年9月5日",
+        "non_penalty_hint": false,
+        "proposed_hint": false
+      },
+      "stratum": "U",
+      "family": "nfra:1224725",
+      "old_candidates": [],
+      "sample_id": "E80",
+      "stage": "formal"
+    }
+  ],
+  "selection": {
+    "targets": {
+      "development": 20,
+      "formal": 80,
+      "development_strata": {
+        "N": 8,
+        "R": 8,
+        "U": 4
+      },
+      "formal_strata": {
+        "N": 32,
+        "R": 32,
+        "U": 16
+      }
+    },
+    "actual_development": {
+      "N": 8,
+      "R": 8,
+      "U": 4
+    },
+    "actual_formal": {
+      "N": 32,
+      "R": 32,
+      "U": 16
+    },
+    "known_families_excluded": 97,
+    "formal_unique_families": 61
+  },
+  "pool_strata": {
+    "R": 680,
+    "U": 83,
+    "N": 87
+  },
+  "human_approved": false
+}

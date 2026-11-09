@@ -1,0 +1,19 @@
+{
+  "schema_version": "finrisk-planned-service-contract/1.0",
+  "binding": {
+    "profile_id": "live-deepseek-flash-planned-v1",
+    "retrieval_profile": "v2-hybrid-flash-v1",
+    "request_admission_policy": "v2-v1",
+    "budget_profile_id": "planned-evidence-loop-v1"
+  },
+  "execution_contract": {
+    "model_wire_sha256": "a990a3aec811fdd426b407be1d6e7c0837b4790e07428035f4a2672171b0506a",
+    "criteria_sha256": "940fbcd1175ab68e67e6d481d36b3de39aef20a0f8a8da5c6463b3c87a4e7499",
+    "prompt_sha256": "06ff2121ce9a71f10ef9931c47b5407a427a444e723c26ac462fecbe9a78a5a7",
+    "tool_contract_sha256": "4c62c5ab22f51beb3c56f6c86b33dff7d4b20e67685a387bb279b10cc2fcf3c4",
+    "request_admission_policy_sha256": "cccfc7e4fe73fc57b65060fb6e5aa65da8acdb88d7b75cc372665259e3f7a508",
+    "budget_profile_sha256": "53b4ade06b9b7db4d8c9b81122ed868cf4d2729134e1c37a134cc8bd9d59b16a",
+    "agent_loop_schema_sha256": "ef9b4f44a1862034965c41375bd9fbe408a85a0297148081d8595ca321403c82",
+    "agent_loop_protocol_sha256": "7c06659608cd046f35f152df1f4550711f110337ec89365f9b07c777b655536b"
+  }
+}

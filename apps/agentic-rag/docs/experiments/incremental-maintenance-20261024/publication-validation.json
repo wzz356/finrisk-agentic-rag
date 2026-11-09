@@ -1,0 +1,18 @@
+{
+  "publication_date": "2026-10-24",
+  "original_executor_unit_tests": {
+    "passed": 54,
+    "failed": 0,
+    "rerun_before_publication": true,
+    "duration_seconds": 0.76
+  },
+  "additional_model_calls": 0,
+  "original_model_results_modified": false,
+  "production_enabled": false,
+  "workflow": "model proposal -> model review -> human approval -> build and validate -> publish",
+  "scope_followup": [
+    "D14",
+    "D20"
+  ],
+  "note": "Unit tests verify engineering behavior, not business accuracy. No new full-model experiment was run during publication."
+}

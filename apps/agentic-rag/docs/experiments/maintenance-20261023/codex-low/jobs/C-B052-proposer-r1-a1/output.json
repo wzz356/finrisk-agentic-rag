@@ -1,0 +1,389 @@
+{
+  "case": {
+    "position": {
+      "claim_type": "fact",
+      "citations": [
+        {
+          "quote": "当事人: 孙中娇（时任中汇人寿保险股份有限公司临沂中心支公司银代部副经理）",
+          "segment_id": "B052:L0001:33b1c13468ee7182:33b1c13468ee7182"
+        }
+      ],
+      "uncertainty": null,
+      "value": "时任中汇人寿保险股份有限公司临沂中心支公司银代部副经理"
+    },
+    "document_number": {
+      "claim_type": "fact",
+      "citations": [
+        {
+          "quote": "临金罚决字〔2026〕29号",
+          "segment_id": "B052:L0003:33b1c13468ee7182:33b1c13468ee7182"
+        }
+      ],
+      "uncertainty": null,
+      "value": "临金罚决字〔2026〕29号"
+    },
+    "decision_date": {
+      "claim_type": "fact",
+      "citations": [
+        {
+          "quote": "2026年8月13日",
+          "segment_id": "B052:L0011:33b1c13468ee7182:33b1c13468ee7182"
+        }
+      ],
+      "uncertainty": null,
+      "value": "2026年8月13日"
+    },
+    "unknowns": {
+      "claim_type": "fact",
+      "citations": [
+        {
+          "quote": "唆使、诱导保险代理人进行违背诚信义务的活动，编制虚假业务财务资料，个人保险代理人给予投保人保险合同约定以外的利益",
+          "segment_id": "B052:L0005:33b1c13468ee7182:33b1c13468ee7182"
+        }
+      ],
+      "uncertainty": "原文未提供法律条款",
+      "value": [
+        "legal_basis"
+      ]
+    },
+    "penalties": {
+      "claim_type": "fact",
+      "citations": [
+        {
+          "quote": "警告并罚款1.7万元",
+          "segment_id": "B052:L0007:33b1c13468ee7182:33b1c13468ee7182"
+        }
+      ],
+      "uncertainty": null,
+      "value": "孙中娇：警告并罚款1.7万元"
+    },
+    "authority": {
+      "claim_type": "fact",
+      "citations": [
+        {
+          "quote": "国家金融监督管理总局临沂监管分局",
+          "segment_id": "B052:L0009:33b1c13468ee7182:33b1c13468ee7182"
+        }
+      ],
+      "uncertainty": null,
+      "value": "国家金融监督管理总局临沂监管分局"
+    },
+    "subject": {
+      "claim_type": "fact",
+      "citations": [
+        {
+          "quote": "当事人: 孙中娇（时任中汇人寿保险股份有限公司临沂中心支公司银代部副经理）",
+          "segment_id": "B052:L0001:33b1c13468ee7182:33b1c13468ee7182"
+        }
+      ],
+      "uncertainty": null,
+      "value": "孙中娇"
+    },
+    "legal_basis": {
+      "claim_type": "fact",
+      "citations": [
+        {
+          "quote": "唆使、诱导保险代理人进行违背诚信义务的活动，编制虚假业务财务资料，个人保险代理人给予投保人保险合同约定以外的利益",
+          "segment_id": "B052:L0005:33b1c13468ee7182:33b1c13468ee7182"
+        }
+      ],
+      "uncertainty": "原文未提供法律条款",
+      "value": null
+    }
+  },
+  "source_coverage": [
+    {
+      "reason": "对应原文明示事实，缺失信息保留未知",
+      "disposition": "mapped",
+      "segment_id": "B052:L0001:33b1c13468ee7182:33b1c13468ee7182",
+      "field_refs": [
+        "case/subject",
+        "case/position",
+        "behaviors/0/role",
+        "behaviors/1/role",
+        "behaviors/2/role"
+      ]
+    },
+    {
+      "reason": "字段标题或来源公示，不新增独立业务事实",
+      "disposition": "not_material",
+      "segment_id": "B052:L0002:33b1c13468ee7182:33b1c13468ee7182",
+      "field_refs": []
+    },
+    {
+      "reason": "对应原文明示事实，缺失信息保留未知",
+      "disposition": "mapped",
+      "segment_id": "B052:L0003:33b1c13468ee7182:33b1c13468ee7182",
+      "field_refs": [
+        "case/document_number"
+      ]
+    },
+    {
+      "reason": "字段标题或来源公示，不新增独立业务事实",
+      "disposition": "not_material",
+      "segment_id": "B052:L0004:33b1c13468ee7182:33b1c13468ee7182",
+      "field_refs": []
+    },
+    {
+      "reason": "对应原文明示事实，缺失信息保留未知",
+      "disposition": "mapped",
+      "segment_id": "B052:L0005:33b1c13468ee7182:33b1c13468ee7182",
+      "field_refs": [
+        "case/legal_basis",
+        "case/unknowns",
+        "behaviors/0/actor",
+        "behaviors/0/action",
+        "behaviors/0/risk_tags",
+        "behaviors/0/unknowns",
+        "behaviors/1/actor",
+        "behaviors/1/action",
+        "behaviors/1/risk_tags",
+        "behaviors/1/unknowns",
+        "behaviors/2/actor",
+        "behaviors/2/action",
+        "behaviors/2/risk_tags",
+        "behaviors/2/unknowns"
+      ]
+    },
+    {
+      "reason": "字段标题或来源公示，不新增独立业务事实",
+      "disposition": "not_material",
+      "segment_id": "B052:L0006:33b1c13468ee7182:33b1c13468ee7182",
+      "field_refs": []
+    },
+    {
+      "reason": "对应原文明示事实，缺失信息保留未知",
+      "disposition": "mapped",
+      "segment_id": "B052:L0007:33b1c13468ee7182:33b1c13468ee7182",
+      "field_refs": [
+        "case/penalties"
+      ]
+    },
+    {
+      "reason": "字段标题或来源公示，不新增独立业务事实",
+      "disposition": "not_material",
+      "segment_id": "B052:L0008:33b1c13468ee7182:33b1c13468ee7182",
+      "field_refs": []
+    },
+    {
+      "reason": "对应原文明示事实，缺失信息保留未知",
+      "disposition": "mapped",
+      "segment_id": "B052:L0009:33b1c13468ee7182:33b1c13468ee7182",
+      "field_refs": [
+        "case/authority"
+      ]
+    },
+    {
+      "reason": "字段标题或来源公示，不新增独立业务事实",
+      "disposition": "not_material",
+      "segment_id": "B052:L0010:33b1c13468ee7182:33b1c13468ee7182",
+      "field_refs": []
+    },
+    {
+      "reason": "对应原文明示事实，缺失信息保留未知",
+      "disposition": "mapped",
+      "segment_id": "B052:L0011:33b1c13468ee7182:33b1c13468ee7182",
+      "field_refs": [
+        "case/decision_date"
+      ]
+    },
+    {
+      "reason": "字段标题或来源公示，不新增独立业务事实",
+      "disposition": "not_material",
+      "segment_id": "B052:L0012:33b1c13468ee7182:33b1c13468ee7182",
+      "field_refs": []
+    },
+    {
+      "reason": "字段标题或来源公示，不新增独立业务事实",
+      "disposition": "not_material",
+      "segment_id": "B052:L0013:33b1c13468ee7182:33b1c13468ee7182",
+      "field_refs": []
+    }
+  ],
+  "reason": "完整原文支持独立处罚记录；以孙中娇及完整文号分别检索均零命中，检索不证明绝对不存在。提出影子新增，区分受罚个人与实施者，三项行为分别记录。",
+  "behaviors": [
+    {
+      "risk_tags": {
+        "claim_type": "derived_summary",
+        "citations": [
+          {
+            "quote": "唆使、诱导保险代理人进行违背诚信义务的活动，编制虚假业务财务资料，个人保险代理人给予投保人保险合同约定以外的利益",
+            "segment_id": "B052:L0005:33b1c13468ee7182:33b1c13468ee7182"
+          }
+        ],
+        "uncertainty": "仅按原文匹配字典，不补充套取资金或诱导投保等条件",
+        "value": []
+      },
+      "unknowns": {
+        "claim_type": "fact",
+        "citations": [
+          {
+            "quote": "唆使、诱导保险代理人进行违背诚信义务的活动，编制虚假业务财务资料，个人保险代理人给予投保人保险合同约定以外的利益",
+            "segment_id": "B052:L0005:33b1c13468ee7182:33b1c13468ee7182"
+          }
+        ],
+        "uncertainty": "原文仅列个人处罚案由，未明确具体实施者，不推定孙中娇亲自实施",
+        "value": [
+          "actor",
+          "具体实施方式"
+        ]
+      },
+      "role": {
+        "claim_type": "fact",
+        "citations": [
+          {
+            "quote": "当事人: 孙中娇（时任中汇人寿保险股份有限公司临沂中心支公司银代部副经理）",
+            "segment_id": "B052:L0001:33b1c13468ee7182:33b1c13468ee7182"
+          }
+        ],
+        "uncertainty": "此处记录孙中娇受罚责任关联，不表示其亲自实施",
+        "value": "responsible_person"
+      },
+      "action": {
+        "claim_type": "fact",
+        "citations": [
+          {
+            "quote": "唆使、诱导保险代理人进行违背诚信义务的活动，编制虚假业务财务资料，个人保险代理人给予投保人保险合同约定以外的利益",
+            "segment_id": "B052:L0005:33b1c13468ee7182:33b1c13468ee7182"
+          }
+        ],
+        "uncertainty": null,
+        "value": "唆使、诱导保险代理人进行违背诚信义务的活动"
+      },
+      "actor": {
+        "claim_type": "fact",
+        "citations": [
+          {
+            "quote": "唆使、诱导保险代理人进行违背诚信义务的活动，编制虚假业务财务资料，个人保险代理人给予投保人保险合同约定以外的利益",
+            "segment_id": "B052:L0005:33b1c13468ee7182:33b1c13468ee7182"
+          }
+        ],
+        "uncertainty": "原文仅列个人处罚案由，未明确具体实施者，不推定孙中娇亲自实施",
+        "value": null
+      }
+    },
+    {
+      "risk_tags": {
+        "claim_type": "derived_summary",
+        "citations": [
+          {
+            "quote": "唆使、诱导保险代理人进行违背诚信义务的活动，编制虚假业务财务资料，个人保险代理人给予投保人保险合同约定以外的利益",
+            "segment_id": "B052:L0005:33b1c13468ee7182:33b1c13468ee7182"
+          }
+        ],
+        "uncertainty": "仅按原文匹配字典，不补充套取资金或诱导投保等条件",
+        "value": []
+      },
+      "unknowns": {
+        "claim_type": "fact",
+        "citations": [
+          {
+            "quote": "唆使、诱导保险代理人进行违背诚信义务的活动，编制虚假业务财务资料，个人保险代理人给予投保人保险合同约定以外的利益",
+            "segment_id": "B052:L0005:33b1c13468ee7182:33b1c13468ee7182"
+          }
+        ],
+        "uncertainty": "原文仅列个人处罚案由，未明确具体实施者，不推定孙中娇亲自实施",
+        "value": [
+          "actor",
+          "具体实施方式"
+        ]
+      },
+      "role": {
+        "claim_type": "fact",
+        "citations": [
+          {
+            "quote": "当事人: 孙中娇（时任中汇人寿保险股份有限公司临沂中心支公司银代部副经理）",
+            "segment_id": "B052:L0001:33b1c13468ee7182:33b1c13468ee7182"
+          }
+        ],
+        "uncertainty": "此处记录孙中娇受罚责任关联，不表示其亲自实施",
+        "value": "responsible_person"
+      },
+      "action": {
+        "claim_type": "fact",
+        "citations": [
+          {
+            "quote": "唆使、诱导保险代理人进行违背诚信义务的活动，编制虚假业务财务资料，个人保险代理人给予投保人保险合同约定以外的利益",
+            "segment_id": "B052:L0005:33b1c13468ee7182:33b1c13468ee7182"
+          }
+        ],
+        "uncertainty": null,
+        "value": "编制虚假业务财务资料"
+      },
+      "actor": {
+        "claim_type": "fact",
+        "citations": [
+          {
+            "quote": "唆使、诱导保险代理人进行违背诚信义务的活动，编制虚假业务财务资料，个人保险代理人给予投保人保险合同约定以外的利益",
+            "segment_id": "B052:L0005:33b1c13468ee7182:33b1c13468ee7182"
+          }
+        ],
+        "uncertainty": "原文仅列个人处罚案由，未明确具体实施者，不推定孙中娇亲自实施",
+        "value": null
+      }
+    },
+    {
+      "risk_tags": {
+        "claim_type": "derived_summary",
+        "citations": [
+          {
+            "quote": "唆使、诱导保险代理人进行违背诚信义务的活动，编制虚假业务财务资料，个人保险代理人给予投保人保险合同约定以外的利益",
+            "segment_id": "B052:L0005:33b1c13468ee7182:33b1c13468ee7182"
+          }
+        ],
+        "uncertainty": "仅按原文匹配字典，不补充套取资金或诱导投保等条件",
+        "value": [
+          "合同外利益"
+        ]
+      },
+      "unknowns": {
+        "claim_type": "fact",
+        "citations": [
+          {
+            "quote": "唆使、诱导保险代理人进行违背诚信义务的活动，编制虚假业务财务资料，个人保险代理人给予投保人保险合同约定以外的利益",
+            "segment_id": "B052:L0005:33b1c13468ee7182:33b1c13468ee7182"
+          }
+        ],
+        "uncertainty": "未提供代理人姓名，不能认定为孙中娇",
+        "value": [
+          "代理人姓名",
+          "利益形式及金额"
+        ]
+      },
+      "role": {
+        "claim_type": "fact",
+        "citations": [
+          {
+            "quote": "当事人: 孙中娇（时任中汇人寿保险股份有限公司临沂中心支公司银代部副经理）",
+            "segment_id": "B052:L0001:33b1c13468ee7182:33b1c13468ee7182"
+          }
+        ],
+        "uncertainty": "此处记录孙中娇受罚责任关联，不表示其亲自实施",
+        "value": "responsible_person"
+      },
+      "action": {
+        "claim_type": "fact",
+        "citations": [
+          {
+            "quote": "唆使、诱导保险代理人进行违背诚信义务的活动，编制虚假业务财务资料，个人保险代理人给予投保人保险合同约定以外的利益",
+            "segment_id": "B052:L0005:33b1c13468ee7182:33b1c13468ee7182"
+          }
+        ],
+        "uncertainty": null,
+        "value": "个人保险代理人给予投保人保险合同约定以外的利益"
+      },
+      "actor": {
+        "claim_type": "fact",
+        "citations": [
+          {
+            "quote": "唆使、诱导保险代理人进行违背诚信义务的活动，编制虚假业务财务资料，个人保险代理人给予投保人保险合同约定以外的利益",
+            "segment_id": "B052:L0005:33b1c13468ee7182:33b1c13468ee7182"
+          }
+        ],
+        "uncertainty": "未提供代理人姓名，不能认定为孙中娇",
+        "value": "个人保险代理人"
+      }
+    }
+  ],
+  "action": "add"
+}

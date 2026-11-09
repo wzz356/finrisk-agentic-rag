@@ -1,0 +1,106 @@
+{
+  "schema": "codex-incremental-review/1",
+  "decision": "approve",
+  "reason": "完整原文仅载信贷及汽车金融管理处罚，未载保险业务违法事实，排除出保险处罚范围有依据；未将有限检索无命中当作全库去重结论，也未更改历史。",
+  "checks": [
+    {
+      "check": "scope",
+      "status": "supported",
+      "reason": "依据实际案由而非银行主体名称判断：全文案由为信贷管理及汽车金融管理，未出现保险销售、代理或其他保险违法事实，exclude_from_penalty恰当。",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb",
+          "segment_id": "FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb:L0003",
+          "quote": "信贷业务管理不到位、汽车金融业务管理不审慎"
+        }
+      ]
+    },
+    {
+      "check": "identity",
+      "status": "supported",
+      "reason": "提案准确识别平安银行盐城分行及相关责任人员；原文机关为盐城金融监管分局，决定日期2026年7月3日，未载文号，未编造身份信息。排除处理无需新建处罚卡。",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb",
+          "segment_id": "FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb:L0001",
+          "quote": "当事人: 平安银行股份有限公司盐城分行及相关责任人员"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb",
+          "segment_id": "FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb:L0007",
+          "quote": "盐城金融监管分局"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb",
+          "segment_id": "FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb:L0009",
+          "quote": "2026年7月3日"
+        }
+      ]
+    },
+    {
+      "check": "facts",
+      "status": "supported",
+      "reason": "提案引用两项管理案由及机构65万元、两人警告并合计罚款10万元，符合原文，未增加保险事实。",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb",
+          "segment_id": "FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb:L0003",
+          "quote": "信贷业务管理不到位、汽车金融业务管理不审慎"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb",
+          "segment_id": "FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb:L0005",
+          "quote": "对平安银行股份有限公司盐城分行罚款65万元。对王玉成、张弦警告并罚款共计10万元。"
+        }
+      ]
+    },
+    {
+      "check": "actors",
+      "status": "supported",
+      "reason": "处罚对象包括机构、王玉成和张弦，但原文没有两人的职务、各自金额及逐项责任，提案将这些保留未知符合证据范围。",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb",
+          "segment_id": "FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb:L0005",
+          "quote": "对平安银行股份有限公司盐城分行罚款65万元。对王玉成、张弦警告并罚款共计10万元。"
+        }
+      ]
+    },
+    {
+      "check": "tags",
+      "status": "supported",
+      "reason": "两项银行管理案由不能直接支持保险风险词典标签，提案不生成保险行为卡和标签合理。",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb",
+          "segment_id": "FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb:L0003",
+          "quote": "信贷业务管理不到位、汽车金融业务管理不审慎"
+        }
+      ]
+    },
+    {
+      "check": "completeness",
+      "status": "supported",
+      "reason": "全文的两项案由均已考虑，未遗漏明确保险业务；文号、职务、个人金额和责任分配的缺失已说明，支持排除且不要求补造卡片。",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb",
+          "segment_id": "FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb:L0003",
+          "quote": "信贷业务管理不到位、汽车金融业务管理不审慎"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb",
+          "segment_id": "FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb:L0005",
+          "quote": "对平安银行股份有限公司盐城分行罚款65万元。对王玉成、张弦警告并罚款共计10万元。"
+        }
+      ]
+    },
+    {
+      "check": "history",
+      "status": "supported",
+      "reason": "独立按机构全称搜索旧库为0命中，仅支持该查询范围未检出。提案明确未确认全库无重复，未提出旧关系、targets或历史改写，因此无需旧源read。",
+      "evidence": []
+    }
+  ],
+  "issues": []
+}

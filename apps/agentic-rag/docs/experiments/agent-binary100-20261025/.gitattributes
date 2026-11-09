@@ -1,0 +1,2 @@
+# Frozen experimental records retain exact bytes, including original whitespace.
+* -text -whitespace

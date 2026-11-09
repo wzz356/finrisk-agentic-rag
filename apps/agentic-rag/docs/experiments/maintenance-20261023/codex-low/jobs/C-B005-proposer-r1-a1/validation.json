@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "action": "no_change",
+  "reason": "完整原文为保险业务转让批复，并非行政处罚；未认定违法行为或处罚，故不新增处罚案例和风险标签。已检索完整文号皖金复〔2026〕135号，旧库零命中仅代表本次查询结果，不证明旧库不存在相关文书。",
+  "production_admission": false,
+  "tool_calls": 2,
+  "output_sha256": "6a410d2ff02eb72e40f340ce099ed84684373adf7813a4e52b93e89046cdeb51"
+}

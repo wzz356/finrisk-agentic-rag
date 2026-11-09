@@ -1,0 +1,3532 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><title>Codex轻度思考维护实测</title><style>body{max-width:1100px;margin:35px auto;font:16px/1.75 system-ui;color:#1d2c3d}h1,h2{color:#18516d}table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccd7df;padding:9px}pre{white-space:pre-wrap;word-break:break-word;background:#f2f5f7;padding:12px}details{border:1px solid #d3dce5;padding:12px;margin:12px 0}.note{background:#fff3d1;padding:16px}a{color:#126387}</style>
+<h1>Codex轻度思考：知识维护小规模实测</h1><p class="note">公开证据副本：本机路径、账户额度、内部运行信息已移除。原始结果和失败状态保留；这是历史实验材料，不会启用正式知识库。<a href="../README.md">阅读实验范围与复核说明</a>。</p>
+<p>角色模型：<b>gpt-6.1-sol / low</b>；原生Codex独立子任务，先2并发，后最多3并发。未调用DeepSeek API。</p>
+<p class="note">结论：本轮在既知问题材料上观察到更好的标签边界与旧案辨认；仍出现引用覆盖失败。模型和执行器同时变化，12份属于故障富集诊断材料，不能宣称整体准确率提升或纯模型胜出。所有结果仅为影子候选。</p>
+<h2>两阶段结果</h2><table><tr><th>阶段</th><th>分母</th><th>结果</th></tr><tr><td>Codex复核DeepSeek既有有效提案</td><td>8</td><td>5份要求修改，3份通过；8份均通过原协议校验。另4份原提案无可审核changeset，未伪造审核结果。</td></tr>
+<tr><td>Codex独立提议＋审核</td><td>12</td><td>模型批准（未发布） 7份；格式/覆盖校验修正耗尽 1份；提议不新增（未经Reviewer） 4份</td></tr></table>
+<p>共30个独立审查角色任务，87次证据工具操作；3次格式修正，其中2份恢复通过，B059仍失败。主机观察窗口约23.6分钟，含排队、协调与校验，不用于纯推理延迟对照。</p>
+<h2>额度与执行方式</h2><p>原生角色没有可用的逐任务token账单，不能换算API费用。个人账户额度观察未公开。独立CLI探针拒绝该账户的指定模型，实际任务改用本会话支持的同名原生模型覆盖，未悄悄切换模型。</p>
+<h2>关键证据</h2><ul><li>B002/B011/B052：Codex Reviewer指出此前被批准的具体标签要件缺失；独立提案也未重复这些肯定标签。</li><li>B090/B093/B100：Proposer读取正确旧源全文，区分文号地区前缀，选择不新增。原no_change路径没有Reviewer复审，这是边界。</li><li>B003：区分不同年度、不同处罚决定，保留旧历史而提出新案；B005：业务转让批复不作为处罚入库。</li><li>B059：文号本身正确，但将公示标题另列mapped而未提供对应段引文，原协议拒绝。一次修正额度耗尽后停止。</li><li>仅替换Reviewer仍会漏旧案：R-B090只查首5/50；C-B090追加“681”查询再完整读旧案才识别。身份匹配、候选补看应成为明确的程序门控。</li></ul>
+<h2>影子资产与正式库保护</h2>
+<p>新影子视图保留9,640份旧来源，加入7份审核后的来源、7张案例卡、13张行为卡。全部新增原文读回一致。旧实验结果、账本及正式资产共1343个文件哈希不变。这里只构建词法来源检索/读回和知识卡，没有新生产BGE索引，也未改变当前版本指针。</p>
+<p><a href="experiment-metrics.json">指标与边界</a> · <a href="source-card-audit.json">原文/知识卡复核</a> · <a href="duplicate-readback-checks.json">重复案读回证据</a> · <a href="old-assets-after.json">旧资产保护</a> · <a href="shadow/CodexPR/manifest.json">影子清单</a></p>
+<h2>逐案对照</h2><table><tr><th>材料</th><th>DeepSeek原轮状态</th><th>Codex完整流程</th></tr>
+<tr><td><a href="#B002">B002</a></td><td>experiment_protocol_approved_not_applied</td><td>模型批准（未发布）</td></tr>
+<tr><td><a href="#B011">B011</a></td><td>experiment_protocol_approved_not_applied</td><td>模型批准（未发布）</td></tr>
+<tr><td><a href="#B052">B052</a></td><td>held</td><td>模型批准（未发布）</td></tr>
+<tr><td><a href="#B059">B059</a></td><td>reviewer_requested_changes</td><td>格式/覆盖校验修正耗尽</td></tr>
+<tr><td><a href="#B020">B020</a></td><td>held</td><td>模型批准（未发布）</td></tr>
+<tr><td><a href="#B090">B090</a></td><td>budget_stopped</td><td>提议不新增（未经Reviewer）</td></tr>
+<tr><td><a href="#B093">B093</a></td><td>format_repair_exhausted</td><td>提议不新增（未经Reviewer）</td></tr>
+<tr><td><a href="#B100">B100</a></td><td>format_repair_exhausted</td><td>提议不新增（未经Reviewer）</td></tr>
+<tr><td><a href="#B003">B003</a></td><td>proposed_hold_unreviewed</td><td>模型批准（未发布）</td></tr>
+<tr><td><a href="#B005">B005</a></td><td>proposed_no_change_unreviewed</td><td>提议不新增（未经Reviewer）</td></tr>
+<tr><td><a href="#B009">B009</a></td><td>experiment_protocol_approved_not_applied</td><td>模型批准（未发布）</td></tr>
+<tr><td><a href="#B039">B039</a></td><td>experiment_protocol_approved_not_applied</td><td>模型批准（未发布）</td></tr>
+</table>
+<details id="B002"><summary>B002 · 国家金融监督管理总局德阳监管分局行政处罚信息公开表 · 模型批准（未发布）</summary>
+<h3>原文</h3><pre>当事人: 刘义键（时任中国太平洋财产保险股份有限公司德阳中心支公司农险部经理）
+
+行政处罚决定书文号
+
+德金监罚决字〔2026〕11号
+
+主要违法违规事实(案由)
+
+编制虚假资料虚列费用
+
+行政处罚内容
+
+警告并处罚款人民币1.5万元
+
+作出处罚决定的机关名称
+
+国家金融监督管理总局德阳监管分局
+
+作出处罚决定的日期
+
+2026年8月24日
+
+来源公示
+
+国家金融监督管理总局德阳监管分局行政处罚信息公开表</pre>
+<h3>DeepSeek初稿</h3><pre>{
+  &quot;action&quot;: &quot;add&quot;,
+  &quot;reason&quot;: &quot;原文为针对个人刘义键的行政处罚公开表，案由为编制虚假资料虚列费用，处罚为警告并罚款1.5万元；文号、日期、机关、职务均有原文支撑，法律依据未载明。&quot;,
+  &quot;case&quot;: {
+    &quot;subject&quot;: &quot;刘义键&quot;,
+    &quot;document_number&quot;: &quot;德金监罚决字〔2026〕11号&quot;,
+    &quot;decision_date&quot;: &quot;2026年8月24日&quot;,
+    &quot;authority&quot;: &quot;国家金融监督管理总局德阳监管分局&quot;,
+    &quot;position&quot;: &quot;中国太平洋财产保险股份有限公司德阳中心支公司农险部经理&quot;,
+    &quot;legal_basis&quot;: null,
+    &quot;penalties&quot;: &quot;警告并处罚款人民币1.5万元&quot;,
+    &quot;unknowns&quot;: [
+      &quot;legal_basis&quot;
+    ]
+  },
+  &quot;behaviors&quot;: [
+    {
+      &quot;actor&quot;: &quot;刘义键&quot;,
+      &quot;role&quot;: &quot;responsible_person&quot;,
+      &quot;action&quot;: &quot;编制虚假资料虚列费用&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;虚列费用套取资金&quot;
+      ],
+      &quot;unknowns&quot;: []
+    }
+  ]
+}</pre>
+<h3>Codex仅复核组：意见</h3><pre>{
+  &quot;omission_check_completed&quot;: true,
+  &quot;claim_checks&quot;: [
+    {
+      &quot;comment&quot;: &quot;原文明确载明，值及事实类型与引文相符。&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;claim_id&quot;: &quot;claim:batch100-B002:case:subject&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B002:L0001:00ccffe5776bd7da:00ccffe5776bd7da&quot;,
+          &quot;quote&quot;: &quot;当事人: 刘义键（时任中国太平洋财产保险股份有限公司德阳中心支公司农险部经理）&quot;
+        }
+      ]
+    },
+    {
+      &quot;comment&quot;: &quot;原文明确载明，值及事实类型与引文相符。&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;claim_id&quot;: &quot;claim:batch100-B002:case:document_number&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B002:L0003:00ccffe5776bd7da:00ccffe5776bd7da&quot;,
+          &quot;quote&quot;: &quot;德金监罚决字〔2026〕11号&quot;
+        }
+      ]
+    },
+    {
+      &quot;comment&quot;: &quot;原文明确载明，值及事实类型与引文相符。&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;claim_id&quot;: &quot;claim:batch100-B002:case:decision_date&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B002:L0011:00ccffe5776bd7da:00ccffe5776bd7da&quot;,
+          &quot;quote&quot;: &quot;2026年8月24日&quot;
+        }
+      ]
+    },
+    {
+      &quot;comment&quot;: &quot;原文明确载明，值及事实类型与引文相符。&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;claim_id&quot;: &quot;claim:batch100-B002:case:authority&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B002:L0009:00ccffe5776bd7da:00ccffe5776bd7da&quot;,
+          &quot;quote&quot;: &quot;国家金融监督管理总局德阳监管分局&quot;
+        }
+      ]
+    },
+    {
+      &quot;comment&quot;: &quot;原文明确载明，值及事实类型与引文相符。&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;claim_id&quot;: &quot;claim:batch100-B002:case:position&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B002:L0001:00ccffe5776bd7da:00ccffe5776bd7da&quot;,
+          &quot;quote&quot;: &quot;时任中国太平洋财产保险股份有限公司德阳中心支公司农险部经理&quot;
+        }
+      ]
+    },
+    {
+      &quot;comment&quot;: &quot;完整原文未载具体法律依据，null及不确定性说明适当。&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;claim_id&quot;: &quot;claim:batch100-B002:case:legal_basis&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B002:L0005:00ccffe5776bd7da:00ccffe5776bd7da&quot;,
+          &quot;quote&quot;: &quot;编制虚假资料虚列费用&quot;
+        }
+      ]
+    },
+    {
+      &quot;comment&quot;: &quot;原文明确载明，值及事实类型与引文相符。&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;claim_id&quot;: &quot;claim:batch100-B002:case:penalties&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B002:L0007:00ccffe5776bd7da:00ccffe5776bd7da&quot;,
+          &quot;quote&quot;: &quot;警告并处罚款人民币1.5万元&quot;
+        }
+      ]
+    },
+    {
+      &quot;comment&quot;: &quot;法律依据确实缺失。&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;claim_id&quot;: &quot;claim:batch100-B002:case:unknowns&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B002:L0005:00ccffe5776bd7da:00ccffe5776bd7da&quot;,
+          &quot;quote&quot;: &quot;编制虚假资料虚列费用&quot;
+        }
+      ]
+    },
+    {
+      &quot;comment&quot;: &quot;原文仅载处罚当事人，不能证明其亲自实施该行为。&quot;,
+      &quot;verdict&quot;: &quot;unsupported&quot;,
+      &quot;claim_id&quot;: &quot;claim:batch100-B002:behaviors:0:actor&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B002:L0001:00ccffe5776bd7da:00ccffe5776bd7da&quot;,
+          &quot;quote&quot;: &quot;当事人: 刘义键（时任中国太平洋财产保险股份有限公司德阳中心支公司农险部经理）&quot;
+        }
+      ]
+    },
+    {
+      &quot;comment&quot;: &quot;个人作为该案受罚负责人及其时任职务有原文支持；不据此推断亲自实施。&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;claim_id&quot;: &quot;claim:batch100-B002:behaviors:0:role&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B002:L0001:00ccffe5776bd7da:00ccffe5776bd7da&quot;,
+          &quot;quote&quot;: &quot;当事人: 刘义键（时任中国太平洋财产保险股份有限公司德阳中心支公司农险部经理）&quot;
+        }
+      ]
+    },
+    {
+      &quot;comment&quot;: &quot;原文明确载明，值及事实类型与引文相符。&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;claim_id&quot;: &quot;claim:batch100-B002:behaviors:0:action&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B002:L0005:00ccffe5776bd7da:00ccffe5776bd7da&quot;,
+          &quot;quote&quot;: &quot;编制虚假资料虚列费用&quot;
+        }
+      ]
+    },
+    {
+      &quot;comment&quot;: &quot;字典要求通过虚假列支费用套取资金；原文仅载虚列费用，未载套取资金。&quot;,
+      &quot;verdict&quot;: &quot;unsupported&quot;,
+      &quot;claim_id&quot;: &quot;claim:batch100-B002:behaviors:0:risk_tags&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B002:L0005:00ccffe5776bd7da:00ccffe5776bd7da&quot;,
+          &quot;quote&quot;: &quot;编制虚假资料虚列费用&quot;
+        }
+      ]
+    },
+    {
+      &quot;comment&quot;: &quot;实施主体及是否套取资金未知，空列表且无不确定性遗漏实质限制。&quot;,
+      &quot;verdict&quot;: &quot;unsupported&quot;,
+      &quot;claim_id&quot;: &quot;claim:batch100-B002:behaviors:0:unknowns&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B002:L0005:00ccffe5776bd7da:00ccffe5776bd7da&quot;,
+          &quot;quote&quot;: &quot;编制虚假资料虚列费用&quot;
+        }
+      ]
+    }
+  ],
+  &quot;decision&quot;: &quot;request_changes&quot;,
+  &quot;issues&quot;: [
+    {
+      &quot;issue_id&quot;: &quot;issue-actor&quot;,
+      &quot;change_request&quot;: &quot;实施主体未明，应保留未知并写明不确定性；不得仅由个人受罚认定其亲自实施，也不得改填机构。&quot;,
+      &quot;pointer&quot;: &quot;/actor&quot;,
+      &quot;diff_line&quot;: null,
+      &quot;claim_id&quot;: &quot;claim:batch100-B002:behaviors:0:actor&quot;,
+      &quot;severity&quot;: &quot;blocking&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B002:L0001:00ccffe5776bd7da:00ccffe5776bd7da&quot;,
+          &quot;quote&quot;: &quot;当事人: 刘义键（时任中国太平洋财产保险股份有限公司德阳中心支公司农险部经理）&quot;
+        }
+      ],
+      &quot;operation_id&quot;: &quot;op:batch100-B002:behaviors:0&quot;,
+      &quot;category&quot;: &quot;actor&quot;
+    },
+    {
+      &quot;issue_id&quot;: &quot;issue-risk_tags&quot;,
+      &quot;change_request&quot;: &quot;移除缺乏套取资金要件的标签；可保留0标签，不得补造资金用途或目的。&quot;,
+      &quot;pointer&quot;: &quot;/risk_tags&quot;,
+      &quot;diff_line&quot;: null,
+      &quot;claim_id&quot;: &quot;claim:batch100-B002:behaviors:0:risk_tags&quot;,
+      &quot;severity&quot;: &quot;blocking&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B002:L0005:00ccffe5776bd7da:00ccffe5776bd7da&quot;,
+          &quot;quote&quot;: &quot;编制虚假资料虚列费用&quot;
+        }
+      ],
+      &quot;operation_id&quot;: &quot;op:batch100-B002:behaviors:0&quot;,
+      &quot;category&quot;: &quot;qualifier&quot;
+    },
+    {
+      &quot;issue_id&quot;: &quot;issue-unknowns&quot;,
+      &quot;change_request&quot;: &quot;补充实施主体、套取资金情况等原文未载条件的未知及uncertainty说明。&quot;,
+      &quot;pointer&quot;: &quot;/unknowns&quot;,
+      &quot;diff_line&quot;: null,
+      &quot;claim_id&quot;: &quot;claim:batch100-B002:behaviors:0:unknowns&quot;,
+      &quot;severity&quot;: &quot;blocking&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B002:L0005:00ccffe5776bd7da:00ccffe5776bd7da&quot;,
+          &quot;quote&quot;: &quot;编制虚假资料虚列费用&quot;
+        }
+      ],
+      &quot;operation_id&quot;: &quot;op:batch100-B002:behaviors:0&quot;,
+      &quot;category&quot;: &quot;omission&quot;
+    }
+  ]
+}</pre>
+<h3>Codex完整流程：提案/不新增理由</h3><pre>{
+  &quot;action&quot;: &quot;add&quot;,
+  &quot;reason&quot;: &quot;完整原文支持独立处罚事实；自行检索完整文号零命中，未发现重复但零命中不证明不存在。保留法律依据、实施主体及套取资金条件未知，提出新增。&quot;,
+  &quot;case&quot;: {
+    &quot;subject&quot;: &quot;刘义键&quot;,
+    &quot;legal_basis&quot;: null,
+    &quot;decision_date&quot;: &quot;2026年8月24日&quot;,
+    &quot;authority&quot;: &quot;国家金融监督管理总局德阳监管分局&quot;,
+    &quot;unknowns&quot;: [
+      &quot;legal_basis&quot;
+    ],
+    &quot;position&quot;: &quot;时任中国太平洋财产保险股份有限公司德阳中心支公司农险部经理&quot;,
+    &quot;penalties&quot;: &quot;刘义键：警告并处罚款人民币1.5万元&quot;,
+    &quot;document_number&quot;: &quot;德金监罚决字〔2026〕11号&quot;
+  },
+  &quot;behaviors&quot;: [
+    {
+      &quot;unknowns&quot;: [
+        &quot;actor&quot;,
+        &quot;资金用途&quot;,
+        &quot;实施分工&quot;
+      ],
+      &quot;role&quot;: &quot;unspecified&quot;,
+      &quot;action&quot;: &quot;编制虚假资料虚列费用&quot;,
+      &quot;actor&quot;: null,
+      &quot;risk_tags&quot;: []
+    }
+  ]
+}</pre>
+<h3>机械失败记录</h3><pre>[
+  {
+    &quot;job&quot;: &quot;C-B002-proposer-r1-a1&quot;,
+    &quot;valid&quot;: false,
+    &quot;code&quot;: &quot;MODEL_SCHEMA&quot;,
+    &quot;field&quot;: &quot;/source_coverage/1/field_refs&quot;,
+    &quot;message&quot;: &quot;MODEL_SCHEMA: /source_coverage/1/field_refs&quot;,
+    &quot;production_admission&quot;: false
+  }
+]</pre>
+<p><a href="jobs/C-B002-reviewer-r1-a1/output.json">最终角色输出</a></p></details>
+<details id="B011"><summary>B011 · 国家金融监督管理总局潍坊监管分局行政处罚信息公开表（潍金罚决字〔2026〕15号-16号 ） · 模型批准（未发布）</summary>
+<h3>原文</h3><pre>当事人: 山东汇联保险经纪有限公司
+
+行政处罚决定书文号
+
+潍金罚决字〔2026〕15号
+
+主要违法违规事实(案由)
+
+与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告
+
+行政处罚内容
+
+通报批评，警告，罚款3.5万元
+
+作出处罚决定的机关名称
+
+国家金融监督管理总局潍坊监管分局
+
+作出处罚决定的日期
+
+2026年8月21日
+
+来源公示
+
+国家金融监督管理总局潍坊监管分局行政处罚信息公开表（潍金罚决字〔2026〕15号-16号 ）</pre>
+<h3>DeepSeek初稿</h3><pre>{
+  &quot;action&quot;: &quot;add&quot;,
+  &quot;reason&quot;: &quot;公开处罚决定书显示山东汇联保险经纪有限公司因与非法从事保险中介业务的机构发生保险经纪业务往来、未按规定建立业务档案、未按规定进行公示公告被处罚；旧库检索未命中该主体或该文号，检索到的2024年15号文书主体与文号均不同，不构成冲突。&quot;,
+  &quot;case&quot;: {
+    &quot;subject&quot;: &quot;山东汇联保险经纪有限公司&quot;,
+    &quot;document_number&quot;: &quot;潍金罚决字〔2026〕15号&quot;,
+    &quot;decision_date&quot;: &quot;2026年8月21日&quot;,
+    &quot;authority&quot;: &quot;国家金融监督管理总局潍坊监管分局&quot;,
+    &quot;position&quot;: null,
+    &quot;legal_basis&quot;: null,
+    &quot;penalties&quot;: &quot;通报批评，警告，罚款3.5万元&quot;,
+    &quot;unknowns&quot;: [
+      &quot;position&quot;,
+      &quot;legal_basis&quot;
+    ]
+  },
+  &quot;behaviors&quot;: [
+    {
+      &quot;actor&quot;: &quot;山东汇联保险经纪有限公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;与非法从事保险中介业务的机构发生保险经纪业务往来&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;委托无资质机构销售&quot;
+      ],
+      &quot;unknowns&quot;: []
+    },
+    {
+      &quot;actor&quot;: &quot;山东汇联保险经纪有限公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;未按规定建立业务档案&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;其他&quot;
+      ],
+      &quot;unknowns&quot;: []
+    },
+    {
+      &quot;actor&quot;: &quot;山东汇联保险经纪有限公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;未按规定进行公示、公告&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;其他&quot;
+      ],
+      &quot;unknowns&quot;: []
+    }
+  ]
+}</pre>
+<h3>Codex仅复核组：意见</h3><pre>{
+  &quot;decision&quot;: &quot;request_changes&quot;,
+  &quot;claim_checks&quot;: [
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B011:case:subject&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B011:L0001:339151b595131ad2:339151b595131ad2&quot;,
+          &quot;quote&quot;: &quot;当事人: 山东汇联保险经纪有限公司&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文及引文支持该事实、主体归属或保留未知；类型适当。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B011:case:document_number&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B011:L0003:339151b595131ad2:339151b595131ad2&quot;,
+          &quot;quote&quot;: &quot;潍金罚决字〔2026〕15号&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文及引文支持该事实、主体归属或保留未知；类型适当。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B011:case:decision_date&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B011:L0011:339151b595131ad2:339151b595131ad2&quot;,
+          &quot;quote&quot;: &quot;2026年8月21日&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文及引文支持该事实、主体归属或保留未知；类型适当。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B011:case:authority&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B011:L0009:339151b595131ad2:339151b595131ad2&quot;,
+          &quot;quote&quot;: &quot;国家金融监督管理总局潍坊监管分局&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文及引文支持该事实、主体归属或保留未知；类型适当。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B011:case:position&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B011:L0001:339151b595131ad2:339151b595131ad2&quot;,
+          &quot;quote&quot;: &quot;当事人: 山东汇联保险经纪有限公司&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文及引文支持该事实、主体归属或保留未知；类型适当。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B011:case:legal_basis&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B011:L0005:339151b595131ad2:339151b595131ad2&quot;,
+          &quot;quote&quot;: &quot;与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文及引文支持该事实、主体归属或保留未知；类型适当。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B011:case:penalties&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B011:L0007:339151b595131ad2:339151b595131ad2&quot;,
+          &quot;quote&quot;: &quot;通报批评，警告，罚款3.5万元&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文及引文支持该事实、主体归属或保留未知；类型适当。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B011:case:unknowns&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B011:L0001:339151b595131ad2:339151b595131ad2&quot;,
+          &quot;quote&quot;: &quot;当事人: 山东汇联保险经纪有限公司&quot;
+        },
+        {
+          &quot;segment_id&quot;: &quot;B011:L0005:339151b595131ad2:339151b595131ad2&quot;,
+          &quot;quote&quot;: &quot;与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文及引文支持该事实、主体归属或保留未知；类型适当。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B011:behaviors:0:actor&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B011:L0001:339151b595131ad2:339151b595131ad2&quot;,
+          &quot;quote&quot;: &quot;当事人: 山东汇联保险经纪有限公司&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文及引文支持该事实、主体归属或保留未知；类型适当。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B011:behaviors:0:role&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B011:L0001:339151b595131ad2:339151b595131ad2&quot;,
+          &quot;quote&quot;: &quot;当事人: 山东汇联保险经纪有限公司&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文及引文支持该事实、主体归属或保留未知；类型适当。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B011:behaviors:0:action&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B011:L0005:339151b595131ad2:339151b595131ad2&quot;,
+          &quot;quote&quot;: &quot;与非法从事保险中介业务的机构发生保险经纪业务往来&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文及引文支持该事实、主体归属或保留未知；类型适当。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B011:behaviors:0:risk_tags&quot;,
+      &quot;verdict&quot;: &quot;unsupported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B011:L0005:339151b595131ad2:339151b595131ad2&quot;,
+          &quot;quote&quot;: &quot;与非法从事保险中介业务的机构发生保险经纪业务往来&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;业务往来不能证明委托该机构从事保险销售，缺少字典要求的委托及销售要件。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B011:behaviors:0:unknowns&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B011:L0005:339151b595131ad2:339151b595131ad2&quot;,
+          &quot;quote&quot;: &quot;与非法从事保险中介业务的机构发生保险经纪业务往来&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文及引文支持该事实、主体归属或保留未知；类型适当。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B011:behaviors:1:actor&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B011:L0001:339151b595131ad2:339151b595131ad2&quot;,
+          &quot;quote&quot;: &quot;当事人: 山东汇联保险经纪有限公司&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文及引文支持该事实、主体归属或保留未知；类型适当。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B011:behaviors:1:role&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B011:L0001:339151b595131ad2:339151b595131ad2&quot;,
+          &quot;quote&quot;: &quot;当事人: 山东汇联保险经纪有限公司&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文及引文支持该事实、主体归属或保留未知；类型适当。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B011:behaviors:1:action&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B011:L0005:339151b595131ad2:339151b595131ad2&quot;,
+          &quot;quote&quot;: &quot;未按规定建立业务档案&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文及引文支持该事实、主体归属或保留未知；类型适当。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B011:behaviors:1:risk_tags&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B011:L0005:339151b595131ad2:339151b595131ad2&quot;,
+          &quot;quote&quot;: &quot;未按规定建立业务档案&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文及引文支持该事实、主体归属或保留未知；类型适当。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B011:behaviors:1:unknowns&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B011:L0005:339151b595131ad2:339151b595131ad2&quot;,
+          &quot;quote&quot;: &quot;未按规定建立业务档案&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文及引文支持该事实、主体归属或保留未知；类型适当。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B011:behaviors:2:actor&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B011:L0001:339151b595131ad2:339151b595131ad2&quot;,
+          &quot;quote&quot;: &quot;当事人: 山东汇联保险经纪有限公司&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文及引文支持该事实、主体归属或保留未知；类型适当。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B011:behaviors:2:role&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B011:L0001:339151b595131ad2:339151b595131ad2&quot;,
+          &quot;quote&quot;: &quot;当事人: 山东汇联保险经纪有限公司&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文及引文支持该事实、主体归属或保留未知；类型适当。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B011:behaviors:2:action&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B011:L0005:339151b595131ad2:339151b595131ad2&quot;,
+          &quot;quote&quot;: &quot;未按规定进行公示、公告&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文及引文支持该事实、主体归属或保留未知；类型适当。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B011:behaviors:2:risk_tags&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B011:L0005:339151b595131ad2:339151b595131ad2&quot;,
+          &quot;quote&quot;: &quot;未按规定进行公示、公告&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文及引文支持该事实、主体归属或保留未知；类型适当。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B011:behaviors:2:unknowns&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B011:L0005:339151b595131ad2:339151b595131ad2&quot;,
+          &quot;quote&quot;: &quot;未按规定进行公示、公告&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文及引文支持该事实、主体归属或保留未知；类型适当。&quot;
+    }
+  ],
+  &quot;omission_check_completed&quot;: true,
+  &quot;issues&quot;: [
+    {
+      &quot;issue_id&quot;: &quot;B011-tag-1&quot;,
+      &quot;severity&quot;: &quot;blocking&quot;,
+      &quot;category&quot;: &quot;overreach&quot;,
+      &quot;operation_id&quot;: &quot;op:batch100-B011:behaviors:0&quot;,
+      &quot;claim_id&quot;: &quot;claim:batch100-B011:behaviors:0:risk_tags&quot;,
+      &quot;pointer&quot;: &quot;/risk_tags&quot;,
+      &quot;diff_line&quot;: null,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B011:L0005:339151b595131ad2:339151b595131ad2&quot;,
+          &quot;quote&quot;: &quot;与非法从事保险中介业务的机构发生保险经纪业务往来&quot;
+        }
+      ],
+      &quot;change_request&quot;: &quot;撤除“委托无资质机构销售”标签，原文仅证明与非法中介机构发生经纪业务往来，未证明委托销售；可保留零标签或依字典审慎采用其他。三项独立行为已覆盖，处罚及法律依据归case正确。独立检索主体和完整文号均零命中，仅支持当前检索未命中，不能证明绝对不存在；不提出新增记录建议。&quot;
+    }
+  ]
+}</pre>
+<h3>Codex完整流程：提案/不新增理由</h3><pre>{
+  &quot;action&quot;: &quot;add&quot;,
+  &quot;reason&quot;: &quot;完整原文支持独立机构处罚及三项行为；主体和完整文号分别检索冻结旧库均零命中，未发现重复证据，但零命中不证明绝对不存在。仅提出新增影子提案，缺失法律依据和职务保留未知。&quot;,
+  &quot;case&quot;: {
+    &quot;legal_basis&quot;: null,
+    &quot;document_number&quot;: &quot;潍金罚决字〔2026〕15号&quot;,
+    &quot;authority&quot;: &quot;国家金融监督管理总局潍坊监管分局&quot;,
+    &quot;penalties&quot;: &quot;通报批评，警告，罚款3.5万元&quot;,
+    &quot;unknowns&quot;: [
+      &quot;position&quot;,
+      &quot;legal_basis&quot;
+    ],
+    &quot;decision_date&quot;: &quot;2026年8月21日&quot;,
+    &quot;subject&quot;: &quot;山东汇联保险经纪有限公司&quot;,
+    &quot;position&quot;: null
+  },
+  &quot;behaviors&quot;: [
+    {
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;unknowns&quot;: [
+        &quot;具体实施细节&quot;
+      ],
+      &quot;action&quot;: &quot;与非法从事保险中介业务的机构发生保险经纪业务往来&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;其他&quot;
+      ],
+      &quot;actor&quot;: &quot;山东汇联保险经纪有限公司&quot;
+    },
+    {
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;unknowns&quot;: [
+        &quot;具体实施细节&quot;
+      ],
+      &quot;action&quot;: &quot;未按规定建立业务档案&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;其他&quot;
+      ],
+      &quot;actor&quot;: &quot;山东汇联保险经纪有限公司&quot;
+    },
+    {
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;unknowns&quot;: [
+        &quot;具体实施细节&quot;
+      ],
+      &quot;action&quot;: &quot;未按规定进行公示、公告&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;其他&quot;
+      ],
+      &quot;actor&quot;: &quot;山东汇联保险经纪有限公司&quot;
+    }
+  ]
+}</pre>
+<h3>机械失败记录</h3><pre>[
+  {
+    &quot;job&quot;: &quot;C-B011-proposer-r1-a1&quot;,
+    &quot;valid&quot;: false,
+    &quot;code&quot;: &quot;MODEL_SCHEMA&quot;,
+    &quot;field&quot;: &quot;/source_coverage/1/field_refs&quot;,
+    &quot;message&quot;: &quot;MODEL_SCHEMA: /source_coverage/1/field_refs&quot;,
+    &quot;production_admission&quot;: false
+  }
+]</pre>
+<p><a href="jobs/C-B011-reviewer-r1-a1/output.json">最终角色输出</a></p></details>
+<details id="B052"><summary>B052 · 国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕28号-30号） · 模型批准（未发布）</summary>
+<h3>原文</h3><pre>当事人: 孙中娇（时任中汇人寿保险股份有限公司临沂中心支公司银代部副经理）
+
+行政处罚决定书文号
+
+临金罚决字〔2026〕29号
+
+主要违法违规事实(案由)
+
+唆使、诱导保险代理人进行违背诚信义务的活动，编制虚假业务财务资料，个人保险代理人给予投保人保险合同约定以外的利益
+
+行政处罚内容
+
+警告并罚款1.7万元
+
+作出处罚决定的机关名称
+
+国家金融监督管理总局临沂监管分局
+
+作出处罚决定的日期
+
+2026年8月13日
+
+来源公示
+
+国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕28号-30号）</pre>
+<h3>DeepSeek初稿</h3><pre>{
+  &quot;action&quot;: &quot;add&quot;,
+  &quot;reason&quot;: &quot;公开处罚决定书完整载明当事人、文号、日期、机关、职务、案由与处罚；旧库两次精确检索均0命中，零命中不证明旧库不存在，但本件证据完整且无冲突，故新增。&quot;,
+  &quot;case&quot;: {
+    &quot;subject&quot;: &quot;孙中娇&quot;,
+    &quot;document_number&quot;: &quot;临金罚决字〔2026〕29号&quot;,
+    &quot;decision_date&quot;: &quot;2026年8月13日&quot;,
+    &quot;authority&quot;: &quot;国家金融监督管理总局临沂监管分局&quot;,
+    &quot;position&quot;: &quot;中汇人寿保险股份有限公司临沂中心支公司银代部副经理&quot;,
+    &quot;legal_basis&quot;: null,
+    &quot;penalties&quot;: &quot;警告并罚款1.7万元&quot;,
+    &quot;unknowns&quot;: [
+      &quot;legal_basis&quot;
+    ]
+  },
+  &quot;behaviors&quot;: [
+    {
+      &quot;actor&quot;: &quot;孙中娇&quot;,
+      &quot;role&quot;: &quot;responsible_person&quot;,
+      &quot;action&quot;: &quot;唆使、诱导保险代理人进行违背诚信义务的活动&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;诱导投保&quot;
+      ],
+      &quot;unknowns&quot;: [
+        &quot;具体唆使诱导的对象、方式与涉及产品未载明&quot;
+      ]
+    },
+    {
+      &quot;actor&quot;: &quot;孙中娇&quot;,
+      &quot;role&quot;: &quot;responsible_person&quot;,
+      &quot;action&quot;: &quot;编制虚假业务财务资料&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;虚列费用套取资金&quot;
+      ],
+      &quot;unknowns&quot;: [
+        &quot;虚假资料的具体种类、金额与用途未载明&quot;
+      ]
+    },
+    {
+      &quot;actor&quot;: null,
+      &quot;role&quot;: &quot;unspecified&quot;,
+      &quot;action&quot;: &quot;个人保险代理人给予投保人保险合同约定以外的利益&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;合同外利益&quot;
+      ],
+      &quot;unknowns&quot;: [
+        &quot;actor&quot;,
+        &quot;给予利益的具体形式与金额未载明&quot;
+      ]
+    }
+  ]
+}</pre>
+<h3>Codex仅复核组：意见</h3><pre>{
+  &quot;decision&quot;: &quot;request_changes&quot;,
+  &quot;issues&quot;: [
+    {
+      &quot;issue_id&quot;: &quot;tag-0&quot;,
+      &quot;claim_id&quot;: &quot;claim:batch100-B052:behaviors:0:risk_tags&quot;,
+      &quot;pointer&quot;: &quot;/risk_tags&quot;,
+      &quot;change_request&quot;: &quot;删除已断言的诱导投保标签，允许0标签；不能以诱导代理人等同诱导消费者投保。三项案由、处罚和缺失法律依据已核对，无其他实质遗漏。独立以完整文号和孙中娇检索旧库均零命中，未见重复，但零命中不证明不存在。&quot;,
+      &quot;category&quot;: &quot;overreach&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B052:L0005:33b1c13468ee7182:33b1c13468ee7182&quot;,
+          &quot;quote&quot;: &quot;唆使、诱导保险代理人进行违背诚信义务的活动&quot;
+        }
+      ],
+      &quot;diff_line&quot;: null,
+      &quot;operation_id&quot;: &quot;op:batch100-B052:behaviors:0&quot;,
+      &quot;severity&quot;: &quot;blocking&quot;
+    }
+  ],
+  &quot;omission_check_completed&quot;: true,
+  &quot;claim_checks&quot;: [
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B052:L0001:33b1c13468ee7182:33b1c13468ee7182&quot;,
+          &quot;quote&quot;: &quot;当事人: 孙中娇（时任中汇人寿保险股份有限公司临沂中心支公司银代部副经理）&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B052:case:subject&quot;,
+      &quot;comment&quot;: &quot;已核对完整原文，值与引文相符。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B052:L0003:33b1c13468ee7182:33b1c13468ee7182&quot;,
+          &quot;quote&quot;: &quot;临金罚决字〔2026〕29号&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B052:case:document_number&quot;,
+      &quot;comment&quot;: &quot;已核对完整原文，值与引文相符。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B052:L0011:33b1c13468ee7182:33b1c13468ee7182&quot;,
+          &quot;quote&quot;: &quot;2026年8月13日&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B052:case:decision_date&quot;,
+      &quot;comment&quot;: &quot;已核对完整原文，值与引文相符。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B052:L0009:33b1c13468ee7182:33b1c13468ee7182&quot;,
+          &quot;quote&quot;: &quot;国家金融监督管理总局临沂监管分局&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B052:case:authority&quot;,
+      &quot;comment&quot;: &quot;已核对完整原文，值与引文相符。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B052:L0001:33b1c13468ee7182:33b1c13468ee7182&quot;,
+          &quot;quote&quot;: &quot;时任中汇人寿保险股份有限公司临沂中心支公司银代部副经理&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B052:case:position&quot;,
+      &quot;comment&quot;: &quot;已核对完整原文，值与引文相符。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B052:L0005:33b1c13468ee7182:33b1c13468ee7182&quot;,
+          &quot;quote&quot;: &quot;唆使、诱导保险代理人进行违背诚信义务的活动，编制虚假业务财务资料，个人保险代理人给予投保人保险合同约定以外的利益&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B052:case:legal_basis&quot;,
+      &quot;comment&quot;: &quot;已核对完整原文，值与引文相符。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B052:L0007:33b1c13468ee7182:33b1c13468ee7182&quot;,
+          &quot;quote&quot;: &quot;警告并罚款1.7万元&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B052:case:penalties&quot;,
+      &quot;comment&quot;: &quot;已核对完整原文，值与引文相符。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B052:L0005:33b1c13468ee7182:33b1c13468ee7182&quot;,
+          &quot;quote&quot;: &quot;唆使、诱导保险代理人进行违背诚信义务的活动，编制虚假业务财务资料，个人保险代理人给予投保人保险合同约定以外的利益&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B052:case:unknowns&quot;,
+      &quot;comment&quot;: &quot;已核对完整原文，值与引文相符。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B052:L0001:33b1c13468ee7182:33b1c13468ee7182&quot;,
+          &quot;quote&quot;: &quot;当事人: 孙中娇（时任中汇人寿保险股份有限公司临沂中心支公司银代部副经理）&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B052:behaviors:0:actor&quot;,
+      &quot;comment&quot;: &quot;结合当事人及案由支持责任人员关联；role为responsible_person，不据此认定亲自实施。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B052:L0001:33b1c13468ee7182:33b1c13468ee7182&quot;,
+          &quot;quote&quot;: &quot;当事人: 孙中娇（时任中汇人寿保险股份有限公司临沂中心支公司银代部副经理）&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B052:behaviors:0:role&quot;,
+      &quot;comment&quot;: &quot;已核对完整原文，值与引文相符。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B052:L0005:33b1c13468ee7182:33b1c13468ee7182&quot;,
+          &quot;quote&quot;: &quot;唆使、诱导保险代理人进行违背诚信义务的活动&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B052:behaviors:0:action&quot;,
+      &quot;comment&quot;: &quot;已核对完整原文，值与引文相符。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;unsupported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B052:L0005:33b1c13468ee7182:33b1c13468ee7182&quot;,
+          &quot;quote&quot;: &quot;唆使、诱导保险代理人进行违背诚信义务的活动&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B052:behaviors:0:risk_tags&quot;,
+      &quot;comment&quot;: &quot;诱导对象是保险代理人，未说明以不当手段诱导消费者投保，不满足诱导投保定义。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B052:L0005:33b1c13468ee7182:33b1c13468ee7182&quot;,
+          &quot;quote&quot;: &quot;唆使、诱导保险代理人进行违背诚信义务的活动&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B052:behaviors:0:unknowns&quot;,
+      &quot;comment&quot;: &quot;已核对完整原文，值与引文相符。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B052:L0001:33b1c13468ee7182:33b1c13468ee7182&quot;,
+          &quot;quote&quot;: &quot;当事人: 孙中娇（时任中汇人寿保险股份有限公司临沂中心支公司银代部副经理）&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B052:behaviors:1:actor&quot;,
+      &quot;comment&quot;: &quot;结合当事人及案由支持责任人员关联；role为responsible_person，不据此认定亲自实施。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B052:L0001:33b1c13468ee7182:33b1c13468ee7182&quot;,
+          &quot;quote&quot;: &quot;当事人: 孙中娇（时任中汇人寿保险股份有限公司临沂中心支公司银代部副经理）&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B052:behaviors:1:role&quot;,
+      &quot;comment&quot;: &quot;已核对完整原文，值与引文相符。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B052:L0005:33b1c13468ee7182:33b1c13468ee7182&quot;,
+          &quot;quote&quot;: &quot;编制虚假业务财务资料&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B052:behaviors:1:action&quot;,
+      &quot;comment&quot;: &quot;已核对完整原文，值与引文相符。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported_as_hypothesis&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B052:L0005:33b1c13468ee7182:33b1c13468ee7182&quot;,
+          &quot;quote&quot;: &quot;编制虚假业务财务资料&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B052:behaviors:1:risk_tags&quot;,
+      &quot;comment&quot;: &quot;仅支持作为检索待核假设；已明确缺少虚列费用及套取资金事实，不得作为已证实标签。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B052:L0005:33b1c13468ee7182:33b1c13468ee7182&quot;,
+          &quot;quote&quot;: &quot;编制虚假业务财务资料&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B052:behaviors:1:unknowns&quot;,
+      &quot;comment&quot;: &quot;已核对完整原文，值与引文相符。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B052:L0005:33b1c13468ee7182:33b1c13468ee7182&quot;,
+          &quot;quote&quot;: &quot;个人保险代理人给予投保人保险合同约定以外的利益&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B052:behaviors:2:actor&quot;,
+      &quot;comment&quot;: &quot;已核对完整原文，值与引文相符。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B052:L0005:33b1c13468ee7182:33b1c13468ee7182&quot;,
+          &quot;quote&quot;: &quot;个人保险代理人给予投保人保险合同约定以外的利益&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B052:behaviors:2:role&quot;,
+      &quot;comment&quot;: &quot;已核对完整原文，值与引文相符。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B052:L0005:33b1c13468ee7182:33b1c13468ee7182&quot;,
+          &quot;quote&quot;: &quot;个人保险代理人给予投保人保险合同约定以外的利益&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B052:behaviors:2:action&quot;,
+      &quot;comment&quot;: &quot;已核对完整原文，值与引文相符。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B052:L0005:33b1c13468ee7182:33b1c13468ee7182&quot;,
+          &quot;quote&quot;: &quot;个人保险代理人给予投保人保险合同约定以外的利益&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B052:behaviors:2:risk_tags&quot;,
+      &quot;comment&quot;: &quot;已核对完整原文，值与引文相符。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B052:L0005:33b1c13468ee7182:33b1c13468ee7182&quot;,
+          &quot;quote&quot;: &quot;个人保险代理人给予投保人保险合同约定以外的利益&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B052:behaviors:2:unknowns&quot;,
+      &quot;comment&quot;: &quot;已核对完整原文，值与引文相符。&quot;
+    }
+  ]
+}</pre>
+<h3>Codex完整流程：提案/不新增理由</h3><pre>{
+  &quot;action&quot;: &quot;add&quot;,
+  &quot;reason&quot;: &quot;完整原文支持独立处罚记录；以孙中娇及完整文号分别检索均零命中，检索不证明绝对不存在。提出影子新增，区分受罚个人与实施者，三项行为分别记录。&quot;,
+  &quot;case&quot;: {
+    &quot;position&quot;: &quot;时任中汇人寿保险股份有限公司临沂中心支公司银代部副经理&quot;,
+    &quot;document_number&quot;: &quot;临金罚决字〔2026〕29号&quot;,
+    &quot;decision_date&quot;: &quot;2026年8月13日&quot;,
+    &quot;unknowns&quot;: [
+      &quot;legal_basis&quot;
+    ],
+    &quot;penalties&quot;: &quot;孙中娇：警告并罚款1.7万元&quot;,
+    &quot;authority&quot;: &quot;国家金融监督管理总局临沂监管分局&quot;,
+    &quot;subject&quot;: &quot;孙中娇&quot;,
+    &quot;legal_basis&quot;: null
+  },
+  &quot;behaviors&quot;: [
+    {
+      &quot;risk_tags&quot;: [],
+      &quot;unknowns&quot;: [
+        &quot;actor&quot;,
+        &quot;具体实施方式&quot;
+      ],
+      &quot;role&quot;: &quot;responsible_person&quot;,
+      &quot;action&quot;: &quot;唆使、诱导保险代理人进行违背诚信义务的活动&quot;,
+      &quot;actor&quot;: null
+    },
+    {
+      &quot;risk_tags&quot;: [],
+      &quot;unknowns&quot;: [
+        &quot;actor&quot;,
+        &quot;具体实施方式&quot;
+      ],
+      &quot;role&quot;: &quot;responsible_person&quot;,
+      &quot;action&quot;: &quot;编制虚假业务财务资料&quot;,
+      &quot;actor&quot;: null
+    },
+    {
+      &quot;risk_tags&quot;: [
+        &quot;合同外利益&quot;
+      ],
+      &quot;unknowns&quot;: [
+        &quot;代理人姓名&quot;,
+        &quot;利益形式及金额&quot;
+      ],
+      &quot;role&quot;: &quot;responsible_person&quot;,
+      &quot;action&quot;: &quot;个人保险代理人给予投保人保险合同约定以外的利益&quot;,
+      &quot;actor&quot;: &quot;个人保险代理人&quot;
+    }
+  ]
+}</pre>
+<h3>机械失败记录</h3><pre>[]</pre>
+<p><a href="jobs/C-B052-reviewer-r1-a1/output.json">最终角色输出</a></p></details>
+<details id="B059"><summary>B059 · 国家金融监督管理总局淄博监管分局行政处罚信息公开表（淄金罚决字〔2026〕27号） · 格式/覆盖校验修正耗尽</summary>
+<h3>原文</h3><pre>当事人: 张娟（时任山东汇盛保险代理有限公司法定代表人）
+
+行政处罚决定书文号
+
+淄金罚决字〔2026〕27号
+
+主要违法违规事实(案由)
+
+未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务
+
+行政处罚内容
+
+警告并罚款6万元
+
+作出处罚决定的机关名称
+
+国家金融监督管理总局淄博监管分局
+
+作出处罚决定的日期
+
+2026年8月11日
+
+来源公示
+
+国家金融监督管理总局淄博监管分局行政处罚信息公开表（淄金罚决字〔2026〕27号）</pre>
+<h3>DeepSeek初稿</h3><pre>{
+  &quot;action&quot;: &quot;add&quot;,
+  &quot;reason&quot;: &quot;公开处罚决定书完整可读，文号、主体、日期、机关、处罚内容均有原文引证；案由包含三项独立违规行为，分别记录。法律依据未在文书中列明，置null并列入unknowns。&quot;,
+  &quot;case&quot;: {
+    &quot;subject&quot;: &quot;张娟（时任山东汇盛保险代理有限公司法定代表人）&quot;,
+    &quot;document_number&quot;: &quot;淄金罚决字〔2026〕27号&quot;,
+    &quot;decision_date&quot;: &quot;2026年8月11日&quot;,
+    &quot;authority&quot;: &quot;国家金融监督管理总局淄博监管分局&quot;,
+    &quot;position&quot;: &quot;山东汇盛保险代理有限公司法定代表人&quot;,
+    &quot;legal_basis&quot;: null,
+    &quot;penalties&quot;: &quot;警告并罚款6万元&quot;,
+    &quot;unknowns&quot;: [
+      &quot;legal_basis&quot;
+    ]
+  },
+  &quot;behaviors&quot;: [
+    {
+      &quot;actor&quot;: &quot;山东汇盛保险代理有限公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;未按规定投保职业责任保险或缴存保证金&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;其他&quot;
+      ],
+      &quot;unknowns&quot;: []
+    },
+    {
+      &quot;actor&quot;: &quot;山东汇盛保险代理有限公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;未按规定开立独立的佣金收取账户&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;其他&quot;
+      ],
+      &quot;unknowns&quot;: []
+    },
+    {
+      &quot;actor&quot;: &quot;山东汇盛保险代理有限公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;委托未通过本机构进行执业登记的个人从事保险代理业务&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;委托无资质机构销售&quot;
+      ],
+      &quot;unknowns&quot;: []
+    }
+  ]
+}</pre>
+<h3>Codex仅复核组：意见</h3><pre>{
+  &quot;decision&quot;: &quot;request_changes&quot;,
+  &quot;claim_checks&quot;: [
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B059:case:subject&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B059:L0001:90879508325875a7:90879508325875a7&quot;,
+          &quot;quote&quot;: &quot;当事人: 张娟（时任山东汇盛保险代理有限公司法定代表人）&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;完整原文支持该字段、引文及事实类型。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B059:case:document_number&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B059:L0003:90879508325875a7:90879508325875a7&quot;,
+          &quot;quote&quot;: &quot;淄金罚决字〔2026〕27号&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;完整原文支持该字段、引文及事实类型。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B059:case:decision_date&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B059:L0011:90879508325875a7:90879508325875a7&quot;,
+          &quot;quote&quot;: &quot;2026年8月11日&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;完整原文支持该字段、引文及事实类型。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B059:case:authority&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B059:L0009:90879508325875a7:90879508325875a7&quot;,
+          &quot;quote&quot;: &quot;国家金融监督管理总局淄博监管分局&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;完整原文支持该字段、引文及事实类型。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B059:case:position&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B059:L0001:90879508325875a7:90879508325875a7&quot;,
+          &quot;quote&quot;: &quot;张娟（时任山东汇盛保险代理有限公司法定代表人）&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;完整原文支持该字段、引文及事实类型。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B059:case:legal_basis&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B059:L0005:90879508325875a7:90879508325875a7&quot;,
+          &quot;quote&quot;: &quot;未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;完整原文支持该字段、引文及事实类型。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B059:case:penalties&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B059:L0007:90879508325875a7:90879508325875a7&quot;,
+          &quot;quote&quot;: &quot;警告并罚款6万元&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;完整原文支持该字段、引文及事实类型。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B059:case:unknowns&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B059:L0005:90879508325875a7:90879508325875a7&quot;,
+          &quot;quote&quot;: &quot;未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;完整原文支持该字段、引文及事实类型。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B059:behaviors:0:actor&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B059:L0005:90879508325875a7:90879508325875a7&quot;,
+          &quot;quote&quot;: &quot;未按规定投保职业责任保险或缴存保证金&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;完整原文支持该字段、引文及事实类型。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B059:behaviors:0:role&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B059:L0005:90879508325875a7:90879508325875a7&quot;,
+          &quot;quote&quot;: &quot;未按规定投保职业责任保险或缴存保证金&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;完整原文支持该字段、引文及事实类型。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B059:behaviors:0:action&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B059:L0005:90879508325875a7:90879508325875a7&quot;,
+          &quot;quote&quot;: &quot;未按规定投保职业责任保险或缴存保证金&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;完整原文支持该字段、引文及事实类型。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B059:behaviors:0:risk_tags&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B059:L0005:90879508325875a7:90879508325875a7&quot;,
+          &quot;quote&quot;: &quot;未按规定投保职业责任保险或缴存保证金&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;完整原文支持该字段、引文及事实类型。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B059:behaviors:0:unknowns&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B059:L0005:90879508325875a7:90879508325875a7&quot;,
+          &quot;quote&quot;: &quot;未按规定投保职业责任保险或缴存保证金&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;完整原文支持该字段、引文及事实类型。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B059:behaviors:1:actor&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B059:L0005:90879508325875a7:90879508325875a7&quot;,
+          &quot;quote&quot;: &quot;未按规定开立独立的佣金收取账户&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;完整原文支持该字段、引文及事实类型。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B059:behaviors:1:role&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B059:L0005:90879508325875a7:90879508325875a7&quot;,
+          &quot;quote&quot;: &quot;未按规定开立独立的佣金收取账户&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;完整原文支持该字段、引文及事实类型。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B059:behaviors:1:action&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B059:L0005:90879508325875a7:90879508325875a7&quot;,
+          &quot;quote&quot;: &quot;未按规定开立独立的佣金收取账户&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;完整原文支持该字段、引文及事实类型。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B059:behaviors:1:risk_tags&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B059:L0005:90879508325875a7:90879508325875a7&quot;,
+          &quot;quote&quot;: &quot;未按规定开立独立的佣金收取账户&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;完整原文支持该字段、引文及事实类型。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B059:behaviors:1:unknowns&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B059:L0005:90879508325875a7:90879508325875a7&quot;,
+          &quot;quote&quot;: &quot;未按规定开立独立的佣金收取账户&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;完整原文支持该字段、引文及事实类型。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B059:behaviors:2:actor&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B059:L0005:90879508325875a7:90879508325875a7&quot;,
+          &quot;quote&quot;: &quot;委托未通过本机构进行执业登记的个人从事保险代理业务&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;完整原文支持该字段、引文及事实类型。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B059:behaviors:2:role&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B059:L0005:90879508325875a7:90879508325875a7&quot;,
+          &quot;quote&quot;: &quot;委托未通过本机构进行执业登记的个人从事保险代理业务&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;完整原文支持该字段、引文及事实类型。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B059:behaviors:2:action&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B059:L0005:90879508325875a7:90879508325875a7&quot;,
+          &quot;quote&quot;: &quot;委托未通过本机构进行执业登记的个人从事保险代理业务&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;完整原文支持该字段、引文及事实类型。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B059:behaviors:2:risk_tags&quot;,
+      &quot;verdict&quot;: &quot;unsupported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B059:L0005:90879508325875a7:90879508325875a7&quot;,
+          &quot;quote&quot;: &quot;委托未通过本机构进行执业登记的个人从事保险代理业务&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;标签要求受托者为不具有合法资质的机构；原文仅为未通过本机构执业登记的个人，主体类型和资质条件均不能等同。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B059:behaviors:2:unknowns&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B059:L0005:90879508325875a7:90879508325875a7&quot;,
+          &quot;quote&quot;: &quot;委托未通过本机构进行执业登记的个人从事保险代理业务&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;完整原文支持该字段、引文及事实类型。&quot;
+    }
+  ],
+  &quot;omission_check_completed&quot;: true,
+  &quot;issues&quot;: [
+    {
+      &quot;issue_id&quot;: &quot;issue:B059:tag&quot;,
+      &quot;severity&quot;: &quot;blocking&quot;,
+      &quot;category&quot;: &quot;overreach&quot;,
+      &quot;operation_id&quot;: &quot;op:batch100-B059:behaviors:2&quot;,
+      &quot;claim_id&quot;: &quot;claim:batch100-B059:behaviors:2:risk_tags&quot;,
+      &quot;pointer&quot;: &quot;/risk_tags&quot;,
+      &quot;diff_line&quot;: null,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B059:L0005:90879508325875a7:90879508325875a7&quot;,
+          &quot;quote&quot;: &quot;委托未通过本机构进行执业登记的个人从事保险代理业务&quot;
+        }
+      ],
+      &quot;change_request&quot;: &quot;删除“委托无资质机构销售”标签，按字典必要要件重新归类，允许零标签；不得用最接近原则把个人视为机构或把未登记推定为无合法资质。三项行为及案件信息已核对，无额外行为遗漏。旧库完整文号搜索零命中仅作检索结果，不证明不存在。&quot;
+    }
+  ]
+}</pre>
+<h3>Codex完整流程：提案/不新增理由</h3><pre>{
+  &quot;action&quot;: &quot;add&quot;,
+  &quot;reason&quot;: &quot;已完整读取原文。完整文号检索零命中，不能据此证明不存在；主体检索并完整读取旧库FRV2-SOURCE-F004441-d7661a26989100c190dd9270，为2025年37-38号，本原文为2026年27号，不能视为同号或自动冲突。提议独立新增，不改动历史记录；三个行为分别保存，实施主体保留未知。&quot;,
+  &quot;case&quot;: {
+    &quot;position&quot;: &quot;时任山东汇盛保险代理有限公司法定代表人&quot;,
+    &quot;subject&quot;: &quot;张娟&quot;,
+    &quot;decision_date&quot;: &quot;2026年8月11日&quot;,
+    &quot;legal_basis&quot;: null,
+    &quot;document_number&quot;: &quot;淄金罚决字〔2026〕27号&quot;,
+    &quot;unknowns&quot;: [
+      &quot;legal_basis&quot;
+    ],
+    &quot;authority&quot;: &quot;国家金融监督管理总局淄博监管分局&quot;,
+    &quot;penalties&quot;: &quot;张娟：警告并罚款6万元&quot;
+  },
+  &quot;behaviors&quot;: [
+    {
+      &quot;unknowns&quot;: [
+        &quot;actor&quot;
+      ],
+      &quot;action&quot;: &quot;未按规定投保职业责任保险或缴存保证金&quot;,
+      &quot;risk_tags&quot;: [],
+      &quot;actor&quot;: null,
+      &quot;role&quot;: &quot;unspecified&quot;
+    },
+    {
+      &quot;unknowns&quot;: [
+        &quot;actor&quot;
+      ],
+      &quot;action&quot;: &quot;未按规定开立独立的佣金收取账户&quot;,
+      &quot;risk_tags&quot;: [],
+      &quot;actor&quot;: null,
+      &quot;role&quot;: &quot;unspecified&quot;
+    },
+    {
+      &quot;unknowns&quot;: [
+        &quot;actor&quot;
+      ],
+      &quot;action&quot;: &quot;委托未通过本机构进行执业登记的个人从事保险代理业务&quot;,
+      &quot;risk_tags&quot;: [],
+      &quot;actor&quot;: null,
+      &quot;role&quot;: &quot;unspecified&quot;
+    }
+  ]
+}</pre>
+<h3>机械失败记录</h3><pre>[
+  {
+    &quot;job&quot;: &quot;C-B059-proposer-r1-a1&quot;,
+    &quot;valid&quot;: false,
+    &quot;code&quot;: &quot;MODEL_SCHEMA&quot;,
+    &quot;field&quot;: &quot;/source_coverage/1/field_refs&quot;,
+    &quot;message&quot;: &quot;MODEL_SCHEMA: /source_coverage/1/field_refs&quot;,
+    &quot;production_admission&quot;: false
+  },
+  {
+    &quot;job&quot;: &quot;C-B059-proposer-r1-a2&quot;,
+    &quot;valid&quot;: false,
+    &quot;code&quot;: &quot;COVERAGE_CITATION&quot;,
+    &quot;field&quot;: &quot;case/document_number&quot;,
+    &quot;message&quot;: &quot;COVERAGE_CITATION: case/document_number&quot;,
+    &quot;production_admission&quot;: false
+  }
+]</pre>
+<p><a href="jobs/C-B059-proposer-r1-a2/output.json">最终角色输出</a></p></details>
+<details id="B020"><summary>B020 · 国家金融监督管理总局天津监管局行政处罚信息公开表 · 模型批准（未发布）</summary>
+<h3>原文</h3><pre>当事人: 阳光人寿保险股份有限公司天津分公司
+
+主要违法违规事实(案由)
+
+编制或者提供虚假的报告、报表、文件、资料
+
+行政处罚内容
+
+对阳光人寿保险股份有限公司天津分公司罚款40万元。对叶小义警告并处罚款7万元。
+
+作出处罚决定的机关名称
+
+国家金融监督管理总局天津监管局
+
+作出处罚决定的日期
+
+2026年7月1日
+
+来源公示
+
+国家金融监督管理总局天津监管局行政处罚信息公开表</pre>
+<h3>DeepSeek初稿</h3><pre>{
+  &quot;action&quot;: &quot;add&quot;,
+  &quot;reason&quot;: &quot;公开处罚信息明确载明当事人、案由、处罚内容、处罚机关及日期，构成可新增的处罚记录；搜索零命中不能证明旧库不存在，故按新增处理。&quot;,
+  &quot;case&quot;: {
+    &quot;subject&quot;: &quot;阳光人寿保险股份有限公司天津分公司&quot;,
+    &quot;document_number&quot;: null,
+    &quot;decision_date&quot;: &quot;2026年7月1日&quot;,
+    &quot;authority&quot;: &quot;国家金融监督管理总局天津监管局&quot;,
+    &quot;position&quot;: null,
+    &quot;legal_basis&quot;: null,
+    &quot;penalties&quot;: &quot;对阳光人寿保险股份有限公司天津分公司罚款40万元；对叶小义警告并处罚款7万元&quot;,
+    &quot;unknowns&quot;: [
+      &quot;document_number&quot;,
+      &quot;position&quot;,
+      &quot;legal_basis&quot;
+    ]
+  },
+  &quot;behaviors&quot;: [
+    {
+      &quot;actor&quot;: &quot;阳光人寿保险股份有限公司天津分公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;编制或者提供虚假的报告、报表、文件、资料&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;其他&quot;
+      ],
+      &quot;unknowns&quot;: [
+        &quot;具体虚假资料内容及涉及期间未载明&quot;
+      ]
+    }
+  ]
+}</pre>
+<h3>Codex仅复核组：意见</h3><pre>{
+  &quot;claim_checks&quot;: [
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B020:L0001:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd&quot;,
+          &quot;quote&quot;: &quot;当事人: 阳光人寿保险股份有限公司天津分公司&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B020:case:subject&quot;,
+      &quot;comment&quot;: &quot;当事人名称与原文一致。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B020:L0011:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd&quot;,
+          &quot;quote&quot;: &quot;国家金融监督管理总局天津监管局行政处罚信息公开表&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B020:case:document_number&quot;,
+      &quot;comment&quot;: &quot;完整原文未载文号，保留null及不确定性恰当。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B020:L0009:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd&quot;,
+          &quot;quote&quot;: &quot;2026年7月1日&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B020:case:decision_date&quot;,
+      &quot;comment&quot;: &quot;处罚日期与原文一致。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B020:L0007:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd&quot;,
+          &quot;quote&quot;: &quot;国家金融监督管理总局天津监管局&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B020:case:authority&quot;,
+      &quot;comment&quot;: &quot;处罚机关与原文一致。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B020:L0005:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd&quot;,
+          &quot;quote&quot;: &quot;对叶小义警告并处罚款7万元。&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B020:case:position&quot;,
+      &quot;comment&quot;: &quot;原文仅列个人处罚，未列职务或所属机构，保留未知。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B020:L0003:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd&quot;,
+          &quot;quote&quot;: &quot;编制或者提供虚假的报告、报表、文件、资料&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B020:case:legal_basis&quot;,
+      &quot;comment&quot;: &quot;完整原文未载法律依据，未补造。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B020:L0005:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd&quot;,
+          &quot;quote&quot;: &quot;对阳光人寿保险股份有限公司天津分公司罚款40万元。对叶小义警告并处罚款7万元。&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B020:case:penalties&quot;,
+      &quot;comment&quot;: &quot;机构罚款40万元、个人警告及罚款7万元均完整保留。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B020:L0011:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd&quot;,
+          &quot;quote&quot;: &quot;国家金融监督管理总局天津监管局行政处罚信息公开表&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B020:case:unknowns&quot;,
+      &quot;comment&quot;: &quot;已核对全文，所列缺失字段确未出现。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B020:L0001:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd&quot;,
+          &quot;quote&quot;: &quot;当事人: 阳光人寿保险股份有限公司天津分公司&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B020:behaviors:0:actor&quot;,
+      &quot;comment&quot;: &quot;当事人栏目结合案由支持机构行为归属，未推定个人亲自实施。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B020:L0001:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd&quot;,
+          &quot;quote&quot;: &quot;当事人: 阳光人寿保险股份有限公司天津分公司&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B020:behaviors:0:role&quot;,
+      &quot;comment&quot;: &quot;分公司为机构，角色正确。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B020:L0003:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd&quot;,
+          &quot;quote&quot;: &quot;编制或者提供虚假的报告、报表、文件、资料&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B020:behaviors:0:action&quot;,
+      &quot;comment&quot;: &quot;保留原文单项案由，未扩充具体实施细节。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B020:L0003:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd&quot;,
+          &quot;quote&quot;: &quot;编制或者提供虚假的报告、报表、文件、资料&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B020:behaviors:0:risk_tags&quot;,
+      &quot;comment&quot;: &quot;按完整字典定义，案由无其他具体标签必要要件，其他标签适当。&quot;
+    },
+    {
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B020:L0003:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd&quot;,
+          &quot;quote&quot;: &quot;编制或者提供虚假的报告、报表、文件、资料&quot;
+        }
+      ],
+      &quot;claim_id&quot;: &quot;claim:batch100-B020:behaviors:0:unknowns&quot;,
+      &quot;comment&quot;: &quot;全文未提供虚假资料内容或期间，未知说明恰当。&quot;
+    }
+  ],
+  &quot;decision&quot;: &quot;approve&quot;,
+  &quot;omission_check_completed&quot;: true,
+  &quot;issues&quot;: []
+}</pre>
+<h3>Codex完整流程：提案/不新增理由</h3><pre>{
+  &quot;action&quot;: &quot;add&quot;,
+  &quot;reason&quot;: &quot;完整原文支持一项机构违规及机构、个人处罚。按主体检索旧库零命中，但不据此断言不存在；未发现重复决定证据，提出新增影子事实，保留缺失字段与个人实施情况未知。&quot;,
+  &quot;case&quot;: {
+    &quot;unknowns&quot;: [
+      &quot;document_number&quot;,
+      &quot;position&quot;,
+      &quot;legal_basis&quot;
+    ],
+    &quot;penalties&quot;: &quot;对阳光人寿保险股份有限公司天津分公司罚款40万元。对叶小义警告并处罚款7万元。&quot;,
+    &quot;position&quot;: null,
+    &quot;document_number&quot;: null,
+    &quot;authority&quot;: &quot;国家金融监督管理总局天津监管局&quot;,
+    &quot;legal_basis&quot;: null,
+    &quot;decision_date&quot;: &quot;2026年7月1日&quot;,
+    &quot;subject&quot;: &quot;阳光人寿保险股份有限公司天津分公司&quot;
+  },
+  &quot;behaviors&quot;: [
+    {
+      &quot;action&quot;: &quot;编制或者提供虚假的报告、报表、文件、资料&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;其他&quot;
+      ],
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;actor&quot;: &quot;阳光人寿保险股份有限公司天津分公司&quot;,
+      &quot;unknowns&quot;: [
+        &quot;具体报告资料&quot;,
+        &quot;目的&quot;,
+        &quot;对象&quot;,
+        &quot;渠道&quot;,
+        &quot;叶小义责任性质及是否亲自实施&quot;
+      ]
+    }
+  ]
+}</pre>
+<h3>机械失败记录</h3><pre>[]</pre>
+<p><a href="jobs/C-B020-reviewer-r1-a1/output.json">最终角色输出</a></p></details>
+<details id="B090"><summary>B090 · 国家金融监督管理总局行政处罚信息公开表（金罚决字〔2024〕5号） · 提议不新增（未经Reviewer）</summary>
+<h3>原文</h3><pre>行政处罚决定书文号
+
+金罚决字〔2024〕5号
+
+被处罚当事人
+
+中国人民财产保险股份有限公司及其责任人员
+
+主要违法违规事实
+
+将直接业务虚挂中介业务套取手续费；少计提资产减值准备；招投标管理不规范；支农融资业务捆绑销售保险产品；相关报告、报表、文件和资料不真实；跨年度列支手续费等。
+
+行政处罚依据
+
+《中华人民共和国保险法》第八十六条、第一百一十六条、第一百三十五条、第一百六十一条、第一百七十条、第一百七十一条等
+
+行政处罚决定
+
+对中国人民财产保险股份有限公司罚款合计681万元。其中，总公司221万元，分支机构460万元。
+
+对蒋新伟警告并处罚款10万元
+
+对原宇玲警告并处罚款10万元
+
+对王学刚警告并处罚款20万元
+
+对倪宏警告并处罚款10万元
+
+对何祖望警告并处罚款1万元
+
+对周志文警告并处罚款10万元
+
+对纪翔警告并处罚款10万元
+
+对刘团聚警告并处罚款10万元
+
+对蒋士亮警告并处罚款20万元
+
+对李旭警告并处罚款10万元
+
+对潘振雄警告并处罚款20万元
+
+对洪祖强警告并处罚款10万元
+
+对杨卫警告并处罚款10万元
+
+对崔晓博警告并处罚款10万元
+
+对钱磊警告并处罚款10万元
+
+对姜掌厚警告并处罚款10万元
+
+对郭钢警告并处罚款20万元
+
+对梁晓旭警告并处罚款10万元
+
+对王彦波警告并处罚款10万元
+
+对武运宝警告并处罚款20万元
+
+对李彦君警告并处罚款20万元
+
+对沈宁警告并处罚款20万元
+
+对余饶林警告并处罚款10万元
+
+对程向民警告并处罚款10万元
+
+对周健警告并处罚款10万元
+
+作出处罚决定的
+
+机关名称
+
+国家金融监督管理总局
+
+作出处罚决定的日期
+
+2024年5月14日</pre>
+<h3>DeepSeek初稿</h3><pre>{
+  &quot;action&quot;: &quot;add&quot;,
+  &quot;reason&quot;: &quot;原文为金罚决字〔2024〕5号行政处罚决定书，主体、文号、日期、机关、依据、处罚均有明确引文；检索命中的其他“〔2024〕5号”为不同机关不同文号，不构成同一文书冲突。按原文逐项记录机构及责任人员处罚，并对未载明具体个人职务、个人对应具体行为等作未知处理。&quot;,
+  &quot;case&quot;: {
+    &quot;subject&quot;: &quot;中国人民财产保险股份有限公司及其责任人员&quot;,
+    &quot;document_number&quot;: &quot;金罚决字〔2024〕5号&quot;,
+    &quot;decision_date&quot;: &quot;2024年5月14日&quot;,
+    &quot;authority&quot;: &quot;国家金融监督管理总局&quot;,
+    &quot;position&quot;: null,
+    &quot;legal_basis&quot;: &quot;《中华人民共和国保险法》第八十六条、第一百一十六条、第一百三十五条、第一百六十一条、第一百七十条、第一百七十一条等&quot;,
+    &quot;penalties&quot;: &quot;对中国人民财产保险股份有限公司罚款合计681万元（总公司221万元，分支机构460万元）；对蒋新伟、原宇玲、倪宏、周志文、纪翔、刘团聚、李旭、洪祖强、杨卫、崔晓博、钱磊、姜掌厚、梁晓旭、王彦波、余饶林、程向民、周健各警告并处罚款10万元；对王学刚、蒋士亮、潘振雄、郭钢、武运宝、李彦君、沈宁各警告并处罚款20万元；对何祖望警告并处罚款1万元&quot;,
+    &quot;unknowns&quot;: [
+      &quot;position&quot;
+    ]
+  },
+  &quot;behaviors&quot;: [
+    {
+      &quot;actor&quot;: &quot;中国人民财产保险股份有限公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;将直接业务虚挂中介业务套取手续费&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;虚列费用套取资金&quot;
+      ],
+      &quot;unknowns&quot;: []
+    },
+    {
+      &quot;actor&quot;: &quot;中国人民财产保险股份有限公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;少计提资产减值准备&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;其他&quot;
+      ],
+      &quot;unknowns&quot;: []
+    },
+    {
+      &quot;actor&quot;: &quot;中国人民财产保险股份有限公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;招投标管理不规范&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;其他&quot;
+      ],
+      &quot;unknowns&quot;: []
+    },
+    {
+      &quot;actor&quot;: &quot;中国人民财产保险股份有限公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;支农融资业务捆绑销售保险产品&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;诱导投保&quot;
+      ],
+      &quot;unknowns&quot;: []
+    },
+    {
+      &quot;actor&quot;: &quot;中国人民财产保险股份有限公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;相关报告、报表、文件和资料不真实&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;客户信息不真实&quot;
+      ],
+      &quot;unknowns&quot;: []
+    },
+    {
+      &quot;actor&quot;: &quot;中国人民财产保险股份有限公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;跨年度列支手续费&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;其他&quot;
+      ],
+      &quot;unknowns&quot;: []
+    }
+  ]
+}</pre>
+<h3>Codex仅复核组：意见</h3><pre>{
+  &quot;decision&quot;: &quot;request_changes&quot;,
+  &quot;claim_checks&quot;: [
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:case:subject&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;中国人民财产保险股份有限公司及其责任人员&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;值及引文与完整原文一致；处罚名单、金额和法律依据已逐项核对。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:case:document_number&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0002:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;金罚决字〔2024〕5号&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;值及引文与完整原文一致；处罚名单、金额和法律依据已逐项核对。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:case:decision_date&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0040:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;2024年5月14日&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;值及引文与完整原文一致；处罚名单、金额和法律依据已逐项核对。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:case:authority&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0038:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;国家金融监督管理总局&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;值及引文与完整原文一致；处罚名单、金额和法律依据已逐项核对。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:case:position&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;中国人民财产保险股份有限公司及其责任人员&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;值及引文与完整原文一致；处罚名单、金额和法律依据已逐项核对。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:case:legal_basis&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0008:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;《中华人民共和国保险法》第八十六条、第一百一十六条、第一百三十五条、第一百六十一条、第一百七十条、第一百七十一条等&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;值及引文与完整原文一致；处罚名单、金额和法律依据已逐项核对。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:case:penalties&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0010:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;对中国人民财产保险股份有限公司罚款合计681万元。其中，总公司221万元，分支机构460万元。&quot;
+        },
+        {
+          &quot;segment_id&quot;: &quot;B090:L0011:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;对蒋新伟警告并处罚款10万元&quot;
+        },
+        {
+          &quot;segment_id&quot;: &quot;B090:L0012:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;对原宇玲警告并处罚款10万元&quot;
+        },
+        {
+          &quot;segment_id&quot;: &quot;B090:L0013:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;对王学刚警告并处罚款20万元&quot;
+        },
+        {
+          &quot;segment_id&quot;: &quot;B090:L0014:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;对倪宏警告并处罚款10万元&quot;
+        },
+        {
+          &quot;segment_id&quot;: &quot;B090:L0015:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;对何祖望警告并处罚款1万元&quot;
+        },
+        {
+          &quot;segment_id&quot;: &quot;B090:L0016:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;对周志文警告并处罚款10万元&quot;
+        },
+        {
+          &quot;segment_id&quot;: &quot;B090:L0017:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;对纪翔警告并处罚款10万元&quot;
+        },
+        {
+          &quot;segment_id&quot;: &quot;B090:L0018:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;对刘团聚警告并处罚款10万元&quot;
+        },
+        {
+          &quot;segment_id&quot;: &quot;B090:L0019:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;对蒋士亮警告并处罚款20万元&quot;
+        },
+        {
+          &quot;segment_id&quot;: &quot;B090:L0020:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;对李旭警告并处罚款10万元&quot;
+        },
+        {
+          &quot;segment_id&quot;: &quot;B090:L0021:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;对潘振雄警告并处罚款20万元&quot;
+        },
+        {
+          &quot;segment_id&quot;: &quot;B090:L0022:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;对洪祖强警告并处罚款10万元&quot;
+        },
+        {
+          &quot;segment_id&quot;: &quot;B090:L0023:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;对杨卫警告并处罚款10万元&quot;
+        },
+        {
+          &quot;segment_id&quot;: &quot;B090:L0024:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;对崔晓博警告并处罚款10万元&quot;
+        },
+        {
+          &quot;segment_id&quot;: &quot;B090:L0025:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;对钱磊警告并处罚款10万元&quot;
+        },
+        {
+          &quot;segment_id&quot;: &quot;B090:L0026:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;对姜掌厚警告并处罚款10万元&quot;
+        },
+        {
+          &quot;segment_id&quot;: &quot;B090:L0027:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;对郭钢警告并处罚款20万元&quot;
+        },
+        {
+          &quot;segment_id&quot;: &quot;B090:L0028:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;对梁晓旭警告并处罚款10万元&quot;
+        },
+        {
+          &quot;segment_id&quot;: &quot;B090:L0029:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;对王彦波警告并处罚款10万元&quot;
+        },
+        {
+          &quot;segment_id&quot;: &quot;B090:L0030:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;对武运宝警告并处罚款20万元&quot;
+        },
+        {
+          &quot;segment_id&quot;: &quot;B090:L0031:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;对李彦君警告并处罚款20万元&quot;
+        },
+        {
+          &quot;segment_id&quot;: &quot;B090:L0032:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;对沈宁警告并处罚款20万元&quot;
+        },
+        {
+          &quot;segment_id&quot;: &quot;B090:L0033:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;对余饶林警告并处罚款10万元&quot;
+        },
+        {
+          &quot;segment_id&quot;: &quot;B090:L0034:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;对程向民警告并处罚款10万元&quot;
+        },
+        {
+          &quot;segment_id&quot;: &quot;B090:L0035:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;对周健警告并处罚款10万元&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;值及引文与完整原文一致；处罚名单、金额和法律依据已逐项核对。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:case:unknowns&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;中国人民财产保险股份有限公司及其责任人员&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;值及引文与完整原文一致；处罚名单、金额和法律依据已逐项核对。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:0:actor&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;中国人民财产保险股份有限公司及其责任人员&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;结合当事人及违法事实栏目，机构层面归属有支持，未推定具体个人亲自实施。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:0:role&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;中国人民财产保险股份有限公司及其责任人员&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;所列主体为保险机构，institution有支持。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:0:action&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;将直接业务虚挂中介业务套取手续费&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;值及引文与完整原文一致；处罚名单、金额和法律依据已逐项核对。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:0:risk_tags&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;将直接业务虚挂中介业务套取手续费&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;已按字典逐项核验：该行为符合所列标签必要要件。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:0:unknowns&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;将直接业务虚挂中介业务套取手续费&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;未补造原文缺失细节。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:1:actor&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;中国人民财产保险股份有限公司及其责任人员&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;结合当事人及违法事实栏目，机构层面归属有支持，未推定具体个人亲自实施。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:1:role&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;中国人民财产保险股份有限公司及其责任人员&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;所列主体为保险机构，institution有支持。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:1:action&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;少计提资产减值准备&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;值及引文与完整原文一致；处罚名单、金额和法律依据已逐项核对。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:1:risk_tags&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;少计提资产减值准备&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;已按字典逐项核验：该行为符合所列标签必要要件。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:1:unknowns&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;少计提资产减值准备&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;未补造原文缺失细节。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:2:actor&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;中国人民财产保险股份有限公司及其责任人员&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;结合当事人及违法事实栏目，机构层面归属有支持，未推定具体个人亲自实施。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:2:role&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;中国人民财产保险股份有限公司及其责任人员&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;所列主体为保险机构，institution有支持。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:2:action&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;招投标管理不规范&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;值及引文与完整原文一致；处罚名单、金额和法律依据已逐项核对。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:2:risk_tags&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;招投标管理不规范&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;已按字典逐项核验：该行为符合所列标签必要要件。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:2:unknowns&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;招投标管理不规范&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;未补造原文缺失细节。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:3:actor&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;中国人民财产保险股份有限公司及其责任人员&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;结合当事人及违法事实栏目，机构层面归属有支持，未推定具体个人亲自实施。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:3:role&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;中国人民财产保险股份有限公司及其责任人员&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;所列主体为保险机构，institution有支持。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:3:action&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;支农融资业务捆绑销售保险产品&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;值及引文与完整原文一致；处罚名单、金额和法律依据已逐项核对。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:3:risk_tags&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;支农融资业务捆绑销售保险产品&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;已按字典逐项核验：该行为符合所列标签必要要件。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:3:unknowns&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;支农融资业务捆绑销售保险产品&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;未补造原文缺失细节。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:4:actor&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;中国人民财产保险股份有限公司及其责任人员&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;结合当事人及违法事实栏目，机构层面归属有支持，未推定具体个人亲自实施。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:4:role&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;中国人民财产保险股份有限公司及其责任人员&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;所列主体为保险机构，institution有支持。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:4:action&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;相关报告、报表、文件和资料不真实&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;值及引文与完整原文一致；处罚名单、金额和法律依据已逐项核对。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:4:risk_tags&quot;,
+      &quot;verdict&quot;: &quot;unsupported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;相关报告、报表、文件和资料不真实&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;报告、报表、文件和资料不真实不等于客户信息记录虚假；原文未说明涉及客户信息，标签必要对象缺失。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:4:unknowns&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;相关报告、报表、文件和资料不真实&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;未补造原文缺失细节。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:5:actor&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;中国人民财产保险股份有限公司及其责任人员&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;结合当事人及违法事实栏目，机构层面归属有支持，未推定具体个人亲自实施。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:5:role&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;中国人民财产保险股份有限公司及其责任人员&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;所列主体为保险机构，institution有支持。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:5:action&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;跨年度列支手续费&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;值及引文与完整原文一致；处罚名单、金额和法律依据已逐项核对。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:5:risk_tags&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;跨年度列支手续费&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;已按字典逐项核验：该行为符合所列标签必要要件。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:5:unknowns&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;跨年度列支手续费&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;未补造原文缺失细节。&quot;
+    }
+  ],
+  &quot;omission_check_completed&quot;: true,
+  &quot;issues&quot;: [
+    {
+      &quot;issue_id&quot;: &quot;B090-tag-object&quot;,
+      &quot;severity&quot;: &quot;blocking&quot;,
+      &quot;category&quot;: &quot;qualifier&quot;,
+      &quot;operation_id&quot;: &quot;op:batch100-B090:behaviors:4&quot;,
+      &quot;claim_id&quot;: &quot;claim:batch100-B090:behaviors:4:risk_tags&quot;,
+      &quot;pointer&quot;: &quot;/risk_tags&quot;,
+      &quot;diff_line&quot;: null,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4&quot;,
+          &quot;quote&quot;: &quot;相关报告、报表、文件和资料不真实&quot;
+        }
+      ],
+      &quot;change_request&quot;: &quot;删除“客户信息不真实”标签：原文仅称相关报告、报表、文件和资料不真实，没有客户信息对象证据。可保留0标签，或依据字典重新选择不补造对象条件的标签。六项明示行为及全部处罚已覆盖。已检索完整文号，当前返回为带不同前缀文号，不能据此断言重复或证明全库不存在同文书；本意见不建议新增记录。&quot;
+    }
+  ]
+}</pre>
+<h3>Codex完整流程：提案/不新增理由</h3><pre>{
+  &quot;action&quot;: &quot;no_change&quot;,
+  &quot;reason&quot;: &quot;已完整读取旧库 FRV2-SOURCE-F006485-1f05a8186df09e487a899c36（718码点，无后页），与本原文为同一金罚决字〔2024〕5号决定：主体、2024年5月14日日期、总局机关、六项违法事实、法律依据、机构681万元（总公司221万元、分支机构460万元）及25名责任人员各项警告罚款均一致。仅排版、标点不同，属于独立旧决定重现，不新增、不更正旧事实。&quot;,
+  &quot;case&quot;: {},
+  &quot;behaviors&quot;: []
+}</pre>
+<h3>机械失败记录</h3><pre>[]</pre>
+<p><a href="jobs/C-B090-proposer-r1-a1/output.json">最终角色输出</a></p></details>
+<details id="B093"><summary>B093 · 国家金融监督管理总局行政处罚信息公开表（金罚决字〔2023〕55号） · 提议不新增（未经Reviewer）</summary>
+<h3>原文</h3><pre>行政处罚决定书文号
+
+金罚决字〔2023〕55号
+
+被处罚当事人
+
+一、中国人民人寿保险股份有限公司
+
+二、人保寿险柳州市分公司
+
+三、于喆（时任人保寿险财务管理部副总经理）
+
+四、沈哲华（时任人保寿险收展业务部（后更名为服务营销业务部）副总经理）
+
+五、原俊（时任人保寿险运营管理部总经理）
+
+六、谢怡刚（时任人保寿险信息科技部总经理）
+
+七、王聪（时任人保寿险电子商务部副总经理）
+
+八、邹奕（时任人保寿险精算部副总经理）
+
+九、李深晓（时任人保寿险柳州市分公司副总经理）
+
+主要违法违规事实
+
+团单加保未确认应收保费和保费收入；长期险超宽限期应冲回未冲回应收保费和保费收入；通过业务展期方式变相销售已停售保险产品；通过后台修改核心业务系统数据；意外险手续费率超预定附加费用率；养老年金保险实际红利分配方式与备案不一致；补充团体医疗保险协议收益率超保险合同约定；委托无资质机构开展保险代理业务
+
+行政处罚依据
+
+《中华人民共和国保险法》第八十六条、第一百一十六条、第一百三十五条、第一百六十一条、第一百七十条、第一百七十一条
+
+行政处罚决定
+
+一、对中国人民人寿保险股份有限公司罚款435万元
+
+二、对人保寿险柳州市分公司罚款50万元
+
+三、对于喆警告并处罚款10万元
+
+四、对沈哲华警告并处罚款10万元
+
+五、对原俊警告并处罚款6万元
+
+六、对谢怡刚警告并处罚款10万元
+
+七、对邹奕警告并处罚款10万元
+
+八、对李深晓警告并处罚款10万元
+
+九、对王聪警告并处罚款20万元
+
+作出处罚决定的
+
+机关名称
+
+国家金融监督管理总局
+
+作出处罚决定的日期
+
+2023年12月28日</pre>
+<h3>DeepSeek初稿</h3><pre>{
+  &quot;action&quot;: &quot;add&quot;,
+  &quot;reason&quot;: &quot;原文为金罚决字〔2023〕55号行政处罚决定书，主体、文号、日期、机关、依据、处罚及多项独立违规事实均有逐字引文；检索命中的吉金罚决字、济金罚决字、烟金罚决字等同号文书主体或机关不同，不构成本案旧库命中，故新增。&quot;,
+  &quot;case&quot;: {
+    &quot;subject&quot;: &quot;中国人民人寿保险股份有限公司&quot;,
+    &quot;document_number&quot;: &quot;金罚决字〔2023〕55号&quot;,
+    &quot;decision_date&quot;: &quot;2023年12月28日&quot;,
+    &quot;authority&quot;: &quot;国家金融监督管理总局&quot;,
+    &quot;position&quot;: null,
+    &quot;legal_basis&quot;: &quot;《中华人民共和国保险法》第八十六条、第一百一十六条、第一百三十五条、第一百六十一条、第一百七十条、第一百七十一条&quot;,
+    &quot;penalties&quot;: &quot;对中国人民人寿保险股份有限公司罚款435万元；对人保寿险柳州市分公司罚款50万元；对于喆警告并处罚款10万元；对沈哲华警告并处罚款10万元；对原俊警告并处罚款6万元；对谢怡刚警告并处罚款10万元；对邹奕警告并处罚款10万元；对李深晓警告并处罚款10万元；对王聪警告并处罚款20万元&quot;,
+    &quot;unknowns&quot;: []
+  },
+  &quot;behaviors&quot;: [
+    {
+      &quot;actor&quot;: &quot;中国人民人寿保险股份有限公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;团单加保未确认应收保费和保费收入&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;其他&quot;
+      ],
+      &quot;unknowns&quot;: []
+    },
+    {
+      &quot;actor&quot;: &quot;中国人民人寿保险股份有限公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;长期险超宽限期应冲回未冲回应收保费和保费收入&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;其他&quot;
+      ],
+      &quot;unknowns&quot;: []
+    },
+    {
+      &quot;actor&quot;: &quot;中国人民人寿保险股份有限公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;通过业务展期方式变相销售已停售保险产品&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;其他&quot;
+      ],
+      &quot;unknowns&quot;: []
+    },
+    {
+      &quot;actor&quot;: &quot;中国人民人寿保险股份有限公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;通过后台修改核心业务系统数据&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;其他&quot;
+      ],
+      &quot;unknowns&quot;: []
+    },
+    {
+      &quot;actor&quot;: &quot;中国人民人寿保险股份有限公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;意外险手续费率超预定附加费用率&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;未按规定使用费率条款&quot;
+      ],
+      &quot;unknowns&quot;: []
+    },
+    {
+      &quot;actor&quot;: &quot;中国人民人寿保险股份有限公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;养老年金保险实际红利分配方式与备案不一致&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;未按规定使用费率条款&quot;
+      ],
+      &quot;unknowns&quot;: []
+    },
+    {
+      &quot;actor&quot;: &quot;中国人民人寿保险股份有限公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;补充团体医疗保险协议收益率超保险合同约定&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;其他&quot;
+      ],
+      &quot;unknowns&quot;: []
+    },
+    {
+      &quot;actor&quot;: &quot;中国人民人寿保险股份有限公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;委托无资质机构开展保险代理业务&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;委托无资质机构销售&quot;
+      ],
+      &quot;unknowns&quot;: []
+    }
+  ]
+}</pre>
+<h3>Codex仅复核组：意见</h3><pre>null</pre>
+<h3>Codex完整流程：提案/不新增理由</h3><pre>{
+  &quot;action&quot;: &quot;no_change&quot;,
+  &quot;reason&quot;: &quot;已完整读取原文，并检索、完整读取旧库FRV2-SOURCE-F007749-df1b624de8c8271f7ddd8dd1（715字符，next_start=null）。旧文书金罚决字〔2023〕55号与本原文的九名/家当事人、八项违法事实、保险法六项条款、逐项处罚、国家金融监督管理总局及2023年12月28日均一致，仅换行及标点格式不同，是独立旧决定重现，无需新增。未将其他带地区前缀文号当作同号。&quot;,
+  &quot;case&quot;: {},
+  &quot;behaviors&quot;: []
+}</pre>
+<h3>机械失败记录</h3><pre>[]</pre>
+<p><a href="jobs/C-B093-proposer-r1-a1/output.json">最终角色输出</a></p></details>
+<details id="B100"><summary>B100 · 国家金融监督管理总局行政处罚信息公开表（金罚决字〔2023〕66  号） · 提议不新增（未经Reviewer）</summary>
+<h3>原文</h3><pre>行政处罚决定书文号
+
+金罚决字〔2023〕66号
+
+被处罚当事人
+
+一、华安财保资产管理有限责任公司（以下简称华安资管）
+
+二、张雅硕（时任华安资管财务会计部总经理助理）
+
+三、刘灏（时任华安资管财务负责人、财务会计部总经理）
+
+四、何崴（时任华安资管固定收益部总经理、公司副总经理）
+
+五、车正（时任华安资管金融市场部副总经理）
+
+六、王凡（时任华安资管总经理助理）
+
+主要违法违规事实
+
+一、高管人员违规兼职
+
+二、对受托保险资金未履行谨慎管理义务
+
+三、编制提供虚假报表
+
+四、债券投资不符合监管要求
+
+五、保险资金办理银行存款业务不合规
+
+六、为保险资金提供通道业务
+
+七、投资关联方股权的关联交易未审批
+
+八、财务数据不真实
+
+行政处罚依据
+
+《中华人民共和国保险法》第一百零六条、第一百零七条、第一百六十四条、第一百七十条、第一百七十一条及《保险资金运用管理办法》等相关规定
+
+行政处罚决定
+
+对机构罚款515万元，对张雅硕警告并罚款7万元，对刘灏警告并罚款7万元，对何崴警告并罚款7万元，对车正警告并罚款10万元，对王凡警告并罚款10万元
+
+作出处罚决定的
+
+机关名称
+
+国家金融监督管理总局
+
+作出处罚决定的日期
+
+2023年12月28日</pre>
+<h3>DeepSeek初稿</h3><pre>{
+  &quot;action&quot;: &quot;add&quot;,
+  &quot;reason&quot;: &quot;证据为完整行政处罚决定书，文号、主体、日期、机关、依据、处罚及八项违法事实均有原文支撑；按字典核对，现有风险标签均不精确匹配“高管人员违规兼职”“对受托保险资金未履行谨慎管理义务”“编制提供虚假报表”“债券投资不符合监管要求”“保险资金办理银行存款业务不合规”“为保险资金提供通道业务”“投资关联方股权的关联交易未审批”“财务数据不真实”等事实，故不强行贴标签，仅新增案件与行为记录。&quot;,
+  &quot;case&quot;: {
+    &quot;subject&quot;: &quot;华安财保资产管理有限责任公司&quot;,
+    &quot;document_number&quot;: &quot;金罚决字〔2023〕66号&quot;,
+    &quot;decision_date&quot;: &quot;2023年12月28日&quot;,
+    &quot;authority&quot;: &quot;国家金融监督管理总局&quot;,
+    &quot;position&quot;: null,
+    &quot;legal_basis&quot;: &quot;《中华人民共和国保险法》第一百零六条、第一百零七条、第一百六十四条、第一百七十条、第一百七十一条及《保险资金运用管理办法》等相关规定&quot;,
+    &quot;penalties&quot;: &quot;对机构罚款515万元，对张雅硕警告并罚款7万元，对刘灏警告并罚款7万元，对何崴警告并罚款7万元，对车正警告并罚款10万元，对王凡警告并罚款10万元&quot;,
+    &quot;unknowns&quot;: []
+  },
+  &quot;behaviors&quot;: [
+    {
+      &quot;actor&quot;: &quot;华安财保资产管理有限责任公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;高管人员违规兼职&quot;,
+      &quot;risk_tags&quot;: [],
+      &quot;unknowns&quot;: [
+        &quot;具体兼职人员、兼职机构及审批情况&quot;
+      ]
+    },
+    {
+      &quot;actor&quot;: &quot;华安财保资产管理有限责任公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;对受托保险资金未履行谨慎管理义务&quot;,
+      &quot;risk_tags&quot;: [],
+      &quot;unknowns&quot;: [
+        &quot;未谨慎管理的具体资金、投资标的及情节&quot;
+      ]
+    },
+    {
+      &quot;actor&quot;: &quot;华安财保资产管理有限责任公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;编制提供虚假报表&quot;,
+      &quot;risk_tags&quot;: [],
+      &quot;unknowns&quot;: [
+        &quot;虚假报表名称、期间及具体编制人员&quot;
+      ]
+    },
+    {
+      &quot;actor&quot;: &quot;华安财保资产管理有限责任公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;债券投资不符合监管要求&quot;,
+      &quot;risk_tags&quot;: [],
+      &quot;unknowns&quot;: [
+        &quot;不符合监管要求的具体债券投资行为及金额&quot;
+      ]
+    },
+    {
+      &quot;actor&quot;: &quot;华安财保资产管理有限责任公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;保险资金办理银行存款业务不合规&quot;,
+      &quot;risk_tags&quot;: [],
+      &quot;unknowns&quot;: [
+        &quot;不合规存款业务的具体银行、金额及情节&quot;
+      ]
+    },
+    {
+      &quot;actor&quot;: &quot;华安财保资产管理有限责任公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;为保险资金提供通道业务&quot;,
+      &quot;risk_tags&quot;: [],
+      &quot;unknowns&quot;: [
+        &quot;通道业务的具体交易结构、对手方及金额&quot;
+      ]
+    },
+    {
+      &quot;actor&quot;: &quot;华安财保资产管理有限责任公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;投资关联方股权的关联交易未审批&quot;,
+      &quot;risk_tags&quot;: [],
+      &quot;unknowns&quot;: [
+        &quot;关联方名称、股权交易金额及未审批程序&quot;
+      ]
+    },
+    {
+      &quot;actor&quot;: &quot;华安财保资产管理有限责任公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;财务数据不真实&quot;,
+      &quot;risk_tags&quot;: [],
+      &quot;unknowns&quot;: [
+        &quot;不真实财务数据的具体项目、期间及责任人&quot;
+      ]
+    }
+  ]
+}</pre>
+<h3>Codex仅复核组：意见</h3><pre>null</pre>
+<h3>Codex完整流程：提案/不新增理由</h3><pre>{
+  &quot;action&quot;: &quot;no_change&quot;,
+  &quot;reason&quot;: &quot;已完整读取原文及旧库FRV2-SOURCE-F007756-949e56293f1ce6a42f7474f0（0至545，next_start=null）。同为金罚决字〔2023〕66号，六名被处罚当事人及职务、八项违法事实、法律依据、机构515万元与五名个人警告及7/7/7/10/10万元罚款、国家金融监督管理总局及2023年12月28日均一致，仅排版标点差异，属于旧决定重现。搜索中的甬、吉、沪、陕等前缀文号未视为同号。无新增事实，无需更正或停用旧事实。&quot;,
+  &quot;case&quot;: {},
+  &quot;behaviors&quot;: []
+}</pre>
+<h3>机械失败记录</h3><pre>[]</pre>
+<p><a href="jobs/C-B100-proposer-r1-a1/output.json">最终角色输出</a></p></details>
+<details id="B003"><summary>B003 · 新疆金融监管局行政处罚信息公示列表 · 模型批准（未发布）</summary>
+<h3>原文</h3><pre>当事人: 健科保险经纪有限公司新疆分公司及相关责任人
+
+主要违法违规事实(案由)
+
+利用业务便利为其他机构或者个人牟取不正当利益
+
+行政处罚内容
+
+对该分公司罚款10万元。对张青警告并罚款3万元
+
+作出处罚决定的机关名称
+
+新疆金融监管局
+
+作出处罚决定的日期
+
+2026年7月8日
+
+来源公示
+
+新疆金融监管局行政处罚信息公示列表</pre>
+<h3>DeepSeek初稿</h3><pre>{
+  &quot;action&quot;: &quot;hold&quot;,
+  &quot;reason&quot;: &quot;检索命中旧文书（FRV2-SOURCE-F008348）显示张青案文号为新金监罚决字〔2023〕21号、处罚为警告并罚款二万元，且案由含“超出承保公司的经营区域从事保险经纪业务”；本次证据为2026年7月8日新疆金融监管局对健科保险经纪有限公司新疆分公司及张青的处罚，罚款10万元、张青警告并罚款3万元，案由仅为“利用业务便利为其他机构或者个人牟取不正当利益”。两者在文号、处罚金额、案由范围上存在实质差异，需核对是否为不同处罚决定或旧库记录是否需更新，故hold待核。&quot;,
+  &quot;case&quot;: {},
+  &quot;behaviors&quot;: []
+}</pre>
+<h3>Codex仅复核组：意见</h3><pre>null</pre>
+<h3>Codex完整流程：提案/不新增理由</h3><pre>{
+  &quot;action&quot;: &quot;add&quot;,
+  &quot;reason&quot;: &quot;完整原文载明2026年7月8日处罚。旧库主体检索命中两条；已完整读取FRV2-SOURCE-F008349-2187bee0ad2196162e08f9ce，其为2023年10月18日新金监罚决字〔2023〕22号，行为及处罚不同，保留历史记录，本案作为独立事项提出新增。另一条仅见预览，不引用其完整事实；检索不能证明绝无重复。&quot;,
+  &quot;case&quot;: {
+    &quot;position&quot;: null,
+    &quot;subject&quot;: &quot;健科保险经纪有限公司新疆分公司及相关责任人（张青）&quot;,
+    &quot;authority&quot;: &quot;新疆金融监管局&quot;,
+    &quot;penalties&quot;: &quot;对健科保险经纪有限公司新疆分公司罚款10万元；对张青警告并罚款3万元&quot;,
+    &quot;document_number&quot;: null,
+    &quot;decision_date&quot;: &quot;2026年7月8日&quot;,
+    &quot;unknowns&quot;: [
+      &quot;document_number&quot;,
+      &quot;position&quot;,
+      &quot;legal_basis&quot;
+    ],
+    &quot;legal_basis&quot;: null
+  },
+  &quot;behaviors&quot;: [
+    {
+      &quot;role&quot;: &quot;unspecified&quot;,
+      &quot;action&quot;: &quot;利用业务便利为其他机构或者个人牟取不正当利益&quot;,
+      &quot;actor&quot;: null,
+      &quot;risk_tags&quot;: [
+        &quot;其他&quot;
+      ],
+      &quot;unknowns&quot;: [
+        &quot;actor&quot;,
+        &quot;具体利益方式&quot;,
+        &quot;受益对象身份&quot;
+      ]
+    }
+  ]
+}</pre>
+<h3>机械失败记录</h3><pre>[]</pre>
+<p><a href="jobs/C-B003-reviewer-r1-a1/output.json">最终角色输出</a></p></details>
+<details id="B005"><summary>B005 · 国家金融监督管理总局安徽监管局关于安徽中安财产保险股份有限公司和长安责任保险股份有限公司保险业务转让的批复 · 提议不新增（未经Reviewer）</summary>
+<h3>原文</h3><pre>皖金复〔2026〕135号
+
+安徽中安财产保险股份有限公司、长安责任保险股份有限公司：
+
+《关于安徽中安财险和长安保险业务转让的请示》（中安财险〔2026〕78号）收悉。经审核，现批复如下：
+
+一、同意安徽中安财产保险股份有限公司受让长安责任保险股份有限公司的保险业务，具体为双方共同签署的《收购承接协议》约定的转让标的。
+
+二、转让行为应严格遵守有关法律法规和监管规定，不得损害投保人、被保险人和受益人的合法权益。
+
+三、请你两家公司按照有关规定办理后续事宜。
+
+安徽金融监管局
+
+2026年8月27日</pre>
+<h3>DeepSeek初稿</h3><pre>{
+  &quot;action&quot;: &quot;no_change&quot;,
+  &quot;reason&quot;: &quot;该文件是安徽金融监管局关于安徽中安财产保险股份有限公司受让长安责任保险股份有限公司保险业务的批复，属于业务转让行政许可，不涉及销售误导、营销违规、财务违规等任何风险标签所定义的违规行为，也不构成处罚案件。全文无处罚对象、处罚决定或违规事实，故不新增知识条目。&quot;,
+  &quot;case&quot;: {},
+  &quot;behaviors&quot;: []
+}</pre>
+<h3>Codex仅复核组：意见</h3><pre>null</pre>
+<h3>Codex完整流程：提案/不新增理由</h3><pre>{
+  &quot;action&quot;: &quot;no_change&quot;,
+  &quot;reason&quot;: &quot;完整原文为保险业务转让批复，并非行政处罚；未认定违法行为或处罚，故不新增处罚案例和风险标签。已检索完整文号皖金复〔2026〕135号，旧库零命中仅代表本次查询结果，不证明旧库不存在相关文书。&quot;,
+  &quot;case&quot;: {},
+  &quot;behaviors&quot;: []
+}</pre>
+<h3>机械失败记录</h3><pre>[]</pre>
+<p><a href="jobs/C-B005-proposer-r1-a1/output.json">最终角色输出</a></p></details>
+<details id="B009"><summary>B009 · 葫芦岛金融监管分局行政处罚信息公示列表 · 模型批准（未发布）</summary>
+<h3>原文</h3><pre>当事人: 太平人寿保险有限公司葫芦岛中心支公司
+
+行政处罚决定书文号
+
+葫金监罚决〔2026〕3号
+
+主要违法违规事实(案由)
+
+财务业务数据不真实
+
+行政处罚内容
+
+责令改正，处罚款十二万元
+
+作出处罚决定的机关名称
+
+葫芦岛金融监管分局
+
+作出处罚决定的日期
+
+2026年7月6日
+
+来源公示
+
+葫芦岛金融监管分局行政处罚信息公示列表</pre>
+<h3>DeepSeek初稿</h3><pre>{
+  &quot;action&quot;: &quot;add&quot;,
+  &quot;reason&quot;: &quot;新处罚公示：主体为太平人寿保险有限公司葫芦岛中心支公司，文号葫金监罚决〔2026〕3号，案由为财务业务数据不真实，处罚为责令改正并罚款十二万元。检索到的旧库记录为2025年大家人寿葫芦岛中心支公司同类案由，主体、文号、日期均不同，不构成同一处罚；本件按新增处理。&quot;,
+  &quot;case&quot;: {
+    &quot;subject&quot;: &quot;太平人寿保险有限公司葫芦岛中心支公司&quot;,
+    &quot;document_number&quot;: &quot;葫金监罚决〔2026〕3号&quot;,
+    &quot;decision_date&quot;: &quot;2026年7月6日&quot;,
+    &quot;authority&quot;: &quot;葫芦岛金融监管分局&quot;,
+    &quot;position&quot;: null,
+    &quot;legal_basis&quot;: null,
+    &quot;penalties&quot;: &quot;责令改正，处罚款十二万元&quot;,
+    &quot;unknowns&quot;: [
+      &quot;position&quot;,
+      &quot;legal_basis&quot;
+    ]
+  },
+  &quot;behaviors&quot;: [
+    {
+      &quot;actor&quot;: &quot;太平人寿保险有限公司葫芦岛中心支公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;财务业务数据不真实&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;其他&quot;
+      ],
+      &quot;unknowns&quot;: [
+        &quot;具体不真实数据项及行为方式&quot;
+      ]
+    }
+  ]
+}</pre>
+<h3>Codex仅复核组：意见</h3><pre>{
+  &quot;decision&quot;: &quot;approve&quot;,
+  &quot;claim_checks&quot;: [
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B009:case:subject&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B009:L0001:273e209021fbd316:273e209021fbd316&quot;,
+          &quot;quote&quot;: &quot;当事人: 太平人寿保险有限公司葫芦岛中心支公司&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;字段值及事实类型与完整原文和所引文本一致。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B009:case:document_number&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B009:L0003:273e209021fbd316:273e209021fbd316&quot;,
+          &quot;quote&quot;: &quot;葫金监罚决〔2026〕3号&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;字段值及事实类型与完整原文和所引文本一致。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B009:case:decision_date&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B009:L0011:273e209021fbd316:273e209021fbd316&quot;,
+          &quot;quote&quot;: &quot;2026年7月6日&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;字段值及事实类型与完整原文和所引文本一致。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B009:case:authority&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B009:L0009:273e209021fbd316:273e209021fbd316&quot;,
+          &quot;quote&quot;: &quot;葫芦岛金融监管分局&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;字段值及事实类型与完整原文和所引文本一致。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B009:case:position&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B009:L0001:273e209021fbd316:273e209021fbd316&quot;,
+          &quot;quote&quot;: &quot;当事人: 太平人寿保险有限公司葫芦岛中心支公司&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;完整原文仅列机构，未载职务；null及不确定性合理。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B009:case:legal_basis&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B009:L0005:273e209021fbd316:273e209021fbd316&quot;,
+          &quot;quote&quot;: &quot;财务业务数据不真实&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;完整原文未列法律依据，保留null合理。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B009:case:penalties&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B009:L0007:273e209021fbd316:273e209021fbd316&quot;,
+          &quot;quote&quot;: &quot;责令改正，处罚款十二万元&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;字段值及事实类型与完整原文和所引文本一致。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B009:case:unknowns&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B009:L0001:273e209021fbd316:273e209021fbd316&quot;,
+          &quot;quote&quot;: &quot;当事人: 太平人寿保险有限公司葫芦岛中心支公司&quot;
+        },
+        {
+          &quot;segment_id&quot;: &quot;B009:L0005:273e209021fbd316:273e209021fbd316&quot;,
+          &quot;quote&quot;: &quot;财务业务数据不真实&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;完整原文未载职务及法律依据，未知字段记录充分。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B009:behaviors:0:actor&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B009:L0001:273e209021fbd316:273e209021fbd316&quot;,
+          &quot;quote&quot;: &quot;当事人: 太平人寿保险有限公司葫芦岛中心支公司&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;机构当事人对应所列违法案由，未推断个人实施。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B009:behaviors:0:role&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B009:L0001:273e209021fbd316:273e209021fbd316&quot;,
+          &quot;quote&quot;: &quot;当事人: 太平人寿保险有限公司葫芦岛中心支公司&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;当事人为保险公司分支机构，institution受支持。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B009:behaviors:0:action&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B009:L0005:273e209021fbd316:273e209021fbd316&quot;,
+          &quot;quote&quot;: &quot;财务业务数据不真实&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;字段值及事实类型与完整原文和所引文本一致。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B009:behaviors:0:risk_tags&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B009:L0005:273e209021fbd316:273e209021fbd316&quot;,
+          &quot;quote&quot;: &quot;财务业务数据不真实&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;案由未说明虚列费用、客户信息或销售行为等必要条件；按字典其他类型违规归入其他，未补造细节。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B009:behaviors:0:unknowns&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B009:L0005:273e209021fbd316:273e209021fbd316&quot;,
+          &quot;quote&quot;: &quot;财务业务数据不真实&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;完整原文仅列概括案由，具体数据项及方式确实未知。&quot;
+    }
+  ],
+  &quot;omission_check_completed&quot;: true,
+  &quot;issues&quot;: []
+}</pre>
+<h3>Codex完整流程：提案/不新增理由</h3><pre>{
+  &quot;action&quot;: &quot;add&quot;,
+  &quot;reason&quot;: &quot;完整原文载明独立机构处罚事实；按完整文号及主体检索均未命中，检索局限不证明旧库绝无此案。提出新增影子提案，保留未披露细节和法律依据，不推定具体违规手段。&quot;,
+  &quot;case&quot;: {
+    &quot;document_number&quot;: &quot;葫金监罚决〔2026〕3号&quot;,
+    &quot;position&quot;: null,
+    &quot;penalties&quot;: &quot;责令改正，处罚款十二万元&quot;,
+    &quot;authority&quot;: &quot;葫芦岛金融监管分局&quot;,
+    &quot;decision_date&quot;: &quot;2026年7月6日&quot;,
+    &quot;legal_basis&quot;: null,
+    &quot;subject&quot;: &quot;太平人寿保险有限公司葫芦岛中心支公司&quot;,
+    &quot;unknowns&quot;: [
+      &quot;position&quot;,
+      &quot;legal_basis&quot;
+    ]
+  },
+  &quot;behaviors&quot;: [
+    {
+      &quot;unknowns&quot;: [
+        &quot;具体不真实数据&quot;,
+        &quot;实施方式&quot;
+      ],
+      &quot;risk_tags&quot;: [],
+      &quot;action&quot;: &quot;财务业务数据不真实&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;actor&quot;: &quot;太平人寿保险有限公司葫芦岛中心支公司&quot;
+    }
+  ]
+}</pre>
+<h3>机械失败记录</h3><pre>[]</pre>
+<p><a href="jobs/C-B009-reviewer-r1-a1/output.json">最终角色输出</a></p></details>
+<details id="B039"><summary>B039 · 国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕31号-32号） · 模型批准（未发布）</summary>
+<h3>原文</h3><pre>当事人: 山东远通兴华保险代理有限公司
+
+行政处罚决定书文号
+
+临金罚决字〔2026〕31号
+
+主要违法违规事实(案由)
+
+给予投保人保险合同约定以外的利益、收取保险公司工作人员给予的合同约定外酬金、未开立独立的佣金收取账户
+
+行政处罚内容
+
+警告并罚款11万元
+
+作出处罚决定的机关名称
+
+国家金融监督管理总局临沂监管分局
+
+作出处罚决定的日期
+
+2026年8月13日
+
+来源公示
+
+国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕31号-32号）</pre>
+<h3>DeepSeek初稿</h3><pre>{
+  &quot;action&quot;: &quot;add&quot;,
+  &quot;reason&quot;: &quot;公开处罚决定书完整载明当事人、文号、日期、机关、案由与处罚；旧库两次精确检索均0命中，但零命中不证明旧库不存在，故按新增提案提交。&quot;,
+  &quot;case&quot;: {
+    &quot;subject&quot;: &quot;山东远通兴华保险代理有限公司&quot;,
+    &quot;document_number&quot;: &quot;临金罚决字〔2026〕31号&quot;,
+    &quot;decision_date&quot;: &quot;2026年8月13日&quot;,
+    &quot;authority&quot;: &quot;国家金融监督管理总局临沂监管分局&quot;,
+    &quot;position&quot;: null,
+    &quot;legal_basis&quot;: null,
+    &quot;penalties&quot;: &quot;警告并罚款11万元&quot;,
+    &quot;unknowns&quot;: [
+      &quot;position&quot;,
+      &quot;legal_basis&quot;
+    ]
+  },
+  &quot;behaviors&quot;: [
+    {
+      &quot;actor&quot;: &quot;山东远通兴华保险代理有限公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;给予投保人保险合同约定以外的利益&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;合同外利益&quot;
+      ],
+      &quot;unknowns&quot;: []
+    },
+    {
+      &quot;actor&quot;: &quot;山东远通兴华保险代理有限公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;收取保险公司工作人员给予的合同约定外酬金&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;其他&quot;
+      ],
+      &quot;unknowns&quot;: []
+    },
+    {
+      &quot;actor&quot;: &quot;山东远通兴华保险代理有限公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;action&quot;: &quot;未开立独立的佣金收取账户&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;其他&quot;
+      ],
+      &quot;unknowns&quot;: []
+    }
+  ]
+}</pre>
+<h3>Codex仅复核组：意见</h3><pre>{
+  &quot;decision&quot;: &quot;approve&quot;,
+  &quot;claim_checks&quot;: [
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B039:case:subject&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616&quot;,
+          &quot;quote&quot;: &quot;当事人: 山东远通兴华保险代理有限公司&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文直接支持该事实、主体归属及引文。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B039:case:document_number&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B039:L0003:b7dee6a36c99e616:b7dee6a36c99e616&quot;,
+          &quot;quote&quot;: &quot;临金罚决字〔2026〕31号&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文直接支持该事实、主体归属及引文。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B039:case:decision_date&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B039:L0011:b7dee6a36c99e616:b7dee6a36c99e616&quot;,
+          &quot;quote&quot;: &quot;2026年8月13日&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文直接支持该事实、主体归属及引文。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B039:case:authority&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B039:L0009:b7dee6a36c99e616:b7dee6a36c99e616&quot;,
+          &quot;quote&quot;: &quot;国家金融监督管理总局临沂监管分局&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文直接支持该事实、主体归属及引文。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B039:case:position&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616&quot;,
+          &quot;quote&quot;: &quot;当事人: 山东远通兴华保险代理有限公司&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;通读完整原文：职务及法律依据未披露，保留null及unknowns；行为所列主体、角色、动作均明确，未补造细节。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B039:case:legal_basis&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616&quot;,
+          &quot;quote&quot;: &quot;给予投保人保险合同约定以外的利益、收取保险公司工作人员给予的合同约定外酬金、未开立独立的佣金收取账户&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;通读完整原文：职务及法律依据未披露，保留null及unknowns；行为所列主体、角色、动作均明确，未补造细节。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B039:case:penalties&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B039:L0007:b7dee6a36c99e616:b7dee6a36c99e616&quot;,
+          &quot;quote&quot;: &quot;警告并罚款11万元&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文直接支持该事实、主体归属及引文。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B039:case:unknowns&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616&quot;,
+          &quot;quote&quot;: &quot;当事人: 山东远通兴华保险代理有限公司&quot;
+        },
+        {
+          &quot;segment_id&quot;: &quot;B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616&quot;,
+          &quot;quote&quot;: &quot;给予投保人保险合同约定以外的利益、收取保险公司工作人员给予的合同约定外酬金、未开立独立的佣金收取账户&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;通读完整原文：职务及法律依据未披露，保留null及unknowns；行为所列主体、角色、动作均明确，未补造细节。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B039:behaviors:0:actor&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616&quot;,
+          &quot;quote&quot;: &quot;当事人: 山东远通兴华保险代理有限公司&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文直接支持该事实、主体归属及引文。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B039:behaviors:0:role&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616&quot;,
+          &quot;quote&quot;: &quot;当事人: 山东远通兴华保险代理有限公司&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文直接支持该事实、主体归属及引文。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B039:behaviors:0:action&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616&quot;,
+          &quot;quote&quot;: &quot;给予投保人保险合同约定以外的利益&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文直接支持该事实、主体归属及引文。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B039:behaviors:0:risk_tags&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616&quot;,
+          &quot;quote&quot;: &quot;给予投保人保险合同约定以外的利益&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;逐项核对字典必要要件：给予投保人合同外利益符合合同外利益；收取外酬金及账户管理违规分别符合其他，未推定返佣、诱导或渠道。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B039:behaviors:0:unknowns&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616&quot;,
+          &quot;quote&quot;: &quot;给予投保人保险合同约定以外的利益&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;通读完整原文：职务及法律依据未披露，保留null及unknowns；行为所列主体、角色、动作均明确，未补造细节。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B039:behaviors:1:actor&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616&quot;,
+          &quot;quote&quot;: &quot;当事人: 山东远通兴华保险代理有限公司&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文直接支持该事实、主体归属及引文。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B039:behaviors:1:role&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616&quot;,
+          &quot;quote&quot;: &quot;当事人: 山东远通兴华保险代理有限公司&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文直接支持该事实、主体归属及引文。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B039:behaviors:1:action&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616&quot;,
+          &quot;quote&quot;: &quot;收取保险公司工作人员给予的合同约定外酬金&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文直接支持该事实、主体归属及引文。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B039:behaviors:1:risk_tags&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616&quot;,
+          &quot;quote&quot;: &quot;收取保险公司工作人员给予的合同约定外酬金&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;逐项核对字典必要要件：给予投保人合同外利益符合合同外利益；收取外酬金及账户管理违规分别符合其他，未推定返佣、诱导或渠道。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B039:behaviors:1:unknowns&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616&quot;,
+          &quot;quote&quot;: &quot;收取保险公司工作人员给予的合同约定外酬金&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;通读完整原文：职务及法律依据未披露，保留null及unknowns；行为所列主体、角色、动作均明确，未补造细节。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B039:behaviors:2:actor&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616&quot;,
+          &quot;quote&quot;: &quot;当事人: 山东远通兴华保险代理有限公司&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文直接支持该事实、主体归属及引文。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B039:behaviors:2:role&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616&quot;,
+          &quot;quote&quot;: &quot;当事人: 山东远通兴华保险代理有限公司&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文直接支持该事实、主体归属及引文。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B039:behaviors:2:action&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616&quot;,
+          &quot;quote&quot;: &quot;未开立独立的佣金收取账户&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;原文直接支持该事实、主体归属及引文。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B039:behaviors:2:risk_tags&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616&quot;,
+          &quot;quote&quot;: &quot;未开立独立的佣金收取账户&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;逐项核对字典必要要件：给予投保人合同外利益符合合同外利益；收取外酬金及账户管理违规分别符合其他，未推定返佣、诱导或渠道。&quot;
+    },
+    {
+      &quot;claim_id&quot;: &quot;claim:batch100-B039:behaviors:2:unknowns&quot;,
+      &quot;verdict&quot;: &quot;supported&quot;,
+      &quot;citations&quot;: [
+        {
+          &quot;segment_id&quot;: &quot;B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616&quot;,
+          &quot;quote&quot;: &quot;未开立独立的佣金收取账户&quot;
+        }
+      ],
+      &quot;comment&quot;: &quot;通读完整原文：职务及法律依据未披露，保留null及unknowns；行为所列主体、角色、动作均明确，未补造细节。&quot;
+    }
+  ],
+  &quot;omission_check_completed&quot;: true,
+  &quot;issues&quot;: []
+}</pre>
+<h3>Codex完整流程：提案/不新增理由</h3><pre>{
+  &quot;action&quot;: &quot;add&quot;,
+  &quot;reason&quot;: &quot;完整原文明确列出本机构本次处罚及三项独立行为。按主体检索冻结旧库零命中，但零命中不证明不存在；现有证据未发现同一决定，提出新增影子提案。第二、三项行为不满足具体业务标签定义，保留零标签。&quot;,
+  &quot;case&quot;: {
+    &quot;legal_basis&quot;: null,
+    &quot;authority&quot;: &quot;国家金融监督管理总局临沂监管分局&quot;,
+    &quot;subject&quot;: &quot;山东远通兴华保险代理有限公司&quot;,
+    &quot;decision_date&quot;: &quot;2026年8月13日&quot;,
+    &quot;unknowns&quot;: [
+      &quot;position&quot;,
+      &quot;legal_basis&quot;
+    ],
+    &quot;position&quot;: null,
+    &quot;document_number&quot;: &quot;临金罚决字〔2026〕31号&quot;,
+    &quot;penalties&quot;: &quot;警告并罚款11万元&quot;
+  },
+  &quot;behaviors&quot;: [
+    {
+      &quot;action&quot;: &quot;给予投保人保险合同约定以外的利益&quot;,
+      &quot;actor&quot;: &quot;山东远通兴华保险代理有限公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;risk_tags&quot;: [
+        &quot;合同外利益&quot;
+      ],
+      &quot;unknowns&quot;: [
+        &quot;具体实施时间&quot;,
+        &quot;具体实施方式&quot;
+      ]
+    },
+    {
+      &quot;action&quot;: &quot;收取保险公司工作人员给予的合同约定外酬金&quot;,
+      &quot;actor&quot;: &quot;山东远通兴华保险代理有限公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;risk_tags&quot;: [],
+      &quot;unknowns&quot;: [
+        &quot;具体实施时间&quot;,
+        &quot;具体实施方式&quot;
+      ]
+    },
+    {
+      &quot;action&quot;: &quot;未开立独立的佣金收取账户&quot;,
+      &quot;actor&quot;: &quot;山东远通兴华保险代理有限公司&quot;,
+      &quot;role&quot;: &quot;institution&quot;,
+      &quot;risk_tags&quot;: [],
+      &quot;unknowns&quot;: [
+        &quot;具体实施时间&quot;,
+        &quot;具体实施方式&quot;
+      ]
+    }
+  ]
+}</pre>
+<h3>机械失败记录</h3><pre>[]</pre>
+<p><a href="jobs/C-B039-reviewer-r1-a1/output.json">最终角色输出</a></p></details>
+<h2>可支持的结论</h2><p>支持“指定模型低思考强度＋受控工具流程”值得继续验证，尤其是风险较高候选的独立复核。尚不支持直接把全量库自动交给模型改写，也未测试确证更正、旧记录停用或法规时效。下一步应先修复身份门控和覆盖输出方式，再对未见材料作小批验证。</p>
+<p>官方配置参考：<a href="https://developers.openai.com/api/docs/models/gpt-6.1-sol">GPT-6.1 Sol思考强度</a>；<a href="https://learn.chatgpt.com/docs/auth">Codex订阅认证</a>。本轮实际结果以保存的原生任务、工具轨迹和主机验证文件为准。</p></html>

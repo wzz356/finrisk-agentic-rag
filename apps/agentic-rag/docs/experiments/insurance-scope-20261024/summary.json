@@ -1,0 +1,24 @@
+{
+  "rule_version": "insurance-scope/1",
+  "documents": 856,
+  "inventory_sha256": "ad38ca25f3bf4130e5c189e402569747f2afc644508118791239ab3b935d48e1",
+  "old_keyword_eligible": 405,
+  "new_reviewable": 856,
+  "restored_to_review": 451,
+  "categories": {
+    "insurance_entity": 343,
+    "non_insurance_candidate": 228,
+    "uncertain": 248,
+    "insurance_business": 37
+  },
+  "routes": {
+    "candidate_review": 379,
+    "scope_review": 477
+  },
+  "prior_abbreviation_misses": 12,
+  "prior_misses_recognized": 12,
+  "raw_hashes_checked": 856,
+  "model_requests": 0,
+  "production_modified": false,
+  "limitations": "规则分流对照，不是准确率；恢复待审不等于批准或入库。原件只读。"
+}

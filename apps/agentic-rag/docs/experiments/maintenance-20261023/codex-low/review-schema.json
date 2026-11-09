@@ -1,0 +1,193 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "decision",
+    "claim_checks",
+    "omission_check_completed",
+    "issues"
+  ],
+  "properties": {
+    "decision": {
+      "enum": [
+        "approve",
+        "request_changes",
+        "needs_evidence",
+        "reject"
+      ]
+    },
+    "claim_checks": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ClaimCheck"
+      },
+      "minItems": 1
+    },
+    "omission_check_completed": {
+      "type": "boolean"
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Issue"
+      },
+      "minItems": 0
+    }
+  },
+  "$defs": {
+    "ClaimCheck": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "claim_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "verdict": {
+          "enum": [
+            "supported",
+            "supported_as_hypothesis",
+            "unsupported",
+            "needs_evidence"
+          ]
+        },
+        "citations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Citation"
+          },
+          "minItems": 0
+        },
+        "comment": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "claim_id",
+        "verdict",
+        "citations",
+        "comment"
+      ]
+    },
+    "Citation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "segment_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "quote": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "segment_id",
+        "quote"
+      ]
+    },
+    "Issue": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "issue_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "severity": {
+          "enum": [
+            "blocking",
+            "non_blocking"
+          ]
+        },
+        "category": {
+          "enum": [
+            "source",
+            "citation",
+            "actor",
+            "omission",
+            "qualifier",
+            "fact_inference",
+            "conflict",
+            "overreach",
+            "law_scope",
+            "dependency",
+            "permission",
+            "process"
+          ]
+        },
+        "operation_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "claim_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "pointer": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^(?:/(?:[^~/]|~[01])*)+$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "diff_line": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "citations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Citation"
+          },
+          "minItems": 0
+        },
+        "change_request": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "issue_id",
+        "severity",
+        "category",
+        "operation_id",
+        "claim_id",
+        "pointer",
+        "diff_line",
+        "citations",
+        "change_request"
+      ]
+    }
+  }
+}

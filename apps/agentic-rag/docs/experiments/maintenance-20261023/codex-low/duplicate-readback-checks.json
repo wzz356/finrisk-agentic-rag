@@ -1,0 +1,26 @@
+[
+  {
+    "id": "B090",
+    "correct_known_old_source": "FRV2-SOURCE-F006485-1f05a8186df09e487a899c36",
+    "full_read": true,
+    "action": "no_change",
+    "reviewed_by_reviewer": false,
+    "not_general_recall_metric": true
+  },
+  {
+    "id": "B093",
+    "correct_known_old_source": "FRV2-SOURCE-F007749-df1b624de8c8271f7ddd8dd1",
+    "full_read": true,
+    "action": "no_change",
+    "reviewed_by_reviewer": false,
+    "not_general_recall_metric": true
+  },
+  {
+    "id": "B100",
+    "correct_known_old_source": "FRV2-SOURCE-F007756-949e56293f1ce6a42f7474f0",
+    "full_read": true,
+    "action": "no_change",
+    "reviewed_by_reviewer": false,
+    "not_general_recall_metric": true
+  }
+]

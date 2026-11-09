@@ -1,0 +1,1585 @@
+{
+  "kind": "Codex_independent_text_review_not_human_gold",
+  "sample_selection": "last10_of_frozen20_before_outputs",
+  "manifest_sha256": "efa8715fe711a3deafdecdd4b54e1decda11d5f931b9dbdb8c8dc5341dc80f04",
+  "created_at_utc": "2026-10-23T11:38:07.312803+00:00",
+  "dictionary_original": {
+    "path": "[local path omitted from public export]",
+    "sha256": "0588febf140ada823980fdbe0c5691d77bc02ed439cb8d44e6cfef1cda12d8bb",
+    "verified": true,
+    "definitions_used": [
+      {
+        "risk_tag": "诱导投保",
+        "description": "使用不当手段诱导消费者投保",
+        "category": "营销违规"
+      },
+      {
+        "risk_tag": "虚列费用套取资金",
+        "description": "通过虚假列支费用套取资金",
+        "category": "财务违规"
+      },
+      {
+        "risk_tag": "其他",
+        "description": "其他类型的违规行为",
+        "category": "其他"
+      },
+      {
+        "risk_tag": "委托无资质机构销售",
+        "description": "委托不具有合法资质的机构从事保险销售",
+        "category": "销售渠道"
+      },
+      {
+        "risk_tag": "未按规定使用费率条款",
+        "description": "未按监管备案的费率和条款执行",
+        "category": "合规问题"
+      }
+    ]
+  },
+  "terminal_reviewed": 10,
+  "pending": 0,
+  "pending_counted_as_pass": false,
+  "model_approved_in_scope": 6,
+  "rows": [
+    {
+      "id": "B099",
+      "finding": "no_obvious_substantive_issue_in_checked_fields",
+      "note": "机构资金运用违规归“其他”，70万元及陈淑翠禁业10年逐对象保留；未给陈淑翠编造亲自实施的行为。组合当事人仍是组级结构，不能理解为已分别建立个人责任案。",
+      "draft_and_latest_assessment": "初稿与批准稿相同；文字忠实，不把“未按规定运用保险公司资金”扩大为套取资金、关联利益输送等未载明方式。",
+      "reviewer_assessment": "Reviewer批准未发现明显与字典冲突。原文“等”意味着未穷尽事项，不能从这条记录得出没有其他违规。",
+      "terminal_status": "experiment_protocol_approved_not_applied",
+      "error": null,
+      "approved_final_exists": true,
+      "packet": {
+        "id": "B099",
+        "text": "当事人: 华夏久盈资产管理有限责任公司及相关责任人员\r\n主要违法违规事实(案由)\r\n未按照规定运用保险公司资金等\r\n行政处罚内容\r\n对华夏久盈资产管理有限责任公司罚款70万元。对陈淑翠禁止10年进入保险业。\r\n作出处罚决定的机关名称\r\n金融监管总局\r\n作出处罚决定的日期\r\n2025年12月19日\r\n来源公示\r\n国家金融监督管理总局行政处罚信息公示列表",
+        "stratum": "bank_insurance_boundary",
+        "status": "experiment_protocol_approved_not_applied",
+        "error": null,
+        "proposals": [
+          {
+            "attempt": 1,
+            "revision": 1,
+            "output": {
+              "action": "add",
+              "reason": "公开处罚公示显示华夏久盈资产管理有限责任公司因未按规定运用保险公司资金被罚款70万元，陈淑翠被禁止10年进入保险业；现有冻结基线检索0命中不能证明旧库不存在，但本批为隔离影子实验，按原文新增记录。",
+              "case": {
+                "subject": "华夏久盈资产管理有限责任公司及相关责任人员",
+                "document_number": null,
+                "decision_date": "2025年12月19日",
+                "authority": "金融监管总局",
+                "position": null,
+                "legal_basis": null,
+                "penalties": "对华夏久盈资产管理有限责任公司罚款70万元；对陈淑翠禁止10年进入保险业",
+                "unknowns": [
+                  "document_number",
+                  "position",
+                  "legal_basis"
+                ]
+              },
+              "behaviors": [
+                {
+                  "actor": "华夏久盈资产管理有限责任公司",
+                  "role": "institution",
+                  "action": "未按照规定运用保险公司资金",
+                  "risk_tags": [
+                    "其他"
+                  ],
+                  "unknowns": [
+                    "具体违规运用资金的方式、对象、金额及发生期间原文未载明"
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "reviews": [
+          {
+            "revision": 1,
+            "decision": "approve",
+            "issues": [],
+            "disputed_claims": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "B100",
+      "finding": "duplicate_add_proposed_but_protocol_blocked",
+      "note": "与冻结旧来源FRV2-SOURCE-F007756-949e56293f1ce6a42f7474f0在完整文号、机关、全部主体、日期、事实、逐对象处罚、依据七项相同；两次提议add误把同决定重现作为新增。",
+      "draft_and_latest_assessment": "两次均列八项事实、没有强贴不适配具体标签；case.position=null却unknowns为空，终态CASE_UNKNOWN。没有Reviewer或获批终稿，P/PR均未新增该来源。",
+      "reviewer_assessment": "无Reviewer，不能计为双角色审核有效。错误新增意图与最终未入影子批准视图必须分开报告。",
+      "terminal_status": "format_repair_exhausted",
+      "error": {
+        "code": "CASE_UNKNOWN",
+        "field": "",
+        "message": "CASE_UNKNOWN"
+      },
+      "approved_final_exists": false,
+      "packet": {
+        "id": "B100",
+        "text": "行政处罚决定书文号\r\n金罚决字〔2023〕66号\r\n被处罚当事人\r\n一、华安财保资产管理有限责任公司（以下简称华安资管）\r\n二、张雅硕（时任华安资管财务会计部总经理助理）\r\n三、刘灏（时任华安资管财务负责人、财务会计部总经理）\r\n四、何崴（时任华安资管固定收益部总经理、公司副总经理）\r\n五、车正（时任华安资管金融市场部副总经理）\r\n六、王凡（时任华安资管总经理助理）\r\n主要违法违规事实\r\n一、高管人员违规兼职\r\n二、对受托保险资金未履行谨慎管理义务\r\n三、编制提供虚假报表\r\n四、债券投资不符合监管要求\r\n五、保险资金办理银行存款业务不合规\r\n六、为保险资金提供通道业务\r\n七、投资关联方股权的关联交易未审批\r\n八、财务数据不真实\r\n行政处罚依据\r\n《中华人民共和国保险法》第一百零六条、第一百零七条、第一百六十四条、第一百七十条、第一百七十一条及《保险资金运用管理办法》等相关规定\r\n行政处罚决定\r\n对机构罚款515万元，对张雅硕警告并罚款7万元，对刘灏警告并罚款7万元，对何崴警告并罚款7万元，对车正警告并罚款10万元，对王凡警告并罚款10万元\r\n作出处罚决定的\r\n机关名称\r\n国家金融监督管理总局\r\n作出处罚决定的日期\r\n2023年12月28日",
+        "stratum": "bank_insurance_boundary",
+        "status": "format_repair_exhausted",
+        "error": {
+          "code": "CASE_UNKNOWN",
+          "field": "",
+          "message": "CASE_UNKNOWN"
+        },
+        "proposals": [
+          {
+            "attempt": 1,
+            "revision": 1,
+            "output": {
+              "action": "add",
+              "reason": "证据为完整行政处罚决定书，文号、主体、日期、机关、依据、处罚及八项违法事实均有原文支撑；按字典核对，现有风险标签均不精确匹配“高管人员违规兼职”“对受托保险资金未履行谨慎管理义务”“编制提供虚假报表”“债券投资不符合监管要求”“保险资金办理银行存款业务不合规”“为保险资金提供通道业务”“投资关联方股权的关联交易未审批”“财务数据不真实”等事实，故不强行贴标签，仅新增案件与行为记录。",
+              "case": {
+                "subject": "华安财保资产管理有限责任公司",
+                "document_number": "金罚决字〔2023〕66号",
+                "decision_date": "2023年12月28日",
+                "authority": "国家金融监督管理总局",
+                "position": null,
+                "legal_basis": "《中华人民共和国保险法》第一百零六条、第一百零七条、第一百六十四条、第一百七十条、第一百七十一条及《保险资金运用管理办法》等相关规定",
+                "penalties": "对机构罚款515万元，对张雅硕警告并罚款7万元，对刘灏警告并罚款7万元，对何崴警告并罚款7万元，对车正警告并罚款10万元，对王凡警告并罚款10万元",
+                "unknowns": []
+              },
+              "behaviors": [
+                {
+                  "actor": "华安财保资产管理有限责任公司",
+                  "role": "institution",
+                  "action": "高管人员违规兼职",
+                  "risk_tags": [],
+                  "unknowns": [
+                    "具体兼职人员、兼职机构及审批情况"
+                  ]
+                },
+                {
+                  "actor": "华安财保资产管理有限责任公司",
+                  "role": "institution",
+                  "action": "对受托保险资金未履行谨慎管理义务",
+                  "risk_tags": [],
+                  "unknowns": [
+                    "未谨慎管理的具体资金、投资标的及情节"
+                  ]
+                },
+                {
+                  "actor": "华安财保资产管理有限责任公司",
+                  "role": "institution",
+                  "action": "编制提供虚假报表",
+                  "risk_tags": [],
+                  "unknowns": [
+                    "虚假报表名称、期间及具体编制人员"
+                  ]
+                },
+                {
+                  "actor": "华安财保资产管理有限责任公司",
+                  "role": "institution",
+                  "action": "债券投资不符合监管要求",
+                  "risk_tags": [],
+                  "unknowns": [
+                    "不符合监管要求的具体债券投资行为及金额"
+                  ]
+                },
+                {
+                  "actor": "华安财保资产管理有限责任公司",
+                  "role": "institution",
+                  "action": "保险资金办理银行存款业务不合规",
+                  "risk_tags": [],
+                  "unknowns": [
+                    "不合规存款业务的具体银行、金额及情节"
+                  ]
+                },
+                {
+                  "actor": "华安财保资产管理有限责任公司",
+                  "role": "institution",
+                  "action": "为保险资金提供通道业务",
+                  "risk_tags": [],
+                  "unknowns": [
+                    "通道业务的具体交易结构、对手方及金额"
+                  ]
+                },
+                {
+                  "actor": "华安财保资产管理有限责任公司",
+                  "role": "institution",
+                  "action": "投资关联方股权的关联交易未审批",
+                  "risk_tags": [],
+                  "unknowns": [
+                    "关联方名称、股权交易金额及未审批程序"
+                  ]
+                },
+                {
+                  "actor": "华安财保资产管理有限责任公司",
+                  "role": "institution",
+                  "action": "财务数据不真实",
+                  "risk_tags": [],
+                  "unknowns": [
+                    "不真实财务数据的具体项目、期间及责任人"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "attempt": 2,
+            "revision": 1,
+            "output": {
+              "action": "add",
+              "reason": "证据为完整行政处罚决定书，文号、主体、日期、机关、依据、处罚及八项违法事实均有原文支撑；按字典核对，现有风险标签均不精确匹配“高管人员违规兼职”“对受托保险资金未履行谨慎管理义务”“编制提供虚假报表”“债券投资不符合监管要求”“保险资金办理银行存款业务不合规”“为保险资金提供通道业务”“投资关联方股权的关联交易未审批”“财务数据不真实”等事实，故不强行贴标签，仅新增案件与行为记录。",
+              "case": {
+                "subject": "华安财保资产管理有限责任公司",
+                "document_number": "金罚决字〔2023〕66号",
+                "decision_date": "2023年12月28日",
+                "authority": "国家金融监督管理总局",
+                "position": null,
+                "legal_basis": "《中华人民共和国保险法》第一百零六条、第一百零七条、第一百六十四条、第一百七十条、第一百七十一条及《保险资金运用管理办法》等相关规定",
+                "penalties": "对机构罚款515万元，对张雅硕警告并罚款7万元，对刘灏警告并罚款7万元，对何崴警告并罚款7万元，对车正警告并罚款10万元，对王凡警告并罚款10万元",
+                "unknowns": []
+              },
+              "behaviors": [
+                {
+                  "actor": "华安财保资产管理有限责任公司",
+                  "role": "institution",
+                  "action": "高管人员违规兼职",
+                  "risk_tags": [],
+                  "unknowns": [
+                    "具体兼职人员、兼职机构及审批情况"
+                  ]
+                },
+                {
+                  "actor": "华安财保资产管理有限责任公司",
+                  "role": "institution",
+                  "action": "对受托保险资金未履行谨慎管理义务",
+                  "risk_tags": [],
+                  "unknowns": [
+                    "未谨慎管理的具体资金、投资标的及情节"
+                  ]
+                },
+                {
+                  "actor": "华安财保资产管理有限责任公司",
+                  "role": "institution",
+                  "action": "编制提供虚假报表",
+                  "risk_tags": [],
+                  "unknowns": [
+                    "虚假报表名称、期间及具体编制人员"
+                  ]
+                },
+                {
+                  "actor": "华安财保资产管理有限责任公司",
+                  "role": "institution",
+                  "action": "债券投资不符合监管要求",
+                  "risk_tags": [],
+                  "unknowns": [
+                    "不符合监管要求的具体债券投资行为及金额"
+                  ]
+                },
+                {
+                  "actor": "华安财保资产管理有限责任公司",
+                  "role": "institution",
+                  "action": "保险资金办理银行存款业务不合规",
+                  "risk_tags": [],
+                  "unknowns": [
+                    "不合规存款业务的具体银行、金额及情节"
+                  ]
+                },
+                {
+                  "actor": "华安财保资产管理有限责任公司",
+                  "role": "institution",
+                  "action": "为保险资金提供通道业务",
+                  "risk_tags": [],
+                  "unknowns": [
+                    "通道业务的具体交易结构、对手方及金额"
+                  ]
+                },
+                {
+                  "actor": "华安财保资产管理有限责任公司",
+                  "role": "institution",
+                  "action": "投资关联方股权的关联交易未审批",
+                  "risk_tags": [],
+                  "unknowns": [
+                    "关联方名称、股权交易金额及未审批程序"
+                  ]
+                },
+                {
+                  "actor": "华安财保资产管理有限责任公司",
+                  "role": "institution",
+                  "action": "财务数据不真实",
+                  "risk_tags": [],
+                  "unknowns": [
+                    "不真实财务数据的具体项目、期间及责任人"
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "reviews": []
+      }
+    },
+    {
+      "id": "B005",
+      "finding": "scope_no_change_unreviewed_supported",
+      "note": "原文是业务转让许可批复，未认定违规或作出处罚；不把批复中的合规要求反写成违规事实，no_change有依据。",
+      "draft_and_latest_assessment": "只一稿，无新增卡片。",
+      "reviewer_assessment": "未进入Reviewer，属于范围判断得到本次Codex支持，不是模型互审批准。",
+      "terminal_status": "proposed_no_change_unreviewed",
+      "error": null,
+      "approved_final_exists": false,
+      "packet": {
+        "id": "B005",
+        "text": "皖金复〔2026〕135号\r\n安徽中安财产保险股份有限公司、长安责任保险股份有限公司：\r\n《关于安徽中安财险和长安保险业务转让的请示》（中安财险〔2026〕78号）收悉。经审核，现批复如下：\r\n一、同意安徽中安财产保险股份有限公司受让长安责任保险股份有限公司的保险业务，具体为双方共同签署的《收购承接协议》约定的转让标的。\r\n二、转让行为应严格遵守有关法律法规和监管规定，不得损害投保人、被保险人和受益人的合法权益。\r\n三、请你两家公司按照有关规定办理后续事宜。\r\n安徽金融监管局\r\n2026年8月27日",
+        "stratum": "stage_or_missing",
+        "status": "proposed_no_change_unreviewed",
+        "error": null,
+        "proposals": [
+          {
+            "attempt": 1,
+            "revision": 1,
+            "output": {
+              "action": "no_change",
+              "reason": "该文件是安徽金融监管局关于安徽中安财产保险股份有限公司受让长安责任保险股份有限公司保险业务的批复，属于业务转让行政许可，不涉及销售误导、营销违规、财务违规等任何风险标签所定义的违规行为，也不构成处罚案件。全文无处罚对象、处罚决定或违规事实，故不新增知识条目。",
+              "case": {},
+              "behaviors": []
+            }
+          }
+        ],
+        "reviews": []
+      }
+    },
+    {
+      "id": "B051",
+      "finding": "no_obvious_substantive_issue_in_checked_fields",
+      "note": "赵晓琳为明确被处罚个人，所属机构及个人代理人身份、2026年8月7日、天津监管局、终身禁业均有原文；“欺骗投保人”同名标签对应。",
+      "draft_and_latest_assessment": "保留文号、法律依据及具体欺骗方式未知，无新增罚款或虚构销售情节。",
+      "reviewer_assessment": "Reviewer批准未发现明显材料矛盾；responsible_person不扩展为其他机构/代理人违法。",
+      "terminal_status": "experiment_protocol_approved_not_applied",
+      "error": null,
+      "approved_final_exists": true,
+      "packet": {
+        "id": "B051",
+        "text": "当事人: 赵晓琳（时任中国平安人寿保险股份有限公司天津市河东支公司个人代理人）\r\n主要违法违规事实(案由)\r\n欺骗投保人\r\n行政处罚内容\r\n禁止终身进入保险业。\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局天津监管局\r\n作出处罚决定的日期\r\n2026年8月7日\r\n来源公示\r\n国家金融监督管理总局天津监管局行政处罚信息公开表",
+        "stratum": "individual",
+        "status": "experiment_protocol_approved_not_applied",
+        "error": null,
+        "proposals": [
+          {
+            "attempt": 1,
+            "revision": 1,
+            "output": {
+              "action": "add",
+              "reason": "公开处罚信息明确载明当事人赵晓琳时任中国平安人寿天津市河东支公司个人代理人，因欺骗投保人被禁止终身进入保险业，处罚机关和日期均有原文依据；旧库检索零命中不能证明不存在，但本提案按现有证据新增。",
+              "case": {
+                "subject": "赵晓琳",
+                "document_number": null,
+                "decision_date": "2026年8月7日",
+                "authority": "国家金融监督管理总局天津监管局",
+                "position": "中国平安人寿保险股份有限公司天津市河东支公司个人代理人",
+                "legal_basis": null,
+                "penalties": "禁止终身进入保险业",
+                "unknowns": [
+                  "document_number",
+                  "legal_basis"
+                ]
+              },
+              "behaviors": [
+                {
+                  "actor": "赵晓琳",
+                  "role": "responsible_person",
+                  "action": "欺骗投保人",
+                  "risk_tags": [
+                    "欺骗投保人"
+                  ],
+                  "unknowns": [
+                    "具体欺骗方式、对象及涉及产品未载明"
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "reviews": [
+          {
+            "revision": 1,
+            "decision": "approve",
+            "issues": [],
+            "disputed_claims": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "B044",
+      "finding": "supported_tag_correction",
+      "note": "初稿从“编制虚假的财务业务资料”贴“虚列费用套取资金”，缺少虚列费用和资金套取要件；unknowns中写“是否套取资金未载明”也不能支持fact标签。",
+      "draft_and_latest_assessment": "r2改为“其他”，保留原违法事实、40万元及文号日期机关；这是有据修正，未删事实。",
+      "reviewer_assessment": "Reviewer明确引用字典要件要求删除，后批准修订。只说明本案纠正有效，不代表同模型在其他样本一致。",
+      "terminal_status": "experiment_protocol_approved_not_applied",
+      "error": null,
+      "approved_final_exists": true,
+      "packet": {
+        "id": "B044",
+        "text": "当事人: 德华安顾人寿保险有限公司山东省分公司\r\n行政处罚决定书文号\r\n鲁金罚决字〔2026〕71号\r\n主要违法违规事实(案由)\r\n编制虚假的财务业务资料\r\n行政处罚内容\r\n罚款40万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局山东监管局\r\n作出处罚决定的日期\r\n2026年8月10日\r\n来源公示\r\n国家金融监督管理总局山东监管局行政处罚信息公开表（鲁金罚决字〔2026〕66号-73号）",
+        "stratum": "ordinary_institution",
+        "status": "experiment_protocol_approved_not_applied",
+        "error": null,
+        "proposals": [
+          {
+            "attempt": 1,
+            "revision": 1,
+            "output": {
+              "action": "add",
+              "reason": "新处罚决定书文号鲁金罚决字〔2026〕71号未在旧库检索结果中出现；旧库命中为2023年鲁银保监罚决字及2024/2025年其他文号，主体、文号、日期均不同，不构成同一案件。按原文新增机构处罚及对应行为。",
+              "case": {
+                "subject": "德华安顾人寿保险有限公司山东省分公司",
+                "document_number": "鲁金罚决字〔2026〕71号",
+                "decision_date": "2026年8月10日",
+                "authority": "国家金融监督管理总局山东监管局",
+                "position": null,
+                "legal_basis": null,
+                "penalties": "罚款40万元",
+                "unknowns": [
+                  "position",
+                  "legal_basis"
+                ]
+              },
+              "behaviors": [
+                {
+                  "actor": "德华安顾人寿保险有限公司山东省分公司",
+                  "role": "institution",
+                  "action": "编制虚假的财务业务资料",
+                  "risk_tags": [
+                    "虚列费用套取资金"
+                  ],
+                  "unknowns": [
+                    "具体虚假资料类型、涉及金额及是否套取资金未载明"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "attempt": 2,
+            "revision": 2,
+            "output": {
+              "action": "add",
+              "reason": "新处罚决定书文号鲁金罚决字〔2026〕71号未在旧库检索结果中出现；旧库命中为2023年鲁银保监罚决字及2024/2025年其他文号，主体、文号、日期均不同，不构成同一案件。按原文新增机构处罚及对应行为。已按复核意见删除缺乏“虚列费用、套取资金”要件的“虚列费用套取资金”标签，改贴有原文依据的“其他”。",
+              "case": {
+                "subject": "德华安顾人寿保险有限公司山东省分公司",
+                "document_number": "鲁金罚决字〔2026〕71号",
+                "decision_date": "2026年8月10日",
+                "authority": "国家金融监督管理总局山东监管局",
+                "position": null,
+                "legal_basis": null,
+                "penalties": "罚款40万元",
+                "unknowns": [
+                  "position",
+                  "legal_basis"
+                ]
+              },
+              "behaviors": [
+                {
+                  "actor": "德华安顾人寿保险有限公司山东省分公司",
+                  "role": "institution",
+                  "action": "编制虚假的财务业务资料",
+                  "risk_tags": [
+                    "其他"
+                  ],
+                  "unknowns": [
+                    "具体虚假资料类型、涉及金额及是否套取资金未载明"
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "reviews": [
+          {
+            "revision": 1,
+            "decision": "request_changes",
+            "issues": [
+              {
+                "issue_id": "issue:batch100-B044:risk_tag_overreach",
+                "severity": "blocking",
+                "category": "overreach",
+                "operation_id": "op:batch100-B044:behaviors:0",
+                "claim_id": "claim:batch100-B044:behaviors:0:risk_tags",
+                "pointer": "/risk_tags",
+                "diff_line": null,
+                "citations": [
+                  {
+                    "segment_id": "B044:L0005:e1835ff41791cad8:e1835ff41791cad8",
+                    "quote": "编制虚假的财务业务资料"
+                  }
+                ],
+                "change_request": "“虚列费用套取资金”要求虚假列支费用并套取资金，原文仅载“编制虚假的财务业务资料”，缺少套取资金要件。请删除该标签或改为有原文依据的“其他”，或补充能证明虚列费用套取资金的原文引文后再贴该标签。"
+              }
+            ],
+            "disputed_claims": [
+              {
+                "claim_id": "claim:batch100-B044:behaviors:0:risk_tags",
+                "verdict": "unsupported",
+                "citations": [
+                  {
+                    "segment_id": "B044:L0005:e1835ff41791cad8:e1835ff41791cad8",
+                    "quote": "编制虚假的财务业务资料"
+                  }
+                ],
+                "comment": "原文仅表述“编制虚假的财务业务资料”，未载明虚列费用、套取资金等要件；字典“虚列费用套取资金”要求通过虚假列支费用套取资金，现有引文不足以支持该肯定标签。建议改为“其他”或补充能证明套取资金的原文依据，否则不应贴该标签。"
+              }
+            ]
+          },
+          {
+            "revision": 2,
+            "decision": "approve",
+            "issues": [],
+            "disputed_claims": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "B085",
+      "finding": "reviewer_false_positive_and_protocol_blocked",
+      "note": "三类不同事实均保存，原文重复两次完全相同的报告短语只建一条，不足据此认定少了一种已知行为。未将14万元个人合计罚款拆成凭空分项。",
+      "draft_and_latest_assessment": "r2应要求去掉报告事实上的“其他”改0标签；字典“其他”定义是其他类型违规，原初稿还写明无直接对应标签，不能把这一改动称为被证实必要的语义纠错。",
+      "reviewer_assessment": "Reviewer对“其他”的unsupported过严；又质疑主体含祥云县支公司，但处罚行明确写该公司12万元且subject已引用此行，不能只看当事人标题行。重复报告语句是否两件事可列未知，不能无据拆分。r2仅非blocking意见却request_changes，最终REVIEW_DECISION_CONSISTENCY，无批准终稿。",
+      "terminal_status": "format_repair_exhausted",
+      "error": {
+        "code": "REVIEW_DECISION_CONSISTENCY",
+        "field": "",
+        "message": "REVIEW_DECISION_CONSISTENCY"
+      },
+      "approved_final_exists": false,
+      "packet": {
+        "id": "B085",
+        "text": "当事人: 中国人寿保险股份有限公司大理分公司、相关分支机构及相关责任人\r\n主要违法违规事实(案由)\r\n委托未取得合法资格的机构从事保险销售活动、未按规定使用经备案的保险条款、提供有虚假陈述的报告、提供有虚假陈述的报告\r\n行政处罚内容\r\n对中国人寿保险股份有限公司大理分公司罚款57万元；对中国人寿保险股份有限公司祥云县支公司罚款12万元；对责任人胡艳东、赵漾锦、杨学诗给予警告并处罚款共计14万元\r\n作出处罚决定的机关名称\r\n大理金融监管分局\r\n作出处罚决定的日期\r\n2026年8月25日\r\n来源公示\r\n大理金融监管分局行政处罚信息公示列表",
+        "stratum": "multi_subject",
+        "status": "format_repair_exhausted",
+        "error": {
+          "code": "REVIEW_DECISION_CONSISTENCY",
+          "field": "",
+          "message": "REVIEW_DECISION_CONSISTENCY"
+        },
+        "proposals": [
+          {
+            "attempt": 1,
+            "revision": 1,
+            "output": {
+              "action": "add",
+              "reason": "公开处罚公示载明中国人寿大理分公司、祥云县支公司及相关责任人因委托无资质机构销售、未按规定使用备案条款、提供虚假陈述报告被处罚；旧库精确检索0命中不证明不存在，但本件证据完整且可独立建档，故新增。",
+              "case": {
+                "subject": "中国人寿保险股份有限公司大理分公司、中国人寿保险股份有限公司祥云县支公司及相关责任人",
+                "document_number": null,
+                "decision_date": "2026年8月25日",
+                "authority": "大理金融监管分局",
+                "position": null,
+                "legal_basis": null,
+                "penalties": "对中国人寿保险股份有限公司大理分公司罚款57万元；对中国人寿保险股份有限公司祥云县支公司罚款12万元；对责任人胡艳东、赵漾锦、杨学诗给予警告并处罚款共计14万元",
+                "unknowns": [
+                  "document_number",
+                  "position",
+                  "legal_basis"
+                ]
+              },
+              "behaviors": [
+                {
+                  "actor": "中国人寿保险股份有限公司大理分公司及相关分支机构",
+                  "role": "institution",
+                  "action": "委托未取得合法资格的机构从事保险销售活动",
+                  "risk_tags": [
+                    "委托无资质机构销售"
+                  ],
+                  "unknowns": [
+                    "具体被委托机构名称、委托时间及涉及产品范围未载明"
+                  ]
+                },
+                {
+                  "actor": "中国人寿保险股份有限公司大理分公司及相关分支机构",
+                  "role": "institution",
+                  "action": "未按规定使用经备案的保险条款",
+                  "risk_tags": [
+                    "未按规定使用费率条款"
+                  ],
+                  "unknowns": [
+                    "涉及的具体条款、产品及时间未载明"
+                  ]
+                },
+                {
+                  "actor": "中国人寿保险股份有限公司大理分公司及相关分支机构",
+                  "role": "institution",
+                  "action": "提供有虚假陈述的报告",
+                  "risk_tags": [
+                    "其他"
+                  ],
+                  "unknowns": [
+                    "报告名称、提交对象及虚假陈述具体内容未载明"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "attempt": 2,
+            "revision": 2,
+            "output": {
+              "action": "add",
+              "reason": "公开处罚公示载明中国人寿大理分公司、祥云县支公司及相关责任人因委托无资质机构销售、未按规定使用备案条款、提供虚假陈述报告被处罚；旧库精确检索0命中不证明不存在，但本件证据完整且可独立建档，故新增。已按审核意见删除“提供有虚假陈述的报告”行为上的“其他”兜底标签，改为0标签并说明字典无对应具体标签。",
+              "case": {
+                "subject": "中国人寿保险股份有限公司大理分公司、中国人寿保险股份有限公司祥云县支公司及相关责任人",
+                "document_number": null,
+                "decision_date": "2026年8月25日",
+                "authority": "大理金融监管分局",
+                "position": null,
+                "legal_basis": null,
+                "penalties": "对中国人寿保险股份有限公司大理分公司罚款57万元；对中国人寿保险股份有限公司祥云县支公司罚款12万元；对责任人胡艳东、赵漾锦、杨学诗给予警告并处罚款共计14万元",
+                "unknowns": [
+                  "document_number",
+                  "position",
+                  "legal_basis"
+                ]
+              },
+              "behaviors": [
+                {
+                  "actor": "中国人寿保险股份有限公司大理分公司及相关分支机构",
+                  "role": "institution",
+                  "action": "委托未取得合法资格的机构从事保险销售活动",
+                  "risk_tags": [
+                    "委托无资质机构销售"
+                  ],
+                  "unknowns": [
+                    "具体被委托机构名称、委托时间及涉及产品范围未载明"
+                  ]
+                },
+                {
+                  "actor": "中国人寿保险股份有限公司大理分公司及相关分支机构",
+                  "role": "institution",
+                  "action": "未按规定使用经备案的保险条款",
+                  "risk_tags": [
+                    "未按规定使用费率条款"
+                  ],
+                  "unknowns": [
+                    "涉及的具体条款、产品及时间未载明"
+                  ]
+                },
+                {
+                  "actor": "中国人寿保险股份有限公司大理分公司及相关分支机构",
+                  "role": "institution",
+                  "action": "提供有虚假陈述的报告",
+                  "risk_tags": [],
+                  "unknowns": [
+                    "报告名称、提交对象及虚假陈述具体内容未载明",
+                    "字典中无对应具体风险标签"
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "reviews": [
+          {
+            "revision": 1,
+            "decision": "request_changes",
+            "issues": [
+              {
+                "issue_id": "issue:batch100-B085:risk-tag-other",
+                "severity": "non_blocking",
+                "category": "qualifier",
+                "operation_id": "op:batch100-B085:behaviors:2",
+                "claim_id": "claim:batch100-B085:behaviors:2:risk_tags",
+                "pointer": "/risk_tags",
+                "diff_line": null,
+                "citations": [
+                  {
+                    "segment_id": "B085:L0003:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "提供有虚假陈述的报告、提供有虚假陈述的报告"
+                  }
+                ],
+                "change_request": "“提供有虚假陈述的报告”与字典“其他”兜底标签的对应关系不明确；请说明归类依据，或改为不贴标签（允许0标签），避免以兜底标签掩盖未匹配的具体风险类型。"
+              }
+            ],
+            "disputed_claims": [
+              {
+                "claim_id": "claim:batch100-B085:behaviors:2:risk_tags",
+                "verdict": "unsupported",
+                "citations": [
+                  {
+                    "segment_id": "B085:L0003:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "提供有虚假陈述的报告、提供有虚假陈述的报告"
+                  }
+                ],
+                "comment": "“提供有虚假陈述的报告”指向向监管报送材料虚假，字典中“其他”为兜底标签，但该行为与“客户信息不真实”“虚列费用套取资金”等均不同；归入“其他”缺乏字典定义上的明确依据，且未说明为何不适用更具体标签。建议改为不贴标签或补充字典依据。"
+              }
+            ]
+          },
+          {
+            "revision": 2,
+            "decision": "request_changes",
+            "issues": [
+              {
+                "issue_id": "issue:batch100-B085:case:subject-overreach",
+                "severity": "non_blocking",
+                "category": "actor",
+                "operation_id": "op:batch100-B085:case",
+                "claim_id": "claim:batch100-B085:case:subject",
+                "pointer": "/metadata/subject",
+                "diff_line": null,
+                "citations": [
+                  {
+                    "segment_id": "B085:L0001:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "当事人: 中国人寿保险股份有限公司大理分公司、相关分支机构及相关责任人"
+                  }
+                ],
+                "change_request": "subject将“相关分支机构”具体化为“祥云县支公司”，但原文当事人行仅称“相关分支机构”，祥云县支公司仅出现在处罚内容中；建议保留原文表述或在subject中注明祥云县支公司系由处罚内容推知，避免将处罚对象直接等同于当事人列举。"
+              },
+              {
+                "issue_id": "issue:batch100-B085:behaviors:2:action-duplicate",
+                "severity": "non_blocking",
+                "category": "fact_inference",
+                "operation_id": "op:batch100-B085:behaviors:2",
+                "claim_id": "claim:batch100-B085:behaviors:2:action",
+                "pointer": "/action",
+                "diff_line": null,
+                "citations": [
+                  {
+                    "segment_id": "B085:L0003:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "提供有虚假陈述的报告、提供有虚假陈述的报告"
+                  }
+                ],
+                "comment": "原文案由重复列示“提供有虚假陈述的报告”两次，proposal仅建一个behavior并引用重复片段；建议在unknowns或comment中说明重复列示是否对应两项独立事实，避免遗漏或合并错误。",
+                "change_request": "请核实原文重复列示是否代表两项独立违法行为；若为两项，应拆分behavior或说明合并依据；若为排版重复，应在unknowns中注明。"
+              }
+            ],
+            "disputed_claims": []
+          },
+          {
+            "revision": 2,
+            "decision": "request_changes",
+            "issues": [
+              {
+                "issue_id": "issue:batch100-B085:case:subject-overreach",
+                "severity": "non_blocking",
+                "category": "actor",
+                "operation_id": "op:batch100-B085:case",
+                "claim_id": "claim:batch100-B085:case:subject",
+                "pointer": "/metadata/subject",
+                "diff_line": null,
+                "citations": [
+                  {
+                    "segment_id": "B085:L0001:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "当事人: 中国人寿保险股份有限公司大理分公司、相关分支机构及相关责任人"
+                  }
+                ],
+                "change_request": "subject将“相关分支机构”具体化为“祥云县支公司”，但原文当事人行仅称“相关分支机构”，祥云县支公司仅出现在处罚内容中；建议保留原文表述或在subject中注明祥云县支公司系由处罚内容推知，避免将处罚对象直接等同于当事人列举。"
+              },
+              {
+                "issue_id": "issue:batch100-B085:behaviors:2:action-duplicate",
+                "severity": "non_blocking",
+                "category": "fact_inference",
+                "operation_id": "op:batch100-B085:behaviors:2",
+                "claim_id": "claim:batch100-B085:behaviors:2:action",
+                "pointer": "/action",
+                "diff_line": null,
+                "citations": [
+                  {
+                    "segment_id": "B085:L0003:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "提供有虚假陈述的报告、提供有虚假陈述的报告"
+                  }
+                ],
+                "change_request": "请核实原文重复列示是否代表两项独立违法行为；若为两项，应拆分behavior或说明合并依据；若为排版重复，应在unknowns中注明。"
+              }
+            ],
+            "disputed_claims": []
+          }
+        ]
+      },
+      "raw_claim_type_uncertainty_and_citations": [
+        {
+          "file": "proposer-r1-a1.json",
+          "case_subject": {
+            "value": "中国人寿保险股份有限公司大理分公司、中国人寿保险股份有限公司祥云县支公司及相关责任人",
+            "claim_type": "fact",
+            "uncertainty": null,
+            "citations": [
+              {
+                "segment_id": "B085:L0001:588de9bf76feebf6:588de9bf76feebf6",
+                "quote": "当事人: 中国人寿保险股份有限公司大理分公司、相关分支机构及相关责任人"
+              },
+              {
+                "segment_id": "B085:L0005:588de9bf76feebf6:588de9bf76feebf6",
+                "quote": "对中国人寿保险股份有限公司大理分公司罚款57万元；对中国人寿保险股份有限公司祥云县支公司罚款12万元；对责任人胡艳东、赵漾锦、杨学诗给予警告并处罚款共计14万元"
+              }
+            ]
+          },
+          "behaviors": [
+            {
+              "actor": {
+                "value": "中国人寿保险股份有限公司大理分公司及相关分支机构",
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B085:L0001:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "当事人: 中国人寿保险股份有限公司大理分公司、相关分支机构及相关责任人"
+                  }
+                ]
+              },
+              "role": {
+                "value": "institution",
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B085:L0005:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "对中国人寿保险股份有限公司大理分公司罚款57万元；对中国人寿保险股份有限公司祥云县支公司罚款12万元"
+                  }
+                ]
+              },
+              "action": {
+                "value": "委托未取得合法资格的机构从事保险销售活动",
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B085:L0003:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "委托未取得合法资格的机构从事保险销售活动"
+                  }
+                ]
+              },
+              "risk_tags": {
+                "value": [
+                  "委托无资质机构销售"
+                ],
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B085:L0003:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "委托未取得合法资格的机构从事保险销售活动"
+                  }
+                ]
+              }
+            },
+            {
+              "actor": {
+                "value": "中国人寿保险股份有限公司大理分公司及相关分支机构",
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B085:L0001:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "当事人: 中国人寿保险股份有限公司大理分公司、相关分支机构及相关责任人"
+                  }
+                ]
+              },
+              "role": {
+                "value": "institution",
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B085:L0005:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "对中国人寿保险股份有限公司大理分公司罚款57万元；对中国人寿保险股份有限公司祥云县支公司罚款12万元"
+                  }
+                ]
+              },
+              "action": {
+                "value": "未按规定使用经备案的保险条款",
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B085:L0003:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "未按规定使用经备案的保险条款"
+                  }
+                ]
+              },
+              "risk_tags": {
+                "value": [
+                  "未按规定使用费率条款"
+                ],
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B085:L0003:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "未按规定使用经备案的保险条款"
+                  }
+                ]
+              }
+            },
+            {
+              "actor": {
+                "value": "中国人寿保险股份有限公司大理分公司及相关分支机构",
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B085:L0001:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "当事人: 中国人寿保险股份有限公司大理分公司、相关分支机构及相关责任人"
+                  }
+                ]
+              },
+              "role": {
+                "value": "institution",
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B085:L0005:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "对中国人寿保险股份有限公司大理分公司罚款57万元；对中国人寿保险股份有限公司祥云县支公司罚款12万元"
+                  }
+                ]
+              },
+              "action": {
+                "value": "提供有虚假陈述的报告",
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B085:L0003:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "提供有虚假陈述的报告、提供有虚假陈述的报告"
+                  }
+                ]
+              },
+              "risk_tags": {
+                "value": [
+                  "其他"
+                ],
+                "claim_type": "fact",
+                "uncertainty": "案由为提供虚假陈述报告，字典无完全对应标签，暂归其他",
+                "citations": [
+                  {
+                    "segment_id": "B085:L0003:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "提供有虚假陈述的报告、提供有虚假陈述的报告"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "file": "proposer-r2-a2.json",
+          "case_subject": {
+            "value": "中国人寿保险股份有限公司大理分公司、中国人寿保险股份有限公司祥云县支公司及相关责任人",
+            "claim_type": "fact",
+            "uncertainty": null,
+            "citations": [
+              {
+                "segment_id": "B085:L0001:588de9bf76feebf6:588de9bf76feebf6",
+                "quote": "当事人: 中国人寿保险股份有限公司大理分公司、相关分支机构及相关责任人"
+              },
+              {
+                "segment_id": "B085:L0005:588de9bf76feebf6:588de9bf76feebf6",
+                "quote": "对中国人寿保险股份有限公司大理分公司罚款57万元；对中国人寿保险股份有限公司祥云县支公司罚款12万元；对责任人胡艳东、赵漾锦、杨学诗给予警告并处罚款共计14万元"
+              }
+            ]
+          },
+          "behaviors": [
+            {
+              "actor": {
+                "value": "中国人寿保险股份有限公司大理分公司及相关分支机构",
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B085:L0001:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "当事人: 中国人寿保险股份有限公司大理分公司、相关分支机构及相关责任人"
+                  }
+                ]
+              },
+              "role": {
+                "value": "institution",
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B085:L0005:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "对中国人寿保险股份有限公司大理分公司罚款57万元；对中国人寿保险股份有限公司祥云县支公司罚款12万元"
+                  }
+                ]
+              },
+              "action": {
+                "value": "委托未取得合法资格的机构从事保险销售活动",
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B085:L0003:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "委托未取得合法资格的机构从事保险销售活动"
+                  }
+                ]
+              },
+              "risk_tags": {
+                "value": [
+                  "委托无资质机构销售"
+                ],
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B085:L0003:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "委托未取得合法资格的机构从事保险销售活动"
+                  }
+                ]
+              }
+            },
+            {
+              "actor": {
+                "value": "中国人寿保险股份有限公司大理分公司及相关分支机构",
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B085:L0001:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "当事人: 中国人寿保险股份有限公司大理分公司、相关分支机构及相关责任人"
+                  }
+                ]
+              },
+              "role": {
+                "value": "institution",
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B085:L0005:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "对中国人寿保险股份有限公司大理分公司罚款57万元；对中国人寿保险股份有限公司祥云县支公司罚款12万元"
+                  }
+                ]
+              },
+              "action": {
+                "value": "未按规定使用经备案的保险条款",
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B085:L0003:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "未按规定使用经备案的保险条款"
+                  }
+                ]
+              },
+              "risk_tags": {
+                "value": [
+                  "未按规定使用费率条款"
+                ],
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B085:L0003:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "未按规定使用经备案的保险条款"
+                  }
+                ]
+              }
+            },
+            {
+              "actor": {
+                "value": "中国人寿保险股份有限公司大理分公司及相关分支机构",
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B085:L0001:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "当事人: 中国人寿保险股份有限公司大理分公司、相关分支机构及相关责任人"
+                  }
+                ]
+              },
+              "role": {
+                "value": "institution",
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B085:L0005:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "对中国人寿保险股份有限公司大理分公司罚款57万元；对中国人寿保险股份有限公司祥云县支公司罚款12万元"
+                  }
+                ]
+              },
+              "action": {
+                "value": "提供有虚假陈述的报告",
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B085:L0003:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "提供有虚假陈述的报告、提供有虚假陈述的报告"
+                  }
+                ]
+              },
+              "risk_tags": {
+                "value": [],
+                "claim_type": "fact",
+                "uncertainty": "字典无与“提供有虚假陈述的报告”定义完全对应的具体标签，“其他”为兜底标签且审核认为对应关系不明确，故不贴标签（允许0标签）",
+                "citations": [
+                  {
+                    "segment_id": "B085:L0003:588de9bf76feebf6:588de9bf76feebf6",
+                    "quote": "提供有虚假陈述的报告、提供有虚假陈述的报告"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B040",
+      "finding": "no_obvious_substantive_issue_in_checked_fields",
+      "note": "“虚构中介业务套取手续费”与“财务、业务数据不真实”分成两条，前者有虚假业务+套取费用事实，后者归“其他”，没有混成资金套取事实。",
+      "draft_and_latest_assessment": "主体阜新太平财险、26万元、完整文号及日期机关均一致，未把罚款拆成分行为金额。",
+      "reviewer_assessment": "Reviewer批准未发现明显材料矛盾。",
+      "terminal_status": "experiment_protocol_approved_not_applied",
+      "error": null,
+      "approved_final_exists": true,
+      "packet": {
+        "id": "B040",
+        "text": "当事人: 太平财产保险有限公司阜新中心支公司\r\n行政处罚决定书文号\r\n阜金罚决字〔2026〕3号\r\n主要违法违规事实(案由)\r\n虚构中介业务套取手续费及财务、业务数据不真实\r\n行政处罚内容\r\n罚款26万元\r\n作出处罚决定的机关名称\r\n阜新金融监管分局\r\n作出处罚决定的日期\r\n2026年7月24日\r\n来源公示\r\n阜新金融监管分局行政处罚信息公示列表",
+        "stratum": "ordinary_institution",
+        "status": "experiment_protocol_approved_not_applied",
+        "error": null,
+        "proposals": [
+          {
+            "attempt": 1,
+            "revision": 1,
+            "output": {
+              "action": "add",
+              "reason": "公开处罚决定书完整载明当事人、文号、日期、机关、案由与罚款金额；两项独立违规事实分别记录，旧库精确检索0命中不证明不存在，但本提案仅基于已读原文新增。",
+              "case": {
+                "subject": "太平财产保险有限公司阜新中心支公司",
+                "document_number": "阜金罚决字〔2026〕3号",
+                "decision_date": "2026年7月24日",
+                "authority": "阜新金融监管分局",
+                "position": null,
+                "legal_basis": null,
+                "penalties": "罚款26万元",
+                "unknowns": [
+                  "position",
+                  "legal_basis"
+                ]
+              },
+              "behaviors": [
+                {
+                  "actor": "太平财产保险有限公司阜新中心支公司",
+                  "role": "institution",
+                  "action": "虚构中介业务套取手续费",
+                  "risk_tags": [
+                    "虚列费用套取资金"
+                  ],
+                  "unknowns": []
+                },
+                {
+                  "actor": "太平财产保险有限公司阜新中心支公司",
+                  "role": "institution",
+                  "action": "财务、业务数据不真实",
+                  "risk_tags": [
+                    "其他"
+                  ],
+                  "unknowns": []
+                }
+              ]
+            }
+          }
+        ],
+        "reviews": [
+          {
+            "revision": 1,
+            "decision": "approve",
+            "issues": [],
+            "disputed_claims": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "B083",
+      "finding": "no_obvious_substantive_issue_in_checked_fields",
+      "note": "“编制虚假报告、报表、文件或者资料”归“其他”，没有推断客户信息不真实或资金套取。机构14万元及责任人栾国平警告罚款2万元都在处罚值中按对象保留。",
+      "draft_and_latest_assessment": "行为只给机构，没有因个人被罚就推定栾国平亲自编制；组合case仍是组级记录，个人责任详情未知。",
+      "reviewer_assessment": "Reviewer批准未发现明显实质矛盾；不能声称已为栾国平建立独立完整案件。",
+      "terminal_status": "experiment_protocol_approved_not_applied",
+      "error": null,
+      "approved_final_exists": true,
+      "packet": {
+        "id": "B083",
+        "text": "当事人: 中国太平洋人寿保险股份有限公司长沙中心支公司及相关责任人\r\n主要违法违规事实(案由)\r\n编制虚假报告、报表、文件或者资料\r\n行政处罚内容\r\n对中国太平洋人寿保险股份有限公司长沙中心支公司罚款14万元。对责任人栾国平警告并罚款2万元。\r\n作出处罚决定的机关名称\r\n湖南金融监管局\r\n作出处罚决定的日期\r\n2026年7月31日\r\n来源公示\r\n国家金融监督管理总局湖南监管局行政处罚信息公示列表",
+        "stratum": "multi_subject",
+        "status": "experiment_protocol_approved_not_applied",
+        "error": null,
+        "proposals": [
+          {
+            "attempt": 1,
+            "revision": 1,
+            "output": {
+              "action": "add",
+              "reason": "公开处罚公示明确载明当事人、案由、处罚内容、处罚机关和日期；旧库精确检索0命中不能证明不存在，但本提案仅依据已读原文新增一条记录。",
+              "case": {
+                "subject": "中国太平洋人寿保险股份有限公司长沙中心支公司及相关责任人",
+                "document_number": null,
+                "decision_date": "2026年7月31日",
+                "authority": "湖南金融监管局",
+                "position": null,
+                "legal_basis": null,
+                "penalties": "对中国太平洋人寿保险股份有限公司长沙中心支公司罚款14万元；对责任人栾国平警告并罚款2万元",
+                "unknowns": [
+                  "document_number",
+                  "position",
+                  "legal_basis"
+                ]
+              },
+              "behaviors": [
+                {
+                  "actor": "中国太平洋人寿保险股份有限公司长沙中心支公司",
+                  "role": "institution",
+                  "action": "编制虚假报告、报表、文件或者资料",
+                  "risk_tags": [
+                    "其他"
+                  ],
+                  "unknowns": [
+                    "虚假报告、报表、文件或者资料的具体内容、涉及期间及编制方式"
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "reviews": [
+          {
+            "revision": 1,
+            "decision": "approve",
+            "issues": [],
+            "disputed_claims": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "B052",
+      "finding": "object_mismatch_in_proposed_tag_no_approved_final",
+      "note": "第一项“唆使、诱导保险代理人进行违背诚信义务的活动”被以fact贴“诱导投保”；字典要求诱导消费者投保，原文对象是代理人、行为是违背诚信义务，不能只凭“诱导”一词等同。",
+      "draft_and_latest_assessment": "第二项资金套取标签实际claim_type=retrieval_hypothesis并说明原文未明确是否套取资金，不能误报为肯定事实；第三项代理人返合同外利益actor留null且注明不能确认孙中娇亲自实施，责任边界处理有依据。三项事实均保留。",
+      "reviewer_assessment": "Reviewer探索调用失败，终态held/HOST_ERROR，无可用审核决定或获批终稿；首项语义问题尚未被审核修复。",
+      "terminal_status": "held",
+      "error": {
+        "code": "HOST_ERROR",
+        "field": null,
+        "message": "Error: EXPLORATION_FAILED_model_failure"
+      },
+      "approved_final_exists": false,
+      "packet": {
+        "id": "B052",
+        "text": "当事人: 孙中娇（时任中汇人寿保险股份有限公司临沂中心支公司银代部副经理）\r\n行政处罚决定书文号\r\n临金罚决字〔2026〕29号\r\n主要违法违规事实(案由)\r\n唆使、诱导保险代理人进行违背诚信义务的活动，编制虚假业务财务资料，个人保险代理人给予投保人保险合同约定以外的利益\r\n行政处罚内容\r\n警告并罚款1.7万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局临沂监管分局\r\n作出处罚决定的日期\r\n2026年8月13日\r\n来源公示\r\n国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕28号-30号）",
+        "stratum": "individual",
+        "status": "held",
+        "error": {
+          "code": "HOST_ERROR",
+          "field": null,
+          "message": "Error: EXPLORATION_FAILED_model_failure"
+        },
+        "proposals": [
+          {
+            "attempt": 1,
+            "revision": 1,
+            "output": {
+              "action": "add",
+              "reason": "公开处罚决定书完整载明当事人、文号、日期、机关、职务、案由与处罚；旧库两次精确检索均0命中，零命中不证明旧库不存在，但本件证据完整且无冲突，故新增。",
+              "case": {
+                "subject": "孙中娇",
+                "document_number": "临金罚决字〔2026〕29号",
+                "decision_date": "2026年8月13日",
+                "authority": "国家金融监督管理总局临沂监管分局",
+                "position": "中汇人寿保险股份有限公司临沂中心支公司银代部副经理",
+                "legal_basis": null,
+                "penalties": "警告并罚款1.7万元",
+                "unknowns": [
+                  "legal_basis"
+                ]
+              },
+              "behaviors": [
+                {
+                  "actor": "孙中娇",
+                  "role": "responsible_person",
+                  "action": "唆使、诱导保险代理人进行违背诚信义务的活动",
+                  "risk_tags": [
+                    "诱导投保"
+                  ],
+                  "unknowns": [
+                    "具体唆使诱导的对象、方式与涉及产品未载明"
+                  ]
+                },
+                {
+                  "actor": "孙中娇",
+                  "role": "responsible_person",
+                  "action": "编制虚假业务财务资料",
+                  "risk_tags": [
+                    "虚列费用套取资金"
+                  ],
+                  "unknowns": [
+                    "虚假资料的具体种类、金额与用途未载明"
+                  ]
+                },
+                {
+                  "actor": null,
+                  "role": "unspecified",
+                  "action": "个人保险代理人给予投保人保险合同约定以外的利益",
+                  "risk_tags": [
+                    "合同外利益"
+                  ],
+                  "unknowns": [
+                    "actor",
+                    "给予利益的具体形式与金额未载明"
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "reviews": [
+          {
+            "revision": 1,
+            "decision": null,
+            "issues": null,
+            "disputed_claims": []
+          }
+        ]
+      },
+      "raw_claim_type_uncertainty_and_citations": [
+        {
+          "file": "proposer-r1-a1.json",
+          "case_subject": {
+            "value": "孙中娇",
+            "claim_type": "fact",
+            "uncertainty": null,
+            "citations": [
+              {
+                "segment_id": "B052:L0001:33b1c13468ee7182:33b1c13468ee7182",
+                "quote": "当事人: 孙中娇（时任中汇人寿保险股份有限公司临沂中心支公司银代部副经理）"
+              }
+            ]
+          },
+          "behaviors": [
+            {
+              "actor": {
+                "value": "孙中娇",
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B052:L0001:33b1c13468ee7182:33b1c13468ee7182",
+                    "quote": "当事人: 孙中娇（时任中汇人寿保险股份有限公司临沂中心支公司银代部副经理）"
+                  }
+                ]
+              },
+              "role": {
+                "value": "responsible_person",
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B052:L0001:33b1c13468ee7182:33b1c13468ee7182",
+                    "quote": "当事人: 孙中娇（时任中汇人寿保险股份有限公司临沂中心支公司银代部副经理）"
+                  }
+                ]
+              },
+              "action": {
+                "value": "唆使、诱导保险代理人进行违背诚信义务的活动",
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B052:L0005:33b1c13468ee7182:33b1c13468ee7182",
+                    "quote": "唆使、诱导保险代理人进行违背诚信义务的活动"
+                  }
+                ]
+              },
+              "risk_tags": {
+                "value": [
+                  "诱导投保"
+                ],
+                "claim_type": "fact",
+                "uncertainty": "该行为指向唆使诱导代理人违背诚信义务，与“诱导投保”定义部分重合，按原文表述谨慎标注。",
+                "citations": [
+                  {
+                    "segment_id": "B052:L0005:33b1c13468ee7182:33b1c13468ee7182",
+                    "quote": "唆使、诱导保险代理人进行违背诚信义务的活动"
+                  }
+                ]
+              }
+            },
+            {
+              "actor": {
+                "value": "孙中娇",
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B052:L0001:33b1c13468ee7182:33b1c13468ee7182",
+                    "quote": "当事人: 孙中娇（时任中汇人寿保险股份有限公司临沂中心支公司银代部副经理）"
+                  }
+                ]
+              },
+              "role": {
+                "value": "responsible_person",
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B052:L0001:33b1c13468ee7182:33b1c13468ee7182",
+                    "quote": "当事人: 孙中娇（时任中汇人寿保险股份有限公司临沂中心支公司银代部副经理）"
+                  }
+                ]
+              },
+              "action": {
+                "value": "编制虚假业务财务资料",
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B052:L0005:33b1c13468ee7182:33b1c13468ee7182",
+                    "quote": "编制虚假业务财务资料"
+                  }
+                ]
+              },
+              "risk_tags": {
+                "value": [
+                  "虚列费用套取资金"
+                ],
+                "claim_type": "retrieval_hypothesis",
+                "uncertainty": "原文仅称“编制虚假业务财务资料”，未明确是否虚列费用套取资金，标签为待核假设。",
+                "citations": [
+                  {
+                    "segment_id": "B052:L0005:33b1c13468ee7182:33b1c13468ee7182",
+                    "quote": "编制虚假业务财务资料"
+                  }
+                ]
+              }
+            },
+            {
+              "actor": {
+                "value": null,
+                "claim_type": "fact",
+                "uncertainty": "原文表述为“个人保险代理人给予投保人保险合同约定以外的利益”，未指明该个人保险代理人身份，不能确认孙中娇亲自实施。",
+                "citations": [
+                  {
+                    "segment_id": "B052:L0005:33b1c13468ee7182:33b1c13468ee7182",
+                    "quote": "个人保险代理人给予投保人保险合同约定以外的利益"
+                  }
+                ]
+              },
+              "role": {
+                "value": "unspecified",
+                "claim_type": "fact",
+                "uncertainty": "实施主体为个人保险代理人，原文未列明具体人员。",
+                "citations": [
+                  {
+                    "segment_id": "B052:L0005:33b1c13468ee7182:33b1c13468ee7182",
+                    "quote": "个人保险代理人给予投保人保险合同约定以外的利益"
+                  }
+                ]
+              },
+              "action": {
+                "value": "个人保险代理人给予投保人保险合同约定以外的利益",
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B052:L0005:33b1c13468ee7182:33b1c13468ee7182",
+                    "quote": "个人保险代理人给予投保人保险合同约定以外的利益"
+                  }
+                ]
+              },
+              "risk_tags": {
+                "value": [
+                  "合同外利益"
+                ],
+                "claim_type": "fact",
+                "uncertainty": null,
+                "citations": [
+                  {
+                    "segment_id": "B052:L0005:33b1c13468ee7182:33b1c13468ee7182",
+                    "quote": "个人保险代理人给予投保人保险合同约定以外的利益"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B009",
+      "finding": "no_obvious_substantive_issue_in_checked_fields",
+      "note": "财务业务数据不真实归“其他”，没有扩大到客户信息不真实或资金套取；主体、完整案号、日期、机关、责令改正及十二万元一致。",
+      "draft_and_latest_assessment": "仅一稿；具体不真实数据项和方式列未知，未把不同主体/不同年度同类案由当冲突。",
+      "reviewer_assessment": "Reviewer批准未发现明显材料矛盾。",
+      "terminal_status": "experiment_protocol_approved_not_applied",
+      "error": null,
+      "approved_final_exists": true,
+      "packet": {
+        "id": "B009",
+        "text": "当事人: 太平人寿保险有限公司葫芦岛中心支公司\r\n行政处罚决定书文号\r\n葫金监罚决〔2026〕3号\r\n主要违法违规事实(案由)\r\n财务业务数据不真实\r\n行政处罚内容\r\n责令改正，处罚款十二万元\r\n作出处罚决定的机关名称\r\n葫芦岛金融监管分局\r\n作出处罚决定的日期\r\n2026年7月6日\r\n来源公示\r\n葫芦岛金融监管分局行政处罚信息公示列表",
+        "stratum": "ordinary_institution",
+        "status": "experiment_protocol_approved_not_applied",
+        "error": null,
+        "proposals": [
+          {
+            "attempt": 1,
+            "revision": 1,
+            "output": {
+              "action": "add",
+              "reason": "新处罚公示：主体为太平人寿保险有限公司葫芦岛中心支公司，文号葫金监罚决〔2026〕3号，案由为财务业务数据不真实，处罚为责令改正并罚款十二万元。检索到的旧库记录为2025年大家人寿葫芦岛中心支公司同类案由，主体、文号、日期均不同，不构成同一处罚；本件按新增处理。",
+              "case": {
+                "subject": "太平人寿保险有限公司葫芦岛中心支公司",
+                "document_number": "葫金监罚决〔2026〕3号",
+                "decision_date": "2026年7月6日",
+                "authority": "葫芦岛金融监管分局",
+                "position": null,
+                "legal_basis": null,
+                "penalties": "责令改正，处罚款十二万元",
+                "unknowns": [
+                  "position",
+                  "legal_basis"
+                ]
+              },
+              "behaviors": [
+                {
+                  "actor": "太平人寿保险有限公司葫芦岛中心支公司",
+                  "role": "institution",
+                  "action": "财务业务数据不真实",
+                  "risk_tags": [
+                    "其他"
+                  ],
+                  "unknowns": [
+                    "具体不真实数据项及行为方式"
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "reviews": [
+          {
+            "revision": 1,
+            "decision": "approve",
+            "issues": [],
+            "disputed_claims": []
+          }
+        ]
+      }
+    }
+  ],
+  "finding_counts": {
+    "no_obvious_substantive_issue_in_checked_fields": 5,
+    "duplicate_add_proposed_but_protocol_blocked": 1,
+    "scope_no_change_unreviewed_supported": 1,
+    "supported_tag_correction": 1,
+    "reviewer_false_positive_and_protocol_blocked": 1,
+    "object_mismatch_in_proposed_tag_no_approved_final": 1
+  },
+  "input_result_sha256": {},
+  "api_calls": 0,
+  "model_results_modified": false,
+  "production_modified": false,
+  "limitations": [
+    "Codex抽查，非人工金标；不能计算或宣称全量准确率。",
+    "audit_packet省略claim_type/uncertainty，本次对B052/B085回读原始字段，不能混淆retrieval_hypothesis与fact。",
+    "B100同案结论引用已完成身份审计，不把子串相同当完整文号相同。",
+    "未获批终态不计为通过；有初稿或入P诊断视图不等于PR批准成功。"
+  ]
+}

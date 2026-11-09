@@ -1,0 +1,67 @@
+{
+  "id": "B015",
+  "status": "format_repair_exhausted",
+  "production_admission": false,
+  "receipt": null,
+  "format_repairs": {
+    "proposer": 0,
+    "reviewer": 1
+  },
+  "business_revision_used": true,
+  "revisions": [
+    {
+      "revision": 1,
+      "phase": "proposer",
+      "role_attempt": 1,
+      "action": "add",
+      "mechanical_valid": true
+    },
+    {
+      "revision": 1,
+      "phase": "reviewer",
+      "role_attempt": 1,
+      "decision": "request_changes",
+      "validation": {
+        "experiment_review_valid": true,
+        "decision": "request_changes",
+        "production_admission": false,
+        "receipt": null
+      }
+    },
+    {
+      "revision": 2,
+      "phase": "proposer",
+      "role_attempt": 2,
+      "action": "add",
+      "mechanical_valid": true
+    },
+    {
+      "revision": 2,
+      "phase": "reviewer",
+      "error": {
+        "code": "REVIEW_DECISION_CONSISTENCY",
+        "field": "",
+        "message": "REVIEW_DECISION_CONSISTENCY"
+      }
+    },
+    {
+      "revision": 2,
+      "phase": "reviewer",
+      "error": {
+        "code": "REVIEW_DECISION_CONSISTENCY",
+        "field": "",
+        "message": "REVIEW_DECISION_CONSISTENCY"
+      }
+    }
+  ],
+  "terminal_error": {
+    "code": "REVIEW_DECISION_CONSISTENCY",
+    "field": "",
+    "message": "REVIEW_DECISION_CONSISTENCY"
+  },
+  "stop_reason": "REVIEW_DECISION_CONSISTENCY",
+  "format_repairs_used": {
+    "proposer": 0,
+    "reviewer": 1
+  }
+}

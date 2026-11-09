@@ -1,0 +1,41 @@
+{
+  "id": "B004",
+  "status": "format_repair_exhausted",
+  "production_admission": false,
+  "receipt": null,
+  "format_repairs": {
+    "proposer": 1,
+    "reviewer": 0
+  },
+  "business_revision_used": false,
+  "revisions": [
+    {
+      "revision": 1,
+      "phase": "proposer",
+      "error": {
+        "code": "COVERAGE_CITATION",
+        "field": "case/penalties",
+        "message": "COVERAGE_CITATION: case/penalties"
+      }
+    },
+    {
+      "revision": 1,
+      "phase": "proposer",
+      "error": {
+        "code": "COVERAGE_CITATION",
+        "field": "case/penalties",
+        "message": "COVERAGE_CITATION: case/penalties"
+      }
+    }
+  ],
+  "terminal_error": {
+    "code": "COVERAGE_CITATION",
+    "field": "case/penalties",
+    "message": "COVERAGE_CITATION: case/penalties"
+  },
+  "stop_reason": "COVERAGE_CITATION",
+  "format_repairs_used": {
+    "proposer": 1,
+    "reviewer": 0
+  }
+}

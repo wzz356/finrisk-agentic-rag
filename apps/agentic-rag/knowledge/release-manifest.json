@@ -1,0 +1,65 @@
+{
+  "release": "knowledge-full-20261024",
+  "origin_source_counts": {
+    "original_dataset": 10000,
+    "official_crawl": 850
+  },
+  "indexed_source_counts": {
+    "original_dataset": 10000,
+    "official_crawl": 849
+  },
+  "source_count": 10850,
+  "indexed_source_count": 10849,
+  "chunk_count": 70483,
+  "partitions_are_separate": true,
+  "regulation_library_included": true,
+  "regulation_article_count": 67,
+  "human_approved": false,
+  "semantic_coverage_verified": false,
+  "application_default_changed": false,
+  "api_calls_this_publication": 0,
+  "assets": [
+    {
+      "file": "finrisk-original_dataset-runtime-20261024.zip",
+      "bytes": 138568000,
+      "sha256": "8bc0703c56953e261d45295c4b1dd06b74227466a8c922889b00e6fdd8281b73",
+      "members": 9,
+      "kind": "runtime"
+    },
+    {
+      "file": "finrisk-original_dataset-normalized-20261024.zip",
+      "bytes": 120875604,
+      "sha256": "98d24c82142d768365c746a4002b61b5511bb9c1f281b4f91c63cf30a3383292",
+      "members": 22,
+      "kind": "normalized"
+    },
+    {
+      "file": "finrisk-official_crawl-runtime-20261024.zip",
+      "bytes": 6425669,
+      "sha256": "bb9a254b5e98968910f2dd5170adbc2e000e8672fa86e70ee465f60a71a92121",
+      "members": 9,
+      "kind": "runtime"
+    },
+    {
+      "file": "finrisk-official_crawl-normalized-20261024.zip",
+      "bytes": 7688850,
+      "sha256": "72f85b49f8d9798457e8cb3e40e972558a30df50ce28f901a7003b1621909176",
+      "members": 22,
+      "kind": "normalized"
+    },
+    {
+      "file": "finrisk-source-audit-20261024.zip",
+      "bytes": 987751,
+      "sha256": "821c0b5106afab294f6776c12f793c4e996819f7482b7cf9efb560dfb7c5f1a9",
+      "members": 1234,
+      "kind": "source_audit"
+    },
+    {
+      "file": "finrisk-regulations-reference-20261024.zip",
+      "bytes": 450504,
+      "sha256": "047028fc44c099917e9dbb7439c12c72bfeba1bdc36ccb813f51762a1e6b6261",
+      "members": 58,
+      "kind": "regulations_reference"
+    }
+  ]
+}

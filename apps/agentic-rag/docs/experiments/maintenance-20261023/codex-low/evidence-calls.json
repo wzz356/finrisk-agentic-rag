@@ -1,0 +1,4881 @@
+[
+  {
+    "public_job": "C-B002-proposer-r1-a1",
+    "sample_id": "B002",
+    "role": "proposer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B002",
+      "raw_sha256": "00ccffe5776bd7da20851d6d5b56339c806abd0af33491e8793a215f581896b7",
+      "text_sha256": "00ccffe5776bd7da20851d6d5b56339c806abd0af33491e8793a215f581896b7",
+      "text": "当事人: 刘义键（时任中国太平洋财产保险股份有限公司德阳中心支公司农险部经理）\r\n行政处罚决定书文号\r\n德金监罚决字〔2026〕11号\r\n主要违法违规事实(案由)\r\n编制虚假资料虚列费用\r\n行政处罚内容\r\n警告并处罚款人民币1.5万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局德阳监管分局\r\n作出处罚决定的日期\r\n2026年8月24日\r\n来源公示\r\n国家金融监督管理总局德阳监管分局行政处罚信息公开表",
+      "total_codepoints": 204,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B002:L0001:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "当事人: 刘义键（时任中国太平洋财产保险股份有限公司德阳中心支公司农险部经理）\r\n",
+          "start": 0,
+          "end": 41
+        },
+        {
+          "segment_id": "B002:L0002:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "行政处罚决定书文号\r\n",
+          "start": 41,
+          "end": 52
+        },
+        {
+          "segment_id": "B002:L0003:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "德金监罚决字〔2026〕11号\r\n",
+          "start": 52,
+          "end": 69
+        },
+        {
+          "segment_id": "B002:L0004:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "主要违法违规事实(案由)\r\n",
+          "start": 69,
+          "end": 83
+        },
+        {
+          "segment_id": "B002:L0005:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "编制虚假资料虚列费用\r\n",
+          "start": 83,
+          "end": 95
+        },
+        {
+          "segment_id": "B002:L0006:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "行政处罚内容\r\n",
+          "start": 95,
+          "end": 103
+        },
+        {
+          "segment_id": "B002:L0007:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "警告并处罚款人民币1.5万元\r\n",
+          "start": 103,
+          "end": 119
+        },
+        {
+          "segment_id": "B002:L0008:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "作出处罚决定的机关名称\r\n",
+          "start": 119,
+          "end": 132
+        },
+        {
+          "segment_id": "B002:L0009:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "国家金融监督管理总局德阳监管分局\r\n",
+          "start": 132,
+          "end": 150
+        },
+        {
+          "segment_id": "B002:L0010:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 150,
+          "end": 161
+        },
+        {
+          "segment_id": "B002:L0011:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "2026年8月24日\r\n",
+          "start": 161,
+          "end": 173
+        },
+        {
+          "segment_id": "B002:L0012:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "来源公示\r\n",
+          "start": 173,
+          "end": 179
+        },
+        {
+          "segment_id": "B002:L0013:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "国家金融监督管理总局德阳监管分局行政处罚信息公开表",
+          "start": 179,
+          "end": 204
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269113&itemId=4115&generaltype=9",
+      "title": "国家金融监督管理总局德阳监管分局行政处罚信息公开表"
+    }
+  },
+  {
+    "public_job": "C-B002-proposer-r1-a1",
+    "sample_id": "B002",
+    "role": "proposer",
+    "action": "search",
+    "args": {
+      "query": "德金监罚决字〔2026〕11号",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B002-proposer-r1-a1",
+    "sample_id": "B002",
+    "role": "proposer",
+    "action": "search",
+    "args": {
+      "query": "刘义键",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B002-proposer-r1-a2",
+    "sample_id": "B002",
+    "role": "proposer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B002",
+      "raw_sha256": "00ccffe5776bd7da20851d6d5b56339c806abd0af33491e8793a215f581896b7",
+      "text_sha256": "00ccffe5776bd7da20851d6d5b56339c806abd0af33491e8793a215f581896b7",
+      "text": "当事人: 刘义键（时任中国太平洋财产保险股份有限公司德阳中心支公司农险部经理）\r\n行政处罚决定书文号\r\n德金监罚决字〔2026〕11号\r\n主要违法违规事实(案由)\r\n编制虚假资料虚列费用\r\n行政处罚内容\r\n警告并处罚款人民币1.5万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局德阳监管分局\r\n作出处罚决定的日期\r\n2026年8月24日\r\n来源公示\r\n国家金融监督管理总局德阳监管分局行政处罚信息公开表",
+      "total_codepoints": 204,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B002:L0001:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "当事人: 刘义键（时任中国太平洋财产保险股份有限公司德阳中心支公司农险部经理）\r\n",
+          "start": 0,
+          "end": 41
+        },
+        {
+          "segment_id": "B002:L0002:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "行政处罚决定书文号\r\n",
+          "start": 41,
+          "end": 52
+        },
+        {
+          "segment_id": "B002:L0003:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "德金监罚决字〔2026〕11号\r\n",
+          "start": 52,
+          "end": 69
+        },
+        {
+          "segment_id": "B002:L0004:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "主要违法违规事实(案由)\r\n",
+          "start": 69,
+          "end": 83
+        },
+        {
+          "segment_id": "B002:L0005:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "编制虚假资料虚列费用\r\n",
+          "start": 83,
+          "end": 95
+        },
+        {
+          "segment_id": "B002:L0006:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "行政处罚内容\r\n",
+          "start": 95,
+          "end": 103
+        },
+        {
+          "segment_id": "B002:L0007:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "警告并处罚款人民币1.5万元\r\n",
+          "start": 103,
+          "end": 119
+        },
+        {
+          "segment_id": "B002:L0008:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "作出处罚决定的机关名称\r\n",
+          "start": 119,
+          "end": 132
+        },
+        {
+          "segment_id": "B002:L0009:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "国家金融监督管理总局德阳监管分局\r\n",
+          "start": 132,
+          "end": 150
+        },
+        {
+          "segment_id": "B002:L0010:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 150,
+          "end": 161
+        },
+        {
+          "segment_id": "B002:L0011:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "2026年8月24日\r\n",
+          "start": 161,
+          "end": 173
+        },
+        {
+          "segment_id": "B002:L0012:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "来源公示\r\n",
+          "start": 173,
+          "end": 179
+        },
+        {
+          "segment_id": "B002:L0013:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "国家金融监督管理总局德阳监管分局行政处罚信息公开表",
+          "start": 179,
+          "end": 204
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269113&itemId=4115&generaltype=9",
+      "title": "国家金融监督管理总局德阳监管分局行政处罚信息公开表"
+    }
+  },
+  {
+    "public_job": "C-B002-proposer-r1-a2",
+    "sample_id": "B002",
+    "role": "proposer",
+    "action": "search",
+    "args": {
+      "query": "德金监罚决字〔2026〕11号",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B002-reviewer-r1-a1",
+    "sample_id": "B002",
+    "role": "reviewer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B002",
+      "raw_sha256": "00ccffe5776bd7da20851d6d5b56339c806abd0af33491e8793a215f581896b7",
+      "text_sha256": "00ccffe5776bd7da20851d6d5b56339c806abd0af33491e8793a215f581896b7",
+      "text": "当事人: 刘义键（时任中国太平洋财产保险股份有限公司德阳中心支公司农险部经理）\r\n行政处罚决定书文号\r\n德金监罚决字〔2026〕11号\r\n主要违法违规事实(案由)\r\n编制虚假资料虚列费用\r\n行政处罚内容\r\n警告并处罚款人民币1.5万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局德阳监管分局\r\n作出处罚决定的日期\r\n2026年8月24日\r\n来源公示\r\n国家金融监督管理总局德阳监管分局行政处罚信息公开表",
+      "total_codepoints": 204,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B002:L0001:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "当事人: 刘义键（时任中国太平洋财产保险股份有限公司德阳中心支公司农险部经理）\r\n",
+          "start": 0,
+          "end": 41
+        },
+        {
+          "segment_id": "B002:L0002:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "行政处罚决定书文号\r\n",
+          "start": 41,
+          "end": 52
+        },
+        {
+          "segment_id": "B002:L0003:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "德金监罚决字〔2026〕11号\r\n",
+          "start": 52,
+          "end": 69
+        },
+        {
+          "segment_id": "B002:L0004:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "主要违法违规事实(案由)\r\n",
+          "start": 69,
+          "end": 83
+        },
+        {
+          "segment_id": "B002:L0005:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "编制虚假资料虚列费用\r\n",
+          "start": 83,
+          "end": 95
+        },
+        {
+          "segment_id": "B002:L0006:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "行政处罚内容\r\n",
+          "start": 95,
+          "end": 103
+        },
+        {
+          "segment_id": "B002:L0007:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "警告并处罚款人民币1.5万元\r\n",
+          "start": 103,
+          "end": 119
+        },
+        {
+          "segment_id": "B002:L0008:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "作出处罚决定的机关名称\r\n",
+          "start": 119,
+          "end": 132
+        },
+        {
+          "segment_id": "B002:L0009:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "国家金融监督管理总局德阳监管分局\r\n",
+          "start": 132,
+          "end": 150
+        },
+        {
+          "segment_id": "B002:L0010:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 150,
+          "end": 161
+        },
+        {
+          "segment_id": "B002:L0011:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "2026年8月24日\r\n",
+          "start": 161,
+          "end": 173
+        },
+        {
+          "segment_id": "B002:L0012:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "来源公示\r\n",
+          "start": 173,
+          "end": 179
+        },
+        {
+          "segment_id": "B002:L0013:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "国家金融监督管理总局德阳监管分局行政处罚信息公开表",
+          "start": 179,
+          "end": 204
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269113&itemId=4115&generaltype=9",
+      "title": "国家金融监督管理总局德阳监管分局行政处罚信息公开表"
+    }
+  },
+  {
+    "public_job": "C-B002-reviewer-r1-a1",
+    "sample_id": "B002",
+    "role": "reviewer",
+    "action": "search",
+    "args": {
+      "query": "德金监罚决字〔2026〕11号",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B003-proposer-r1-a1",
+    "sample_id": "B003",
+    "role": "proposer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B003",
+      "raw_sha256": "05ad4426ea7bf82be3874a9a262adf80ef6132b7f3c88095093a6be997530633",
+      "text_sha256": "05ad4426ea7bf82be3874a9a262adf80ef6132b7f3c88095093a6be997530633",
+      "text": "当事人: 健科保险经纪有限公司新疆分公司及相关责任人\r\n主要违法违规事实(案由)\r\n利用业务便利为其他机构或者个人牟取不正当利益\r\n行政处罚内容\r\n对该分公司罚款10万元。对张青警告并罚款3万元\r\n作出处罚决定的机关名称\r\n新疆金融监管局\r\n作出处罚决定的日期\r\n2026年7月8日\r\n来源公示\r\n新疆金融监管局行政处罚信息公示列表",
+      "total_codepoints": 166,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B003:L0001:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "text": "当事人: 健科保险经纪有限公司新疆分公司及相关责任人\r\n",
+          "start": 0,
+          "end": 28
+        },
+        {
+          "segment_id": "B003:L0002:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "text": "主要违法违规事实(案由)\r\n",
+          "start": 28,
+          "end": 42
+        },
+        {
+          "segment_id": "B003:L0003:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "text": "利用业务便利为其他机构或者个人牟取不正当利益\r\n",
+          "start": 42,
+          "end": 66
+        },
+        {
+          "segment_id": "B003:L0004:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "text": "行政处罚内容\r\n",
+          "start": 66,
+          "end": 74
+        },
+        {
+          "segment_id": "B003:L0005:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "text": "对该分公司罚款10万元。对张青警告并罚款3万元\r\n",
+          "start": 74,
+          "end": 99
+        },
+        {
+          "segment_id": "B003:L0006:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "text": "作出处罚决定的机关名称\r\n",
+          "start": 99,
+          "end": 112
+        },
+        {
+          "segment_id": "B003:L0007:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "text": "新疆金融监管局\r\n",
+          "start": 112,
+          "end": 121
+        },
+        {
+          "segment_id": "B003:L0008:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 121,
+          "end": 132
+        },
+        {
+          "segment_id": "B003:L0009:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "text": "2026年7月8日\r\n",
+          "start": 132,
+          "end": 143
+        },
+        {
+          "segment_id": "B003:L0010:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "text": "来源公示\r\n",
+          "start": 143,
+          "end": 149
+        },
+        {
+          "segment_id": "B003:L0011:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "text": "新疆金融监管局行政处罚信息公示列表",
+          "start": 149,
+          "end": 166
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263876&itemId=4114&generaltype=9",
+      "title": "新疆金融监管局行政处罚信息公示列表"
+    }
+  },
+  {
+    "public_job": "C-B003-proposer-r1-a1",
+    "sample_id": "B003",
+    "role": "proposer",
+    "action": "search",
+    "args": {
+      "query": "健科保险经纪有限公司新疆分公司",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 2,
+      "offset": 0,
+      "next_offset": null,
+      "records": [
+        {
+          "source_id": "FRV2-SOURCE-F008348-70a311b5ec9a662f34d7ee47",
+          "preview": "监督管理总局新疆监管局\n行政处罚信息公开表\n行政处罚决定书文号\n新金监罚决字〔2023〕21号\n被处罚当事人\n张青(时任健科保险经纪有限公司\n新疆分公司主要负责人)\n主要违法违规事实\n对健科保险经纪有限公司新疆分公\n司利用业务便利为其他个人牟取不\n正当利益、超出承保公司的经营区\n域从事保险经纪业务的事项负有责\n任\n行政处罚依据\n《中华人民共和国保险法》第一百\n三十一条、第一百七十一条、《保\n险经纪人监管规定》第三十七条、\n第九十三条\n行政处罚决定\n警告,并处罚款二万元。\n作出",
+          "preview_start": 4,
+          "preview_end": 244,
+          "preview_truncated": true,
+          "match_start": 64,
+          "match_end": 80
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008349-2187bee0ad2196162e08f9ce",
+          "preview": "国家金融监督管理总局新疆监管局\n行政处罚信息公开表\n行政处罚决定书文号\n新金监罚决字〔2023〕22号\n被处罚当事人\n健科保险经纪有限公司新疆分公司\n主要违法违规事实\n利用业务便利为其他个人牟取不正\n当利益、超出承保公司的经营区域\n从事保险经纪业务\n行政处罚依据\n《中华人民共和国保险法》第一百\n三十一条、第一百六十五条、《保\n险经纪人监管规定》第三十七条、\n第九十三条、《中华人民共和国行\n政处罚法》第二十八条\n行政处罚决定\n警告,处罚款八万元,没收违法所得\n二十八万零七百元。",
+          "preview_start": 0,
+          "preview_end": 240,
+          "preview_truncated": true,
+          "match_start": 59,
+          "match_end": 74
+        }
+      ],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B003-proposer-r1-a1",
+    "sample_id": "B003",
+    "role": "proposer",
+    "action": "read",
+    "args": {
+      "source_id": "FRV2-SOURCE-F008349-2187bee0ad2196162e08f9ce",
+      "start": 0,
+      "length": 2000
+    },
+    "result": {
+      "source_id": "FRV2-SOURCE-F008349-2187bee0ad2196162e08f9ce",
+      "text_sha256": "4b53169491a379bb94e8a48a812a98c55812f3c2e313e65e2ba05b91b6a9fb73",
+      "start": 0,
+      "end": 303,
+      "total_codepoints": 303,
+      "text": "国家金融监督管理总局新疆监管局\n行政处罚信息公开表\n行政处罚决定书文号\n新金监罚决字〔2023〕22号\n被处罚当事人\n健科保险经纪有限公司新疆分公司\n主要违法违规事实\n利用业务便利为其他个人牟取不正\n当利益、超出承保公司的经营区域\n从事保险经纪业务\n行政处罚依据\n《中华人民共和国保险法》第一百\n三十一条、第一百六十五条、《保\n险经纪人监管规定》第三十七条、\n第九十三条、《中华人民共和国行\n政处罚法》第二十八条\n行政处罚决定\n警告,处罚款八万元,没收违法所得\n二十八万零七百元。\n作出处罚决定的\n机关名称\n国家金融监督管理总局\n新疆监管局\n作出处罚决定的日期\n2023年10月18日\n手机扫一扫打开此页\n",
+      "next_start": null,
+      "truncated": false
+    }
+  },
+  {
+    "public_job": "C-B003-reviewer-r1-a1",
+    "sample_id": "B003",
+    "role": "reviewer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B003",
+      "raw_sha256": "05ad4426ea7bf82be3874a9a262adf80ef6132b7f3c88095093a6be997530633",
+      "text_sha256": "05ad4426ea7bf82be3874a9a262adf80ef6132b7f3c88095093a6be997530633",
+      "text": "当事人: 健科保险经纪有限公司新疆分公司及相关责任人\r\n主要违法违规事实(案由)\r\n利用业务便利为其他机构或者个人牟取不正当利益\r\n行政处罚内容\r\n对该分公司罚款10万元。对张青警告并罚款3万元\r\n作出处罚决定的机关名称\r\n新疆金融监管局\r\n作出处罚决定的日期\r\n2026年7月8日\r\n来源公示\r\n新疆金融监管局行政处罚信息公示列表",
+      "total_codepoints": 166,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B003:L0001:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "text": "当事人: 健科保险经纪有限公司新疆分公司及相关责任人\r\n",
+          "start": 0,
+          "end": 28
+        },
+        {
+          "segment_id": "B003:L0002:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "text": "主要违法违规事实(案由)\r\n",
+          "start": 28,
+          "end": 42
+        },
+        {
+          "segment_id": "B003:L0003:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "text": "利用业务便利为其他机构或者个人牟取不正当利益\r\n",
+          "start": 42,
+          "end": 66
+        },
+        {
+          "segment_id": "B003:L0004:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "text": "行政处罚内容\r\n",
+          "start": 66,
+          "end": 74
+        },
+        {
+          "segment_id": "B003:L0005:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "text": "对该分公司罚款10万元。对张青警告并罚款3万元\r\n",
+          "start": 74,
+          "end": 99
+        },
+        {
+          "segment_id": "B003:L0006:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "text": "作出处罚决定的机关名称\r\n",
+          "start": 99,
+          "end": 112
+        },
+        {
+          "segment_id": "B003:L0007:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "text": "新疆金融监管局\r\n",
+          "start": 112,
+          "end": 121
+        },
+        {
+          "segment_id": "B003:L0008:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 121,
+          "end": 132
+        },
+        {
+          "segment_id": "B003:L0009:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "text": "2026年7月8日\r\n",
+          "start": 132,
+          "end": 143
+        },
+        {
+          "segment_id": "B003:L0010:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "text": "来源公示\r\n",
+          "start": 143,
+          "end": 149
+        },
+        {
+          "segment_id": "B003:L0011:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "text": "新疆金融监管局行政处罚信息公示列表",
+          "start": 149,
+          "end": 166
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263876&itemId=4114&generaltype=9",
+      "title": "新疆金融监管局行政处罚信息公示列表"
+    }
+  },
+  {
+    "public_job": "C-B003-reviewer-r1-a1",
+    "sample_id": "B003",
+    "role": "reviewer",
+    "action": "search",
+    "args": {
+      "query": "健科保险经纪有限公司新疆分公司",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 2,
+      "offset": 0,
+      "next_offset": null,
+      "records": [
+        {
+          "source_id": "FRV2-SOURCE-F008348-70a311b5ec9a662f34d7ee47",
+          "preview": "监督管理总局新疆监管局\n行政处罚信息公开表\n行政处罚决定书文号\n新金监罚决字〔2023〕21号\n被处罚当事人\n张青(时任健科保险经纪有限公司\n新疆分公司主要负责人)\n主要违法违规事实\n对健科保险经纪有限公司新疆分公\n司利用业务便利为其他个人牟取不\n正当利益、超出承保公司的经营区\n域从事保险经纪业务的事项负有责\n任\n行政处罚依据\n《中华人民共和国保险法》第一百\n三十一条、第一百七十一条、《保\n险经纪人监管规定》第三十七条、\n第九十三条\n行政处罚决定\n警告,并处罚款二万元。\n作出",
+          "preview_start": 4,
+          "preview_end": 244,
+          "preview_truncated": true,
+          "match_start": 64,
+          "match_end": 80
+        },
+        {
+          "source_id": "FRV2-SOURCE-F008349-2187bee0ad2196162e08f9ce",
+          "preview": "国家金融监督管理总局新疆监管局\n行政处罚信息公开表\n行政处罚决定书文号\n新金监罚决字〔2023〕22号\n被处罚当事人\n健科保险经纪有限公司新疆分公司\n主要违法违规事实\n利用业务便利为其他个人牟取不正\n当利益、超出承保公司的经营区域\n从事保险经纪业务\n行政处罚依据\n《中华人民共和国保险法》第一百\n三十一条、第一百六十五条、《保\n险经纪人监管规定》第三十七条、\n第九十三条、《中华人民共和国行\n政处罚法》第二十八条\n行政处罚决定\n警告,处罚款八万元,没收违法所得\n二十八万零七百元。",
+          "preview_start": 0,
+          "preview_end": 240,
+          "preview_truncated": true,
+          "match_start": 59,
+          "match_end": 74
+        }
+      ],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B003-reviewer-r1-a1",
+    "sample_id": "B003",
+    "role": "reviewer",
+    "action": "read",
+    "args": {
+      "source_id": "FRV2-SOURCE-F008348-70a311b5ec9a662f34d7ee47",
+      "start": 0,
+      "length": 2000
+    },
+    "result": {
+      "source_id": "FRV2-SOURCE-F008348-70a311b5ec9a662f34d7ee47",
+      "text_sha256": "04caacce1b00ec676831433fd262de9eccb88775f6490df5818e3d01a921effd",
+      "start": 0,
+      "end": 304,
+      "total_codepoints": 304,
+      "text": "国家金融监督管理总局新疆监管局\n行政处罚信息公开表\n行政处罚决定书文号\n新金监罚决字〔2023〕21号\n被处罚当事人\n张青(时任健科保险经纪有限公司\n新疆分公司主要负责人)\n主要违法违规事实\n对健科保险经纪有限公司新疆分公\n司利用业务便利为其他个人牟取不\n正当利益、超出承保公司的经营区\n域从事保险经纪业务的事项负有责\n任\n行政处罚依据\n《中华人民共和国保险法》第一百\n三十一条、第一百七十一条、《保\n险经纪人监管规定》第三十七条、\n第九十三条\n行政处罚决定\n警告,并处罚款二万元。\n作出处罚决定的\n机关名称\n国家金融监督管理总局\n新疆监管局\n作出处罚决定的日期\n2023年10月18日\n手机扫一扫打开此页\n",
+      "next_start": null,
+      "truncated": false
+    }
+  },
+  {
+    "public_job": "C-B003-reviewer-r1-a1",
+    "sample_id": "B003",
+    "role": "reviewer",
+    "action": "read",
+    "args": {
+      "source_id": "FRV2-SOURCE-F008349-2187bee0ad2196162e08f9ce",
+      "start": 0,
+      "length": 2000
+    },
+    "result": {
+      "source_id": "FRV2-SOURCE-F008349-2187bee0ad2196162e08f9ce",
+      "text_sha256": "4b53169491a379bb94e8a48a812a98c55812f3c2e313e65e2ba05b91b6a9fb73",
+      "start": 0,
+      "end": 303,
+      "total_codepoints": 303,
+      "text": "国家金融监督管理总局新疆监管局\n行政处罚信息公开表\n行政处罚决定书文号\n新金监罚决字〔2023〕22号\n被处罚当事人\n健科保险经纪有限公司新疆分公司\n主要违法违规事实\n利用业务便利为其他个人牟取不正\n当利益、超出承保公司的经营区域\n从事保险经纪业务\n行政处罚依据\n《中华人民共和国保险法》第一百\n三十一条、第一百六十五条、《保\n险经纪人监管规定》第三十七条、\n第九十三条、《中华人民共和国行\n政处罚法》第二十八条\n行政处罚决定\n警告,处罚款八万元,没收违法所得\n二十八万零七百元。\n作出处罚决定的\n机关名称\n国家金融监督管理总局\n新疆监管局\n作出处罚决定的日期\n2023年10月18日\n手机扫一扫打开此页\n",
+      "next_start": null,
+      "truncated": false
+    }
+  },
+  {
+    "public_job": "C-B005-proposer-r1-a1",
+    "sample_id": "B005",
+    "role": "proposer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B005",
+      "raw_sha256": "8884061bec323f7c83bebdfc36434174eacafd0f88f99c785c1ae99331aa25bc",
+      "text_sha256": "8884061bec323f7c83bebdfc36434174eacafd0f88f99c785c1ae99331aa25bc",
+      "text": "皖金复〔2026〕135号\r\n安徽中安财产保险股份有限公司、长安责任保险股份有限公司：\r\n《关于安徽中安财险和长安保险业务转让的请示》（中安财险〔2026〕78号）收悉。经审核，现批复如下：\r\n一、同意安徽中安财产保险股份有限公司受让长安责任保险股份有限公司的保险业务，具体为双方共同签署的《收购承接协议》约定的转让标的。\r\n二、转让行为应严格遵守有关法律法规和监管规定，不得损害投保人、被保险人和受益人的合法权益。\r\n三、请你两家公司按照有关规定办理后续事宜。\r\n安徽金融监管局\r\n2026年8月27日",
+      "total_codepoints": 252,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B005:L0001:8884061bec323f7c:8884061bec323f7c",
+          "text": "皖金复〔2026〕135号\r\n",
+          "start": 0,
+          "end": 15
+        },
+        {
+          "segment_id": "B005:L0002:8884061bec323f7c:8884061bec323f7c",
+          "text": "安徽中安财产保险股份有限公司、长安责任保险股份有限公司：\r\n",
+          "start": 15,
+          "end": 45
+        },
+        {
+          "segment_id": "B005:L0003:8884061bec323f7c:8884061bec323f7c",
+          "text": "《关于安徽中安财险和长安保险业务转让的请示》（中安财险〔2026〕78号）收悉。经审核，现批复如下：\r\n",
+          "start": 45,
+          "end": 97
+        },
+        {
+          "segment_id": "B005:L0004:8884061bec323f7c:8884061bec323f7c",
+          "text": "一、同意安徽中安财产保险股份有限公司受让长安责任保险股份有限公司的保险业务，具体为双方共同签署的《收购承接协议》约定的转让标的。\r\n",
+          "start": 97,
+          "end": 163
+        },
+        {
+          "segment_id": "B005:L0005:8884061bec323f7c:8884061bec323f7c",
+          "text": "二、转让行为应严格遵守有关法律法规和监管规定，不得损害投保人、被保险人和受益人的合法权益。\r\n",
+          "start": 163,
+          "end": 210
+        },
+        {
+          "segment_id": "B005:L0006:8884061bec323f7c:8884061bec323f7c",
+          "text": "三、请你两家公司按照有关规定办理后续事宜。\r\n",
+          "start": 210,
+          "end": 233
+        },
+        {
+          "segment_id": "B005:L0007:8884061bec323f7c:8884061bec323f7c",
+          "text": "安徽金融监管局\r\n",
+          "start": 233,
+          "end": 242
+        },
+        {
+          "segment_id": "B005:L0008:8884061bec323f7c:8884061bec323f7c",
+          "text": "2026年8月27日",
+          "start": 242,
+          "end": 252
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269941&itemId=4114&generaltype=9",
+      "title": "国家金融监督管理总局安徽监管局关于安徽中安财产保险股份有限公司和长安责任保险股份有限公司保险业务转让的批复"
+    }
+  },
+  {
+    "public_job": "C-B005-proposer-r1-a1",
+    "sample_id": "B005",
+    "role": "proposer",
+    "action": "search",
+    "args": {
+      "query": "皖金复〔2026〕135号",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B009-proposer-r1-a1",
+    "sample_id": "B009",
+    "role": "proposer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B009",
+      "raw_sha256": "273e209021fbd31643cd1133c7a48a5ac8e8667314274854336faf7c5c877465",
+      "text_sha256": "273e209021fbd31643cd1133c7a48a5ac8e8667314274854336faf7c5c877465",
+      "text": "当事人: 太平人寿保险有限公司葫芦岛中心支公司\r\n行政处罚决定书文号\r\n葫金监罚决〔2026〕3号\r\n主要违法违规事实(案由)\r\n财务业务数据不真实\r\n行政处罚内容\r\n责令改正，处罚款十二万元\r\n作出处罚决定的机关名称\r\n葫芦岛金融监管分局\r\n作出处罚决定的日期\r\n2026年7月6日\r\n来源公示\r\n葫芦岛金融监管分局行政处罚信息公示列表",
+      "total_codepoints": 169,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B009:L0001:273e209021fbd316:273e209021fbd316",
+          "text": "当事人: 太平人寿保险有限公司葫芦岛中心支公司\r\n",
+          "start": 0,
+          "end": 25
+        },
+        {
+          "segment_id": "B009:L0002:273e209021fbd316:273e209021fbd316",
+          "text": "行政处罚决定书文号\r\n",
+          "start": 25,
+          "end": 36
+        },
+        {
+          "segment_id": "B009:L0003:273e209021fbd316:273e209021fbd316",
+          "text": "葫金监罚决〔2026〕3号\r\n",
+          "start": 36,
+          "end": 51
+        },
+        {
+          "segment_id": "B009:L0004:273e209021fbd316:273e209021fbd316",
+          "text": "主要违法违规事实(案由)\r\n",
+          "start": 51,
+          "end": 65
+        },
+        {
+          "segment_id": "B009:L0005:273e209021fbd316:273e209021fbd316",
+          "text": "财务业务数据不真实\r\n",
+          "start": 65,
+          "end": 76
+        },
+        {
+          "segment_id": "B009:L0006:273e209021fbd316:273e209021fbd316",
+          "text": "行政处罚内容\r\n",
+          "start": 76,
+          "end": 84
+        },
+        {
+          "segment_id": "B009:L0007:273e209021fbd316:273e209021fbd316",
+          "text": "责令改正，处罚款十二万元\r\n",
+          "start": 84,
+          "end": 98
+        },
+        {
+          "segment_id": "B009:L0008:273e209021fbd316:273e209021fbd316",
+          "text": "作出处罚决定的机关名称\r\n",
+          "start": 98,
+          "end": 111
+        },
+        {
+          "segment_id": "B009:L0009:273e209021fbd316:273e209021fbd316",
+          "text": "葫芦岛金融监管分局\r\n",
+          "start": 111,
+          "end": 122
+        },
+        {
+          "segment_id": "B009:L0010:273e209021fbd316:273e209021fbd316",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 122,
+          "end": 133
+        },
+        {
+          "segment_id": "B009:L0011:273e209021fbd316:273e209021fbd316",
+          "text": "2026年7月6日\r\n",
+          "start": 133,
+          "end": 144
+        },
+        {
+          "segment_id": "B009:L0012:273e209021fbd316:273e209021fbd316",
+          "text": "来源公示\r\n",
+          "start": 144,
+          "end": 150
+        },
+        {
+          "segment_id": "B009:L0013:273e209021fbd316:273e209021fbd316",
+          "text": "葫芦岛金融监管分局行政处罚信息公示列表",
+          "start": 150,
+          "end": 169
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263582&itemId=4115&generaltype=9",
+      "title": "葫芦岛金融监管分局行政处罚信息公示列表"
+    }
+  },
+  {
+    "public_job": "C-B009-proposer-r1-a1",
+    "sample_id": "B009",
+    "role": "proposer",
+    "action": "search",
+    "args": {
+      "query": "葫金监罚决〔2026〕3号",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B009-proposer-r1-a1",
+    "sample_id": "B009",
+    "role": "proposer",
+    "action": "search",
+    "args": {
+      "query": "太平人寿保险有限公司葫芦岛中心支公司",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B009-reviewer-r1-a1",
+    "sample_id": "B009",
+    "role": "reviewer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B009",
+      "raw_sha256": "273e209021fbd31643cd1133c7a48a5ac8e8667314274854336faf7c5c877465",
+      "text_sha256": "273e209021fbd31643cd1133c7a48a5ac8e8667314274854336faf7c5c877465",
+      "text": "当事人: 太平人寿保险有限公司葫芦岛中心支公司\r\n行政处罚决定书文号\r\n葫金监罚决〔2026〕3号\r\n主要违法违规事实(案由)\r\n财务业务数据不真实\r\n行政处罚内容\r\n责令改正，处罚款十二万元\r\n作出处罚决定的机关名称\r\n葫芦岛金融监管分局\r\n作出处罚决定的日期\r\n2026年7月6日\r\n来源公示\r\n葫芦岛金融监管分局行政处罚信息公示列表",
+      "total_codepoints": 169,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B009:L0001:273e209021fbd316:273e209021fbd316",
+          "text": "当事人: 太平人寿保险有限公司葫芦岛中心支公司\r\n",
+          "start": 0,
+          "end": 25
+        },
+        {
+          "segment_id": "B009:L0002:273e209021fbd316:273e209021fbd316",
+          "text": "行政处罚决定书文号\r\n",
+          "start": 25,
+          "end": 36
+        },
+        {
+          "segment_id": "B009:L0003:273e209021fbd316:273e209021fbd316",
+          "text": "葫金监罚决〔2026〕3号\r\n",
+          "start": 36,
+          "end": 51
+        },
+        {
+          "segment_id": "B009:L0004:273e209021fbd316:273e209021fbd316",
+          "text": "主要违法违规事实(案由)\r\n",
+          "start": 51,
+          "end": 65
+        },
+        {
+          "segment_id": "B009:L0005:273e209021fbd316:273e209021fbd316",
+          "text": "财务业务数据不真实\r\n",
+          "start": 65,
+          "end": 76
+        },
+        {
+          "segment_id": "B009:L0006:273e209021fbd316:273e209021fbd316",
+          "text": "行政处罚内容\r\n",
+          "start": 76,
+          "end": 84
+        },
+        {
+          "segment_id": "B009:L0007:273e209021fbd316:273e209021fbd316",
+          "text": "责令改正，处罚款十二万元\r\n",
+          "start": 84,
+          "end": 98
+        },
+        {
+          "segment_id": "B009:L0008:273e209021fbd316:273e209021fbd316",
+          "text": "作出处罚决定的机关名称\r\n",
+          "start": 98,
+          "end": 111
+        },
+        {
+          "segment_id": "B009:L0009:273e209021fbd316:273e209021fbd316",
+          "text": "葫芦岛金融监管分局\r\n",
+          "start": 111,
+          "end": 122
+        },
+        {
+          "segment_id": "B009:L0010:273e209021fbd316:273e209021fbd316",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 122,
+          "end": 133
+        },
+        {
+          "segment_id": "B009:L0011:273e209021fbd316:273e209021fbd316",
+          "text": "2026年7月6日\r\n",
+          "start": 133,
+          "end": 144
+        },
+        {
+          "segment_id": "B009:L0012:273e209021fbd316:273e209021fbd316",
+          "text": "来源公示\r\n",
+          "start": 144,
+          "end": 150
+        },
+        {
+          "segment_id": "B009:L0013:273e209021fbd316:273e209021fbd316",
+          "text": "葫芦岛金融监管分局行政处罚信息公示列表",
+          "start": 150,
+          "end": 169
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263582&itemId=4115&generaltype=9",
+      "title": "葫芦岛金融监管分局行政处罚信息公示列表"
+    }
+  },
+  {
+    "public_job": "C-B009-reviewer-r1-a1",
+    "sample_id": "B009",
+    "role": "reviewer",
+    "action": "search",
+    "args": {
+      "query": "葫金监罚决〔2026〕3号",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B009-reviewer-r1-a1",
+    "sample_id": "B009",
+    "role": "reviewer",
+    "action": "search",
+    "args": {
+      "query": "太平人寿保险有限公司葫芦岛中心支公司",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B011-proposer-r1-a1",
+    "sample_id": "B011",
+    "role": "proposer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B011",
+      "raw_sha256": "339151b595131ad2d567d9a92debef2cf40b60a101a7cdd1ac1176f0f7820af9",
+      "text_sha256": "339151b595131ad2d567d9a92debef2cf40b60a101a7cdd1ac1176f0f7820af9",
+      "text": "当事人: 山东汇联保险经纪有限公司\r\n行政处罚决定书文号\r\n潍金罚决字〔2026〕15号\r\n主要违法违规事实(案由)\r\n与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告\r\n行政处罚内容\r\n通报批评，警告，罚款3.5万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局潍坊监管分局\r\n作出处罚决定的日期\r\n2026年8月21日\r\n来源公示\r\n国家金融监督管理总局潍坊监管分局行政处罚信息公开表（潍金罚决字〔2026〕15号-16号 ）",
+      "total_codepoints": 240,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B011:L0001:339151b595131ad2:339151b595131ad2",
+          "text": "当事人: 山东汇联保险经纪有限公司\r\n",
+          "start": 0,
+          "end": 19
+        },
+        {
+          "segment_id": "B011:L0002:339151b595131ad2:339151b595131ad2",
+          "text": "行政处罚决定书文号\r\n",
+          "start": 19,
+          "end": 30
+        },
+        {
+          "segment_id": "B011:L0003:339151b595131ad2:339151b595131ad2",
+          "text": "潍金罚决字〔2026〕15号\r\n",
+          "start": 30,
+          "end": 46
+        },
+        {
+          "segment_id": "B011:L0004:339151b595131ad2:339151b595131ad2",
+          "text": "主要违法违规事实(案由)\r\n",
+          "start": 46,
+          "end": 60
+        },
+        {
+          "segment_id": "B011:L0005:339151b595131ad2:339151b595131ad2",
+          "text": "与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告\r\n",
+          "start": 60,
+          "end": 109
+        },
+        {
+          "segment_id": "B011:L0006:339151b595131ad2:339151b595131ad2",
+          "text": "行政处罚内容\r\n",
+          "start": 109,
+          "end": 117
+        },
+        {
+          "segment_id": "B011:L0007:339151b595131ad2:339151b595131ad2",
+          "text": "通报批评，警告，罚款3.5万元\r\n",
+          "start": 117,
+          "end": 134
+        },
+        {
+          "segment_id": "B011:L0008:339151b595131ad2:339151b595131ad2",
+          "text": "作出处罚决定的机关名称\r\n",
+          "start": 134,
+          "end": 147
+        },
+        {
+          "segment_id": "B011:L0009:339151b595131ad2:339151b595131ad2",
+          "text": "国家金融监督管理总局潍坊监管分局\r\n",
+          "start": 147,
+          "end": 165
+        },
+        {
+          "segment_id": "B011:L0010:339151b595131ad2:339151b595131ad2",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 165,
+          "end": 176
+        },
+        {
+          "segment_id": "B011:L0011:339151b595131ad2:339151b595131ad2",
+          "text": "2026年8月21日\r\n",
+          "start": 176,
+          "end": 188
+        },
+        {
+          "segment_id": "B011:L0012:339151b595131ad2:339151b595131ad2",
+          "text": "来源公示\r\n",
+          "start": 188,
+          "end": 194
+        },
+        {
+          "segment_id": "B011:L0013:339151b595131ad2:339151b595131ad2",
+          "text": "国家金融监督管理总局潍坊监管分局行政处罚信息公开表（潍金罚决字〔2026〕15号-16号 ）",
+          "start": 194,
+          "end": 240
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269212&itemId=4115&generaltype=9",
+      "title": "国家金融监督管理总局潍坊监管分局行政处罚信息公开表（潍金罚决字〔2026〕15号-16号 ）"
+    }
+  },
+  {
+    "public_job": "C-B011-proposer-r1-a1",
+    "sample_id": "B011",
+    "role": "proposer",
+    "action": "search",
+    "args": {
+      "query": "山东汇联保险经纪有限公司",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B011-proposer-r1-a1",
+    "sample_id": "B011",
+    "role": "proposer",
+    "action": "search",
+    "args": {
+      "query": "潍金罚决字〔2026〕15号",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B011-proposer-r1-a2",
+    "sample_id": "B011",
+    "role": "proposer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B011",
+      "raw_sha256": "339151b595131ad2d567d9a92debef2cf40b60a101a7cdd1ac1176f0f7820af9",
+      "text_sha256": "339151b595131ad2d567d9a92debef2cf40b60a101a7cdd1ac1176f0f7820af9",
+      "text": "当事人: 山东汇联保险经纪有限公司\r\n行政处罚决定书文号\r\n潍金罚决字〔2026〕15号\r\n主要违法违规事实(案由)\r\n与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告\r\n行政处罚内容\r\n通报批评，警告，罚款3.5万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局潍坊监管分局\r\n作出处罚决定的日期\r\n2026年8月21日\r\n来源公示\r\n国家金融监督管理总局潍坊监管分局行政处罚信息公开表（潍金罚决字〔2026〕15号-16号 ）",
+      "total_codepoints": 240,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B011:L0001:339151b595131ad2:339151b595131ad2",
+          "text": "当事人: 山东汇联保险经纪有限公司\r\n",
+          "start": 0,
+          "end": 19
+        },
+        {
+          "segment_id": "B011:L0002:339151b595131ad2:339151b595131ad2",
+          "text": "行政处罚决定书文号\r\n",
+          "start": 19,
+          "end": 30
+        },
+        {
+          "segment_id": "B011:L0003:339151b595131ad2:339151b595131ad2",
+          "text": "潍金罚决字〔2026〕15号\r\n",
+          "start": 30,
+          "end": 46
+        },
+        {
+          "segment_id": "B011:L0004:339151b595131ad2:339151b595131ad2",
+          "text": "主要违法违规事实(案由)\r\n",
+          "start": 46,
+          "end": 60
+        },
+        {
+          "segment_id": "B011:L0005:339151b595131ad2:339151b595131ad2",
+          "text": "与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告\r\n",
+          "start": 60,
+          "end": 109
+        },
+        {
+          "segment_id": "B011:L0006:339151b595131ad2:339151b595131ad2",
+          "text": "行政处罚内容\r\n",
+          "start": 109,
+          "end": 117
+        },
+        {
+          "segment_id": "B011:L0007:339151b595131ad2:339151b595131ad2",
+          "text": "通报批评，警告，罚款3.5万元\r\n",
+          "start": 117,
+          "end": 134
+        },
+        {
+          "segment_id": "B011:L0008:339151b595131ad2:339151b595131ad2",
+          "text": "作出处罚决定的机关名称\r\n",
+          "start": 134,
+          "end": 147
+        },
+        {
+          "segment_id": "B011:L0009:339151b595131ad2:339151b595131ad2",
+          "text": "国家金融监督管理总局潍坊监管分局\r\n",
+          "start": 147,
+          "end": 165
+        },
+        {
+          "segment_id": "B011:L0010:339151b595131ad2:339151b595131ad2",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 165,
+          "end": 176
+        },
+        {
+          "segment_id": "B011:L0011:339151b595131ad2:339151b595131ad2",
+          "text": "2026年8月21日\r\n",
+          "start": 176,
+          "end": 188
+        },
+        {
+          "segment_id": "B011:L0012:339151b595131ad2:339151b595131ad2",
+          "text": "来源公示\r\n",
+          "start": 188,
+          "end": 194
+        },
+        {
+          "segment_id": "B011:L0013:339151b595131ad2:339151b595131ad2",
+          "text": "国家金融监督管理总局潍坊监管分局行政处罚信息公开表（潍金罚决字〔2026〕15号-16号 ）",
+          "start": 194,
+          "end": 240
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269212&itemId=4115&generaltype=9",
+      "title": "国家金融监督管理总局潍坊监管分局行政处罚信息公开表（潍金罚决字〔2026〕15号-16号 ）"
+    }
+  },
+  {
+    "public_job": "C-B011-proposer-r1-a2",
+    "sample_id": "B011",
+    "role": "proposer",
+    "action": "search",
+    "args": {
+      "query": "山东汇联保险经纪有限公司",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B011-proposer-r1-a2",
+    "sample_id": "B011",
+    "role": "proposer",
+    "action": "search",
+    "args": {
+      "query": "潍金罚决字〔2026〕15号",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B011-reviewer-r1-a1",
+    "sample_id": "B011",
+    "role": "reviewer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B011",
+      "raw_sha256": "339151b595131ad2d567d9a92debef2cf40b60a101a7cdd1ac1176f0f7820af9",
+      "text_sha256": "339151b595131ad2d567d9a92debef2cf40b60a101a7cdd1ac1176f0f7820af9",
+      "text": "当事人: 山东汇联保险经纪有限公司\r\n行政处罚决定书文号\r\n潍金罚决字〔2026〕15号\r\n主要违法违规事实(案由)\r\n与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告\r\n行政处罚内容\r\n通报批评，警告，罚款3.5万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局潍坊监管分局\r\n作出处罚决定的日期\r\n2026年8月21日\r\n来源公示\r\n国家金融监督管理总局潍坊监管分局行政处罚信息公开表（潍金罚决字〔2026〕15号-16号 ）",
+      "total_codepoints": 240,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B011:L0001:339151b595131ad2:339151b595131ad2",
+          "text": "当事人: 山东汇联保险经纪有限公司\r\n",
+          "start": 0,
+          "end": 19
+        },
+        {
+          "segment_id": "B011:L0002:339151b595131ad2:339151b595131ad2",
+          "text": "行政处罚决定书文号\r\n",
+          "start": 19,
+          "end": 30
+        },
+        {
+          "segment_id": "B011:L0003:339151b595131ad2:339151b595131ad2",
+          "text": "潍金罚决字〔2026〕15号\r\n",
+          "start": 30,
+          "end": 46
+        },
+        {
+          "segment_id": "B011:L0004:339151b595131ad2:339151b595131ad2",
+          "text": "主要违法违规事实(案由)\r\n",
+          "start": 46,
+          "end": 60
+        },
+        {
+          "segment_id": "B011:L0005:339151b595131ad2:339151b595131ad2",
+          "text": "与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告\r\n",
+          "start": 60,
+          "end": 109
+        },
+        {
+          "segment_id": "B011:L0006:339151b595131ad2:339151b595131ad2",
+          "text": "行政处罚内容\r\n",
+          "start": 109,
+          "end": 117
+        },
+        {
+          "segment_id": "B011:L0007:339151b595131ad2:339151b595131ad2",
+          "text": "通报批评，警告，罚款3.5万元\r\n",
+          "start": 117,
+          "end": 134
+        },
+        {
+          "segment_id": "B011:L0008:339151b595131ad2:339151b595131ad2",
+          "text": "作出处罚决定的机关名称\r\n",
+          "start": 134,
+          "end": 147
+        },
+        {
+          "segment_id": "B011:L0009:339151b595131ad2:339151b595131ad2",
+          "text": "国家金融监督管理总局潍坊监管分局\r\n",
+          "start": 147,
+          "end": 165
+        },
+        {
+          "segment_id": "B011:L0010:339151b595131ad2:339151b595131ad2",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 165,
+          "end": 176
+        },
+        {
+          "segment_id": "B011:L0011:339151b595131ad2:339151b595131ad2",
+          "text": "2026年8月21日\r\n",
+          "start": 176,
+          "end": 188
+        },
+        {
+          "segment_id": "B011:L0012:339151b595131ad2:339151b595131ad2",
+          "text": "来源公示\r\n",
+          "start": 188,
+          "end": 194
+        },
+        {
+          "segment_id": "B011:L0013:339151b595131ad2:339151b595131ad2",
+          "text": "国家金融监督管理总局潍坊监管分局行政处罚信息公开表（潍金罚决字〔2026〕15号-16号 ）",
+          "start": 194,
+          "end": 240
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269212&itemId=4115&generaltype=9",
+      "title": "国家金融监督管理总局潍坊监管分局行政处罚信息公开表（潍金罚决字〔2026〕15号-16号 ）"
+    }
+  },
+  {
+    "public_job": "C-B011-reviewer-r1-a1",
+    "sample_id": "B011",
+    "role": "reviewer",
+    "action": "search",
+    "args": {
+      "query": "山东汇联保险经纪有限公司",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B011-reviewer-r1-a1",
+    "sample_id": "B011",
+    "role": "reviewer",
+    "action": "search",
+    "args": {
+      "query": "潍金罚决字〔2026〕15号",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B020-proposer-r1-a1",
+    "sample_id": "B020",
+    "role": "proposer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B020",
+      "raw_sha256": "70c3d5dbf5cdeccdc2b567c748850ef7ee89ca7ae4242c2b4ebfc435d3443012",
+      "text_sha256": "70c3d5dbf5cdeccdc2b567c748850ef7ee89ca7ae4242c2b4ebfc435d3443012",
+      "text": "当事人: 阳光人寿保险股份有限公司天津分公司\r\n主要违法违规事实(案由)\r\n编制或者提供虚假的报告、报表、文件、资料\r\n行政处罚内容\r\n对阳光人寿保险股份有限公司天津分公司罚款40万元。对叶小义警告并处罚款7万元。\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局天津监管局\r\n作出处罚决定的日期\r\n2026年7月1日\r\n来源公示\r\n国家金融监督管理总局天津监管局行政处罚信息公开表",
+      "total_codepoints": 191,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B020:L0001:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "当事人: 阳光人寿保险股份有限公司天津分公司\r\n",
+          "start": 0,
+          "end": 24
+        },
+        {
+          "segment_id": "B020:L0002:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "主要违法违规事实(案由)\r\n",
+          "start": 24,
+          "end": 38
+        },
+        {
+          "segment_id": "B020:L0003:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "编制或者提供虚假的报告、报表、文件、资料\r\n",
+          "start": 38,
+          "end": 60
+        },
+        {
+          "segment_id": "B020:L0004:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "行政处罚内容\r\n",
+          "start": 60,
+          "end": 68
+        },
+        {
+          "segment_id": "B020:L0005:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "对阳光人寿保险股份有限公司天津分公司罚款40万元。对叶小义警告并处罚款7万元。\r\n",
+          "start": 68,
+          "end": 109
+        },
+        {
+          "segment_id": "B020:L0006:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "作出处罚决定的机关名称\r\n",
+          "start": 109,
+          "end": 122
+        },
+        {
+          "segment_id": "B020:L0007:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "国家金融监督管理总局天津监管局\r\n",
+          "start": 122,
+          "end": 139
+        },
+        {
+          "segment_id": "B020:L0008:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 139,
+          "end": 150
+        },
+        {
+          "segment_id": "B020:L0009:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "2026年7月1日\r\n",
+          "start": 150,
+          "end": 161
+        },
+        {
+          "segment_id": "B020:L0010:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "来源公示\r\n",
+          "start": 161,
+          "end": 167
+        },
+        {
+          "segment_id": "B020:L0011:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "国家金融监督管理总局天津监管局行政处罚信息公开表",
+          "start": 167,
+          "end": 191
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1262968&itemId=4114&generaltype=9",
+      "title": "国家金融监督管理总局天津监管局行政处罚信息公开表"
+    }
+  },
+  {
+    "public_job": "C-B020-proposer-r1-a1",
+    "sample_id": "B020",
+    "role": "proposer",
+    "action": "search",
+    "args": {
+      "query": "阳光人寿保险股份有限公司天津分公司",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B020-reviewer-r1-a1",
+    "sample_id": "B020",
+    "role": "reviewer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B020",
+      "raw_sha256": "70c3d5dbf5cdeccdc2b567c748850ef7ee89ca7ae4242c2b4ebfc435d3443012",
+      "text_sha256": "70c3d5dbf5cdeccdc2b567c748850ef7ee89ca7ae4242c2b4ebfc435d3443012",
+      "text": "当事人: 阳光人寿保险股份有限公司天津分公司\r\n主要违法违规事实(案由)\r\n编制或者提供虚假的报告、报表、文件、资料\r\n行政处罚内容\r\n对阳光人寿保险股份有限公司天津分公司罚款40万元。对叶小义警告并处罚款7万元。\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局天津监管局\r\n作出处罚决定的日期\r\n2026年7月1日\r\n来源公示\r\n国家金融监督管理总局天津监管局行政处罚信息公开表",
+      "total_codepoints": 191,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B020:L0001:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "当事人: 阳光人寿保险股份有限公司天津分公司\r\n",
+          "start": 0,
+          "end": 24
+        },
+        {
+          "segment_id": "B020:L0002:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "主要违法违规事实(案由)\r\n",
+          "start": 24,
+          "end": 38
+        },
+        {
+          "segment_id": "B020:L0003:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "编制或者提供虚假的报告、报表、文件、资料\r\n",
+          "start": 38,
+          "end": 60
+        },
+        {
+          "segment_id": "B020:L0004:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "行政处罚内容\r\n",
+          "start": 60,
+          "end": 68
+        },
+        {
+          "segment_id": "B020:L0005:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "对阳光人寿保险股份有限公司天津分公司罚款40万元。对叶小义警告并处罚款7万元。\r\n",
+          "start": 68,
+          "end": 109
+        },
+        {
+          "segment_id": "B020:L0006:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "作出处罚决定的机关名称\r\n",
+          "start": 109,
+          "end": 122
+        },
+        {
+          "segment_id": "B020:L0007:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "国家金融监督管理总局天津监管局\r\n",
+          "start": 122,
+          "end": 139
+        },
+        {
+          "segment_id": "B020:L0008:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 139,
+          "end": 150
+        },
+        {
+          "segment_id": "B020:L0009:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "2026年7月1日\r\n",
+          "start": 150,
+          "end": 161
+        },
+        {
+          "segment_id": "B020:L0010:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "来源公示\r\n",
+          "start": 161,
+          "end": 167
+        },
+        {
+          "segment_id": "B020:L0011:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "国家金融监督管理总局天津监管局行政处罚信息公开表",
+          "start": 167,
+          "end": 191
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1262968&itemId=4114&generaltype=9",
+      "title": "国家金融监督管理总局天津监管局行政处罚信息公开表"
+    }
+  },
+  {
+    "public_job": "C-B020-reviewer-r1-a1",
+    "sample_id": "B020",
+    "role": "reviewer",
+    "action": "search",
+    "args": {
+      "query": "阳光人寿保险股份有限公司天津分公司",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B039-proposer-r1-a1",
+    "sample_id": "B039",
+    "role": "proposer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B039",
+      "raw_sha256": "b7dee6a36c99e616d873aeab791bd780c276b11a37975c6f15bc40f87ed0e002",
+      "text_sha256": "b7dee6a36c99e616d873aeab791bd780c276b11a37975c6f15bc40f87ed0e002",
+      "text": "当事人: 山东远通兴华保险代理有限公司\r\n行政处罚决定书文号\r\n临金罚决字〔2026〕31号\r\n主要违法违规事实(案由)\r\n给予投保人保险合同约定以外的利益、收取保险公司工作人员给予的合同约定外酬金、未开立独立的佣金收取账户\r\n行政处罚内容\r\n警告并罚款11万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局临沂监管分局\r\n作出处罚决定的日期\r\n2026年8月13日\r\n来源公示\r\n国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕31号-32号）",
+      "total_codepoints": 238,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "当事人: 山东远通兴华保险代理有限公司\r\n",
+          "start": 0,
+          "end": 21
+        },
+        {
+          "segment_id": "B039:L0002:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "行政处罚决定书文号\r\n",
+          "start": 21,
+          "end": 32
+        },
+        {
+          "segment_id": "B039:L0003:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "临金罚决字〔2026〕31号\r\n",
+          "start": 32,
+          "end": 48
+        },
+        {
+          "segment_id": "B039:L0004:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "主要违法违规事实(案由)\r\n",
+          "start": 48,
+          "end": 62
+        },
+        {
+          "segment_id": "B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "给予投保人保险合同约定以外的利益、收取保险公司工作人员给予的合同约定外酬金、未开立独立的佣金收取账户\r\n",
+          "start": 62,
+          "end": 114
+        },
+        {
+          "segment_id": "B039:L0006:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "行政处罚内容\r\n",
+          "start": 114,
+          "end": 122
+        },
+        {
+          "segment_id": "B039:L0007:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "警告并罚款11万元\r\n",
+          "start": 122,
+          "end": 133
+        },
+        {
+          "segment_id": "B039:L0008:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "作出处罚决定的机关名称\r\n",
+          "start": 133,
+          "end": 146
+        },
+        {
+          "segment_id": "B039:L0009:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "国家金融监督管理总局临沂监管分局\r\n",
+          "start": 146,
+          "end": 164
+        },
+        {
+          "segment_id": "B039:L0010:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 164,
+          "end": 175
+        },
+        {
+          "segment_id": "B039:L0011:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "2026年8月13日\r\n",
+          "start": 175,
+          "end": 187
+        },
+        {
+          "segment_id": "B039:L0012:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "来源公示\r\n",
+          "start": 187,
+          "end": 193
+        },
+        {
+          "segment_id": "B039:L0013:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕31号-32号）",
+          "start": 193,
+          "end": 238
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268386&itemId=4115&generaltype=9",
+      "title": "国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕31号-32号）"
+    }
+  },
+  {
+    "public_job": "C-B039-proposer-r1-a1",
+    "sample_id": "B039",
+    "role": "proposer",
+    "action": "search",
+    "args": {
+      "query": "山东远通兴华保险代理有限公司",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B039-reviewer-r1-a1",
+    "sample_id": "B039",
+    "role": "reviewer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B039",
+      "raw_sha256": "b7dee6a36c99e616d873aeab791bd780c276b11a37975c6f15bc40f87ed0e002",
+      "text_sha256": "b7dee6a36c99e616d873aeab791bd780c276b11a37975c6f15bc40f87ed0e002",
+      "text": "当事人: 山东远通兴华保险代理有限公司\r\n行政处罚决定书文号\r\n临金罚决字〔2026〕31号\r\n主要违法违规事实(案由)\r\n给予投保人保险合同约定以外的利益、收取保险公司工作人员给予的合同约定外酬金、未开立独立的佣金收取账户\r\n行政处罚内容\r\n警告并罚款11万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局临沂监管分局\r\n作出处罚决定的日期\r\n2026年8月13日\r\n来源公示\r\n国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕31号-32号）",
+      "total_codepoints": 238,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "当事人: 山东远通兴华保险代理有限公司\r\n",
+          "start": 0,
+          "end": 21
+        },
+        {
+          "segment_id": "B039:L0002:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "行政处罚决定书文号\r\n",
+          "start": 21,
+          "end": 32
+        },
+        {
+          "segment_id": "B039:L0003:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "临金罚决字〔2026〕31号\r\n",
+          "start": 32,
+          "end": 48
+        },
+        {
+          "segment_id": "B039:L0004:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "主要违法违规事实(案由)\r\n",
+          "start": 48,
+          "end": 62
+        },
+        {
+          "segment_id": "B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "给予投保人保险合同约定以外的利益、收取保险公司工作人员给予的合同约定外酬金、未开立独立的佣金收取账户\r\n",
+          "start": 62,
+          "end": 114
+        },
+        {
+          "segment_id": "B039:L0006:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "行政处罚内容\r\n",
+          "start": 114,
+          "end": 122
+        },
+        {
+          "segment_id": "B039:L0007:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "警告并罚款11万元\r\n",
+          "start": 122,
+          "end": 133
+        },
+        {
+          "segment_id": "B039:L0008:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "作出处罚决定的机关名称\r\n",
+          "start": 133,
+          "end": 146
+        },
+        {
+          "segment_id": "B039:L0009:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "国家金融监督管理总局临沂监管分局\r\n",
+          "start": 146,
+          "end": 164
+        },
+        {
+          "segment_id": "B039:L0010:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 164,
+          "end": 175
+        },
+        {
+          "segment_id": "B039:L0011:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "2026年8月13日\r\n",
+          "start": 175,
+          "end": 187
+        },
+        {
+          "segment_id": "B039:L0012:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "来源公示\r\n",
+          "start": 187,
+          "end": 193
+        },
+        {
+          "segment_id": "B039:L0013:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕31号-32号）",
+          "start": 193,
+          "end": 238
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268386&itemId=4115&generaltype=9",
+      "title": "国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕31号-32号）"
+    }
+  },
+  {
+    "public_job": "C-B039-reviewer-r1-a1",
+    "sample_id": "B039",
+    "role": "reviewer",
+    "action": "search",
+    "args": {
+      "query": "山东远通兴华保险代理有限公司",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B052-proposer-r1-a1",
+    "sample_id": "B052",
+    "role": "proposer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B052",
+      "raw_sha256": "33b1c13468ee71822654eb10b10ec34e86af7617ff6874e7d5d3e6f4ca4d5865",
+      "text_sha256": "33b1c13468ee71822654eb10b10ec34e86af7617ff6874e7d5d3e6f4ca4d5865",
+      "text": "当事人: 孙中娇（时任中汇人寿保险股份有限公司临沂中心支公司银代部副经理）\r\n行政处罚决定书文号\r\n临金罚决字〔2026〕29号\r\n主要违法违规事实(案由)\r\n唆使、诱导保险代理人进行违背诚信义务的活动，编制虚假业务财务资料，个人保险代理人给予投保人保险合同约定以外的利益\r\n行政处罚内容\r\n警告并罚款1.7万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局临沂监管分局\r\n作出处罚决定的日期\r\n2026年8月13日\r\n来源公示\r\n国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕28号-30号）",
+      "total_codepoints": 263,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B052:L0001:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "当事人: 孙中娇（时任中汇人寿保险股份有限公司临沂中心支公司银代部副经理）\r\n",
+          "start": 0,
+          "end": 39
+        },
+        {
+          "segment_id": "B052:L0002:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "行政处罚决定书文号\r\n",
+          "start": 39,
+          "end": 50
+        },
+        {
+          "segment_id": "B052:L0003:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "临金罚决字〔2026〕29号\r\n",
+          "start": 50,
+          "end": 66
+        },
+        {
+          "segment_id": "B052:L0004:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "主要违法违规事实(案由)\r\n",
+          "start": 66,
+          "end": 80
+        },
+        {
+          "segment_id": "B052:L0005:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "唆使、诱导保险代理人进行违背诚信义务的活动，编制虚假业务财务资料，个人保险代理人给予投保人保险合同约定以外的利益\r\n",
+          "start": 80,
+          "end": 138
+        },
+        {
+          "segment_id": "B052:L0006:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "行政处罚内容\r\n",
+          "start": 138,
+          "end": 146
+        },
+        {
+          "segment_id": "B052:L0007:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "警告并罚款1.7万元\r\n",
+          "start": 146,
+          "end": 158
+        },
+        {
+          "segment_id": "B052:L0008:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "作出处罚决定的机关名称\r\n",
+          "start": 158,
+          "end": 171
+        },
+        {
+          "segment_id": "B052:L0009:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "国家金融监督管理总局临沂监管分局\r\n",
+          "start": 171,
+          "end": 189
+        },
+        {
+          "segment_id": "B052:L0010:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 189,
+          "end": 200
+        },
+        {
+          "segment_id": "B052:L0011:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "2026年8月13日\r\n",
+          "start": 200,
+          "end": 212
+        },
+        {
+          "segment_id": "B052:L0012:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "来源公示\r\n",
+          "start": 212,
+          "end": 218
+        },
+        {
+          "segment_id": "B052:L0013:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕28号-30号）",
+          "start": 218,
+          "end": 263
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268381&itemId=4115&generaltype=9",
+      "title": "国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕28号-30号）"
+    }
+  },
+  {
+    "public_job": "C-B052-proposer-r1-a1",
+    "sample_id": "B052",
+    "role": "proposer",
+    "action": "search",
+    "args": {
+      "query": "孙中娇",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B052-proposer-r1-a1",
+    "sample_id": "B052",
+    "role": "proposer",
+    "action": "search",
+    "args": {
+      "query": "临金罚决字〔2026〕29号",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B052-reviewer-r1-a1",
+    "sample_id": "B052",
+    "role": "reviewer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B052",
+      "raw_sha256": "33b1c13468ee71822654eb10b10ec34e86af7617ff6874e7d5d3e6f4ca4d5865",
+      "text_sha256": "33b1c13468ee71822654eb10b10ec34e86af7617ff6874e7d5d3e6f4ca4d5865",
+      "text": "当事人: 孙中娇（时任中汇人寿保险股份有限公司临沂中心支公司银代部副经理）\r\n行政处罚决定书文号\r\n临金罚决字〔2026〕29号\r\n主要违法违规事实(案由)\r\n唆使、诱导保险代理人进行违背诚信义务的活动，编制虚假业务财务资料，个人保险代理人给予投保人保险合同约定以外的利益\r\n行政处罚内容\r\n警告并罚款1.7万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局临沂监管分局\r\n作出处罚决定的日期\r\n2026年8月13日\r\n来源公示\r\n国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕28号-30号）",
+      "total_codepoints": 263,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B052:L0001:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "当事人: 孙中娇（时任中汇人寿保险股份有限公司临沂中心支公司银代部副经理）\r\n",
+          "start": 0,
+          "end": 39
+        },
+        {
+          "segment_id": "B052:L0002:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "行政处罚决定书文号\r\n",
+          "start": 39,
+          "end": 50
+        },
+        {
+          "segment_id": "B052:L0003:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "临金罚决字〔2026〕29号\r\n",
+          "start": 50,
+          "end": 66
+        },
+        {
+          "segment_id": "B052:L0004:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "主要违法违规事实(案由)\r\n",
+          "start": 66,
+          "end": 80
+        },
+        {
+          "segment_id": "B052:L0005:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "唆使、诱导保险代理人进行违背诚信义务的活动，编制虚假业务财务资料，个人保险代理人给予投保人保险合同约定以外的利益\r\n",
+          "start": 80,
+          "end": 138
+        },
+        {
+          "segment_id": "B052:L0006:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "行政处罚内容\r\n",
+          "start": 138,
+          "end": 146
+        },
+        {
+          "segment_id": "B052:L0007:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "警告并罚款1.7万元\r\n",
+          "start": 146,
+          "end": 158
+        },
+        {
+          "segment_id": "B052:L0008:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "作出处罚决定的机关名称\r\n",
+          "start": 158,
+          "end": 171
+        },
+        {
+          "segment_id": "B052:L0009:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "国家金融监督管理总局临沂监管分局\r\n",
+          "start": 171,
+          "end": 189
+        },
+        {
+          "segment_id": "B052:L0010:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 189,
+          "end": 200
+        },
+        {
+          "segment_id": "B052:L0011:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "2026年8月13日\r\n",
+          "start": 200,
+          "end": 212
+        },
+        {
+          "segment_id": "B052:L0012:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "来源公示\r\n",
+          "start": 212,
+          "end": 218
+        },
+        {
+          "segment_id": "B052:L0013:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕28号-30号）",
+          "start": 218,
+          "end": 263
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268381&itemId=4115&generaltype=9",
+      "title": "国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕28号-30号）"
+    }
+  },
+  {
+    "public_job": "C-B052-reviewer-r1-a1",
+    "sample_id": "B052",
+    "role": "reviewer",
+    "action": "search",
+    "args": {
+      "query": "临金罚决字〔2026〕29号",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B052-reviewer-r1-a1",
+    "sample_id": "B052",
+    "role": "reviewer",
+    "action": "search",
+    "args": {
+      "query": "孙中娇",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B059-proposer-r1-a1",
+    "sample_id": "B059",
+    "role": "proposer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B059",
+      "raw_sha256": "90879508325875a7cb547aea91243772460ebb834e4e5c052d9c75de1564e181",
+      "text_sha256": "90879508325875a7cb547aea91243772460ebb834e4e5c052d9c75de1564e181",
+      "text": "当事人: 张娟（时任山东汇盛保险代理有限公司法定代表人）\r\n行政处罚决定书文号\r\n淄金罚决字〔2026〕27号\r\n主要违法违规事实(案由)\r\n未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务\r\n行政处罚内容\r\n警告并罚款6万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局淄博监管分局\r\n作出处罚决定的日期\r\n2026年8月11日\r\n来源公示\r\n国家金融监督管理总局淄博监管分局行政处罚信息公开表（淄金罚决字〔2026〕27号）",
+      "total_codepoints": 252,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B059:L0001:90879508325875a7:90879508325875a7",
+          "text": "当事人: 张娟（时任山东汇盛保险代理有限公司法定代表人）\r\n",
+          "start": 0,
+          "end": 30
+        },
+        {
+          "segment_id": "B059:L0002:90879508325875a7:90879508325875a7",
+          "text": "行政处罚决定书文号\r\n",
+          "start": 30,
+          "end": 41
+        },
+        {
+          "segment_id": "B059:L0003:90879508325875a7:90879508325875a7",
+          "text": "淄金罚决字〔2026〕27号\r\n",
+          "start": 41,
+          "end": 57
+        },
+        {
+          "segment_id": "B059:L0004:90879508325875a7:90879508325875a7",
+          "text": "主要违法违规事实(案由)\r\n",
+          "start": 57,
+          "end": 71
+        },
+        {
+          "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+          "text": "未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务\r\n",
+          "start": 71,
+          "end": 133
+        },
+        {
+          "segment_id": "B059:L0006:90879508325875a7:90879508325875a7",
+          "text": "行政处罚内容\r\n",
+          "start": 133,
+          "end": 141
+        },
+        {
+          "segment_id": "B059:L0007:90879508325875a7:90879508325875a7",
+          "text": "警告并罚款6万元\r\n",
+          "start": 141,
+          "end": 151
+        },
+        {
+          "segment_id": "B059:L0008:90879508325875a7:90879508325875a7",
+          "text": "作出处罚决定的机关名称\r\n",
+          "start": 151,
+          "end": 164
+        },
+        {
+          "segment_id": "B059:L0009:90879508325875a7:90879508325875a7",
+          "text": "国家金融监督管理总局淄博监管分局\r\n",
+          "start": 164,
+          "end": 182
+        },
+        {
+          "segment_id": "B059:L0010:90879508325875a7:90879508325875a7",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 182,
+          "end": 193
+        },
+        {
+          "segment_id": "B059:L0011:90879508325875a7:90879508325875a7",
+          "text": "2026年8月11日\r\n",
+          "start": 193,
+          "end": 205
+        },
+        {
+          "segment_id": "B059:L0012:90879508325875a7:90879508325875a7",
+          "text": "来源公示\r\n",
+          "start": 205,
+          "end": 211
+        },
+        {
+          "segment_id": "B059:L0013:90879508325875a7:90879508325875a7",
+          "text": "国家金融监督管理总局淄博监管分局行政处罚信息公开表（淄金罚决字〔2026〕27号）",
+          "start": 211,
+          "end": 252
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268374&itemId=4115&generaltype=9",
+      "title": "国家金融监督管理总局淄博监管分局行政处罚信息公开表（淄金罚决字〔2026〕27号）"
+    }
+  },
+  {
+    "public_job": "C-B059-proposer-r1-a1",
+    "sample_id": "B059",
+    "role": "proposer",
+    "action": "search",
+    "args": {
+      "query": "淄金罚决字〔2026〕27号",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B059-proposer-r1-a1",
+    "sample_id": "B059",
+    "role": "proposer",
+    "action": "search",
+    "args": {
+      "query": "山东汇盛保险代理有限公司",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 1,
+      "offset": 0,
+      "next_offset": null,
+      "records": [
+        {
+          "source_id": "FRV2-SOURCE-F004441-d7661a26989100c190dd9270",
+          "preview": "025〕37-38号)\n序号\n当事人名称\n行政处罚决\n定书文号\n主要违法违\n规行为\n行政处罚内\n容\n作出决定\n机关\n1\n山东汇盛保\n险代理有限\n公司\n淄金罚决字\n〔2025〕37\n号\n未按规定投\n保职业责任\n保险或缴存\n保证金、未\n按规定开立\n独立的佣金\n收取账户、\n委托未通过\n本机构进行\n执业登记的\n个人从事保\n险代理业务\n警告并罚款9\n万元\n国家金融监\n督管理总局\n淄博监管分\n局\n2\n张娟(时任山\n东汇盛保险\n代理有限公\n司法定代表\n人)\n淄金罚决字\n〔2025〕38\n号",
+          "preview_start": 34,
+          "preview_end": 274,
+          "preview_truncated": true,
+          "match_start": 94,
+          "match_end": 108
+        }
+      ],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B059-proposer-r1-a1",
+    "sample_id": "B059",
+    "role": "proposer",
+    "action": "read",
+    "args": {
+      "source_id": "FRV2-SOURCE-F004441-d7661a26989100c190dd9270",
+      "start": 0,
+      "length": 2000
+    },
+    "result": {
+      "source_id": "FRV2-SOURCE-F004441-d7661a26989100c190dd9270",
+      "text_sha256": "63b9a78f69e9ef32920dfa41af555c1dc16e28d458d953517259aafe426843d9",
+      "start": 0,
+      "end": 315,
+      "total_codepoints": 315,
+      "text": "国家金融监督管理总局淄博监管分局行政处罚信息公开表\n(淄金罚决字〔2025〕37-38号)\n序号\n当事人名称\n行政处罚决\n定书文号\n主要违法违\n规行为\n行政处罚内\n容\n作出决定\n机关\n1\n山东汇盛保\n险代理有限\n公司\n淄金罚决字\n〔2025〕37\n号\n未按规定投\n保职业责任\n保险或缴存\n保证金、未\n按规定开立\n独立的佣金\n收取账户、\n委托未通过\n本机构进行\n执业登记的\n个人从事保\n险代理业务\n警告并罚款9\n万元\n国家金融监\n督管理总局\n淄博监管分\n局\n2\n张娟(时任山\n东汇盛保险\n代理有限公\n司法定代表\n人)\n淄金罚决字\n〔2025〕38\n号\n警告并罚款6\n万元\n国家金融监\n督管理总局\n淄博监管分\n局\n手机扫一扫打开此页\n",
+      "next_start": null,
+      "truncated": false
+    }
+  },
+  {
+    "public_job": "C-B059-proposer-r1-a2",
+    "sample_id": "B059",
+    "role": "proposer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B059",
+      "raw_sha256": "90879508325875a7cb547aea91243772460ebb834e4e5c052d9c75de1564e181",
+      "text_sha256": "90879508325875a7cb547aea91243772460ebb834e4e5c052d9c75de1564e181",
+      "text": "当事人: 张娟（时任山东汇盛保险代理有限公司法定代表人）\r\n行政处罚决定书文号\r\n淄金罚决字〔2026〕27号\r\n主要违法违规事实(案由)\r\n未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务\r\n行政处罚内容\r\n警告并罚款6万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局淄博监管分局\r\n作出处罚决定的日期\r\n2026年8月11日\r\n来源公示\r\n国家金融监督管理总局淄博监管分局行政处罚信息公开表（淄金罚决字〔2026〕27号）",
+      "total_codepoints": 252,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B059:L0001:90879508325875a7:90879508325875a7",
+          "text": "当事人: 张娟（时任山东汇盛保险代理有限公司法定代表人）\r\n",
+          "start": 0,
+          "end": 30
+        },
+        {
+          "segment_id": "B059:L0002:90879508325875a7:90879508325875a7",
+          "text": "行政处罚决定书文号\r\n",
+          "start": 30,
+          "end": 41
+        },
+        {
+          "segment_id": "B059:L0003:90879508325875a7:90879508325875a7",
+          "text": "淄金罚决字〔2026〕27号\r\n",
+          "start": 41,
+          "end": 57
+        },
+        {
+          "segment_id": "B059:L0004:90879508325875a7:90879508325875a7",
+          "text": "主要违法违规事实(案由)\r\n",
+          "start": 57,
+          "end": 71
+        },
+        {
+          "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+          "text": "未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务\r\n",
+          "start": 71,
+          "end": 133
+        },
+        {
+          "segment_id": "B059:L0006:90879508325875a7:90879508325875a7",
+          "text": "行政处罚内容\r\n",
+          "start": 133,
+          "end": 141
+        },
+        {
+          "segment_id": "B059:L0007:90879508325875a7:90879508325875a7",
+          "text": "警告并罚款6万元\r\n",
+          "start": 141,
+          "end": 151
+        },
+        {
+          "segment_id": "B059:L0008:90879508325875a7:90879508325875a7",
+          "text": "作出处罚决定的机关名称\r\n",
+          "start": 151,
+          "end": 164
+        },
+        {
+          "segment_id": "B059:L0009:90879508325875a7:90879508325875a7",
+          "text": "国家金融监督管理总局淄博监管分局\r\n",
+          "start": 164,
+          "end": 182
+        },
+        {
+          "segment_id": "B059:L0010:90879508325875a7:90879508325875a7",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 182,
+          "end": 193
+        },
+        {
+          "segment_id": "B059:L0011:90879508325875a7:90879508325875a7",
+          "text": "2026年8月11日\r\n",
+          "start": 193,
+          "end": 205
+        },
+        {
+          "segment_id": "B059:L0012:90879508325875a7:90879508325875a7",
+          "text": "来源公示\r\n",
+          "start": 205,
+          "end": 211
+        },
+        {
+          "segment_id": "B059:L0013:90879508325875a7:90879508325875a7",
+          "text": "国家金融监督管理总局淄博监管分局行政处罚信息公开表（淄金罚决字〔2026〕27号）",
+          "start": 211,
+          "end": 252
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268374&itemId=4115&generaltype=9",
+      "title": "国家金融监督管理总局淄博监管分局行政处罚信息公开表（淄金罚决字〔2026〕27号）"
+    }
+  },
+  {
+    "public_job": "C-B059-proposer-r1-a2",
+    "sample_id": "B059",
+    "role": "proposer",
+    "action": "search",
+    "args": {
+      "query": "山东汇盛保险代理有限公司",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 1,
+      "offset": 0,
+      "next_offset": null,
+      "records": [
+        {
+          "source_id": "FRV2-SOURCE-F004441-d7661a26989100c190dd9270",
+          "preview": "025〕37-38号)\n序号\n当事人名称\n行政处罚决\n定书文号\n主要违法违\n规行为\n行政处罚内\n容\n作出决定\n机关\n1\n山东汇盛保\n险代理有限\n公司\n淄金罚决字\n〔2025〕37\n号\n未按规定投\n保职业责任\n保险或缴存\n保证金、未\n按规定开立\n独立的佣金\n收取账户、\n委托未通过\n本机构进行\n执业登记的\n个人从事保\n险代理业务\n警告并罚款9\n万元\n国家金融监\n督管理总局\n淄博监管分\n局\n2\n张娟(时任山\n东汇盛保险\n代理有限公\n司法定代表\n人)\n淄金罚决字\n〔2025〕38\n号",
+          "preview_start": 34,
+          "preview_end": 274,
+          "preview_truncated": true,
+          "match_start": 94,
+          "match_end": 108
+        }
+      ],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B059-proposer-r1-a2",
+    "sample_id": "B059",
+    "role": "proposer",
+    "action": "read",
+    "args": {
+      "source_id": "FRV2-SOURCE-F004441-d7661a26989100c190dd9270",
+      "start": 0,
+      "length": 2000
+    },
+    "result": {
+      "source_id": "FRV2-SOURCE-F004441-d7661a26989100c190dd9270",
+      "text_sha256": "63b9a78f69e9ef32920dfa41af555c1dc16e28d458d953517259aafe426843d9",
+      "start": 0,
+      "end": 315,
+      "total_codepoints": 315,
+      "text": "国家金融监督管理总局淄博监管分局行政处罚信息公开表\n(淄金罚决字〔2025〕37-38号)\n序号\n当事人名称\n行政处罚决\n定书文号\n主要违法违\n规行为\n行政处罚内\n容\n作出决定\n机关\n1\n山东汇盛保\n险代理有限\n公司\n淄金罚决字\n〔2025〕37\n号\n未按规定投\n保职业责任\n保险或缴存\n保证金、未\n按规定开立\n独立的佣金\n收取账户、\n委托未通过\n本机构进行\n执业登记的\n个人从事保\n险代理业务\n警告并罚款9\n万元\n国家金融监\n督管理总局\n淄博监管分\n局\n2\n张娟(时任山\n东汇盛保险\n代理有限公\n司法定代表\n人)\n淄金罚决字\n〔2025〕38\n号\n警告并罚款6\n万元\n国家金融监\n督管理总局\n淄博监管分\n局\n手机扫一扫打开此页\n",
+      "next_start": null,
+      "truncated": false
+    }
+  },
+  {
+    "public_job": "C-B059-proposer-r1-a2",
+    "sample_id": "B059",
+    "role": "proposer",
+    "action": "search",
+    "args": {
+      "query": "淄金罚决字〔2026〕27号",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B090-proposer-r1-a1",
+    "sample_id": "B090",
+    "role": "proposer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B090",
+      "raw_sha256": "8fce5a5696d103b41bb07db1c288ce3a28b2739b35c1ae04ddbc24a733f0acbf",
+      "text_sha256": "8fce5a5696d103b41bb07db1c288ce3a28b2739b35c1ae04ddbc24a733f0acbf",
+      "text": "行政处罚决定书文号\r\n金罚决字〔2024〕5号\r\n被处罚当事人\r\n中国人民财产保险股份有限公司及其责任人员\r\n主要违法违规事实\r\n将直接业务虚挂中介业务套取手续费；少计提资产减值准备；招投标管理不规范；支农融资业务捆绑销售保险产品；相关报告、报表、文件和资料不真实；跨年度列支手续费等。\r\n行政处罚依据\r\n《中华人民共和国保险法》第八十六条、第一百一十六条、第一百三十五条、第一百六十一条、第一百七十条、第一百七十一条等\r\n行政处罚决定\r\n对中国人民财产保险股份有限公司罚款合计681万元。其中，总公司221万元，分支机构460万元。\r\n对蒋新伟警告并处罚款10万元\r\n对原宇玲警告并处罚款10万元\r\n对王学刚警告并处罚款20万元\r\n对倪宏警告并处罚款10万元\r\n对何祖望警告并处罚款1万元\r\n对周志文警告并处罚款10万元\r\n对纪翔警告并处罚款10万元\r\n对刘团聚警告并处罚款10万元\r\n对蒋士亮警告并处罚款20万元\r\n对李旭警告并处罚款10万元\r\n对潘振雄警告并处罚款20万元\r\n对洪祖强警告并处罚款10万元\r\n对杨卫警告并处罚款10万元\r\n对崔晓博警告并处罚款10万元\r\n对钱磊警告并处罚款10万元\r\n对姜掌厚警告并处罚款10万元\r\n对郭钢警告并处罚款20万元\r\n对梁晓旭警告并处罚款10万元\r\n对王彦波警告并处罚款10万元\r\n对武运宝警告并处罚款20万元\r\n对李彦君警告并处罚款20万元\r\n对沈宁警告并处罚款20万元\r\n对余饶林警告并处罚款10万元\r\n对程向民警告并处罚款10万元\r\n对周健警告并处罚款10万元\r\n作出处罚决定的\r\n机关名称\r\n国家金融监督管理总局\r\n作出处罚决定的日期\r\n2024年5月14日",
+      "total_codepoints": 708,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B090:L0001:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "行政处罚决定书文号\r\n",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "segment_id": "B090:L0002:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "金罚决字〔2024〕5号\r\n",
+          "start": 11,
+          "end": 25
+        },
+        {
+          "segment_id": "B090:L0003:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "被处罚当事人\r\n",
+          "start": 25,
+          "end": 33
+        },
+        {
+          "segment_id": "B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "中国人民财产保险股份有限公司及其责任人员\r\n",
+          "start": 33,
+          "end": 55
+        },
+        {
+          "segment_id": "B090:L0005:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "主要违法违规事实\r\n",
+          "start": 55,
+          "end": 65
+        },
+        {
+          "segment_id": "B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "将直接业务虚挂中介业务套取手续费；少计提资产减值准备；招投标管理不规范；支农融资业务捆绑销售保险产品；相关报告、报表、文件和资料不真实；跨年度列支手续费等。\r\n",
+          "start": 65,
+          "end": 145
+        },
+        {
+          "segment_id": "B090:L0007:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "行政处罚依据\r\n",
+          "start": 145,
+          "end": 153
+        },
+        {
+          "segment_id": "B090:L0008:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "《中华人民共和国保险法》第八十六条、第一百一十六条、第一百三十五条、第一百六十一条、第一百七十条、第一百七十一条等\r\n",
+          "start": 153,
+          "end": 212
+        },
+        {
+          "segment_id": "B090:L0009:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "行政处罚决定\r\n",
+          "start": 212,
+          "end": 220
+        },
+        {
+          "segment_id": "B090:L0010:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对中国人民财产保险股份有限公司罚款合计681万元。其中，总公司221万元，分支机构460万元。\r\n",
+          "start": 220,
+          "end": 269
+        },
+        {
+          "segment_id": "B090:L0011:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对蒋新伟警告并处罚款10万元\r\n",
+          "start": 269,
+          "end": 285
+        },
+        {
+          "segment_id": "B090:L0012:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对原宇玲警告并处罚款10万元\r\n",
+          "start": 285,
+          "end": 301
+        },
+        {
+          "segment_id": "B090:L0013:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对王学刚警告并处罚款20万元\r\n",
+          "start": 301,
+          "end": 317
+        },
+        {
+          "segment_id": "B090:L0014:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对倪宏警告并处罚款10万元\r\n",
+          "start": 317,
+          "end": 332
+        },
+        {
+          "segment_id": "B090:L0015:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对何祖望警告并处罚款1万元\r\n",
+          "start": 332,
+          "end": 347
+        },
+        {
+          "segment_id": "B090:L0016:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对周志文警告并处罚款10万元\r\n",
+          "start": 347,
+          "end": 363
+        },
+        {
+          "segment_id": "B090:L0017:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对纪翔警告并处罚款10万元\r\n",
+          "start": 363,
+          "end": 378
+        },
+        {
+          "segment_id": "B090:L0018:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对刘团聚警告并处罚款10万元\r\n",
+          "start": 378,
+          "end": 394
+        },
+        {
+          "segment_id": "B090:L0019:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对蒋士亮警告并处罚款20万元\r\n",
+          "start": 394,
+          "end": 410
+        },
+        {
+          "segment_id": "B090:L0020:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对李旭警告并处罚款10万元\r\n",
+          "start": 410,
+          "end": 425
+        },
+        {
+          "segment_id": "B090:L0021:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对潘振雄警告并处罚款20万元\r\n",
+          "start": 425,
+          "end": 441
+        },
+        {
+          "segment_id": "B090:L0022:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对洪祖强警告并处罚款10万元\r\n",
+          "start": 441,
+          "end": 457
+        },
+        {
+          "segment_id": "B090:L0023:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对杨卫警告并处罚款10万元\r\n",
+          "start": 457,
+          "end": 472
+        },
+        {
+          "segment_id": "B090:L0024:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对崔晓博警告并处罚款10万元\r\n",
+          "start": 472,
+          "end": 488
+        },
+        {
+          "segment_id": "B090:L0025:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对钱磊警告并处罚款10万元\r\n",
+          "start": 488,
+          "end": 503
+        },
+        {
+          "segment_id": "B090:L0026:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对姜掌厚警告并处罚款10万元\r\n",
+          "start": 503,
+          "end": 519
+        },
+        {
+          "segment_id": "B090:L0027:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对郭钢警告并处罚款20万元\r\n",
+          "start": 519,
+          "end": 534
+        },
+        {
+          "segment_id": "B090:L0028:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对梁晓旭警告并处罚款10万元\r\n",
+          "start": 534,
+          "end": 550
+        },
+        {
+          "segment_id": "B090:L0029:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对王彦波警告并处罚款10万元\r\n",
+          "start": 550,
+          "end": 566
+        },
+        {
+          "segment_id": "B090:L0030:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对武运宝警告并处罚款20万元\r\n",
+          "start": 566,
+          "end": 582
+        },
+        {
+          "segment_id": "B090:L0031:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对李彦君警告并处罚款20万元\r\n",
+          "start": 582,
+          "end": 598
+        },
+        {
+          "segment_id": "B090:L0032:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对沈宁警告并处罚款20万元\r\n",
+          "start": 598,
+          "end": 613
+        },
+        {
+          "segment_id": "B090:L0033:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对余饶林警告并处罚款10万元\r\n",
+          "start": 613,
+          "end": 629
+        },
+        {
+          "segment_id": "B090:L0034:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对程向民警告并处罚款10万元\r\n",
+          "start": 629,
+          "end": 645
+        },
+        {
+          "segment_id": "B090:L0035:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对周健警告并处罚款10万元\r\n",
+          "start": 645,
+          "end": 660
+        },
+        {
+          "segment_id": "B090:L0036:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "作出处罚决定的\r\n",
+          "start": 660,
+          "end": 669
+        },
+        {
+          "segment_id": "B090:L0037:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "机关名称\r\n",
+          "start": 669,
+          "end": 675
+        },
+        {
+          "segment_id": "B090:L0038:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "国家金融监督管理总局\r\n",
+          "start": 675,
+          "end": 687
+        },
+        {
+          "segment_id": "B090:L0039:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 687,
+          "end": 698
+        },
+        {
+          "segment_id": "B090:L0040:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "2024年5月14日",
+          "start": 698,
+          "end": 708
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1162453&itemId=4113&generaltype=9",
+      "title": "国家金融监督管理总局行政处罚信息公开表（金罚决字〔2024〕5号）"
+    }
+  },
+  {
+    "public_job": "C-B090-proposer-r1-a1",
+    "sample_id": "B090",
+    "role": "proposer",
+    "action": "search",
+    "args": {
+      "query": "金罚决字〔2024〕5号",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 50,
+      "offset": 0,
+      "next_offset": 5,
+      "records": [
+        {
+          "source_id": "FRV2-SOURCE-F004942-83d89ba07a91f6848953ecf9",
+          "preview": "国家金融监督管理总局中卫监管分局行政处罚信息公开表 (卫金罚决字〔2024〕5号)\n序\n号\n当事人名\n称\n行政处罚决定\n书文号\n主要违法违规行为\n行政处罚\n内容\n作出决定\n机关\n1\n中国人寿\n财产保险\n股份有限\n公司中宁\n支公司\n卫金罚决字\n〔2024〕5号\n给予被保险人保险\n合同约定以外利益\n罚款3.7万\n元\n国家金融\n监督管理\n总局中卫\n监管分局\n2\n张平(时\n任中国人\n寿财产保\n险股份有\n限公司中\n宁支公司\n经理)\n警告并罚\n款0.7万元\n手机扫一扫打开此页\n",
+          "preview_start": 0,
+          "preview_end": 235,
+          "preview_truncated": false,
+          "match_start": 28,
+          "match_end": 40
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004943-b3417b69dc17776a3a7406cf",
+          "preview": "国家金融监督管理总局吴忠监管分局行政处罚信息公开表(吴金罚决字〔2024〕5号、6号)\n序\n号\n当事人名称\n行政处罚决定\n书文号\n主要违法违规行为\n行政处罚内\n容\n作出决定机\n关\n1\n中国人民财产\n保险股份有限\n公司利通支公\n司\n吴金罚决字\n〔2024〕5号\n编制虚假资料\n罚款20.09万\n元\n国家金融监\n督管理总局\n吴忠监管分\n局\n2\n叶盛（时任中\n国人民财产保\n险股份有限公\n司利通支公司\n经理）\n警告并罚款4\n万元\n3\n中国人民财产\n保险股份有限\n公司青铜峡支\n公司\n吴金",
+          "preview_start": 0,
+          "preview_end": 240,
+          "preview_truncated": true,
+          "match_start": 27,
+          "match_end": 39
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005001-d567742be202de2abb2fab6f",
+          "preview": "决定\n书文号\n主要违法违规行为\n行政处罚\n内容\n作出决定\n机关\n1\n中国人民\n财产保险\n股份有限\n公司河源\n市分公司\n河金罚决字\n〔2024〕5号\n给予投保人、被保\n险人保险合同约定\n以外利益,利用保险\n代理人虚构保险中\n介业务套取费用\n罚款46万\n元\n国家金融\n监督管理\n总局河源\n监管分局\n2\n黎明(时\n任中国人\n民财产保\n险股份有\n限公司河\n源市分公\n司副总经\n理)\n警告并处\n罚款15万\n元\n手机扫一扫打开此页\n",
+          "preview_start": 50,
+          "preview_end": 260,
+          "preview_truncated": true,
+          "match_start": 110,
+          "match_end": 123
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005064-802a23a21cf80cf6536a87a9",
+          "preview": "株洲金融监管分局行政处罚信息公开表(株金罚决字〔2024〕5号)\n行政处罚决定书文号\n株金罚决字〔2024〕5号\n被处罚当事人\n曾邓翔(时任中国太平洋财产保险股份\n有限公司渌口支公司车商客户经理)\n主要违法违规事实\n对中国太平洋财产保险股份有限公司渌\n口支公司“虚构保险中介业务”行为负直\n接责任\n行政处罚依据\n《中华人民共和国保险法》第一百一十\n六条、第一百七十一条\n行政处罚决定\n警告并处罚款1万元\n作出处罚决定的机关名称\n国家金融监督管理总局株洲监管分局\n作出处罚决定的日期",
+          "preview_start": 0,
+          "preview_end": 240,
+          "preview_truncated": true,
+          "match_start": 19,
+          "match_end": 31
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005168-dd7eb343ea3f98d900072eeb",
+          "preview": "国家金融监督管理总局潮州监管分局行政处罚信息公开表(2024年5号)\n行政处罚决定书文号\n潮金罚决字〔2024〕5号\n被处罚当事人\n一、富德生命人寿保险股份有限公司\n潮州中心支公司\n二、袁梓炫(时任富德生命人寿保险股\n份有限公司潮州中心支公司总经理室\n总经理助理)\n三、林晓婷(时任富德生命人寿保险股\n份有限公司潮州中心支公司个人代理\n人)\n主要违法违规事实\n业务财务数据不真实\n行政处罚依据\n《中华人民共和国保险法》第八十六\n条、第一百七十条、第一百七十一条\n行政处罚决定\n一、",
+          "preview_start": 0,
+          "preview_end": 240,
+          "preview_truncated": true,
+          "match_start": 46,
+          "match_end": 58
+        }
+      ],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B090-proposer-r1-a1",
+    "sample_id": "B090",
+    "role": "proposer",
+    "action": "search",
+    "args": {
+      "query": "金罚决字〔2024〕5号 681",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 6,
+      "offset": 0,
+      "next_offset": 5,
+      "records": [
+        {
+          "source_id": "FRV2-SOURCE-F004942-83d89ba07a91f6848953ecf9",
+          "preview": "国家金融监督管理总局中卫监管分局行政处罚信息公开表 (卫金罚决字〔2024〕5号)\n序\n号\n当事人名\n称\n行政处罚决定\n书文号\n主要违法违规行为\n行政处罚\n内容\n作出决定\n机关\n1\n中国人寿\n财产保险\n股份有限\n公司中宁\n支公司\n卫金罚决字\n〔2024〕5号\n给予被保险人保险\n合同约定以外利益\n罚款3.7万\n元\n国家金融\n监督管理\n总局中卫\n监管分局\n2\n张平(时\n任中国人\n寿财产保\n险股份有\n限公司中\n宁支公司\n经理)\n警告并罚\n款0.7万元\n手机扫一扫打开此页\n",
+          "preview_start": 0,
+          "preview_end": 235,
+          "preview_truncated": false,
+          "match_start": 28,
+          "match_end": 40
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005429-291477c74203c6a104ffabaa",
+          "preview": "国家金融监督管理总局河北监管局\n行政处罚信息公开表(冀金罚决字〔2024〕5号)\n行政处罚决定书文号\n冀金罚决字〔2024〕5号\n被处罚当事人\n一、中国平安财产保险股份有限公\n司石家庄中心支公司\n二、中国平安财产保险股份有限公\n司元氏支公司\n三、聂光辉(时任中国平安财产保险\n股份有限公司石家庄中心支公司总\n经理)\n四、王兴楼(时任中国平安财产保险\n股份有限公司元氏支公司经理)\n主要违法违规事实\n中国平安财产保险股份有限公司石\n家庄中心支公司存在以下违法违规\n行为:未按照规定使",
+          "preview_start": 0,
+          "preview_end": 240,
+          "preview_truncated": true,
+          "match_start": 27,
+          "match_end": 39
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006111-917c1f32c4b7c3e2f89f1837",
+          "preview": "国家金融监督管理总局金华监管分局行政处罚信息公开表\n(金金罚决字〔2024〕5号)\n行政处罚决定书文号\n金金罚决字〔2024〕5号\n被处罚当事人\n一、中国平安人寿保险股份有限公司沈\n阳电话销售中心\n二、卜晓燕(时任中国平安人寿保险股份\n有限公司沈阳电话销售中心副总经理)\n主要违法违规事实\n欺骗投保人;承诺给予投保人保险合同约\n定以外利益\n行政处罚依据\n《中华人民共和国保险法》第一百一十\n六条、第一百六十一条、第一百七十一\n条\n行政处罚决定\n一、对中国平安人寿保险股份有限公司\n",
+          "preview_start": 0,
+          "preview_end": 240,
+          "preview_truncated": true,
+          "match_start": 28,
+          "match_end": 40
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006485-1f05a8186df09e487a899c36",
+          "preview": "国家金融监督管理总局行政处罚信息公开表\n〔2024〕号\n行政处罚决定书文号\n金罚决字〔2024〕5号\n被处罚当事人\n中国人民财产保险股份有限公司及\n其责任人员\n主要违法违规事实\n将直接业务虚挂中介业务套取手续\n费;少计提资产减值准备;招投标管理\n不规范;支农融资业务捆绑销售保险\n产品;相关报告、报表、文件和资料\n不真实;跨年度列支手续费等。\n行政处罚依据\n《中华人民共和国保险法》第八十\n六条、第一百一十六条、第一百三\n十五条、第一百六十一条、第一百\n七十条、第一百七十一条等\n",
+          "preview_start": 0,
+          "preview_end": 240,
+          "preview_truncated": true,
+          "match_start": 38,
+          "match_end": 50
+        },
+        {
+          "source_id": "FRV2-SOURCE-F006832-760417817a6a0355b3ae159a",
+          "preview": "国家金融监督管理总局淮南监管分局\n行政处罚信息公开表\n(淮南金罚决字〔2024〕5号)\n行政处罚决定书文号\n淮南金罚决字〔2024〕5号\n被处罚当事人\n泰康人寿保险有限责任公司安徽淮南\n中心支公司\n主要违法违规事实\n欺骗投保人;唆使、诱导个人保险代理\n人进行违背诚信义务的活动\n行政处罚依据\n《中华人民共和国保险法》第一百一\n十六条、第一百六十一条;《保险公司\n管理规定》第五十三条、第六十九条\n行政处罚决定\n警告,并处罚款12万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局",
+          "preview_start": 0,
+          "preview_end": 240,
+          "preview_truncated": true,
+          "match_start": 30,
+          "match_end": 42
+        }
+      ],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B090-proposer-r1-a1",
+    "sample_id": "B090",
+    "role": "proposer",
+    "action": "read",
+    "args": {
+      "source_id": "FRV2-SOURCE-F006485-1f05a8186df09e487a899c36",
+      "start": 0,
+      "length": 2000
+    },
+    "result": {
+      "source_id": "FRV2-SOURCE-F006485-1f05a8186df09e487a899c36",
+      "text_sha256": "c2395e8339f3599a207292be785a2e7419520e92b0f83702c8b956d1526c7951",
+      "start": 0,
+      "end": 718,
+      "total_codepoints": 718,
+      "text": "国家金融监督管理总局行政处罚信息公开表\n〔2024〕号\n行政处罚决定书文号\n金罚决字〔2024〕5号\n被处罚当事人\n中国人民财产保险股份有限公司及\n其责任人员\n主要违法违规事实\n将直接业务虚挂中介业务套取手续\n费;少计提资产减值准备;招投标管理\n不规范;支农融资业务捆绑销售保险\n产品;相关报告、报表、文件和资料\n不真实;跨年度列支手续费等。\n行政处罚依据\n《中华人民共和国保险法》第八十\n六条、第一百一十六条、第一百三\n十五条、第一百六十一条、第一百\n七十条、第一百七十一条等\n行政处罚决定\n对中国人民财产保险股份有限公司\n罚款合计681万元。其中,总公司221\n万元,分支机构460万元。\n对蒋新伟警告并处罚款10万元\n对原宇玲警告并处罚款10万元\n对王学刚警告并处罚款20万元\n对倪宏警告并处罚款10万元\n对何祖望警告并处罚款1万元\n对周志文警告并处罚款10万元\n对纪翔警告并处罚款10万元\n对刘团聚警告并处罚款10万元\n对蒋士亮警告并处罚款20万元\n对李旭警告并处罚款10万元\n对潘振雄警告并处罚款20万元\n对洪祖强警告并处罚款10万元\n对杨卫警告并处罚款10万元\n对崔晓博警告并处罚款10万元\n对钱磊警告并处罚款10万元\n对姜掌厚警告并处罚款10万元\n对郭钢警告并处罚款20万元\n对梁晓旭警告并处罚款10万元\n对王彦波警告并处罚款10万元\n对武运宝警告并处罚款20万元\n对李彦君警告并处罚款20万元\n对沈宁警告并处罚款20万元\n对余饶林警告并处罚款10万元\n对程向民警告并处罚款10万元\n对周健警告并处罚款10万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局\n作出处罚决定的日期\n2024年5月14日\n手机扫一扫打开此页\n",
+      "next_start": null,
+      "truncated": false
+    }
+  },
+  {
+    "public_job": "C-B093-proposer-r1-a1",
+    "sample_id": "B093",
+    "role": "proposer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B093",
+      "raw_sha256": "c650dd270272401dae336b30c38488c11774ec9bac8960863b1f5f17e550970b",
+      "text_sha256": "c650dd270272401dae336b30c38488c11774ec9bac8960863b1f5f17e550970b",
+      "text": "行政处罚决定书文号\r\n金罚决字〔2023〕55号\r\n被处罚当事人\r\n一、中国人民人寿保险股份有限公司\r\n二、人保寿险柳州市分公司\r\n三、于喆（时任人保寿险财务管理部副总经理）\r\n四、沈哲华（时任人保寿险收展业务部（后更名为服务营销业务部）副总经理）\r\n五、原俊（时任人保寿险运营管理部总经理）\r\n六、谢怡刚（时任人保寿险信息科技部总经理）\r\n七、王聪（时任人保寿险电子商务部副总经理）\r\n八、邹奕（时任人保寿险精算部副总经理）\r\n九、李深晓（时任人保寿险柳州市分公司副总经理）\r\n主要违法违规事实\r\n团单加保未确认应收保费和保费收入；长期险超宽限期应冲回未冲回应收保费和保费收入；通过业务展期方式变相销售已停售保险产品；通过后台修改核心业务系统数据；意外险手续费率超预定附加费用率；养老年金保险实际红利分配方式与备案不一致；补充团体医疗保险协议收益率超保险合同约定；委托无资质机构开展保险代理业务\r\n行政处罚依据\r\n《中华人民共和国保险法》第八十六条、第一百一十六条、第一百三十五条、第一百六十一条、第一百七十条、第一百七十一条\r\n行政处罚决定\r\n一、对中国人民人寿保险股份有限公司罚款435万元\r\n二、对人保寿险柳州市分公司罚款50万元\r\n三、对于喆警告并处罚款10万元\r\n四、对沈哲华警告并处罚款10万元\r\n五、对原俊警告并处罚款6万元\r\n六、对谢怡刚警告并处罚款10万元\r\n七、对邹奕警告并处罚款10万元\r\n八、对李深晓警告并处罚款10万元\r\n九、对王聪警告并处罚款20万元\r\n作出处罚决定的\r\n机关名称\r\n国家金融监督管理总局\r\n作出处罚决定的日期\r\n2023年12月28日",
+      "total_codepoints": 691,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B093:L0001:c650dd270272401d:c650dd270272401d",
+          "text": "行政处罚决定书文号\r\n",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "segment_id": "B093:L0002:c650dd270272401d:c650dd270272401d",
+          "text": "金罚决字〔2023〕55号\r\n",
+          "start": 11,
+          "end": 26
+        },
+        {
+          "segment_id": "B093:L0003:c650dd270272401d:c650dd270272401d",
+          "text": "被处罚当事人\r\n",
+          "start": 26,
+          "end": 34
+        },
+        {
+          "segment_id": "B093:L0004:c650dd270272401d:c650dd270272401d",
+          "text": "一、中国人民人寿保险股份有限公司\r\n",
+          "start": 34,
+          "end": 52
+        },
+        {
+          "segment_id": "B093:L0005:c650dd270272401d:c650dd270272401d",
+          "text": "二、人保寿险柳州市分公司\r\n",
+          "start": 52,
+          "end": 66
+        },
+        {
+          "segment_id": "B093:L0006:c650dd270272401d:c650dd270272401d",
+          "text": "三、于喆（时任人保寿险财务管理部副总经理）\r\n",
+          "start": 66,
+          "end": 89
+        },
+        {
+          "segment_id": "B093:L0007:c650dd270272401d:c650dd270272401d",
+          "text": "四、沈哲华（时任人保寿险收展业务部（后更名为服务营销业务部）副总经理）\r\n",
+          "start": 89,
+          "end": 126
+        },
+        {
+          "segment_id": "B093:L0008:c650dd270272401d:c650dd270272401d",
+          "text": "五、原俊（时任人保寿险运营管理部总经理）\r\n",
+          "start": 126,
+          "end": 148
+        },
+        {
+          "segment_id": "B093:L0009:c650dd270272401d:c650dd270272401d",
+          "text": "六、谢怡刚（时任人保寿险信息科技部总经理）\r\n",
+          "start": 148,
+          "end": 171
+        },
+        {
+          "segment_id": "B093:L0010:c650dd270272401d:c650dd270272401d",
+          "text": "七、王聪（时任人保寿险电子商务部副总经理）\r\n",
+          "start": 171,
+          "end": 194
+        },
+        {
+          "segment_id": "B093:L0011:c650dd270272401d:c650dd270272401d",
+          "text": "八、邹奕（时任人保寿险精算部副总经理）\r\n",
+          "start": 194,
+          "end": 215
+        },
+        {
+          "segment_id": "B093:L0012:c650dd270272401d:c650dd270272401d",
+          "text": "九、李深晓（时任人保寿险柳州市分公司副总经理）\r\n",
+          "start": 215,
+          "end": 240
+        },
+        {
+          "segment_id": "B093:L0013:c650dd270272401d:c650dd270272401d",
+          "text": "主要违法违规事实\r\n",
+          "start": 240,
+          "end": 250
+        },
+        {
+          "segment_id": "B093:L0014:c650dd270272401d:c650dd270272401d",
+          "text": "团单加保未确认应收保费和保费收入；长期险超宽限期应冲回未冲回应收保费和保费收入；通过业务展期方式变相销售已停售保险产品；通过后台修改核心业务系统数据；意外险手续费率超预定附加费用率；养老年金保险实际红利分配方式与备案不一致；补充团体医疗保险协议收益率超保险合同约定；委托无资质机构开展保险代理业务\r\n",
+          "start": 250,
+          "end": 400
+        },
+        {
+          "segment_id": "B093:L0015:c650dd270272401d:c650dd270272401d",
+          "text": "行政处罚依据\r\n",
+          "start": 400,
+          "end": 408
+        },
+        {
+          "segment_id": "B093:L0016:c650dd270272401d:c650dd270272401d",
+          "text": "《中华人民共和国保险法》第八十六条、第一百一十六条、第一百三十五条、第一百六十一条、第一百七十条、第一百七十一条\r\n",
+          "start": 408,
+          "end": 466
+        },
+        {
+          "segment_id": "B093:L0017:c650dd270272401d:c650dd270272401d",
+          "text": "行政处罚决定\r\n",
+          "start": 466,
+          "end": 474
+        },
+        {
+          "segment_id": "B093:L0018:c650dd270272401d:c650dd270272401d",
+          "text": "一、对中国人民人寿保险股份有限公司罚款435万元\r\n",
+          "start": 474,
+          "end": 500
+        },
+        {
+          "segment_id": "B093:L0019:c650dd270272401d:c650dd270272401d",
+          "text": "二、对人保寿险柳州市分公司罚款50万元\r\n",
+          "start": 500,
+          "end": 521
+        },
+        {
+          "segment_id": "B093:L0020:c650dd270272401d:c650dd270272401d",
+          "text": "三、对于喆警告并处罚款10万元\r\n",
+          "start": 521,
+          "end": 538
+        },
+        {
+          "segment_id": "B093:L0021:c650dd270272401d:c650dd270272401d",
+          "text": "四、对沈哲华警告并处罚款10万元\r\n",
+          "start": 538,
+          "end": 556
+        },
+        {
+          "segment_id": "B093:L0022:c650dd270272401d:c650dd270272401d",
+          "text": "五、对原俊警告并处罚款6万元\r\n",
+          "start": 556,
+          "end": 572
+        },
+        {
+          "segment_id": "B093:L0023:c650dd270272401d:c650dd270272401d",
+          "text": "六、对谢怡刚警告并处罚款10万元\r\n",
+          "start": 572,
+          "end": 590
+        },
+        {
+          "segment_id": "B093:L0024:c650dd270272401d:c650dd270272401d",
+          "text": "七、对邹奕警告并处罚款10万元\r\n",
+          "start": 590,
+          "end": 607
+        },
+        {
+          "segment_id": "B093:L0025:c650dd270272401d:c650dd270272401d",
+          "text": "八、对李深晓警告并处罚款10万元\r\n",
+          "start": 607,
+          "end": 625
+        },
+        {
+          "segment_id": "B093:L0026:c650dd270272401d:c650dd270272401d",
+          "text": "九、对王聪警告并处罚款20万元\r\n",
+          "start": 625,
+          "end": 642
+        },
+        {
+          "segment_id": "B093:L0027:c650dd270272401d:c650dd270272401d",
+          "text": "作出处罚决定的\r\n",
+          "start": 642,
+          "end": 651
+        },
+        {
+          "segment_id": "B093:L0028:c650dd270272401d:c650dd270272401d",
+          "text": "机关名称\r\n",
+          "start": 651,
+          "end": 657
+        },
+        {
+          "segment_id": "B093:L0029:c650dd270272401d:c650dd270272401d",
+          "text": "国家金融监督管理总局\r\n",
+          "start": 657,
+          "end": 669
+        },
+        {
+          "segment_id": "B093:L0030:c650dd270272401d:c650dd270272401d",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 669,
+          "end": 680
+        },
+        {
+          "segment_id": "B093:L0031:c650dd270272401d:c650dd270272401d",
+          "text": "2023年12月28日",
+          "start": 680,
+          "end": 691
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1144050&itemId=4113&generaltype=9",
+      "title": "国家金融监督管理总局行政处罚信息公开表（金罚决字〔2023〕55号）"
+    }
+  },
+  {
+    "public_job": "C-B093-proposer-r1-a1",
+    "sample_id": "B093",
+    "role": "proposer",
+    "action": "search",
+    "args": {
+      "query": "金罚决字〔2023〕55号",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 6,
+      "offset": 0,
+      "next_offset": 5,
+      "records": [
+        {
+          "source_id": "FRV2-SOURCE-F007546-35265fcec8254c7490b3808b",
+          "preview": "国家金融监督管理总局吉林监管局行政处罚信息公开表(吉金罚决字〔2023〕55号)\n国家金融监督管理总局吉林监管局行政处罚信息公开表\n行政处罚决定书文号\n吉金罚决字〔2023〕55号\n被处罚当事人\n卢阳(时任吉林省昌禾保险销售有限公\n司董事长兼总经理)\n主要违法违规事实\n对吉林省昌禾保险销售有限公司虚列\n人员套取费用、委托未在本机构进行\n执业登记的个人开展保险代理业务、\n超出规定的经营区域从事保险代理业\n务活动、未按规定对分支机构营业场\n所变更和分支机构主要负责人变更事\n项进行",
+          "preview_start": 0,
+          "preview_end": 240,
+          "preview_truncated": true,
+          "match_start": 26,
+          "match_end": 39
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007628-553e16ed7ed1758fb68e950b",
+          "preview": "国家金融监督管理总局济宁监管分局行政处罚信息公开表(济金罚决字〔2023〕55号)\n行政处罚决定书文号\n济金罚决字〔2023〕55号\n被处罚当事人\n刘晓芳(时任中国人民人寿保险股\n份有限公司济宁中心支公司总经\n理助理)\n主要违法违规事实\n对中国人民人寿保险股份有限公\n司济宁中心支公司利用保险业务\n为他人牟取不正当利益负有责任\n行政处罚依据\n《中华人民共和国保险法》第一\n百一十六条、第一百七十一条\n行政处罚决定\n警告并处罚款1万元\n作出处罚决定的机关名称\n国家金融监督管理总局济",
+          "preview_start": 0,
+          "preview_end": 240,
+          "preview_truncated": true,
+          "match_start": 27,
+          "match_end": 40
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007645-f581069d470994bcf4a89fa3",
+          "preview": "国家金融监督管理总局烟台监管分局行政处罚信息公开表(烟金罚决字〔2023〕55号)\n行政处罚决定书文号\n烟金罚决字〔2023〕55号\n被处罚当事人\n曲广琪(时任华海沣泰保险代理\n有限公司烟台分公司代理人)\n主要违法违规事实\n对华海沣泰保险代理有限公司烟\n台分公司编制虚假财务资料负有\n责任\n行政处罚依据\n《中华人民共和国保险法》第八\n十六条、第一百三十二条、\n第一百七十一条\n行政处罚决定\n警告并处罚款1万元\n作出处罚决定的机关名称\n国家金融监督管理总局\n烟台监管分局\n作出处罚决",
+          "preview_start": 0,
+          "preview_end": 240,
+          "preview_truncated": true,
+          "match_start": 27,
+          "match_end": 40
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007701-159826af16267b1cae314e9a",
+          "preview": "国家金融监督管理总局陕西监管局行政处罚信息公开表 陕金罚决字〔2023〕55号\n行政处罚决定书文号\n陕金罚决字〔2023〕55号\n被处罚当事人\n中银保险有限公司陕西分公司\n主要违法违规事实\n给予投保人合同约定以外的其他利益\n行政处罚依据\n《中华人民共和国保险法》第一百一十\n六条、第一百六十一条\n行政处罚决定\n对中银保险有限公司陕西分公司处以7\n万元罚款\n作出处罚决定的机关\n名称\n国家金融监督管理总局陕西监管局\n作出处罚决定的日期\n2023年12月29日\n手机扫一扫打开此页\n",
+          "preview_start": 0,
+          "preview_end": 239,
+          "preview_truncated": false,
+          "match_start": 26,
+          "match_end": 39
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007749-df1b624de8c8271f7ddd8dd1",
+          "preview": "国家金融监督管理总局行政处罚信息公开表\n行政处罚决定书文号\n金罚决字〔2023〕55号\n被处罚当事人\n一、中国人民人寿保险股份有限公\n司\n二、人保寿险柳州市分公司\n三、于喆(时任人保寿险财务管理部\n副总经理)\n四、沈哲华(时任人保寿险收展业务\n部(后更名为服务营销业务部)副总经\n理)\n五、原俊(时任人保寿险运营管理部\n总经理)\n六、谢怡刚(时任人保寿险信息科技\n部总经理)\n七、王聪(时任人保寿险电子商务部\n副总经理)\n八、邹奕(时任人保寿险精算部副总\n经理)\n九、李深晓(时任",
+          "preview_start": 0,
+          "preview_end": 240,
+          "preview_truncated": true,
+          "match_start": 30,
+          "match_end": 43
+        }
+      ],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B093-proposer-r1-a1",
+    "sample_id": "B093",
+    "role": "proposer",
+    "action": "read",
+    "args": {
+      "source_id": "FRV2-SOURCE-F007749-df1b624de8c8271f7ddd8dd1",
+      "start": 0,
+      "length": 2000
+    },
+    "result": {
+      "source_id": "FRV2-SOURCE-F007749-df1b624de8c8271f7ddd8dd1",
+      "text_sha256": "a0a258a3a378f36954d8b7f09ec1d77ed3fbe0fa7230c3da81a4cfce5b77cda3",
+      "start": 0,
+      "end": 715,
+      "total_codepoints": 715,
+      "text": "国家金融监督管理总局行政处罚信息公开表\n行政处罚决定书文号\n金罚决字〔2023〕55号\n被处罚当事人\n一、中国人民人寿保险股份有限公\n司\n二、人保寿险柳州市分公司\n三、于喆(时任人保寿险财务管理部\n副总经理)\n四、沈哲华(时任人保寿险收展业务\n部(后更名为服务营销业务部)副总经\n理)\n五、原俊(时任人保寿险运营管理部\n总经理)\n六、谢怡刚(时任人保寿险信息科技\n部总经理)\n七、王聪(时任人保寿险电子商务部\n副总经理)\n八、邹奕(时任人保寿险精算部副总\n经理)\n九、李深晓(时任人保寿险柳州市分\n公司副总经理)\n主要违法违规事实\n团单加保未确认应收保费和保费收\n入;长期险超宽限期应冲回未冲回应\n收保费和保费收入;通过业务展期方\n式变相销售已停售保险产品;通过后\n台修改核心业务系统数据;意外险手\n续费率超预定附加费用率;养老年金\n保险实际红利分配方式与备案不一\n致;补充团体医疗保险协议收益率超\n保险合同约定;委托无资质机构开展\n保险代理业务\n行政处罚依据\n《中华人民共和国保险法》第八十\n六条、第一百一十六条、第一百三\n十五条、第一百六十一条、第一百\n七十条、第一百七十一条\n行政处罚决定\n一、对中国人民人寿保险股份有限\n公司罚款435万元\n二、对人保寿险柳州市分公司罚款\n50万元\n三、对于喆警告并处罚款10万元\n四、对沈哲华警告并处罚款10万元\n五、对原俊警告并处罚款6万元\n六、对谢怡刚警告并处罚款10万元\n七、对邹奕警告并处罚款10万元\n八、对李深晓警告并处罚款10万元\n九、对王聪警告并处罚款20万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局\n作出处罚决定的日期\n2023年12月28日\n手机扫一扫打开此页\n",
+      "next_start": null,
+      "truncated": false
+    }
+  },
+  {
+    "public_job": "C-B100-proposer-r1-a1",
+    "sample_id": "B100",
+    "role": "proposer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B100",
+      "raw_sha256": "f01b3c7fc1eb9afca0244eade570beb4b5a7d44613f80bbf8df7a06b7a6b2126",
+      "text_sha256": "f01b3c7fc1eb9afca0244eade570beb4b5a7d44613f80bbf8df7a06b7a6b2126",
+      "text": "行政处罚决定书文号\r\n金罚决字〔2023〕66号\r\n被处罚当事人\r\n一、华安财保资产管理有限责任公司（以下简称华安资管）\r\n二、张雅硕（时任华安资管财务会计部总经理助理）\r\n三、刘灏（时任华安资管财务负责人、财务会计部总经理）\r\n四、何崴（时任华安资管固定收益部总经理、公司副总经理）\r\n五、车正（时任华安资管金融市场部副总经理）\r\n六、王凡（时任华安资管总经理助理）\r\n主要违法违规事实\r\n一、高管人员违规兼职\r\n二、对受托保险资金未履行谨慎管理义务\r\n三、编制提供虚假报表\r\n四、债券投资不符合监管要求\r\n五、保险资金办理银行存款业务不合规\r\n六、为保险资金提供通道业务\r\n七、投资关联方股权的关联交易未审批\r\n八、财务数据不真实\r\n行政处罚依据\r\n《中华人民共和国保险法》第一百零六条、第一百零七条、第一百六十四条、第一百七十条、第一百七十一条及《保险资金运用管理办法》等相关规定\r\n行政处罚决定\r\n对机构罚款515万元，对张雅硕警告并罚款7万元，对刘灏警告并罚款7万元，对何崴警告并罚款7万元，对车正警告并罚款10万元，对王凡警告并罚款10万元\r\n作出处罚决定的\r\n机关名称\r\n国家金融监督管理总局\r\n作出处罚决定的日期\r\n2023年12月28日",
+      "total_codepoints": 527,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B100:L0001:f01b3c7fc1eb9afc:f01b3c7fc1eb9afc",
+          "text": "行政处罚决定书文号\r\n",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "segment_id": "B100:L0002:f01b3c7fc1eb9afc:f01b3c7fc1eb9afc",
+          "text": "金罚决字〔2023〕66号\r\n",
+          "start": 11,
+          "end": 26
+        },
+        {
+          "segment_id": "B100:L0003:f01b3c7fc1eb9afc:f01b3c7fc1eb9afc",
+          "text": "被处罚当事人\r\n",
+          "start": 26,
+          "end": 34
+        },
+        {
+          "segment_id": "B100:L0004:f01b3c7fc1eb9afc:f01b3c7fc1eb9afc",
+          "text": "一、华安财保资产管理有限责任公司（以下简称华安资管）\r\n",
+          "start": 34,
+          "end": 62
+        },
+        {
+          "segment_id": "B100:L0005:f01b3c7fc1eb9afc:f01b3c7fc1eb9afc",
+          "text": "二、张雅硕（时任华安资管财务会计部总经理助理）\r\n",
+          "start": 62,
+          "end": 87
+        },
+        {
+          "segment_id": "B100:L0006:f01b3c7fc1eb9afc:f01b3c7fc1eb9afc",
+          "text": "三、刘灏（时任华安资管财务负责人、财务会计部总经理）\r\n",
+          "start": 87,
+          "end": 115
+        },
+        {
+          "segment_id": "B100:L0007:f01b3c7fc1eb9afc:f01b3c7fc1eb9afc",
+          "text": "四、何崴（时任华安资管固定收益部总经理、公司副总经理）\r\n",
+          "start": 115,
+          "end": 144
+        },
+        {
+          "segment_id": "B100:L0008:f01b3c7fc1eb9afc:f01b3c7fc1eb9afc",
+          "text": "五、车正（时任华安资管金融市场部副总经理）\r\n",
+          "start": 144,
+          "end": 167
+        },
+        {
+          "segment_id": "B100:L0009:f01b3c7fc1eb9afc:f01b3c7fc1eb9afc",
+          "text": "六、王凡（时任华安资管总经理助理）\r\n",
+          "start": 167,
+          "end": 186
+        },
+        {
+          "segment_id": "B100:L0010:f01b3c7fc1eb9afc:f01b3c7fc1eb9afc",
+          "text": "主要违法违规事实\r\n",
+          "start": 186,
+          "end": 196
+        },
+        {
+          "segment_id": "B100:L0011:f01b3c7fc1eb9afc:f01b3c7fc1eb9afc",
+          "text": "一、高管人员违规兼职\r\n",
+          "start": 196,
+          "end": 208
+        },
+        {
+          "segment_id": "B100:L0012:f01b3c7fc1eb9afc:f01b3c7fc1eb9afc",
+          "text": "二、对受托保险资金未履行谨慎管理义务\r\n",
+          "start": 208,
+          "end": 228
+        },
+        {
+          "segment_id": "B100:L0013:f01b3c7fc1eb9afc:f01b3c7fc1eb9afc",
+          "text": "三、编制提供虚假报表\r\n",
+          "start": 228,
+          "end": 240
+        },
+        {
+          "segment_id": "B100:L0014:f01b3c7fc1eb9afc:f01b3c7fc1eb9afc",
+          "text": "四、债券投资不符合监管要求\r\n",
+          "start": 240,
+          "end": 255
+        },
+        {
+          "segment_id": "B100:L0015:f01b3c7fc1eb9afc:f01b3c7fc1eb9afc",
+          "text": "五、保险资金办理银行存款业务不合规\r\n",
+          "start": 255,
+          "end": 274
+        },
+        {
+          "segment_id": "B100:L0016:f01b3c7fc1eb9afc:f01b3c7fc1eb9afc",
+          "text": "六、为保险资金提供通道业务\r\n",
+          "start": 274,
+          "end": 289
+        },
+        {
+          "segment_id": "B100:L0017:f01b3c7fc1eb9afc:f01b3c7fc1eb9afc",
+          "text": "七、投资关联方股权的关联交易未审批\r\n",
+          "start": 289,
+          "end": 308
+        },
+        {
+          "segment_id": "B100:L0018:f01b3c7fc1eb9afc:f01b3c7fc1eb9afc",
+          "text": "八、财务数据不真实\r\n",
+          "start": 308,
+          "end": 319
+        },
+        {
+          "segment_id": "B100:L0019:f01b3c7fc1eb9afc:f01b3c7fc1eb9afc",
+          "text": "行政处罚依据\r\n",
+          "start": 319,
+          "end": 327
+        },
+        {
+          "segment_id": "B100:L0020:f01b3c7fc1eb9afc:f01b3c7fc1eb9afc",
+          "text": "《中华人民共和国保险法》第一百零六条、第一百零七条、第一百六十四条、第一百七十条、第一百七十一条及《保险资金运用管理办法》等相关规定\r\n",
+          "start": 327,
+          "end": 395
+        },
+        {
+          "segment_id": "B100:L0021:f01b3c7fc1eb9afc:f01b3c7fc1eb9afc",
+          "text": "行政处罚决定\r\n",
+          "start": 395,
+          "end": 403
+        },
+        {
+          "segment_id": "B100:L0022:f01b3c7fc1eb9afc:f01b3c7fc1eb9afc",
+          "text": "对机构罚款515万元，对张雅硕警告并罚款7万元，对刘灏警告并罚款7万元，对何崴警告并罚款7万元，对车正警告并罚款10万元，对王凡警告并罚款10万元\r\n",
+          "start": 403,
+          "end": 478
+        },
+        {
+          "segment_id": "B100:L0023:f01b3c7fc1eb9afc:f01b3c7fc1eb9afc",
+          "text": "作出处罚决定的\r\n",
+          "start": 478,
+          "end": 487
+        },
+        {
+          "segment_id": "B100:L0024:f01b3c7fc1eb9afc:f01b3c7fc1eb9afc",
+          "text": "机关名称\r\n",
+          "start": 487,
+          "end": 493
+        },
+        {
+          "segment_id": "B100:L0025:f01b3c7fc1eb9afc:f01b3c7fc1eb9afc",
+          "text": "国家金融监督管理总局\r\n",
+          "start": 493,
+          "end": 505
+        },
+        {
+          "segment_id": "B100:L0026:f01b3c7fc1eb9afc:f01b3c7fc1eb9afc",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 505,
+          "end": 516
+        },
+        {
+          "segment_id": "B100:L0027:f01b3c7fc1eb9afc:f01b3c7fc1eb9afc",
+          "text": "2023年12月28日",
+          "start": 516,
+          "end": 527
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1143257&itemId=4113&generaltype=9",
+      "title": "国家金融监督管理总局行政处罚信息公开表（金罚决字〔2023〕66  号）"
+    }
+  },
+  {
+    "public_job": "C-B100-proposer-r1-a1",
+    "sample_id": "B100",
+    "role": "proposer",
+    "action": "search",
+    "args": {
+      "query": "金罚决字〔2023〕66号",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 6,
+      "offset": 0,
+      "next_offset": 5,
+      "records": [
+        {
+          "source_id": "FRV2-SOURCE-F007489-33f90c0d51e1940ba9e266c6",
+          "preview": "国家金融监督管理总局宁波监管局行政处罚信息公开表(甬金罚决字〔2023〕66号)\n行政处罚决定书文号\n甬金罚决字〔2023〕66号\n被处罚当事人\n金联安保险经纪(北京)有限公司宁波分\n公司\n主要违法违规事实\n财务业务数据不真实;未按规定使用银行\n账户;未按规定建立和管理业务档案;未按\n规定制作并保管客户告知书;未按规定进\n行执业登记和管理。\n行政处罚依据\n《保险经纪人监管规定》第八十八条、\n第九十五条、第一百条、第一百零一条\n行政处罚决定\n警告,并处罚款人民币两万元,责令停止",
+          "preview_start": 0,
+          "preview_end": 240,
+          "preview_truncated": true,
+          "match_start": 26,
+          "match_end": 39
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007587-88bda0e63a55ce90ad524450",
+          "preview": "国家金融监督管理总局吉林监管局行政处罚信息公开表(吉金罚决字〔2023〕66号)\n国家金融监督管理总局吉林监管局\n行政处罚信息公开表\n行政处罚决定书文号\n吉金罚决字〔2023〕66号\n被处罚当事人\n魏永春(时任吉林省誉闻保险代理有限\n责任公司董事长兼总经理)\n主要违法违规事实\n对吉林省誉闻保险代理有限责任公司\n虚假列支费用、委托未在本机构进行\n执业登记的个人开展保险代理业务、\n开展保险业务未按规定制作并出示客\n户告知书、未按规定投保职业责任保\n险或缴存保证金、未按规定建立完整",
+          "preview_start": 0,
+          "preview_end": 240,
+          "preview_truncated": true,
+          "match_start": 26,
+          "match_end": 39
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007731-d4b187cb37a53798cd0f5377",
+          "preview": "国家金融监督管理总局上海监管局行政处罚信息公开表\n(沪金罚决字〔2023〕66号)\n行政处罚决定书文号\n沪金罚决字〔2023〕66号\n被处罚当事人\n李炜（时任交银人寿保险有限公司管理会\n计部副总经理（部门正职级）、总经理）\n主要违法违规事实\n李炜对交银人寿保险有限公司未按规定报\n送报表资料、编制提供虚假的报表资料负\n有责任。\n行政处罚依据\n《中华人民共和国保险法》第一百七十一\n条\n行政处罚决定\n警告，并处罚款合计2万元\n作出处罚决定的机关名称\n国家金融监督管理总局上海监管局\n",
+          "preview_start": 0,
+          "preview_end": 240,
+          "preview_truncated": true,
+          "match_start": 27,
+          "match_end": 40
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007756-949e56293f1ce6a42f7474f0",
+          "preview": "国家金融监督管理总局行政处罚信息公开表\n行政处罚决定书文号\n金罚决字〔2023〕66号\n被处罚当事人\n一、华安财保资产管理有限责任公司\n(以下简称华安资管)\n二、张雅硕(时任华安资管财务会计部\n总经理助理)\n三、刘灏(时任华安资管财务负责人、\n财务会计部总经理)\n四、何崴(时任华安资管固定收益部总\n经理、公司副总经理)\n五、车正(时任华安资管金融市场部副\n总经理)\n六、王凡(时任华安资管总经理助理)\n主要违法违规事实\n一、高管人员违规兼职\n二、对受托保险资金未履行谨慎管理\n义",
+          "preview_start": 0,
+          "preview_end": 240,
+          "preview_truncated": true,
+          "match_start": 30,
+          "match_end": 43
+        },
+        {
+          "source_id": "FRV2-SOURCE-F007838-722d76875695fde02c8e0576",
+          "preview": "国家金融监督管理总局陕西监管局行政处罚信息公开表 陕金罚决字〔2023〕66号\n行政处罚决定书文号\n陕金罚决字〔2023〕66号\n被处罚当事人\n一、阳光财产保险股份有限公司陕西省\n分公司\n二、赵会龙(时任阳光财产保险股份有限\n公司陕西省分公司农险部负责人兼非车\n险部总经理)\n主要违法违规事实\n未按照规定使用经批准或者备案的保险\n条款、保险费率\n行政处罚依据\n《中华人民共和国保险法》第一百三十\n五条、第一百七十条、第一百七十一条\n规定\n行政处罚决定\n对阳光财险陕西省分公司处以2",
+          "preview_start": 0,
+          "preview_end": 240,
+          "preview_truncated": true,
+          "match_start": 26,
+          "match_end": 39
+        }
+      ],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "C-B100-proposer-r1-a1",
+    "sample_id": "B100",
+    "role": "proposer",
+    "action": "read",
+    "args": {
+      "source_id": "FRV2-SOURCE-F007756-949e56293f1ce6a42f7474f0",
+      "start": 0,
+      "length": 2000
+    },
+    "result": {
+      "source_id": "FRV2-SOURCE-F007756-949e56293f1ce6a42f7474f0",
+      "text_sha256": "c8cb3be7aa36074dd8226111415d7557841bd647c99d27e8c139711800bde34a",
+      "start": 0,
+      "end": 545,
+      "total_codepoints": 545,
+      "text": "国家金融监督管理总局行政处罚信息公开表\n行政处罚决定书文号\n金罚决字〔2023〕66号\n被处罚当事人\n一、华安财保资产管理有限责任公司\n(以下简称华安资管)\n二、张雅硕(时任华安资管财务会计部\n总经理助理)\n三、刘灏(时任华安资管财务负责人、\n财务会计部总经理)\n四、何崴(时任华安资管固定收益部总\n经理、公司副总经理)\n五、车正(时任华安资管金融市场部副\n总经理)\n六、王凡(时任华安资管总经理助理)\n主要违法违规事实\n一、高管人员违规兼职\n二、对受托保险资金未履行谨慎管理\n义务\n三、编制提供虚假报表\n四、债券投资不符合监管要求\n五、保险资金办理银行存款业务不合规\n六、为保险资金提供通道业务\n七、投资关联方股权的关联交易未审批\n八、财务数据不真实\n行政处罚依据\n《中华人民共和国保险法》第一百零\n六条、第一百零七条、第一百六十四\n条、第一百七十条、第一百七十一条\n及《保险资金运用管理办法》等相关\n规定\n行政处罚决定\n对机构罚款515万元,对张雅硕警告并\n罚款7万元,对刘灏警告并罚款7万元,对\n何崴警告并罚款7万元,对车正警告并\n罚款10万元,对王凡警告并罚款10万元\n作出处罚决定的\n机关名称\n国家金融监督管理总局\n作出处罚决定的日期\n2023年12月28日\n手机扫一扫打开此页\n",
+      "next_start": null,
+      "truncated": false
+    }
+  },
+  {
+    "public_job": "R-B002-reviewer-r1-a1",
+    "sample_id": "B002",
+    "role": "reviewer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B002",
+      "raw_sha256": "00ccffe5776bd7da20851d6d5b56339c806abd0af33491e8793a215f581896b7",
+      "text_sha256": "00ccffe5776bd7da20851d6d5b56339c806abd0af33491e8793a215f581896b7",
+      "text": "当事人: 刘义键（时任中国太平洋财产保险股份有限公司德阳中心支公司农险部经理）\r\n行政处罚决定书文号\r\n德金监罚决字〔2026〕11号\r\n主要违法违规事实(案由)\r\n编制虚假资料虚列费用\r\n行政处罚内容\r\n警告并处罚款人民币1.5万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局德阳监管分局\r\n作出处罚决定的日期\r\n2026年8月24日\r\n来源公示\r\n国家金融监督管理总局德阳监管分局行政处罚信息公开表",
+      "total_codepoints": 204,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B002:L0001:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "当事人: 刘义键（时任中国太平洋财产保险股份有限公司德阳中心支公司农险部经理）\r\n",
+          "start": 0,
+          "end": 41
+        },
+        {
+          "segment_id": "B002:L0002:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "行政处罚决定书文号\r\n",
+          "start": 41,
+          "end": 52
+        },
+        {
+          "segment_id": "B002:L0003:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "德金监罚决字〔2026〕11号\r\n",
+          "start": 52,
+          "end": 69
+        },
+        {
+          "segment_id": "B002:L0004:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "主要违法违规事实(案由)\r\n",
+          "start": 69,
+          "end": 83
+        },
+        {
+          "segment_id": "B002:L0005:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "编制虚假资料虚列费用\r\n",
+          "start": 83,
+          "end": 95
+        },
+        {
+          "segment_id": "B002:L0006:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "行政处罚内容\r\n",
+          "start": 95,
+          "end": 103
+        },
+        {
+          "segment_id": "B002:L0007:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "警告并处罚款人民币1.5万元\r\n",
+          "start": 103,
+          "end": 119
+        },
+        {
+          "segment_id": "B002:L0008:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "作出处罚决定的机关名称\r\n",
+          "start": 119,
+          "end": 132
+        },
+        {
+          "segment_id": "B002:L0009:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "国家金融监督管理总局德阳监管分局\r\n",
+          "start": 132,
+          "end": 150
+        },
+        {
+          "segment_id": "B002:L0010:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 150,
+          "end": 161
+        },
+        {
+          "segment_id": "B002:L0011:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "2026年8月24日\r\n",
+          "start": 161,
+          "end": 173
+        },
+        {
+          "segment_id": "B002:L0012:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "来源公示\r\n",
+          "start": 173,
+          "end": 179
+        },
+        {
+          "segment_id": "B002:L0013:00ccffe5776bd7da:00ccffe5776bd7da",
+          "text": "国家金融监督管理总局德阳监管分局行政处罚信息公开表",
+          "start": 179,
+          "end": 204
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269113&itemId=4115&generaltype=9",
+      "title": "国家金融监督管理总局德阳监管分局行政处罚信息公开表"
+    }
+  },
+  {
+    "public_job": "R-B002-reviewer-r1-a1",
+    "sample_id": "B002",
+    "role": "reviewer",
+    "action": "search",
+    "args": {
+      "query": "刘义键",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "R-B002-reviewer-r1-a1",
+    "sample_id": "B002",
+    "role": "reviewer",
+    "action": "search",
+    "args": {
+      "query": "德金监罚决字〔2026〕11号",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "R-B009-reviewer-r1-a1",
+    "sample_id": "B009",
+    "role": "reviewer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B009",
+      "raw_sha256": "273e209021fbd31643cd1133c7a48a5ac8e8667314274854336faf7c5c877465",
+      "text_sha256": "273e209021fbd31643cd1133c7a48a5ac8e8667314274854336faf7c5c877465",
+      "text": "当事人: 太平人寿保险有限公司葫芦岛中心支公司\r\n行政处罚决定书文号\r\n葫金监罚决〔2026〕3号\r\n主要违法违规事实(案由)\r\n财务业务数据不真实\r\n行政处罚内容\r\n责令改正，处罚款十二万元\r\n作出处罚决定的机关名称\r\n葫芦岛金融监管分局\r\n作出处罚决定的日期\r\n2026年7月6日\r\n来源公示\r\n葫芦岛金融监管分局行政处罚信息公示列表",
+      "total_codepoints": 169,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B009:L0001:273e209021fbd316:273e209021fbd316",
+          "text": "当事人: 太平人寿保险有限公司葫芦岛中心支公司\r\n",
+          "start": 0,
+          "end": 25
+        },
+        {
+          "segment_id": "B009:L0002:273e209021fbd316:273e209021fbd316",
+          "text": "行政处罚决定书文号\r\n",
+          "start": 25,
+          "end": 36
+        },
+        {
+          "segment_id": "B009:L0003:273e209021fbd316:273e209021fbd316",
+          "text": "葫金监罚决〔2026〕3号\r\n",
+          "start": 36,
+          "end": 51
+        },
+        {
+          "segment_id": "B009:L0004:273e209021fbd316:273e209021fbd316",
+          "text": "主要违法违规事实(案由)\r\n",
+          "start": 51,
+          "end": 65
+        },
+        {
+          "segment_id": "B009:L0005:273e209021fbd316:273e209021fbd316",
+          "text": "财务业务数据不真实\r\n",
+          "start": 65,
+          "end": 76
+        },
+        {
+          "segment_id": "B009:L0006:273e209021fbd316:273e209021fbd316",
+          "text": "行政处罚内容\r\n",
+          "start": 76,
+          "end": 84
+        },
+        {
+          "segment_id": "B009:L0007:273e209021fbd316:273e209021fbd316",
+          "text": "责令改正，处罚款十二万元\r\n",
+          "start": 84,
+          "end": 98
+        },
+        {
+          "segment_id": "B009:L0008:273e209021fbd316:273e209021fbd316",
+          "text": "作出处罚决定的机关名称\r\n",
+          "start": 98,
+          "end": 111
+        },
+        {
+          "segment_id": "B009:L0009:273e209021fbd316:273e209021fbd316",
+          "text": "葫芦岛金融监管分局\r\n",
+          "start": 111,
+          "end": 122
+        },
+        {
+          "segment_id": "B009:L0010:273e209021fbd316:273e209021fbd316",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 122,
+          "end": 133
+        },
+        {
+          "segment_id": "B009:L0011:273e209021fbd316:273e209021fbd316",
+          "text": "2026年7月6日\r\n",
+          "start": 133,
+          "end": 144
+        },
+        {
+          "segment_id": "B009:L0012:273e209021fbd316:273e209021fbd316",
+          "text": "来源公示\r\n",
+          "start": 144,
+          "end": 150
+        },
+        {
+          "segment_id": "B009:L0013:273e209021fbd316:273e209021fbd316",
+          "text": "葫芦岛金融监管分局行政处罚信息公示列表",
+          "start": 150,
+          "end": 169
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263582&itemId=4115&generaltype=9",
+      "title": "葫芦岛金融监管分局行政处罚信息公示列表"
+    }
+  },
+  {
+    "public_job": "R-B009-reviewer-r1-a1",
+    "sample_id": "B009",
+    "role": "reviewer",
+    "action": "search",
+    "args": {
+      "query": "葫金监罚决〔2026〕3号",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "R-B009-reviewer-r1-a1",
+    "sample_id": "B009",
+    "role": "reviewer",
+    "action": "search",
+    "args": {
+      "query": "太平人寿保险有限公司葫芦岛中心支公司",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "R-B009-reviewer-r1-a1",
+    "sample_id": "B009",
+    "role": "reviewer",
+    "action": "search",
+    "args": {
+      "query": "大家人寿 葫芦岛",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 1,
+      "offset": 0,
+      "next_offset": null,
+      "records": [
+        {
+          "source_id": "FRV2-SOURCE-F004360-e2d765a039ca00056538c203",
+          "preview": "葫芦岛金融监管分局行政处罚信息公示列表\n序号\n当事人名称\n行政处罚决定书\n文号\n主要违法违规行为\n行政处罚内容\n作出决定机关\n1\n大家人寿保险股份\n有限公司葫芦岛中\n心支公司\n葫金监罚决\n〔2025〕2号\n编制虚假财务报表\n责令改正、罚款\n15万元\n葫芦岛金融监管\n分局\n2\n杜文鹏(大家人寿葫\n芦岛中心支公司总\n经理)\n葫金监罚决\n〔2025〕3号\n大家人寿葫芦岛中心\n支公司编制虚假财务\n报表行为直接责任人\n警告并处罚款1万\n元\n葫芦岛金融监管\n分局\n手机扫一扫打开此页\n",
+          "preview_start": 0,
+          "preview_end": 238,
+          "preview_truncated": false,
+          "match_start": 0,
+          "match_end": 3
+        }
+      ],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "R-B009-reviewer-r1-a1",
+    "sample_id": "B009",
+    "role": "reviewer",
+    "action": "read",
+    "args": {
+      "source_id": "FRV2-SOURCE-F004360-e2d765a039ca00056538c203",
+      "start": 0,
+      "length": 2000
+    },
+    "result": {
+      "source_id": "FRV2-SOURCE-F004360-e2d765a039ca00056538c203",
+      "text_sha256": "5f2720a9d814a3d0c404d36f5bb4d30038bc97c5d1468a27c616ad8ab0c71fd2",
+      "start": 0,
+      "end": 238,
+      "total_codepoints": 238,
+      "text": "葫芦岛金融监管分局行政处罚信息公示列表\n序号\n当事人名称\n行政处罚决定书\n文号\n主要违法违规行为\n行政处罚内容\n作出决定机关\n1\n大家人寿保险股份\n有限公司葫芦岛中\n心支公司\n葫金监罚决\n〔2025〕2号\n编制虚假财务报表\n责令改正、罚款\n15万元\n葫芦岛金融监管\n分局\n2\n杜文鹏(大家人寿葫\n芦岛中心支公司总\n经理)\n葫金监罚决\n〔2025〕3号\n大家人寿葫芦岛中心\n支公司编制虚假财务\n报表行为直接责任人\n警告并处罚款1万\n元\n葫芦岛金融监管\n分局\n手机扫一扫打开此页\n",
+      "next_start": null,
+      "truncated": false
+    }
+  },
+  {
+    "public_job": "R-B011-reviewer-r1-a1",
+    "sample_id": "B011",
+    "role": "reviewer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B011",
+      "raw_sha256": "339151b595131ad2d567d9a92debef2cf40b60a101a7cdd1ac1176f0f7820af9",
+      "text_sha256": "339151b595131ad2d567d9a92debef2cf40b60a101a7cdd1ac1176f0f7820af9",
+      "text": "当事人: 山东汇联保险经纪有限公司\r\n行政处罚决定书文号\r\n潍金罚决字〔2026〕15号\r\n主要违法违规事实(案由)\r\n与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告\r\n行政处罚内容\r\n通报批评，警告，罚款3.5万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局潍坊监管分局\r\n作出处罚决定的日期\r\n2026年8月21日\r\n来源公示\r\n国家金融监督管理总局潍坊监管分局行政处罚信息公开表（潍金罚决字〔2026〕15号-16号 ）",
+      "total_codepoints": 240,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B011:L0001:339151b595131ad2:339151b595131ad2",
+          "text": "当事人: 山东汇联保险经纪有限公司\r\n",
+          "start": 0,
+          "end": 19
+        },
+        {
+          "segment_id": "B011:L0002:339151b595131ad2:339151b595131ad2",
+          "text": "行政处罚决定书文号\r\n",
+          "start": 19,
+          "end": 30
+        },
+        {
+          "segment_id": "B011:L0003:339151b595131ad2:339151b595131ad2",
+          "text": "潍金罚决字〔2026〕15号\r\n",
+          "start": 30,
+          "end": 46
+        },
+        {
+          "segment_id": "B011:L0004:339151b595131ad2:339151b595131ad2",
+          "text": "主要违法违规事实(案由)\r\n",
+          "start": 46,
+          "end": 60
+        },
+        {
+          "segment_id": "B011:L0005:339151b595131ad2:339151b595131ad2",
+          "text": "与非法从事保险中介业务的机构发生保险经纪业务往来，未按规定建立业务档案，未按规定进行公示、公告\r\n",
+          "start": 60,
+          "end": 109
+        },
+        {
+          "segment_id": "B011:L0006:339151b595131ad2:339151b595131ad2",
+          "text": "行政处罚内容\r\n",
+          "start": 109,
+          "end": 117
+        },
+        {
+          "segment_id": "B011:L0007:339151b595131ad2:339151b595131ad2",
+          "text": "通报批评，警告，罚款3.5万元\r\n",
+          "start": 117,
+          "end": 134
+        },
+        {
+          "segment_id": "B011:L0008:339151b595131ad2:339151b595131ad2",
+          "text": "作出处罚决定的机关名称\r\n",
+          "start": 134,
+          "end": 147
+        },
+        {
+          "segment_id": "B011:L0009:339151b595131ad2:339151b595131ad2",
+          "text": "国家金融监督管理总局潍坊监管分局\r\n",
+          "start": 147,
+          "end": 165
+        },
+        {
+          "segment_id": "B011:L0010:339151b595131ad2:339151b595131ad2",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 165,
+          "end": 176
+        },
+        {
+          "segment_id": "B011:L0011:339151b595131ad2:339151b595131ad2",
+          "text": "2026年8月21日\r\n",
+          "start": 176,
+          "end": 188
+        },
+        {
+          "segment_id": "B011:L0012:339151b595131ad2:339151b595131ad2",
+          "text": "来源公示\r\n",
+          "start": 188,
+          "end": 194
+        },
+        {
+          "segment_id": "B011:L0013:339151b595131ad2:339151b595131ad2",
+          "text": "国家金融监督管理总局潍坊监管分局行政处罚信息公开表（潍金罚决字〔2026〕15号-16号 ）",
+          "start": 194,
+          "end": 240
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1269212&itemId=4115&generaltype=9",
+      "title": "国家金融监督管理总局潍坊监管分局行政处罚信息公开表（潍金罚决字〔2026〕15号-16号 ）"
+    }
+  },
+  {
+    "public_job": "R-B011-reviewer-r1-a1",
+    "sample_id": "B011",
+    "role": "reviewer",
+    "action": "search",
+    "args": {
+      "query": "山东汇联保险经纪有限公司",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "R-B011-reviewer-r1-a1",
+    "sample_id": "B011",
+    "role": "reviewer",
+    "action": "search",
+    "args": {
+      "query": "潍金罚决字〔2026〕15号",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "R-B020-reviewer-r1-a1",
+    "sample_id": "B020",
+    "role": "reviewer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B020",
+      "raw_sha256": "70c3d5dbf5cdeccdc2b567c748850ef7ee89ca7ae4242c2b4ebfc435d3443012",
+      "text_sha256": "70c3d5dbf5cdeccdc2b567c748850ef7ee89ca7ae4242c2b4ebfc435d3443012",
+      "text": "当事人: 阳光人寿保险股份有限公司天津分公司\r\n主要违法违规事实(案由)\r\n编制或者提供虚假的报告、报表、文件、资料\r\n行政处罚内容\r\n对阳光人寿保险股份有限公司天津分公司罚款40万元。对叶小义警告并处罚款7万元。\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局天津监管局\r\n作出处罚决定的日期\r\n2026年7月1日\r\n来源公示\r\n国家金融监督管理总局天津监管局行政处罚信息公开表",
+      "total_codepoints": 191,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B020:L0001:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "当事人: 阳光人寿保险股份有限公司天津分公司\r\n",
+          "start": 0,
+          "end": 24
+        },
+        {
+          "segment_id": "B020:L0002:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "主要违法违规事实(案由)\r\n",
+          "start": 24,
+          "end": 38
+        },
+        {
+          "segment_id": "B020:L0003:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "编制或者提供虚假的报告、报表、文件、资料\r\n",
+          "start": 38,
+          "end": 60
+        },
+        {
+          "segment_id": "B020:L0004:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "行政处罚内容\r\n",
+          "start": 60,
+          "end": 68
+        },
+        {
+          "segment_id": "B020:L0005:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "对阳光人寿保险股份有限公司天津分公司罚款40万元。对叶小义警告并处罚款7万元。\r\n",
+          "start": 68,
+          "end": 109
+        },
+        {
+          "segment_id": "B020:L0006:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "作出处罚决定的机关名称\r\n",
+          "start": 109,
+          "end": 122
+        },
+        {
+          "segment_id": "B020:L0007:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "国家金融监督管理总局天津监管局\r\n",
+          "start": 122,
+          "end": 139
+        },
+        {
+          "segment_id": "B020:L0008:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 139,
+          "end": 150
+        },
+        {
+          "segment_id": "B020:L0009:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "2026年7月1日\r\n",
+          "start": 150,
+          "end": 161
+        },
+        {
+          "segment_id": "B020:L0010:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "来源公示\r\n",
+          "start": 161,
+          "end": 167
+        },
+        {
+          "segment_id": "B020:L0011:70c3d5dbf5cdeccd:70c3d5dbf5cdeccd",
+          "text": "国家金融监督管理总局天津监管局行政处罚信息公开表",
+          "start": 167,
+          "end": 191
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1262968&itemId=4114&generaltype=9",
+      "title": "国家金融监督管理总局天津监管局行政处罚信息公开表"
+    }
+  },
+  {
+    "public_job": "R-B020-reviewer-r1-a1",
+    "sample_id": "B020",
+    "role": "reviewer",
+    "action": "search",
+    "args": {
+      "query": "阳光人寿保险股份有限公司天津分公司",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "R-B020-reviewer-r1-a1",
+    "sample_id": "B020",
+    "role": "reviewer",
+    "action": "search",
+    "args": {
+      "query": "叶小义",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "R-B039-reviewer-r1-a1",
+    "sample_id": "B039",
+    "role": "reviewer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B039",
+      "raw_sha256": "b7dee6a36c99e616d873aeab791bd780c276b11a37975c6f15bc40f87ed0e002",
+      "text_sha256": "b7dee6a36c99e616d873aeab791bd780c276b11a37975c6f15bc40f87ed0e002",
+      "text": "当事人: 山东远通兴华保险代理有限公司\r\n行政处罚决定书文号\r\n临金罚决字〔2026〕31号\r\n主要违法违规事实(案由)\r\n给予投保人保险合同约定以外的利益、收取保险公司工作人员给予的合同约定外酬金、未开立独立的佣金收取账户\r\n行政处罚内容\r\n警告并罚款11万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局临沂监管分局\r\n作出处罚决定的日期\r\n2026年8月13日\r\n来源公示\r\n国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕31号-32号）",
+      "total_codepoints": 238,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "当事人: 山东远通兴华保险代理有限公司\r\n",
+          "start": 0,
+          "end": 21
+        },
+        {
+          "segment_id": "B039:L0002:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "行政处罚决定书文号\r\n",
+          "start": 21,
+          "end": 32
+        },
+        {
+          "segment_id": "B039:L0003:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "临金罚决字〔2026〕31号\r\n",
+          "start": 32,
+          "end": 48
+        },
+        {
+          "segment_id": "B039:L0004:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "主要违法违规事实(案由)\r\n",
+          "start": 48,
+          "end": 62
+        },
+        {
+          "segment_id": "B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "给予投保人保险合同约定以外的利益、收取保险公司工作人员给予的合同约定外酬金、未开立独立的佣金收取账户\r\n",
+          "start": 62,
+          "end": 114
+        },
+        {
+          "segment_id": "B039:L0006:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "行政处罚内容\r\n",
+          "start": 114,
+          "end": 122
+        },
+        {
+          "segment_id": "B039:L0007:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "警告并罚款11万元\r\n",
+          "start": 122,
+          "end": 133
+        },
+        {
+          "segment_id": "B039:L0008:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "作出处罚决定的机关名称\r\n",
+          "start": 133,
+          "end": 146
+        },
+        {
+          "segment_id": "B039:L0009:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "国家金融监督管理总局临沂监管分局\r\n",
+          "start": 146,
+          "end": 164
+        },
+        {
+          "segment_id": "B039:L0010:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 164,
+          "end": 175
+        },
+        {
+          "segment_id": "B039:L0011:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "2026年8月13日\r\n",
+          "start": 175,
+          "end": 187
+        },
+        {
+          "segment_id": "B039:L0012:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "来源公示\r\n",
+          "start": 187,
+          "end": 193
+        },
+        {
+          "segment_id": "B039:L0013:b7dee6a36c99e616:b7dee6a36c99e616",
+          "text": "国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕31号-32号）",
+          "start": 193,
+          "end": 238
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268386&itemId=4115&generaltype=9",
+      "title": "国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕31号-32号）"
+    }
+  },
+  {
+    "public_job": "R-B039-reviewer-r1-a1",
+    "sample_id": "B039",
+    "role": "reviewer",
+    "action": "search",
+    "args": {
+      "query": "山东远通兴华保险代理有限公司",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "R-B039-reviewer-r1-a1",
+    "sample_id": "B039",
+    "role": "reviewer",
+    "action": "search",
+    "args": {
+      "query": "临金罚决字〔2026〕31号",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "R-B052-reviewer-r1-a1",
+    "sample_id": "B052",
+    "role": "reviewer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B052",
+      "raw_sha256": "33b1c13468ee71822654eb10b10ec34e86af7617ff6874e7d5d3e6f4ca4d5865",
+      "text_sha256": "33b1c13468ee71822654eb10b10ec34e86af7617ff6874e7d5d3e6f4ca4d5865",
+      "text": "当事人: 孙中娇（时任中汇人寿保险股份有限公司临沂中心支公司银代部副经理）\r\n行政处罚决定书文号\r\n临金罚决字〔2026〕29号\r\n主要违法违规事实(案由)\r\n唆使、诱导保险代理人进行违背诚信义务的活动，编制虚假业务财务资料，个人保险代理人给予投保人保险合同约定以外的利益\r\n行政处罚内容\r\n警告并罚款1.7万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局临沂监管分局\r\n作出处罚决定的日期\r\n2026年8月13日\r\n来源公示\r\n国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕28号-30号）",
+      "total_codepoints": 263,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B052:L0001:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "当事人: 孙中娇（时任中汇人寿保险股份有限公司临沂中心支公司银代部副经理）\r\n",
+          "start": 0,
+          "end": 39
+        },
+        {
+          "segment_id": "B052:L0002:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "行政处罚决定书文号\r\n",
+          "start": 39,
+          "end": 50
+        },
+        {
+          "segment_id": "B052:L0003:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "临金罚决字〔2026〕29号\r\n",
+          "start": 50,
+          "end": 66
+        },
+        {
+          "segment_id": "B052:L0004:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "主要违法违规事实(案由)\r\n",
+          "start": 66,
+          "end": 80
+        },
+        {
+          "segment_id": "B052:L0005:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "唆使、诱导保险代理人进行违背诚信义务的活动，编制虚假业务财务资料，个人保险代理人给予投保人保险合同约定以外的利益\r\n",
+          "start": 80,
+          "end": 138
+        },
+        {
+          "segment_id": "B052:L0006:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "行政处罚内容\r\n",
+          "start": 138,
+          "end": 146
+        },
+        {
+          "segment_id": "B052:L0007:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "警告并罚款1.7万元\r\n",
+          "start": 146,
+          "end": 158
+        },
+        {
+          "segment_id": "B052:L0008:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "作出处罚决定的机关名称\r\n",
+          "start": 158,
+          "end": 171
+        },
+        {
+          "segment_id": "B052:L0009:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "国家金融监督管理总局临沂监管分局\r\n",
+          "start": 171,
+          "end": 189
+        },
+        {
+          "segment_id": "B052:L0010:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 189,
+          "end": 200
+        },
+        {
+          "segment_id": "B052:L0011:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "2026年8月13日\r\n",
+          "start": 200,
+          "end": 212
+        },
+        {
+          "segment_id": "B052:L0012:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "来源公示\r\n",
+          "start": 212,
+          "end": 218
+        },
+        {
+          "segment_id": "B052:L0013:33b1c13468ee7182:33b1c13468ee7182",
+          "text": "国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕28号-30号）",
+          "start": 218,
+          "end": 263
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268381&itemId=4115&generaltype=9",
+      "title": "国家金融监督管理总局临沂监管分局行政处罚信息公开表（临金罚决字〔2026〕28号-30号）"
+    }
+  },
+  {
+    "public_job": "R-B052-reviewer-r1-a1",
+    "sample_id": "B052",
+    "role": "reviewer",
+    "action": "search",
+    "args": {
+      "query": "临金罚决字〔2026〕29号",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "R-B052-reviewer-r1-a1",
+    "sample_id": "B052",
+    "role": "reviewer",
+    "action": "search",
+    "args": {
+      "query": "孙中娇",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "R-B059-reviewer-r1-a1",
+    "sample_id": "B059",
+    "role": "reviewer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B059",
+      "raw_sha256": "90879508325875a7cb547aea91243772460ebb834e4e5c052d9c75de1564e181",
+      "text_sha256": "90879508325875a7cb547aea91243772460ebb834e4e5c052d9c75de1564e181",
+      "text": "当事人: 张娟（时任山东汇盛保险代理有限公司法定代表人）\r\n行政处罚决定书文号\r\n淄金罚决字〔2026〕27号\r\n主要违法违规事实(案由)\r\n未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务\r\n行政处罚内容\r\n警告并罚款6万元\r\n作出处罚决定的机关名称\r\n国家金融监督管理总局淄博监管分局\r\n作出处罚决定的日期\r\n2026年8月11日\r\n来源公示\r\n国家金融监督管理总局淄博监管分局行政处罚信息公开表（淄金罚决字〔2026〕27号）",
+      "total_codepoints": 252,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B059:L0001:90879508325875a7:90879508325875a7",
+          "text": "当事人: 张娟（时任山东汇盛保险代理有限公司法定代表人）\r\n",
+          "start": 0,
+          "end": 30
+        },
+        {
+          "segment_id": "B059:L0002:90879508325875a7:90879508325875a7",
+          "text": "行政处罚决定书文号\r\n",
+          "start": 30,
+          "end": 41
+        },
+        {
+          "segment_id": "B059:L0003:90879508325875a7:90879508325875a7",
+          "text": "淄金罚决字〔2026〕27号\r\n",
+          "start": 41,
+          "end": 57
+        },
+        {
+          "segment_id": "B059:L0004:90879508325875a7:90879508325875a7",
+          "text": "主要违法违规事实(案由)\r\n",
+          "start": 57,
+          "end": 71
+        },
+        {
+          "segment_id": "B059:L0005:90879508325875a7:90879508325875a7",
+          "text": "未按规定投保职业责任保险或缴存保证金、未按规定开立独立的佣金收取账户、委托未通过本机构进行执业登记的个人从事保险代理业务\r\n",
+          "start": 71,
+          "end": 133
+        },
+        {
+          "segment_id": "B059:L0006:90879508325875a7:90879508325875a7",
+          "text": "行政处罚内容\r\n",
+          "start": 133,
+          "end": 141
+        },
+        {
+          "segment_id": "B059:L0007:90879508325875a7:90879508325875a7",
+          "text": "警告并罚款6万元\r\n",
+          "start": 141,
+          "end": 151
+        },
+        {
+          "segment_id": "B059:L0008:90879508325875a7:90879508325875a7",
+          "text": "作出处罚决定的机关名称\r\n",
+          "start": 151,
+          "end": 164
+        },
+        {
+          "segment_id": "B059:L0009:90879508325875a7:90879508325875a7",
+          "text": "国家金融监督管理总局淄博监管分局\r\n",
+          "start": 164,
+          "end": 182
+        },
+        {
+          "segment_id": "B059:L0010:90879508325875a7:90879508325875a7",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 182,
+          "end": 193
+        },
+        {
+          "segment_id": "B059:L0011:90879508325875a7:90879508325875a7",
+          "text": "2026年8月11日\r\n",
+          "start": 193,
+          "end": 205
+        },
+        {
+          "segment_id": "B059:L0012:90879508325875a7:90879508325875a7",
+          "text": "来源公示\r\n",
+          "start": 205,
+          "end": 211
+        },
+        {
+          "segment_id": "B059:L0013:90879508325875a7:90879508325875a7",
+          "text": "国家金融监督管理总局淄博监管分局行政处罚信息公开表（淄金罚决字〔2026〕27号）",
+          "start": 211,
+          "end": 252
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268374&itemId=4115&generaltype=9",
+      "title": "国家金融监督管理总局淄博监管分局行政处罚信息公开表（淄金罚决字〔2026〕27号）"
+    }
+  },
+  {
+    "public_job": "R-B059-reviewer-r1-a1",
+    "sample_id": "B059",
+    "role": "reviewer",
+    "action": "search",
+    "args": {
+      "query": "淄金罚决字〔2026〕27号",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 0,
+      "offset": 0,
+      "next_offset": null,
+      "records": [],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  },
+  {
+    "public_job": "R-B090-reviewer-r1-a1",
+    "sample_id": "B090",
+    "role": "reviewer",
+    "action": "source",
+    "args": {},
+    "result": {
+      "evidence_id": "B090",
+      "raw_sha256": "8fce5a5696d103b41bb07db1c288ce3a28b2739b35c1ae04ddbc24a733f0acbf",
+      "text_sha256": "8fce5a5696d103b41bb07db1c288ce3a28b2739b35c1ae04ddbc24a733f0acbf",
+      "text": "行政处罚决定书文号\r\n金罚决字〔2024〕5号\r\n被处罚当事人\r\n中国人民财产保险股份有限公司及其责任人员\r\n主要违法违规事实\r\n将直接业务虚挂中介业务套取手续费；少计提资产减值准备；招投标管理不规范；支农融资业务捆绑销售保险产品；相关报告、报表、文件和资料不真实；跨年度列支手续费等。\r\n行政处罚依据\r\n《中华人民共和国保险法》第八十六条、第一百一十六条、第一百三十五条、第一百六十一条、第一百七十条、第一百七十一条等\r\n行政处罚决定\r\n对中国人民财产保险股份有限公司罚款合计681万元。其中，总公司221万元，分支机构460万元。\r\n对蒋新伟警告并处罚款10万元\r\n对原宇玲警告并处罚款10万元\r\n对王学刚警告并处罚款20万元\r\n对倪宏警告并处罚款10万元\r\n对何祖望警告并处罚款1万元\r\n对周志文警告并处罚款10万元\r\n对纪翔警告并处罚款10万元\r\n对刘团聚警告并处罚款10万元\r\n对蒋士亮警告并处罚款20万元\r\n对李旭警告并处罚款10万元\r\n对潘振雄警告并处罚款20万元\r\n对洪祖强警告并处罚款10万元\r\n对杨卫警告并处罚款10万元\r\n对崔晓博警告并处罚款10万元\r\n对钱磊警告并处罚款10万元\r\n对姜掌厚警告并处罚款10万元\r\n对郭钢警告并处罚款20万元\r\n对梁晓旭警告并处罚款10万元\r\n对王彦波警告并处罚款10万元\r\n对武运宝警告并处罚款20万元\r\n对李彦君警告并处罚款20万元\r\n对沈宁警告并处罚款20万元\r\n对余饶林警告并处罚款10万元\r\n对程向民警告并处罚款10万元\r\n对周健警告并处罚款10万元\r\n作出处罚决定的\r\n机关名称\r\n国家金融监督管理总局\r\n作出处罚决定的日期\r\n2024年5月14日",
+      "total_codepoints": 708,
+      "position_unit": "Unicode codepoint; [start,end); CRLF counts as two",
+      "segments": [
+        {
+          "segment_id": "B090:L0001:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "行政处罚决定书文号\r\n",
+          "start": 0,
+          "end": 11
+        },
+        {
+          "segment_id": "B090:L0002:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "金罚决字〔2024〕5号\r\n",
+          "start": 11,
+          "end": 25
+        },
+        {
+          "segment_id": "B090:L0003:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "被处罚当事人\r\n",
+          "start": 25,
+          "end": 33
+        },
+        {
+          "segment_id": "B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "中国人民财产保险股份有限公司及其责任人员\r\n",
+          "start": 33,
+          "end": 55
+        },
+        {
+          "segment_id": "B090:L0005:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "主要违法违规事实\r\n",
+          "start": 55,
+          "end": 65
+        },
+        {
+          "segment_id": "B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "将直接业务虚挂中介业务套取手续费；少计提资产减值准备；招投标管理不规范；支农融资业务捆绑销售保险产品；相关报告、报表、文件和资料不真实；跨年度列支手续费等。\r\n",
+          "start": 65,
+          "end": 145
+        },
+        {
+          "segment_id": "B090:L0007:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "行政处罚依据\r\n",
+          "start": 145,
+          "end": 153
+        },
+        {
+          "segment_id": "B090:L0008:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "《中华人民共和国保险法》第八十六条、第一百一十六条、第一百三十五条、第一百六十一条、第一百七十条、第一百七十一条等\r\n",
+          "start": 153,
+          "end": 212
+        },
+        {
+          "segment_id": "B090:L0009:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "行政处罚决定\r\n",
+          "start": 212,
+          "end": 220
+        },
+        {
+          "segment_id": "B090:L0010:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对中国人民财产保险股份有限公司罚款合计681万元。其中，总公司221万元，分支机构460万元。\r\n",
+          "start": 220,
+          "end": 269
+        },
+        {
+          "segment_id": "B090:L0011:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对蒋新伟警告并处罚款10万元\r\n",
+          "start": 269,
+          "end": 285
+        },
+        {
+          "segment_id": "B090:L0012:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对原宇玲警告并处罚款10万元\r\n",
+          "start": 285,
+          "end": 301
+        },
+        {
+          "segment_id": "B090:L0013:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对王学刚警告并处罚款20万元\r\n",
+          "start": 301,
+          "end": 317
+        },
+        {
+          "segment_id": "B090:L0014:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对倪宏警告并处罚款10万元\r\n",
+          "start": 317,
+          "end": 332
+        },
+        {
+          "segment_id": "B090:L0015:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对何祖望警告并处罚款1万元\r\n",
+          "start": 332,
+          "end": 347
+        },
+        {
+          "segment_id": "B090:L0016:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对周志文警告并处罚款10万元\r\n",
+          "start": 347,
+          "end": 363
+        },
+        {
+          "segment_id": "B090:L0017:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对纪翔警告并处罚款10万元\r\n",
+          "start": 363,
+          "end": 378
+        },
+        {
+          "segment_id": "B090:L0018:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对刘团聚警告并处罚款10万元\r\n",
+          "start": 378,
+          "end": 394
+        },
+        {
+          "segment_id": "B090:L0019:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对蒋士亮警告并处罚款20万元\r\n",
+          "start": 394,
+          "end": 410
+        },
+        {
+          "segment_id": "B090:L0020:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对李旭警告并处罚款10万元\r\n",
+          "start": 410,
+          "end": 425
+        },
+        {
+          "segment_id": "B090:L0021:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对潘振雄警告并处罚款20万元\r\n",
+          "start": 425,
+          "end": 441
+        },
+        {
+          "segment_id": "B090:L0022:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对洪祖强警告并处罚款10万元\r\n",
+          "start": 441,
+          "end": 457
+        },
+        {
+          "segment_id": "B090:L0023:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对杨卫警告并处罚款10万元\r\n",
+          "start": 457,
+          "end": 472
+        },
+        {
+          "segment_id": "B090:L0024:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对崔晓博警告并处罚款10万元\r\n",
+          "start": 472,
+          "end": 488
+        },
+        {
+          "segment_id": "B090:L0025:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对钱磊警告并处罚款10万元\r\n",
+          "start": 488,
+          "end": 503
+        },
+        {
+          "segment_id": "B090:L0026:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对姜掌厚警告并处罚款10万元\r\n",
+          "start": 503,
+          "end": 519
+        },
+        {
+          "segment_id": "B090:L0027:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对郭钢警告并处罚款20万元\r\n",
+          "start": 519,
+          "end": 534
+        },
+        {
+          "segment_id": "B090:L0028:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对梁晓旭警告并处罚款10万元\r\n",
+          "start": 534,
+          "end": 550
+        },
+        {
+          "segment_id": "B090:L0029:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对王彦波警告并处罚款10万元\r\n",
+          "start": 550,
+          "end": 566
+        },
+        {
+          "segment_id": "B090:L0030:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对武运宝警告并处罚款20万元\r\n",
+          "start": 566,
+          "end": 582
+        },
+        {
+          "segment_id": "B090:L0031:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对李彦君警告并处罚款20万元\r\n",
+          "start": 582,
+          "end": 598
+        },
+        {
+          "segment_id": "B090:L0032:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对沈宁警告并处罚款20万元\r\n",
+          "start": 598,
+          "end": 613
+        },
+        {
+          "segment_id": "B090:L0033:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对余饶林警告并处罚款10万元\r\n",
+          "start": 613,
+          "end": 629
+        },
+        {
+          "segment_id": "B090:L0034:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对程向民警告并处罚款10万元\r\n",
+          "start": 629,
+          "end": 645
+        },
+        {
+          "segment_id": "B090:L0035:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "对周健警告并处罚款10万元\r\n",
+          "start": 645,
+          "end": 660
+        },
+        {
+          "segment_id": "B090:L0036:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "作出处罚决定的\r\n",
+          "start": 660,
+          "end": 669
+        },
+        {
+          "segment_id": "B090:L0037:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "机关名称\r\n",
+          "start": 669,
+          "end": 675
+        },
+        {
+          "segment_id": "B090:L0038:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "国家金融监督管理总局\r\n",
+          "start": 675,
+          "end": 687
+        },
+        {
+          "segment_id": "B090:L0039:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "作出处罚决定的日期\r\n",
+          "start": 687,
+          "end": 698
+        },
+        {
+          "segment_id": "B090:L0040:8fce5a5696d103b4:8fce5a5696d103b4",
+          "text": "2024年5月14日",
+          "start": 698,
+          "end": 708
+        }
+      ],
+      "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1162453&itemId=4113&generaltype=9",
+      "title": "国家金融监督管理总局行政处罚信息公开表（金罚决字〔2024〕5号）"
+    }
+  },
+  {
+    "public_job": "R-B090-reviewer-r1-a1",
+    "sample_id": "B090",
+    "role": "reviewer",
+    "action": "search",
+    "args": {
+      "query": "金罚决字〔2024〕5号",
+      "limit": 5
+    },
+    "result": {
+      "scope": "full_frozen_baseline",
+      "snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+      "scanned_documents": 9640,
+      "total_matches": 50,
+      "offset": 0,
+      "next_offset": 5,
+      "records": [
+        {
+          "source_id": "FRV2-SOURCE-F004942-83d89ba07a91f6848953ecf9",
+          "preview": "国家金融监督管理总局中卫监管分局行政处罚信息公开表 (卫金罚决字〔2024〕5号)\n序\n号\n当事人名\n称\n行政处罚决定\n书文号\n主要违法违规行为\n行政处罚\n内容\n作出决定\n机关\n1\n中国人寿\n财产保险\n股份有限\n公司中宁\n支公司\n卫金罚决字\n〔2024〕5号\n给予被保险人保险\n合同约定以外利益\n罚款3.7万\n元\n国家金融\n监督管理\n总局中卫\n监管分局\n2\n张平(时\n任中国人\n寿财产保\n险股份有\n限公司中\n宁支公司\n经理)\n警告并罚\n款0.7万元\n手机扫一扫打开此页\n",
+          "preview_start": 0,
+          "preview_end": 235,
+          "preview_truncated": false,
+          "match_start": 28,
+          "match_end": 40
+        },
+        {
+          "source_id": "FRV2-SOURCE-F004943-b3417b69dc17776a3a7406cf",
+          "preview": "国家金融监督管理总局吴忠监管分局行政处罚信息公开表(吴金罚决字〔2024〕5号、6号)\n序\n号\n当事人名称\n行政处罚决定\n书文号\n主要违法违规行为\n行政处罚内\n容\n作出决定机\n关\n1\n中国人民财产\n保险股份有限\n公司利通支公\n司\n吴金罚决字\n〔2024〕5号\n编制虚假资料\n罚款20.09万\n元\n国家金融监\n督管理总局\n吴忠监管分\n局\n2\n叶盛（时任中\n国人民财产保\n险股份有限公\n司利通支公司\n经理）\n警告并罚款4\n万元\n3\n中国人民财产\n保险股份有限\n公司青铜峡支\n公司\n吴金",
+          "preview_start": 0,
+          "preview_end": 240,
+          "preview_truncated": true,
+          "match_start": 27,
+          "match_end": 39
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005001-d567742be202de2abb2fab6f",
+          "preview": "决定\n书文号\n主要违法违规行为\n行政处罚\n内容\n作出决定\n机关\n1\n中国人民\n财产保险\n股份有限\n公司河源\n市分公司\n河金罚决字\n〔2024〕5号\n给予投保人、被保\n险人保险合同约定\n以外利益,利用保险\n代理人虚构保险中\n介业务套取费用\n罚款46万\n元\n国家金融\n监督管理\n总局河源\n监管分局\n2\n黎明(时\n任中国人\n民财产保\n险股份有\n限公司河\n源市分公\n司副总经\n理)\n警告并处\n罚款15万\n元\n手机扫一扫打开此页\n",
+          "preview_start": 50,
+          "preview_end": 260,
+          "preview_truncated": true,
+          "match_start": 110,
+          "match_end": 123
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005064-802a23a21cf80cf6536a87a9",
+          "preview": "株洲金融监管分局行政处罚信息公开表(株金罚决字〔2024〕5号)\n行政处罚决定书文号\n株金罚决字〔2024〕5号\n被处罚当事人\n曾邓翔(时任中国太平洋财产保险股份\n有限公司渌口支公司车商客户经理)\n主要违法违规事实\n对中国太平洋财产保险股份有限公司渌\n口支公司“虚构保险中介业务”行为负直\n接责任\n行政处罚依据\n《中华人民共和国保险法》第一百一十\n六条、第一百七十一条\n行政处罚决定\n警告并处罚款1万元\n作出处罚决定的机关名称\n国家金融监督管理总局株洲监管分局\n作出处罚决定的日期",
+          "preview_start": 0,
+          "preview_end": 240,
+          "preview_truncated": true,
+          "match_start": 19,
+          "match_end": 31
+        },
+        {
+          "source_id": "FRV2-SOURCE-F005168-dd7eb343ea3f98d900072eeb",
+          "preview": "国家金融监督管理总局潮州监管分局行政处罚信息公开表(2024年5号)\n行政处罚决定书文号\n潮金罚决字〔2024〕5号\n被处罚当事人\n一、富德生命人寿保险股份有限公司\n潮州中心支公司\n二、袁梓炫(时任富德生命人寿保险股\n份有限公司潮州中心支公司总经理室\n总经理助理)\n三、林晓婷(时任富德生命人寿保险股\n份有限公司潮州中心支公司个人代理\n人)\n主要违法违规事实\n业务财务数据不真实\n行政处罚依据\n《中华人民共和国保险法》第八十六\n条、第一百七十条、第一百七十一条\n行政处罚决定\n一、",
+          "preview_start": 0,
+          "preview_end": 240,
+          "preview_truncated": true,
+          "match_start": 46,
+          "match_end": 58
+        }
+      ],
+      "sort": "source_id_ascending",
+      "matching": "NFKC + whitespace removal; exact substring AND; no Chinese segmentation or fuzzy matching",
+      "recall_limitation": "Absence of matches does not prove novelty. Preview shows one body hit; use read for full evidence."
+    }
+  }
+]

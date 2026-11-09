@@ -1,0 +1,27 @@
+{
+  "schema": "lexical-experiment-shadow/1",
+  "snapshot_id": "CodexPR-7b3054573cf1d46d99464ab9",
+  "source_count": 9647,
+  "assets": {
+    "sources": {
+      "path": "[local path omitted from public export]",
+      "sha256": "7b3054573cf1d46d99464ab94cfcdadd278ab77668627a48c8ec13b6c73c4904"
+    },
+    "dictionary": {
+      "path": "[local path omitted from public export]",
+      "sha256": "0588febf140ada823980fdbe0c5691d77bc02ed439cb8d44e6cfef1cda12d8bb"
+    }
+  },
+  "cards": {
+    "path": "[local path omitted from public export]",
+    "sha256": "74c133666231a95cbe284426a7f6f5881f085affa97847829db12d88769ce46e"
+  },
+  "base_snapshot_id": "v2-7b870a28eb8c26b42b9cfef3",
+  "added_documents": 7,
+  "added_case_cards": 7,
+  "added_behavior_cards": 13,
+  "old_bytes_preserved": true,
+  "production_admission": false,
+  "human_approved": false,
+  "limitations": "Isolated exact lexical source search/read and grounded cards. No new dense/BGE or production Agent registry publication."
+}

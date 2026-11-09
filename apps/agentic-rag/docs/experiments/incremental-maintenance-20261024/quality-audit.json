@@ -1,0 +1,47 @@
+{
+  "type": "root_assistant_posthoc_development_readback_not_human_gold",
+  "human_approved": false,
+  "checked_scope": "20 source texts and final card summaries; supporting per-role citations available in paired results. Not an exhaustive financial expert review.",
+  "related_group_readback": {
+    "N": {
+      "documents": 8,
+      "with_old_full_read": 2
+    },
+    "R": {
+      "documents": 8,
+      "with_old_full_read": 3
+    },
+    "U": {
+      "documents": 4,
+      "with_old_full_read": 0
+    }
+  },
+  "R_add_without_old_full_read": [
+    "D10",
+    "D13",
+    "D15"
+  ],
+  "findings": [
+    {
+      "id": "D18",
+      "finding": "Reviewer changed exclusion to hold because insurance relation not established by original text; revision followed and final review approved. Correctness/utility still needs user audit."
+    },
+    {
+      "id": "D19",
+      "finding": "Original states late renewal of licence, warning and RMB10000 fine. It is a penalty case, not an administrative licence notice; Proposer and Reviewer both retained it. Prior coarse keyword hint must not become a gold exclusion."
+    },
+    {
+      "id": "overall",
+      "finding": "No real duplicate link, correct_record or supersede decision occurred. Cannot claim outdated/conflicting knowledge removed."
+    },
+    {
+      "id": "R_old_read",
+      "finding": "Only 3/8 related-group new documents had an old full-text read; three insurance additions had no complete old candidate read. Exact search/no-hit alone does not establish exhaustive new/old conflict review."
+    },
+    {
+      "id": "schema",
+      "finding": "14 case cards and 21 behavior cards use simplified experiment schema. Overlay not a complete normalized production bundle or rebuilt BGE index."
+    }
+  ],
+  "pre_expansion_recommendation": "Keep formal80 and controlled16 unrun. First improve related old-candidate retrieval/readback coverage and confirm references; preserve this development version unchanged."
+}

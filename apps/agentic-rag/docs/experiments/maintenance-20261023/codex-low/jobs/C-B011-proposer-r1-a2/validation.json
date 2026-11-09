@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "action": "add",
+  "reason": "完整原文支持独立机构处罚及三项行为；主体和完整文号分别检索冻结旧库均零命中，未发现重复证据，但零命中不证明绝对不存在。仅提出新增影子提案，缺失法律依据和职务保留未知。",
+  "production_admission": false,
+  "tool_calls": 3,
+  "output_sha256": "293294f5e0f55c1d98811cd0de9d627aa3d07191fdad435b69d5987c00917950"
+}

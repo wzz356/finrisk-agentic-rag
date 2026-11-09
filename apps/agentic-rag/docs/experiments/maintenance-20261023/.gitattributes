@@ -1,0 +1,2 @@
+# Preserve evidence bytes so checksums remain valid across Windows and Unix.
+* -text

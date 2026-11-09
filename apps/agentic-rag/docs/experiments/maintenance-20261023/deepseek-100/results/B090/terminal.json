@@ -1,0 +1,60 @@
+{
+  "id": "B090",
+  "status": "budget_stopped",
+  "production_admission": false,
+  "receipt": null,
+  "format_repairs": {
+    "proposer": 1,
+    "reviewer": 0
+  },
+  "business_revision_used": true,
+  "revisions": [
+    {
+      "revision": 1,
+      "phase": "proposer",
+      "role_attempt": 1,
+      "action": "add",
+      "mechanical_valid": true
+    },
+    {
+      "revision": 1,
+      "phase": "reviewer",
+      "role_attempt": 1,
+      "decision": "request_changes",
+      "validation": {
+        "experiment_review_valid": true,
+        "decision": "request_changes",
+        "production_admission": false,
+        "receipt": null
+      }
+    },
+    {
+      "revision": 2,
+      "phase": "proposer",
+      "error": {
+        "code": "PROJECTION_GROWTH_BOUND_EXCEEDED",
+        "field": "citations",
+        "message": "业务投影超过本轮预留上界30171 bytes；缩短充分引文和重复表述，保留全部业务修改要求。"
+      }
+    },
+    {
+      "revision": 2,
+      "phase": "proposer",
+      "error": {
+        "code": "PROTECTED_FUTURE_EVENT_BUDGET",
+        "field": null,
+        "message": "Error: SUBMISSION_INCOMPLETE_ledger_denied"
+      }
+    }
+  ],
+  "terminal_error": {
+    "code": "PROTECTED_FUTURE_EVENT_BUDGET",
+    "field": null,
+    "message": "Error: SUBMISSION_INCOMPLETE_ledger_denied"
+  },
+  "stop_reason": "PROTECTED_FUTURE_EVENT_BUDGET",
+  "format_repairs_used": {
+    "proposer": 1,
+    "reviewer": 0
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "action": "add",
+  "source_coverage": [
+    {
+      "reason": "支持相应字段或标明原文信息边界",
+      "disposition": "mapped",
+      "field_refs": [
+        "case/subject",
+        "case/position"
+      ],
+      "segment_id": "B003:L0001:05ad4426ea7bf82b:05ad4426ea7bf82b"
+    },
+    {
+      "reason": "栏目标题或来源标识",
+      "disposition": "not_material",
+      "field_refs": [],
+      "segment_id": "B003:L0002:05ad4426ea7bf82b:05ad4426ea7bf82b"
+    },
+    {
+      "reason": "支持相应字段或标明原文信息边界",
+      "disposition": "mapped",
+      "field_refs": [
+        "behaviors/0/actor",
+        "behaviors/0/role",
+        "behaviors/0/action",
+        "behaviors/0/risk_tags",
+        "behaviors/0/unknowns",
+        "case/legal_basis"
+      ],
+      "segment_id": "B003:L0003:05ad4426ea7bf82b:05ad4426ea7bf82b"
+    },
+    {
+      "reason": "栏目标题或来源标识",
+      "disposition": "not_material",
+      "field_refs": [],
+      "segment_id": "B003:L0004:05ad4426ea7bf82b:05ad4426ea7bf82b"
+    },
+    {
+      "reason": "支持相应字段或标明原文信息边界",
+      "disposition": "mapped",
+      "field_refs": [
+        "case/penalties",
+        "case/subject"
+      ],
+      "segment_id": "B003:L0005:05ad4426ea7bf82b:05ad4426ea7bf82b"
+    },
+    {
+      "reason": "栏目标题或来源标识",
+      "disposition": "not_material",
+      "field_refs": [],
+      "segment_id": "B003:L0006:05ad4426ea7bf82b:05ad4426ea7bf82b"
+    },
+    {
+      "reason": "支持相应字段或标明原文信息边界",
+      "disposition": "mapped",
+      "field_refs": [
+        "case/authority"
+      ],
+      "segment_id": "B003:L0007:05ad4426ea7bf82b:05ad4426ea7bf82b"
+    },
+    {
+      "reason": "栏目标题或来源标识",
+      "disposition": "not_material",
+      "field_refs": [],
+      "segment_id": "B003:L0008:05ad4426ea7bf82b:05ad4426ea7bf82b"
+    },
+    {
+      "reason": "支持相应字段或标明原文信息边界",
+      "disposition": "mapped",
+      "field_refs": [
+        "case/decision_date"
+      ],
+      "segment_id": "B003:L0009:05ad4426ea7bf82b:05ad4426ea7bf82b"
+    },
+    {
+      "reason": "栏目标题或来源标识",
+      "disposition": "not_material",
+      "field_refs": [],
+      "segment_id": "B003:L0010:05ad4426ea7bf82b:05ad4426ea7bf82b"
+    },
+    {
+      "reason": "支持相应字段或标明原文信息边界",
+      "disposition": "mapped",
+      "field_refs": [
+        "case/document_number",
+        "case/unknowns"
+      ],
+      "segment_id": "B003:L0011:05ad4426ea7bf82b:05ad4426ea7bf82b"
+    }
+  ],
+  "reason": "完整原文载明2026年7月8日处罚。旧库主体检索命中两条；已完整读取FRV2-SOURCE-F008349-2187bee0ad2196162e08f9ce，其为2023年10月18日新金监罚决字〔2023〕22号，行为及处罚不同，保留历史记录，本案作为独立事项提出新增。另一条仅见预览，不引用其完整事实；检索不能证明绝无重复。",
+  "behaviors": [
+    {
+      "role": {
+        "citations": [
+          {
+            "quote": "利用业务便利为其他机构或者个人牟取不正当利益",
+            "segment_id": "B003:L0003:05ad4426ea7bf82b:05ad4426ea7bf82b"
+          }
+        ],
+        "uncertainty": "未明确行为实施者",
+        "claim_type": "fact",
+        "value": "unspecified"
+      },
+      "action": {
+        "citations": [
+          {
+            "quote": "利用业务便利为其他机构或者个人牟取不正当利益",
+            "segment_id": "B003:L0003:05ad4426ea7bf82b:05ad4426ea7bf82b"
+          }
+        ],
+        "uncertainty": null,
+        "claim_type": "fact",
+        "value": "利用业务便利为其他机构或者个人牟取不正当利益"
+      },
+      "actor": {
+        "citations": [
+          {
+            "quote": "利用业务便利为其他机构或者个人牟取不正当利益",
+            "segment_id": "B003:L0003:05ad4426ea7bf82b:05ad4426ea7bf82b"
+          }
+        ],
+        "uncertainty": "仅列案由，未明确实施主体；个人受罚不证明其亲自实施",
+        "claim_type": "fact",
+        "value": null
+      },
+      "risk_tags": {
+        "citations": [
+          {
+            "quote": "利用业务便利为其他机构或者个人牟取不正当利益",
+            "segment_id": "B003:L0003:05ad4426ea7bf82b:05ad4426ea7bf82b"
+          }
+        ],
+        "uncertainty": "未说明投保对象、销售渠道或具体利益方式，无法适用更具体标签",
+        "claim_type": "fact",
+        "value": [
+          "其他"
+        ]
+      },
+      "unknowns": {
+        "citations": [
+          {
+            "quote": "利用业务便利为其他机构或者个人牟取不正当利益",
+            "segment_id": "B003:L0003:05ad4426ea7bf82b:05ad4426ea7bf82b"
+          }
+        ],
+        "uncertainty": "原文仅说明其他机构或者个人，未明确具体身份和实施方式",
+        "claim_type": "fact",
+        "value": [
+          "actor",
+          "具体利益方式",
+          "受益对象身份"
+        ]
+      }
+    }
+  ],
+  "case": {
+    "position": {
+      "citations": [
+        {
+          "quote": "当事人: 健科保险经纪有限公司新疆分公司及相关责任人",
+          "segment_id": "B003:L0001:05ad4426ea7bf82b:05ad4426ea7bf82b"
+        }
+      ],
+      "uncertainty": "未载个人任职",
+      "claim_type": "fact",
+      "value": null
+    },
+    "subject": {
+      "citations": [
+        {
+          "quote": "当事人: 健科保险经纪有限公司新疆分公司及相关责任人",
+          "segment_id": "B003:L0001:05ad4426ea7bf82b:05ad4426ea7bf82b"
+        },
+        {
+          "quote": "对该分公司罚款10万元。对张青警告并罚款3万元",
+          "segment_id": "B003:L0005:05ad4426ea7bf82b:05ad4426ea7bf82b"
+        }
+      ],
+      "uncertainty": null,
+      "claim_type": "fact",
+      "value": "健科保险经纪有限公司新疆分公司及相关责任人（张青）"
+    },
+    "authority": {
+      "citations": [
+        {
+          "quote": "新疆金融监管局",
+          "segment_id": "B003:L0007:05ad4426ea7bf82b:05ad4426ea7bf82b"
+        }
+      ],
+      "uncertainty": null,
+      "claim_type": "fact",
+      "value": "新疆金融监管局"
+    },
+    "penalties": {
+      "citations": [
+        {
+          "quote": "对该分公司罚款10万元。对张青警告并罚款3万元",
+          "segment_id": "B003:L0005:05ad4426ea7bf82b:05ad4426ea7bf82b"
+        }
+      ],
+      "uncertainty": null,
+      "claim_type": "fact",
+      "value": "对健科保险经纪有限公司新疆分公司罚款10万元；对张青警告并罚款3万元"
+    },
+    "document_number": {
+      "citations": [
+        {
+          "quote": "新疆金融监管局行政处罚信息公示列表",
+          "segment_id": "B003:L0011:05ad4426ea7bf82b:05ad4426ea7bf82b"
+        }
+      ],
+      "uncertainty": "原文未载文号",
+      "claim_type": "fact",
+      "value": null
+    },
+    "decision_date": {
+      "citations": [
+        {
+          "quote": "2026年7月8日",
+          "segment_id": "B003:L0009:05ad4426ea7bf82b:05ad4426ea7bf82b"
+        }
+      ],
+      "uncertainty": null,
+      "claim_type": "fact",
+      "value": "2026年7月8日"
+    },
+    "unknowns": {
+      "citations": [
+        {
+          "quote": "新疆金融监管局行政处罚信息公示列表",
+          "segment_id": "B003:L0011:05ad4426ea7bf82b:05ad4426ea7bf82b"
+        }
+      ],
+      "uncertainty": "原文缺失上述信息",
+      "claim_type": "fact",
+      "value": [
+        "document_number",
+        "position",
+        "legal_basis"
+      ]
+    },
+    "legal_basis": {
+      "citations": [
+        {
+          "quote": "利用业务便利为其他机构或者个人牟取不正当利益",
+          "segment_id": "B003:L0003:05ad4426ea7bf82b:05ad4426ea7bf82b"
+        }
+      ],
+      "uncertainty": "未载法律依据",
+      "claim_type": "fact",
+      "value": null
+    }
+  }
+}

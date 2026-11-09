@@ -1,0 +1,7 @@
+{
+  "schema_version": "finrisk-tool-contract-profiles/1.0",
+  "profiles": {
+    "bm25-source-v1": {"max_queries_per_search": 3},
+    "v2-hybrid-flash-v1": {"max_queries_per_search": 1}
+  }
+}

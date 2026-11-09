@@ -1,0 +1,48 @@
+{
+  "stage": "development",
+  "planned_materials": 20,
+  "terminal_materials": 20,
+  "status_counts": {
+    "approve": 20
+  },
+  "action_counts": {
+    "exclude_from_penalty": 5,
+    "add": 14,
+    "hold": 1
+  },
+  "valid_dual_role_dispositions": 20,
+  "A_mechanically_valid": 20,
+  "review_decisions": {
+    "approve": 20,
+    "request_changes": 1
+  },
+  "business_revised_materials": 1,
+  "unique_old_sources_read": 6,
+  "unique_new_sources_read": 20,
+  "old_sources_read": [
+    "FRV2-SOURCE-F000828-252aa76bef90f9647ab5ea4d",
+    "FRV2-SOURCE-F001891-df4b4ddd5020eb9aa8225e73",
+    "FRV2-SOURCE-F001894-bd72f4ff2aa007d983ef34b3",
+    "FRV2-SOURCE-F002889-3af2b0ad0d36b40bd7231acd",
+    "FRV2-SOURCE-F003935-dee2763c7be8f6994422708f",
+    "FRV2-SOURCE-F005171-e7eda8827e8381e4033e655c"
+  ],
+  "role_tasks_dispatched": 42,
+  "evidence_tool_calls": 143,
+  "profile": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "execution": "codex-native"
+  },
+  "provider_model_request_count": null,
+  "per_role_tokens": null,
+  "deepseek_calls": 0,
+  "human_reference_status": "pending",
+  "controlled_reference_status": "pending",
+  "formal_evaluation_started": false,
+  "engineering_count_gate_passed": true,
+  "semantic_quality_gate": "pending independent/human audit; model approvals are not accuracy",
+  "production_modified": false,
+  "generated_at": 1792824716.245455,
+  "elapsed_observation_minutes": 39.21733829975128
+}

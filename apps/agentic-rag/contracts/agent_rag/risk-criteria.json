@@ -1,0 +1,552 @@
+{
+  "schema_version": "finrisk-risk-criteria/1.1",
+  "dictionary_sha256": "0588febf140ada823980fdbe0c5691d77bc02ed439cb8d44e6cfef1cda12d8bb",
+  "origin": "internal_dictionary_interpretation",
+  "review_status": "developer_draft",
+  "limits": [
+    "不是新增官方标签或法规。",
+    "met/not_met必须绑定当前输入或真实用户背景；历史案例不能补当前事实。",
+    "匹配字典仅提示疑似风险，不等于法律违法认定。",
+    "定义之外的背景仅作为备注，不自动添加关键条件。"
+  ],
+  "tags": [
+    {
+      "tag": "欺骗投保人",
+      "definition": "以虚假或引人误解的方式欺骗投保人、被保险人或受益人",
+      "criteria": [
+        {
+          "id": "actual_conduct",
+          "statement": "材料实际实施、宣传或指示该行为，而非仅作为禁止性提醒、反例或风险教育提及。",
+          "basis": "内部语境解释；不得仅凭关键词命中。"
+        },
+        {
+          "id": "definition_match",
+          "statement": "以虚假或引人误解的方式欺骗投保人、被保险人或受益人",
+          "basis": "官方定义逐项解释。"
+        }
+      ]
+    },
+    {
+      "tag": "销售误导",
+      "definition": "在保险销售过程中对产品进行误导性陈述",
+      "criteria": [
+        {
+          "id": "actual_conduct",
+          "statement": "材料实际实施、宣传或指示该行为，而非仅作为禁止性提醒、反例或风险教育提及。",
+          "basis": "内部语境解释；不得仅凭关键词命中。"
+        },
+        {
+          "id": "insurance_product",
+          "statement": "表述指向保险产品或当前保险交易；无需确认具体险种或产品名称。",
+          "fact_field": "insurance_product",
+          "basis": "官方定义的保险业务适用范围解释。"
+        },
+        {
+          "id": "definition_match",
+          "statement": "在保险销售过程中对产品进行误导性陈述",
+          "basis": "官方定义逐项解释。"
+        }
+      ]
+    },
+    {
+      "tag": "夸大收益",
+      "definition": "夸大保险产品的预期收益或投资回报",
+      "criteria": [
+        {
+          "id": "actual_conduct",
+          "statement": "材料实际实施、宣传或指示该行为，而非仅作为禁止性提醒、反例或风险教育提及。",
+          "basis": "内部语境解释；不得仅凭关键词命中。"
+        },
+        {
+          "id": "insurance_product",
+          "statement": "表述指向保险产品或当前保险交易；无需确认具体险种或产品名称。",
+          "fact_field": "insurance_product",
+          "basis": "官方定义的保险业务适用范围解释。"
+        },
+        {
+          "id": "return_exaggeration",
+          "statement": "夸大保险产品的预期收益或投资回报，有依据支持夸大判断。",
+          "basis": "官方定义逐项解释。"
+        }
+      ]
+    },
+    {
+      "tag": "虚假宣传",
+      "definition": "对保险产品进行虚假或夸大宣传",
+      "criteria": [
+        {
+          "id": "actual_conduct",
+          "statement": "材料实际实施、宣传或指示该行为，而非仅作为禁止性提醒、反例或风险教育提及。",
+          "basis": "内部语境解释；不得仅凭关键词命中。"
+        },
+        {
+          "id": "insurance_product",
+          "statement": "表述指向保险产品或当前保险交易；无需确认具体险种或产品名称。",
+          "fact_field": "insurance_product",
+          "basis": "官方定义的保险业务适用范围解释。"
+        },
+        {
+          "id": "definition_match",
+          "statement": "对保险产品进行虚假或夸大宣传",
+          "basis": "官方定义逐项解释。"
+        }
+      ]
+    },
+    {
+      "tag": "合同外利益",
+      "definition": "给予投保人保险合同约定以外的利益",
+      "criteria": [
+        {
+          "id": "actual_conduct",
+          "statement": "材料实际实施、宣传或指示该行为，而非仅作为禁止性提醒、反例或风险教育提及。",
+          "basis": "内部语境解释；不得仅凭关键词命中。"
+        },
+        {
+          "id": "insurance_product",
+          "statement": "表述指向保险产品或当前保险交易；无需确认具体险种或产品名称。",
+          "fact_field": "insurance_product",
+          "basis": "官方定义的保险业务适用范围解释。"
+        },
+        {
+          "id": "benefit",
+          "statement": "给予投保人利益。",
+          "basis": "官方定义逐项解释。"
+        },
+        {
+          "id": "contract_outside",
+          "statement": "利益在当前保险合同约定之外。",
+          "basis": "官方定义逐项解释。"
+        }
+      ]
+    },
+    {
+      "tag": "赠送利益",
+      "definition": "以赠送礼品、服务等方式诱导投保",
+      "criteria": [
+        {
+          "id": "actual_conduct",
+          "statement": "材料实际实施、宣传或指示该行为，而非仅作为禁止性提醒、反例或风险教育提及。",
+          "basis": "内部语境解释；不得仅凭关键词命中。"
+        },
+        {
+          "id": "insurance_product",
+          "statement": "表述指向保险产品或当前保险交易；无需确认具体险种或产品名称。",
+          "fact_field": "insurance_product",
+          "basis": "官方定义的保险业务适用范围解释。"
+        },
+        {
+          "id": "gift",
+          "statement": "存在赠送礼品、服务等利益的安排。",
+          "basis": "官方定义逐项解释。"
+        },
+        {
+          "id": "purchase_link",
+          "statement": "赠礼与促成投保相联系。",
+          "basis": "官方定义逐项解释。"
+        }
+      ]
+    },
+    {
+      "tag": "回扣返佣",
+      "definition": "向投保人返还保费或提供回扣",
+      "criteria": [
+        {
+          "id": "actual_conduct",
+          "statement": "材料实际实施、宣传或指示该行为，而非仅作为禁止性提醒、反例或风险教育提及。",
+          "basis": "内部语境解释；不得仅凭关键词命中。"
+        },
+        {
+          "id": "insurance_product",
+          "statement": "表述指向保险产品或当前保险交易；无需确认具体险种或产品名称。",
+          "fact_field": "insurance_product",
+          "basis": "官方定义的保险业务适用范围解释。"
+        },
+        {
+          "id": "premium_return",
+          "statement": "向投保人返还保费或提供回扣。",
+          "basis": "官方定义逐项解释。"
+        }
+      ]
+    },
+    {
+      "tag": "产品说明会违规",
+      "definition": "产品说明会内容存在误导或数据不实",
+      "criteria": [
+        {
+          "id": "actual_conduct",
+          "statement": "材料实际实施、宣传或指示该行为，而非仅作为禁止性提醒、反例或风险教育提及。",
+          "basis": "内部语境解释；不得仅凭关键词命中。"
+        },
+        {
+          "id": "definition_match",
+          "statement": "产品说明会内容存在误导或数据不实",
+          "basis": "官方定义逐项解释。"
+        }
+      ]
+    },
+    {
+      "tag": "培训材料违规",
+      "definition": "销售培训材料存在误导或违规内容",
+      "criteria": [
+        {
+          "id": "actual_conduct",
+          "statement": "材料实际实施、宣传或指示该行为，而非仅作为禁止性提醒、反例或风险教育提及。",
+          "basis": "内部语境解释；不得仅凭关键词命中。"
+        },
+        {
+          "id": "definition_match",
+          "statement": "销售培训材料存在误导或违规内容",
+          "basis": "官方定义逐项解释。"
+        }
+      ]
+    },
+    {
+      "tag": "回访违规",
+      "definition": "客户回访过程中存在误导或信息不实",
+      "criteria": [
+        {
+          "id": "actual_conduct",
+          "statement": "材料实际实施、宣传或指示该行为，而非仅作为禁止性提醒、反例或风险教育提及。",
+          "basis": "内部语境解释；不得仅凭关键词命中。"
+        },
+        {
+          "id": "definition_match",
+          "statement": "客户回访过程中存在误导或信息不实",
+          "basis": "官方定义逐项解释。"
+        }
+      ]
+    },
+    {
+      "tag": "电销违规",
+      "definition": "电话销售过程中存在违规行为",
+      "criteria": [
+        {
+          "id": "actual_conduct",
+          "statement": "材料实际实施、宣传或指示该行为，而非仅作为禁止性提醒、反例或风险教育提及。",
+          "basis": "内部语境解释；不得仅凭关键词命中。"
+        },
+        {
+          "id": "definition_match",
+          "statement": "电话销售过程中存在违规行为",
+          "basis": "官方定义逐项解释。"
+        }
+      ]
+    },
+    {
+      "tag": "不当比较",
+      "definition": "不当将本公司产品与其他公司产品进行比较",
+      "criteria": [
+        {
+          "id": "actual_conduct",
+          "statement": "材料实际实施、宣传或指示该行为，而非仅作为禁止性提醒、反例或风险教育提及。",
+          "basis": "内部语境解释；不得仅凭关键词命中。"
+        },
+        {
+          "id": "insurance_product",
+          "statement": "表述指向保险产品或当前保险交易；无需确认具体险种或产品名称。",
+          "fact_field": "insurance_product",
+          "basis": "官方定义的保险业务适用范围解释。"
+        },
+        {
+          "id": "definition_match",
+          "statement": "不当将本公司产品与其他公司产品进行比较",
+          "basis": "官方定义逐项解释。"
+        }
+      ]
+    },
+    {
+      "tag": "贬低竞品",
+      "definition": "贬低或诋毁其他保险公司产品",
+      "criteria": [
+        {
+          "id": "actual_conduct",
+          "statement": "材料实际实施、宣传或指示该行为，而非仅作为禁止性提醒、反例或风险教育提及。",
+          "basis": "内部语境解释；不得仅凭关键词命中。"
+        },
+        {
+          "id": "insurance_product",
+          "statement": "表述指向保险产品或当前保险交易；无需确认具体险种或产品名称。",
+          "fact_field": "insurance_product",
+          "basis": "官方定义的保险业务适用范围解释。"
+        },
+        {
+          "id": "definition_match",
+          "statement": "贬低或诋毁其他保险公司产品",
+          "basis": "官方定义逐项解释。"
+        }
+      ]
+    },
+    {
+      "tag": "绝对化表述",
+      "definition": "使用最高级、绝对化或无法证实的表述",
+      "criteria": [
+        {
+          "id": "actual_conduct",
+          "statement": "材料实际实施、宣传或指示该行为，而非仅作为禁止性提醒、反例或风险教育提及。",
+          "basis": "内部语境解释；不得仅凭关键词命中。"
+        },
+        {
+          "id": "insurance_product",
+          "statement": "表述指向保险产品或当前保险交易；无需确认具体险种或产品名称。",
+          "fact_field": "insurance_product",
+          "basis": "官方定义的保险业务适用范围解释。"
+        },
+        {
+          "id": "absolute_expression",
+          "statement": "实际使用最高级、绝对化或无法证实的表述。",
+          "basis": "官方定义逐项解释。"
+        }
+      ]
+    },
+    {
+      "tag": "承诺收益",
+      "definition": "对保险产品的收益做出承诺性表述",
+      "criteria": [
+        {
+          "id": "actual_conduct",
+          "statement": "材料实际实施、宣传或指示该行为，而非仅作为禁止性提醒、反例或风险教育提及。",
+          "basis": "内部语境解释；不得仅凭关键词命中。"
+        },
+        {
+          "id": "insurance_product",
+          "statement": "表述指向保险产品或当前保险交易；无需确认具体险种或产品名称。",
+          "fact_field": "insurance_product",
+          "basis": "官方定义的保险业务适用范围解释。"
+        },
+        {
+          "id": "return_commitment",
+          "statement": "实际对保险产品收益作出承诺性表述。",
+          "basis": "官方定义逐项解释。"
+        }
+      ]
+    },
+    {
+      "tag": "保证收益",
+      "definition": "保证保险产品的收益率或回报",
+      "criteria": [
+        {
+          "id": "actual_conduct",
+          "statement": "材料实际实施、宣传或指示该行为，而非仅作为禁止性提醒、反例或风险教育提及。",
+          "basis": "内部语境解释；不得仅凭关键词命中。"
+        },
+        {
+          "id": "insurance_product",
+          "statement": "表述指向保险产品或当前保险交易；无需确认具体险种或产品名称。",
+          "fact_field": "insurance_product",
+          "basis": "官方定义的保险业务适用范围解释。"
+        },
+        {
+          "id": "return_guarantee",
+          "statement": "实际保证保险产品的收益率或回报。",
+          "basis": "官方定义逐项解释。"
+        }
+      ]
+    },
+    {
+      "tag": "弱化风险提示",
+      "definition": "弱化或回避保险产品的风险提示",
+      "criteria": [
+        {
+          "id": "actual_conduct",
+          "statement": "材料实际实施、宣传或指示该行为，而非仅作为禁止性提醒、反例或风险教育提及。",
+          "basis": "内部语境解释；不得仅凭关键词命中。"
+        },
+        {
+          "id": "insurance_product",
+          "statement": "表述指向保险产品或当前保险交易；无需确认具体险种或产品名称。",
+          "fact_field": "insurance_product",
+          "basis": "官方定义的保险业务适用范围解释。"
+        },
+        {
+          "id": "definition_match",
+          "statement": "弱化或回避保险产品的风险提示",
+          "basis": "官方定义逐项解释。"
+        }
+      ]
+    },
+    {
+      "tag": "隐瞒重要信息",
+      "definition": "隐瞒或未充分告知重要合同信息",
+      "criteria": [
+        {
+          "id": "actual_conduct",
+          "statement": "材料实际实施、宣传或指示该行为，而非仅作为禁止性提醒、反例或风险教育提及。",
+          "basis": "内部语境解释；不得仅凭关键词命中。"
+        },
+        {
+          "id": "insurance_product",
+          "statement": "表述指向保险产品或当前保险交易；无需确认具体险种或产品名称。",
+          "fact_field": "insurance_product",
+          "basis": "官方定义的保险业务适用范围解释。"
+        },
+        {
+          "id": "definition_match",
+          "statement": "隐瞒或未充分告知重要合同信息",
+          "basis": "官方定义逐项解释。"
+        }
+      ]
+    },
+    {
+      "tag": "虚构收益率",
+      "definition": "虚构或编造不存在的收益率数据",
+      "criteria": [
+        {
+          "id": "actual_conduct",
+          "statement": "材料实际实施、宣传或指示该行为，而非仅作为禁止性提醒、反例或风险教育提及。",
+          "basis": "内部语境解释；不得仅凭关键词命中。"
+        },
+        {
+          "id": "insurance_product",
+          "statement": "表述指向保险产品或当前保险交易；无需确认具体险种或产品名称。",
+          "fact_field": "insurance_product",
+          "basis": "官方定义的保险业务适用范围解释。"
+        },
+        {
+          "id": "definition_match",
+          "statement": "虚构或编造不存在的收益率数据",
+          "basis": "官方定义逐项解释。"
+        }
+      ]
+    },
+    {
+      "tag": "诱导投保",
+      "definition": "使用不当手段诱导消费者投保",
+      "criteria": [
+        {
+          "id": "actual_conduct",
+          "statement": "材料实际实施、宣传或指示该行为，而非仅作为禁止性提醒、反例或风险教育提及。",
+          "basis": "内部语境解释；不得仅凭关键词命中。"
+        },
+        {
+          "id": "insurance_product",
+          "statement": "表述指向保险产品或当前保险交易；无需确认具体险种或产品名称。",
+          "fact_field": "insurance_product",
+          "basis": "官方定义的保险业务适用范围解释。"
+        },
+        {
+          "id": "improper_inducement",
+          "statement": "材料体现不当手段与诱导消费者投保之间的联系。",
+          "basis": "官方定义逐项解释。"
+        }
+      ]
+    },
+    {
+      "tag": "避债避税",
+      "definition": "宣传保险具有规避债务或税收的功能",
+      "criteria": [
+        {
+          "id": "actual_conduct",
+          "statement": "材料实际实施、宣传或指示该行为，而非仅作为禁止性提醒、反例或风险教育提及。",
+          "basis": "内部语境解释；不得仅凭关键词命中。"
+        },
+        {
+          "id": "insurance_product",
+          "statement": "表述指向保险产品或当前保险交易；无需确认具体险种或产品名称。",
+          "fact_field": "insurance_product",
+          "basis": "官方定义的保险业务适用范围解释。"
+        },
+        {
+          "id": "definition_match",
+          "statement": "宣传保险具有规避债务或税收的功能",
+          "basis": "官方定义逐项解释。"
+        }
+      ]
+    },
+    {
+      "tag": "虚列费用套取资金",
+      "definition": "通过虚假列支费用套取资金",
+      "criteria": [
+        {
+          "id": "actual_conduct",
+          "statement": "材料实际实施、宣传或指示该行为，而非仅作为禁止性提醒、反例或风险教育提及。",
+          "basis": "内部语境解释；不得仅凭关键词命中。"
+        },
+        {
+          "id": "definition_match",
+          "statement": "通过虚假列支费用套取资金",
+          "basis": "官方定义逐项解释。"
+        }
+      ]
+    },
+    {
+      "tag": "代理人管理不到位",
+      "definition": "对保险代理人管理不善导致违规",
+      "criteria": [
+        {
+          "id": "actual_conduct",
+          "statement": "材料实际实施、宣传或指示该行为，而非仅作为禁止性提醒、反例或风险教育提及。",
+          "basis": "内部语境解释；不得仅凭关键词命中。"
+        },
+        {
+          "id": "definition_match",
+          "statement": "对保险代理人管理不善导致违规",
+          "basis": "官方定义逐项解释。"
+        }
+      ]
+    },
+    {
+      "tag": "委托无资质机构销售",
+      "definition": "委托不具有合法资质的机构从事保险销售",
+      "criteria": [
+        {
+          "id": "actual_conduct",
+          "statement": "材料实际实施、宣传或指示该行为，而非仅作为禁止性提醒、反例或风险教育提及。",
+          "basis": "内部语境解释；不得仅凭关键词命中。"
+        },
+        {
+          "id": "definition_match",
+          "statement": "委托不具有合法资质的机构从事保险销售",
+          "basis": "官方定义逐项解释。"
+        }
+      ]
+    },
+    {
+      "tag": "未按规定使用费率条款",
+      "definition": "未按监管备案的费率和条款执行",
+      "criteria": [
+        {
+          "id": "actual_conduct",
+          "statement": "材料实际实施、宣传或指示该行为，而非仅作为禁止性提醒、反例或风险教育提及。",
+          "basis": "内部语境解释；不得仅凭关键词命中。"
+        },
+        {
+          "id": "definition_match",
+          "statement": "未按监管备案的费率和条款执行",
+          "basis": "官方定义逐项解释。"
+        }
+      ]
+    },
+    {
+      "tag": "客户信息不真实",
+      "definition": "客户信息记录虚假或不真实",
+      "criteria": [
+        {
+          "id": "actual_conduct",
+          "statement": "材料实际实施、宣传或指示该行为，而非仅作为禁止性提醒、反例或风险教育提及。",
+          "basis": "内部语境解释；不得仅凭关键词命中。"
+        },
+        {
+          "id": "definition_match",
+          "statement": "客户信息记录虚假或不真实",
+          "basis": "官方定义逐项解释。"
+        }
+      ]
+    },
+    {
+      "tag": "其他",
+      "definition": "其他类型的违规行为",
+      "criteria": [
+        {
+          "id": "actual_conduct",
+          "statement": "材料实际实施、宣传或指示该行为，而非仅作为禁止性提醒、反例或风险教育提及。",
+          "basis": "内部语境解释；不得仅凭关键词命中。"
+        },
+        {
+          "id": "definition_match",
+          "statement": "其他类型的违规行为",
+          "basis": "官方定义逐项解释。"
+        }
+      ]
+    }
+  ]
+}

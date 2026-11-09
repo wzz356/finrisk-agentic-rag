@@ -1,0 +1,122 @@
+{
+  "targets": [],
+  "relations": [],
+  "evidence": [
+    {
+      "quote": "当事人: 简敏（时任渤海财险呼和浩特中心支公司副总经理（主持工作））",
+      "segment_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0:L0001",
+      "source_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0"
+    },
+    {
+      "quote": "招投标业务虚假记载为个人代理业务",
+      "segment_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0:L0005",
+      "source_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0"
+    },
+    {
+      "quote": "警告并罚款2万元",
+      "segment_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0:L0007",
+      "source_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0"
+    }
+  ],
+  "reason": "已完整阅读新文，核实当事人为简敏，时任渤海财险呼和浩特中心支公司副总经理（主持工作），文号为内金罚决字〔2026〕24号。按完整文号、简敏及渤海财险搜索旧库，前两项未命中，机构主干返回的9项候选预览主体、文号与本案不同；未核实旧文关系，不作重复、更正或替代判断。新增个人处罚案，保留具体实施人与资金去向未知，不把个人受罚等同亲自实施。",
+  "case_cards": [
+    {
+      "evidence": [
+        {
+          "quote": "当事人: 简敏（时任渤海财险呼和浩特中心支公司副总经理（主持工作））",
+          "segment_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0:L0001",
+          "source_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0"
+        },
+        {
+          "quote": "内金罚决字〔2026〕24号",
+          "segment_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0:L0003",
+          "source_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0"
+        },
+        {
+          "quote": "招投标业务虚假记载为个人代理业务",
+          "segment_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0:L0005",
+          "source_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0"
+        },
+        {
+          "quote": "警告并罚款2万元",
+          "segment_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0:L0007",
+          "source_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0"
+        },
+        {
+          "quote": "内蒙古金融监管局",
+          "segment_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0:L0009",
+          "source_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0"
+        },
+        {
+          "quote": "2026年7月30日",
+          "segment_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0:L0011",
+          "source_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0"
+        }
+      ],
+      "subject": "简敏",
+      "penalties": [
+        {
+          "text": "警告并罚款2万元",
+          "evidence": [
+            {
+              "quote": "当事人: 简敏（时任渤海财险呼和浩特中心支公司副总经理（主持工作））",
+              "segment_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0:L0001",
+              "source_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0"
+            },
+            {
+              "quote": "警告并罚款2万元",
+              "segment_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0:L0007",
+              "source_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0"
+            }
+          ],
+          "subject": "简敏"
+        }
+      ],
+      "decision_date": "2026年7月30日",
+      "unknowns": [
+        "具体责任形式及实施方式未披露",
+        "资金去向未披露"
+      ],
+      "summary": "简敏因招投标业务虚假记载为个人代理业务被内蒙古金融监管局警告并罚款2万元。原文未说明其具体实施方式。",
+      "authority": "内蒙古金融监管局",
+      "document_number": "内金罚决字〔2026〕24号",
+      "local_id": "case-1"
+    }
+  ],
+  "uncertainties": [
+    "文号及姓名检索未命中仅限已查范围，不证明全库无重复。",
+    "事实不支持直接认定虚列费用套取资金、回扣返佣或客户信息不真实，暂不赋予这些标签。"
+  ],
+  "schema": "codex-incremental/1",
+  "behavior_cards": [
+    {
+      "risk_tags": [],
+      "evidence": [
+        {
+          "quote": "招投标业务虚假记载为个人代理业务",
+          "segment_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0:L0005",
+          "source_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0"
+        },
+        {
+          "quote": "当事人: 简敏（时任渤海财险呼和浩特中心支公司副总经理（主持工作））",
+          "segment_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0:L0001",
+          "source_id": "FRV2-SOURCE-WEB-ed44bb2d078736155c85ce698be4dbea-0d8489adb0dae40ae7fef4c0"
+        }
+      ],
+      "actor_role": "具体实施人未披露；简敏为受处罚当事人，时任副总经理（主持工作）",
+      "unknowns": [
+        "actor",
+        "具体实施方式",
+        "是否套取资金及资金去向"
+      ],
+      "case_id": "case-1",
+      "summary": "招投标业务被虚假记载为个人代理业务。原文仅列明简敏受罚，未明确其亲自实施该记载，亦未披露套取资金或向客户返佣。",
+      "conditions": [],
+      "negations": [],
+      "actor": null,
+      "exceptions": [],
+      "local_id": "behavior-1"
+    }
+  ],
+  "action": "add"
+}

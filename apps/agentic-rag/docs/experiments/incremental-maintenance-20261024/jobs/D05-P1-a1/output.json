@@ -1,0 +1,32 @@
+{
+  "schema": "codex-incremental/1",
+  "action": "exclude_from_penalty",
+  "reason": "已完整阅读原文，并按完整文号豫金罚决字〔2026〕45号及当事人普浩检索旧库，两次检索均未命中；该结果不证明全库不存在重复。原文明确为国家开发银行河南省分行任职个人因贷款审查不尽职被禁止从事银行业工作4年的银行业务处罚，未涉及保险业务，应排除于本次保险处罚知识范围。未读取旧文，不建立旧案关系或修改旧记录。",
+  "case_cards": [],
+  "behavior_cards": [],
+  "targets": [],
+  "relations": [],
+  "uncertainties": [],
+  "evidence": [
+    {
+      "source_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab",
+      "segment_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab:L0001",
+      "quote": "当事人: 普浩（时任国家开发银行河南省分行客户三处处长）"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab",
+      "segment_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab:L0003",
+      "quote": "豫金罚决字〔2026〕45号"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab",
+      "segment_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab:L0005",
+      "quote": "贷款审查不尽职"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab",
+      "segment_id": "FRV2-SOURCE-WEB-67d49397f51a2315da364c1c1280b6d7-7a580fb728e480f3e923ecab:L0007",
+      "quote": "禁止从事银行业工作4年"
+    }
+  ]
+}

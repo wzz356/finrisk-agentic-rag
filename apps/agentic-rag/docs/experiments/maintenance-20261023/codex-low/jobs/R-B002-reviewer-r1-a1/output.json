@@ -1,0 +1,199 @@
+{
+  "omission_check_completed": true,
+  "claim_checks": [
+    {
+      "comment": "原文明确载明，值及事实类型与引文相符。",
+      "verdict": "supported",
+      "claim_id": "claim:batch100-B002:case:subject",
+      "citations": [
+        {
+          "segment_id": "B002:L0001:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "当事人: 刘义键（时任中国太平洋财产保险股份有限公司德阳中心支公司农险部经理）"
+        }
+      ]
+    },
+    {
+      "comment": "原文明确载明，值及事实类型与引文相符。",
+      "verdict": "supported",
+      "claim_id": "claim:batch100-B002:case:document_number",
+      "citations": [
+        {
+          "segment_id": "B002:L0003:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "德金监罚决字〔2026〕11号"
+        }
+      ]
+    },
+    {
+      "comment": "原文明确载明，值及事实类型与引文相符。",
+      "verdict": "supported",
+      "claim_id": "claim:batch100-B002:case:decision_date",
+      "citations": [
+        {
+          "segment_id": "B002:L0011:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "2026年8月24日"
+        }
+      ]
+    },
+    {
+      "comment": "原文明确载明，值及事实类型与引文相符。",
+      "verdict": "supported",
+      "claim_id": "claim:batch100-B002:case:authority",
+      "citations": [
+        {
+          "segment_id": "B002:L0009:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "国家金融监督管理总局德阳监管分局"
+        }
+      ]
+    },
+    {
+      "comment": "原文明确载明，值及事实类型与引文相符。",
+      "verdict": "supported",
+      "claim_id": "claim:batch100-B002:case:position",
+      "citations": [
+        {
+          "segment_id": "B002:L0001:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "时任中国太平洋财产保险股份有限公司德阳中心支公司农险部经理"
+        }
+      ]
+    },
+    {
+      "comment": "完整原文未载具体法律依据，null及不确定性说明适当。",
+      "verdict": "supported",
+      "claim_id": "claim:batch100-B002:case:legal_basis",
+      "citations": [
+        {
+          "segment_id": "B002:L0005:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "编制虚假资料虚列费用"
+        }
+      ]
+    },
+    {
+      "comment": "原文明确载明，值及事实类型与引文相符。",
+      "verdict": "supported",
+      "claim_id": "claim:batch100-B002:case:penalties",
+      "citations": [
+        {
+          "segment_id": "B002:L0007:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "警告并处罚款人民币1.5万元"
+        }
+      ]
+    },
+    {
+      "comment": "法律依据确实缺失。",
+      "verdict": "supported",
+      "claim_id": "claim:batch100-B002:case:unknowns",
+      "citations": [
+        {
+          "segment_id": "B002:L0005:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "编制虚假资料虚列费用"
+        }
+      ]
+    },
+    {
+      "comment": "原文仅载处罚当事人，不能证明其亲自实施该行为。",
+      "verdict": "unsupported",
+      "claim_id": "claim:batch100-B002:behaviors:0:actor",
+      "citations": [
+        {
+          "segment_id": "B002:L0001:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "当事人: 刘义键（时任中国太平洋财产保险股份有限公司德阳中心支公司农险部经理）"
+        }
+      ]
+    },
+    {
+      "comment": "个人作为该案受罚负责人及其时任职务有原文支持；不据此推断亲自实施。",
+      "verdict": "supported",
+      "claim_id": "claim:batch100-B002:behaviors:0:role",
+      "citations": [
+        {
+          "segment_id": "B002:L0001:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "当事人: 刘义键（时任中国太平洋财产保险股份有限公司德阳中心支公司农险部经理）"
+        }
+      ]
+    },
+    {
+      "comment": "原文明确载明，值及事实类型与引文相符。",
+      "verdict": "supported",
+      "claim_id": "claim:batch100-B002:behaviors:0:action",
+      "citations": [
+        {
+          "segment_id": "B002:L0005:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "编制虚假资料虚列费用"
+        }
+      ]
+    },
+    {
+      "comment": "字典要求通过虚假列支费用套取资金；原文仅载虚列费用，未载套取资金。",
+      "verdict": "unsupported",
+      "claim_id": "claim:batch100-B002:behaviors:0:risk_tags",
+      "citations": [
+        {
+          "segment_id": "B002:L0005:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "编制虚假资料虚列费用"
+        }
+      ]
+    },
+    {
+      "comment": "实施主体及是否套取资金未知，空列表且无不确定性遗漏实质限制。",
+      "verdict": "unsupported",
+      "claim_id": "claim:batch100-B002:behaviors:0:unknowns",
+      "citations": [
+        {
+          "segment_id": "B002:L0005:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "编制虚假资料虚列费用"
+        }
+      ]
+    }
+  ],
+  "decision": "request_changes",
+  "issues": [
+    {
+      "issue_id": "issue-actor",
+      "change_request": "实施主体未明，应保留未知并写明不确定性；不得仅由个人受罚认定其亲自实施，也不得改填机构。",
+      "pointer": "/actor",
+      "diff_line": null,
+      "claim_id": "claim:batch100-B002:behaviors:0:actor",
+      "severity": "blocking",
+      "citations": [
+        {
+          "segment_id": "B002:L0001:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "当事人: 刘义键（时任中国太平洋财产保险股份有限公司德阳中心支公司农险部经理）"
+        }
+      ],
+      "operation_id": "op:batch100-B002:behaviors:0",
+      "category": "actor"
+    },
+    {
+      "issue_id": "issue-risk_tags",
+      "change_request": "移除缺乏套取资金要件的标签；可保留0标签，不得补造资金用途或目的。",
+      "pointer": "/risk_tags",
+      "diff_line": null,
+      "claim_id": "claim:batch100-B002:behaviors:0:risk_tags",
+      "severity": "blocking",
+      "citations": [
+        {
+          "segment_id": "B002:L0005:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "编制虚假资料虚列费用"
+        }
+      ],
+      "operation_id": "op:batch100-B002:behaviors:0",
+      "category": "qualifier"
+    },
+    {
+      "issue_id": "issue-unknowns",
+      "change_request": "补充实施主体、套取资金情况等原文未载条件的未知及uncertainty说明。",
+      "pointer": "/unknowns",
+      "diff_line": null,
+      "claim_id": "claim:batch100-B002:behaviors:0:unknowns",
+      "severity": "blocking",
+      "citations": [
+        {
+          "segment_id": "B002:L0005:00ccffe5776bd7da:00ccffe5776bd7da",
+          "quote": "编制虚假资料虚列费用"
+        }
+      ],
+      "operation_id": "op:batch100-B002:behaviors:0",
+      "category": "omission"
+    }
+  ]
+}

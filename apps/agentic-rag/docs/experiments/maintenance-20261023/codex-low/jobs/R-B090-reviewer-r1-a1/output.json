@@ -1,0 +1,542 @@
+{
+  "decision": "request_changes",
+  "claim_checks": [
+    {
+      "claim_id": "claim:batch100-B090:case:subject",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "中国人民财产保险股份有限公司及其责任人员"
+        }
+      ],
+      "comment": "值及引文与完整原文一致；处罚名单、金额和法律依据已逐项核对。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:case:document_number",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0002:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "金罚决字〔2024〕5号"
+        }
+      ],
+      "comment": "值及引文与完整原文一致；处罚名单、金额和法律依据已逐项核对。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:case:decision_date",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0040:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "2024年5月14日"
+        }
+      ],
+      "comment": "值及引文与完整原文一致；处罚名单、金额和法律依据已逐项核对。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:case:authority",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0038:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "国家金融监督管理总局"
+        }
+      ],
+      "comment": "值及引文与完整原文一致；处罚名单、金额和法律依据已逐项核对。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:case:position",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "中国人民财产保险股份有限公司及其责任人员"
+        }
+      ],
+      "comment": "值及引文与完整原文一致；处罚名单、金额和法律依据已逐项核对。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:case:legal_basis",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0008:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "《中华人民共和国保险法》第八十六条、第一百一十六条、第一百三十五条、第一百六十一条、第一百七十条、第一百七十一条等"
+        }
+      ],
+      "comment": "值及引文与完整原文一致；处罚名单、金额和法律依据已逐项核对。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:case:penalties",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0010:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "对中国人民财产保险股份有限公司罚款合计681万元。其中，总公司221万元，分支机构460万元。"
+        },
+        {
+          "segment_id": "B090:L0011:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "对蒋新伟警告并处罚款10万元"
+        },
+        {
+          "segment_id": "B090:L0012:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "对原宇玲警告并处罚款10万元"
+        },
+        {
+          "segment_id": "B090:L0013:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "对王学刚警告并处罚款20万元"
+        },
+        {
+          "segment_id": "B090:L0014:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "对倪宏警告并处罚款10万元"
+        },
+        {
+          "segment_id": "B090:L0015:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "对何祖望警告并处罚款1万元"
+        },
+        {
+          "segment_id": "B090:L0016:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "对周志文警告并处罚款10万元"
+        },
+        {
+          "segment_id": "B090:L0017:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "对纪翔警告并处罚款10万元"
+        },
+        {
+          "segment_id": "B090:L0018:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "对刘团聚警告并处罚款10万元"
+        },
+        {
+          "segment_id": "B090:L0019:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "对蒋士亮警告并处罚款20万元"
+        },
+        {
+          "segment_id": "B090:L0020:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "对李旭警告并处罚款10万元"
+        },
+        {
+          "segment_id": "B090:L0021:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "对潘振雄警告并处罚款20万元"
+        },
+        {
+          "segment_id": "B090:L0022:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "对洪祖强警告并处罚款10万元"
+        },
+        {
+          "segment_id": "B090:L0023:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "对杨卫警告并处罚款10万元"
+        },
+        {
+          "segment_id": "B090:L0024:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "对崔晓博警告并处罚款10万元"
+        },
+        {
+          "segment_id": "B090:L0025:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "对钱磊警告并处罚款10万元"
+        },
+        {
+          "segment_id": "B090:L0026:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "对姜掌厚警告并处罚款10万元"
+        },
+        {
+          "segment_id": "B090:L0027:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "对郭钢警告并处罚款20万元"
+        },
+        {
+          "segment_id": "B090:L0028:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "对梁晓旭警告并处罚款10万元"
+        },
+        {
+          "segment_id": "B090:L0029:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "对王彦波警告并处罚款10万元"
+        },
+        {
+          "segment_id": "B090:L0030:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "对武运宝警告并处罚款20万元"
+        },
+        {
+          "segment_id": "B090:L0031:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "对李彦君警告并处罚款20万元"
+        },
+        {
+          "segment_id": "B090:L0032:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "对沈宁警告并处罚款20万元"
+        },
+        {
+          "segment_id": "B090:L0033:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "对余饶林警告并处罚款10万元"
+        },
+        {
+          "segment_id": "B090:L0034:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "对程向民警告并处罚款10万元"
+        },
+        {
+          "segment_id": "B090:L0035:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "对周健警告并处罚款10万元"
+        }
+      ],
+      "comment": "值及引文与完整原文一致；处罚名单、金额和法律依据已逐项核对。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:case:unknowns",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "中国人民财产保险股份有限公司及其责任人员"
+        }
+      ],
+      "comment": "值及引文与完整原文一致；处罚名单、金额和法律依据已逐项核对。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:0:actor",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "中国人民财产保险股份有限公司及其责任人员"
+        }
+      ],
+      "comment": "结合当事人及违法事实栏目，机构层面归属有支持，未推定具体个人亲自实施。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:0:role",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "中国人民财产保险股份有限公司及其责任人员"
+        }
+      ],
+      "comment": "所列主体为保险机构，institution有支持。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:0:action",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "将直接业务虚挂中介业务套取手续费"
+        }
+      ],
+      "comment": "值及引文与完整原文一致；处罚名单、金额和法律依据已逐项核对。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:0:risk_tags",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "将直接业务虚挂中介业务套取手续费"
+        }
+      ],
+      "comment": "已按字典逐项核验：该行为符合所列标签必要要件。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:0:unknowns",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "将直接业务虚挂中介业务套取手续费"
+        }
+      ],
+      "comment": "未补造原文缺失细节。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:1:actor",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "中国人民财产保险股份有限公司及其责任人员"
+        }
+      ],
+      "comment": "结合当事人及违法事实栏目，机构层面归属有支持，未推定具体个人亲自实施。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:1:role",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "中国人民财产保险股份有限公司及其责任人员"
+        }
+      ],
+      "comment": "所列主体为保险机构，institution有支持。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:1:action",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "少计提资产减值准备"
+        }
+      ],
+      "comment": "值及引文与完整原文一致；处罚名单、金额和法律依据已逐项核对。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:1:risk_tags",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "少计提资产减值准备"
+        }
+      ],
+      "comment": "已按字典逐项核验：该行为符合所列标签必要要件。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:1:unknowns",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "少计提资产减值准备"
+        }
+      ],
+      "comment": "未补造原文缺失细节。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:2:actor",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "中国人民财产保险股份有限公司及其责任人员"
+        }
+      ],
+      "comment": "结合当事人及违法事实栏目，机构层面归属有支持，未推定具体个人亲自实施。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:2:role",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "中国人民财产保险股份有限公司及其责任人员"
+        }
+      ],
+      "comment": "所列主体为保险机构，institution有支持。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:2:action",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "招投标管理不规范"
+        }
+      ],
+      "comment": "值及引文与完整原文一致；处罚名单、金额和法律依据已逐项核对。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:2:risk_tags",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "招投标管理不规范"
+        }
+      ],
+      "comment": "已按字典逐项核验：该行为符合所列标签必要要件。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:2:unknowns",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "招投标管理不规范"
+        }
+      ],
+      "comment": "未补造原文缺失细节。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:3:actor",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "中国人民财产保险股份有限公司及其责任人员"
+        }
+      ],
+      "comment": "结合当事人及违法事实栏目，机构层面归属有支持，未推定具体个人亲自实施。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:3:role",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "中国人民财产保险股份有限公司及其责任人员"
+        }
+      ],
+      "comment": "所列主体为保险机构，institution有支持。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:3:action",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "支农融资业务捆绑销售保险产品"
+        }
+      ],
+      "comment": "值及引文与完整原文一致；处罚名单、金额和法律依据已逐项核对。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:3:risk_tags",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "支农融资业务捆绑销售保险产品"
+        }
+      ],
+      "comment": "已按字典逐项核验：该行为符合所列标签必要要件。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:3:unknowns",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "支农融资业务捆绑销售保险产品"
+        }
+      ],
+      "comment": "未补造原文缺失细节。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:4:actor",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "中国人民财产保险股份有限公司及其责任人员"
+        }
+      ],
+      "comment": "结合当事人及违法事实栏目，机构层面归属有支持，未推定具体个人亲自实施。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:4:role",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "中国人民财产保险股份有限公司及其责任人员"
+        }
+      ],
+      "comment": "所列主体为保险机构，institution有支持。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:4:action",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "相关报告、报表、文件和资料不真实"
+        }
+      ],
+      "comment": "值及引文与完整原文一致；处罚名单、金额和法律依据已逐项核对。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:4:risk_tags",
+      "verdict": "unsupported",
+      "citations": [
+        {
+          "segment_id": "B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "相关报告、报表、文件和资料不真实"
+        }
+      ],
+      "comment": "报告、报表、文件和资料不真实不等于客户信息记录虚假；原文未说明涉及客户信息，标签必要对象缺失。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:4:unknowns",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "相关报告、报表、文件和资料不真实"
+        }
+      ],
+      "comment": "未补造原文缺失细节。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:5:actor",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "中国人民财产保险股份有限公司及其责任人员"
+        }
+      ],
+      "comment": "结合当事人及违法事实栏目，机构层面归属有支持，未推定具体个人亲自实施。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:5:role",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0004:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "中国人民财产保险股份有限公司及其责任人员"
+        }
+      ],
+      "comment": "所列主体为保险机构，institution有支持。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:5:action",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "跨年度列支手续费"
+        }
+      ],
+      "comment": "值及引文与完整原文一致；处罚名单、金额和法律依据已逐项核对。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:5:risk_tags",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "跨年度列支手续费"
+        }
+      ],
+      "comment": "已按字典逐项核验：该行为符合所列标签必要要件。"
+    },
+    {
+      "claim_id": "claim:batch100-B090:behaviors:5:unknowns",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "跨年度列支手续费"
+        }
+      ],
+      "comment": "未补造原文缺失细节。"
+    }
+  ],
+  "omission_check_completed": true,
+  "issues": [
+    {
+      "issue_id": "B090-tag-object",
+      "severity": "blocking",
+      "category": "qualifier",
+      "operation_id": "op:batch100-B090:behaviors:4",
+      "claim_id": "claim:batch100-B090:behaviors:4:risk_tags",
+      "pointer": "/risk_tags",
+      "diff_line": null,
+      "citations": [
+        {
+          "segment_id": "B090:L0006:8fce5a5696d103b4:8fce5a5696d103b4",
+          "quote": "相关报告、报表、文件和资料不真实"
+        }
+      ],
+      "change_request": "删除“客户信息不真实”标签：原文仅称相关报告、报表、文件和资料不真实，没有客户信息对象证据。可保留0标签，或依据字典重新选择不补造对象条件的标签。六项明示行为及全部处罚已覆盖。已检索完整文号，当前返回为带不同前缀文号，不能据此断言重复或证明全库不存在同文书；本意见不建议新增记录。"
+    }
+  ]
+}

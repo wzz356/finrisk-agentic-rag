@@ -1,0 +1,498 @@
+{
+  "schema": "finrisk-maintenance-replay-fixtures/1.0",
+  "example_only": true,
+  "description": "20条完全合成的协议工程夹具；不含真实案件、法规修订或人工金标。审核为脚本预定值，不是模型效果。",
+  "smoke_ids": [
+    "new01",
+    "new02",
+    "deactivate01"
+  ],
+  "events": [
+    {
+      "id": "new01",
+      "category": "new_source",
+      "event_type": "new_source",
+      "example_only": true,
+      "expected_status": "engineering_complete",
+      "record_kind": "case",
+      "operation": "add",
+      "target_id": "FIX-new01",
+      "body": {
+        "party_name": "合成保险主体01",
+        "case_summary": "合成案例01：材料记录核验流程。"
+      },
+      "reason": "合成工程夹具：new_source",
+      "search_query": "new01",
+      "source_texts": [
+        "【合成工程夹具；无真实案件或法规效力】new01\nparty_name=合成保险主体01\ncase_summary=合成案例01：材料记录核验流程。\n仅用于维护协议工程回放。"
+      ]
+    },
+    {
+      "id": "new02",
+      "category": "new_source",
+      "event_type": "new_source",
+      "example_only": true,
+      "expected_status": "engineering_complete",
+      "record_kind": "case",
+      "operation": "add",
+      "target_id": "FIX-new02",
+      "body": {
+        "party_name": "合成保险主体02",
+        "case_summary": "承诺保本。"
+      },
+      "reason": "合成工程夹具：new_source",
+      "search_query": "new02",
+      "source_texts": [
+        "【合成工程夹具；无真实案件或法规效力】new02\nparty_name=合成保险主体02\ncase_summary=未承诺保本。\n仅用于维护协议工程回放。"
+      ],
+      "repair_body": {
+        "party_name": "合成保险主体02",
+        "case_summary": "未承诺保本。"
+      }
+    },
+    {
+      "id": "new03",
+      "category": "new_source",
+      "event_type": "new_source",
+      "example_only": true,
+      "expected_status": "engineering_complete",
+      "record_kind": "case",
+      "operation": "add",
+      "target_id": "FIX-new03",
+      "body": {
+        "party_name": "合成保险主体03",
+        "case_summary": "合成案例03：材料记录核验流程。"
+      },
+      "reason": "合成工程夹具：new_source",
+      "search_query": "new03",
+      "source_texts": [
+        "【合成工程夹具；无真实案件或法规效力】new03\nparty_name=合成保险主体03\ncase_summary=合成案例03：材料记录核验流程。\n仅用于维护协议工程回放。"
+      ]
+    },
+    {
+      "id": "new04",
+      "category": "new_source",
+      "event_type": "new_source",
+      "example_only": true,
+      "expected_status": "engineering_complete",
+      "record_kind": "case",
+      "operation": "add",
+      "target_id": "FIX-new04",
+      "body": {
+        "party_name": "合成保险主体04",
+        "case_summary": "合成案例04：材料记录核验流程。"
+      },
+      "reason": "合成工程夹具：new_source",
+      "search_query": "new04",
+      "source_texts": [
+        "【合成工程夹具；无真实案件或法规效力】new04\nparty_name=合成保险主体04\ncase_summary=合成案例04：材料记录核验流程。\n仅用于维护协议工程回放。"
+      ]
+    },
+    {
+      "id": "new05",
+      "category": "new_source",
+      "event_type": "new_source",
+      "example_only": true,
+      "expected_status": "engineering_complete",
+      "record_kind": "case",
+      "operation": "add",
+      "target_id": "FIX-new05",
+      "body": {
+        "party_name": "合成保险主体05",
+        "case_summary": "合成案例05：材料记录核验流程。"
+      },
+      "reason": "合成工程夹具：new_source",
+      "search_query": "new05",
+      "source_texts": [
+        "【合成工程夹具；无真实案件或法规效力】new05\nparty_name=合成保险主体05\ncase_summary=合成案例05：材料记录核验流程。\n仅用于维护协议工程回放。"
+      ]
+    },
+    {
+      "id": "new06",
+      "category": "new_source",
+      "event_type": "new_source",
+      "example_only": true,
+      "expected_status": "engineering_complete",
+      "record_kind": "case",
+      "operation": "add",
+      "target_id": "FIX-new06",
+      "body": {
+        "party_name": "合成保险主体06",
+        "case_summary": "合成案例06：材料记录核验流程。"
+      },
+      "reason": "合成工程夹具：new_source",
+      "search_query": "new06",
+      "source_texts": [
+        "【合成工程夹具；无真实案件或法规效力】new06\nparty_name=合成保险主体06\ncase_summary=合成案例06：材料记录核验流程。\n仅用于维护协议工程回放。"
+      ]
+    },
+    {
+      "id": "new07",
+      "category": "new_source",
+      "event_type": "new_source",
+      "example_only": true,
+      "expected_status": "engineering_complete",
+      "record_kind": "case",
+      "operation": "add",
+      "target_id": "FIX-new07",
+      "body": {
+        "party_name": "合成保险主体07",
+        "case_summary": "合成案例07：材料记录核验流程。"
+      },
+      "reason": "合成工程夹具：new_source",
+      "search_query": "new07",
+      "source_texts": [
+        "【合成工程夹具；无真实案件或法规效力】new07\nparty_name=合成保险主体07\ncase_summary=合成案例07：材料记录核验流程。\n仅用于维护协议工程回放。"
+      ]
+    },
+    {
+      "id": "new08",
+      "category": "new_source",
+      "event_type": "new_source",
+      "example_only": true,
+      "expected_status": "engineering_complete",
+      "record_kind": "case",
+      "operation": "add",
+      "target_id": "FIX-new08",
+      "body": {
+        "party_name": "合成保险主体08",
+        "case_summary": "合成案例08：材料记录核验流程。"
+      },
+      "reason": "合成工程夹具：new_source",
+      "search_query": "new08",
+      "source_texts": [
+        "【合成工程夹具；无真实案件或法规效力】new08\nparty_name=合成保险主体08\ncase_summary=合成案例08：材料记录核验流程。\n仅用于维护协议工程回放。"
+      ]
+    },
+    {
+      "id": "revision01",
+      "category": "source_revision",
+      "event_type": "source_revision",
+      "example_only": true,
+      "expected_status": "engineering_complete",
+      "record_kind": "case",
+      "operation": "revise",
+      "target_id": "FIX-revision01",
+      "body": {
+        "party_name": "合成更正主体01",
+        "case_summary": "合成同源更正稿01：金额为六万元；旧稿被此稿更正。"
+      },
+      "reason": "合成工程夹具：source_revision",
+      "search_query": "revision01",
+      "source_texts": [
+        "【合成工程夹具；无真实案件或法规效力】revision01历史版\nparty_name=合成更正主体01\ncase_summary=合成同源旧稿01：金额为十万元。\n仅用于维护协议工程回放。",
+        "【合成工程夹具；无真实案件或法规效力】revision01\nparty_name=合成更正主体01\ncase_summary=合成同源更正稿01：金额为六万元；旧稿被此稿更正。\n仅用于维护协议工程回放。"
+      ],
+      "prior_body": {
+        "party_name": "合成更正主体01",
+        "case_summary": "合成同源旧稿01：金额为十万元。"
+      }
+    },
+    {
+      "id": "revision02",
+      "category": "source_revision",
+      "event_type": "source_revision",
+      "example_only": true,
+      "expected_status": "engineering_complete",
+      "record_kind": "case",
+      "operation": "revise",
+      "target_id": "FIX-revision02",
+      "body": {
+        "party_name": "合成更正主体02",
+        "case_summary": "合成同源更正稿02：金额为六万元；旧稿被此稿更正。"
+      },
+      "reason": "合成工程夹具：source_revision",
+      "search_query": "revision02",
+      "source_texts": [
+        "【合成工程夹具；无真实案件或法规效力】revision02历史版\nparty_name=合成更正主体02\ncase_summary=合成同源旧稿02：金额为十万元。\n仅用于维护协议工程回放。",
+        "【合成工程夹具；无真实案件或法规效力】revision02\nparty_name=合成更正主体02\ncase_summary=合成同源更正稿02：金额为六万元；旧稿被此稿更正。\n仅用于维护协议工程回放。"
+      ],
+      "prior_body": {
+        "party_name": "合成更正主体02",
+        "case_summary": "合成同源旧稿02：金额为十万元。"
+      }
+    },
+    {
+      "id": "revision03",
+      "category": "source_revision",
+      "event_type": "source_revision",
+      "example_only": true,
+      "expected_status": "engineering_complete",
+      "record_kind": "case",
+      "operation": "revise",
+      "target_id": "FIX-revision03",
+      "body": {
+        "party_name": "合成更正主体03",
+        "case_summary": "合成同源更正稿03：金额为六万元；旧稿被此稿更正。"
+      },
+      "reason": "合成工程夹具：source_revision",
+      "search_query": "revision03",
+      "source_texts": [
+        "【合成工程夹具；无真实案件或法规效力】revision03历史版\nparty_name=合成更正主体03\ncase_summary=合成同源旧稿03：金额为十万元。\n仅用于维护协议工程回放。",
+        "【合成工程夹具；无真实案件或法规效力】revision03\nparty_name=合成更正主体03\ncase_summary=合成同源更正稿03：金额为六万元；旧稿被此稿更正。\n仅用于维护协议工程回放。"
+      ],
+      "prior_body": {
+        "party_name": "合成更正主体03",
+        "case_summary": "合成同源旧稿03：金额为十万元。"
+      }
+    },
+    {
+      "id": "extraction01",
+      "category": "extraction_correction",
+      "event_type": "extraction_correction",
+      "example_only": true,
+      "expected_status": "engineering_complete",
+      "record_kind": "case",
+      "operation": "revise",
+      "target_id": "FIX-extraction01",
+      "body": {
+        "party_name": "合成抽取主体01",
+        "case_summary": "罚款六万元。"
+      },
+      "reason": "同一合成原件字节，旧抽取误增“十”，新抽取纠正；不是来源更正。",
+      "search_query": "extraction01",
+      "source_texts": [
+        "【合成工程夹具；无真实案件或法规效力】extraction01历史版\nparty_name=合成抽取主体01\ncase_summary=罚款六十万元。\n仅用于维护协议工程回放。",
+        "【合成工程夹具；无真实案件或法规效力】extraction01\nparty_name=合成抽取主体01\ncase_summary=罚款六万元。\n仅用于维护协议工程回放。"
+      ],
+      "prior_body": {
+        "party_name": "合成抽取主体01",
+        "case_summary": "罚款六十万元。"
+      }
+    },
+    {
+      "id": "extraction02",
+      "category": "extraction_correction",
+      "event_type": "extraction_correction",
+      "example_only": true,
+      "expected_status": "engineering_complete",
+      "record_kind": "case",
+      "operation": "revise",
+      "target_id": "FIX-extraction02",
+      "body": {
+        "party_name": "合成抽取主体02",
+        "case_summary": "罚款六万元。"
+      },
+      "reason": "同一合成原件字节，旧抽取误增“十”，新抽取纠正；不是来源更正。",
+      "search_query": "extraction02",
+      "source_texts": [
+        "【合成工程夹具；无真实案件或法规效力】extraction02历史版\nparty_name=合成抽取主体02\ncase_summary=罚款六十万元。\n仅用于维护协议工程回放。",
+        "【合成工程夹具；无真实案件或法规效力】extraction02\nparty_name=合成抽取主体02\ncase_summary=罚款六万元。\n仅用于维护协议工程回放。"
+      ],
+      "prior_body": {
+        "party_name": "合成抽取主体02",
+        "case_summary": "罚款六十万元。"
+      }
+    },
+    {
+      "id": "duplicate01",
+      "category": "duplicate_relation",
+      "event_type": "duplicate_relation",
+      "example_only": true,
+      "expected_status": "engineering_complete",
+      "record_kind": "relation",
+      "operation": "relate",
+      "target_id": "FIX-duplicate01",
+      "body": {
+        "relation_type": "duplicate_of",
+        "source_id": "FIX-duplicate01-a",
+        "target_id": "FIX-duplicate01-b"
+      },
+      "reason": "合成工程夹具：duplicate_relation",
+      "search_query": "duplicate01",
+      "source_texts": [
+        "【合成工程夹具；无真实案件或法规效力】duplicate01\nrelation_type=duplicate_of\nsource_id=FIX-duplicate01-a\ntarget_id=FIX-duplicate01-b\n仅用于维护协议工程回放。"
+      ],
+      "seed_records": [
+        {
+          "id": "FIX-duplicate01-a",
+          "kind": "case",
+          "body": {
+            "party_name": "合成关系主体",
+            "case_summary": "同案或重复关系的合成种子记录。"
+          }
+        },
+        {
+          "id": "FIX-duplicate01-b",
+          "kind": "case",
+          "body": {
+            "party_name": "合成关系主体",
+            "case_summary": "同案或重复关系的合成种子记录。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "duplicate02",
+      "category": "duplicate_relation",
+      "event_type": "duplicate_relation",
+      "example_only": true,
+      "expected_status": "engineering_complete",
+      "record_kind": "relation",
+      "operation": "relate",
+      "target_id": "FIX-duplicate02",
+      "body": {
+        "relation_type": "same_case",
+        "source_id": "FIX-duplicate02-a",
+        "target_id": "FIX-duplicate02-b"
+      },
+      "reason": "合成工程夹具：duplicate_relation",
+      "search_query": "duplicate02",
+      "source_texts": [
+        "【合成工程夹具；无真实案件或法规效力】duplicate02\nrelation_type=same_case\nsource_id=FIX-duplicate02-a\ntarget_id=FIX-duplicate02-b\n仅用于维护协议工程回放。"
+      ],
+      "seed_records": [
+        {
+          "id": "FIX-duplicate02-a",
+          "kind": "case",
+          "body": {
+            "party_name": "合成关系主体",
+            "case_summary": "同案或重复关系的合成种子记录。"
+          }
+        },
+        {
+          "id": "FIX-duplicate02-b",
+          "kind": "case",
+          "body": {
+            "party_name": "合成关系主体",
+            "case_summary": "同案或重复关系的合成种子记录。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "law01",
+      "category": "law_revision",
+      "event_type": "law_revision",
+      "example_only": true,
+      "expected_status": "engineering_complete",
+      "record_kind": "law_article",
+      "operation": "revise",
+      "target_id": "FIX-law01",
+      "body": {
+        "text": "合成条例：仅示意新适用范围，无真实效力。",
+        "legal_status": "unknown",
+        "effective_from": "2030-01-01",
+        "effective_to": null,
+        "applicability": {
+          "scope": "合成新范围",
+          "example_only": true
+        }
+      },
+      "reason": "无真实法规更正或撤回证据；明确合成，legal_status=unknown，不作生产法律事实。",
+      "search_query": "law01",
+      "source_texts": [
+        "【合成工程夹具；无真实案件或法规效力】law01历史版\ntext=合成条例：仅示意旧适用范围，无真实效力。\nlegal_status=unknown\neffective_from=null\neffective_to=null\napplicability={\"scope\":\"合成旧范围\"}\n仅用于维护协议工程回放。",
+        "【合成工程夹具；无真实案件或法规效力】law01\ntext=合成条例：仅示意新适用范围，无真实效力。\nlegal_status=unknown\neffective_from=2030-01-01\neffective_to=null\napplicability={\"example_only\":true,\"scope\":\"合成新范围\"}\n仅用于维护协议工程回放。"
+      ],
+      "prior_body": {
+        "text": "合成条例：仅示意旧适用范围，无真实效力。",
+        "legal_status": "unknown",
+        "effective_from": null,
+        "effective_to": null,
+        "applicability": {
+          "scope": "合成旧范围"
+        }
+      }
+    },
+    {
+      "id": "law02",
+      "category": "law_revision",
+      "event_type": "law_revision",
+      "example_only": true,
+      "expected_status": "engineering_complete",
+      "record_kind": "law_article",
+      "operation": "revise",
+      "target_id": "FIX-law02",
+      "body": {
+        "text": "合成条例：仅示意新适用范围，无真实效力。",
+        "legal_status": "unknown",
+        "effective_from": null,
+        "effective_to": null,
+        "applicability": {
+          "scope": "合成新范围",
+          "example_only": true
+        }
+      },
+      "reason": "无真实法规更正或撤回证据；明确合成，legal_status=unknown，不作生产法律事实。",
+      "search_query": "law02",
+      "source_texts": [
+        "【合成工程夹具；无真实案件或法规效力】law02历史版\ntext=合成条例：仅示意旧适用范围，无真实效力。\nlegal_status=unknown\neffective_from=null\neffective_to=null\napplicability={\"scope\":\"合成旧范围\"}\n仅用于维护协议工程回放。",
+        "【合成工程夹具；无真实案件或法规效力】law02\ntext=合成条例：仅示意新适用范围，无真实效力。\nlegal_status=unknown\neffective_from=null\neffective_to=null\napplicability={\"example_only\":true,\"scope\":\"合成新范围\"}\n仅用于维护协议工程回放。"
+      ],
+      "prior_body": {
+        "text": "合成条例：仅示意旧适用范围，无真实效力。",
+        "legal_status": "unknown",
+        "effective_from": null,
+        "effective_to": null,
+        "applicability": {
+          "scope": "合成旧范围"
+        }
+      }
+    },
+    {
+      "id": "deactivate01",
+      "category": "deactivation",
+      "event_type": "deactivation",
+      "example_only": true,
+      "expected_status": "engineering_complete",
+      "record_kind": "case",
+      "operation": "deactivate",
+      "target_id": "FIX-deactivate01",
+      "body": {
+        "party_name": "合成停用主体",
+        "case_summary": "该记录仅为停用工程样例。",
+        "active": false
+      },
+      "reason": "合成停用模拟：只生成候选，不改既有canonical或发布。",
+      "search_query": "deactivate01",
+      "source_texts": [
+        "【合成工程夹具；无真实案件或法规效力】deactivate01历史版\nparty_name=合成停用主体\ncase_summary=该记录仅为停用工程样例。\nactive=true\n仅用于维护协议工程回放。",
+        "【合成工程夹具；无真实案件或法规效力】deactivate01\nparty_name=合成停用主体\ncase_summary=该记录仅为停用工程样例。\nactive=false\n仅用于维护协议工程回放。"
+      ],
+      "prior_body": {
+        "party_name": "合成停用主体",
+        "case_summary": "该记录仅为停用工程样例。",
+        "active": true
+      }
+    },
+    {
+      "id": "insufficient01",
+      "category": "insufficient_evidence",
+      "event_type": "conflict_report",
+      "example_only": true,
+      "expected_status": "needs_evidence",
+      "record_kind": "case",
+      "operation": "add",
+      "target_id": "FIX-insufficient01",
+      "body": {
+        "party_name": "合成证据不足主体",
+        "case_summary": "仅有未核实摘要，缺少可核验原件。"
+      },
+      "reason": "合成工程夹具：insufficient_evidence",
+      "search_query": "insufficient01",
+      "source_texts": [
+        "【合成工程夹具；无真实案件或法规效力】insufficient01\nparty_name=合成证据不足主体\ncase_summary=仅有未核实摘要，缺少可核验原件。\n仅用于维护协议工程回放。"
+      ]
+    },
+    {
+      "id": "permission01",
+      "category": "permission",
+      "event_type": "conflict_report",
+      "example_only": true,
+      "expected_status": "authorization_rejected",
+      "record_kind": "case",
+      "operation": "add",
+      "target_id": "FIX-permission01",
+      "body": {
+        "party_name": "合成跨域私有主体",
+        "case_summary": "permission01：仅team-secret可见的工程样例。"
+      },
+      "reason": "公开调用方跨域私有读必须被拒绝；直接工具检查，不冒充私有service回放。",
+      "search_query": "permission01",
+      "source_texts": [
+        "【合成工程夹具；无真实案件或法规效力】permission01\nparty_name=合成跨域私有主体\ncase_summary=permission01：仅team-secret可见的工程样例。\n仅用于维护协议工程回放。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "decision": "approve",
+  "claim_checks": [
+    {
+      "claim_id": "claim:codex12-B039:case:subject",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616",
+          "quote": "山东远通兴华保险代理有限公司"
+        }
+      ],
+      "comment": "完整原文支持该事实及引文，主体归属一致。"
+    },
+    {
+      "claim_id": "claim:codex12-B039:case:document_number",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B039:L0003:b7dee6a36c99e616:b7dee6a36c99e616",
+          "quote": "临金罚决字〔2026〕31号"
+        }
+      ],
+      "comment": "完整原文支持该事实及引文，主体归属一致。"
+    },
+    {
+      "claim_id": "claim:codex12-B039:case:decision_date",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B039:L0011:b7dee6a36c99e616:b7dee6a36c99e616",
+          "quote": "2026年8月13日"
+        }
+      ],
+      "comment": "完整原文支持该事实及引文，主体归属一致。"
+    },
+    {
+      "claim_id": "claim:codex12-B039:case:authority",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B039:L0009:b7dee6a36c99e616:b7dee6a36c99e616",
+          "quote": "国家金融监督管理总局临沂监管分局"
+        }
+      ],
+      "comment": "完整原文支持该事实及引文，主体归属一致。"
+    },
+    {
+      "claim_id": "claim:codex12-B039:case:position",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616",
+          "quote": "山东远通兴华保险代理有限公司"
+        }
+      ],
+      "comment": "已核对完整原文，相关信息未披露，null及未知项保留适当。"
+    },
+    {
+      "claim_id": "claim:codex12-B039:case:legal_basis",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616",
+          "quote": "给予投保人保险合同约定以外的利益、收取保险公司工作人员给予的合同约定外酬金、未开立独立的佣金收取账户"
+        }
+      ],
+      "comment": "已核对完整原文，相关信息未披露，null及未知项保留适当。"
+    },
+    {
+      "claim_id": "claim:codex12-B039:case:penalties",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B039:L0007:b7dee6a36c99e616:b7dee6a36c99e616",
+          "quote": "警告并罚款11万元"
+        }
+      ],
+      "comment": "完整原文支持该事实及引文，主体归属一致。"
+    },
+    {
+      "claim_id": "claim:codex12-B039:case:unknowns",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616",
+          "quote": "给予投保人保险合同约定以外的利益、收取保险公司工作人员给予的合同约定外酬金、未开立独立的佣金收取账户"
+        }
+      ],
+      "comment": "已核对完整原文，相关信息未披露，null及未知项保留适当。"
+    },
+    {
+      "claim_id": "claim:codex12-B039:behaviors:0:actor",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616",
+          "quote": "山东远通兴华保险代理有限公司"
+        }
+      ],
+      "comment": "完整原文支持该事实及引文，主体归属一致。"
+    },
+    {
+      "claim_id": "claim:codex12-B039:behaviors:0:role",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616",
+          "quote": "山东远通兴华保险代理有限公司"
+        }
+      ],
+      "comment": "完整原文支持该事实及引文，主体归属一致。"
+    },
+    {
+      "claim_id": "claim:codex12-B039:behaviors:0:action",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616",
+          "quote": "给予投保人保险合同约定以外的利益"
+        }
+      ],
+      "comment": "完整原文支持该事实及引文，主体归属一致。"
+    },
+    {
+      "claim_id": "claim:codex12-B039:behaviors:0:risk_tags",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616",
+          "quote": "给予投保人保险合同约定以外的利益"
+        }
+      ],
+      "comment": "已按完整标签定义核验：首项满足合同外利益；收取酬金和未开独立账户均无具体标签必要要件，零标签适当。"
+    },
+    {
+      "claim_id": "claim:codex12-B039:behaviors:0:unknowns",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616",
+          "quote": "给予投保人保险合同约定以外的利益"
+        }
+      ],
+      "comment": "已核对完整原文，相关信息未披露，null及未知项保留适当。"
+    },
+    {
+      "claim_id": "claim:codex12-B039:behaviors:1:actor",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616",
+          "quote": "山东远通兴华保险代理有限公司"
+        }
+      ],
+      "comment": "完整原文支持该事实及引文，主体归属一致。"
+    },
+    {
+      "claim_id": "claim:codex12-B039:behaviors:1:role",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616",
+          "quote": "山东远通兴华保险代理有限公司"
+        }
+      ],
+      "comment": "完整原文支持该事实及引文，主体归属一致。"
+    },
+    {
+      "claim_id": "claim:codex12-B039:behaviors:1:action",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616",
+          "quote": "收取保险公司工作人员给予的合同约定外酬金"
+        }
+      ],
+      "comment": "完整原文支持该事实及引文，主体归属一致。"
+    },
+    {
+      "claim_id": "claim:codex12-B039:behaviors:1:risk_tags",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616",
+          "quote": "收取保险公司工作人员给予的合同约定外酬金"
+        }
+      ],
+      "comment": "已按完整标签定义核验：首项满足合同外利益；收取酬金和未开独立账户均无具体标签必要要件，零标签适当。"
+    },
+    {
+      "claim_id": "claim:codex12-B039:behaviors:1:unknowns",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616",
+          "quote": "收取保险公司工作人员给予的合同约定外酬金"
+        }
+      ],
+      "comment": "已核对完整原文，相关信息未披露，null及未知项保留适当。"
+    },
+    {
+      "claim_id": "claim:codex12-B039:behaviors:2:actor",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616",
+          "quote": "山东远通兴华保险代理有限公司"
+        }
+      ],
+      "comment": "完整原文支持该事实及引文，主体归属一致。"
+    },
+    {
+      "claim_id": "claim:codex12-B039:behaviors:2:role",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B039:L0001:b7dee6a36c99e616:b7dee6a36c99e616",
+          "quote": "山东远通兴华保险代理有限公司"
+        }
+      ],
+      "comment": "完整原文支持该事实及引文，主体归属一致。"
+    },
+    {
+      "claim_id": "claim:codex12-B039:behaviors:2:action",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616",
+          "quote": "未开立独立的佣金收取账户"
+        }
+      ],
+      "comment": "完整原文支持该事实及引文，主体归属一致。"
+    },
+    {
+      "claim_id": "claim:codex12-B039:behaviors:2:risk_tags",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616",
+          "quote": "未开立独立的佣金收取账户"
+        }
+      ],
+      "comment": "已按完整标签定义核验：首项满足合同外利益；收取酬金和未开独立账户均无具体标签必要要件，零标签适当。"
+    },
+    {
+      "claim_id": "claim:codex12-B039:behaviors:2:unknowns",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B039:L0005:b7dee6a36c99e616:b7dee6a36c99e616",
+          "quote": "未开立独立的佣金收取账户"
+        }
+      ],
+      "comment": "已核对完整原文，相关信息未披露，null及未知项保留适当。"
+    }
+  ],
+  "omission_check_completed": true,
+  "issues": []
+}

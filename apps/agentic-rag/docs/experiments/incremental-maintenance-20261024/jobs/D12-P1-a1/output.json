@@ -1,0 +1,29 @@
+{
+  "schema": "codex-incremental/1",
+  "action": "exclude_from_penalty",
+  "reason": "已全文核查：当事人为平安银行股份有限公司盐城分行及相关责任人员，案由为信贷业务管理不到位、汽车金融业务管理不审慎，属于银行信贷及汽车金融处罚，未载明保险业务违法事实，故排除出保险处罚审查范围。按机构全称检索旧库未命中；该结果仅限所查主体范围，不证明全库不存在重复，不调整旧记录。",
+  "case_cards": [],
+  "behavior_cards": [],
+  "targets": [],
+  "relations": [],
+  "uncertainties": [
+    "原文未载文号、个人具体职务、两名个人各自罚款金额及逐项行为归属。"
+  ],
+  "evidence": [
+    {
+      "source_id": "FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb",
+      "segment_id": "FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb:L0001",
+      "quote": "当事人: 平安银行股份有限公司盐城分行及相关责任人员"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb",
+      "segment_id": "FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb:L0003",
+      "quote": "信贷业务管理不到位、汽车金融业务管理不审慎"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb",
+      "segment_id": "FRV2-SOURCE-WEB-728ab051af65196c153df4916e6b0472-dd2c1730033c721e59afc5fb:L0005",
+      "quote": "对平安银行股份有限公司盐城分行罚款65万元。对王玉成、张弦警告并罚款共计10万元。"
+    }
+  ]
+}

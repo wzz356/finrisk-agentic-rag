@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "action": "no_change",
+  "reason": "已完整读取旧库 FRV2-SOURCE-F006485-1f05a8186df09e487a899c36（718码点，无后页），与本原文为同一金罚决字〔2024〕5号决定：主体、2024年5月14日日期、总局机关、六项违法事实、法律依据、机构681万元（总公司221万元、分支机构460万元）及25名责任人员各项警告罚款均一致。仅排版、标点不同，属于独立旧决定重现，不新增、不更正旧事实。",
+  "production_admission": false,
+  "tool_calls": 4,
+  "output_sha256": "6bdab5c8e4eb09a92c263c058572ad63d0d3cbe5dccf3dd797d50ad89b836fdf"
+}

@@ -1,0 +1,8 @@
+{
+  "valid": true,
+  "action": "no_change",
+  "reason": "已完整读取原文，并检索、完整读取旧库FRV2-SOURCE-F007749-df1b624de8c8271f7ddd8dd1（715字符，next_start=null）。旧文书金罚决字〔2023〕55号与本原文的九名/家当事人、八项违法事实、保险法六项条款、逐项处罚、国家金融监督管理总局及2023年12月28日均一致，仅换行及标点格式不同，是独立旧决定重现，无需新增。未将其他带地区前缀文号当作同号。",
+  "production_admission": false,
+  "tool_calls": 3,
+  "output_sha256": "b01bd953ffe0a2bd6488736314a76e027d92e415a2df86605c3ad4185ce05244"
+}

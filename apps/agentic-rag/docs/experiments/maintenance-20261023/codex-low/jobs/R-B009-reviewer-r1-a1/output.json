@@ -1,0 +1,154 @@
+{
+  "decision": "approve",
+  "claim_checks": [
+    {
+      "claim_id": "claim:batch100-B009:case:subject",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B009:L0001:273e209021fbd316:273e209021fbd316",
+          "quote": "当事人: 太平人寿保险有限公司葫芦岛中心支公司"
+        }
+      ],
+      "comment": "字段值及事实类型与完整原文和所引文本一致。"
+    },
+    {
+      "claim_id": "claim:batch100-B009:case:document_number",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B009:L0003:273e209021fbd316:273e209021fbd316",
+          "quote": "葫金监罚决〔2026〕3号"
+        }
+      ],
+      "comment": "字段值及事实类型与完整原文和所引文本一致。"
+    },
+    {
+      "claim_id": "claim:batch100-B009:case:decision_date",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B009:L0011:273e209021fbd316:273e209021fbd316",
+          "quote": "2026年7月6日"
+        }
+      ],
+      "comment": "字段值及事实类型与完整原文和所引文本一致。"
+    },
+    {
+      "claim_id": "claim:batch100-B009:case:authority",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B009:L0009:273e209021fbd316:273e209021fbd316",
+          "quote": "葫芦岛金融监管分局"
+        }
+      ],
+      "comment": "字段值及事实类型与完整原文和所引文本一致。"
+    },
+    {
+      "claim_id": "claim:batch100-B009:case:position",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B009:L0001:273e209021fbd316:273e209021fbd316",
+          "quote": "当事人: 太平人寿保险有限公司葫芦岛中心支公司"
+        }
+      ],
+      "comment": "完整原文仅列机构，未载职务；null及不确定性合理。"
+    },
+    {
+      "claim_id": "claim:batch100-B009:case:legal_basis",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B009:L0005:273e209021fbd316:273e209021fbd316",
+          "quote": "财务业务数据不真实"
+        }
+      ],
+      "comment": "完整原文未列法律依据，保留null合理。"
+    },
+    {
+      "claim_id": "claim:batch100-B009:case:penalties",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B009:L0007:273e209021fbd316:273e209021fbd316",
+          "quote": "责令改正，处罚款十二万元"
+        }
+      ],
+      "comment": "字段值及事实类型与完整原文和所引文本一致。"
+    },
+    {
+      "claim_id": "claim:batch100-B009:case:unknowns",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B009:L0001:273e209021fbd316:273e209021fbd316",
+          "quote": "当事人: 太平人寿保险有限公司葫芦岛中心支公司"
+        },
+        {
+          "segment_id": "B009:L0005:273e209021fbd316:273e209021fbd316",
+          "quote": "财务业务数据不真实"
+        }
+      ],
+      "comment": "完整原文未载职务及法律依据，未知字段记录充分。"
+    },
+    {
+      "claim_id": "claim:batch100-B009:behaviors:0:actor",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B009:L0001:273e209021fbd316:273e209021fbd316",
+          "quote": "当事人: 太平人寿保险有限公司葫芦岛中心支公司"
+        }
+      ],
+      "comment": "机构当事人对应所列违法案由，未推断个人实施。"
+    },
+    {
+      "claim_id": "claim:batch100-B009:behaviors:0:role",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B009:L0001:273e209021fbd316:273e209021fbd316",
+          "quote": "当事人: 太平人寿保险有限公司葫芦岛中心支公司"
+        }
+      ],
+      "comment": "当事人为保险公司分支机构，institution受支持。"
+    },
+    {
+      "claim_id": "claim:batch100-B009:behaviors:0:action",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B009:L0005:273e209021fbd316:273e209021fbd316",
+          "quote": "财务业务数据不真实"
+        }
+      ],
+      "comment": "字段值及事实类型与完整原文和所引文本一致。"
+    },
+    {
+      "claim_id": "claim:batch100-B009:behaviors:0:risk_tags",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B009:L0005:273e209021fbd316:273e209021fbd316",
+          "quote": "财务业务数据不真实"
+        }
+      ],
+      "comment": "案由未说明虚列费用、客户信息或销售行为等必要条件；按字典其他类型违规归入其他，未补造细节。"
+    },
+    {
+      "claim_id": "claim:batch100-B009:behaviors:0:unknowns",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B009:L0005:273e209021fbd316:273e209021fbd316",
+          "quote": "财务业务数据不真实"
+        }
+      ],
+      "comment": "完整原文仅列概括案由，具体数据项及方式确实未知。"
+    }
+  ],
+  "omission_check_completed": true,
+  "issues": []
+}

@@ -1,0 +1,46 @@
+{
+  "model_version": "DeepSeek-V4.1-Flash",
+  "repo_commit": "5254448103b6254fc646dacbca1cbbf20e9216c1",
+  "license": "MIT",
+  "sdk_version": "1.2.0",
+  "tokenizers_version": "0.23.1",
+  "thinking_mode": "chat",
+  "add_special_tokens": false,
+  "assets": [
+    {
+      "file": "tokenizer.json",
+      "sha256": "c90dfa01249db1be4245780a052ede752e1361c612ac6d08e2bdada7d599476b",
+      "bytes": 6367257,
+      "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/5254448103b6254fc646dacbca1cbbf20e9216c1/tokenizer.json",
+      "repo_commit": "5254448103b6254fc646dacbca1cbbf20e9216c1"
+    },
+    {
+      "file": "encoding.py",
+      "sha256": "502bdaec8a3fd88ebc24c4721a7038fbe42f2063c664638127056107920035c1",
+      "bytes": 37316,
+      "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/main/encoding/encoding.py",
+      "repo_commit": "5254448103b6254fc646dacbca1cbbf20e9216c1"
+    },
+    {
+      "file": "tokenizer_config.json",
+      "sha256": "6ac8c8dc065ed118161d02dd532749ae3f52c243deac27872134fae2f50d8547",
+      "bytes": 801,
+      "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/5254448103b6254fc646dacbca1cbbf20e9216c1/tokenizer_config.json",
+      "repo_commit": "5254448103b6254fc646dacbca1cbbf20e9216c1"
+    },
+    {
+      "file": "chat_template.jinja",
+      "sha256": "d959d804d5101b79a49b6ff1bf3c54cd5affa9a5a78c503d925f3090040b31c3",
+      "bytes": 15348,
+      "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/5254448103b6254fc646dacbca1cbbf20e9216c1/chat_template.jinja",
+      "repo_commit": "5254448103b6254fc646dacbca1cbbf20e9216c1"
+    },
+    {
+      "file": "LICENSE",
+      "sha256": "f2c6c602815669d292889e5be8c802f2ed950653b77999b1584e8e6aed25d040",
+      "bytes": 1084,
+      "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/resolve/5254448103b6254fc646dacbca1cbbf20e9216c1/LICENSE",
+      "repo_commit": "5254448103b6254fc646dacbca1cbbf20e9216c1"
+    }
+  ]
+}

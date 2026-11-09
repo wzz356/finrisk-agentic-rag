@@ -1,0 +1,154 @@
+{
+  "decision": "approve",
+  "claim_checks": [
+    {
+      "claim_id": "claim:codex12-B003:case:subject",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B003:L0001:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "quote": "当事人: 健科保险经纪有限公司新疆分公司及相关责任人"
+        },
+        {
+          "segment_id": "B003:L0005:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "quote": "对该分公司罚款10万元。对张青警告并罚款3万元"
+        }
+      ],
+      "comment": "主体与处罚段联合支持，张青仅列责任人。"
+    },
+    {
+      "claim_id": "claim:codex12-B003:case:document_number",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B003:L0011:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "quote": "新疆金融监管局行政处罚信息公示列表"
+        }
+      ],
+      "comment": "完整原文未载文号，保留null合理。"
+    },
+    {
+      "claim_id": "claim:codex12-B003:case:decision_date",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B003:L0009:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "quote": "2026年7月8日"
+        }
+      ],
+      "comment": "处罚日期原文直接支持。"
+    },
+    {
+      "claim_id": "claim:codex12-B003:case:authority",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B003:L0007:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "quote": "新疆金融监管局"
+        }
+      ],
+      "comment": "机关名称原文直接支持。"
+    },
+    {
+      "claim_id": "claim:codex12-B003:case:position",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B003:L0001:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "quote": "当事人: 健科保险经纪有限公司新疆分公司及相关责任人"
+        }
+      ],
+      "comment": "完整原文未载个人任职，未从旧案迁移。"
+    },
+    {
+      "claim_id": "claim:codex12-B003:case:legal_basis",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B003:L0003:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "quote": "利用业务便利为其他机构或者个人牟取不正当利益"
+        }
+      ],
+      "comment": "完整原文未载法律依据，保留null合理。"
+    },
+    {
+      "claim_id": "claim:codex12-B003:case:penalties",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B003:L0005:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "quote": "对该分公司罚款10万元。对张青警告并罚款3万元"
+        }
+      ],
+      "comment": "分公司罚款10万元，张青警告并罚款3万元，均准确。"
+    },
+    {
+      "claim_id": "claim:codex12-B003:case:unknowns",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B003:L0011:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "quote": "新疆金融监管局行政处罚信息公示列表"
+        }
+      ],
+      "comment": "完整原文确认这些字段缺失。"
+    },
+    {
+      "claim_id": "claim:codex12-B003:behaviors:0:actor",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B003:L0003:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "quote": "利用业务便利为其他机构或者个人牟取不正当利益"
+        }
+      ],
+      "comment": "案由未明确实施者，未由个人受罚推断亲自实施。"
+    },
+    {
+      "claim_id": "claim:codex12-B003:behaviors:0:role",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B003:L0003:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "quote": "利用业务便利为其他机构或者个人牟取不正当利益"
+        }
+      ],
+      "comment": "未明确实施者，unspecified与不确定性一致。"
+    },
+    {
+      "claim_id": "claim:codex12-B003:behaviors:0:action",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B003:L0003:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "quote": "利用业务便利为其他机构或者个人牟取不正当利益"
+        }
+      ],
+      "comment": "案由原文直接支持且无添加目的或渠道。"
+    },
+    {
+      "claim_id": "claim:codex12-B003:behaviors:0:risk_tags",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B003:L0003:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "quote": "利用业务便利为其他机构或者个人牟取不正当利益"
+        }
+      ],
+      "comment": "完整字典中其他适用于此违规；无证据满足更具体标签必要条件。"
+    },
+    {
+      "claim_id": "claim:codex12-B003:behaviors:0:unknowns",
+      "verdict": "supported",
+      "citations": [
+        {
+          "segment_id": "B003:L0003:05ad4426ea7bf82b:05ad4426ea7bf82b",
+          "quote": "利用业务便利为其他机构或者个人牟取不正当利益"
+        }
+      ],
+      "comment": "具体实施者、利益方式及受益者身份均未载明。"
+    }
+  ],
+  "omission_check_completed": true,
+  "issues": []
+}

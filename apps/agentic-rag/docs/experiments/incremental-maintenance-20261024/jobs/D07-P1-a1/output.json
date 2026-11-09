@@ -1,0 +1,139 @@
+{
+  "schema": "codex-incremental/1",
+  "action": "add",
+  "reason": "新文为张涛（时任太平人寿庆阳中支个险本部临时负责人、经理）的保险行政处罚，文号庆金监行处〔2026〕49号。完整阅读新文后，按完整文号、太平人寿庆阳、张涛及太平人寿检索旧库；完整文号与明确机构主干未命中，姓名候选涉及其他机构，太平人寿宽泛检索存在多项候选，尚不能声称全库无重复。现有证据支持新增个人处罚记录，不支持更正或撤销旧案；个人受罚不等同于亲自实施资料保管违规。",
+  "case_cards": [
+    {
+      "local_id": "case-1",
+      "subject": "张涛",
+      "document_number": "庆金监行处〔2026〕49号",
+      "decision_date": "2026-07-03",
+      "authority": "国家金融监督管理总局庆阳监管分局",
+      "penalties": [
+        {
+          "text": "警告并处罚款0.5万元",
+          "subject": "张涛",
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+              "segment_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:L0001",
+              "quote": "当事人: 张涛（时任太平人寿庆阳中支个险本部临时负责人、经理）"
+            },
+            {
+              "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+              "segment_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:L0007",
+              "quote": "警告并处罚款0.5万元"
+            }
+          ]
+        }
+      ],
+      "summary": "张涛（时任太平人寿庆阳中支个险本部临时负责人、经理）因未按照规定保管业务经营活动有关资料相关事项，被警告并处罚款0.5万元。原文未明确其亲自实施行为或具体责任形式。",
+      "unknowns": [
+        "具体责任形式",
+        "亲自实施人与具体保管环节"
+      ],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+          "segment_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:L0001",
+          "quote": "当事人: 张涛（时任太平人寿庆阳中支个险本部临时负责人、经理）"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+          "segment_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:L0003",
+          "quote": "庆金监行处〔2026〕49号"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+          "segment_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:L0005",
+          "quote": "未按照规定保管业务经营活动有关资料"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+          "segment_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:L0007",
+          "quote": "警告并处罚款0.5万元"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+          "segment_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:L0009",
+          "quote": "国家金融监督管理总局庆阳监管分局"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+          "segment_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:L0011",
+          "quote": "2026年7月3日"
+        }
+      ]
+    }
+  ],
+  "behavior_cards": [
+    {
+      "local_id": "behavior-1",
+      "case_id": "case-1",
+      "actor": null,
+      "actor_role": "具体实施人及其角色未载明；张涛为受罚当事人，时任太平人寿庆阳中支个险本部临时负责人、经理。",
+      "summary": "未按照规定保管业务经营活动有关资料；原文未明确具体实施人、资料类别、保管方式或张涛的具体责任形式。",
+      "risk_tags": [],
+      "unknowns": [
+        "actor",
+        "具体资料类别",
+        "具体保管违规方式",
+        "张涛的具体责任形式"
+      ],
+      "conditions": [],
+      "negations": [],
+      "exceptions": [],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+          "segment_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:L0001",
+          "quote": "当事人: 张涛（时任太平人寿庆阳中支个险本部临时负责人、经理）"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+          "segment_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:L0005",
+          "quote": "未按照规定保管业务经营活动有关资料"
+        }
+      ]
+    }
+  ],
+  "targets": [],
+  "relations": [],
+  "uncertainties": [
+    "太平人寿宽泛检索有161项候选，仅查看首屏检索预览，未全文读取旧源，不建立新旧关系。",
+    "原文只列个人受罚与案由，不能认定张涛亲自实施资料保管违规。",
+    "资料保管违规不满足现有具体风险标签的必要要件，保留零标签。"
+  ],
+  "evidence": [
+    {
+      "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+      "segment_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:L0001",
+      "quote": "当事人: 张涛（时任太平人寿庆阳中支个险本部临时负责人、经理）"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+      "segment_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:L0003",
+      "quote": "庆金监行处〔2026〕49号"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+      "segment_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:L0005",
+      "quote": "未按照规定保管业务经营活动有关资料"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+      "segment_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:L0007",
+      "quote": "警告并处罚款0.5万元"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+      "segment_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:L0009",
+      "quote": "国家金融监督管理总局庆阳监管分局"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9",
+      "segment_id": "FRV2-SOURCE-WEB-65c3a402aac773bd883d9436bfbbf826-378f73867da745d47c9a39b9:L0011",
+      "quote": "2026年7月3日"
+    }
+  ]
+}

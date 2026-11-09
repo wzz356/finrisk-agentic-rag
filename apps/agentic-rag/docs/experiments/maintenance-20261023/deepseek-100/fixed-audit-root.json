@@ -1,0 +1,58 @@
+{
+  "kind": "Codex_independent_text_review_not_human_gold",
+  "sample_selection": "first10_of_frozen20_before_outputs",
+  "manifest_sha256": "efa8715fe711a3deafdecdd4b54e1decda11d5f931b9dbdb8c8dc5341dc80f04",
+  "rows": [
+    {
+      "id": "B021",
+      "finding": "call_failure_no_pr",
+      "note": "原文及初稿主体、文号、日期、罚款一致，虚假理赔保留0标签；Reviewer调用失败，没有最终批准，不能算语义通过。"
+    },
+    {
+      "id": "B017",
+      "finding": "no_obvious_substantive_issue_in_checked_fields",
+      "note": "两项事实分卡记录；代理人管理与欺骗投保人标签对应原文，基本元数据及8万元处罚一致；仅局部抽查，未验证所有历史关联。"
+    },
+    {
+      "id": "B039",
+      "finding": "no_obvious_substantive_issue_in_checked_fields",
+      "note": "三项行为独立记录；仅给投保人合同外利益贴合同外利益，收取工作人员外酬金没有错贴该标签；处罚与基本信息一致。"
+    },
+    {
+      "id": "B059",
+      "finding": "reviewer_actor_oscillation_not_approved",
+      "note": "Reviewer纠正了把未登记个人贴为无资质机构的错误；但第一轮要求机构actor改张娟，第二轮又要求个人改机构/未知。原文没有充分实施归属，宜保留未知而非往返替换。最终未批准，不能记作已成功纠正。"
+    },
+    {
+      "id": "B055",
+      "finding": "call_failure_no_proposal",
+      "note": "Proposer提交调用失败，无业务提案。此样本属于工程故障，不判断语义正确性。"
+    },
+    {
+      "id": "B066",
+      "finding": "no_obvious_substantive_issue_in_checked_fields",
+      "note": "当事人叶珅、职务、文号、1.5万元处罚及欺骗投保人案由与原文一致，并保留具体方式等未知；role为责任人，不等于额外认定其亲自实施所有行为。"
+    },
+    {
+      "id": "B088",
+      "finding": "over_conservative_hold_unreviewed",
+      "note": "提案已明确旧案2024年、新案2026年，责任人/金额不同且不能视为同案，却以案由相近宣称真实冲突并hold。缺文号可保留待核，不能仅此推出旧新事实矛盾。该hold未经过Reviewer。"
+    },
+    {
+      "id": "B003",
+      "finding": "over_conservative_hold_unreviewed",
+      "note": "旧案2023年张青2万元，新案2026年分公司10万/张青3万，未见更正关系；差异可为不同处罚，不足证明同一事实冲突。保留身份待核有价值，直接因相似案由搁置过于保守，且未经过Reviewer。"
+    },
+    {
+      "id": "B090",
+      "finding": "partial_tag_correction_budget_stopped",
+      "note": "Reviewer正确指出报告/报表不真实不等于客户信息不真实，修订已改其他；对捆绑销售是否满足诱导投保有保守边界，不能视为唯一金标。多主体长处罚的修订随后触发单事件预算，无最终审核，不计成功入库。"
+    },
+    {
+      "id": "B004",
+      "finding": "citation_coverage_protocol_block",
+      "note": "九项事实、多主体分项处罚的提案最终仍触发case/penalties逐段引用覆盖校验，格式修正耗尽；没有可接纳PR结果。不能把协议阻断算成原文不存在或语义正确。"
+    }
+  ],
+  "disclaimer": "No accuracy rate; only source/case/behavior/tag checks described per row. Does not publish or correct model outputs."
+}

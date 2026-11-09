@@ -1,0 +1,32 @@
+{
+  "schema": "codex-incremental/1",
+  "action": "exclude_from_penalty",
+  "reason": "已完整阅读新文，并按完整文号沪金罚决字〔2026〕85号检索旧库，所查范围未命中，不能据此断言全库无重复。本文当事人为黄俊，时任交通银行股份有限公司上海浦东分行对公客户经理，案由为员工行为管理严重违反审慎经营规则，处罚为禁止从事银行业工作十年，明确属于银行业务行政处罚，不属于本次保险处罚审查范围。未核实旧文，不建立旧源关系或修改旧卡。",
+  "case_cards": [],
+  "behavior_cards": [],
+  "targets": [],
+  "relations": [],
+  "uncertainties": [],
+  "evidence": [
+    {
+      "source_id": "FRV2-SOURCE-WEB-621de61b089171eb0fd4bee1ae21a85b-8e1b963c35973b02e4d58123",
+      "segment_id": "FRV2-SOURCE-WEB-621de61b089171eb0fd4bee1ae21a85b-8e1b963c35973b02e4d58123:L0001",
+      "quote": "当事人: 黄俊（时任交通银行股份有限公司上海浦东分行对公客户经理）"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-621de61b089171eb0fd4bee1ae21a85b-8e1b963c35973b02e4d58123",
+      "segment_id": "FRV2-SOURCE-WEB-621de61b089171eb0fd4bee1ae21a85b-8e1b963c35973b02e4d58123:L0003",
+      "quote": "沪金罚决字〔2026〕85号"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-621de61b089171eb0fd4bee1ae21a85b-8e1b963c35973b02e4d58123",
+      "segment_id": "FRV2-SOURCE-WEB-621de61b089171eb0fd4bee1ae21a85b-8e1b963c35973b02e4d58123:L0005",
+      "quote": "员工行为管理严重违反审慎经营规则"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-621de61b089171eb0fd4bee1ae21a85b-8e1b963c35973b02e4d58123",
+      "segment_id": "FRV2-SOURCE-WEB-621de61b089171eb0fd4bee1ae21a85b-8e1b963c35973b02e4d58123:L0007",
+      "quote": "禁止从事银行业工作十年"
+    }
+  ]
+}

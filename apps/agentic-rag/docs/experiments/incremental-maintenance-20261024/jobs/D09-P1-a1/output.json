@@ -1,0 +1,120 @@
+{
+  "uncertainties": [
+    "实际实施人员未知，不将经理身份直接等同于亲自实施变更。",
+    "官方词典未列对应的具体营业场所变更标签，本行为保留零标签。"
+  ],
+  "targets": [],
+  "reason": "已全文阅读新文，核实当事人欧阳钰涵、时任机构经理身份、许金罚决字〔2026〕11号、处罚机关和日期。按完整文号及姓名检索未命中，按鄢陵检索仅出现不同保险机构及不同责任人的2012年候选，未据此建立旧文关系；上述检索不代表全库排重。新文是保险行政处罚，可新增；未提供更正或撤销旧案证据。",
+  "schema": "codex-incremental/1",
+  "behavior_cards": [
+    {
+      "local_id": "D09-B1",
+      "risk_tags": [],
+      "negations": [],
+      "case_id": "D09-C1",
+      "actor": null,
+      "unknowns": [
+        "actor",
+        "具体实施经过及发生时间未载明"
+      ],
+      "actor_role": "实际实施人员未明；受处罚人为时任经理欧阳钰涵",
+      "summary": "未经核准变更机构营业场所；本公示将该案由列为欧阳钰涵受处罚的违法违规事实，未交代实际实施人员。",
+      "exceptions": [],
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0001",
+          "quote": "当事人: 欧阳钰涵（时任阳光财产保险股份有限公司鄢陵支公司经理）"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0005",
+          "quote": "未经核准变更机构营业场所"
+        }
+      ],
+      "conditions": []
+    }
+  ],
+  "case_cards": [
+    {
+      "local_id": "D09-C1",
+      "penalties": [
+        {
+          "evidence": [
+            {
+              "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+              "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0001",
+              "quote": "当事人: 欧阳钰涵（时任阳光财产保险股份有限公司鄢陵支公司经理）"
+            },
+            {
+              "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+              "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0007",
+              "quote": "警告并罚款人民币1.2万元"
+            }
+          ],
+          "subject": "欧阳钰涵",
+          "text": "警告并罚款人民币1.2万元"
+        }
+      ],
+      "subject": "欧阳钰涵",
+      "authority": "许昌金融监管分局",
+      "summary": "欧阳钰涵时任阳光财产保险股份有限公司鄢陵支公司经理，因未经核准变更机构营业场所，被许昌金融监管分局警告并罚款人民币1.2万元。",
+      "document_number": "许金罚决字〔2026〕11号",
+      "unknowns": [
+        "原文未明确实际实施变更的人员及具体实施经过"
+      ],
+      "decision_date": "2026年7月10日",
+      "evidence": [
+        {
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0001",
+          "quote": "当事人: 欧阳钰涵（时任阳光财产保险股份有限公司鄢陵支公司经理）"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0003",
+          "quote": "许金罚决字〔2026〕11号"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0005",
+          "quote": "未经核准变更机构营业场所"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0007",
+          "quote": "警告并罚款人民币1.2万元"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0009",
+          "quote": "许昌金融监管分局"
+        },
+        {
+          "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+          "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0011",
+          "quote": "2026年7月10日"
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+      "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0001",
+      "quote": "当事人: 欧阳钰涵（时任阳光财产保险股份有限公司鄢陵支公司经理）"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+      "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0005",
+      "quote": "未经核准变更机构营业场所"
+    },
+    {
+      "source_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0",
+      "segment_id": "FRV2-SOURCE-WEB-99a9aa7ad7f4cb4a744ac2cb5ecbec73-b78643179d4299177a1d98e0:L0007",
+      "quote": "警告并罚款人民币1.2万元"
+    }
+  ],
+  "action": "add",
+  "relations": []
+}

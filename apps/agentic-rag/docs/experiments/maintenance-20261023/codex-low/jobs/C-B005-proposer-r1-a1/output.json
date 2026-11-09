@@ -1,0 +1,56 @@
+{
+  "action": "no_change",
+  "reason": "完整原文为保险业务转让批复，并非行政处罚；未认定违法行为或处罚，故不新增处罚案例和风险标签。已检索完整文号皖金复〔2026〕135号，旧库零命中仅代表本次查询结果，不证明旧库不存在相关文书。",
+  "case": null,
+  "behaviors": [],
+  "source_coverage": [
+    {
+      "segment_id": "B005:L0001:8884061bec323f7c:8884061bec323f7c",
+      "disposition": "not_material",
+      "field_refs": [],
+      "reason": "批复文号，非处罚决定文号。"
+    },
+    {
+      "segment_id": "B005:L0002:8884061bec323f7c:8884061bec323f7c",
+      "disposition": "not_material",
+      "field_refs": [],
+      "reason": "业务转让批复的收文单位，未认定违法。"
+    },
+    {
+      "segment_id": "B005:L0003:8884061bec323f7c:8884061bec323f7c",
+      "disposition": "not_material",
+      "field_refs": [],
+      "reason": "请示收悉及批复引言，未认定违法。"
+    },
+    {
+      "segment_id": "B005:L0004:8884061bec323f7c:8884061bec323f7c",
+      "disposition": "not_material",
+      "field_refs": [],
+      "reason": "同意保险业务转让，属于行政许可事项。"
+    },
+    {
+      "segment_id": "B005:L0005:8884061bec323f7c:8884061bec323f7c",
+      "disposition": "not_material",
+      "field_refs": [],
+      "reason": "一般合规要求，不能推定已发生违法行为。"
+    },
+    {
+      "segment_id": "B005:L0006:8884061bec323f7c:8884061bec323f7c",
+      "disposition": "not_material",
+      "field_refs": [],
+      "reason": "要求办理后续事宜，未记载处罚。"
+    },
+    {
+      "segment_id": "B005:L0007:8884061bec323f7c:8884061bec323f7c",
+      "disposition": "not_material",
+      "field_refs": [],
+      "reason": "批复机关署名。"
+    },
+    {
+      "segment_id": "B005:L0008:8884061bec323f7c:8884061bec323f7c",
+      "disposition": "not_material",
+      "field_refs": [],
+      "reason": "批复日期。"
+    }
+  ]
+}

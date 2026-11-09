@@ -1,0 +1,41 @@
+{
+  "id": "B093",
+  "status": "format_repair_exhausted",
+  "production_admission": false,
+  "receipt": null,
+  "format_repairs": {
+    "proposer": 1,
+    "reviewer": 0
+  },
+  "business_revision_used": false,
+  "revisions": [
+    {
+      "revision": 1,
+      "phase": "proposer",
+      "error": {
+        "code": "CASE_UNKNOWN",
+        "field": "",
+        "message": "CASE_UNKNOWN"
+      }
+    },
+    {
+      "revision": 1,
+      "phase": "proposer",
+      "error": {
+        "code": "CASE_UNKNOWN",
+        "field": "",
+        "message": "CASE_UNKNOWN"
+      }
+    }
+  ],
+  "terminal_error": {
+    "code": "CASE_UNKNOWN",
+    "field": "",
+    "message": "CASE_UNKNOWN"
+  },
+  "stop_reason": "CASE_UNKNOWN",
+  "format_repairs_used": {
+    "proposer": 1,
+    "reviewer": 0
+  }
+}

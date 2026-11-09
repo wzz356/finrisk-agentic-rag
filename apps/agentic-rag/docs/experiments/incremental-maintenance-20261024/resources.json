@@ -1,0 +1,9 @@
+{
+  "native_role_tasks": 42,
+  "physical_provider_requests": null,
+  "per_role_token_usage": null,
+  "deepseek_calls": 0,
+  "observation_window_minutes": 39.21733829975128,
+  "timing_note": "Native completion/receipt observation includes host coordination and queueing; not pure inference latency, not a controlled speed comparison.",
+  "timing_integrity_note": "One bookkeeping receipt followed the response; no role latency estimate is published."
+}
