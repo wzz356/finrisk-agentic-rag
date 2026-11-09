@@ -1,0 +1,193 @@
+{
+  "revision": "41f2765780c71d740eed57e17fe8b64885cfb9b4",
+  "release": "/opt/finrisk/releases/20261024-query-41f2765",
+  "previous_release": "/opt/finrisk/releases/20261024-knowledge-full",
+  "source_and_model_hashes_verified": true,
+  "preview_smoke": {
+    "base": "http://127.0.0.1:18089",
+    "results": [
+      {
+        "name": "independent_fact",
+        "expected_state": "risk",
+        "decision_state": "risk",
+        "risk_labels": [
+          "客户信息不真实"
+        ],
+        "warnings": [],
+        "human_pending_sentences": 0,
+        "missing_model_targets": 0,
+        "literal_query_mappings": true,
+        "seconds": 3.822,
+        "passed": true
+      },
+      {
+        "name": "adopted_quote",
+        "expected_state": "risk",
+        "decision_state": "risk",
+        "risk_labels": [
+          "保证收益",
+          "培训材料违规",
+          "承诺收益"
+        ],
+        "warnings": [],
+        "human_pending_sentences": 0,
+        "missing_model_targets": 0,
+        "literal_query_mappings": true,
+        "seconds": 4.255,
+        "passed": true
+      },
+      {
+        "name": "independent_calling",
+        "expected_state": "risk",
+        "decision_state": "risk",
+        "risk_labels": [
+          "电销违规"
+        ],
+        "warnings": [],
+        "human_pending_sentences": 0,
+        "missing_model_targets": 0,
+        "literal_query_mappings": true,
+        "seconds": 2.963,
+        "passed": true
+      },
+      {
+        "name": "prohibited_quote",
+        "expected_state": "no_clear_risk",
+        "decision_state": "no_clear_risk",
+        "risk_labels": [],
+        "warnings": [],
+        "human_pending_sentences": 0,
+        "missing_model_targets": 0,
+        "literal_query_mappings": true,
+        "seconds": 2.689,
+        "passed": true
+      },
+      {
+        "name": "proper_prohibition",
+        "expected_state": "no_clear_risk",
+        "decision_state": "no_clear_risk",
+        "risk_labels": [],
+        "warnings": [],
+        "human_pending_sentences": 0,
+        "missing_model_targets": 0,
+        "literal_query_mappings": true,
+        "seconds": 1.9,
+        "passed": true
+      },
+      {
+        "name": "missing_facts",
+        "expected_state": "insufficient_information",
+        "decision_state": "insufficient_information",
+        "risk_labels": [],
+        "warnings": [],
+        "human_pending_sentences": 2,
+        "missing_model_targets": 0,
+        "literal_query_mappings": true,
+        "seconds": 3.846,
+        "passed": true
+      }
+    ],
+    "all_passed": true
+  },
+  "health": {
+    "status": "ok",
+    "case_count": 10867,
+    "active_case_count": 10429,
+    "subject_case_count": 18093,
+    "case_listing_unit": "document",
+    "data_version": "finrisk-full-20261024",
+    "latest_crawl_at": "2026-10-24T04:30:24.108842+08:00",
+    "latest_penalty_date": "2026-08-28",
+    "llm_model": "deepseek-flash",
+    "agent_runtime": {
+      "name": "pi-agent-core",
+      "version": "1.2.0",
+      "available": true,
+      "configured": true,
+      "worker_running": true,
+      "startup_warning": null
+    },
+    "context_version": "sentence-context-1.0",
+    "retrieval": {
+      "configured_embedding": "cloud",
+      "actual_vector_channel": "dense_cloud",
+      "timing": "adaptive",
+      "rerank_provider": "deepseek",
+      "index_ready": true,
+      "startup_warning": null
+    },
+    "knowledge_versions": {
+      "content": "finrisk-full-20261024:20d8d490b4c65337d981c8792df994637963da93b0c351f20f3b8b11036ccb28",
+      "projection": "finrisk-full-20261024:6ac89e52766c18cc4d0279f7f7b6cf59c647e3b7256c22bb114c6d6d3eac1a6d",
+      "articles": "articles-v1-20261017:6733e9fa9e4f05ac55caf4222ff821ae6ce08bfbd67c2ac4fba6aab5680cb2f1",
+      "rules": "rules-v1-20261017:7d2f69f3b378c7bec32eefaad04e7eff409c64c595e95d85db75f11a61e116ee",
+      "scope": "finrisk-scope-overlay-20261018-v1"
+    },
+    "knowledge_release": {
+      "upstream_revision": "52f721db0bd8bc19a5153eff05e015a36189d8f2",
+      "raw_pdf_count": 10000,
+      "partitions": {
+        "original_dataset": {
+          "data_version": "finrisk-full-20261024",
+          "repository_revision": "52f721db0bd8bc19a5153eff05e015a36189d8f2",
+          "document_count": 10000,
+          "case_count": 16173,
+          "behavior_count": 25924,
+          "evidence_count": 119081,
+          "retrieval_unit_count": 67594,
+          "human_approved": false,
+          "insurance_relevance": {
+            "None": 9639,
+            "True": 361
+          },
+          "document_kinds": {
+            "penalty": 10000
+          }
+        },
+        "official_crawl": {
+          "data_version": "finrisk-full-20261024",
+          "repository_revision": "52f721db0bd8bc19a5153eff05e015a36189d8f2",
+          "document_count": 850,
+          "case_count": 1895,
+          "behavior_count": 2448,
+          "evidence_count": 10510,
+          "retrieval_unit_count": 2889,
+          "human_approved": false,
+          "insurance_relevance": {
+            "True": 413,
+            "False": 400,
+            "None": 37
+          },
+          "document_kinds": {
+            "penalty": 840,
+            "pre_penalty_notice": 8,
+            "non_penalty": 1,
+            "penalty_delivery_notice": 1
+          }
+        }
+      },
+      "article_count": 67,
+      "mechanism_count": 12,
+      "full_projection": true
+    },
+    "knowledge_review_status": "model_candidate_pending_human"
+  },
+  "service": {
+    "MainPID": "4036222",
+    "NRestarts": "0",
+    "ActiveState": "active"
+  },
+  "protected_service_before": {
+    "MainPID": "3992635",
+    "NRestarts": "0",
+    "ActiveState": "active"
+  },
+  "protected_service_after": {
+    "MainPID": "3992635",
+    "NRestarts": "0",
+    "ActiveState": "active"
+  },
+  "protected_http_status": 200,
+  "knowledge_or_vector_rebuild": false,
+  "rollback_script": "/opt/finrisk/backups/20261024-query-41f2765/rollback.sh"
+}

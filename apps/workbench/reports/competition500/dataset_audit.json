@@ -1,0 +1,42 @@
+{
+  "cases": 500,
+  "development": 400,
+  "development_validation_subset": 100,
+  "validation_is_independent": false,
+  "test": 200,
+  "seed_case_overlap": 0,
+  "source_sha256_overlap": 0,
+  "duplicate_text_overlap": 0,
+  "fixed_label_count": 27,
+  "case_source_quote_mismatches": 0,
+  "old_evaluation_data_used": false,
+  "annotation": "codex_direct_source_review_not_human_expert_gold",
+  "external_model_review_calls": 0,
+  "nonliteral_label_quote_rows": 0,
+  "test_scene_counts": {
+    "ST1_poster_sms_social": 32,
+    "ST2_live_short_video": 29,
+    "ST3_product_intro_detail": 30,
+    "ST4_meeting_material": 32,
+    "ST5_training_telemarketing_callback": 40,
+    "ST6_penalty_backend_fact": 37
+  },
+  "qrels": {
+    "development": {
+      "queries": 400,
+      "explicit_pairs": 200000,
+      "sha256": "f8e17c3442fb0f263fed2b5e8296d857e60758d32f36e8751348a6e9827e019b",
+      "protocol": "direct-source-review-mechanisms-v3",
+      "queries_without_strong_case": 79
+    },
+    "test": {
+      "queries": 200,
+      "explicit_pairs": 100000,
+      "sha256": "7094837d14e606408976d60f4dd64f1838c5bdc3910eaaf09ec5fa9d6ae2e5ea",
+      "protocol": "direct-source-review-mechanisms-v3",
+      "queries_without_strong_case": 13
+    }
+  },
+  "direct_query_reviews": 600,
+  "direct_case_reviews": 500
+}

@@ -1,0 +1,16 @@
+{
+  "name": "finrisk-pi-runtime",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.19.0" },
+  "scripts": {
+    "check": "node --check worker.mjs && node --check runtime.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@earendil-works/pi-agent-core": "1.2.0",
+    "@earendil-works/pi-ai": "1.2.0",
+    "typebox": "1.3.27"
+  }
+}

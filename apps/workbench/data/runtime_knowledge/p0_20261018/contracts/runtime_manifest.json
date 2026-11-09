@@ -1,0 +1,122 @@
+{
+  "schema": "finrisk-evidence-runtime-v1",
+  "files": {
+    "code/evidence_packer.py": {
+      "bytes": 5148,
+      "sha256": "fe1675e0812d1696e163c3778bbf8a135f05d269262d80dc618b7be8f87d188f"
+    },
+    "code/evidence_runtime.py": {
+      "bytes": 7849,
+      "sha256": "254fdf40a53b0e76439ca2ecbbfb15a5342f92260a20fe1bc269bc70580df86f"
+    },
+    "code/frozen_legal_registry.py": {
+      "bytes": 9398,
+      "sha256": "c3556502c90e8c0cbfa4d6f2c993bd52384b60219ed274be977c3ad4575489b8"
+    },
+    "code/full_reader.py": {
+      "bytes": 482,
+      "sha256": "2381c0a191463008ead44a1b93d5e5ae838f148be256173e13a147e52cf3808f"
+    },
+    "code/full_reader_task/__init__.py": {
+      "bytes": 68,
+      "sha256": "e3ab6109eb9ce2969f3f065719648226935ea09c8143be6c70e714c0898d0c19"
+    },
+    "code/full_reader_task/builder.py": {
+      "bytes": 13847,
+      "sha256": "7ace876a27a5263f0b8cc9e73989a12841790f1824509069503ae638e0e17462"
+    },
+    "code/full_reader_task/legacy_base_reader.py": {
+      "bytes": 9387,
+      "sha256": "a1e8d2d59380b2edbf110e2d046e6a89a16ed61e38c7e485daefaacf01de4013"
+    },
+    "code/full_reader_task/primitives.py": {
+      "bytes": 893,
+      "sha256": "36c112dc76649e658caef21d027108e07ae5e66b413096cae3a591e8bb1ad3be"
+    },
+    "code/full_reader_task/reader.py": {
+      "bytes": 12779,
+      "sha256": "f53baaf8ee79ae92894b1fdacf000fb95e7a53fbefedf35b9847d21bbbf1b5e5"
+    },
+    "code/knowledge_assets.py": {
+      "bytes": 4638,
+      "sha256": "56d3c04003bdd060cc2a32ee54ce28f9b0bc7e7b7a831a9231833eaab4557f96"
+    },
+    "code/risk_coverage.py": {
+      "bytes": 3735,
+      "sha256": "cb89536d97e96bddbe572585b3c3993da49b0451f94c4d1ec15876af438c4f08"
+    },
+    "code/runtime_cli.py": {
+      "bytes": 2768,
+      "sha256": "ee599ff986e7094f646763ae5fa9f3404a13dd74bfb5967cbbfb191f591693fa"
+    },
+    "code/runtime_common.py": {
+      "bytes": 1050,
+      "sha256": "72e35a67ceec00853121e4a681cc67638afd19b16a85de8cd1fb38d840d008aa"
+    },
+    "code/scope_selector.py": {
+      "bytes": 4491,
+      "sha256": "73eea13775df90bec5df43d3205871da0d8fe3423d32456214c227df9ac67a6a"
+    },
+    "code/scope_table.py": {
+      "bytes": 3763,
+      "sha256": "c573c2868a5e1fe1f799e307941d8f9e732edcea1839ff650f827feebd97163f"
+    },
+    "code/tests/test_evidence_packer.py": {
+      "bytes": 3624,
+      "sha256": "eb5eed22f0c2be888e9916f35f9f82a7695fd91bf3e18a2234a182ee9c013ddf"
+    },
+    "code/tests/test_evidence_runtime.py": {
+      "bytes": 5117,
+      "sha256": "db0d30dd4e44a4425d506cbe7a05ccbb0826ea4397d9795ac7b3f3e498958d16"
+    },
+    "code/tests/test_full_reader.py": {
+      "bytes": 12401,
+      "sha256": "f615994b9526013b5cb559a041332e3cd7245b2dbac261670c7d0d27132498c4"
+    },
+    "code/tests/test_knowledge_assets.py": {
+      "bytes": 1884,
+      "sha256": "262d2e84b9d491b83caedefa5e8e70cf58beb4543f649c06419ee3ccde6d7d12"
+    },
+    "code/tests/test_risk_coverage.py": {
+      "bytes": 2579,
+      "sha256": "5d6e15ebe5a1984d369263826514dc2d5b158b768aa2485ab635143fb27c9aa1"
+    },
+    "code/tests/test_runtime_cli.py": {
+      "bytes": 1629,
+      "sha256": "01e7851072b6d80fe3b644ac61b9480e865212968cdab8be599f717833cd8efe"
+    },
+    "code/tests/test_scope_selector.py": {
+      "bytes": 5153,
+      "sha256": "f214d1d3b05f948d34c0158bd99d92cb68ebaa8cf86f65197e94a1353a4f9bdd"
+    },
+    "code/tests/test_scope_table.py": {
+      "bytes": 2782,
+      "sha256": "2c6f2d733bd01c91a864ca69f674ebf981cd97071997fc9687e77084024ac852"
+    },
+    "contracts/asset_lock.json": {
+      "bytes": 1058,
+      "sha256": "1e44be0b5d4b522191670cd5837897e3d9ee0a859158dd0e8da3d7d31727db7b"
+    },
+    "contracts/tool_contract.json": {
+      "bytes": 4191,
+      "sha256": "28b4c12e54b066015a5bca9d8b2466dda87c6bb3bac8e982ca9cf8775f38bf39"
+    },
+    "policy/article_scopes.jsonl": {
+      "bytes": 1013771,
+      "sha256": "c81b6578ac65bb19464c679bce708f3226394d17595c785a66f1d81ce5616924"
+    }
+  },
+  "full_reader": {
+    "root": "full_reader/bundle_v2",
+    "manifest_sha256": "07a9cdf0bb68d5a04fc58642ca81300ed41e3d4eb959e2036b33dc490b2c8b9b",
+    "versions": {
+      "content": "finrisk-basic-closeout-v2.1-20261013:fa2fb293b5cb483ed6f7e300758cbf5ae67b868d5fb5033bd3db053bb7d9ebb6",
+      "projection": "V2-all9639_final:52a987679efaee2a3e849598e2946422d01410c9c98ef6029ec2b7be30e88546",
+      "articles": "articles-v1-20261017:6733e9fa9e4f05ac55caf4222ff821ae6ce08bfbd67c2ac4fba6aab5680cb2f1",
+      "rules": "rules-v1-20261017:7d2f69f3b378c7bec32eefaad04e7eff409c64c595e95d85db75f11a61e116ee",
+      "scope": "finrisk-scope-overlay-20261018-v1"
+    }
+  },
+  "API_calls": 0,
+  "production_active": false
+}

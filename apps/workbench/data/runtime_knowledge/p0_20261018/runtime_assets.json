@@ -1,0 +1,106 @@
+{
+  "revision": "7b065c2712592763ea1c420e00cd239c0fb047ed",
+  "scope": "Only consumed P0 data; no upstream executable code or retired evaluations.",
+  "files": {
+    "contracts/runtime_manifest.json": {
+      "bytes": 4776,
+      "sha256": "c178df130ac618d5ba6e5a7944648fb6d25d60fb3de2c095b6f833fc16cf96a8"
+    },
+    "contracts/asset_lock.json": {
+      "bytes": 1058,
+      "sha256": "1e44be0b5d4b522191670cd5837897e3d9ee0a859158dd0e8da3d7d31727db7b"
+    },
+    "policy/article_scopes.jsonl": {
+      "bytes": 1013771,
+      "sha256": "c81b6578ac65bb19464c679bce708f3226394d17595c785a66f1d81ce5616924"
+    },
+    "assets/expanded/contracts/knowledge_manifest.json": {
+      "bytes": 6727,
+      "sha256": "0af6eb0805e434cd8acd87696c065ff3ff05d56bf5c65938c7d8eee9b72c476f"
+    },
+    "assets/expanded/knowledge/mechanisms.jsonl": {
+      "bytes": 271799,
+      "sha256": "8df14e9990a68e3c06647ee1b9920df58fd206b834f453c6584f93014e7d4ebc"
+    },
+    "assets/legal/manifest.json": {
+      "bytes": 9614,
+      "sha256": "371863431348bc80f8bb1cbc707ca5eb672c2ea6149b1379674f3bbcd16409ca"
+    },
+    "assets/legal/articles.jsonl": {
+      "bytes": 225328,
+      "sha256": "0ea04dc9efe0b3e10dbdcbece75eeee8bc019e2fafec5bc05f6fc43e5e72d69a"
+    },
+    "assets/legal/dependencies.jsonl": {
+      "bytes": 37954,
+      "sha256": "93e74d88c8687c6e5d81654310ce0566bbbbdf03cfaeca77bc71756f2c1fe5fc"
+    },
+    "assets/legal/source_registry.jsonl": {
+      "bytes": 42895,
+      "sha256": "d1f9f5049e0b5098fc4fb5be27bd3e2f0f17a22e43ff1bdd3c48ba866c00e829"
+    },
+    "assets/legal/snapshots/core_L001.txt": {
+      "bytes": 67706,
+      "sha256": "f97121b2ff54c1fb259b39fd843fc4ea39c58b78ba5bd32a2545950357d4bd06"
+    },
+    "assets/legal/snapshots/core_L002.txt": {
+      "bytes": 26869,
+      "sha256": "b06c1b99df95a7e607c5b07a30dc0f2c13665510c90d24b16aa0da1956e4ac5c"
+    },
+    "assets/legal/snapshots/core_L003.txt": {
+      "bytes": 20545,
+      "sha256": "167541970d7d7bdd588d4db5b98e893dc590c23d34a2ea6fa4b8ddcb2286caed"
+    },
+    "assets/legal/snapshots/core_L004.txt": {
+      "bytes": 13074,
+      "sha256": "a48170235331c50b1e2c0dcbe4dcdc8b1fd6c105a08016a5a4f260ffe4df3eb5"
+    },
+    "assets/legal/snapshots/core_L005.txt": {
+      "bytes": 21123,
+      "sha256": "6609624989c539f13e70fc8d4d1601bfbf728b229cdfb0c4399922fbe297a61e"
+    },
+    "assets/legal/snapshots/core_L006.txt": {
+      "bytes": 21167,
+      "sha256": "d1cabdbb746286bc33f55b17baab71489a5d2adcecebd502460cffdacf5d5195"
+    },
+    "assets/legal/snapshots/core_L007.txt": {
+      "bytes": 11960,
+      "sha256": "4c11639c2995a99dd47131d5f739a983f48c7748a9470d69e93333d4f401e7ce"
+    },
+    "assets/legal/snapshots/core_L008.txt": {
+      "bytes": 24545,
+      "sha256": "7e4d2feca17d6fc5241e576692b0c45075c33671e7d929727f8dd5621ec73d9b"
+    },
+    "assets/legal/snapshots/core_L009.txt": {
+      "bytes": 16510,
+      "sha256": "fc2c517e77174348ad40dcc09dd29aea40e7f80ca5ecf4c2f5971aee1331d7cb"
+    },
+    "assets/legal/snapshots/core_L010.txt": {
+      "bytes": 33217,
+      "sha256": "4e30ad8c47da708b5634d59ae2e00abc4bd5703dac21d8d2dabe4ee12699743b"
+    },
+    "assets/legal/snapshots/reader_L002.txt": {
+      "bytes": 28746,
+      "sha256": "3761c651d19d298df5cbf443a7653aebcdb0c44402d7e8a734d3301d3f77f828"
+    },
+    "assets/legal/snapshots/reader_L003.txt": {
+      "bytes": 22658,
+      "sha256": "5046e3c5f641b5d41eb5c28e2b67bde0d42cb80d8044bfc888f36ab0cdfb84ca"
+    },
+    "assets/legal/snapshots/reader_L004.txt": {
+      "bytes": 14523,
+      "sha256": "7c855933af830fdaaaceab68d5ffc616fcb8175d434292d986157cf40008eb5b"
+    },
+    "assets/legal/snapshots/reader_L005.txt": {
+      "bytes": 25211,
+      "sha256": "565f815ea70999ee28765a7fe58d1a6475498862260a256251605ea4cb825477"
+    },
+    "assets/legal/snapshots/reader_L007.txt": {
+      "bytes": 13170,
+      "sha256": "d53e402a225ac9bdad42c8d7af1ad4ec32278c8754ef4380d2a28aca762705b7"
+    },
+    "assets/legal/snapshots/reader_esign_tax_amendment.txt": {
+      "bytes": 29727,
+      "sha256": "21c727b40687f631637a2d0788f26a1a52ed2cbcd92634bfe53df54ede63a8d2"
+    }
+  }
+}

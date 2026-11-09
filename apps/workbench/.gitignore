@@ -1,0 +1,49 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.env
+*.log
+*.zip
+node_modules/
+.cache/
+.tmp/
+outputs/local-preview/
+# Generated presentation PDFs and their intermediate sources stay local.
+output/
+
+# 原始采集缓存由增量工具在本地建立。
+data/raw/cases/*
+data/raw/query/*
+data/interim/
+data/processed/cases/
+!data/**/.gitkeep
+
+# 知识库、原文及云向量是本地运行数据，通过数据包单独恢复。
+data/processed/knowledge/*
+
+models/
+checkpoints/
+
+# 2026-10-18 本地比赛实验：预构建向量和运行结果不进入 Git。
+data/cache/
+outputs/competition_integration_20261018/
+outputs/qwen_full_20261018/
+outputs/deepseek_rerank_20261018/
+raw_pdfs/
+outputs/project_cleanup_20261018/
+outputs/runtime/
+outputs/knowledge_build/
+outputs/kb_update_20261024/
+release/
+
+# Real-API traces, local backups and intermediate annotations stay on this machine.
+outputs/competition_upgrade_20261019/
+outputs/label_optimization_20261019/
+outputs/crawl_integration_20261019/
+outputs/query_optimization_20261024/
+outputs/dataset_self_review_20261019/
+data/processed/case_sources/
+data/eval/competition500_v1/reference/drafts/

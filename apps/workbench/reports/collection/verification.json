@@ -1,0 +1,69 @@
+{
+  "verified_at": "2026-10-19T15:53:32.874946+08:00",
+  "python_tests_passed": 204,
+  "node_tests_passed": 31,
+  "ruff": "passed",
+  "mypy": "passed, 80 source files",
+  "statistics": {
+    "total_cases": 9640,
+    "base_cases": 9639,
+    "user_cases": 0,
+    "crawled_cases": 1,
+    "active_cases": 9640,
+    "risk_tag_count": 27,
+    "data_version": "finrisk-v2.1-local-20261018",
+    "latest_crawl_at": "2026-10-19T15:43:32.556331+08:00",
+    "latest_penalty_date": "2026-04-23",
+    "subject_case_count": 15621,
+    "listing_unit": "document"
+  },
+  "schedule": {
+    "enabled": true,
+    "start_date": "2026-10-19",
+    "daily_time": "04:30",
+    "timezone": "Asia/Shanghai",
+    "next_run_at": "2026-10-20T04:30:00+08:00",
+    "status": "waiting",
+    "last_attempt_at": null,
+    "last_finished_at": null,
+    "successful_until": null,
+    "column_watermarks": {},
+    "last_result": {},
+    "index_status": "ready",
+    "pending_parts": 0,
+    "pending_documents": 0,
+    "retry_at": null,
+    "limits": {
+      "pages_per_column": 3,
+      "details": 12,
+      "requests": 32,
+      "delay_seconds": 3.0,
+      "jitter_seconds": 2.0
+    }
+  },
+  "original_knowledge_files_unchanged": {
+    "data/cases.jsonl": {
+      "unchanged": true,
+      "sha256": "114cbac511740c84080c8a50226865a3e6e14c7e443f47418bf3636264305611"
+    },
+    "data/case_chunks_full.jsonl": {
+      "unchanged": true,
+      "sha256": "0e19b4a35422d702fdc7f46008794f38dbaf4ecf19b2188e49885389be607309"
+    },
+    "data/case_expansions.jsonl": {
+      "unchanged": true,
+      "sha256": "f0555d03bef291ea1369386459d44cf5b4ca59821805912534e3c76b06d1fdbe"
+    },
+    "evidence_registry.sqlite3": {
+      "unchanged": true,
+      "sha256": "1c0cdd3bd97388b9f01e413bb066ba012e7e3118efefd03089119673239fbc4f"
+    },
+    "manifest.json": {
+      "unchanged": true,
+      "sha256": "f31493bb2c90621d3599a456cd91c5bb1cefb8fcc13d5ef8a418fcc3ff3d1267"
+    }
+  },
+  "official_live_requests_for_this_test": 3,
+  "browser_verification": "outputs/competition_upgrade_20261019/browser/verification.json",
+  "local_only": true
+}

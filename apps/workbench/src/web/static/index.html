@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="FinRisk 保险营销合规工作台：结合上下文审查材料、查阅类案与原文证据。"
+    />
+    <title>FinRisk · 保险营销合规工作台</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg?v=brand-red-20261015" />
+    <link rel="stylesheet" href="/static/styles.css?v=evaluation-acceptance-charts-20261024" />
+    <link rel="preload" href="/static/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#risk" data-route="risk" aria-label="FinRisk 首页">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4h10v4H7v4h8v4H7v4H3V4z"/></svg></span>
+          <span><strong>FinRisk</strong></span>
+        </a>
+        <nav class="workspace-nav" aria-label="工作台功能">
+          <button class="nav-item is-active" type="button" data-view="risk">
+            <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h10l4 4v14H5zM9 11h6M9 15h4"/></svg><span>风险查询</span>
+          </button>
+          <button class="nav-item" type="button" data-view="case-entry">
+            <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span>案例录入</span>
+          </button>
+          <button class="nav-item" type="button" data-view="cases">
+            <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v15H4zM4 10h16M9 10v10"/></svg><span>案例管理</span>
+          </button>
+          <button class="nav-item" type="button" data-view="evaluation">
+            <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 17V9h3v8M11 17V4h3v13M16 17v-6h3v6"/></svg><span>效果评测</span>
+          </button>
+        </nav>
+        <div class="sidebar-note workspace-summary" aria-label="今日采集概况">
+          <time id="workspace-date">—</time>
+          <span>今日已爬取 <strong id="today-crawled-count" aria-live="polite">—</strong> 个案例</span>
+        </div>
+      </aside>
+
+      <div class="workspace">
+        <header class="topbar">
+          <div class="breadcrumb"><span>工作台</span><span aria-hidden="true">/</span><strong id="current-view-label">材料审查</strong></div>
+          <div class="health" id="health-state">
+            <span class="health-dot"></span><span id="health-text">正在连接服务</span>
+          </div>
+        </header>
+
+        <main>
+          <section class="view is-visible" id="risk-view">
+            <header class="view-heading">
+              <div><p class="eyebrow">保险营销合规</p><h1>材料风险审查</h1></div>
+              <p>提交文案或业务材料，结合上下文检查风险，查阅相关处罚案例。</p>
+              <div class="feature-line"><span>保留问答语境</span><span>证据回到原文</span><span>支持人工复核</span></div>
+            </header>
+
+            <div class="query-layout">
+              <section class="panel query-card" aria-labelledby="query-title">
+                <div class="panel-heading">
+                  <div><h2 id="query-title">待审材料</h2></div>
+                  <span class="subtle-note">文本与文件均可</span>
+                </div>
+                <div class="query-controls">
+                  <div class="segmented" role="tablist" aria-label="Query 输入方式">
+                    <button class="is-active" type="button" role="tab" aria-selected="true" aria-controls="query-text-panel" data-query-mode="text">输入文字</button>
+                    <button type="button" role="tab" aria-selected="false" aria-controls="query-file-panel" data-query-mode="file">上传文件</button>
+                  </div>
+                  <label class="scene-field" for="query-scene">
+                    <span>材料场景</span>
+                    <select id="query-scene">
+                      <option value="">自动识别</option>
+                      <option value="ST1_poster_sms_social">ST1 海报 / 短信 / 社交短文案</option>
+                      <option value="ST2_live_short_video">ST2 直播 / 短视频 / 口播</option>
+                      <option value="ST3_product_intro_detail">ST3 产品介绍 / 详情页</option>
+                      <option value="ST4_meeting_material">ST4 产品说明会 / 客户活动材料</option>
+                      <option value="ST5_training_telemarketing_callback">ST5 培训 / 电销 / 回访话术</option>
+                      <option value="ST6_penalty_backend_fact">ST6 监管处罚 / 后台业务事实</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="query-controls">
+                  <label class="scene-field"><span>案例排序</span><select id="query-rerank"><option value="">推荐配置</option><option value="none">多路融合</option><option value="cloud">Qwen 重排</option><option value="deepseek">DeepSeek 重排</option></select></label>
+                  <label class="scene-field"><span>检索策略</span><select id="query-timing"><option value="">推荐配置</option><option value="post">Post 判定后检索</option><option value="pre">Pre 检索后判定</option><option value="adaptive">自适应融合</option></select></label>
+                </div>
+                <div class="query-input is-visible" id="query-text-panel">
+                  <label class="sr-only" for="query-text">待审查文字</label>
+                  <textarea
+                    id="query-text"
+                    maxlength="1000000"
+                    placeholder="在这里粘贴待审材料。&#10;&#10;例如：&#10;客户：这款保险保证每年 8% 的收益吗？&#10;顾问：是的，可以这样理解。"
+                  ></textarea>
+                  <span class="counter"><b id="query-count">0</b> 字</span>
+                </div>
+                <div class="query-input" id="query-file-panel">
+                  <label class="drop-zone" id="query-drop-zone" for="query-file">
+                    <input
+                      id="query-file"
+                      type="file"
+                      accept=".pdf,.png,.jpg,.jpeg,.bmp,.tif,.tiff,.webp,.txt,.md,.docx,.csv,.xlsx"
+                    />
+                    <span class="upload-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 16V4M7 9l5-5 5 5M4 16v4h16v-4"/></svg></span>
+                    <strong>拖入文件，或点击选择</strong>
+                    <small>PDF、图片、TXT、Markdown、DOCX、CSV、XLSX · 最大 25 MB</small>
+                    <span class="selected-file" id="query-file-name">尚未选择文件</span>
+                  </label>
+                </div>
+                <div class="sample-row"><span>试试示例</span><button type="button" data-sample="dialogue">问答与承诺</button><button type="button" data-sample="quotation">反面话术</button><button type="button" data-sample="products">不同产品</button></div>
+                <div class="action-row">
+                  <p>定位风险，匹配案例，给出修改建议。</p>
+                  <button class="primary-button" id="analyze-button" type="button">
+                    <span>开始审查</span><i class="spinner"></i>
+                  </button>
+                </div>
+                <p class="form-error" id="query-error" role="alert"></p>
+                <p class="analysis-state" id="analysis-state" role="status" hidden></p>
+              </section>
+
+              <aside class="usage-guide" aria-label="审查提示">
+                <div><strong>语境审查</strong><p>结合问答、角色与业务条件。</p></div>
+                <div><strong>案例匹配</strong><p>检索相似事实与原文依据。</p></div>
+                <div><strong>整改建议</strong><p>逐项给出修改和核查动作。</p></div>
+              </aside>
+            </div>
+
+            <section class="panel results-panel" id="risk-results" aria-live="polite">
+              <div class="empty-state" id="risk-empty">
+                <div><strong>审查结果将在这里显示</strong><p>先提交材料，或从上方载入一段示例。</p></div>
+              </div>
+              <div id="risk-content" hidden>
+                <div class="results-heading">
+                  <div><h2>审查结果</h2><p class="subtle-note">风险结论与原文依据</p></div>
+                  <div class="result-actions">
+                    <button class="quiet-button" id="copy-risk-result" type="button">复制结果摘要</button>
+                    <button class="quiet-button" id="export-submission" type="button">导出比赛 JSON</button>
+                    <button class="primary-button small" id="export-risk-report" type="button"><span>导出审查报告</span></button>
+                  </div>
+                </div>
+                <div class="summary-grid" id="risk-summary"></div>
+                <div class="warning-list" id="risk-warnings"></div>
+                <details class="processing-details"><summary>查看处理信息与判断来源</summary><div class="trace-bar">
+                  <div id="classification-note"></div>
+                  <div id="extraction-note"></div>
+                  <div id="timing-note"></div>
+                </div><div id="agent-trace-note"></div>
+                <div class="classification-candidates" id="classification-candidates"></div>
+                </details>
+
+                <div class="insight-grid">
+                  <section class="result-subpanel source-panel">
+                    <div class="subpanel-heading"><h3>原文风险高亮</h3><small>点击任一句，与下方同编号判断对照</small></div>
+                    <div class="source-legend" aria-label="原文标记说明">
+                      <span><i class="swatch level-none"></i>无明显风险</span>
+                      <span><i class="swatch level-low"></i>低风险</span>
+                      <span><i class="swatch level-review"></i>疑似风险</span>
+                      <span><i class="swatch level-medium"></i>中风险</span>
+                      <span><i class="swatch level-high"></i>高风险</span>
+                    </div>
+                    <div class="source-highlight" id="source-highlight" aria-label="原文与风险所属句"></div>
+                    <p class="source-selection" id="source-selection" role="status" aria-live="polite">底色：风险等级 · 蓝框：当前句 · 下划线：引用证据</p>
+                  </section>
+                  <section class="result-subpanel top-cases-panel">
+                    <div class="subpanel-heading"><h3>相关处罚案例</h3><small>查看匹配理由与原文</small></div>
+                    <div class="top-case-list" id="top-cases"></div>
+                  </section>
+                </div>
+
+                <div class="sentence-toolbar">
+                  <div><h3>逐句判断</h3><span>查看理由、证据与修改建议</span></div>
+                  <label>显示
+                    <select id="risk-filter">
+                      <option value="all">全部语句</option>
+                      <option value="risky">仅风险语句</option>
+                      <option value="retrieved">仅有案例</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="risk-list" id="risk-list"></div>
+
+                <section class="review-panel" aria-labelledby="review-title">
+                  <div class="subpanel-heading">
+                    <div><h3 id="review-title">人工复核留痕</h3><small>保存审核结论、修正标签和意见，支持追溯</small></div>
+                    <span class="pill">人工复核</span>
+                  </div>
+                  <div class="review-grid">
+                    <label><span>复核结论</span><select id="review-status"><option value="confirmed">确认模型结果</option><option value="corrected">已人工修正</option><option value="rejected">退回重新审查</option></select></label>
+                    <label><span>审核人</span><input id="reviewer-name" type="text" maxlength="100" value="现场审核员" /></label>
+                    <label><span>修正场景</span><select id="review-scene"><option value="">保持原场景</option><option value="ST1_poster_sms_social">ST1 海报 / 短信 / 社交短文案</option><option value="ST2_live_short_video">ST2 直播 / 短视频 / 口播</option><option value="ST3_product_intro_detail">ST3 产品介绍 / 详情页</option><option value="ST4_meeting_material">ST4 产品说明会 / 客户活动</option><option value="ST5_training_telemarketing_callback">ST5 培训 / 电销 / 回访</option><option value="ST6_penalty_backend_fact">ST6 监管处罚 / 后台事实</option></select></label>
+                    <label class="review-labels"><span>修正风险标签</span><input id="review-labels" type="text" placeholder="多个标签用逗号分隔；留空表示采用模型标签" /></label>
+                    <label class="review-comment"><span>复核意见</span><textarea id="review-comment" maxlength="4000" placeholder="记录修正原因、需要补充的证据或后续动作"></textarea></label>
+                  </div>
+                  <div class="review-actions"><small id="review-state">尚未保存人工复核</small><button class="primary-button" id="save-review" type="button"><span>保存复核记录</span><i class="spinner"></i></button></div>
+                </section>
+              </div>
+            </section>
+          </section>
+
+          <section class="view" id="case-entry-view">
+            <header class="view-heading">
+              <div><p class="eyebrow">案例资料</p><h1>案例录入</h1></div>
+              <p>上传监管处罚材料，保留出处与原文，加入统一案例库。</p>
+            </header>
+            <div class="entry-grid">
+              <section class="panel upload-panel">
+                <div class="panel-heading">
+                  <div><span class="step-badge">01</span><h2>录入案例原文</h2></div><span class="pill">增量写入</span>
+                </div>
+                <label class="drop-zone case-drop" id="case-drop-zone" for="case-file">
+                  <input
+                    id="case-file"
+                    type="file"
+                    accept=".pdf,.png,.jpg,.jpeg,.bmp,.tif,.tiff,.webp,.txt,.md,.docx,.csv,.xlsx"
+                  />
+                  <span class="upload-icon">＋</span>
+                  <strong>选择监管处罚案例</strong>
+                  <small>保留原文件，结构化数据写入统一案例库</small>
+                  <span class="selected-file" id="case-file-name">尚未选择文件</span>
+                </label>
+                <div class="action-row">
+                  <p>自动识别重复文件。</p>
+                  <button class="primary-button" id="ingest-button" type="button">
+                    <span>抽取并录入</span><i class="spinner"></i>
+                  </button>
+                </div>
+                <p class="form-error" id="case-error" role="alert"></p>
+              </section>
+              <aside class="panel case-flow-card">
+                <h2>统一入库流程</h2>
+                <ol class="pipeline-list compact">
+                  <li><b>1</b><span><strong>保留原始文件</strong><small>记录哈希与来源，支持回溯</small></span></li>
+                  <li><b>2</b><span><strong>生成统一字段</strong><small>案例、证据切片和扩展表达</small></span></li>
+                  <li><b>3</b><span><strong>刷新同一索引</strong><small>新增案例立即参与匹配</small></span></li>
+                </ol>
+              </aside>
+            </div>
+            <section class="panel ingestion-result" id="ingestion-result" hidden></section>
+          </section>
+
+          <section class="view" id="cases-view">
+            <header class="view-heading">
+              <div><p class="eyebrow">案例资料</p><h1>案例管理</h1></div>
+              <p>按处罚文书浏览，支持查看同文书的多个主体。</p>
+            </header>
+            <div class="stats-grid" id="case-stats">
+              <article><span>处罚文书</span><strong>—</strong></article>
+              <article><span>当前启用</span><strong>—</strong></article>
+              <article><span>主体案例</span><strong>—</strong></article>
+              <article><span>风险标签</span><strong>—</strong></article>
+            </div>
+            <section class="panel library-panel">
+              <div class="case-list-head"><span id="case-source-counts">原始知识库 — · 官网采集 — · 网页录入 —</span><span id="collection-status">每日更新 —</span></div>
+              <form class="case-filters" id="case-filters">
+                <label class="search-field"><span>关键词</span><input id="case-search" type="search" placeholder="案号、机构、违法事实……" /></label>
+                <label><span>风险标签</span><input id="case-risk-tag" type="text" placeholder="如：销售误导" /></label>
+                <label><span>状态</span><select id="case-status"><option value="">全部</option><option value="active">启用</option><option value="inactive">已停用</option></select></label>
+                <label><span>来源</span><select id="case-origin"><option value="">全部</option><option value="original">原始知识库</option><option value="official_crawl">官网采集</option><option value="web_ingestion">网页录入</option></select></label>
+<details class="advanced-filters">
+                  <summary>组合条件：监管机构、处罚主体、机构类型和日期</summary>
+                  <div>
+                    <label><span>监管机构</span><input id="case-regulator" type="text" placeholder="如：金融监管总局某分局" /></label>
+                    <label><span>处罚主体</span><input id="case-party-name" type="text" placeholder="机构或个人名称" /></label>
+                    <label><span>机构类型</span><input id="case-institution-type" type="text" placeholder="如：保险公司分支机构" /></label>
+                    <label><span>处罚日期从</span><input id="case-date-from" type="date" /></label>
+                    <label><span>处罚日期至</span><input id="case-date-to" type="date" /></label>
+                  </div>
+                </details>
+                <button class="primary-button small" type="submit"><span>查询</span></button>
+              </form>
+              <div class="case-list-head"><span id="case-count-label">正在读取案例……</span><button class="quiet-button" id="refresh-cases" type="button">刷新</button></div>
+              <div class="case-list" id="case-list"></div>
+              <div class="pagination" id="case-pagination"></div>
+            </section>
+          </section>
+          <section class="view" id="evaluation-view">
+            <header class="view-heading"><div><p class="eyebrow">效果验证</p><h1>风险识别与案例匹配</h1></div><p>500个真实案例 · 200条自建Query · 六类场景 · 27类风险标签</p></header>
+            <section class="panel"><div class="panel-heading"><div><h2>当前版本效果测评</h2><p class="subtle-note">风险识别 · 无大模型对照 · 案例检索</p></div><a class="quiet-button" href="/api/evaluation/report" target="_blank" rel="noopener">下载评测结果</a></div><div id="evaluation-content"><div class="inline-empty">正在读取评测结果……</div></div></section>
+          </section>
+        </main>
+        <footer class="workspace-footer"><span>FinRisk · 保险营销合规工作台</span><span>原文可查，判断可复核。</span></footer>
+      </div>
+    </div>
+
+    <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+    <aside class="case-drawer" id="case-drawer" aria-label="案例详情" aria-hidden="true">
+      <button class="drawer-close" id="drawer-close" type="button" aria-label="关闭详情">×</button>
+      <div id="case-detail"></div>
+    </aside>
+    <div class="toast" id="toast" role="status"></div>
+    <script src="/static/source-map.js?v=source-spans-2" defer></script>
+    <script src="/static/evaluation.js?v=evaluation-acceptance-charts-20261024" defer></script>
+    <script src="/static/app.js?v=evaluation-acceptance-charts-20261024" defer></script>
+  </body>
+</html>

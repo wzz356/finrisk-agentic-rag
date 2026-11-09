@@ -1,0 +1,160 @@
+{
+  "tested_at": "2026-10-19T16:44:25.712306+08:00",
+  "loaded_index": {
+    "total_units": 117158,
+    "cache_hits": 117158,
+    "api_calls": 0,
+    "api_documents": 0,
+    "elapsed_seconds": 0.0,
+    "dimension": 1024,
+    "model": "qwen3.7-text-embedding-native-ed99a1a4f011306e"
+  },
+  "incremental_build": {
+    "total_units": 117158,
+    "unique_texts": 51882,
+    "new_unique_texts": 235,
+    "document_api_batches": 12,
+    "seconds": 21.54897499998333,
+    "model": "qwen3.7-text-embedding",
+    "dimension": 1024
+  },
+  "chat_api_requests": 0,
+  "official_http_requests": 0,
+  "backend_tests_passed": 224,
+  "javascript_tests_passed": 31,
+  "literal_evidence_units_checked": 1202,
+  "pi_evidence_reader_samples": [
+    {
+      "id": "CHK_UF922E12619B89DC_FACT_001",
+      "literal_verified": true
+    },
+    {
+      "id": "CHK_UF922E12619B89DC_PENALTY_002",
+      "literal_verified": true
+    },
+    {
+      "id": "CHK_U226FAFE8DE3EB6C_FACT_001",
+      "literal_verified": true
+    },
+    {
+      "id": "CHK_U226FAFE8DE3EB6C_PENALTY_002",
+      "literal_verified": true
+    },
+    {
+      "id": "CHK_U226FAFE8DE3EB6C_LEGAL_BASIS_003",
+      "literal_verified": true
+    },
+    {
+      "id": "CHK_U226FAFE8DE3EB6C_EVIDENCE_001",
+      "literal_verified": true
+    }
+  ],
+  "retrieval_samples": [
+    {
+      "query": "恒邦财产保险长治中心支公司保险费回扣合同外利益",
+      "party_filter": "恒邦财产保险股份有限公司长治中心支公司",
+      "unfiltered_top10_new_case_ids": [
+        "U029C2B860932946"
+      ],
+      "filtered_new_case_hits": [
+        {
+          "case_id": "U029C2B860932946",
+          "party_name": "郭娟（时任恒邦财产保险股份有限公司长治中心支公司总经理助理（主持工作）、副总经理（主持工作））",
+          "score": 0.888947,
+          "vector_score": 0.851787
+        },
+        {
+          "case_id": "U226FAFE8DE3EB6C",
+          "party_name": "恒邦财产保险股份有限公司长治中心支公司",
+          "score": 0.780605,
+          "vector_score": 0.657235
+        }
+      ],
+      "diagnostics": {
+        "vector_channel": "dense_cloud",
+        "rerank_channel": "weighted_local",
+        "bridge_enabled": false,
+        "bridge_candidates": 0,
+        "warnings": []
+      }
+    },
+    {
+      "query": "张洪刚员工侵占保险费禁止10年进入保险业",
+      "party_filter": "张洪刚",
+      "unfiltered_top10_new_case_ids": [
+        "U8E5A3A563814E98"
+      ],
+      "filtered_new_case_hits": [
+        {
+          "case_id": "U8E5A3A563814E98",
+          "party_name": "张洪刚",
+          "score": 0.804437,
+          "vector_score": 0.678144
+        }
+      ],
+      "diagnostics": {
+        "vector_channel": "dense_cloud",
+        "rerank_channel": "weighted_local",
+        "bridge_enabled": false,
+        "bridge_candidates": 0,
+        "warnings": []
+      }
+    },
+    {
+      "query": "天安财产保险潮州中心支公司业务财务数据不真实",
+      "party_filter": "天安财产保险股份有限公司潮州中心支公司",
+      "unfiltered_top10_new_case_ids": [],
+      "filtered_new_case_hits": [
+        {
+          "case_id": "U59E7EA94CC57910",
+          "party_name": "天安财产保险股份有限公司潮州中心支公司、申能财产保险股份有限公司潮州中心支公司及相关责任人员",
+          "score": 0.562132,
+          "vector_score": 0.0
+        }
+      ],
+      "diagnostics": {
+        "vector_channel": "dense_cloud",
+        "rerank_channel": "weighted_local",
+        "bridge_enabled": false,
+        "bridge_candidates": 0,
+        "warnings": []
+      }
+    }
+  ],
+  "original_base_sha256_unchanged": {
+    "data/cases.jsonl": true,
+    "data/case_chunks_full.jsonl": true,
+    "data/case_expansions.jsonl": true,
+    "evidence_registry.sqlite3": true,
+    "manifest.json": true
+  },
+  "daily_collection_checkpoint_unchanged": true,
+  "statistics": {
+    "total_cases": 10005,
+    "base_cases": 9639,
+    "user_cases": 0,
+    "crawled_cases": 366,
+    "active_cases": 10005,
+    "risk_tag_count": 27,
+    "data_version": "finrisk-v2.1-local-20261018",
+    "latest_crawl_at": "2026-10-19T15:43:32.556331+08:00",
+    "latest_penalty_date": "2026-04-23",
+    "subject_case_count": 15986,
+    "listing_unit": "document"
+  },
+  "browser": {
+    "collection": {
+      "enabled": true,
+      "start_date": "2026-10-19",
+      "next_run_at": "2026-10-20T04:30:00+08:00"
+    },
+    "crawled_source_download": true,
+    "original_pdf": {
+      "case_id": "FRV2-CASE-F000076-8e4b679966301b56cedd1a3b",
+      "bytes": 51524
+    },
+    "institution_filter_total": 2500,
+    "horizontal_overflow": false,
+    "browser_errors": []
+  }
+}

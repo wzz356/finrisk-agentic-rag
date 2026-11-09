@@ -1,0 +1,136 @@
+{
+  "upstream_revision": "52f721db0bd8bc19a5153eff05e015a36189d8f2",
+  "attachment_sha256": "449dfc25f4712df05d19ca539af096eb4d9e9c0426c28c32556f0d8fe9343d98",
+  "attachment_documents": 857,
+  "legacy_web_documents": 378,
+  "legacy_matches_new_web": 358,
+  "legacy_matches_original": 7,
+  "retained_legacy_documents": 16,
+  "reviewed_web_original_aliases": 7,
+  "new_web_documents": 850,
+  "raw_pdf_count": 10000,
+  "bound_documents": 10000,
+  "distinct_bound_pdf_paths": 10000,
+  "partitions": {
+    "original_dataset": {
+      "data_version": "finrisk-full-20261024",
+      "repository_revision": "52f721db0bd8bc19a5153eff05e015a36189d8f2",
+      "document_count": 10000,
+      "case_count": 16173,
+      "behavior_count": 25924,
+      "evidence_count": 119081,
+      "retrieval_unit_count": 67594,
+      "human_approved": false,
+      "insurance_relevance": {
+        "None": 9639,
+        "True": 361
+      },
+      "document_kinds": {
+        "penalty": 10000
+      }
+    },
+    "official_crawl": {
+      "data_version": "finrisk-full-20261024",
+      "repository_revision": "52f721db0bd8bc19a5153eff05e015a36189d8f2",
+      "document_count": 850,
+      "case_count": 1895,
+      "behavior_count": 2448,
+      "evidence_count": 10510,
+      "retrieval_unit_count": 2889,
+      "human_approved": false,
+      "insurance_relevance": {
+        "True": 413,
+        "False": 400,
+        "None": 37
+      },
+      "document_kinds": {
+        "penalty": 840,
+        "pre_penalty_notice": 8,
+        "non_penalty": 1,
+        "penalty_delivery_notice": 1
+      }
+    }
+  },
+  "human_approved": false,
+  "server_only_documents_merged": 3,
+  "expected_official_documents": 866,
+  "expected_total_documents": 10866,
+  "active_vector_units": 69147,
+  "embedding_model": "qwen3.7-text-embedding",
+  "embedding_dimension": 1024,
+  "embedding_api_batches": 116,
+  "embedding_new_texts": 2303,
+  "verification": {
+    "python_tests_passed": 310,
+    "node_tests_passed": 31,
+    "ruff": "passed",
+    "mypy_source_files": 87,
+    "delivery_integrity": "passed",
+    "live_queries": {
+      "original": {
+        "documents": 10000,
+        "sample_source_bytes": 55156
+      },
+      "official_crawl": {
+        "documents": 866,
+        "sample_source_bytes": 491
+      },
+      "query_1": {
+        "seconds": 10.11,
+        "state": "risk",
+        "labels": [
+          "保证收益",
+          "合同外利益",
+          "承诺收益",
+          "赠送利益",
+          "销售误导"
+        ],
+        "warnings": []
+      },
+      "query_2": {
+        "seconds": 2.24,
+        "state": "no_clear_risk",
+        "labels": [],
+        "warnings": []
+      }
+    },
+    "live_evidence_returned": 10,
+    "live_literal_verified": 10
+  },
+  "server": {
+    "url": "https://www.finrisklab.online/",
+    "data_version": "finrisk-full-20261024",
+    "statistics": {
+      "total_cases": 10867,
+      "base_cases": 10000,
+      "user_cases": 1,
+      "crawled_cases": 866,
+      "active_cases": 10429,
+      "risk_tag_count": 27,
+      "data_version": "finrisk-full-20261024",
+      "latest_crawl_at": "2026-10-24T04:30:24.108842+08:00",
+      "latest_penalty_date": "2026-08-28",
+      "subject_case_count": 18093,
+      "listing_unit": "document"
+    },
+    "vector_units": 69155,
+    "raw_pdf_bindings_verified": 10000,
+    "index_ready": true,
+    "pi_worker_running": true,
+    "post_cleanup_query_state": "risk",
+    "post_cleanup_query_warnings": [],
+    "browser_counts_verified": true,
+    "server_additional_embedding_texts": 6,
+    "server_additional_embedding_batches": 1
+  },
+  "cleanup": {
+    "local_freed_bytes": 4491046912,
+    "server_freed_bytes": 4079013888,
+    "old_local_knowledge_removed": true,
+    "old_server_knowledge_removed": true,
+    "original_pdfs_preserved": 10000,
+    "local_active_index": "qwen-f7489120f086a51a8df8c2ca.npy",
+    "server_active_index": "qwen-cb2c07a5c3ebbdfd9c91cf3c.npy",
+    "python_tests_after_cleanup": 310
+  }
+}

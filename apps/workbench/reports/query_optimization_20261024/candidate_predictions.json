@@ -1,0 +1,2354 @@
+[
+  {
+    "query_id": "TEST002",
+    "scene": "ST2_live_short_video",
+    "decision_state": "risk",
+    "risk_labels": [
+      "合同外利益",
+      "回扣返佣"
+    ],
+    "seconds": 12.539610599998923,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST003",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "risk",
+    "risk_labels": [
+      "欺骗投保人",
+      "虚假宣传"
+    ],
+    "seconds": 12.987307000001238,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST005",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 1.4211714000011852,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST001",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "risk",
+    "risk_labels": [
+      "赠送利益",
+      "回扣返佣",
+      "委托无资质机构销售",
+      "培训材料违规",
+      "欺骗投保人",
+      "销售误导"
+    ],
+    "seconds": 19.477292300000045,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST004",
+    "scene": "ST4_meeting_material",
+    "decision_state": "risk",
+    "risk_labels": [
+      "产品说明会违规",
+      "赠送利益",
+      "客户信息不真实",
+      "虚假宣传",
+      "绝对化表述",
+      "欺骗投保人",
+      "夸大收益",
+      "销售误导"
+    ],
+    "seconds": 8.699720099999467,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST006",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "risk",
+    "risk_labels": [
+      "虚列费用套取资金"
+    ],
+    "seconds": 7.140329699999711,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST007",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 2.515372199999547,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST008",
+    "scene": "ST2_live_short_video",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 1.5206601999998384,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST009",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "risk",
+    "risk_labels": [
+      "虚假宣传",
+      "欺骗投保人",
+      "销售误导"
+    ],
+    "seconds": 5.655179999999746,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST011",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "risk",
+    "risk_labels": [
+      "其他"
+    ],
+    "seconds": 5.590843899999527,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST010",
+    "scene": "ST4_meeting_material",
+    "decision_state": "risk",
+    "risk_labels": [
+      "产品说明会违规",
+      "未按规定使用费率条款",
+      "销售误导",
+      "其他",
+      "虚假宣传"
+    ],
+    "seconds": 8.23345000000154,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST012",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "risk",
+    "risk_labels": [
+      "其他"
+    ],
+    "seconds": 3.8843988999997237,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST014",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 2.682612300000983,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST015",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 2.088485500000388,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST013",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "risk",
+    "risk_labels": [
+      "绝对化表述",
+      "不当比较",
+      "保证收益",
+      "夸大收益",
+      "承诺收益",
+      "销售误导",
+      "贬低竞品",
+      "虚假宣传",
+      "诱导投保",
+      "赠送利益"
+    ],
+    "seconds": 6.77876809999907,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST017",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "risk",
+    "risk_labels": [
+      "承诺收益",
+      "保证收益",
+      "夸大收益",
+      "虚假宣传",
+      "销售误导"
+    ],
+    "seconds": 7.184970999998768,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST016",
+    "scene": "ST4_meeting_material",
+    "decision_state": "risk",
+    "risk_labels": [
+      "虚列费用套取资金",
+      "产品说明会违规",
+      "夸大收益",
+      "销售误导"
+    ],
+    "seconds": 9.07217810000111,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST018",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "risk",
+    "risk_labels": [
+      "代理人管理不到位",
+      "虚列费用套取资金"
+    ],
+    "seconds": 7.297918700000082,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST020",
+    "scene": "ST2_live_short_video",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 2.0254534000014246,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST021",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "risk",
+    "risk_labels": [
+      "代理人管理不到位"
+    ],
+    "seconds": 4.817903199998909,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST022",
+    "scene": "ST4_meeting_material",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 3.5161355000000185,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST019",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "risk",
+    "risk_labels": [
+      "虚列费用套取资金",
+      "赠送利益"
+    ],
+    "seconds": 7.294279499999902,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST023",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "risk",
+    "risk_labels": [
+      "培训材料违规",
+      "虚列费用套取资金"
+    ],
+    "seconds": 2.5649516000012227,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST024",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "risk",
+    "risk_labels": [
+      "不当比较",
+      "产品说明会违规",
+      "销售误导"
+    ],
+    "seconds": 3.35448820000056,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST026",
+    "scene": "ST2_live_short_video",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 1.7534333000003244,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST027",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 2.511888299999555,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST028",
+    "scene": "ST4_meeting_material",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 2.421739499999603,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST025",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "risk",
+    "risk_labels": [
+      "代理人管理不到位"
+    ],
+    "seconds": 6.357851100001426,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST029",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 2.7260669999996026,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST030",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "risk",
+    "risk_labels": [
+      "未按规定使用费率条款"
+    ],
+    "seconds": 4.825677700000597,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST033",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 0.9414152999997896,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST031",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "risk",
+    "risk_labels": [
+      "诱导投保"
+    ],
+    "seconds": 6.3302634000010585,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST032",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "risk",
+    "risk_labels": [
+      "不当比较",
+      "保证收益",
+      "夸大收益",
+      "承诺收益",
+      "绝对化表述",
+      "赠送利益"
+    ],
+    "seconds": 6.002112899999702,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST036",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "insufficient_information",
+    "risk_labels": [],
+    "seconds": 2.6775026000013895,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST035",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "risk",
+    "risk_labels": [
+      "培训材料违规",
+      "电销违规",
+      "隐瞒重要信息",
+      "欺骗投保人",
+      "其他"
+    ],
+    "seconds": 4.9866290999998455,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST034",
+    "scene": "ST4_meeting_material",
+    "decision_state": "risk",
+    "risk_labels": [
+      "产品说明会违规",
+      "虚列费用套取资金",
+      "客户信息不真实"
+    ],
+    "seconds": 7.5717358000001695,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST038",
+    "scene": "ST2_live_short_video",
+    "decision_state": "risk",
+    "risk_labels": [
+      "欺骗投保人",
+      "虚假宣传",
+      "培训材料违规"
+    ],
+    "seconds": 5.440792999999758,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST039",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "risk",
+    "risk_labels": [
+      "销售误导",
+      "未按规定使用费率条款",
+      "其他",
+      "合同外利益",
+      "虚列费用套取资金",
+      "赠送利益"
+    ],
+    "seconds": 4.276488600000448,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST040",
+    "scene": "ST4_meeting_material",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 3.8973680999988574,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST037",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "risk",
+    "risk_labels": [
+      "客户信息不真实",
+      "未按规定使用费率条款",
+      "欺骗投保人",
+      "夸大收益",
+      "销售误导",
+      "回扣返佣",
+      "虚列费用套取资金",
+      "诱导投保"
+    ],
+    "seconds": 12.924119999999675,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST041",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 6.114000699999451,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST042",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "risk",
+    "risk_labels": [
+      "未按规定使用费率条款",
+      "客户信息不真实",
+      "虚列费用套取资金"
+    ],
+    "seconds": 4.043790199999421,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST044",
+    "scene": "ST2_live_short_video",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 1.275941400001102,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST043",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 2.4239455000006274,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST045",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 4.78288540000176,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST046",
+    "scene": "ST4_meeting_material",
+    "decision_state": "risk",
+    "risk_labels": [
+      "虚列费用套取资金",
+      "客户信息不真实"
+    ],
+    "seconds": 5.201403400000345,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST049",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 1.5581669000002876,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST048",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "risk",
+    "risk_labels": [
+      "其他"
+    ],
+    "seconds": 2.974105799999961,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST047",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "risk",
+    "risk_labels": [
+      "培训材料违规",
+      "虚列费用套取资金",
+      "客户信息不真实"
+    ],
+    "seconds": 7.271425700000691,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST050",
+    "scene": "ST2_live_short_video",
+    "decision_state": "risk",
+    "risk_labels": [
+      "不当比较",
+      "保证收益",
+      "夸大收益",
+      "承诺收益",
+      "绝对化表述",
+      "贬低竞品",
+      "销售误导",
+      "其他"
+    ],
+    "seconds": 5.054161600000953,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST052",
+    "scene": "ST4_meeting_material",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 4.748515499999485,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST051",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "risk",
+    "risk_labels": [
+      "弱化风险提示",
+      "隐瞒重要信息"
+    ],
+    "seconds": 7.554282499999317,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST053",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "risk",
+    "risk_labels": [
+      "培训材料违规",
+      "电销违规",
+      "客户信息不真实",
+      "诱导投保"
+    ],
+    "seconds": 5.65280680000069,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST054",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "risk",
+    "risk_labels": [
+      "回扣返佣",
+      "欺骗投保人",
+      "诱导投保",
+      "隐瞒重要信息",
+      "客户信息不真实"
+    ],
+    "seconds": 5.342493199999808,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST055",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "risk",
+    "risk_labels": [
+      "绝对化表述",
+      "虚假宣传",
+      "赠送利益",
+      "不当比较",
+      "销售误导",
+      "贬低竞品",
+      "其他",
+      "代理人管理不到位",
+      "隐瞒重要信息"
+    ],
+    "seconds": 7.825434899999891,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST057",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "risk",
+    "risk_labels": [
+      "销售误导",
+      "隐瞒重要信息"
+    ],
+    "seconds": 4.83227160000024,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST056",
+    "scene": "ST2_live_short_video",
+    "decision_state": "risk",
+    "risk_labels": [
+      "赠送利益",
+      "合同外利益",
+      "回扣返佣",
+      "诱导投保"
+    ],
+    "seconds": 6.033685599999444,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST058",
+    "scene": "ST4_meeting_material",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 2.042268699999113,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST060",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 2.3365137000000686,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST062",
+    "scene": "ST2_live_short_video",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 1.4366590999998152,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST063",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 1.3783621000002313,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST059",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "risk",
+    "risk_labels": [
+      "培训材料违规",
+      "虚列费用套取资金"
+    ],
+    "seconds": 6.0068596999990405,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST065",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 1.5219522999996116,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST061",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "risk",
+    "risk_labels": [
+      "赠送利益",
+      "合同外利益",
+      "绝对化表述"
+    ],
+    "seconds": 8.330108500000279,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST064",
+    "scene": "ST4_meeting_material",
+    "decision_state": "risk",
+    "risk_labels": [
+      "产品说明会违规",
+      "客户信息不真实",
+      "欺骗投保人",
+      "弱化风险提示",
+      "虚假宣传",
+      "隐瞒重要信息",
+      "虚列费用套取资金"
+    ],
+    "seconds": 6.789333500000794,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST067",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 3.486761399999523,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST068",
+    "scene": "ST2_live_short_video",
+    "decision_state": "insufficient_information",
+    "risk_labels": [],
+    "seconds": 2.0122851000014634,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST066",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "risk",
+    "risk_labels": [
+      "培训材料违规",
+      "保证收益",
+      "承诺收益",
+      "销售误导",
+      "夸大收益"
+    ],
+    "seconds": 7.773022999999739,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST071",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 3.728512800000317,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST069",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "risk",
+    "risk_labels": [
+      "欺骗投保人",
+      "虚假宣传",
+      "销售误导"
+    ],
+    "seconds": 7.671210800001063,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST072",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "risk",
+    "risk_labels": [
+      "未按规定使用费率条款"
+    ],
+    "seconds": 2.423407700000098,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST070",
+    "scene": "ST4_meeting_material",
+    "decision_state": "risk",
+    "risk_labels": [
+      "产品说明会违规",
+      "虚假宣传"
+    ],
+    "seconds": 7.653149699999631,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST075",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 3.7106073000013566,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST074",
+    "scene": "ST2_live_short_video",
+    "decision_state": "risk",
+    "risk_labels": [
+      "代理人管理不到位",
+      "其他"
+    ],
+    "seconds": 4.568632299999081,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST073",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "risk",
+    "risk_labels": [
+      "未按规定使用费率条款",
+      "虚假宣传"
+    ],
+    "seconds": 6.957598300001337,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST077",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "risk",
+    "risk_labels": [
+      "赠送利益"
+    ],
+    "seconds": 3.2021119999990333,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST076",
+    "scene": "ST4_meeting_material",
+    "decision_state": "risk",
+    "risk_labels": [
+      "未按规定使用费率条款",
+      "销售误导",
+      "产品说明会违规",
+      "培训材料违规"
+    ],
+    "seconds": 5.0936266999997315,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST078",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "risk",
+    "risk_labels": [
+      "其他"
+    ],
+    "seconds": 3.110843599999498,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST080",
+    "scene": "ST2_live_short_video",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 1.5634707000008348,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST079",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "risk",
+    "risk_labels": [
+      "代理人管理不到位",
+      "欺骗投保人"
+    ],
+    "seconds": 7.904254799999762,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST082",
+    "scene": "ST4_meeting_material",
+    "decision_state": "risk",
+    "risk_labels": [
+      "隐瞒重要信息",
+      "不当比较",
+      "保证收益",
+      "夸大收益",
+      "承诺收益",
+      "绝对化表述",
+      "虚构收益率",
+      "贬低竞品",
+      "销售误导",
+      "产品说明会违规"
+    ],
+    "seconds": 6.345775400001003,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST081",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "risk",
+    "risk_labels": [
+      "回访违规"
+    ],
+    "seconds": 8.034770000000208,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST083",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 2.76244460000089,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST084",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "insufficient_information",
+    "risk_labels": [],
+    "seconds": 2.262642199999391,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST087",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 2.9112043999994057,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST085",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "risk",
+    "risk_labels": [
+      "欺骗投保人",
+      "绝对化表述",
+      "销售误导",
+      "虚假宣传",
+      "不当比较",
+      "保证收益",
+      "夸大收益",
+      "承诺收益",
+      "贬低竞品"
+    ],
+    "seconds": 6.691132699999798,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST086",
+    "scene": "ST2_live_short_video",
+    "decision_state": "risk",
+    "risk_labels": [
+      "虚列费用套取资金"
+    ],
+    "seconds": 6.619490200000655,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST089",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "risk",
+    "risk_labels": [
+      "电销违规",
+      "销售误导",
+      "隐瞒重要信息"
+    ],
+    "seconds": 3.4107223999999405,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST090",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "risk",
+    "risk_labels": [
+      "赠送利益"
+    ],
+    "seconds": 3.2887130999988585,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST088",
+    "scene": "ST4_meeting_material",
+    "decision_state": "risk",
+    "risk_labels": [
+      "诱导投保"
+    ],
+    "seconds": 6.100202599998738,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST091",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 3.9186334000005445,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST093",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 2.895995500000936,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST092",
+    "scene": "ST2_live_short_video",
+    "decision_state": "risk",
+    "risk_labels": [
+      "保证收益",
+      "夸大收益",
+      "承诺收益",
+      "不当比较",
+      "虚构收益率",
+      "弱化风险提示",
+      "销售误导",
+      "隐瞒重要信息"
+    ],
+    "seconds": 5.499301899999409,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST096",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 2.0182251000005635,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST095",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "risk",
+    "risk_labels": [
+      "培训材料违规",
+      "虚列费用套取资金"
+    ],
+    "seconds": 5.353759999999966,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST094",
+    "scene": "ST4_meeting_material",
+    "decision_state": "risk",
+    "risk_labels": [
+      "产品说明会违规",
+      "虚列费用套取资金"
+    ],
+    "seconds": 5.785601100000349,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST097",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 2.099069400001099,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST099",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "risk",
+    "risk_labels": [
+      "虚列费用套取资金",
+      "隐瞒重要信息"
+    ],
+    "seconds": 5.943369399999938,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST100",
+    "scene": "ST4_meeting_material",
+    "decision_state": "risk",
+    "risk_labels": [
+      "产品说明会违规",
+      "虚列费用套取资金",
+      "合同外利益",
+      "赠送利益",
+      "培训材料违规"
+    ],
+    "seconds": 5.619633799999065,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST098",
+    "scene": "ST2_live_short_video",
+    "decision_state": "risk",
+    "risk_labels": [
+      "其他",
+      "销售误导",
+      "隐瞒重要信息",
+      "诱导投保"
+    ],
+    "seconds": 7.672311399999671,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST102",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 1.517201099999511,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST104",
+    "scene": "ST2_live_short_video",
+    "decision_state": "risk",
+    "risk_labels": [
+      "虚列费用套取资金"
+    ],
+    "seconds": 2.7601321000001917,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST103",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "risk",
+    "risk_labels": [
+      "销售误导",
+      "赠送利益",
+      "绝对化表述"
+    ],
+    "seconds": 5.690702300000339,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST106",
+    "scene": "ST4_meeting_material",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 1.86069679999855,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST105",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 4.416950500000894,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST101",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "risk",
+    "risk_labels": [
+      "培训材料违规",
+      "赠送利益",
+      "合同外利益",
+      "诱导投保",
+      "虚列费用套取资金"
+    ],
+    "seconds": 11.408998500000962,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST107",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "insufficient_information",
+    "risk_labels": [],
+    "seconds": 2.215489799998977,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST109",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "risk",
+    "risk_labels": [
+      "虚列费用套取资金"
+    ],
+    "seconds": 2.1016467999997985,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST110",
+    "scene": "ST2_live_short_video",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 3.221525200000542,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST108",
+    "scene": "ST4_meeting_material",
+    "decision_state": "risk",
+    "risk_labels": [
+      "销售误导",
+      "不当比较",
+      "产品说明会违规",
+      "夸大收益",
+      "承诺收益",
+      "欺骗投保人",
+      "客户信息不真实",
+      "虚假宣传"
+    ],
+    "seconds": 9.966679099999965,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST111",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "risk",
+    "risk_labels": [
+      "虚列费用套取资金"
+    ],
+    "seconds": 8.194614899999578,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST113",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 2.831413399999292,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST114",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "insufficient_information",
+    "risk_labels": [],
+    "seconds": 1.5039936999983183,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST112",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "risk",
+    "risk_labels": [
+      "虚列费用套取资金",
+      "产品说明会违规",
+      "合同外利益",
+      "销售误导",
+      "委托无资质机构销售",
+      "未按规定使用费率条款",
+      "回访违规"
+    ],
+    "seconds": 8.87427949999983,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST116",
+    "scene": "ST2_live_short_video",
+    "decision_state": "insufficient_information",
+    "risk_labels": [],
+    "seconds": 1.8930250000012165,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST115",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 4.327288500000577,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST117",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "risk",
+    "risk_labels": [
+      "欺骗投保人",
+      "虚假宣传"
+    ],
+    "seconds": 5.678995999998733,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST120",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 1.5184847000000445,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST119",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "risk",
+    "risk_labels": [
+      "销售误导",
+      "隐瞒重要信息",
+      "弱化风险提示",
+      "电销违规"
+    ],
+    "seconds": 5.291094299998804,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST118",
+    "scene": "ST4_meeting_material",
+    "decision_state": "risk",
+    "risk_labels": [
+      "代理人管理不到位",
+      "产品说明会违规",
+      "其他"
+    ],
+    "seconds": 9.084601399999883,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST123",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 1.2912935999993351,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST121",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 5.405553299999156,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST122",
+    "scene": "ST2_live_short_video",
+    "decision_state": "risk",
+    "risk_labels": [
+      "夸大收益",
+      "承诺收益",
+      "绝对化表述",
+      "虚假宣传"
+    ],
+    "seconds": 5.0094101000013325,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST126",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 1.996612400000231,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST124",
+    "scene": "ST4_meeting_material",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 4.234264000000621,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST125",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "risk",
+    "risk_labels": [
+      "培训材料违规",
+      "客户信息不真实",
+      "欺骗投保人",
+      "电销违规",
+      "虚列费用套取资金"
+    ],
+    "seconds": 5.320808000000397,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST129",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 1.5460720999999467,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST127",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "risk",
+    "risk_labels": [
+      "诱导投保",
+      "培训材料违规"
+    ],
+    "seconds": 4.958773199999996,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST128",
+    "scene": "ST2_live_short_video",
+    "decision_state": "risk",
+    "risk_labels": [
+      "销售误导",
+      "隐瞒重要信息"
+    ],
+    "seconds": 5.878460899999482,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST132",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "risk",
+    "risk_labels": [
+      "虚列费用套取资金"
+    ],
+    "seconds": 2.3480036000000837,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST130",
+    "scene": "ST4_meeting_material",
+    "decision_state": "risk",
+    "risk_labels": [
+      "弱化风险提示",
+      "销售误导",
+      "产品说明会违规",
+      "虚列费用套取资金",
+      "回扣返佣",
+      "客户信息不真实",
+      "诱导投保",
+      "赠送利益"
+    ],
+    "seconds": 10.081581899999946,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST133",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "risk",
+    "risk_labels": [
+      "虚列费用套取资金"
+    ],
+    "seconds": 5.834904900000765,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST131",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "risk",
+    "risk_labels": [
+      "培训材料违规",
+      "回访违规",
+      "其他",
+      "客户信息不真实",
+      "弱化风险提示",
+      "隐瞒重要信息",
+      "不当比较",
+      "保证收益",
+      "夸大收益",
+      "承诺收益",
+      "欺骗投保人",
+      "电销违规",
+      "虚列费用套取资金",
+      "销售误导",
+      "诱导投保"
+    ],
+    "seconds": 12.943305800001326,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST135",
+    "scene": "ST4_meeting_material",
+    "decision_state": "risk",
+    "risk_labels": [
+      "产品说明会违规"
+    ],
+    "seconds": 4.4866939000003185,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST136",
+    "scene": "ST4_meeting_material",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 2.546249999999418,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST137",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 2.1869489999990037,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST134",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "risk",
+    "risk_labels": [
+      "未按规定使用费率条款",
+      "销售误导",
+      "客户信息不真实"
+    ],
+    "seconds": 8.267189199999848,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST139",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 1.8058364999997139,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST138",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "risk",
+    "risk_labels": [
+      "虚列费用套取资金"
+    ],
+    "seconds": 6.119844200000443,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST140",
+    "scene": "ST2_live_short_video",
+    "decision_state": "risk",
+    "risk_labels": [
+      "销售误导",
+      "弱化风险提示",
+      "隐瞒重要信息",
+      "其他",
+      "回扣返佣",
+      "委托无资质机构销售",
+      "未按规定使用费率条款",
+      "赠送利益",
+      "培训材料违规",
+      "绝对化表述",
+      "贬低竞品"
+    ],
+    "seconds": 6.400894499998685,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST141",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "insufficient_information",
+    "risk_labels": [],
+    "seconds": 5.18549990000065,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST143",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 6.243125200000577,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST144",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "insufficient_information",
+    "risk_labels": [],
+    "seconds": 6.085816599999816,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST142",
+    "scene": "ST4_meeting_material",
+    "decision_state": "risk",
+    "risk_labels": [
+      "产品说明会违规",
+      "不当比较",
+      "保证收益",
+      "承诺收益",
+      "销售误导",
+      "欺骗投保人",
+      "虚假宣传",
+      "诱导投保",
+      "培训材料违规",
+      "赠送利益"
+    ],
+    "seconds": 16.603052500000558,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST146",
+    "scene": "ST2_live_short_video",
+    "decision_state": "risk",
+    "risk_labels": [
+      "赠送利益",
+      "诱导投保"
+    ],
+    "seconds": 8.330569100000503,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST145",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "risk",
+    "risk_labels": [
+      "欺骗投保人",
+      "赠送利益"
+    ],
+    "seconds": 10.260552400000961,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST148",
+    "scene": "ST4_meeting_material",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 1.8667715000010503,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST150",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 1.4005286999999953,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST147",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "insufficient_information",
+    "risk_labels": [],
+    "seconds": 4.564904300001217,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST152",
+    "scene": "ST2_live_short_video",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 1.5673669000007067,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST149",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "risk",
+    "risk_labels": [
+      "培训材料违规",
+      "回扣返佣",
+      "委托无资质机构销售",
+      "虚列费用套取资金",
+      "其他"
+    ],
+    "seconds": 8.483759899998404,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST153",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 4.874789499999679,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST155",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 1.3160012000007555,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST151",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "risk",
+    "risk_labels": [
+      "其他",
+      "虚列费用套取资金",
+      "欺骗投保人"
+    ],
+    "seconds": 10.239499900000737,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST154",
+    "scene": "ST4_meeting_material",
+    "decision_state": "risk",
+    "risk_labels": [
+      "产品说明会违规",
+      "未按规定使用费率条款",
+      "虚假宣传",
+      "客户信息不真实",
+      "诱导投保",
+      "赠送利益",
+      "销售误导"
+    ],
+    "seconds": 6.838876699999673,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST157",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 4.060910399999557,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST156",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "risk",
+    "risk_labels": [
+      "未按规定使用费率条款"
+    ],
+    "seconds": 6.101980600000388,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST158",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "risk",
+    "risk_labels": [
+      "其他"
+    ],
+    "seconds": 6.028205900000103,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST159",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "risk",
+    "risk_labels": [
+      "虚列费用套取资金",
+      "赠送利益",
+      "合同外利益",
+      "回扣返佣",
+      "培训材料违规"
+    ],
+    "seconds": 8.612627900000007,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST160",
+    "scene": "ST4_meeting_material",
+    "decision_state": "risk",
+    "risk_labels": [
+      "产品说明会违规",
+      "回扣返佣",
+      "诱导投保",
+      "赠送利益",
+      "合同外利益",
+      "虚列费用套取资金",
+      "代理人管理不到位"
+    ],
+    "seconds": 11.406461700000364,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST162",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "risk",
+    "risk_labels": [
+      "虚列费用套取资金"
+    ],
+    "seconds": 3.196002299999236,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST161",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 7.202797899999496,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST164",
+    "scene": "ST2_live_short_video",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 1.8882579000000987,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST163",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 3.8941711000006762,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST166",
+    "scene": "ST4_meeting_material",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 2.713720400000966,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST165",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "risk",
+    "risk_labels": [
+      "培训材料违规",
+      "委托无资质机构销售",
+      "销售误导"
+    ],
+    "seconds": 4.666285400000561,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST167",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 1.8801793000002363,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST170",
+    "scene": "ST2_live_short_video",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 1.240894799999296,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST169",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 2.094276700001501,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST168",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "risk",
+    "risk_labels": [
+      "客户信息不真实"
+    ],
+    "seconds": 6.26872529999855,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST171",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "risk",
+    "risk_labels": [
+      "虚假宣传",
+      "欺骗投保人",
+      "隐瞒重要信息",
+      "销售误导"
+    ],
+    "seconds": 5.634486099999776,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST173",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "risk",
+    "risk_labels": [
+      "回访违规",
+      "培训材料违规",
+      "客户信息不真实"
+    ],
+    "seconds": 3.6553557999995974,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST174",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "risk",
+    "risk_labels": [
+      "代理人管理不到位",
+      "客户信息不真实",
+      "虚列费用套取资金"
+    ],
+    "seconds": 5.107786300000953,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST175",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 3.789613199998712,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST172",
+    "scene": "ST4_meeting_material",
+    "decision_state": "risk",
+    "risk_labels": [
+      "虚列费用套取资金",
+      "欺骗投保人",
+      "客户信息不真实",
+      "未按规定使用费率条款",
+      "回扣返佣",
+      "培训材料违规"
+    ],
+    "seconds": 12.222882000000027,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST176",
+    "scene": "ST2_live_short_video",
+    "decision_state": "risk",
+    "risk_labels": [
+      "虚列费用套取资金"
+    ],
+    "seconds": 5.500632999999652,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST178",
+    "scene": "ST4_meeting_material",
+    "decision_state": "risk",
+    "risk_labels": [
+      "产品说明会违规",
+      "销售误导",
+      "不当比较",
+      "绝对化表述",
+      "虚假宣传",
+      "隐瞒重要信息",
+      "未按规定使用费率条款"
+    ],
+    "seconds": 5.079851499998767,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST177",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "risk",
+    "risk_labels": [
+      "电销违规",
+      "诱导投保",
+      "销售误导",
+      "承诺收益",
+      "虚构收益率",
+      "虚假宣传",
+      "代理人管理不到位"
+    ],
+    "seconds": 7.50788669999929,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST180",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "risk",
+    "risk_labels": [
+      "虚列费用套取资金"
+    ],
+    "seconds": 2.646060099999886,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST179",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "risk",
+    "risk_labels": [
+      "培训材料违规"
+    ],
+    "seconds": 7.7606171000006725,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST182",
+    "scene": "ST2_live_short_video",
+    "decision_state": "risk",
+    "risk_labels": [
+      "虚假宣传",
+      "培训材料违规",
+      "销售误导",
+      "夸大收益",
+      "绝对化表述",
+      "其他"
+    ],
+    "seconds": 4.843514800000776,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST181",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "risk",
+    "risk_labels": [
+      "客户信息不真实"
+    ],
+    "seconds": 6.6022492999982205,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST183",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 2.3932246000003943,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST186",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "risk",
+    "risk_labels": [
+      "其他"
+    ],
+    "seconds": 3.1556371999995463,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST184",
+    "scene": "ST4_meeting_material",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 4.975947200000519,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST185",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "risk",
+    "risk_labels": [
+      "其他",
+      "培训材料违规"
+    ],
+    "seconds": 7.344409900000755,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST188",
+    "scene": "ST2_live_short_video",
+    "decision_state": "risk",
+    "risk_labels": [
+      "客户信息不真实",
+      "隐瞒重要信息",
+      "诱导投保"
+    ],
+    "seconds": 4.86182430000008,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST189",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "insufficient_information",
+    "risk_labels": [],
+    "seconds": 2.7948474000004353,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST187",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "risk",
+    "risk_labels": [
+      "销售误导",
+      "承诺收益",
+      "夸大收益",
+      "保证收益"
+    ],
+    "seconds": 8.152827800000523,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST190",
+    "scene": "ST4_meeting_material",
+    "decision_state": "risk",
+    "risk_labels": [
+      "虚列费用套取资金",
+      "产品说明会违规"
+    ],
+    "seconds": 4.26443350000045,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST192",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 1.9748185000007652,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST191",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "risk",
+    "risk_labels": [
+      "虚列费用套取资金"
+    ],
+    "seconds": 4.883652000000438,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST193",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "risk",
+    "risk_labels": [
+      "其他",
+      "虚列费用套取资金"
+    ],
+    "seconds": 4.304702699999325,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST195",
+    "scene": "ST3_product_intro_detail",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 3.2989557000000787,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST194",
+    "scene": "ST2_live_short_video",
+    "decision_state": "risk",
+    "risk_labels": [
+      "销售误导",
+      "弱化风险提示",
+      "保证收益",
+      "承诺收益",
+      "隐瞒重要信息",
+      "欺骗投保人",
+      "诱导投保"
+    ],
+    "seconds": 8.64084609999918,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST196",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "risk",
+    "risk_labels": [
+      "培训材料违规",
+      "保证收益",
+      "承诺收益",
+      "销售误导",
+      "诱导投保",
+      "代理人管理不到位"
+    ],
+    "seconds": 6.211186099999395,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST197",
+    "scene": "ST5_training_telemarketing_callback",
+    "decision_state": "risk",
+    "risk_labels": [
+      "培训材料违规",
+      "未按规定使用费率条款",
+      "电销违规",
+      "销售误导"
+    ],
+    "seconds": 7.088918300001751,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST198",
+    "scene": "ST6_penalty_backend_fact",
+    "decision_state": "risk",
+    "risk_labels": [
+      "其他"
+    ],
+    "seconds": 3.4692209999993793,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST199",
+    "scene": "ST1_poster_sms_social",
+    "decision_state": "no_clear_risk",
+    "risk_labels": [],
+    "seconds": 2.0024666000008438,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  },
+  {
+    "query_id": "TEST200",
+    "scene": "ST2_live_short_video",
+    "decision_state": "risk",
+    "risk_labels": [
+      "客户信息不真实",
+      "赠送利益"
+    ],
+    "seconds": 6.816145200000392,
+    "missing_model_targets": 0,
+    "unchecked_mechanisms": 0
+  }
+]

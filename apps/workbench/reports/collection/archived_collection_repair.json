@@ -1,0 +1,3862 @@
+{
+  "tested_at": "2026-10-19T16:34:42.111964+08:00",
+  "archive_sha256": "3982bfe6040c9b7a55a52bff8f58de31153b300f5294eb139d2855523626dc90",
+  "apply": true,
+  "counts": {
+    "non_insurance": 400,
+    "duplicate": 364,
+    "imported": 1
+  },
+  "label_sources": {
+    "legacy_structured": 1
+  },
+  "created_cases": 1,
+  "results": [
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268860_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268860&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268860_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268860&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268500.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268500&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268834.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268834&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268783_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268783&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268783_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268783&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268872.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268872&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268642_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268642&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268642_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268642&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268642_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268642&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268642_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268642&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268642_r5.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268642&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268642_r6.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268642&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268629_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268629&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268629_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268629&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268572_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268572&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268572_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268572&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268572_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268572&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268480.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268480&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268380_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268380&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268380_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268380&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268323_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268323&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268323_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268323&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268319_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268319&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268319_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268319&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268319_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268319&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268319_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268319&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268266.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268266&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268244.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268244&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268124.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268124&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268056_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268056&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268056_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268056&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268000_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268000&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268000_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268000&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268000_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268000&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267932.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267932&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267931.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267931&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267929.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267929&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267899_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267899&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267899_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267899&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267648.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267648&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268386_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268386&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268386_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268386&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268381_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268381&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268381_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268381&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268381_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268381&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267922_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267922&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267922_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267922&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268374.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268374&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267697.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267697&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267264_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267264&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267264_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267264&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267264_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267264&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267264_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267264&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267389.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267389&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267330.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267330&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267326.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267326&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267082.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267082&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267175_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267175&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267175_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267175&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267175_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267175&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267176_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267176&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267176_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267176&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267142.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267142&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267663_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267663&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267663_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267663&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267663_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267663&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267663_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267663&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267663_r5.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267663&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267663_r6.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267663&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267663_r7.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267663&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267039.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267039&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267673_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267673&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267673_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267673&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267673_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267673&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267673_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267673&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266484.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266484&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266804.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266804&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266802.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266802&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266845_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266845&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266845_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266845&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266845_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266845&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266845_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266845&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266803.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266803&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266812.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266812&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266594.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266594&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266733_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266733&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266733_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266733&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266733_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266733&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266629_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266629&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266629_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266629&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266572.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266572&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268249_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268249&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268249_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268249&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268249_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268249&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268249_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268249&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268246_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268246&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268246_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268246&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268246_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268246&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268245_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268245&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268245_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268245&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268245_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268245&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266416.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266416&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266478.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266478&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266496_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266496&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266496_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266496&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266456_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266456&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266456_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266456&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266456_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266456&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266456_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266456&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266456_r5.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266456&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266456_r6.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266456&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266456_r7.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266456&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266456_r8.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266456&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266456_r9.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266456&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266675.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266675&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266261_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266261&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266261_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266261&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266261_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266261&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266261_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266261&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266261_r5.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266261&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266244.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266244&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267200.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267200&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266171.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266171&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265711.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265711&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1267693.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267693&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268001_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268001&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268001_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268001&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268001_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268001&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266197_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266197&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266197_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266197&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266029_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266029&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266029_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266029&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266029_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266029&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265997.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265997&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265994.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265994&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265991.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265991&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265955_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265955&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265955_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265955&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265951.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265951&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265439_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265439&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265439_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265439&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265848_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265848&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265848_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265848&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265848_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265848&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265824.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265824&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265741_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265741&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265741_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265741&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265741_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265741&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265641.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265641&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265492_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265492&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265492_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265492&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265277.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265277&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265684_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265684&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265684_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265684&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265681_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265681&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265681_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265681&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265627_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265627&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265627_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265627&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265627_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265627&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265617_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265617&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265617_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265617&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265617_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265617&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265617_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265617&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265620_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265620&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265620_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265620&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266078_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266078&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266078_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266078&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266077_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266077&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266077_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266077&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265732.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265732&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265361.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265361&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265351.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265351&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265455.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265455&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265412_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265412&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265412_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265412&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265275_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265275&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265275_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265275&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265275_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265275&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265228.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265228&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265212_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265212&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265212_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265212&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265207.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265207&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265124_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265124&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265124_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265124&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265104.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265104&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264971_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264971&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264971_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264971&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264971_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264971&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264639.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264639&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264948.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264948&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264875_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264875&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264875_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264875&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264873_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264873&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264873_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264873&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265008_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265008&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265008_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265008&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264820.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264820&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265276_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265276&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265276_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265276&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264704.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264704&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264684_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264684&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264684_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264684&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264684_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264684&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264683_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264683&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264683_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264683&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264681_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264681&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264681_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264681&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264673_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264673&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264673_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264673&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268766_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268766&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268766_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268766&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268385.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268385&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268926.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268926&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268808.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268808&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268707_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268707&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268707_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268707&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268420_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268420&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268420_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268420&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268420_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268420&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268420_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268420&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268420_r5.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268420&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268420_r6.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268420&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267961.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267961&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268137_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268137&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268137_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268137&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268478_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268478&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268478_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268478&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268478_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268478&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267860_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267860&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267860_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267860&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267860_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267860&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267860_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267860&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268092.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268092&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267503.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267503&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267400_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267400&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267400_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267400&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267670_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267670&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267670_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267670&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267670_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267670&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267670_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267670&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267670_r5.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267670&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267670_r6.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267670&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267670_r7.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267670&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267670_r8.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267670&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268371_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268371&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268371_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268371&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268371_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268371&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268371_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268371&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268371_r5.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268371&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268371_r6.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268371&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268371_r7.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268371&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268371_r8.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268371&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268371_r9.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268371&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268371_r10.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268371&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268371_r11.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268371&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268371_r12.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268371&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268371_r13.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268371&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268371_r14.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268371&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268371_r15.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268371&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268371_r16.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268371&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268371_r17.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268371&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268371_r18.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268371&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268371_r19.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268371&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267214_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267214&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267214_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267214&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267304.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267304&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267062.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267062&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267061.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267061&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267334_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267334&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267334_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267334&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267334_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267334&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267328.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267328&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267324_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267324&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267324_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267324&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267323.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267323&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267320.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267320&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267063.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267063&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267234.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267234&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267130_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267130&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267130_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267130&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267306_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267306&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267306_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267306&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267139.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267139&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266974.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266974&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267230.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267230&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266731_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266731_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266731_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266731_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266731_r5.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266731_r6.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266731_r7.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266731_r8.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266731_r9.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266731_r10.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266731_r11.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266731_r12.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266731_r13.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266731_r14.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266731_r15.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266731_r16.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266731_r17.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266731_r18.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266731_r19.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266731_r20.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266731_r21.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266731_r22.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266731_r23.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266731_r24.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266731_r25.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266731_r26.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266731&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266483.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266483&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266165_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266165&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266165_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266165&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266165_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266165&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266307.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266307&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268873.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268873&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266348.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266348&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266303.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266303&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266238.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266238&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268237_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268237&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268237_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268237&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268236_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268236&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268236_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268236&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267331.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267331&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265884.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265884&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1267322.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1267322&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266302.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266302&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265804_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265804&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265804_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265804&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265804_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265804&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265804_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265804&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266116.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266116&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265766_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265766&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265766_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265766&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265766_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265766&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265766_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265766&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265766_r5.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265766&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265766_r6.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265766&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265440.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265440&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265697.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265697&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265638_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265638&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265638_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265638&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265638_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265638&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265524.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265524&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268869_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268869&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268869_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268869&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268455_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268455&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268455_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268455&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265408_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265408&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265408_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265408&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265408_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265408&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r5.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r6.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r7.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r8.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r9.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r10.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r11.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r12.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r13.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r14.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r15.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r16.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r17.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r18.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r19.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r20.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r21.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r22.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r23.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r24.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r25.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r26.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r27.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r28.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r29.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r30.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r31.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r32.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265322_r33.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265322&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1265049.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265049&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264682_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264682&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264682_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264682&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264682_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264682&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264931.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264931&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264930.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264930&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264928.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264928&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264927.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264927&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264926.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264926&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264877_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264877&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264877_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264877&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264877_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264877&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264877_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264877&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264794_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264794&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264794_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264794&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264794_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264794&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264854_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264854&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264854_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264854&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264854_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264854&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264854_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264854&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264854_r5.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264854&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264854_r6.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264854&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264854_r7.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264854&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264854_r8.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264854&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264678_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264678&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264678_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264678&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264640_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264640&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264640_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264640&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264640_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264640&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264640_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264640&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266075_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266075&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266075_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266075&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266074_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266074&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266074_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266074&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264456.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264456&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264427.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264427&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264421.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264421&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264300.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264300&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266073_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266073&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266073_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266073&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264257_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264257&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264257_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264257&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264257_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264257&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264257_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264257&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264257_r5.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264257&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264234_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264234&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264234_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264234&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264234_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264234&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264234_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264234&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264234_r5.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264234&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1263795_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263795&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1263795_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263795&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264159.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264159&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1266434.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266434&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264094_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264094&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264094_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264094&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1263949.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263949&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1263948.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263948&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264250.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264250&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1263876_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263876&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1263876_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263876&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1263876_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263876&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1268235.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268235&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1264925.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264925&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1263649_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263649&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1263649_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263649&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1263649_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263649&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1263635.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263635&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1263506.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263506&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1263464_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263464&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1263464_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263464&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1263464_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263464&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1263069.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263069&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1262983.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1262983&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1263312.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263312&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1263273_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263273&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1263273_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263273&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1263273_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263273&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1263273_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263273&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1263061.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263061&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1263022.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263022&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1262969.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1262969&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1262960.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1262960&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1262955.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1262955&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1262968.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1262968&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1262966.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1262966&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1262776.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1262776&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1262679.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1262679&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1262513.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1262513&itemId=4114&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1262506.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1262506&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1262505.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1262505&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4114/1262504.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1262504&itemId=4114&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1268890_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268890&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1268890_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268890&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1268890_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268890&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1268890_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268890&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1264901_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264901&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1264901_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264901&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1264901_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264901&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1260352_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1260352&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1260352_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1260352&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1260352_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1260352&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1260352_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1260352&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1260352_r5.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1260352&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1255842_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1255842&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1255842_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1255842&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1255842_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1255842&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1250417_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1250417&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1250417_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1250417&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1250417_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1250417&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1238354_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1238354&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1238354_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1238354&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1238354_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1238354&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1238354_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1238354&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1236270.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1236270&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1233460.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1233460&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1231550_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1231550&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1231550_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1231550&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1231550_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1231550&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1231550_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1231550&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1231550_r5.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1231550&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1228899_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1228899&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1228899_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1228899&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1228124_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1228124&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1228124_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1228124&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1225670_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1225670&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1225670_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1225670&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1225649_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1225649&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1225649_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1225649&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1225649_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1225649&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1225649_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1225649&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1225649_r5.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1225649&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1225641_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1225641&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1225641_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1225641&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1225641_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1225641&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1225641_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1225641&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1224782_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1224782&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1224782_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1224782&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1224782_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1224782&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1224725_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1224725&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1224725_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1224725&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1224725_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1224725&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1224725_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1224725&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1219958_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1219958&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1219958_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1219958&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1219958_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1219958&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1219958_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1219958&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1219958_r5.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1219958&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1217102_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1217102&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1217102_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1217102&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1217102_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1217102&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1216218.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1216218&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1215112_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1215112&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1215112_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1215112&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1213520_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1213520&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1213520_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1213520&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1212831_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1212831&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1212831_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1212831&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1207101.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1207101&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1198340_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1198340&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1198340_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1198340&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1198340_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1198340&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1170162.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1170162&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1167694.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1167694&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1167692.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1167692&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1167688.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1167688&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1167686.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1167686&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1167683.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1167683&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1167665.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1167665&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1166772.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1166772&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1164151.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1164151&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1164149.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1164149&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1164145.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1164145&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1163134.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1163134&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1163130.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1163130&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1162474.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1162474&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1162473.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1162473&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1162472.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1162472&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1162471.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1162471&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1162469.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1162469&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1162468.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1162468&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1162467.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1162467&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1162466.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1162466&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1162465.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1162465&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1162453.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1162453&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1160145.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1160145&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1160136.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1160136&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1159451.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1159451&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1146086.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1146086&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1146085.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1146085&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1146075.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1146075&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1144099.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1144099&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1143257.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1143257&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1144097.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1144097&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1144094.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1144094&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1144090.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1144090&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1144087.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1144087&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1144083.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1144083&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1144061.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1144061&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1143251.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1143251&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1143254.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1143254&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1143248.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1143248&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1143240.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1143240&itemId=4113&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4113/1144050.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1144050&itemId=4113&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264672_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264672&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264672_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264672&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264669_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264669&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264669_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264669&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264670_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264670&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264670_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264670&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263999_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263999&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263999_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263999&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263999_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263999&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268223.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268223&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264666_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264666&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264666_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264666&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264073.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264073&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264454.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264454&itemId=4115&generaltype=9",
+      "status": "imported",
+      "label_source": "legacy_structured",
+      "party_name": "张洪刚",
+      "case_id": "U8E5A3A563814E98"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264423_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264423&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264423_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264423&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264423_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264423&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264423_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264423&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264423_r5.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264423&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264329.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264329&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264326.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264326&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264323.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264323&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264295.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264295&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264281.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264281&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264262_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264262&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264262_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264262&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264262_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264262&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264249.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264249&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264229.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264229&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264109_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264109&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264109_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264109&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264076.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264076&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264160_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264160&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264160_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264160&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264160_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264160&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264216.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264216&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264157_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264157&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264157_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264157&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264157_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264157&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264157_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264157&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264157_r5.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264157&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264157_r6.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264157&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264209_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264209&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264209_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264209&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264209_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264209&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264209_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264209&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264209_r5.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264209&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264209_r6.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264209&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264209_r7.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264209&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264208.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264208&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264175.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264175&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264171_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264171&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264171_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264171&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264171_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264171&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264170_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264170&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264170_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264170&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264167_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264167&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264167_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264167&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264167_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264167&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264167_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264167&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264167_r5.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264167&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264167_r6.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264167&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264165_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264165&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264165_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264165&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264162_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264162&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264162_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264162&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264162_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264162&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264162_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264162&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264162_r5.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264162&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264162_r6.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264162&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264162_r7.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264162&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264057_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264057&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264057_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264057&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266262.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266262&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264029.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264029&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264027.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264027&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264025.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264025&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264017.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264017&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265539_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265539&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1265539_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1265539&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263975_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263975&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263975_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263975&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263975_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263975&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263975_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263975&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264368.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264368&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263971_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263971&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263971_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263971&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263971_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263971&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263958.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263958&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264154_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264154&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264154_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264154&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264154_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264154&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263972_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263972&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263972_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263972&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263972_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263972&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263972_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263972&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263847.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263847&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263280.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263280&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263272.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263272&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263759_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263759&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263759_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263759&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263776.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263776&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264348.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264348&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268241_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268241&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1268241_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268241&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263668_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263668&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263668_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263668&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263582_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263582&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263582_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263582&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263582_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263582&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263582_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263582&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263224_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263224&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263224_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263224&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263224_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263224&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263224_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263224&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263226_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263226&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263226_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263226&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263226_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263226&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263226_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263226&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263226_r5.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263226&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263226_r6.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263226&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263226_r7.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263226&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263226_r8.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263226&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263226_r9.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263226&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263226_r10.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263226&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263226_r11.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263226&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263226_r12.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263226&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263494_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263494&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263494_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263494&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263465.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263465&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263383.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263383&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263371_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263371&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263371_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263371&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264614_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264614&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264614_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264614&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264614_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264614&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264614_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264614&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1264614_r5.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1264614&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263327_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263327&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263327_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263327&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263327_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263327&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263327_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263327&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263264.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263264&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263262.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263262&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263256.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263256&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263249.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263249&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263126_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263126&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263126_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263126&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263126_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263126&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263140.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263140&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263125_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263125&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263125_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263125&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263125_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263125&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263125_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263125&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263125_r5.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263125&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263125_r6.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263125&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263107.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263107&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263071_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263071&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263071_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263071&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263066_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263066&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263066_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263066&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1262949_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1262949&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1262949_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1262949&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1262949_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1262949&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263024_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263024&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263024_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263024&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263024_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263024&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263024_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263024&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263024_r5.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263024&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1263024_r6.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1263024&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266276_r1.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266276&itemId=4115&generaltype=9",
+      "status": "duplicate"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266276_r2.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266276&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266276_r3.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266276&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266276_r4.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266276&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    },
+    {
+      "member": "data/raw/cases/crawl/nfra/4115/1266276_r5.txt",
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1266276&itemId=4115&generaltype=9",
+      "status": "non_insurance"
+    }
+  ],
+  "chat_api_requests": 0,
+  "official_http_requests": 0,
+  "daily_collection_checkpoint_unchanged": true,
+  "index_status": "pending",
+  "index": null,
+  "statistics": {
+    "total_cases": 10005,
+    "base_cases": 9639,
+    "user_cases": 0,
+    "crawled_cases": 366,
+    "active_cases": 10005,
+    "risk_tag_count": 27,
+    "data_version": "finrisk-v2.1-local-20261018",
+    "latest_crawl_at": "2026-10-19T15:43:32.556331+08:00",
+    "latest_penalty_date": "2026-04-23",
+    "subject_case_count": 15986,
+    "listing_unit": "document"
+  }
+}

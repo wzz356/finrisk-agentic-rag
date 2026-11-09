@@ -1,0 +1,1347 @@
+{
+  "protocol": {
+    "objective": "query quality on the unchanged 200-query/500-case regression benchmark",
+    "baseline_commit": "3293e16dab333e9f08e3ff57a42b7f5c572b301d",
+    "test_inputs_sha256": "af6e34059a655ed16169b09357cda4e21e353cacac20bcf29e073f7eb3f18cfd",
+    "test_reference_sha256": "40c2fb580b6ae3b24ef781fdc7eaabbeaab4290e88de83ab8a77f39168be8b70",
+    "candidate_selection": "new synthetic validation and existing development only; no test-error-guided changes",
+    "test_evaluation": "one final frozen candidate versus fresh baseline, both same current KB and closed 500 pool",
+    "promotion_gate": {
+      "minimum_gain_any_of_state_accuracy_binary_accuracy_label_micro_f1": 0.01,
+      "maximum_regression_state_accuracy_binary_accuracy_label_micro_f1": 0.005,
+      "maximum_risk_recall_regression": 0.01,
+      "maximum_scene_accuracy_regression": 0.01,
+      "maximum_retrieval_hit5_ndcg_regression": 0.01,
+      "query_errors": 0,
+      "missing_model_targets": 0
+    },
+    "annotation_status": "Codex authored and reviewed synthetic development, not expert gold",
+    "no_test_reference_relabeling": true
+  },
+  "runs": {
+    "baseline": {
+      "run": "query_20261024_baseline",
+      "risk": {
+        "queries": 200,
+        "state_accuracy": 0.88,
+        "risk_binary_accuracy": 0.92,
+        "risk_precision": 0.8916666666666667,
+        "risk_recall": 0.9727272727272728,
+        "risk_f1": 0.9304347826086956,
+        "scene_accuracy": 0.96,
+        "label_micro_f1": 0.6419098143236074,
+        "label_macro_f1": 0.6213710300892704,
+        "label_supported_macro_f1": 0.6213710300892704,
+        "per_label": {
+          "欺骗投保人": {
+            "tp": 5,
+            "fp": 21,
+            "fn": 2,
+            "f1": 0.30303030303030304,
+            "support": 7
+          },
+          "销售误导": {
+            "tp": 14,
+            "fp": 24,
+            "fn": 1,
+            "f1": 0.5283018867924528,
+            "support": 15
+          },
+          "夸大收益": {
+            "tp": 13,
+            "fp": 4,
+            "fn": 3,
+            "f1": 0.7878787878787878,
+            "support": 16
+          },
+          "虚假宣传": {
+            "tp": 14,
+            "fp": 11,
+            "fn": 2,
+            "f1": 0.6829268292682927,
+            "support": 16
+          },
+          "合同外利益": {
+            "tp": 4,
+            "fp": 5,
+            "fn": 1,
+            "f1": 0.5714285714285714,
+            "support": 5
+          },
+          "赠送利益": {
+            "tp": 19,
+            "fp": 5,
+            "fn": 0,
+            "f1": 0.8837209302325582,
+            "support": 19
+          },
+          "回扣返佣": {
+            "tp": 4,
+            "fp": 4,
+            "fn": 2,
+            "f1": 0.5714285714285714,
+            "support": 6
+          },
+          "产品说明会违规": {
+            "tp": 14,
+            "fp": 3,
+            "fn": 5,
+            "f1": 0.7777777777777778,
+            "support": 19
+          },
+          "培训材料违规": {
+            "tp": 16,
+            "fp": 11,
+            "fn": 1,
+            "f1": 0.7272727272727273,
+            "support": 17
+          },
+          "回访违规": {
+            "tp": 4,
+            "fp": 0,
+            "fn": 2,
+            "f1": 0.8,
+            "support": 6
+          },
+          "电销违规": {
+            "tp": 5,
+            "fp": 1,
+            "fn": 3,
+            "f1": 0.7142857142857143,
+            "support": 8
+          },
+          "不当比较": {
+            "tp": 9,
+            "fp": 3,
+            "fn": 4,
+            "f1": 0.72,
+            "support": 13
+          },
+          "贬低竞品": {
+            "tp": 4,
+            "fp": 2,
+            "fn": 0,
+            "f1": 0.8,
+            "support": 4
+          },
+          "绝对化表述": {
+            "tp": 9,
+            "fp": 5,
+            "fn": 2,
+            "f1": 0.72,
+            "support": 11
+          },
+          "承诺收益": {
+            "tp": 13,
+            "fp": 4,
+            "fn": 1,
+            "f1": 0.8387096774193549,
+            "support": 14
+          },
+          "保证收益": {
+            "tp": 13,
+            "fp": 2,
+            "fn": 1,
+            "f1": 0.896551724137931,
+            "support": 14
+          },
+          "弱化风险提示": {
+            "tp": 6,
+            "fp": 3,
+            "fn": 8,
+            "f1": 0.5217391304347826,
+            "support": 14
+          },
+          "隐瞒重要信息": {
+            "tp": 6,
+            "fp": 16,
+            "fn": 1,
+            "f1": 0.41379310344827586,
+            "support": 7
+          },
+          "虚构收益率": {
+            "tp": 1,
+            "fp": 3,
+            "fn": 0,
+            "f1": 0.4,
+            "support": 1
+          },
+          "诱导投保": {
+            "tp": 3,
+            "fp": 21,
+            "fn": 0,
+            "f1": 0.2222222222222222,
+            "support": 3
+          },
+          "避债避税": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "f1": 0.0,
+            "support": 2
+          },
+          "虚列费用套取资金": {
+            "tp": 25,
+            "fp": 16,
+            "fn": 2,
+            "f1": 0.7352941176470589,
+            "support": 27
+          },
+          "代理人管理不到位": {
+            "tp": 6,
+            "fp": 1,
+            "fn": 5,
+            "f1": 0.6666666666666666,
+            "support": 11
+          },
+          "委托无资质机构销售": {
+            "tp": 2,
+            "fp": 2,
+            "fn": 0,
+            "f1": 0.6666666666666666,
+            "support": 2
+          },
+          "未按规定使用费率条款": {
+            "tp": 14,
+            "fp": 2,
+            "fn": 0,
+            "f1": 0.9333333333333333,
+            "support": 14
+          },
+          "客户信息不真实": {
+            "tp": 8,
+            "fp": 12,
+            "fn": 2,
+            "f1": 0.5333333333333333,
+            "support": 10
+          },
+          "其他": {
+            "tp": 11,
+            "fp": 7,
+            "fn": 32,
+            "f1": 0.36065573770491804,
+            "support": 43
+          }
+        },
+        "median_seconds": 4.354317300000275,
+        "p95_seconds": 11.744901000000027,
+        "warnings": 0,
+        "errors": 0,
+        "missing_model_targets": 0,
+        "long_queries": 1,
+        "long_median_seconds": 7.1162161000002015
+      },
+      "retrieval": {
+        "judged_queries": 200,
+        "positive_queries": 187,
+        "no_positive_queries": 13,
+        "hit1": 0.8074866310160428,
+        "hit5": 0.9251336898395722,
+        "mrr": 0.8564828961887785,
+        "recall_at_3": 0.11946768104873462,
+        "recall_at_5": 0.1637313390645688,
+        "recall_at_10": 0.23568519228931858,
+        "recall_at_20": 0.3028982063520376,
+        "ndcg_at_10": 0.5804492925870537,
+        "median_seconds": 1.3576739000000089
+      }
+    },
+    "candidate": {
+      "run": "query_20261024_candidate_final",
+      "risk": {
+        "queries": 200,
+        "state_accuracy": 0.88,
+        "risk_binary_accuracy": 0.915,
+        "risk_precision": 0.8842975206611571,
+        "risk_recall": 0.9727272727272728,
+        "risk_f1": 0.9264069264069265,
+        "scene_accuracy": 0.96,
+        "label_micro_f1": 0.6701986754966888,
+        "label_macro_f1": 0.6469606933688425,
+        "label_supported_macro_f1": 0.6469606933688425,
+        "per_label": {
+          "欺骗投保人": {
+            "tp": 6,
+            "fp": 16,
+            "fn": 1,
+            "f1": 0.41379310344827586,
+            "support": 7
+          },
+          "销售误导": {
+            "tp": 14,
+            "fp": 27,
+            "fn": 1,
+            "f1": 0.5,
+            "support": 15
+          },
+          "夸大收益": {
+            "tp": 14,
+            "fp": 2,
+            "fn": 2,
+            "f1": 0.875,
+            "support": 16
+          },
+          "虚假宣传": {
+            "tp": 13,
+            "fp": 9,
+            "fn": 3,
+            "f1": 0.6842105263157895,
+            "support": 16
+          },
+          "合同外利益": {
+            "tp": 4,
+            "fp": 5,
+            "fn": 1,
+            "f1": 0.5714285714285714,
+            "support": 5
+          },
+          "赠送利益": {
+            "tp": 19,
+            "fp": 4,
+            "fn": 0,
+            "f1": 0.9047619047619048,
+            "support": 19
+          },
+          "回扣返佣": {
+            "tp": 6,
+            "fp": 5,
+            "fn": 0,
+            "f1": 0.7058823529411765,
+            "support": 6
+          },
+          "产品说明会违规": {
+            "tp": 17,
+            "fp": 4,
+            "fn": 2,
+            "f1": 0.85,
+            "support": 19
+          },
+          "培训材料违规": {
+            "tp": 15,
+            "fp": 12,
+            "fn": 2,
+            "f1": 0.6818181818181818,
+            "support": 17
+          },
+          "回访违规": {
+            "tp": 4,
+            "fp": 0,
+            "fn": 2,
+            "f1": 0.8,
+            "support": 6
+          },
+          "电销违规": {
+            "tp": 7,
+            "fp": 1,
+            "fn": 1,
+            "f1": 0.875,
+            "support": 8
+          },
+          "不当比较": {
+            "tp": 10,
+            "fp": 2,
+            "fn": 3,
+            "f1": 0.8,
+            "support": 13
+          },
+          "贬低竞品": {
+            "tp": 4,
+            "fp": 2,
+            "fn": 0,
+            "f1": 0.8,
+            "support": 4
+          },
+          "绝对化表述": {
+            "tp": 9,
+            "fp": 4,
+            "fn": 2,
+            "f1": 0.75,
+            "support": 11
+          },
+          "承诺收益": {
+            "tp": 13,
+            "fp": 3,
+            "fn": 1,
+            "f1": 0.8666666666666667,
+            "support": 14
+          },
+          "保证收益": {
+            "tp": 12,
+            "fp": 1,
+            "fn": 2,
+            "f1": 0.8888888888888888,
+            "support": 14
+          },
+          "弱化风险提示": {
+            "tp": 5,
+            "fp": 3,
+            "fn": 9,
+            "f1": 0.45454545454545453,
+            "support": 14
+          },
+          "隐瞒重要信息": {
+            "tp": 5,
+            "fp": 14,
+            "fn": 2,
+            "f1": 0.38461538461538464,
+            "support": 7
+          },
+          "虚构收益率": {
+            "tp": 1,
+            "fp": 2,
+            "fn": 0,
+            "f1": 0.5,
+            "support": 1
+          },
+          "诱导投保": {
+            "tp": 3,
+            "fp": 17,
+            "fn": 0,
+            "f1": 0.2608695652173913,
+            "support": 3
+          },
+          "避债避税": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "f1": 0.0,
+            "support": 2
+          },
+          "虚列费用套取资金": {
+            "tp": 25,
+            "fp": 16,
+            "fn": 2,
+            "f1": 0.7352941176470589,
+            "support": 27
+          },
+          "代理人管理不到位": {
+            "tp": 7,
+            "fp": 4,
+            "fn": 4,
+            "f1": 0.6363636363636364,
+            "support": 11
+          },
+          "委托无资质机构销售": {
+            "tp": 2,
+            "fp": 3,
+            "fn": 0,
+            "f1": 0.5714285714285714,
+            "support": 2
+          },
+          "未按规定使用费率条款": {
+            "tp": 14,
+            "fp": 2,
+            "fn": 0,
+            "f1": 0.9333333333333333,
+            "support": 14
+          },
+          "客户信息不真实": {
+            "tp": 9,
+            "fp": 13,
+            "fn": 1,
+            "f1": 0.5625,
+            "support": 10
+          },
+          "其他": {
+            "tp": 15,
+            "fp": 7,
+            "fn": 28,
+            "f1": 0.46153846153846156,
+            "support": 43
+          }
+        },
+        "median_seconds": 4.8683068999998795,
+        "p95_seconds": 10.239499900000737,
+        "warnings": 0,
+        "errors": 0,
+        "missing_model_targets": 0,
+        "long_queries": 1,
+        "long_median_seconds": 7.554282499999317
+      },
+      "retrieval": {
+        "judged_queries": 200,
+        "positive_queries": 187,
+        "no_positive_queries": 13,
+        "hit1": 0.8021390374331551,
+        "hit5": 0.9251336898395722,
+        "mrr": 0.8528053021565132,
+        "recall_at_3": 0.11943595628519546,
+        "recall_at_5": 0.16475309808489894,
+        "recall_at_10": 0.23387743262976698,
+        "recall_at_20": 0.30407685963153125,
+        "ndcg_at_10": 0.5799152426779037,
+        "median_seconds": 1.3774188000006689
+      }
+    }
+  },
+  "risk_delta": {
+    "state_accuracy": 0.0,
+    "risk_binary_accuracy": -0.0050000000000000044,
+    "label_micro_f1": 0.02828886117308138,
+    "risk_recall": 0.0,
+    "scene_accuracy": 0.0,
+    "label_macro_f1": 0.025589663279572128
+  },
+  "retrieval_delta": {
+    "hit5": 0.0,
+    "ndcg_at_10": -0.0005340499091499584
+  },
+  "gate_checks": {
+    "meaningful_gain": true,
+    "core_no_regression": true,
+    "risk_recall": true,
+    "scene_accuracy": true,
+    "query_errors": true,
+    "missing_model_targets": true,
+    "retrieval_hit5": true,
+    "retrieval_ndcg_at_10": true
+  },
+  "promote": true,
+  "development": {
+    "baseline": {
+      "existing_development": {
+        "queries": 100,
+        "state_accuracy": 0.93,
+        "risk_binary_accuracy": 0.96,
+        "risk_precision": 0.9473684210526315,
+        "risk_recall": 0.9818181818181818,
+        "risk_f1": 0.9642857142857143,
+        "scene_accuracy": 0.95,
+        "label_micro_f1": 0.8034682080924855,
+        "label_macro_f1": 0.7058497058497059,
+        "label_supported_macro_f1": 0.7623176823176823,
+        "per_label": {
+          "欺骗投保人": {
+            "tp": 4,
+            "fp": 5,
+            "fn": 0,
+            "f1": 0.6153846153846154,
+            "support": 4
+          },
+          "销售误导": {
+            "tp": 4,
+            "fp": 8,
+            "fn": 0,
+            "f1": 0.5,
+            "support": 4
+          },
+          "夸大收益": {
+            "tp": 6,
+            "fp": 3,
+            "fn": 0,
+            "f1": 0.8,
+            "support": 6
+          },
+          "虚假宣传": {
+            "tp": 5,
+            "fp": 1,
+            "fn": 0,
+            "f1": 0.9090909090909091,
+            "support": 5
+          },
+          "合同外利益": {
+            "tp": 4,
+            "fp": 1,
+            "fn": 0,
+            "f1": 0.8888888888888888,
+            "support": 4
+          },
+          "赠送利益": {
+            "tp": 11,
+            "fp": 6,
+            "fn": 0,
+            "f1": 0.7857142857142857,
+            "support": 11
+          },
+          "回扣返佣": {
+            "tp": 3,
+            "fp": 0,
+            "fn": 0,
+            "f1": 1.0,
+            "support": 3
+          },
+          "产品说明会违规": {
+            "tp": 2,
+            "fp": 2,
+            "fn": 2,
+            "f1": 0.5,
+            "support": 4
+          },
+          "培训材料违规": {
+            "tp": 7,
+            "fp": 1,
+            "fn": 0,
+            "f1": 0.9333333333333333,
+            "support": 7
+          },
+          "回访违规": {
+            "tp": 4,
+            "fp": 0,
+            "fn": 0,
+            "f1": 1.0,
+            "support": 4
+          },
+          "电销违规": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 3,
+            "f1": 0.4,
+            "support": 4
+          },
+          "不当比较": {
+            "tp": 6,
+            "fp": 0,
+            "fn": 2,
+            "f1": 0.8571428571428571,
+            "support": 8
+          },
+          "贬低竞品": {
+            "tp": 0,
+            "fp": 2,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "绝对化表述": {
+            "tp": 12,
+            "fp": 0,
+            "fn": 2,
+            "f1": 0.9230769230769231,
+            "support": 14
+          },
+          "承诺收益": {
+            "tp": 12,
+            "fp": 0,
+            "fn": 0,
+            "f1": 1.0,
+            "support": 12
+          },
+          "保证收益": {
+            "tp": 9,
+            "fp": 1,
+            "fn": 1,
+            "f1": 0.9,
+            "support": 10
+          },
+          "弱化风险提示": {
+            "tp": 5,
+            "fp": 1,
+            "fn": 1,
+            "f1": 0.8333333333333334,
+            "support": 6
+          },
+          "隐瞒重要信息": {
+            "tp": 4,
+            "fp": 1,
+            "fn": 1,
+            "f1": 0.8,
+            "support": 5
+          },
+          "虚构收益率": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "诱导投保": {
+            "tp": 1,
+            "fp": 9,
+            "fn": 0,
+            "f1": 0.18181818181818182,
+            "support": 1
+          },
+          "避债避税": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "f1": 0.0,
+            "support": 1
+          },
+          "虚列费用套取资金": {
+            "tp": 7,
+            "fp": 4,
+            "fn": 0,
+            "f1": 0.7777777777777778,
+            "support": 7
+          },
+          "代理人管理不到位": {
+            "tp": 2,
+            "fp": 2,
+            "fn": 0,
+            "f1": 0.6666666666666666,
+            "support": 2
+          },
+          "委托无资质机构销售": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "f1": 1.0,
+            "support": 1
+          },
+          "未按规定使用费率条款": {
+            "tp": 4,
+            "fp": 0,
+            "fn": 0,
+            "f1": 1.0,
+            "support": 4
+          },
+          "客户信息不真实": {
+            "tp": 10,
+            "fp": 0,
+            "fn": 1,
+            "f1": 0.9523809523809523,
+            "support": 11
+          },
+          "其他": {
+            "tp": 15,
+            "fp": 3,
+            "fn": 3,
+            "f1": 0.8333333333333334,
+            "support": 18
+          }
+        },
+        "median_seconds": 4.545439349999924,
+        "p95_seconds": 19.78142349999962,
+        "warnings": 1,
+        "errors": 0,
+        "missing_model_targets": 1,
+        "long_queries": 1,
+        "long_median_seconds": 3.9771921999999904
+      },
+      "new_boundaries": {
+        "queries": 24,
+        "state_accuracy": 0.7083333333333334,
+        "risk_binary_accuracy": 0.9166666666666666,
+        "risk_precision": 1.0,
+        "risk_recall": 0.75,
+        "risk_f1": 0.8571428571428571,
+        "scene_accuracy": 0.6666666666666666,
+        "label_micro_f1": 0.7333333333333333,
+        "label_macro_f1": 0.14238683127572016,
+        "label_supported_macro_f1": 0.6407407407407407,
+        "per_label": {
+          "欺骗投保人": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "f1": 1.0,
+            "support": 1
+          },
+          "销售误导": {
+            "tp": 1,
+            "fp": 3,
+            "fn": 0,
+            "f1": 0.4,
+            "support": 1
+          },
+          "夸大收益": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "虚假宣传": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "合同外利益": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "赠送利益": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "回扣返佣": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "产品说明会违规": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "培训材料违规": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "f1": 0.0,
+            "support": 1
+          },
+          "回访违规": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "电销违规": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "不当比较": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "贬低竞品": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "绝对化表述": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "承诺收益": {
+            "tp": 4,
+            "fp": 0,
+            "fn": 1,
+            "f1": 0.8888888888888888,
+            "support": 5
+          },
+          "保证收益": {
+            "tp": 4,
+            "fp": 0,
+            "fn": 1,
+            "f1": 0.8888888888888888,
+            "support": 5
+          },
+          "弱化风险提示": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "隐瞒重要信息": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "虚构收益率": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "诱导投保": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "避债避税": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "虚列费用套取资金": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "代理人管理不到位": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "委托无资质机构销售": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "未按规定使用费率条款": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "客户信息不真实": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 1,
+            "f1": 0.6666666666666666,
+            "support": 2
+          },
+          "其他": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          }
+        },
+        "median_seconds": 2.6230098500004715,
+        "p95_seconds": 5.330068899999787,
+        "warnings": 0,
+        "errors": 0,
+        "missing_model_targets": 0,
+        "long_queries": 3,
+        "long_median_seconds": 2.6014473000004728
+      }
+    },
+    "candidate": {
+      "existing_development": {
+        "queries": 100,
+        "state_accuracy": 0.91,
+        "risk_binary_accuracy": 0.95,
+        "risk_precision": 0.9310344827586207,
+        "risk_recall": 0.9818181818181818,
+        "risk_f1": 0.9557522123893806,
+        "scene_accuracy": 0.94,
+        "label_micro_f1": 0.8046647230320699,
+        "label_macro_f1": 0.7085513370973754,
+        "label_supported_macro_f1": 0.7652354440651654,
+        "per_label": {
+          "欺骗投保人": {
+            "tp": 4,
+            "fp": 4,
+            "fn": 0,
+            "f1": 0.6666666666666666,
+            "support": 4
+          },
+          "销售误导": {
+            "tp": 4,
+            "fp": 7,
+            "fn": 0,
+            "f1": 0.5333333333333333,
+            "support": 4
+          },
+          "夸大收益": {
+            "tp": 6,
+            "fp": 5,
+            "fn": 0,
+            "f1": 0.7058823529411765,
+            "support": 6
+          },
+          "虚假宣传": {
+            "tp": 5,
+            "fp": 2,
+            "fn": 0,
+            "f1": 0.8333333333333334,
+            "support": 5
+          },
+          "合同外利益": {
+            "tp": 4,
+            "fp": 1,
+            "fn": 0,
+            "f1": 0.8888888888888888,
+            "support": 4
+          },
+          "赠送利益": {
+            "tp": 11,
+            "fp": 5,
+            "fn": 0,
+            "f1": 0.8148148148148148,
+            "support": 11
+          },
+          "回扣返佣": {
+            "tp": 3,
+            "fp": 0,
+            "fn": 0,
+            "f1": 1.0,
+            "support": 3
+          },
+          "产品说明会违规": {
+            "tp": 3,
+            "fp": 1,
+            "fn": 1,
+            "f1": 0.75,
+            "support": 4
+          },
+          "培训材料违规": {
+            "tp": 6,
+            "fp": 1,
+            "fn": 1,
+            "f1": 0.8571428571428571,
+            "support": 7
+          },
+          "回访违规": {
+            "tp": 4,
+            "fp": 0,
+            "fn": 0,
+            "f1": 1.0,
+            "support": 4
+          },
+          "电销违规": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 3,
+            "f1": 0.4,
+            "support": 4
+          },
+          "不当比较": {
+            "tp": 5,
+            "fp": 0,
+            "fn": 3,
+            "f1": 0.7692307692307693,
+            "support": 8
+          },
+          "贬低竞品": {
+            "tp": 0,
+            "fp": 2,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "绝对化表述": {
+            "tp": 12,
+            "fp": 0,
+            "fn": 2,
+            "f1": 0.9230769230769231,
+            "support": 14
+          },
+          "承诺收益": {
+            "tp": 12,
+            "fp": 0,
+            "fn": 0,
+            "f1": 1.0,
+            "support": 12
+          },
+          "保证收益": {
+            "tp": 9,
+            "fp": 0,
+            "fn": 1,
+            "f1": 0.9473684210526315,
+            "support": 10
+          },
+          "弱化风险提示": {
+            "tp": 5,
+            "fp": 1,
+            "fn": 1,
+            "f1": 0.8333333333333334,
+            "support": 6
+          },
+          "隐瞒重要信息": {
+            "tp": 4,
+            "fp": 1,
+            "fn": 1,
+            "f1": 0.8,
+            "support": 5
+          },
+          "虚构收益率": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "诱导投保": {
+            "tp": 1,
+            "fp": 11,
+            "fn": 0,
+            "f1": 0.15384615384615385,
+            "support": 1
+          },
+          "避债避税": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 1,
+            "f1": 0.0,
+            "support": 1
+          },
+          "虚列费用套取资金": {
+            "tp": 7,
+            "fp": 4,
+            "fn": 0,
+            "f1": 0.7777777777777778,
+            "support": 7
+          },
+          "代理人管理不到位": {
+            "tp": 2,
+            "fp": 2,
+            "fn": 0,
+            "f1": 0.6666666666666666,
+            "support": 2
+          },
+          "委托无资质机构销售": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "f1": 1.0,
+            "support": 1
+          },
+          "未按规定使用费率条款": {
+            "tp": 4,
+            "fp": 0,
+            "fn": 0,
+            "f1": 1.0,
+            "support": 4
+          },
+          "客户信息不真实": {
+            "tp": 10,
+            "fp": 0,
+            "fn": 1,
+            "f1": 0.9523809523809523,
+            "support": 11
+          },
+          "其他": {
+            "tp": 15,
+            "fp": 2,
+            "fn": 3,
+            "f1": 0.8571428571428571,
+            "support": 18
+          }
+        },
+        "median_seconds": 4.252360049999879,
+        "p95_seconds": 11.436987500000214,
+        "warnings": 1,
+        "errors": 0,
+        "missing_model_targets": 0,
+        "long_queries": 1,
+        "long_median_seconds": 3.622030300000006
+      },
+      "new_boundaries": {
+        "queries": 24,
+        "state_accuracy": 0.8333333333333334,
+        "risk_binary_accuracy": 1.0,
+        "risk_precision": 1.0,
+        "risk_recall": 1.0,
+        "risk_f1": 1.0,
+        "scene_accuracy": 0.6666666666666666,
+        "label_micro_f1": 0.8571428571428571,
+        "label_macro_f1": 0.19753086419753085,
+        "label_supported_macro_f1": 0.8888888888888888,
+        "per_label": {
+          "欺骗投保人": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "f1": 1.0,
+            "support": 1
+          },
+          "销售误导": {
+            "tp": 1,
+            "fp": 4,
+            "fn": 0,
+            "f1": 0.3333333333333333,
+            "support": 1
+          },
+          "夸大收益": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "虚假宣传": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "合同外利益": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "赠送利益": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "回扣返佣": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "产品说明会违规": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "培训材料违规": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 0,
+            "f1": 1.0,
+            "support": 1
+          },
+          "回访违规": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "电销违规": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "不当比较": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "贬低竞品": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "绝对化表述": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "承诺收益": {
+            "tp": 5,
+            "fp": 0,
+            "fn": 0,
+            "f1": 1.0,
+            "support": 5
+          },
+          "保证收益": {
+            "tp": 5,
+            "fp": 0,
+            "fn": 0,
+            "f1": 1.0,
+            "support": 5
+          },
+          "弱化风险提示": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "隐瞒重要信息": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "虚构收益率": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "诱导投保": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "避债避税": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "虚列费用套取资金": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "代理人管理不到位": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "委托无资质机构销售": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "未按规定使用费率条款": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "客户信息不真实": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "其他": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "f1": 0.0,
+            "support": 0
+          }
+        },
+        "median_seconds": 2.734323349999613,
+        "p95_seconds": 5.4493209000002025,
+        "warnings": 0,
+        "errors": 0,
+        "missing_model_targets": 0,
+        "long_queries": 3,
+        "long_median_seconds": 2.1760403999996925
+      }
+    }
+  },
+  "interpretation": "Repeated engineering regression, not new independent or expert validation; single real-API run per version with model nondeterminism. No test-error-guided candidate selection or reference relabeling."
+}

@@ -1,0 +1,34 @@
+{
+  "local_duplicate_dependency_bytes_removed": 346787265.0,
+  "local_transfer_archive_bytes_removed": 12853144,
+  "dependency_folders": [
+    {
+      "bytes": 69357453.0,
+      "path": "outputs/competition_upgrade_20261019/runs/query_20261024_baseline/frozen_runtime/node_modules",
+      "status": "duplicate-dependencies-removed"
+    },
+    {
+      "bytes": 69357453.0,
+      "path": "outputs/competition_upgrade_20261019/runs/query_20261024_candidate_final/frozen_runtime/node_modules",
+      "status": "duplicate-dependencies-removed"
+    },
+    {
+      "bytes": 69357453.0,
+      "path": "outputs/query_optimization_20261024/baseline_development/frozen_runtime/node_modules",
+      "status": "duplicate-dependencies-removed"
+    },
+    {
+      "bytes": 69357453.0,
+      "path": "outputs/query_optimization_20261024/candidate_development_v1/frozen_runtime/node_modules",
+      "status": "duplicate-dependencies-removed"
+    },
+    {
+      "bytes": 69357453.0,
+      "path": "outputs/query_optimization_20261024/candidate_development_v2/frozen_runtime/node_modules",
+      "status": "duplicate-dependencies-removed"
+    }
+  ],
+  "server_transfer_archive_removed": true,
+  "old_release_is_shared_active_data": true,
+  "original_pdfs_and_active_vectors_preserved": true
+}

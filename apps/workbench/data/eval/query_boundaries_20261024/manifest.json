@@ -1,0 +1,72 @@
+{
+  "version": "query-boundaries-20261024-v1",
+  "author": "Codex direct authoring and review",
+  "purpose": "local candidate training and few-shot calibration; no DeepSeek weight fine-tuning",
+  "splits_by": "scenario_group; validation groups do not appear in training",
+  "counts": {
+    "train": {
+      "queries": 72,
+      "groups": 24,
+      "states": {
+        "risk": 24,
+        "no_clear_risk": 24,
+        "insufficient_information": 24
+      },
+      "labels": {
+        "承诺收益": 2,
+        "保证收益": 2,
+        "夸大收益": 1,
+        "虚构收益率": 1,
+        "虚假宣传": 1,
+        "销售误导": 3,
+        "欺骗投保人": 1,
+        "电销违规": 2,
+        "合同外利益": 2,
+        "赠送利益": 1,
+        "回扣返佣": 1,
+        "产品说明会违规": 1,
+        "培训材料违规": 1,
+        "隐瞒重要信息": 2,
+        "回访违规": 1,
+        "不当比较": 1,
+        "贬低竞品": 1,
+        "绝对化表述": 3,
+        "弱化风险提示": 1,
+        "诱导投保": 1,
+        "避债避税": 1,
+        "虚列费用套取资金": 1,
+        "代理人管理不到位": 1,
+        "委托无资质机构销售": 1,
+        "未按规定使用费率条款": 1,
+        "客户信息不真实": 2,
+        "其他": 1
+      },
+      "long_queries": 0
+    },
+    "validation": {
+      "queries": 24,
+      "groups": 8,
+      "states": {
+        "risk": 8,
+        "no_clear_risk": 8,
+        "insufficient_information": 8
+      },
+      "labels": {
+        "客户信息不真实": 2,
+        "保证收益": 5,
+        "承诺收益": 5,
+        "欺骗投保人": 1,
+        "销售误导": 1,
+        "培训材料违规": 1
+      },
+      "long_queries": 3
+    }
+  },
+  "test_queries_used_for_authoring": 0,
+  "test_reference_modified": false,
+  "taxonomy_sha256": "0588febf140ada823980fdbe0c5691d77bc02ed439cb8d44e6cfef1cda12d8bb",
+  "files": {
+    "train.jsonl": "8ece4f42ec0ebd9da07deb9e0f3bc3df1912d2e174d6c30f5d91b350dd4e3f3f",
+    "validation.jsonl": "ec599b9651385c6056b090feb932507048a2f3ef01889cfd51ad08e74c2103e5"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "audited_at": "2026-10-19T16:38:42.939974+08:00",
+  "usage_log": "outputs/competition_upgrade_20261019/dataset_build/api_usage.jsonl",
+  "task": "benchmark_annotation",
+  "scope": "Saved successful logical tasks; provider billing or unlogged failed/retried HTTP requests may differ.",
+  "purpose": "260 queries (60 development + 200 test) x 500 candidate cases; 50 cases per initial batch, followed by missing-item and evidence corrections.",
+  "initial_batch_count": 2600,
+  "models": {
+    "deepseek-v4-flash": {
+      "successful_logged_tasks": 123,
+      "input_tokens": 407556,
+      "output_tokens": 110744,
+      "total_tokens": 518300
+    },
+    "qwen-plus": {
+      "successful_logged_tasks": 778,
+      "input_tokens": 6250866,
+      "output_tokens": 644518,
+      "total_tokens": 6895384
+    },
+    "qwen3.7-flash": {
+      "successful_logged_tasks": 2888,
+      "input_tokens": 39056303,
+      "output_tokens": 1949894,
+      "total_tokens": 41006197
+    }
+  },
+  "current_collected_import_chat_api_requests": 0,
+  "current_collected_import_official_http_requests": 0,
+  "current_online_model_roles": {
+    "main_pi_chat": "DeepSeek",
+    "default_rerank": "DeepSeek via Pi",
+    "document_and_query_embeddings": "qwen3.7-text-embedding",
+    "optional_qwen_rerank": "qwen3-rerank"
+  },
+  "offline_annotation_script": "scripts/build_aligned_qrels.py",
+  "annotation_is_scheduled": false
+}

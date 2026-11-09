@@ -1,0 +1,18 @@
+{
+  "legal_manifest_sha256": "371863431348bc80f8bb1cbc707ca5eb672c2ea6149b1379674f3bbcd16409ca",
+  "expanded_manifest_sha256": "0af6eb0805e434cd8acd87696c065ff3ff05d56bf5c65938c7d8eee9b72c476f",
+  "base_versions": {
+    "content": "finrisk-basic-closeout-v2.1-20261013:fa2fb293b5cb483ed6f7e300758cbf5ae67b868d5fb5033bd3db053bb7d9ebb6",
+    "projection": "V2-all9639_final:52a987679efaee2a3e849598e2946422d01410c9c98ef6029ec2b7be30e88546",
+    "articles": "articles-v1-20261017:6733e9fa9e4f05ac55caf4222ff821ae6ce08bfbd67c2ac4fba6aab5680cb2f1",
+    "rules": "rules-v1-20261017:7d2f69f3b378c7bec32eefaad04e7eff409c64c595e95d85db75f11a61e116ee",
+    "scope": "finrisk-scope-overlay-20261018-v1"
+  },
+  "legal_adapter": {
+    "source_sha256": "7f5ceca4a04f2bd9c5a99aff5341682a36f5cbe2f7f60325adf9d85f16d72cc8",
+    "copied_code_sha256": "c3556502c90e8c0cbfa4d6f2c993bd52384b60219ed274be977c3ad4575489b8",
+    "change": "only helper import changes from common to runtime_common"
+  },
+  "source_assets_unchanged": true,
+  "human_approved": false
+}

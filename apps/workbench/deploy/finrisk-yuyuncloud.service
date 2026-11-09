@@ -1,0 +1,33 @@
+[Unit]
+Description=FinRisk insurance compliance workbench
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=finrisk
+Group=finrisk
+WorkingDirectory=/opt/finrisk/current/app
+EnvironmentFile=/etc/finrisk/finrisk.env
+Environment=PYTHONUNBUFFERED=1
+Environment=OMP_NUM_THREADS=2
+Environment=OPENBLAS_NUM_THREADS=2
+Environment=MKL_NUM_THREADS=2
+ExecStart=/opt/finrisk/current/venv/bin/python -m uvicorn api.app:app --host 127.0.0.1 --port 8000 --app-dir /opt/finrisk/current/app/src --workers 1
+Restart=on-failure
+RestartSec=3
+TimeoutStartSec=180
+TimeoutStopSec=30
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=full
+UMask=0077
+LimitNOFILE=65536
+CPUQuota=200%
+MemoryHigh=3G
+MemoryMax=4G
+TasksMax=192
+
+[Install]
+WantedBy=multi-user.target

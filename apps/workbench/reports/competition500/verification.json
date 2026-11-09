@@ -1,0 +1,25 @@
+{
+  "python_tests": 232,
+  "node_tests": 31,
+  "ruff": "passed",
+  "mypy_source_files": 83,
+  "dataset_source_audit": "passed",
+  "frozen_source_hashes_match": true,
+  "training_reference_matches_evaluation": true,
+  "test_queries_used_for_training": 0,
+  "external_model_review_calls": 0,
+  "all_ranked_evidence_verified": true,
+  "api_query_failures": 0,
+  "unreviewed_model_targets": 0,
+  "git_push_performed": false,
+  "server_deployment_performed": false,
+  "browser_ui_verified": true,
+  "browser_console_errors": 0,
+  "rerank_choices_preserved": 3,
+  "retrieval_timing_choices_preserved": [
+    "post",
+    "pre",
+    "adaptive"
+  ],
+  "local_web_url": "http://127.0.0.1:18088"
+}

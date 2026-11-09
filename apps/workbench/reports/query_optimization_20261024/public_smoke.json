@@ -1,0 +1,86 @@
+{
+  "base": "https://www.finrisklab.online",
+  "results": [
+    {
+      "name": "independent_fact",
+      "expected_state": "risk",
+      "decision_state": "risk",
+      "risk_labels": [
+        "客户信息不真实"
+      ],
+      "warnings": [],
+      "human_pending_sentences": 0,
+      "missing_model_targets": 0,
+      "literal_query_mappings": true,
+      "seconds": 10.425,
+      "passed": true
+    },
+    {
+      "name": "adopted_quote",
+      "expected_state": "risk",
+      "decision_state": "risk",
+      "risk_labels": [
+        "保证收益",
+        "培训材料违规",
+        "承诺收益"
+      ],
+      "warnings": [],
+      "human_pending_sentences": 0,
+      "missing_model_targets": 0,
+      "literal_query_mappings": true,
+      "seconds": 9.197,
+      "passed": true
+    },
+    {
+      "name": "independent_calling",
+      "expected_state": "risk",
+      "decision_state": "risk",
+      "risk_labels": [
+        "电销违规"
+      ],
+      "warnings": [],
+      "human_pending_sentences": 0,
+      "missing_model_targets": 0,
+      "literal_query_mappings": true,
+      "seconds": 5.129,
+      "passed": true
+    },
+    {
+      "name": "prohibited_quote",
+      "expected_state": "no_clear_risk",
+      "decision_state": "no_clear_risk",
+      "risk_labels": [],
+      "warnings": [],
+      "human_pending_sentences": 0,
+      "missing_model_targets": 0,
+      "literal_query_mappings": true,
+      "seconds": 3.776,
+      "passed": true
+    },
+    {
+      "name": "proper_prohibition",
+      "expected_state": "no_clear_risk",
+      "decision_state": "no_clear_risk",
+      "risk_labels": [],
+      "warnings": [],
+      "human_pending_sentences": 0,
+      "missing_model_targets": 0,
+      "literal_query_mappings": true,
+      "seconds": 2.343,
+      "passed": true
+    },
+    {
+      "name": "missing_facts",
+      "expected_state": "insufficient_information",
+      "decision_state": "insufficient_information",
+      "risk_labels": [],
+      "warnings": [],
+      "human_pending_sentences": 2,
+      "missing_model_targets": 0,
+      "literal_query_mappings": true,
+      "seconds": 6.087,
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

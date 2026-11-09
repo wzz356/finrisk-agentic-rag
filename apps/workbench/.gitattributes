@@ -1,0 +1,6 @@
+*.jsonl -text
+*.txt -text
+# Keep pinned assets and evaluation hashes identical on Windows and Linux.
+data/runtime_knowledge/** -text
+data/eval/** -text
+*.npz -text

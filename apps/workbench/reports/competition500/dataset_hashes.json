@@ -1,0 +1,16 @@
+{
+  "cases.jsonl": "dd047ea80078a0d113a4af6a5d52344d6c3bdeb5351ca67eec24ac27913da9ac",
+  "development.jsonl": "b44803c1378a0a9708f1260656ac55d7b1aff187cacca0e0a440c36c327d6573",
+  "model_inputs.jsonl": "8dc00a14e95e2b855d8903b7d25fa9fa375ef57a5041b8d0c35daf2cc2d6d5c5",
+  "README.md": "7ce1f560a2c2b4f50a71b4c17e61bfc8b558b5da5778133dffad476c80eae504",
+  "test.jsonl": "af6e34059a655ed16169b09357cda4e21e353cacac20bcf29e073f7eb3f18cfd",
+  "validation.jsonl": "e2493fd58762864492f94dd732e0b43df70091e95f545496d98d29737c036db0",
+  "reference\\case_reviews.jsonl": "823f2671b526c38a649c14922193290f09424da8819b03c575bb35987d7778aa",
+  "reference\\generation_plan.jsonl": "86e2f67efb5306dad0e6f81e477eea9dfda12203490ebbba6e0dbb8847b03cba",
+  "reference\\labels.jsonl": "40c2fb580b6ae3b24ef781fdc7eaabbeaab4290e88de83ab8a77f39168be8b70",
+  "reference\\qrels_development.jsonl": "f8e17c3442fb0f263fed2b5e8296d857e60758d32f36e8751348a6e9827e019b",
+  "reference\\qrels_test.jsonl": "7094837d14e606408976d60f4dd64f1838c5bdc3910eaaf09ec5fa9d6ae2e5ea",
+  "reference\\query_reviews.jsonl": "63bb3c2501142a524ac08176f66cc7dc3cbb6b4257fc2b66e9b50ef13727fa1a",
+  "reference\\relevance_protocol.json": "f1e72748cb087e2319aaef1964336c7f6d4be3725f2db1ff7bd4a4d696d91367",
+  "reference\\review_changes.json": "4b39fcd179005e1297a921d70a05d4b53e50df7b187a5cea3dbce3ea40e1bfee"
+}

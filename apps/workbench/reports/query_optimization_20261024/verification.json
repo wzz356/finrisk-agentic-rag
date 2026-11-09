@@ -1,0 +1,49 @@
+{
+  "python_tests": {
+    "passed": 322,
+    "failed": 0,
+    "command": "pytest -q --basetemp .tmp/query-final-full-tests"
+  },
+  "node_tests": {
+    "passed": 18,
+    "failed": 0,
+    "command": "node --test agent_runtime/test/*.test.mjs"
+  },
+  "ruff": "passed",
+  "mypy": {
+    "source_files": 87,
+    "status": "passed"
+  },
+  "knowledge_rebuilt": false,
+  "document_vectors_rebuilt": false,
+  "reason": "Only query scope, decision prompts and the local candidate model changed; source corpus and document embedding inputs are unchanged.",
+  "model_sha256": "c2ff2ad1c60fd7b53718077daf1e77a84a73bad5ac9e74011064c99c0beb152b",
+  "training": {
+    "old_development": 400,
+    "new_train": 72,
+    "new_validation_used_for_training": 0,
+    "original_test_used_for_training": 0
+  },
+  "retrieval": {
+    "baseline": {
+      "queries": 200,
+      "literal_verified": 200,
+      "warnings": 0
+    },
+    "candidate": {
+      "queries": 200,
+      "literal_verified": 200,
+      "warnings": 0
+    }
+  },
+  "frozen_candidate_source_verified_after_test": true,
+  "publication_gate_passed": true,
+  "github_runtime_revision": "41f2765780c71d740eed57e17fe8b64885cfb9b4",
+  "server_runtime_revision": "41f2765780c71d740eed57e17fe8b64885cfb9b4",
+  "public_api_smoke": {
+    "passed": 6,
+    "failed": 0,
+    "https": true
+  },
+  "protected_service_unchanged": true
+}

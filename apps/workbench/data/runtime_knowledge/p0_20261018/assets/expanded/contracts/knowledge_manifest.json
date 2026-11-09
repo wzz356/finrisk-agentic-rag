@@ -1,0 +1,158 @@
+{
+  "schema": "finrisk-enhancement-knowledge-v1",
+  "enhancement_version": "knowledge-organization-expanded-v1",
+  "base_versions": {
+    "content": "finrisk-basic-closeout-v2.1-20261013:fa2fb293b5cb483ed6f7e300758cbf5ae67b868d5fb5033bd3db053bb7d9ebb6",
+    "projection": "V2-all9639_final:52a987679efaee2a3e849598e2946422d01410c9c98ef6029ec2b7be30e88546",
+    "articles": "articles-v1-20261017:6733e9fa9e4f05ac55caf4222ff821ae6ce08bfbd67c2ac4fba6aab5680cb2f1",
+    "rules": "rules-v1-20261017:7d2f69f3b378c7bec32eefaad04e7eff409c64c595e95d85db75f11a61e116ee",
+    "scope": "finrisk-scope-overlay-20261018-v1"
+  },
+  "files": {
+    "expanded/contracts/expansion_batches.json": {
+      "sha256": "d94aa0353975f726f3e8907f9ecafebddf8b7ab0e5f8b3f75130c910c21ba48b",
+      "bytes": 517
+    },
+    "expanded/knowledge/case_links.jsonl": {
+      "sha256": "5e5dc855cd42f3b7dbf220ab563a8f3ebf984ddf33515c86c1820a1b2ff04b3c",
+      "bytes": 173475
+    },
+    "expanded/knowledge/claim_evidence.jsonl": {
+      "sha256": "8479b1415b69ab5b39c78fceb18bc1b8c0884ddd853e28ec0f94bdcdd8acd08f",
+      "bytes": 17819
+    },
+    "expanded/knowledge/mechanisms.jsonl": {
+      "sha256": "8df14e9990a68e3c06647ee1b9920df58fd206b834f453c6584f93014e7d4ebc",
+      "bytes": 271799
+    },
+    "expanded/knowledge/source_documents.jsonl": {
+      "sha256": "282359796ca25b02481a758b97b39a367de3070d97d2ece93aea39667355c82f",
+      "bytes": 180780
+    },
+    "expanded/knowledge/source_spans.jsonl": {
+      "sha256": "623bb7ea4ee5874ae1454f3c164e8dcce99a4746c330da624446f744ca3fa828",
+      "bytes": 75808
+    },
+    "expanded/navigation/index.json": {
+      "sha256": "17e4a2710e9b8c9955c4703851a91a37f1c26556d0db524458d07d857a60397b",
+      "bytes": 51906
+    },
+    "expanded/navigation/label_coverage.json": {
+      "sha256": "5b45f9aa7f896d069ea064e18f667dbc4104f31c3fabe3a79a61cbcb74e171eb",
+      "bytes": 5429
+    },
+    "expanded/navigation/mechanisms/M01/abstract.md": {
+      "sha256": "6fc09be63489d368f697b1ea1a612894b4b0015aa1a4c4bdb621e9fdc992a3eb",
+      "bytes": 560
+    },
+    "expanded/navigation/mechanisms/M01/overview.md": {
+      "sha256": "f282907bd1823661bf4dd7d18d393666b932db4f950550d68e2cfa3255a504a9",
+      "bytes": 3493
+    },
+    "expanded/navigation/mechanisms/M02/abstract.md": {
+      "sha256": "0a5a5bb52abecbdd3fcb4fb50417f60d7f40a5b81b716763b7e3bf4ba41c695b",
+      "bytes": 442
+    },
+    "expanded/navigation/mechanisms/M02/overview.md": {
+      "sha256": "ce217523d3c207896a59541e30d34f2e1fb7507136f1a84ca93731db423bb932",
+      "bytes": 2920
+    },
+    "expanded/navigation/mechanisms/M03/abstract.md": {
+      "sha256": "93418c84d6e9092d0dfd812ed9cdf9ef7071eaa34a3be2441ca29d3912af7e2c",
+      "bytes": 494
+    },
+    "expanded/navigation/mechanisms/M03/overview.md": {
+      "sha256": "083fb6aefdea5ffc230e33f78dc585465253feb4e6b0062127f30748d11da676",
+      "bytes": 1295
+    },
+    "expanded/navigation/mechanisms/M04/abstract.md": {
+      "sha256": "1479e86ae590f3223a527237194a524ad9d40275ef211f00abeae53aea8cb256",
+      "bytes": 427
+    },
+    "expanded/navigation/mechanisms/M04/overview.md": {
+      "sha256": "ab337adc26367d660f35f2c5f6c547ed44aa0876f3214af0119f107913a37777",
+      "bytes": 5319
+    },
+    "expanded/navigation/mechanisms/M05/abstract.md": {
+      "sha256": "a92423def2a51e646be5804839bbef62f293e30632c7763ad385d179089aa6e6",
+      "bytes": 418
+    },
+    "expanded/navigation/mechanisms/M05/overview.md": {
+      "sha256": "50dd04c220a34e3777c130d76c0acd428bad0e95560ca657317eb872bed90765",
+      "bytes": 1894
+    },
+    "expanded/navigation/mechanisms/M06/abstract.md": {
+      "sha256": "5b184157af6b3eeb1e1936b948326332368587858a2bcd8c4cb32bf85f9e966e",
+      "bytes": 376
+    },
+    "expanded/navigation/mechanisms/M06/overview.md": {
+      "sha256": "5846f7c2217c65559231bac59ce35d2ae78b51b11bd0161a4103432255a79853",
+      "bytes": 1376
+    },
+    "expanded/navigation/mechanisms/M07/abstract.md": {
+      "sha256": "586af692963a5d8f6ea013f4703cef5ed5942abe70da657648fec7d36fe0d4dd",
+      "bytes": 384
+    },
+    "expanded/navigation/mechanisms/M07/overview.md": {
+      "sha256": "8e2e1211edeb2c53a4a43c9656c2c63f994029a28ba33253db6b6a203f802f97",
+      "bytes": 1835
+    },
+    "expanded/navigation/mechanisms/M08/abstract.md": {
+      "sha256": "d7033dafe7eb028f7cd14b25e11d198b04b06e118bba178d1fe8007d91d469bb",
+      "bytes": 382
+    },
+    "expanded/navigation/mechanisms/M08/overview.md": {
+      "sha256": "f3c340a51f0863bb719baa8275c98608def0e47b65aadb22ad509f55c83b9599",
+      "bytes": 1341
+    },
+    "expanded/navigation/mechanisms/M09/abstract.md": {
+      "sha256": "bebd01c4ce8cc871411a1854da9bb2ed82a1a4ed0984e27a40b83741812b7371",
+      "bytes": 533
+    },
+    "expanded/navigation/mechanisms/M09/overview.md": {
+      "sha256": "0982b0de23d4e15b1d3b08ae985da16b851ee841859b06c1279cc7d85edf559a",
+      "bytes": 1461
+    },
+    "expanded/navigation/mechanisms/M10/abstract.md": {
+      "sha256": "d99d0f1fee11a3a9314d1c848521fbad8561ad67885e087dc17cab411d463712",
+      "bytes": 354
+    },
+    "expanded/navigation/mechanisms/M10/overview.md": {
+      "sha256": "7f2499a3ad544d7a67511e56960716bdac8c0b7dbb2ae82ac2ce739b17b1a582",
+      "bytes": 1265
+    },
+    "expanded/navigation/mechanisms/M11/abstract.md": {
+      "sha256": "64ecd329ce413d1b535a082737e8dbb5ca7240514d0cfd7be295a03a85268536",
+      "bytes": 651
+    },
+    "expanded/navigation/mechanisms/M11/overview.md": {
+      "sha256": "74b99c148b0911d1a426f438c89c2fdbbc641b3f02e126c5fc9cc73c26be746d",
+      "bytes": 5220
+    },
+    "expanded/navigation/mechanisms/M12/abstract.md": {
+      "sha256": "22200fdba97826f50b05923d079b8f773b1251abfa7541de6a4d9945e0f65f03",
+      "bytes": 387
+    },
+    "expanded/navigation/mechanisms/M12/overview.md": {
+      "sha256": "150c1561d78a5e017634fbce6905021612e9a1b8da2f2b34efbbda57ae13ae79",
+      "bytes": 870
+    },
+    "expanded/regression/extension_expected.jsonl": {
+      "sha256": "aa03ee34baa8c1606d9e07844e47825ffb4553d7467b351ff10cb6d12713ded3",
+      "bytes": 20138
+    },
+    "expanded/regression/pilot_expected.jsonl": {
+      "sha256": "4c848c8b4655efc8c51cf9b9d089af13cdb9cf43e843a1e7028ed5ac1d48fa3d",
+      "bytes": 199743
+    },
+    "expanded/regression/queries.jsonl": {
+      "sha256": "e133dfd39d241f2792387aa6a9cc768402877ad293b1addb4578430c3d8cc513",
+      "bytes": 25901
+    },
+    "expanded/regression/smoke_receipt.json": {
+      "sha256": "4c20d6d76824e2f4a166fe335c14549b0a335a94dea8e6e91636cf054964f1a1",
+      "bytes": 3994
+    }
+  },
+  "human_approved": false
+}

@@ -1,0 +1,57 @@
+[project]
+name = "finrisk-workbench"
+version = "1.0.0"
+description = "保险营销合规案例管理、风险判断与相似案例匹配工作台"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115,<1.0",
+    "httpx>=0.28,<1.0",
+    "numpy>=1.26,<2.3",
+    "onnxruntime>=1.20,<2.0",
+    "openpyxl>=3.1,<4.0",
+    "pillow>=10.0,<13.0",
+    "pydantic>=2.10,<3.0",
+    "pymupdf>=1.24,<2.0",
+    "python-docx>=1.1,<2.0",
+    "python-dotenv>=1.0,<2.0",
+    "python-multipart>=0.0.20,<1.0",
+    "rapidocr>=3.9,<4.0",
+    "uvicorn[standard]>=0.34,<1.0",
+]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.14,<2.0",
+    "pytest>=8.3,<9.0",
+    "ruff>=0.9,<1.0",
+]
+
+[project.optional-dependencies]
+local-embedding = [
+    "torch>=2.6,<2.11",
+    "transformers>=4.50,<5",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["data", "outputs", "models", "raw_pdfs", "release", ".tmp"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+files = ["src"]
+
+[[tool.mypy.overrides]]
+module = ["torch.*", "transformers.*"]
+follow_imports = "skip"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

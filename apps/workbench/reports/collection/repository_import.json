@@ -1,0 +1,40 @@
+{
+  "tested_at": "2026-10-19T16:26:50.373503+08:00",
+  "release": "knowledge-v2-20261019",
+  "archive_sha256": "b874e8c209aabba10537be480887ff3f39d390c3cfb530bdfc6015555252187d",
+  "apply": true,
+  "upstream_case_count": 15621,
+  "existing_case_ids": 15620,
+  "candidate_cases": 1,
+  "candidate_sources": 1,
+  "created_cases": 1,
+  "results": [
+    {
+      "file_id": "WEB-226fafe8de3eb6c8deb08b5680d37228",
+      "status": "imported",
+      "case_ids": [
+        "U226FAFE8DE3EB6C"
+      ],
+      "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1268783&itemId=4115&generaltype=9",
+      "chat_api_requests": 0
+    }
+  ],
+  "chat_api_requests": 0,
+  "official_http_requests": 0,
+  "index_status": "unchanged",
+  "index": null,
+  "daily_collection_checkpoint_unchanged": true,
+  "statistics": {
+    "total_cases": 9641,
+    "base_cases": 9639,
+    "user_cases": 0,
+    "crawled_cases": 2,
+    "active_cases": 9641,
+    "risk_tag_count": 27,
+    "data_version": "finrisk-v2.1-local-20261018",
+    "latest_crawl_at": "2026-10-19T15:43:32.556331+08:00",
+    "latest_penalty_date": "2026-04-23",
+    "subject_case_count": 15622,
+    "listing_unit": "document"
+  }
+}

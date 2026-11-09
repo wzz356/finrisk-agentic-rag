@@ -1,0 +1,82 @@
+{
+  "tested_at": "2026-10-19T15:37:37.936252+08:00",
+  "mode": "real_official_response_replay_with_live_model_apis",
+  "official_http_requests_for_capture": 3,
+  "official_doc_id": 1275042,
+  "publish_date": "2026-10-19",
+  "live_models": {
+    "agent": "Pi",
+    "extraction": "deepseek-flash",
+    "embedding": "qwen3.7-text-embedding",
+    "dimension": 1024
+  },
+  "first_ingestion_seconds": 5.595,
+  "created_cases": 1,
+  "resumed_index_after_connection_fix": false,
+  "field_check": {
+    "party_name": "朱研（时任中国人民财产保险股份有限公司大连市中山支公司副总经理）",
+    "penalty_doc_no": "大金罚决字〔2026〕87号",
+    "source_url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1275042&itemId=4114&generaltype=9",
+    "risk_tags": [
+      "虚列费用套取资金",
+      "其他"
+    ]
+  },
+  "source_partitions": {
+    "original": 0,
+    "official_crawl": 1,
+    "web_ingestion": 0
+  },
+  "index": {
+    "total_units": 7,
+    "cache_hits": 0,
+    "api_calls": 1,
+    "api_documents": 5,
+    "elapsed_seconds": 0.5182620999985375,
+    "dimension": 1024,
+    "model": "qwen3.7-text-embedding-native-ed99a1a4f011306e"
+  },
+  "qwen_api_events": [
+    {
+      "stage": "embedding_document",
+      "items": 5,
+      "characters": 45,
+      "seconds": 0.4964429000101518,
+      "request_id": "fc2a043d-610a-9a40-af04-25ffa061e720",
+      "usage": {
+        "input_tokens": 97,
+        "total_tokens": 97
+      }
+    },
+    {
+      "stage": "embedding_query",
+      "items": 1,
+      "characters": 8,
+      "seconds": 0.3909972000110429,
+      "request_id": "9d764e41-4430-97cb-bb8e-8595d35fe273",
+      "usage": {
+        "input_tokens": 55,
+        "total_tokens": 55
+      }
+    },
+    {
+      "stage": "embedding_query",
+      "items": 1,
+      "characters": 8,
+      "seconds": 0.1512427999987267,
+      "request_id": "17c76acd-a78c-987e-b628-b9bb59923be0",
+      "usage": {
+        "input_tokens": 55,
+        "total_tokens": 55
+      }
+    }
+  ],
+  "retrieval_top1_correct": true,
+  "dense_score": 0.83663,
+  "literal_evidence_verified": true,
+  "repeat_created_cases": 0,
+  "repeat_downloaded_documents": 0,
+  "scope": "单份近期官方文书的链路冒烟，不作为召回率/准确率评测",
+  "test_workspace": "outputs\\crawl_integration_20261019\\live_153737",
+  "bounded_listing_status": "partial"
+}

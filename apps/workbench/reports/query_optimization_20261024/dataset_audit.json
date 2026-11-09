@@ -1,0 +1,42 @@
+{
+  "checks_passed": true,
+  "annotation_status": "Codex synthetic self-review; not expert gold",
+  "group_overlap": 0,
+  "splits": {
+    "train": {
+      "queries": 72,
+      "groups": 24,
+      "states": {
+        "risk": 24,
+        "no_clear_risk": 24,
+        "insufficient_information": 24
+      },
+      "label_count": 27
+    },
+    "validation": {
+      "queries": 24,
+      "groups": 8,
+      "states": {
+        "risk": 8,
+        "no_clear_risk": 8,
+        "insufficient_information": 8
+      },
+      "label_count": 6
+    }
+  },
+  "train_overlap_audit": {
+    "new_validation": {
+      "normalized_exact_duplicates": 0,
+      "max_character_trigram_jaccard": 0.127273
+    },
+    "original_development": {
+      "normalized_exact_duplicates": 0,
+      "max_character_trigram_jaccard": 0.069767
+    },
+    "original_test_inputs": {
+      "normalized_exact_duplicates": 0,
+      "max_character_trigram_jaccard": 0.042254
+    }
+  },
+  "test_answers_read_by_audit": false
+}
